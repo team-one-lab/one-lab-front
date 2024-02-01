@@ -5,11 +5,12 @@
     flex-grow: 1;
 }
 
-@media (min-width: 360px)
-{main {
+@media (min-width: 360px){ 
+    main {
         display: flex;
         flex-direction: column;
-}}
+    }
+}
 
 main {
     max-width: 100%;
@@ -25,6 +26,23 @@ body {
     font-size: 1em;
     font-weight: 400;
     line-height: 2;
+}
+
+:root {
+    --swiper-navigation-size: 44px;
+    --swiper-theme-color: #007aff;
+}
+
+:root {
+    --color-primary: rgba(5, 5, 6, 1);
+    --color-primary-inverse: #fff;
+    --font-heading: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    --font-text: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    --spacer: 1rem;
+    --transition-translate-factor: 0.5;
+    --transition-rotate-factor: -4deg;
+    --transition-scale-factor: 0.05;
+    --transition-skew-factor: -4deg;
 }
 
 :root {
@@ -170,26 +188,6 @@ body {
     --zd-spacing-xxl: 48px;
 }
 
-:root {
-    --swiper-navigation-size: 44px;
-}
-
-:root {
-    --swiper-theme-color: #007aff;
-}
-
-:root {
-    --color-primary: rgba(5, 5, 6, 1);
-    --color-primary-inverse: #fff;
-    --font-heading: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-    --font-text: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-    --spacer: 1rem;
-    --transition-translate-factor: 0.5;
-    --transition-rotate-factor: -4deg;
-    --transition-scale-factor: 0.05;
-    --transition-skew-factor: -4deg;
-}
-
 html {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -211,10 +209,6 @@ link {
 @media (min-width: 360px)
 {.py-6 {
         padding-bottom: 1rem;
-}}
-
-@media (min-width: 360px)
-{.py-6 {
         padding-top: 6rem;
 }}
 
@@ -272,9 +266,6 @@ div {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
-}
-
-.col {
     position: relative;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -302,13 +293,7 @@ nav {
 
 ol {
     padding: 0 0 0 1.5rem;
-}
-
-ol {
     margin: 0 0 1rem;
-}
-
-ol {
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -340,3 +325,460 @@ li {
     text-align: -webkit-match-parent;
 }
 
+
+/* <a href="https://helpcenter.wadiz.kr/hc/ko">도움말 센터</a> */
+
+
+a {
+    color: rgb(89 189 181);
+    text-decoration: none;
+    background-color: transparent;
+    touch-action: manipulation;
+}
+
+
+/* <li title="문의등록"></li> */
+
+
+@media (min-width: 360px)
+{.breadcrumbs > * + * {
+    padding-left: 0.5rem;
+}}
+
+@media (min-width: 360px)
+{.breadcrumbs li + li::before {
+    color: #4A5568;
+}}
+
+@media (min-width: 360px)
+{.breadcrumbs > * + *::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    content: "/";
+}}
+
+*::before {
+    box-sizing: border-box;
+}
+
+
+/* <div class="row"></div> */
+/* 해당없음 */
+
+
+/* <div class="lg:col-9"></div> */
+
+
+@media (min-width: 360px) {
+    .lg\:col-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
+@media (min-width: 992px) {
+    .lg\:col-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
+.lg\:col-9 {
+    position: relative;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+    min-height: 1px;
+    min-width: 0;
+}
+
+
+/* <header class="mb-5"></header> */
+
+
+@media (min-width: 360px)
+{.mb-5 {
+    margin-bottom: 1.5rem;
+}}
+
+header {
+    display: block;
+}
+
+
+/* <h1>문의 등록</h1> */
+
+
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Pretendard';
+    margin: 0.5rem 0 3rem;
+    line-height: 1.4;
+    color: rgba(8, 8, 8, 1);
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+/* <div class="form"></div> */
+/* 해당없음 */
+
+
+/* <div data-element="template" data-template="form-tip"></div> */
+/* 해당없음 */
+
+
+/* <form id="new_request" class="request-form" data-form data-form-type="request" action="/hc/ko/requests" accept-charset="UTF-8" method="post"></form> */
+
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+
+/* <h2> 문의 접수하실 내용을 선택해 주세요: </h2> */
+
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Pretendard';
+    margin: 0.5rem 0 3rem;
+    line-height: 1.4;
+    color: rgba(8, 8, 8, 1);
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+/* <ul class="list-unstyled row row-sm my-6 row-ds"></ul> */
+
+
+@media (min-width: 360px) {
+.my-6 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-family: 'Pretendard';
+}}
+
+.row-ds {
+    margin-right: -7rem;
+    margin-left: -7rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul {
+    padding: 0 0 0 1.5rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+/* <li class="md:col-6 lg:col-4 text-center mb-4" id="22181518326809"></li> */
+
+
+.row-sm > [class*="col"] {
+    padding-right: 0;
+    padding-left: 0.75rem;
+    box-sizing: content-box;
+}
+
+@media (min-width: 360px)
+{.mb-4 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: 'Pretendard';
+}}
+
+@media (min-width: 360px)
+{.text-center {
+    text-align: center;
+}}
+
+@media (min-width: 360px) {
+    .lg\:col-4 {
+        flex: 0 0 20.3333333333%;
+        max-width: 20.3333333333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .lg\:col-4 {
+        flex: 0 0 20.3333333333%;
+        max-width: 20.3333333333%;
+    }
+}
+
+.md\:col-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    min-width: 0;
+}
+
+.lg\:col-4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    min-width: 0;
+}
+
+/* li {
+     display: list-item;
+} */
+
+/* .list-unstyled {
+     list-style: none;
+} */
+
+
+
+/* <a class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary" href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=22181518326809"></a> */
+
+
+@media (min-width: 360px)
+{.h-full {
+    height: 100%;
+}}
+
+@media (min-width: 360px)
+{.p-5 {
+    padding: 1.5rem;
+}}
+
+@media (min-width: 360px)
+{.border-primary {
+    border-color: rgba(5, 5, 6, 1);
+}}
+
+@media (min-width: 360px)
+{.text-primary {
+    color: rgba(5, 5, 6, 1);
+}}
+
+@media (min-width: 360px)
+{.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}}
+
+.link-plain {
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+    touch-action: manipulation;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+
+/* <h4 class="yds-btnsize m-0 font-medium text-inherit">와디즈 문의하기</h4> */
+
+
+@media (min-width: 360px)
+{.m-0 {
+    margin: 0;
+}}
+
+@media (min-width: 360px)
+{.text-inherit {
+    color: inherit;
+}}
+
+.yds-btnsize {
+    font-size: 1rem;
+    font-family: 'Pretendard';
+}
+
+h4 {
+    line-height: 1.4;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+/* <li class="md:col-6 lg:col-4 text-center mb-4" id="25535237543577"></li> */
+/* 해당없음 */
+
+
+/* <a class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary" href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=25535237543577"></a> */
+/* 해당없음 */
+
+
+/* <h4 class="yds-btnsize m-0 font-medium text-inherit">프로젝스 수정/변경요청하기</h4> */
+/* 해당없음 */
+
+
+/* <li class="md:col-6 lg:col-4 text-center mb-4" id="24699344939033"></li> */
+/* 해당없음 */
+
+
+/* <a class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary" href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=24699344939033"></a> */
+/* 해당없음 */
+
+
+/* <h4 class="yds-btnsize m-0 font-medium text-inherit">와디즈 광고서비스 문의하기</h4> */
+/* 해당없음 */
+
+
+/* <li class="md:col-6 lg:col-4 text-center mb-4" id="6476688975513"></li> */
+/* 해당없음 */
+
+
+/* <a class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary" href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=6476688975513"></a> */
+/* 해당없음 */
+
+
+/* h4 class="yds-btnsize m-0 font-medium text-inherit">와디즈 파이낸스 문의하기</h4> */
+/* 해당없음 */
+
+
+/* <template id="tmpl-form-tip"> #document-fragment </template> */
+
+template {
+    display: none;
+}
+
+
+/* <div class="note media" x-data="{ show: false }" x-init="show = !!Util.getURLParameter('ticket_form_id')" :class="{ 'hidden': !show }"></div> */
+/* 해당없음 */
+
+
+/* <svg class="svg-icon font-size-2xl bottom-0" fill="rgba(66, 245, 233, 1)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg> */
+/* 해당없음 */
+
+
+/* <g stroke="none" stroke-width="1" fill-rule="evenodd"></g> */
+/* 해당없음 */
+
+
+/* <rect opacity="0" x="0" y="0" width="24" height="24"></rect> */
+/* <circle opacity="0.3" cx="12" cy="12" r="10"></circle> */
+/* <rect x="11" y="10" width="2" height="7" rx="1"></rect> */
+/* <rect x="11" y="7" width="2" height="2" rx="1"></rect> */
+/* 해당없음 */
+
+
+/* <div class="media-body1 font-size-md font-medium ml-3"> */
+/* 해당없음 */
+
+
+/* 문의 등록시, 관련된 답변은 1 영업일 이후에 답변 받으실 수 있습니다
+💌 &lt;br&gt;만약, 빠른 답변을 원하시는 경우 &lt;b&gt;&lt;a
+href="https://bit.ly/46ukfeW" target="_blank"&gt;와디즈
+고객센터&lt;/a&gt;&lt;/b&gt; 클릭하신 후 [Web Widget 열기] 버튼
+클릭하셔서 &lt;br&gt;궁금하신 내용을 검색해 보세요! 감사합니다. 😉 */
+/* 해당없음 */
+
+
+/* <a href="https://www.wadiz.kr/web/project/registration?type=aiAdvisorModalOpen"></a> */
+/* 해당없음 */
+
+
+/* <img src="https://theme.zdassets.com/theme_assets/13612819/70b1977be0a68c0c7e333ae43321efbb048f90cd.PNG" alt="AI" style="width: 100%" /> */
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+/* <button class="floating-button" onclick="zE('messenger', 'open');"></button> */
+
+
+.floating-button {
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    right: 20px;
+    background: url(https://theme.zdassets.com/theme_assets/13612819/14c6b8380fa64abfa1df24209b5abb4bcb9fef88.png) no-repeat center/100%;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+@media (min-width: 360px) {
+    .floating-button {
+        width: 60px !important;
+        height: 60px !important;
+    }
+}
+
+@media screen and (min-width: 1097px) {
+    .floating-button {
+        width: 60px !important;
+        height: 60px !important;
+    }
+}
+
+button {
+    text-transform: none;
+    overflow: visible;
+    touch-action: manipulation;
+    -webkit-appearance: button;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+
+/* <link rel="stylesheet" type="text/css" href="/staticfiles/css/help-sanghwa/clone_coding_help_center.css"> */
+/* 해당없음 */
