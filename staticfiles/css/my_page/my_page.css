@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-family: Pretendard Variable,pretendard,-apple-system,blinkmacsystemfont,system-ui,roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
+
+div {
+    display: block;
+}
+
+div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    
+}
+
+body {
+    overflow-x: hidden;
+    line-height: inherit;
+    color: inherit;
+    font-size: 15px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    font-weight: 400;
+    font-family:inherit;
+}
