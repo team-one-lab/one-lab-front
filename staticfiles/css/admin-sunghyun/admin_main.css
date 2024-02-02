@@ -30,6 +30,9 @@ html {
     height: 100%;
 }
 
+p{
+    margin: 0;
+}
 
 body {
     margin: 0;
@@ -569,7 +572,7 @@ p{
     align-items: center;
     flex-direction: column;
     display: flex;
-    margin-top: 0px;
+    margin-top: 88px;
 }
 .mt-primary{
     margin-top: 24px;
@@ -591,6 +594,38 @@ p{
     margin-top: 24px;
 }
 .relative-disabled1{
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    display: flex;
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    fill: #fff;
+    background-color: #7e69fe;
+}
+.mt-24-q{
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color:#1d1d1e;
+    fill : #1d1d1e;
+}
+.mt-4-q{
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8a8a8b;
+    fill: #8a8a8b;
+}
+.final{
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 16px;
