@@ -1,0 +1,80 @@
+/* 글꼴 설정 */
+Roboto.Light300 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+[role="main"] {
+    flex-grow: 1;
+}
+
+@media (min-width: 360px)
+{main {
+    display: flex;
+    flex-direction: column;
+}}
+
+main {
+    max-width: 100%; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #403b3b;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2;
+}
+
+:root {
+    --reach-menu-button: 1;
+    --swiper-navigation-size: 44px;
+    --swiper-theme-color: #007aff;
+}
+
+:root {
+    --color-primary: rgba(5, 5, 6, 1);
+    --color-primary-inverse: #fff;
+    --font-heading: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    --font-text: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    --spacer: 1rem;
+    --transition-translate-factor: 0.5;
+    --transition-rotate-factor: -4deg;
+    --transition-scale-factor: 0.05;
+    --transition-skew-factor: -4deg;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+link {
+    display: none;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #403b3b;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2;
+}
+
+
+@media (min-width: 360px) {
+    div.container-6{
+        padding-bottom: 1rem;
+        padding-top: 6rem;
+        flex: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+}
