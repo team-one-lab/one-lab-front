@@ -73,15 +73,18 @@
                                 <div class="profile">
                                     <div class="mb">
                                         <button aria-label="profile image" class="relative-center"
-                                        type="button" style="width: 68px; height: 68px; outline: none;">
-                                            <img alt="관리자 프로필" sizes="(max-width: 240px) 100vw, 240px" 
-                                            srcset="" src=""
+                                    type="button" style="width: 68px; height: 68px; outline: none;">
+                                    <img alt="관리자 프로필" sizes="(max-width: 240px) 100vw, 240px" 
+                                            srcset="/staticfiles/images/cancel.png" src="/staticfiles/images/cancel.png"
                                             decoding="async" data-nimg="fill" class="rounded-full" loading="lazy" style="position: absolute;
                                             height: 100%; width: 100%; inset: 0px; object-fit: cover; object-position: center center; color: transparent;">
-                                            <div class="absolute-full"></div>
-                                        </button>
+                                    <div class="absolute-full"></div>
+                                </button>
+                                        
                                     </div>
+                                    
                                     <h2 class="admin-name">관리자</h2>
+                                    
                                     <a traget="_blank" href="/templates/html/admin_sunghyun/admin_account.html">
                                         <button aria-label="button" class="relative-disabled" type="button">
                                             <div class="flex-center">관리자 계정관리</div>
@@ -225,20 +228,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <script>
-                                                function switchScreen(screenNumber) {
-                                                    // 모든 화면을 숨김
-                                                    document
-                                                        .querySelectorAll(".flex, .flex 1")
-                                                        .forEach(function (screen) {
-                                                            screen.style.display = "none";
-                                                        });
-                                    
-                                                    // 선택한 화면만 보임
-                                                    document.querySelector(".flex" + screenNumber).style.display =
-                                                        "block";
-                                                }
-                                            </script>
+                                        
                                             <div class="py-between">
                                                 <div>
                                                     <span class="font-content">전체</span>
@@ -279,7 +269,7 @@
                                                         
                                                       
                                                     <!-- </div> -->
-                                                     <!--필터 검색-->
+                                                     <!--세번째 드롭다운-->
                                                      <div class="relative">
                                                         <button aria-label="filter"  class="surface-none" type="button" id="three"  onclick="toggleDropdown('dropdownOptions3')"> 
                                                             <span class="over-nowrap">최신순</span>
@@ -293,9 +283,8 @@
                                                             <a href="#" onclick="selectOption('조회순', 'three')">조회순</a>
                                                             <a href="#" onclick="selectOption('추천순', 'three')">추천순</a>
                                                         </div>
-                                                    </div>
-                                                
-                                        </div>
+                                                    </div>    
+                                                </div>
                                     </div>
                                 </div>
                                 <div class="col-center">
@@ -326,6 +315,8 @@
                             </div>
                         </div>
                     </div>
+                    
+ 
                 </div>
             </div>
             <div class="z-0"></div>

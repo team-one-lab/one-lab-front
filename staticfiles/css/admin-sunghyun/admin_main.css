@@ -273,6 +273,9 @@ img {
     background-color: #fff;
     
 }
+.rounded-full{
+    border-radius: 9999px;
+}
 .ml{
     flex-shrink: 0;
     margin-left: 4px;
@@ -578,7 +581,9 @@ p{
     color: #5b44ea;
     fill: #5b44ea;
 }
-
+.real-upload{
+    margin-right: 50px;
+}
 .flex-12{
     column-gap: 12px;
     display: flex;
@@ -844,11 +849,13 @@ button:hover {
 }
 
 .font-center{
-    text-align: center;
-    margin-bottom: 6px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
+    align-items: center;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    fill: #fff;
 }
 
 p{

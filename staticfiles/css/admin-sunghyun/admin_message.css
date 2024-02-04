@@ -842,3 +842,42 @@ section{
 
 
 
+.col-center{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: 88px;
+}
+.mt-primary{
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1d1d1e;
+    fill: #1d1d1e;
+}
+.mt-quaternary{
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8a8a8b;
+    fill: #8a8a8b;
+}
+.mt-24-q{
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color:#1d1d1e;
+    fill : #1d1d1e;
+}
+.mt-4-q{
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8a8a8b;
+    fill: #8a8a8b;
+}
