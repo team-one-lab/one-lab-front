@@ -840,14 +840,20 @@ section{
     margin-top: 25px;
 }
 
-
+.justify-center{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: 88px;
+}
 
 .col-center{
     justify-content: center;
     align-items: center;
     flex-direction: column;
     display: flex;
-    margin-top: 88px;
+    /* margin-top: 88px; */
 }
 .mt-primary{
     margin-top: 24px;

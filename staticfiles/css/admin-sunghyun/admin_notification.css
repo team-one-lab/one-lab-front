@@ -845,6 +845,13 @@ section{
     align-items: center;
     flex-direction: column;
     display: flex;
+    /* margin-top: 88px; */
+}
+.justify-center{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
     margin-top: 88px;
 }
 .mt-primary{
@@ -864,6 +871,7 @@ section{
     fill: #8a8a8b;
 }
 .mt-24-q{
+    text-align: center;
     margin-top: 24px;
     font-weight: 700;
     font-size: 20px;
