@@ -854,5 +854,12 @@ section{
     align-items: center;
     flex-direction: column;
     display: flex;
+    /* margin-top: 120px; */
+}
+.justify-center{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
     margin-top: 120px;
 }
