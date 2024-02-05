@@ -78,6 +78,6 @@ function addList() {
 
     // 4. 생성된 li를 div에 추가
     const colCenter = document.querySelector(".mt-center");
-    colCenter.style.flexDirection = "column"; // Set flex-direction to column
+    colCenter.style.flexDirection = "column";
     colCenter.appendChild(li);
 }
