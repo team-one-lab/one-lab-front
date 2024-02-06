@@ -44,7 +44,7 @@ function addList() {
     input.style.border = "0.5px solid gray";
     input.style.borderRadius = "5px";
     input.style.fill = "#1d1d1e";
-    input.placeholder = "최대 15자까지 공지사항 제목을 입력해주세요.";
+    input.placeholder = "문의사항 답변을 입력해주세요.";
 
     li.appendChild(input);
 

@@ -669,7 +669,7 @@ p{
     position: relative;
 }
 button:hover {
-    background-color: #ddd;
+    background-color: #eeebeb;
 }
 .dropdown-content {
     display: none;
@@ -728,10 +728,11 @@ button:hover {
 }
 
 .mt-24{
-    padding-left: 8px;
+    display: none;
+    /* padding-left: 8px;
     padding-right: 8px;
     padding-top: 9px;
-    padding-bottom: 9px;
+    padding-bottom: 9px; */
     border-top-width: 1px;
     border-bottom-width: 1px;
     column-gap: 24px;
@@ -757,7 +758,7 @@ button:hover {
     margin-right: 8px;
 }
 .wh-60{
-    width: 6px;
+    width: 14px;
     height: 10px;
 }
 .mt-center{
@@ -767,11 +768,42 @@ button:hover {
     display: flex;
     margin-top: 100px;
 }
-.mt-quaternary{
+/* .mt-quaternary{
     margin-top: 23px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #8a8a8b;
     fill: #8a8a8b;
+} */
+
+table{ border-collapse : collapse; }  /*이중선 제거*/
+th,td{
+      width: 130px;
+      height: 50px;
+      text-align: center;
+      border: 1px solid #000;
+      text-align: center;
+      align-items: center;
+      vertical-align: top;	/* 위 */
+      vertical-align: bottom;   /* 아래 */
+      vertical-align: middle;   /* 가운데 */
+    }
+input{
+    width: 160px;
+    text-align: center;
+}
+.auth1{
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    justify-content: center;
+    height: 40px;
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    fill: #fff;
+    background-color: #2166e6;
 }
