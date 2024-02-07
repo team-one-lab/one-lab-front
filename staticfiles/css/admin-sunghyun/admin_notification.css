@@ -15,7 +15,9 @@ html {
     border: 0 solid #e5e7eb;
 }
 
-
+li:hover{
+    background-color: #f2f0fc;
+}
 
 html {
     display: block;

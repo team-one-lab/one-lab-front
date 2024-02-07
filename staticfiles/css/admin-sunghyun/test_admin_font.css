@@ -14,7 +14,9 @@ http://scripts.sil.org/OFL
 	src: local('Pretendard Black'), 
 	url('../../../packages/pretendard/dist/web/static/woff2/Pretendard-Black.woff2') format('woff2'), url('../../../packages/pretendard/dist/web/static/woff/Pretendard-Black.woff') format('woff');
 }
-
+li:hover{
+    background-color: #f2f0fc;
+}
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 800;

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="/staticfiles/css/notification-sunghyun/notify_main.css"
+        />
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+        <link rel="stylesheet" href="/staticfiles/css/font/font.css">
+        <link rel="stylesheet" href="/staticfiles/css/font/font-awesome-css.min.css">
+        <title>와디즈 공지사항</title>
+    </head>
+
+    <body>
+        <div id="page-container">
+            <div class="black-wrap" style="display: none"></div>
+            <!--헤더 작업 시작-->
+            <div id="wz-header">
+                <div class="web-header">
+                    <div class="web-large">
+                        <header class="header-wrapper">
+                            <div class="header-container">
+                                <h1 class="wadiz-logo">
+                                    <!---------- 1 ---------->
+                                    <a href="/">
+                                        <span class="label"></span>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="85"
+                                            height="25"
+                                            viewBox="0 0 85 25"
+                                        >
+                                            <path
+                                                fill="#1D2129"
+                                                fill-rule="nonzero"
+                                                d="M58.49 2.23h2.11v21.29H59a1.73 1.73 0 0 1-1.62-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29 7.65 7.65 0 0 1 12.79-5.07V4.23a2 2 0 0 1 2-2zm-6.3 18.62a4.36 4.36 0 0 0 4.16-4.52 4.19 4.19 0 1 0-8.35 0 4.36 4.36 0 0 0 4.19 4.52zM42 23.52h-1.52a1.73 1.73 0 0 1-1.64-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29A7.65 7.65 0 0 1 38 10.72a2 2 0 0 1 1.9-1.79H42v14.59zm-8.41-2.67h.02a4.35 4.35 0 0 0 4.15-4.52 4.35 4.35 0 0 0-4.17-4.51 4.35 4.35 0 0 0-4.17 4.51 4.36 4.36 0 0 0 4.17 4.52zM83.47 8.94v2.11l-7.07 9.06h7.06v3.47h-13v-2.1l7.08-9.07h-6.62v-1.47a2 2 0 0 1 2-2h10.55zM65.86 7.3a2.48 2.48 0 1 1 0-4.96 2.48 2.48 0 0 1 0 4.96zM21.21 8.94h4.14l-4.86 14.59h-4.15l-3.21-9.36-3.21 9.36H5.77L.92 8.94h4.13L8 18l2.5-7.74a2 2 0 0 1 1.86-1.34h2.9l3 9.08 2.95-9.06zm42.65 14.59l-.04-12.59a2 2 0 0 1 2-2h2.11v14.59h-4.07z"
+                                            ></path>
+                                        </svg>
+                                    </a>
+                                </h1>
+                                <ul class="G-D">
+                                    <li class="G-G">
+                                        <a href="#" class="G-R">
+                                            <span>오픈예정</span>
+                                        </a>
+                                    </li>
+                                    <li class="G-G">
+                                        <a href="#" class="G-R">
+                                            <span>펀딩+</span>
+                                        </a>
+                                    </li>
+                                    <li class="G-G">
+                                        <a href="#" class="G-R">
+                                            <span>프리오더</span>
+                                        </a>
+                                    </li>
+                                    <li class="G-G">
+                                        <a href="#" class="G-R">
+                                            <span>스토어</span>
+                                        </a>
+                                    </li>
+                                    <li class="G-G">
+                                        <a href="#" class="G-R">
+                                            <span>더보기</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="web-utils">
+                                    <div class="D-P">
+                                        <form>
+                                            <div class="S-v" tabindex="-1">
+                                                <div class="S-b"></div>
+                                                <div class="S-q">
+                                                    <input
+                                                        type="search"
+                                                        placeholder="새로운 일상이 필요하신가요?"
+                                                        aria-label="검색"
+                                                        value
+                                                    />
+                                                </div>
+                                                <button
+                                                    type="submit"
+                                                    class="S-t"
+                                                    aria-label="검색"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 40 40"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon_icon__5xc48"
+                                                        aria-hidden="true"
+                                                        style="
+                                                            width: 24px;
+                                                            height: 24px;
+                                                        "
+                                                    >
+                                                        <path
+                                                            fill="none"
+                                                            d="M0 0h40v40H0z"
+                                                        ></path>
+                                                        <path
+                                                            d="M29.2 27.91a14.38 14.38 0 1 0-1.42 1.4l7.16 7.15.07.08 1.41-1.41zM18.45 6a12.36 12.36 0 0 1 8.35 3.23 12.24 12.24 0 0 1 4 8.59A12.39 12.39 0 1 1 17.88 6z"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </form>
+                                        <!--------------->
+                                        
+                                    <div class="D-E" style="display: none;">
+                                    <div class="D-O">
+                                        <button type="button">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="H-C">
+                                <div class="U-G">
+                                    <button type="button" class="U-R">로그인</button>
+                                    <button type="button" class="U-R">회원가입</button>
+                                </div>
+                            </div>
+                            <div class="w-open">
+                                <button aria-label="프로젝트 만들기" class="open-button" type="button">
+                                    <span>
+                                        <span class="B-j">프로젝트 만들기</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.dispatchEvent(new CustomEvent('WadizHeaderLoaded', {
+                detail: {
+                    element: document.getElementById('wz-header')
+                }
+            }));
+        </script>
+        <form id="forwardForm" method="get">
+            <input type="hidden" id="returnURL" name="returnURL">
+        </form>
+        <input type="hidden" id="sessionLoginCheck" value="false">
+        <main class="board-ui">
+            <div class="ui-header">
+                <h2 class="title">공지 사항</h2>
+            </div>
+            <div aria-hidden="true"></div>
+            <div class="ui-tabs">
+                <ul>
+                    <li class="active">
+                        <a href="#">전체</a>
+                    </li>
+                    <li>
+                        <a href="#1">공지</a>
+                    </li>
+                    <li>
+                        <a href="#2">이벤트</a>
+                    </li>
+                    <li>
+                        <a href="#3">보도자료</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+            <div class="board-main">
+                <ul>
+                    <li>
+                        <a class="article" href="#">
+                            <em class="category">이벤트</em>
+                            <em class="status closed">
+                                진행 중
+                            </em>
+                            <em class="notice">
+                                중요
+                            </em>
+                            <em class="notice">
+                                BEST
+                            </em>
+                            <div class="info">
+                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0201/20240201202145306_0.png/wadiz/resize/400/format/jpg/quality/80)">
+                                </div>
+                                <h3 class="title">[원랩(OneLab)] '원랩 서비스 공식 오픈서비스  'Grand Open Event! (02/01 ~)
+
+                                </h3>
+                                <span class="author">원랩</span>
+                                <span class="created-at">2024.02.01</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="article" href="#">
+                            <em class="category">이벤트</em>
+                            <em class="status closed">
+                                진행 중
+                            </em>
+                            <em class="notice">
+                                중요
+                            </em>
+                            <em class="notice">
+                                BEST
+                            </em>
+                            <div class="info">
+                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0201/20240201134537164_0.jpg/wadiz/resize/400/format/jpg/quality/80)">
+                                </div>
+                                <h3 class="title">[원랩(OneLab)] '원랩 서비스 공식 오픈서비스  'Grand Open Event! (02/01 ~)
+
+                                </h3>
+                                <span class="author">원랩</span>
+                                <span class="created-at">2024.02.01</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="article" href="#">
+                            <em class="category">이벤트</em>
+                            <em class="status closed">
+                                진행 중
+                            </em>
+                            <em class="notice">
+                                중요
+                            </em>
+                            <em class="notice">
+                                BEST
+                            </em>
+                            <div class="info">
+                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0130/20240130133719756_0.png/wadiz/resize/400/format/jpg/quality/80)">
+                                </div>
+                                <h3 class="title">[원랩(OneLab)] '원랩 서비스 공식 오픈서비스  'Grand Open Event! (02/01 ~)
+
+                                </h3>
+                                <span class="author">원랩</span>
+                                <span class="created-at">2024.02.01</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="article" href="#">
+                            <em class="category">이벤트</em>
+                            <em class="status closed">
+                                진행 중
+                            </em>
+                            <em class="notice">
+                                중요
+                            </em>
+                            <em class="notice">
+                                BEST
+                            </em>
+                            <div class="info">
+                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0117/20240117091042069_0.png/wadiz/resize/400/format/jpg/quality/80)">
+                                </div>
+                                <h3 class="title">[원랩(OneLab)] '원랩 서비스 공식 오픈서비스  'Grand Open Event! (02/01 ~)
+
+                                </h3>
+                                <span class="author">원랩</span>
+                                <span class="created-at">2024.02.01</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="article" href="#">
+                            <em class="category">이벤트</em>
+                            <em class="status closed">
+                                진행 중
+                            </em>
+                            <em class="notice">
+                                중요
+                            </em>
+                            <em class="notice">
+                                BEST
+                            </em>
+                            <div class="info">
+                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0110/20240110111412343_0.png/wadiz/resize/400/format/jpg/quality/80)">
+                                </div>
+                                <h3 class="title">[원랩(OneLab)] '원랩 서비스 공식 오픈서비스  'Grand Open Event! (02/01 ~)
+
+                                </h3>
+                                <span class="author">원랩</span>
+                                <span class="created-at">2024.02.01</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="article" href="#">
+                            <em class="category">이벤트</em>
+                            <em class="status closed">
+                                진행 중
+                            </em>
+                            <em class="notice">
+                                중요
+                            </em>
+                            <em class="notice">
+                                BEST
+                            </em>
+                            <div class="info">
+                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0205/20240205092005471_0.jpg/wadiz/resize/400/format/jpg/quality/80)">
+                                </div>
+                                <h3 class="title">[공간와디즈] '와디즈 플래그십 스토어 성수' Grand Open Event! (~2/14)
+
+                                </h3>
+                                <span class="author">원랩</span>
+                                <span class="created-at">2024.02.01</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!------------------>
+            <div class="board-footer">
+                <div class="pagination">
+                    <!--모바일 버튼-->
+                    <button class="prev-page mobile-only" onclick="movePage(0)" disabled>
+                        <span class="text-hidden">이전 목록</span>
+                    </button>
+                    <div class="page">
+                        <!--모바일용 페이지 리스트-->
+                        <div class="mobile-only">
+                            <span class="current-count">1</span>
+                            /
+                             <span class="total-count">
+                                <span>122</span>
+                                페이지
+                            </span>
+                        </div>
+                         <div class="desktop-only">
+                            
+                            <button class="prev-page" onclick="movePage(0)" disabled>
+                                <img src="/staticfiles/images/button2.png">
+                            <span class=text-hidden>이전 목록</span>
+                        </button>
+                        
+                            <a  href="#" onclick="movePage(1)">1</a>
+                            <a  href="#" onclick="movePage(2)">2</a>
+                            <a  href="#" onclick="movePage(3)">3</a>
+                            <a  href="#" onclick="movePage(4)">4</a>
+                            <a  href="#" onclick="movePage(5)">5</a>
+                            <a  href="#" onclick="movePage(6)">6</a>
+                            <!-- 데스크탑용 버튼 -->
+                            <button class="next-page icon-chevron-right" onclick="movePage(7)">
+                                <img src="/staticfiles/images/button1.png">
+                                <span class="text-hidden">다음 목록</span>
+                              </button>
+                        </div>
+                    </div>
+                    <button class="next-page mobile-only" onclick="movePage(2)">
+                    <span class="text-hidden">다음 목록</span>
+                </button>
+            </div>
+            <div class="search">
+                <form method="post" id="news-search">
+                    <div class="filter-container">
+                        <select id="searchSelectInBoard" class="filter" name>
+                            <option value="tc">제목 + 내용</option>
+                            <option value="t">제목</option>
+                            <option value="c">내용</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label class="text-hidden" for>검색창</label>
+                        <input id="searchTextInBoard" name="searchSelectInBoard" class="search-form" type="text" value>
+                        <button class="btn-search" type="submit">검색</button>
+                    </div>
+                </form>
+                <form id="fromSearch" name="formSearchBoard" action="/web/wboard/newBoardList/"
+            </div>
+                
+        </main>
+    </body>
+</html>
