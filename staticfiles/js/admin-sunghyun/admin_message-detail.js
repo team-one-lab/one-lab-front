@@ -72,6 +72,7 @@ function addList() {
     const input = document.createElement("input");
     input.setAttribute("type", "text");
     input.classList.add("px-op"); // 클래스명 추가
+    // input.id.add("questionInput"); // id 명 추가
 
     // 3. CSS 속성 적용
     input.style.outline = "2px solid transparent";
@@ -123,4 +124,28 @@ function addList() {
     const colCenter = document.querySelector(".col-center");
     colCenter.style.flexDirection = "column";
     colCenter.appendChild(li);
+}
+
+// 수정 기능 추가
+function editQuestion() {
+    // input 태그의 값을 가져옴
+    var questionInputValue = document.querySelector(".px-op").value;
+
+    // 사용자가 입력한 값을 가져와서 수정함.
+    var modifiedText = prompt("수정된 내용을 입력하세요:", questionInputValue);
+
+    if (modifiedText !== null) {
+        // 사용자가 값을 입력하고 취소하지 않은 경우에만 변경된 텍스트를 설정.
+        document.querySelector(".px-op").value = modifiedText;
+
+        // 콘솔에 변경된 값을 출력.
+        console.log(
+            "글이 수정되었습니다. 이전 내용: " +
+                questionInputValue +
+                ", 수정된 내용: " +
+                modifiedText
+        );
+    } else {
+        console.log("수정이 취소되었습니다.");
+    }
 }
