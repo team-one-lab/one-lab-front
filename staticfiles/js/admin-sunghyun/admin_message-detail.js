@@ -1,3 +1,46 @@
+/** 프로필 변경 js 기능 */
+
+/** 버튼태그 클릭하면 드롭다운 메뉴가 나오는 js 기능 */
+function toggleDropdown(dropdownId) {
+    var dropdownOptions = document.getElementById(dropdownId);
+    dropdownOptions.style.display =
+        dropdownOptions.style.display === "block" ? "none" : "block";
+}
+
+function selectOption(option, buttonId) {
+    var selectedOption = document.querySelector(`#${buttonId} span`);
+    selectedOption.textContent = option;
+    toggleDropdown(`dropdownOptions${buttonId.charAt(buttonId.length - 1)}`);
+}
+
+// 버튼 외의 영역을 클릭하면 드롭다운이 사라지도록 이벤트 처리
+document.addEventListener("click", function (event) {
+    var dropdownOptions1 = document.getElementById("dropdownOptions1");
+    var dropdownOptions2 = document.getElementById("dropdownOptions2");
+    var dropdownOptions3 = document.getElementById("dropdownOptions3");
+    var surfaceNoneButtons = document.querySelectorAll(".surface-none");
+
+    if (
+        !surfaceNoneButtons[0].contains(event.target) &&
+        !dropdownOptions1.contains(event.target)
+    ) {
+        dropdownOptions1.style.display = "none";
+    }
+
+    if (
+        !surfaceNoneButtons[1].contains(event.target) &&
+        !dropdownOptions2.contains(event.target)
+    ) {
+        dropdownOptions2.style.display = "none";
+    }
+    if (
+        !surfaceNoneButtons[2].contains(event.target) &&
+        !dropdownOptions3.contains(event.target)
+    ) {
+        dropdownOptions3.style.display = "none";
+    }
+});
+
 function addList() {
     // 1. 추가할 값을 button 태그에서 읽어온다
     const addValue = document.querySelector(".relative-category").value;
@@ -29,6 +72,7 @@ function addList() {
     const input = document.createElement("input");
     input.setAttribute("type", "text");
     input.classList.add("px-op"); // 클래스명 추가
+    // input.id.add("questionInput"); // id 명 추가
 
     // 3. CSS 속성 적용
     input.style.outline = "2px solid transparent";
@@ -44,7 +88,7 @@ function addList() {
     input.style.border = "0.5px solid gray";
     input.style.borderRadius = "5px";
     input.style.fill = "#1d1d1e";
-    input.placeholder = "공모전 및 대회 제목을 입력해주세요.";
+    input.placeholder = "문의사항 답변을 남겨주세요.";
 
     li.appendChild(input);
 
@@ -68,7 +112,7 @@ function addList() {
         liToRemove.remove();
 
         // 모든 li 태그가 삭제되면 초기화면을 다시 보여줌
-        const allLiTags = document.querySelectorAll(".mt-center li");
+        const allLiTags = document.querySelectorAll(".col-center li");
         if (allLiTags.length === 0) {
             initialScreen.style.display = "block";
         }
@@ -77,7 +121,31 @@ function addList() {
     li.appendChild(button);
 
     // 4. 생성된 li를 div에 추가
-    const colCenter = document.querySelector(".mt-center");
+    const colCenter = document.querySelector(".col-center");
     colCenter.style.flexDirection = "column";
     colCenter.appendChild(li);
+}
+
+// 수정 기능 추가
+function editQuestion() {
+    // input 태그의 값을 가져옴
+    var questionInputValue = document.querySelector(".px-op").value;
+
+    // 사용자가 입력한 값을 가져와서 수정함.
+    var modifiedText = prompt("수정된 내용을 입력하세요:", questionInputValue);
+
+    if (modifiedText !== null) {
+        // 사용자가 값을 입력하고 취소하지 않은 경우에만 변경된 텍스트를 설정.
+        document.querySelector(".px-op").value = modifiedText;
+
+        // 콘솔에 변경된 값을 출력.
+        console.log(
+            "글이 수정되었습니다. 이전 내용: " +
+                questionInputValue +
+                ", 수정된 내용: " +
+                modifiedText
+        );
+    } else {
+        console.log("수정이 취소되었습니다.");
+    }
 }

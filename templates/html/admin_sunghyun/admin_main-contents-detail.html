@@ -1,3 +1,4 @@
+
 <!-------------------------------★참고설명★---------------------------------------
 
 
@@ -22,14 +23,16 @@ admin_payment = 결제 내역 관리 페이지 (필터기능으로 결제 내역
 admin_competition = 공모전/대회 관리 페이지
 -->
 
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <link
             rel="stylesheet"
-            href="/staticfiles/css/admin-sunghyun/admin_account.css"
+            href="/staticfiles/css/admin-sunghyun/admin_main-contents-detail.css"
         />
         <!-- <script src="/staticfiles/js/admin-sunghyun/admin_main.js"></script> -->
+        <script src="/staticfiles/js/admin-sunghyun/admin_detail.js"></script>
         <link rel="preload" href="/staticfiles/css/test_admin_font.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -193,88 +196,64 @@ admin_competition = 공모전/대회 관리 페이지
                             <div class="pt-full">
                                 <div class="flex-between">
                                     <h3 class="font-primary">
-                                        관리자 계정 관리
+                                        대학생 전환 인증 상세 페이지
                                     </h3>
                                 <div class="flex">
                                     <div class="w-12">
-                                        <button aria-label="button" class="save-btn">
-                                            저장
+                                        <button aria-label="button" class="save-btn" id="sb" onclick="location.href='/templates/html/admin_sunghyun/admin_main-contents.html'
+                                        onclick=alert('수락완료!')">
+                                            수락
+                                        </button>
+                                        
+                                    </div>
+                                    <div class="w-12">
+                                        <button aria-label="button" class="reject-btn" onclick="location.href='/templates/html/admin_sunghyun/admin_main-contents.html'
+                                        onclick=alert('거부완료!')">
+                                            거부
                                         </button>
                                     </div>                                        
                                 </div>
                             </div>
                         </div>
-                    <div class="col-profile">
-                        <div>
-                            <div class="mb-center">
-                                <strong class="font-6">프로필 사진</strong>
-                            </div>
-                            <span class="font-secondary">관리자를 대표하는 프로필 사진을 등록해주세요.</span>
-                        </div>
-                    </div>
-                    <div class="col-full-40">
-                        <div class="flex">
-                            <div class="profile-image">
-                                <img alt="프로필 이미지" sizes="100vw" 
-                                src=""  class="image"
-                                 style="position: absolute; height: 100%; width: 100%;
-                                inset : 0px; object-fit: cover; object-position: center center; color: transparent;">
-                            </div>
-                            <!------------>
-                            <div class="flex-col">
-                                <div class="mb-14">
-                                    <button aria-label="button" class="upload" type="file" id="sendButton" onclick="clickAdd()">
-                                        이미지 업로드
-                                        <label aria-label="파일 첨부" class="opacity-upload">
-                                            <input type="file" class="real-upload" accept="image/*" required multiple style="display: none;"
-                                            id="inputImage">
-                                        </label> 
-                                    </button>
-                                </div>
-                                    <p class="font-quaternary" style="width: 200px;">
-                                        <span>파일 형식은 jpg 또는 png로,</span>
-                                        <br>
-                                        <span style="width: 330px;">사이즈는 가로 200px 세로 200px 이상으로 올려주세요.</span>
-                               
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <hr class="w-1">
                     <div class="col-40">
                         <div>
                             <div class="mb-center">
                                 <strong class="font-primary">
-                                    커버사진
+                                    학생증 사진
                                 </strong>
                             </div>
                             <span class="font-secondary">
-                                커버사진을 등록해주세요.
+                                학생증 사진을 자세히 볼 수 있습니다.
                             </span>
                         </div>
                     </div>
                     <div class="col-pb">
-                        <div class="p-primary">
+                        <div class="p-primary" style=" width: 700px;" >
                             <div class="relative-center1">
-                                <img art="커버 이미지" sizes="100vw" src=""
+                                <img art="커버 이미지" sizes="1000vw"
                                 class="image2" style="position: absolute;
-                                height: 100%;
+                                /* height: 100%; */
                                 width: 100%;
                                 inset: 0px;
                                 object-fit: cover;
                                 object-position: center center;
                                 color: transparent;
-                                background-image: none;">
+                                background-image: url(/staticfiles/images/univ.png);">
                             </div>
                             <div class="mb-8">
-                                <button aria-label="button" class="relative-content" type="button" id="sendButton2" onclick="clickAdd2()">
-                                    이미지 업로드
-                                    <label aria-label="파일 첨부"
-                                    class="opacity-upload" id="inputlabel">
-                                    <input type="file" class="input-upload" accept="image/*" required multiple style="display: none;"
-                                    id="inputImage2">
-                                    </label>
+                              
+                                <button aria-label="button" class="relative-content" type="button" id="big" onclick="zoomIn()">
+                                화면 확대    
                                 </button>
+                                <button aria-label="button" class="relative-content" type="button" id="small" onclick="zoomOut()">
+                                    화면 축소    
+                                </button>
+                                <button aria-label="button" class="relative-content" type="button" id="reset" onclick="zoomReset()">
+                                    기본 설정    
+                                </button>
+                                    
                             </div>
                         </div>
                     </div>
@@ -285,25 +264,6 @@ admin_competition = 공모전/대회 관리 페이지
             </div>
         </body>
         
-         <script>
-           
-        function clickAdd() {
-            document.querySelector('#inputImage').addEventListener("change", (e) => {
-            let selectFile = e.target.files[0]; 
-            const file = URL.createObjectURL(selectFile);
-            document.querySelector(".image").src = file;
-        });
-    }
-        function clickAdd2() {
-            document.querySelector('#inputImage2').addEventListener("change", (e) => {
-            let selectFile = e.target.files[0]; 
-            const file = URL.createObjectURL(selectFile);
-            document.querySelector(".image2").src = file;
-        });
-    }
-
-
-        </script>
-
+         
         
     </html>

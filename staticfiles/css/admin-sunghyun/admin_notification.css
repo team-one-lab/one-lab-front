@@ -15,7 +15,9 @@ html {
     border: 0 solid #e5e7eb;
 }
 
-
+li:hover{
+    background-color: #f2f0fc;
+}
 
 html {
     display: block;
@@ -147,6 +149,8 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 }
 .relative {
     position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 .relative-active{
     border-radius: 9999px;
@@ -571,6 +575,10 @@ p{
     display: flex;
 }
 .shrink-0{
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
+    display: block;
     flex-shrink: 0;
 }
 [role=button] button{
@@ -587,10 +595,12 @@ p{
     border-radius: 16px;
     align-items: center;
     max-width: 164px;
-    height: 32px;
+    height: 40px;
+    margin-right: 5px;
     display: flex;
     background-color: #fff;
     border-color: rgba(0,0,0,.1);
+    right: 50px;
 }
 
 .over-nowrap{
@@ -603,11 +613,64 @@ p{
     color: #333334;
     fill: #333334;
 }
-.shrink-h{
-    flex-shrink: 0;
-    width: 10px;
-    height: 10px;
-    margin-left: 4px;
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+button:hover {
+    background-color: #ddd;
+}
+.justify-end{
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #fffdfd;
+}.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #d1caca;
+}
+
+.show {
+    display: block;
 }
 
 .mt-24{

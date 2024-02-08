@@ -1,3 +1,29 @@
+<!-------------------------------★참고설명★---------------------------------------
+
+
+admin_main = 메인 관리 페이지
+admin_main3 = 메인관리 보조 페이지(가입이 임시보류인 회원들을 관리하는페이지인데 굳이 있어야되나 싶음)
+
+admin_account = 관리자 계정 관리 페이지
+
+admin_user = 회원 관리 페이지
+admin_user3 = 회원 관리 페이지(보조 페이지(탈퇴회원 볼 수 있게 만든 페이지))
+
+admin_main_content = 고등학생 대학생 전환 회원 관리 페이지(인증수락 , 회원 관리 상세보기 서비스 추가)
+
+admin_notification = 공지사항 관리 페이지 (필터 기능으로 공지사항 상세보기 추가)
+
+admin_message = 문의목록 페이지 (필터기능으로 문의내용 상세보기 추가)
+
+admin_message-detail = 문의 목록 상세보기 페이지 (답변 & 수정 기능 추가)
+
+admin_payment = 결제 내역 관리 페이지 (필터기능으로 결제 내역 상세보기 추가)
+
+admin_competition = 공모전/대회 관리 페이지
+-->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,6 +31,7 @@
             rel="stylesheet"
             href="/staticfiles/css/admin-sunghyun/admin_main-contents.css"
         />
+        <script src="/staticfiles/js/admin-sunghyun/admin_main.js"></script>
         <link rel="preload" href="/staticfiles/css/test_admin_font.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,40 +77,345 @@
                                 <span>ONELAB 관리자 페이지</span>
                             </div>
                         </div>
-                            <!-- <div class="flex-end">
-                                <div class="relative">
-                                    <button class="relative-active">
-                                        <img alt="관리자 프로필 이미지" sizes="10vw" 
-                                        srcset="/_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=500&q=75 500w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=1024&q=75 1024w"
-                                        decoding="async" data-nimg="fill" class="rounded-full" loading="lazy" style="position: absolute;
-                                        height: 100%; width: 100%; inset: 0px; color: transparent;">
-                                    </button>
-                                </div>
-                        </div> -->
-                    </nav>
+                    
                     <!--헤더마무리-->
-                    <header class="h-primary">
-                        <div class="flex-grid">
-                            <div class="flex-primary">
-                                <button class="surface-center" onclick="history.back()">
-                                <svg viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg" class="w-x">
-                                    <path d="M13.833 8a.667.667 0 0 0-.666-.667H5.72L8.973 4.08a.667.667 0 1 0-.943-.943L3.167 8l4.863 4.863a.665.665 0 0 0 .94-.94L5.72 8.667h7.447A.667.667 0 0 0 13.833 8Z"></path>
+                </nav>
+
+
+
+                <!-------------------------------# 메뉴목록 #--------------------------------------------->
+                <div class="flex-hidden">
+                    <nav class="surface-relative">
+                        <div class="pt-disabled">
+                            <div class="profile">
+                                <div class="mb">
+                                    <button aria-label="profile image" class="relative-center"
+                                    type="button" style="width: 68px; height: 68px; outline: none;">
+                                    <img alt="관리자 프로필" sizes="(max-width: 240px) 100vw, 240px" 
+                                            srcset="/staticfiles/images/cancel.png" src="/staticfiles/images/cancel.png"
+                                            decoding="async" data-nimg="fill" class="rounded-full" loading="lazy" style="position: absolute;
+                                            height: 100%; width: 100%; inset: 0px; object-fit: cover; object-position: center center; color: transparent;">
+                                    <div class="absolute-full"></div>
+                                </button>
+                                </div>
+                                <h2 class="admin-name">관리자</h2>
+                                <a traget="_blank" href="/templates/html/admin_sunghyun/admin_account.html">
+                                    <button aria-label="button" class="relative-disabled" type="button">
+                                        <div class="flex-center">관리자 계정관리</div>
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" 
+                                        class="ml" height="16px" width="16px">
+                                        <path d="M11 7a1 1 0 0 0-1-1H4v14h14v-6a1 1 0 1 0-2 0v4H6V8h4a1 1 0 0 0 1-1Z"></path>
+                                        <path d="M19.01 3.829H20v6.656a1 1 0 1 1-2 0V7.244l-5.293 5.293a1 1 0 0 1-1.414-1.415l5.293-5.292h-3.243a1 1 0 1 1 0-2H19.01Z"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
+                    <ul class="px-py">
+                        <li class="fill false hover:surface_light">
+                            <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_main.html"> <!--메인 관리-->
+                                <svg viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-secondary">
+                                <path d="M15.078 3.137H8.6a5.6 5.6 0 0 0-5.6 5.6v6.8a5.6 5.6 0 0 0 5.6 5.6h6.8a5.6 5.6 0 0 0 5.6-5.6V8.944l-1.6 1.6v4.993a4 4 0 0 1-4 4H8.6a4 4 0 0 1-4-4v-6.8a4 4 0 0 1 4-4h4.878l1.6-1.6Z" fill="#333334"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="m20.692 7.116.534-.534a2.567 2.567 0 1 0-3.63-3.63L9.41 11.138l-1.103 3.74a.8.8 0 0 0 .994.993l3.74-1.103 6.52-6.52.005.004 1.13-1.132-.004-.004Zm-2.262 0-6.233 6.233-1.94.572.572-1.94 6.233-6.233 1.368 1.368Zm1.131-1.132-1.367-1.367.533-.534a.967.967 0 0 1 1.368 1.368l-.534.533Z" fill="#333334"></path>
                                 </svg>
-                            </button>
-                            <h1 class="font-lg">콘텐츠 편집</h1>
-                            </div>
-                            <div class="flex-items">
-                                <div class="mr-12"></div>
-                            </div>
-                            <button aria-label="button" class="save-btn" type="button">
-                                저장
-                            </button>
+                                <span class="block-secondary">메인 관리</span>
+                            </a>
+                        </li>
+                        <li class="fill false hover:surface_light">
+                            <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_user.html"> <!--회원 관리-->
+
+                                <svg width="24" height="24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-secondary">
+                                <path d="M8.5 11.7h2a6.057 6.057 0 0 1 1.769.265 6.51 6.51 0 0 0-.888 1.335H8.5a4.4 4.4 0 0 0-4.4 4.4v1c0 .22.18.4.4.4h6.881c.295.59.677 1.129 1.129 1.6H4.5a2 2 0 0 1-2-2v-1a6 6 0 0 1 6-6Z" fill="#333334"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 10.2a3.502 3.502 0 0 1 0-7 3.5 3.5 0 1 1 0 7Zm1.9-3.5a1.9 1.9 0 1 1-3.8 0 1.9 1.9 0 0 1 3.8 0ZM13.945 13.147a.665.665 0 0 1 .306-.74l.833-.49a.665.665 0 0 1 .795.092l.46.437c.167.16.398.231.63.23a.892.892 0 0 0 .626-.24l.451-.445a.665.665 0 0 1 .794-.105l.84.476a.665.665 0 0 1 .32.735l-.15.616a.895.895 0 0 0 .116.66c.118.2.298.36.522.423l.61.168c.287.08.486.339.488.636l.008.965a.665.665 0 0 1-.477.644l-.608.179a.892.892 0 0 0-.513.43.898.898 0 0 0-.105.663l.159.614a.665.665 0 0 1-.307.74l-.832.49a.665.665 0 0 1-.795-.092l-.46-.437a.898.898 0 0 0-.63-.23.893.893 0 0 0-.626.24l-.452.445a.665.665 0 0 1-.794.105l-.84-.476a.665.665 0 0 1-.319-.735l.15-.617a.894.894 0 0 0-.117-.66.894.894 0 0 0-.52-.421l-.612-.17a.665.665 0 0 1-.488-.635l-.008-.965a.665.665 0 0 1 .477-.644l.608-.179a.892.892 0 0 0 .514-.43.898.898 0 0 0 .105-.663l-.159-.614Zm3.115 4.278a1.283 1.283 0 1 0 0-2.566 1.283 1.283 0 0 0 0 2.566Z" fill="#333334"></path>
+                                </svg>
+                                <span class="block-secondary">회원관리</span>
+                            </a>
+                        </li>
+                        <li class="fill false hover:surface_light">
+                            <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_notification.html"> <!--공지사항 관리-->
+
+                                <svg width="24" height="24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-secondary">
+                                <!-- <path d="M8.5 11.7h2a6.057 6.057 0 0 1 1.769.265 6.51 6.51 0 0 0-.888 1.335H8.5a4.4 4.4 0 0 0-4.4 4.4v1c0 .22.18.4.4.4h6.881c.295.59.677 1.129 1.129 1.6H4.5a2 2 0 0 1-2-2v-1a6 6 0 0 1 6-6Z"></path> -->
+                                <path d="M2 5.111C2 4.498 2.45 4 3.007 4h15.099c.556 0 1.006.498 1.006 1.111 0 .614-.45 1.112-1.006 1.112h-15.1C2.452 6.223 2 5.725 2 5.11ZM2 10.668c0-.614.45-1.111 1.007-1.111h10.946a6.53 6.53 0 0 0-2.418 2.223H3.007C2.45 11.78 2 11.282 2 10.668ZM10.503 15.114H3.007C2.45 15.114 2 15.61 2 16.225s.45 1.111 1.007 1.111h7.818a6.496 6.496 0 0 1-.322-2.222Z" fill="#333334"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.945 12.347a.665.665 0 0 1 .306-.74l.833-.49a.665.665 0 0 1 .795.092l.46.437c.167.16.398.231.63.23a.892.892 0 0 0 .626-.24l.451-.445a.665.665 0 0 1 .794-.105l.84.476a.665.665 0 0 1 .32.735l-.15.616a.895.895 0 0 0 .116.66c.118.2.298.36.522.423l.61.169c.287.079.486.338.488.635l.008.965a.665.665 0 0 1-.477.644l-.608.179a.892.892 0 0 0-.513.43.898.898 0 0 0-.105.663l.159.614a.665.665 0 0 1-.307.74l-.832.49a.665.665 0 0 1-.795-.092l-.46-.437a.898.898 0 0 0-.63-.23.893.893 0 0 0-.626.24l-.452.445a.665.665 0 0 1-.794.105l-.84-.476a.665.665 0 0 1-.319-.734l.15-.618a.894.894 0 0 0-.117-.66.894.894 0 0 0-.52-.421l-.612-.17a.665.665 0 0 1-.488-.635l-.008-.965a.665.665 0 0 1 .477-.643l.608-.18a.892.892 0 0 0 .514-.43.898.898 0 0 0 .105-.663l-.159-.614Zm3.115 4.279a1.283 1.283 0 1 0 0-2.567 1.283 1.283 0 0 0 0 2.567Z" fill="#333334"></path>
+                                </svg>
+                                <span class="block-secondary">공지사항 관리</span>
+                            </a>
+                        </li>
+                        <li class="fill false hover:surface_light">
+                            <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_message.html"> <!--문의 목록-->
+
+                                <svg width="24" height="24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-secondary">
+                                <!-- <path d="M8.5 11.7h2a6.057 6.057 0 0 1 1.769.265 6.51 6.51 0 0 0-.888 1.335H8.5a4.4 4.4 0 0 0-4.4 4.4v1c0 .22.18.4.4.4h6.881c.295.59.677 1.129 1.129 1.6H4.5a2 2 0 0 1-2-2v-1a6 6 0 0 1 6-6Z"></path> -->
+                                <path d="M8.892 9.13a.5.5 0 0 0-.862 0l-.576.977a.5.5 0 0 1-.33.236l-1.112.228a.5.5 0 0 0-.266.83l.748.806a.5.5 0 0 1 .13.394l-.12 1.092a.5.5 0 0 0 .697.513l1.06-.462a.5.5 0 0 1 .4 0l1.06.462a.5.5 0 0 0 .697-.513l-.12-1.092a.5.5 0 0 1 .13-.395l.748-.805a.5.5 0 0 0-.267-.83l-1.11-.228a.5.5 0 0 1-.33-.236l-.577-.977ZM18.108 10.3a.7.7 0 0 1-.7.7h-3.732a.7.7 0 1 1 0-1.4h3.732a.7.7 0 0 1 .7.7ZM17.408 14a.7.7 0 1 0 0-1.4h-3.732a.7.7 0 1 0 0 1.4h3.732Z"fill="#333334"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.2 8.4A4.4 4.4 0 0 1 6.6 4h10.7a4.4 4.4 0 0 1 4.4 4.4v6.8a4.4 4.4 0 0 1-4.4 4.4H6.6a4.4 4.4 0 0 1-4.4-4.4V8.4Zm4.4-2.8h10.7a2.8 2.8 0 0 1 2.8 2.8v6.8a2.8 2.8 0 0 1-2.8 2.8H6.6a2.8 2.8 0 0 1-2.8-2.8V8.4a2.8 2.8 0 0 1 2.8-2.8Z" fill="#333334"></path>
+                                </svg>
+                                <span class="block-secondary">문의 목록</span>
+                            </a>
+                        </li>
+                        <li class="fill false hover:surface_light">
+                            <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_payment.html"> <!--결제내역 관리-->
+
+                                <svg width="24" height="24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-secondary">
+                                <!-- <path d="M8.5 11.7h2a6.057 6.057 0 0 1 1.769.265 6.51 6.51 0 0 0-.888 1.335H8.5a4.4 4.4 0 0 0-4.4 4.4v1c0 .22.18.4.4.4h6.881c.295.59.677 1.129 1.129 1.6H4.5a2 2 0 0 1-2-2v-1a6 6 0 0 1 6-6Z"></path> -->
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 4.3H8.7a4.4 4.4 0 0 0-4.4 4.4v6.6a4.4 4.4 0 0 0 4.4 4.4h6.6a4.4 4.4 0 0 0 4.4-4.4V8.7a4.4 4.4 0 0 0-4.4-4.4ZM8.7 2.7a6 6 0 0 0-6 6v6.6a6 6 0 0 0 6 6h6.6a6 6 0 0 0 6-6V8.7a6 6 0 0 0-6-6H8.7Z" fill="#333334"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.874 14.516c.129.434.543.734 1.014.734.474 0 .89-.303 1.016-.74l.724-2.501h.66l.724 2.501c.126.437.542.74 1.015.74.472 0 .886-.3 1.015-.734l.743-2.507h.6c.34 0 .615-.264.615-.59a.603.603 0 0 0-.615-.589h-.252l.274-.925c.135-.454-.221-.905-.714-.905a.737.737 0 0 0-.72.539l-.338 1.291h-1.409l-.3-1.113A.992.992 0 0 0 11.96 9a.99.99 0 0 0-.967.721l-.295 1.11H9.283l-.339-1.293A.738.738 0 0 0 8.224 9c-.494 0-.85.451-.715.906l.274.924h-.168a.603.603 0 0 0-.615.59c0 .325.276.589.615.589h.516l.743 2.507Zm.718-2.507h.793l-.368 1.388h-.06l-.365-1.388Zm4.32 1.365-.368-1.365h.783l-.356 1.365h-.06Z" fill="#333334"></path>
+                                </svg>
+                                <span class="block-secondary">결제내역 관리</span>
+                            </a>
+                        </li>
+                        <li class="fill false hover:surface_light">
+                            <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_competition.html"> <!--결제내역 관리 화면 이동-->
+
+                                <svg width="24" height="24" fill="none" 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                class="h-secondary">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="m21.226 6.582-.534.534.005.004-1.131 1.131-.005-.004-6.52 6.52-3.74 1.104a.8.8 0 0 1-.994-.994l1.103-3.74 8.186-8.185a2.567 2.567 0 1 1 3.63 3.63Zm-9.03 6.766 6.234-6.232-1.368-1.368-6.233 6.233-.572 1.94 1.94-.572Zm5.998-8.731 1.367 1.367.534-.533a.967.967 0 0 0-1.368-1.368l-.533.534ZM8.6 3.137h6.478l-1.6 1.6H8.6a4 4 0 0 0-4 4v6.8a4 4 0 0 0 4 4h4.498a5.46 5.46 0 0 0 .574 1.6H8.6a5.6 5.6 0 0 1-5.6-5.6v-6.8a5.6 5.6 0 0 1 5.6-5.6ZM21 13.6V8.943l-1.6 1.6v2.53a5.461 5.461 0 0 1 1.6.527ZM17.959 14.446a.617.617 0 0 1 .593-.446h.896c.276 0 .518.182.594.446l.161.563c.06.207.211.373.398.48a.828.828 0 0 0 .612.103l.572-.143a.618.618 0 0 1 .684.29l.448.773c.138.238.101.538-.09.735l-.646.665c.012.111.018.224.018.338 0 .215.068.427.218.58l.41.423a.614.614 0 0 1 .09.735l-.448.774a.618.618 0 0 1-.684.289l-.572-.143a.828.828 0 0 0-.612.102.834.834 0 0 0-.398.481l-.161.563a.617.617 0 0 1-.594.446h-.896a.617.617 0 0 1-.593-.446l-.162-.563a.834.834 0 0 0-.397-.48.828.828 0 0 0-.613-.103l-.572.143a.618.618 0 0 1-.684-.29l-.448-.773a.614.614 0 0 1 .09-.735l.411-.423a.825.825 0 0 0 .218-.58.825.825 0 0 0-.218-.58l-.41-.423a.614.614 0 0 1-.091-.735l.448-.774a.618.618 0 0 1 .684-.289l.572.143a.828.828 0 0 0 .613-.102.834.834 0 0 0 .397-.481l.162-.563ZM19 19.744c.78 0 1.41-.63 1.41-1.406 0-.777-.63-1.406-1.41-1.406-.78 0-1.411.63-1.411 1.406 0 .776.632 1.406 1.41 1.406Z" fill="#000"></path></svg>
+                                <!-- <path d="M8.5 11.7h2a6.057 6.057 0 0 1 1.769.265 6.51 6.51 0 0 0-.888 1.335H8.5a4.4 4.4 0 0 0-4.4 4.4v1c0 .22.18.4.4.4h6.881c.295.59.677 1.129 1.129 1.6H4.5a2 2 0 0 1-2-2v-1a6 6 0 0 1 6-6Z"></path> -->
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 4.3H8.7a4.4 4.4 0 0 0-4.4 4.4v6.6a4.4 4.4 0 0 0 4.4 4.4h6.6a4.4 4.4 0 0 0 4.4-4.4V8.7a4.4 4.4 0 0 0-4.4-4.4ZM8.7 2.7a6 6 0 0 0-6 6v6.6a6 6 0 0 0 6 6h6.6a6 6 0 0 0 6-6V8.7a6 6 0 0 0-6-6H8.7Z" fill="#333334"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.874 14.516c.129.434.543.734 1.014.734.474 0 .89-.303 1.016-.74l.724-2.501h.66l.724 2.501c.126.437.542.74 1.015.74.472 0 .886-.3 1.015-.734l.743-2.507h.6c.34 0 .615-.264.615-.59a.603.603 0 0 0-.615-.589h-.252l.274-.925c.135-.454-.221-.905-.714-.905a.737.737 0 0 0-.72.539l-.338 1.291h-1.409l-.3-1.113A.992.992 0 0 0 11.96 9a.99.99 0 0 0-.967.721l-.295 1.11H9.283l-.339-1.293A.738.738 0 0 0 8.224 9c-.494 0-.85.451-.715.906l.274.924h-.168a.603.603 0 0 0-.615.59c0 .325.276.589.615.589h.516l.743 2.507Zm.718-2.507h.793l-.368 1.388h-.06l-.365-1.388Zm4.32 1.365-.368-1.365h.783l-.356 1.365h-.06Z" fill="#333334"></path>
+                                </svg>
+                                <span class="block-secondary">공모전/대회 관리</span>
+                            </a>
+                        </li>
+                        </ul>    
+                    </nav>
+                <!-------------------------------# 기본 구조 완성 #---------------------------------->
+                <div class="basis">
+                    <div class="grid">
+                        <div class="col-full">
+                            <div class="sticky-top-0">
+                                <header class="pt-flex">
+                                    <h1 class="font-primary">인증 관리 페이지</h1>
+
+                                    
+                                    <div>
+                                        <div class="w-240">
+                                           
+                                        </div>
+                                        
+
+                                    </div>
+                                </header>
+                        
+                                <div class="mt-26">
+                                    <ul class="h-20">
+                                        <li class="relative">
+                                           <button aria-label="tab button"
+                                           class="block-content" type="button">
+                                           <div class="flex">
+                                            <p class="font-x1">등록 회원 수락</p>
+                                            <div class="ml-tertiary" style="height: 20px;" onclick="location.href='/templates/html/admin-sunghyun/admin_user.html'">
+                                                <p class="font-sm">0</p>
+                                            </div>
+                                        </div>
+                                    </button> 
+                                    <div class="absolute-inverse"></div>
+                                        </li>
+                                        <li class="relative">
+                                            <button aria-label="tab button" 
+                                            class="block-content1" type="button" onclick="location.href='/templates/html/admin_sunghyun/admin_user3.html'">
+                                            <div>
+                                                
+                                            </div>
+                                        </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!---------------------------------------인증 수락 / 거부-------------------------->
+                                <div class="mt-between">
+                                    <div class="px-40">
+                                        <h3 class="font_primary">
+                                            대학생 학교인증 관리 <br>
+                                            고등학생 대학 전환 인증 관리
+                                        </h3>
+                                           
+                                        </div>
+                                        <div class="relative-16">
+                                            <img alt sizes="100vw" src="/staticfiles/images/cancel.png"
+                                            decoding="async" data-nimg="fill" class="rounded-16" loading="lazy" style="position: absolute;
+                                            height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                        </div>
+                                    </div>
+
+                                <!---------------------------------------인증 수락 / 거부-------------------------------------->
+                                <div class="mt-32">
+                                    <div>
+                                        <span class="font-content">전체</span>
+                                        <span class="ml-4">0
+                                        </span>
+                                    </div>
+                                    <div class="flex-x">
+                                        <div class="shrink-0">
+                                            <div class="relative">
+                                                <button aria-label="filter" class="surface-none" type="button" id="one"
+                                                onclick="toggleDropdown('dropdownOptions1')">
+                                                    <span class="over-nowrap">원랩/멤버십 전체</span>  
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                                    class="shrink-h">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
+                                                    </svg> 
+                                                </button>
+                                                <div class="dropdown-content" id="dropdownOptions1">
+                                                    <a href="#" onclick="selectOption('원랩멤버십 전체', 'one')">원랩 멤버십 전체</a>
+                                                    <a href="#" onclick="selectOption('가입 대기', 'one')">가입 대기</a>
+                                                    <a href="#" onclick="selectOption('해지 신청 중', 'one')">해지 신청 중</a>
+                                                    <a href="#" onclick="selectOption('해지 완료', 'one')">해지 완료</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="shrink-0">
+                                            <div class="relative">
+                                                <button aria-label="filter" class="surface-none" type="button" id="two"
+                                                onclick="toggleDropdown('dropdownOptions2')">
+                                                    <span class="over-nowrap">대학생 회원</span>  
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                                    class="shrink-h">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
+                                                    </svg> 
+                                                </button>
+                                                <div class="dropdown-content" id="dropdownOptions2">
+                                                    <a href="#" onclick="selectOption('대학생 회원', 'two')">대학생 회원</a>
+                                                    <a href="#" onclick="selectOption('대학생(멤버십)','two')">대학생(멤버십)</a>
+                                                    <a href="#" onclick="selectOption('대학생(일반)','two')">대학생(일반)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="shrink-0">
+                                            <div class="relative">
+                                                <button aria-label="filter" class="surface-none" type="button" id="three"
+                                                onclick="toggleDropdown('dropdownOptions3')">
+                                                    <span class="over-nowrap">고등학생 회원</span>  
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                                    class="shrink-h">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
+                                                    </svg> 
+                                                </button>
+                                                <div class="dropdown-content" id="dropdownOptions3">
+                                                    <a href="#" onclick="selectOption('고등학생 회원', 'three')">고등학생 회원</a>
+                                                    <a href="#" onclick="selectOption('고등학생(멤버십)','three')">고등학생(멤버십)</a>
+                                                    <a href="#" onclick="selectOption('고등학생(일반)','three')">고등학생(일반)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    </div>
+                                    <div class="mt-24">
+                                       
+                         
+                        
+                                    <!--회원 테이블-->
+                                    
+                                    <table>
+                                        <tr>
+                                          <th scope="col">ID
+                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    class="wh-60">
+                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                            </svg>
+                                          </td>
+                                          <th scope="col">이름
+                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    class="wh-60">
+                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                            </svg>
+                                          </td>
+                                          <th scope="col">전환 신청일
+                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    class="wh-60">
+                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                            </svg>
+                                          </td>
+                                          <th scope="col">출생연도
+                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    class="wh-60">
+                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                            </svg>
+                                          </th>
+                                          <th scope="col">대학유형
+                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    class="wh-60">
+                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                            </svg>
+                                          </th>
+                                          <th scope="col">학생증 보기 
+                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    class="wh-60">
+                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                            </svg>
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <td><input type="text"placeholder="ID"></td>
+                                          <td><input type="text"placeholder="이름"></td>
+                                          <td><input type="text"placeholder="신청날짜"></td>
+                                          <td><input type="text"placeholder="상태"></td>
+                                          <td><input type="text"placeholder="대학유형"></td>
+                                          <td><button class="auth1" onclick="location.href='/templates/html/admin_sunghyun/admin_main-contents-detail.html'">보기</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"placeholder="ID"></td>
+                                            <td><input type="text"placeholder="이름"></td>
+                                            <td><input type="text"placeholder="신청날짜"></td>
+                                            <td><input type="text"placeholder="상태"></td>
+                                            <td><input type="text"placeholder="대학유형"></td>
+                                            <td><button class="auth1">보기</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><input type="text"placeholder="ID"></td>
+                                            <td><input type="text"placeholder="이름"></td>
+                                            <td><input type="text"placeholder="신청날짜"></td>
+                                            <td><input type="text"placeholder="상태"></td>
+                                            <td><input type="text"placeholder="대학유형"></td>
+                                            <td><button class="auth1">보기</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><input type="text"placeholder="ID"></td>
+                                            <td><input type="text"placeholder="이름"></td>
+                                            <td><input type="text"placeholder="신청날짜"></td>
+                                            <td><input type="text"placeholder="상태"></td>
+                                            <td><input type="text"placeholder="대학유형"></td>
+                                            <td><button class="auth1">보기</button></td>
+                                          </tr>
+                                        
+                                      </table>
+                                      
+                                           
+                                            
+                                            
+                                        <!----------회원 정보가 아예 없을 때 만들어놨던 코드------------------>
+                                        <!-- <svg width="53" height="56" fill="none" xmlns="https://www.w3.org/2000/svg">
+                                            <path d="M27.516 1.62c-6.654-4.436-21.823.626-21.821 10.475 0 5.567 1.956 10.31 3.889 14.205-1.403-.463-2.853-1.072-3.8-2.095-.466-.502-1.151-1.115-1.802-1.35-.993-.358-2.035.135-2.572.923-1.212 1.776-1.071 2.717-.403 4.643 4.364 5.647 8.167 5.53 11.275 5.435.286-.009.566-.017.84-.021.897 3.13 2.706 6.042 4.099 8.965 1.617 5.694 9.313 4.544 12.913 1.697 2.3-1.819 5.187-2.36 8.117-1.475 2.303.419 3.88-.68 5.236-1.624 1.031-.72 1.934-1.348 2.93-1.149 1.19.238 2.511.191 2.718-1.307.521-3.781-8.391-5.535-11.284-7.062 4.98-2.883 7.416-7.67 6.968-10.861-.31-2.2-2.168-2.967-4.076-1.773-2.206 1.38-2.758 3.32-5.42 4.348 1.822-6.821 3.386-14.515-7.807-21.975Z" fill="#9D8DFF"></path>
+                                            <path d="M15.33 17.017c.03.784-.382 1.385-.92 1.344-.54-.042-1.001-.71-1.032-1.494-.03-.784.382-1.385.921-1.343.54.041 1 .71 1.031 1.493ZM19.599 16.868c.03.784-.382 1.385-.921 1.344-.54-.042-1-.71-1.031-1.494-.03-.784.382-1.385.92-1.343.54.041 1.001.71 1.032 1.493Z" fill="#060606"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.457 29.625a.7.7 0 0 1 .755.64c.036.44.242.87.57 1.304.322.428.721.81 1.107 1.178l.027.026a.7.7 0 1 1-.967 1.012l-.05-.048c-.37-.353-.842-.804-1.235-1.325-.414-.55-.782-1.23-.847-2.033a.7.7 0 0 1 .64-.754ZM35.844 23.41a.7.7 0 0 0-.968.205 25.97 25.97 0 0 1-.389.571c-.235.34-.487.704-.68 1.032-.33.559-.626 1.212-.626 1.941a.7.7 0 1 0 1.4 0c0-.354.145-.745.43-1.228.18-.303.368-.573.573-.868.146-.21.3-.431.465-.684a.7.7 0 0 0-.205-.969Z" fill="#000"></path>
+                                            <path d="M17.917 19.838c-.158-.342-2.435-.62-2.138.915 1.156 3.742 2.834.598 2.138-.915Z" fill="#030303"></path>
+                                            <path d="M51.901 52.983c0 1.223-7.433 2.214-16.602 2.214-9.17 0-16.603-.991-16.603-2.214 0-1.222 7.433-2.213 16.603-2.213 9.17 0 16.602.99 16.602 2.213Z" fill="#E3E3E3"></path>
+
+                                        </svg> -->
+                                        <!-- <p class="mt-quaternary">멤버가 없습니다.</p> -->
+                                    </div>                 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </header>
+                </div>
             </div>
-            <main class="mt-36"></main>
         </div>
     </body>
 </html>
