@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'wadizicon';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./wadizicon/wadizicon.woff2') format('woff2'),
+    url('./wadizicon/wadizicon.woff') format('woff'),
+    url('./wadizicon/wadizicon.eot?#iefix') format('embedded-opentype'),
+    url('./wadizicon/wadizicon.ttf') format('truetype'),
+    url('./wadizicon/wadizicon.svg#wadizicon') format('svg');
+}
