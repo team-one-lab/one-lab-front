@@ -1,22 +1,21 @@
-/* <main role="main"></main> */
-
-
 /* 글꼴 설정 */
 Roboto.Light300 {
     font-family: 'Roboto', sans-serif;
 }
+
+/* <main role="main"></main> */
 
 
 [role="main"] {
     flex-grow: 1;
 }
 
-/* @media (min-width: 360px){ 
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-} */
+@media (min-width: 360px)
+{main {
+    display: flex;
+    flex-direction: column;
+}}
+
 
 main {
     max-width: 100%;
@@ -70,21 +69,21 @@ link {
 /* <div class="container flex-1 py-6" id="page-container"></div> */
 
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.py-6 {
-        padding-bottom: 1rem;
-        padding-top: 6rem;
-}} */
+    padding-bottom: 1rem;
+    padding-top: 6rem;
+}}
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.flex-1 {
-        flex: 1;
-}} */
+    flex: 1;
+}}
 
-/* @media (min-width: 1200px)
+@media (min-width: 1200px)
 {.container {
-        max-width: 1140px;
-}} */
+    max-width: 1140px;
+}}
 
 .container {
     margin-right: auto;
@@ -101,10 +100,10 @@ div {
 /* <div class="row align-items-center"></div> */
 
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.align-items-center {
-        align-items: center;
-}} */
+    align-items: center;
+}}
 
 .row {
     display: flex;
@@ -116,15 +115,15 @@ div {
 /* <nav class="col font-size-md font-medium"></nav> */
 
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.font-medium {
-        font-weight: 500;
-}} */
+    font-weight: 500;
+}}
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.font-size-md {
-        font-size: 0.9375rem;
-}} */
+    font-size: 0.9375rem;
+}}
 
 .col {
     flex-basis: 0;
@@ -146,14 +145,14 @@ nav {
 /* <ol class="breadcrumbs"></ol> */
 
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.breadcrumbs {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     list-style: none;
     margin-bottom: 1rem;
-}} */
+}}
 
 ol {
     padding: 0 0 0 1.5rem;
@@ -165,24 +164,24 @@ ol {
     padding-inline-start: 40px;
 }
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.font-medium {
     font-weight: 500;
-}} */
+}}
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.font-size-md {
     font-size: 0.9375rem;
-}} */
+}}
 
 
 /* <li title="도움말센터"></li> */
 
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.breadcrumbs li {
     color: #4A5568;
-}} */
+}}
 
 li {
     display: list-item;
@@ -204,22 +203,22 @@ a {
 /* <li title="문의등록"></li> */
 
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.breadcrumbs > * + * {
     padding-left: 0.5rem;
-}} */
+}}
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.breadcrumbs li + li::before {
     color: #4A5568;
-}} */
+}}
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.breadcrumbs > * + *::before {
     display: inline-block;
     padding-right: 0.5rem;
     content: "/";
-}} */
+}}
 
 *::before {
     box-sizing: border-box;
@@ -233,19 +232,19 @@ a {
 /* <div class="lg:col-9"></div> */
 
 
-/* @media (min-width: 360px) {
+@media (min-width: 360px) {
     .lg\:col-9 {
         flex: 0 0 75%;
         max-width: 75%;
     }
-} */
+}
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
     .lg\:col-9 {
         flex: 0 0 75%;
         max-width: 75%;
     }
-} */
+}
 
 .lg\:col-9 {
     position: relative;
@@ -260,10 +259,10 @@ a {
 /* <header class="mb-5"></header> */
 
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.mb-5 {
     margin-bottom: 1.5rem;
-}} */
+}}
 
 header {
     display: block;
@@ -326,12 +325,12 @@ h2 {
 /* <ul class="list-unstyled row row-sm my-6 row-ds"></ul> */
 
 
-/* @media (min-width: 360px) {
+@media (min-width: 360px) {
 .my-6 {
     margin-bottom: 2rem;
     margin-top: 2rem;
     font-family: 'Pretendard';
-}} */
+}}
 
 .row-ds {
     margin-right: -7rem;
@@ -368,31 +367,31 @@ ul {
     box-sizing: content-box;
 }
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.mb-4 {
     margin-bottom: 1rem;
     font-weight: bold;
     font-family: 'Pretendard';
-}} */
+}}
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.text-center {
     text-align: center;
-}} */
+}}
 
-/* @media (min-width: 360px) {
+@media (min-width: 360px) {
     .lg\:col-4 {
         flex: 0 0 20.3333333333%;
         max-width: 20.3333333333%;
     }
-} */
+}
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
     .lg\:col-4 {
         flex: 0 0 20.3333333333%;
         max-width: 20.3333333333%;
     }
-} */
+}
 
 .md\:col-6 {
     position: relative;
@@ -408,40 +407,31 @@ ul {
     min-width: 0;
 }
 
-/* li {
-     display: list-item;
-} */
-
-/* .list-unstyled {
-     list-style: none;
-} */
-
-
 
 /* <a class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary" href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=22181518326809"></a> */
 
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.h-full {
     height: 100%;
-}} */
+}}
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.p-5 {
     padding: 1.5rem;
-}} */
+}}
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.border-primary {
     border-color: rgba(5, 5, 6, 1);
-}} */
+}}
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.text-primary {
     color: rgba(5, 5, 6, 1);
-}} */
+}}
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.card {
     position: relative;
     display: flex;
@@ -451,7 +441,7 @@ ul {
     background-clip: border-box;
     border: 1px solid #e2e8f0;
     border-radius: 10px;
-}} */
+}}
 
 .link-plain {
     text-decoration: none;
@@ -470,15 +460,15 @@ a {
 /* <h4 class="yds-btnsize m-0 font-medium text-inherit">와디즈 문의하기</h4> */
 
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.m-0 {
     margin: 0;
-}} */
+}}
 
-/* @media (min-width: 360px)
+@media (min-width: 360px)
 {.text-inherit {
     color: inherit;
-}} */
+}}
 
 .yds-btnsize {
     font-size: 1rem;
@@ -607,25 +597,23 @@ img {
     cursor: pointer;
 }
 
-/* @media (min-width: 360px) {
-    .floating-button {
-        width: 60px !important;
-        height: 60px !important;
-    }
-} */
+@media (min-width: 360px)
+{.floating-button {
+    width: 60px !important;
+    height: 60px !important;
+}
+}
 
-/* @media screen and (min-width: 1097px) {
-    .floating-button {
-        width: 60px !important;
-        height: 60px !important;
-    }
-} */
+@media screen and (min-width: 1097px)
+{.floating-button {
+    width: 60px !important;
+    height: 60px !important;
+}}
 
 button {
     text-transform: none;
     overflow: visible;
     touch-action: manipulation;
-    -webkit-appearance: button;
     font-family: inherit;
     font-size: 100%;
     margin: 0;
