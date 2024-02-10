@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="/staticfiles/css/share-soyoung/main-page-header.css">
+    <link rel="stylesheet" href="/staticfiles/css/review/review-write.css">
+    <title>후기 등록</title>
+</head>
+    <body>
+        <!--헤더-->
+        <div class="web-header">
+            <div class="web-header-large">
+                <header class="header-wrapper">
+                    <div class="header-container">
+                        <h1 class="wadiz-logo">
+                            <a href="/web/main"
+                                ><span class="label">와디즈</span
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="85" height="25" viewBox="0 0 85 25">
+                                    <path
+                                        fill="#1D2129"
+                                        fill-rule="nonzero"
+                                        d="M58.49 2.23h2.11v21.29H59a1.73 1.73 0 0 1-1.62-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29 7.65 7.65 0 0 1 12.79-5.07V4.23a2 2 0 0 1 2-2zm-6.3 18.62a4.36 4.36 0 0 0 4.16-4.52 4.19 4.19 0 1 0-8.35 0 4.36 4.36 0 0 0 4.19 4.52zM42 23.52h-1.52a1.73 1.73 0 0 1-1.64-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29A7.65 7.65 0 0 1 38 10.72a2 2 0 0 1 1.9-1.79H42v14.59zm-8.41-2.67h.02a4.35 4.35 0 0 0 4.15-4.52 4.35 4.35 0 0 0-4.17-4.51 4.35 4.35 0 0 0-4.17 4.51 4.36 4.36 0 0 0 4.17 4.52zM83.47 8.94v2.11l-7.07 9.06h7.06v3.47h-13v-2.1l7.08-9.07h-6.62v-1.47a2 2 0 0 1 2-2h10.55zM65.86 7.3a2.48 2.48 0 1 1 0-4.96 2.48 2.48 0 0 1 0 4.96zM21.21 8.94h4.14l-4.86 14.59h-4.15l-3.21-9.36-3.21 9.36H5.77L.92 8.94h4.13L8 18l2.5-7.74a2 2 0 0 1 1.86-1.34h2.9l3 9.08 2.95-9.06zm42.65 14.59l-.04-12.59a2 2 0 0 1 2-2h2.11v14.59h-4.07z"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </h1>
+                        <ul class="GNBDesktop_container">
+                            <!--오픈예정-->
+                            <li class="GNBDesktop_item">
+                                <a class="GNBDesktop_link" href="/web/wreward/comingsoon"><span>오픈예정</span></a>
+                            </li>
+                            <!--펀딩-->
+                            <li class="GNBDesktop_item">
+                                <a class="GNBDesktop_link" href="/web/wreward/main"><span>펀딩 +</span></a>
+                            </li>
+                            <!--프리오더-->
+                            <li class="GNBDesktop_item">
+                                <a class="GNBDesktop_link" href="/web/preorder/main"><span>프리오더</span></a>
+                            </li>
+                            <!--스토어-->
+                            <li class="GNBDesktop_item">
+                                <a class="GNBDesktop_link" href="/web/store/main"><span>스토어</span></a>
+                            </li>
+                            <!--더보기-->
+                            <li class="GNBDesktop_item">
+                                <a class="GNBDesktop_link" href="/web/store/main"><span>더보기</span></a>
+                            </li>
+                        </ul>
+                        <div class="web-header-utils">
+                            <!--검색창-->
+                            <div class="DesktopSearchApp_container">
+                                <form>
+                                    <div class="SearchController_container" tabindex="-1">
+                                        <div class="SearchTag_emptyTag"></div>
+                                        <div class="SearchController_keyword">
+                                            <input
+                                                type="search"
+                                                placeholder="새로운 일상이 필요하신가요?"
+                                                aria-label="검색"
+                                                value=""
+                                            />
+                                        </div>
+                                        <button type="submit" class="SearchController_searchIcon" aria-label="검색">
+                                            <svg
+                                                viewBox="0 0 40 40"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="withIcon_icon"
+                                                aria-hidden="true"
+                                                style="width: 24px; height: 24px;"
+                                            >
+                                                <path fill="none" d="M0 0h40v40H0z"></path>
+                                                <path
+                                                    d="M29.2 27.91a14.38 14.38 0 1 0-1.42 1.4l7.16 7.15.07.08 1.41-1.41zM18.45 6a12.36 12.36 0 0 1 8.35 3.23 12.24 12.24 0 0 1 4 8.59A12.39 12.39 0 1 1 17.88 6z"
+                                                ></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                                <div class="DesktopSearchApp_conditionContainer" style="display: none;">
+                                    <div class="DesktopSearchApp_footer">
+                                        <button type="button">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="HeaderDesktop_user">
+                                <div class="User_container">
+                                    <button type="button" class="User_btnSign">로그인</button
+                                    ><button data-event="iam.signup" class="User_btnSign">회원가입</button>
+                                </div>
+                            </div>
+                            <div class="web-header-funding-open funding-open">
+                                <button
+                                    aria-label="프로젝트 만들기"
+                                    class="Button_button Button_primary Button_contained Button_md funding-open-button"
+                                    type="button"
+                                >
+                                    <span><span class="Button_children">프로젝트 만들기</span></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="PreviewOverlay_container">
+                            <svg
+                                viewBox="0 0 40 40"
+                                focusable="false"
+                                role="presentation"
+                                class="withIcon_icon"
+                                aria-hidden="true"
+                                style="width: 24px; height: 24px;"
+                            >
+                                <path fill="none" d="M0 0h40v40H0z"></path>
+                                <path d="M38 6.06H2V31h11.8v3.88h12.4V31H38zm-2.12 22.85H4.12V8.14h31.76z"></path>
+                            </svg>
+                            <p class="PreviewOverlay_title">미리보기 모드</p>
+                            <p class="PreviewOverlay_description">저장한 내용을 미리 볼 수 있어요.</p>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <!-- 헤더 끝 -->
+        <main class="review-main">
+            <div class="container" id="page-container">
+                <div class="route-wrapper">
+                    <nav class="route-wrap-nav">
+                        <ol class="review-route-ol">
+                            <li title="후기 등록">후기 등록</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="review-form-container">
+                    <div class="review-form-wrapper">
+                        <header class="review-title">
+                            <h1>후기 등록</h1>
+                        </header>
+                        <div class="form-inner">
+                            <form action="" id="new-review-request" class="review-request-form">
+                                <input type="hidden" name="utf-8" autocomplete="off">
+                                <div class="form-field-select-product" style="display: block;">
+                                    <label for="registration-review" class="select-product-text">후기를 작성할 상품을 선택해 주세요:)</label>
+                                    <!-- <a href="" class="select-product-box" aria-expanded="false" style="max-width: 100%;">상품명 1</a> -->
+                                    <div class="select-product-panel" style="display: none; width: 97%;">
+                                        <ul style="transition: left 0.2s ease 0s;">
+                                            <li aria-selected="false">-</li>
+                                            <li aria-selected="true">상품명1</li>
+                                            <li aria-selected="false">상품명2</li>
+                                            <li aria-selected="false">상품명3</li>
+                                        </ul>
+                                    </div>
+                                    <a class="select-product-box" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="_dvqa5i1it" aria-label="후기를 작성할 상품을 선택해 주세요:)" style="max-width: 100%;">상품명 1</a>
+                                    
+                                    <select name="registration-review" id="registration-review" autofocus="autofocus" style="display: none;" aria-label="후기를 작성할 상품을 선택해 주세요:)">
+                                        <option value="" selected="selected">상품명 1</option>
+                                        <option value="">상품명 2</option>
+                                        <option value="">상품명 3</option>
+                                        <option value="">상품명 4</option>
+                                        <option value="">상품명 5</option>
+                                    </select>
+                                </div>
+                                <div class="form-field-review-score">
+                                    <label for="" class="select-review-score">상품 별점</label>
+                                    <div class="review-score-wrap">
+                                        <div class="review-score-box">
+                                            <div class ="star-rating">
+                                                <span class="star on" value="1"> </span>
+                                                <span class="star" value="2"> </span>
+                                                <span class="star" value="3"> </span>
+                                                <span class="star" value="4"> </span>
+                                                <span class="star" value="5"> </span>
+                                              </div>
+                                            <div class="choice-text none">선택해주세요</div>
+                                            <div class="choice-text one" style="display: none;">1점(별로에요)</div>
+                                            <div class="choice-text two" style="display: none;">2점(그저 그래요)</div>
+                                            <div class="choice-text three" style="display: none;">3점(보통이에요)</div>
+                                            <div class="choice-text four" style="display: none;">4점(괜찮아요)</div>
+                                            <div class="choice-text five" style="display: none;">5점(좋아요)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-field-review-text">
+                                    <label for="" class="write-reivew-text">후기를 작성해 주세요</label>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form-field-file">
+                                    <label for="" class="file-upload">첨부 파일
+                                        <span class="optional">(선택 사항)</span>
+                                    </label>
+                                    <div class="upload-dropzone">
+                                        <input type="file" multiple="true" name="" id="file-input">
+                                        <span>
+                                            <a href="">파일 추가</a>
+                                            또는 파일을 여기로 드래그
+                                        </span>
+                                    </div>
+                                    <div class="upload-error" style="display: none;">
+                                        <span>이미지 파일만 업로드 가능합니다.</span>
+                                    </div>
+                                    <ul class="upload-pool">
+                                        <li class="upload-item" id="file-list">
+                                            <button class="cancel-upload" style="display: none;">X</button>
+                                            <img id="thumbnail" src="#" alt="Thumbnail" style="display: none;" width="100px">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <footer>
+                                    <input type="submit" name="commit" value="제출">
+                                </footer>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="/staticfiles/js/review/review-write.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
