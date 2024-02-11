@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-top">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             rel="stylesheet"
-            href="/staticfiles/css/notification-sunghyun/notify_main.css"
+            href="/staticfiles/css/notification-sunghyun/notify_detail.css"
         />
         <script src="/staticfiles/js/notify-sunghyun/notify.js"></script>
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
         <link rel="stylesheet" href="/staticfiles/css/font/font.css">
         <link rel="stylesheet" href="/staticfiles/css/font/font-awesome-css.min.css">
-        <title>와디즈 공지사항</title>
+        <title>공지사항 상세보기</title>
     </head>
 
     <body>
@@ -204,231 +204,482 @@
             <input type="hidden" id="returnURL" name="returnURL">
         </form>
         <input type="hidden" id="sessionLoginCheck" value="false">
-        <main class="board-ui">
-            <div class="ui-header">
-                <h2 class="title">공지 사항</h2>
-            </div>
-            <div aria-hidden="true"></div>
-            <div class="ui-tabs">
-                <ul>
-                    <li class="active">
-                        <a href="#">전체</a>
-                    </li>
-                    <li>
-                        <a href="#1">공지</a>
-                    </li>
-                    <li>
-                        <a href="#2">이벤트</a>
-                    </li>
-                    <li>
-                        <a href="#3">보도자료</a>
-                    </li>
-                    
-                </ul>
-
-            </div>
-            <div class="board-main">
-                <ul>
-                    <li>
-                        <a class="article" href="#">
-                            <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
-                            </em>
-                            <em class="notice">
-                                중요
-                            </em>
-                            <em class="notice">
-                                BEST
-                            </em>
-                            <div class="info">
-                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0201/20240201202145306_0.png/wadiz/resize/400/format/jpg/quality/80)">
-                                </div>
-                                <h3 class="title">[원랩(OneLab)] '원랩 서비스 공식 오픈서비스  'Grand Open Event! (02/01 ~)
-
-                                </h3>
-                                <span class="author">원랩</span>
-                                <span class="created-at">2024.02.01</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="article" href="#">
-                            <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
-                            </em>
-                            <em class="notice">
-                                중요
-                            </em>
-                            <em class="notice">
-                                BEST
-                            </em>
-                            <div class="info">
-                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0201/20240201134537164_0.jpg/wadiz/resize/400/format/jpg/quality/80)">
-                                </div>
-                                <h3 class="title">[원랩(OneLab)] '원랩 서비스 공식 오픈서비스  'Grand Open Event! (02/01 ~)
-
-                                </h3>
-                                <span class="author">원랩</span>
-                                <span class="created-at">2024.02.01</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="article" href="#">
-                            <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
-                            </em>
-                            <em class="notice">
-                                중요
-                            </em>
-                            <em class="notice">
-                                BEST
-                            </em>
-                            <div class="info">
-                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0130/20240130133719756_0.png/wadiz/resize/400/format/jpg/quality/80)">
-                                </div>
-                                <h3 class="title">[원랩(OneLab)] '원랩 서비스 공식 오픈서비스  'Grand Open Event! (02/01 ~)
-
-                                </h3>
-                                <span class="author">원랩</span>
-                                <span class="created-at">2024.02.01</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="article" href="#">
-                            <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
-                            </em>
-                            <em class="notice">
-                                중요
-                            </em>
-                            <em class="notice">
-                                BEST
-                            </em>
-                            <div class="info">
-                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0117/20240117091042069_0.png/wadiz/resize/400/format/jpg/quality/80)">
-                                </div>
-                                <h3 class="title">[원랩(OneLab)] '원랩 서비스 공식 오픈서비스  'Grand Open Event! (02/01 ~)
-
-                                </h3>
-                                <span class="author">원랩</span>
-                                <span class="created-at">2024.02.01</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="article" href="#">
-                            <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
-                            </em>
-                            <em class="notice">
-                                중요
-                            </em>
-                            <em class="notice">
-                                BEST
-                            </em>
-                            <div class="info">
-                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0110/20240110111412343_0.png/wadiz/resize/400/format/jpg/quality/80)">
-                                </div>
-                                <h3 class="title">[원랩(OneLab)] '원랩 서비스 공식 오픈서비스  'Grand Open Event! (02/01 ~)
-
-                                </h3>
-                                <span class="author">원랩</span>
-                                <span class="created-at">2024.02.01</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="article" href="#">
-                            <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
-                            </em>
-                            <em class="notice">
-                                중요
-                            </em>
-                            <em class="notice">
-                                BEST
-                            </em>
-                            <div class="info">
-                                <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0205/20240205092005471_0.jpg/wadiz/resize/400/format/jpg/quality/80)">
-                                </div>
-                                <h3 class="title">[공간와디즈] '와디즈 플래그십 스토어 성수' Grand Open Event! (~2/14)
-
-                                </h3>
-                                <span class="author">원랩</span>
-                                <span class="created-at">2024.02.01</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!------------------>
-            <div class="board-footer">
-                <div class="pagination">
-                    <!--모바일 버튼-->
-                    <button class="prev-page mobile-only" onclick="movePage(0)" disabled>
-                        <span class="text-hidden">이전 목록</span>
-                    </button>
-                    <div class="page">
-                        <!--모바일용 페이지 리스트-->
-                        <div class="mobile-only">
-                            <span class="current-count">1</span>
-                            /
-                             <span class="total-count">
-                                <span>122</span>
-                                페이지
+       <!-----------------------헤더 작업--------------------------------------->
+        <div id="newContainer">
+            <div id="wBoardWrap">
+                <div class="wboard-wrap">
+                    <div class="wboard-content">
+                        <div class="article-top">
+                            <p class="title">[이벤트] 설날맞이 특별한 혜택이 서포터님을 기다려요! | 설날맞이 혜택런 (2/1~2/12)</p>
+                        <!------------------>
+                        <div class="info">
+                            <em class="user-img" style="background-image:url(https://static.wadiz.kr/assets/icon/apple-touch-icon.png)"></em>
+                            <span class="user-info">원랩
+                                <br>
+                                2024.02-09
                             </span>
                         </div>
-                         <div class="desktop-only">
-                            
-                            <button class="prev-page" onclick="movePage(0)" disabled>
-                                <img src="/staticfiles/css/admin-sunghyun/images/button2.png">
-                            <span class=text-hidden>이전 목록</span>
-                        </button>
-                        
-                            <a  href="#" onclick="movePage(1)">1</a>
-                            <a  href="#" onclick="movePage(2)">2</a>
-                            <a  href="#" onclick="movePage(3)">3</a>
-                            <a  href="#" onclick="movePage(4)">4</a>
-                            <a  href="#" onclick="movePage(5)">5</a>
-                            <a  href="#" onclick="movePage(6)">6</a>
-                            <!-- 데스크탑용 버튼 -->
-                            <button class="next-page icon-chevron-right" onclick="movePage(7)">
-                                <img src="/staticfiles/css/admin-sunghyun/images/button1.png">
-                                <span class="text-hidden">다음 목록</span>
-                              </button>
                         </div>
-                    </div>
-                    <button class="next-page mobile-only" onclick="movePage(2)">
-                    <span class="text-hidden">다음 목록</span>
-                </button>
+                        <div class="inner-contents">
+                            <table style="width: 100%;padding:0 !important;border:none;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 100.0000%;padding:0 !important;border:none;background-color:#FFE2C0;">
+                                            <img src="https://cdn.wadiz.kr/ft/images/green001/2024/0130/20240130171446798_45.gif" class="fr-fic fr-dib">
+                                            <img src="https://cdn.wadiz.kr/ft/images/green001/2024/0208/20240208144110319_55.png/wadiz/format/jpg/quality/80" class="fr-fic fr-dib">
+                                            <img src="https://cdn.wadiz.kr/ft/images/green001/2024/0208/20240208144110564_55.png/wadiz/format/jpg/quality/80" class="fr-fil fr-dib">
+                                            <div data-component-name="downloadable-coupons"
+                                            data-max-width="90%" data-templatate-numbers="3797,3798,3799,3800,3801,3802,3803,3804">
+                                            <div class="Downloadable-jq" style="max-width: 90%;">
+                                            <div class="CouponItem-jy">
+                                                <div>
+                                                    <p class="CouponItem-UB">
+                                                        5000
+                                                        원 할인
+                                                    </p>
+                                                    <p class="CouponItem_Bx">
+                                                        펀딩 설날맞이 혜택런 쿠폰
+                                                    </p>
+                                                    <ul class="CouponItem-0F">
+                                                        <li>
+                                                            발급기간: 2024.02.09 23시 59분까지
+                                                        </li>
+                                                        <li>
+                                                            유효기간 : 20204.02.09 23시 59분까지
+                                                        </li>
+                                                        <li>
+                                                            50000원 이상 충전 시 사용 가능
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="DownloadButton-p">
+                                                    <button type="button" class="DownloadButton-80">
+                                                        <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__5xc48 DownloadButton_icon__1PUfB" aria-hidden="true">
+                                                            <path d="M40.8 43.2H7.2v-2.4h33.6v2.4zm-5.28-22.08L25.2 31.44V4.8h-2.4v26.64L12.48 21.12 10.8 22.8 24 36l13.2-13.2-1.68-1.68z">
+
+                                                            </path>
+                                                        </svg>
+                                                    </button>
+                                                    <p class="DownloadButton-4I">
+                                                        다운로드
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="CouponItem-jy">
+                                                <div>
+                                                    <p class="CouponItem-UB">
+                                                        5000
+                                                        원 할인
+                                                    </p>
+                                                    <p class="CouponItem_Bx">
+                                                        펀딩 설날맞이 혜택런 쿠폰
+                                                    </p>
+                                                    <ul class="CouponItem-0F">
+                                                        <li>
+                                                            발급기간: 2024.02.09 23시 59분까지
+                                                        </li>
+                                                        <li>
+                                                            유효기간 : 20204.02.09 23시 59분까지
+                                                        </li>
+                                                        <li>
+                                                            50000원 이상 충전 시 사용 가능
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="DownloadButton-p">
+                                                    <button type="button" class="DownloadButton-80">
+                                                        <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__5xc48 DownloadButton_icon__1PUfB" aria-hidden="true">
+                                                            <path d="M40.8 43.2H7.2v-2.4h33.6v2.4zm-5.28-22.08L25.2 31.44V4.8h-2.4v26.64L12.48 21.12 10.8 22.8 24 36l13.2-13.2-1.68-1.68z">
+
+                                                            </path>
+                                                        </svg>
+                                                    </button>
+                                                    <p class="DownloadButton-4I">
+                                                        다운로드
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://cdn.wadiz.kr/ft/images/green001/2024/0208/20240208144111602_55.png/wadiz/format/jpg/quality/80" class="fr-fil fr-dib">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                <img src="https://cdn.wadiz.kr/ft/images/green001/2024/0130/20240130171448430_45.jpg/wadiz/format/jpg/quality/80" class="fr-fic fr-dib">
+                            </p>
+                            <div>
+                                <div data-active-color="#FF9477" data-bg-color="#1D2129" data-component-name="wadiz-tabs" data-deactive-color="#A1A1A1"
+                                style="position: sticky; top: 0px; z-index: 10;">
+                                <div class="Tabs-bP">
+                                    <div class="TableLayout-hv" style="grid-template-columns: repeat(2, calc(50% + 0px));
+                                    gap:0px; background-color: rgb(29,33,41);">
+                                    <button role="tab" type="button" class="Tabs-TE">
+                                        <div class="Tabs-ct" style="color: rgb(255,148,119);">02.09(금)</div>
+                                    </button>
+                                    <button role="tab" type="button" class="Tabs-TE">
+                                        <div class="Tabs-ct" style="color: rgb(255,148,119);">02.10(토)</div>
+                                    </button>
+                                    <button role="tab" type="button" class="Tabs-TE">
+                                        <div class="Tabs-ct" style="color: rgb(255,148,119);">02.11(일)</div>
+                                    </button>
+                                    <button role="tab" type="button" class="Tabs-TE">
+                                        <div class="Tabs-ct" style="color: rgb(255,148,119);">02.12(월)</div>
+                                    </button>
+                                </div>
+                                <div role="presentation" id="scroll1"class="Tabs-JT" style="background-color: rgb(255,148,119);
+                                width: 50%; height: 4px; top: 96px; transform: translateX(0%); transition: none 0s ease 0s;"></div>
+                            </div>
+                        </div>
+                        <p id="section1" style="margin: 0;">
+                        <br>
+                    </p>
+                    <div data-collection-keyword="240209cs, 240209" data-domain="comingsoon, funding" data-environment="live" data-horizontal-spacing="15" data-image-height-ratio="70" data-limit="10" data-order="recent" data-vertical-spacing="30" style="width: 90%; margin: 0 auto;">
+                        <div>
+                            <div class="TableLayout-hv" style="grid-template-columns: repeat(2, calc(50% - 7.5px)); gap: 30px 15px;">
+                                <a class="CommonCard-G2" href="https://www.wadiz.kr/web/campaign/detail/266158">
+                                    <div class="CommonCard-q" style="padding-top: 70%;">
+                                        <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/02/06/0f070631-81dc-4b43-a91e-7ddd44801f84.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                    <div class="CommonCard-Li">
+                                        <div class="CommonCard-m">닭 한마리에 1%! 한 팩으로 간편하게 즐기는 닭 특수부위 미식요리 
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="CommonCard-G2" href="https://www.wadiz.kr/web/campaign/detail/266678">
+                                    <div class="CommonCard-q" style="padding-top: 70%;">
+                                        <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/02/06/18f957f5-8adb-4ade-b09d-c49cfe509957.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                    <div class="CommonCard-Li"><div class="CommonCard-m">[앵콜/평생소장 피어싱] '피어난' 꽃의 가장 아름다운 순간을 담다.
+
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="CommonCard-G2" href="https://www.wadiz.kr/web/campaign/detail/268770"><div class="CommonCard-q" style="padding-top: 70%;">
+                                <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/18/004af996-e642-4e90-b18a-ca9d9edda5d2.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                                </div>
+                            </div>
+                            <div class="CommonCard-Li">
+                                <div class="CommonCard-m">[못생겨서 오히려 좋아!] 세상에 없던 업사이클링 못난이 사과 핸드워시!
+
+                                </div>
+                            </div>
+                        </a>
+                        <a class="CommonCard-G2" href="https://www.wadiz.kr/web/campaign/detail/268923"><div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/22/a75bd9b0-c3a8-4d3d-8dc4-4a498d879927.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">단 30초면 프리미엄 과일 주스가 뚝딱! 누적 판매 100만팩 아이스키트
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="https://www.wadiz.kr/web/campaign/detail/229713">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2023/11/24/e47e58fb-6f69-4944-9b3c-42d86f648b7e.jpg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;"></div></div><div class="CommonCard_contentContainer__3TYLi">
+                                <div class="CommonCard-m">[한정수량] 블럭형 캣타워로 고양이 건강까지 챙기는 방법
+
+                                </div>
+                            </div>
+                        </a>
+                        <a class="CommonCard-G2" href="https://www.wadiz.kr/web/campaign/detail/266208">
+                            <div class="CommonCard-q" style="padding-top: 70%;">
+                                <div aria-hidden="true" class="CardThumbnail-kD CardThumnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/15/fb964efc-ebf5-466f-9ff7-03714e0ecc9d.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                                </div>
+                            </div>
+                            <div class="CommonCard-Li">
+                                <div class="CommonCard-m">내 마음대로 만드는 나만의 맞춤 피팅룸
+
+                                </div>
+                            </div>
+                        </a>
+                        <a class="CommonCard-G2" href="https://www.wadiz.kr/web/campaign/detail/262990">
+                            <div class="CommonCard-q" style="padding-top: 70%;">
+                                <div aria-hidden="true" class="CardThumbnail-kD CardThumnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/02/06/4d5da0f2-acdf-4d04-b641-0d93a7b96b5d.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                                </div>
+                            </div>
+                            <div class="CommonCard-Li"><div class="CommonCard-m">유럽에서 매달 8000개 이상 팔리는 기능성 의자ㅣ아르코에어 스탠딩 스툴
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="https://www.wadiz.kr/web/campaign/detail/265158">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/09/7db3ac3b-9b10-452b-8cb2-815b7c9d4adb.png/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">[ 1억매출 옥키 ] 없어서 못먹는 바로 그 한끼 l 고구마 한끼
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="https://www.wadiz.kr/web/campaign/detail/266695">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/02/06/1ca7a869-142a-4daa-a82d-8316ccc92825.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">[1.1억 혈액순환 특허패치] 붙이기만하면 근육통 끝, 작지만 막강하죠
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="https://www.wadiz.kr/web/campaign/detail/268293">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/17/bbd2ebfe-fae7-4237-9dce-e3cbb51cf3cd.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">단백질21.9g에 110kcal? 2분이면 육즙이 팡! 뒷다리살 마늘보쌈
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="search">
-                <form method="post" id="news-search">
-                    <div class="filter-container">
-                        <select id="searchSelectInBoard" class="filter" name>
-                            <option value="tc">제목 + 내용</option>
-                            <option value="t">제목</option>
-                            <option value="c">내용</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label class="text-hidden" for>검색창</label>
-                        <input id="searchTextInBoard" name="searchSelectInBoard" class="search-form" type="text" value>
-                        <button class="btn-search" type="submit">검색</button>
-                    </div>
-                </form>
-                <form id="fromSearch" name="formSearchBoard" action="/web/wboard/newBoardList/"></form>
+        </div>
+        <div data-collection-keyword="seolbenefitrun" data-domain="store" data-environment="live" data-horizontal-spacing="15" data-image-height-ratio="70" data-limit="4" data-order="recommend" data-vertical-spacing="30" style="width: 90%; margin: 0 auto;">
+            <div>
+                <div class="TableLayout-hv" style="grid-template-columns: repeat(2, calc(50% - 7.5px)); gap: 30px 15px;">
+                    <a class="CommonCard-G2" href="https://www.wadiz.kr/web/store/detail/5032">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn2.wadiz.kr/2023/11/27/416c7c27-ae2a-440e-aa8b-b9ae3489cb84.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                            <div class="CommonCard-fc">
+
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">원터치로 9분만에 찰진 솥밥! 소댕 압력밥솥 풀세트
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="https://www.wadiz.kr/web/store/detail/1581">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn2.wadiz.kr/2023/12/22/ed099fd6-2afd-4e1c-a52b-dbe4d2aad460.png/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                            <div class="CommonCard-fc">
+
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard_title__3OS-m">전자레인지 OK!투명하고 가벼운 래치락 밀폐용기 3종/4종세트
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="https://www.wadiz.kr/web/store/detail/4889">
+                        <div class="CommonCard-_q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn2.wadiz.kr/2023/12/11/17421e8e-b5ba-47bb-bcbe-4be1cda8dd0a.jpg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                            <div class="CommonCard-fc">
+
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">벗겨지지 않는 원조 스텐팬으로 끝까지 따뜻하게! #쿠자팬
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="https://www.wadiz.kr/web/store/detail/2479">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn2.wadiz.kr/2023/12/18/4963acee-1888-4a76-b53a-d1f02f5a167a.jpg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                            <div class="CommonCard-fc">
+
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">안전하고 깔끔한 택배 개봉! 피스코리아 자석 박스커터 3컬러
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-                
-        </main>
+        </div>
+        <p id="section2" style="margin: 0;">
+            <br>
+        </p>
+        <div data-collection-keyword="240210cs, 240210" data-domain="comingsoon, funding" data-horizontal-spacing="15" data-image-height-ratio="70" data-limit="50" data-order="recent" data-vertical-spacing="30" style="width: 90%; margin: 0 auto;">
+            <div>
+                <div class="TableLayout-hv" style="grid-template-columns: repeat(2, calc(50% - 7.5px)); gap: 30px 15px;">
+                    <a class="CommonCard-G2" href="/web/wcomingsoon/rwd/269742">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/24/8dce00e0-c810-4646-8cb6-0bc84be8cefd.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">한식대가 임성근 쉐프가 선보이는 비법만능소스를 만나보세요!
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="/web/wcomingsoon/rwd/270713">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnai-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/26/00017c90-ef3f-47ca-9740-637c27b1b9d2.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-YLi">
+                            <div class="CommonCard-m">[80%] 압도되는 과육량의 과일가득청, 음료나 디저트로 다양하게 즐겨요
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="/web/wcomingsoon/rwd/269022">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/22/0ff81407-1373-471d-83d9-89fe614e5298.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">[55개 한정수량] 우크라이나에서 스페인산 참나무로 제작된 리얼 오크통.
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="/web/wcomingsoon/rwd/265854">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/11/9168ade3-2b2e-4c1f-8546-ed3a4b097a0e.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">명절 스트레스 타파! 매콤한 청양고추의 맛! 무뼈닭발 &amp; 무뼈닭갈비
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="/web/wcomingsoon/rwd/267316">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/12/8835ad31-2440-4671-a604-e2cfb9335c84.png/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">[90년 전통 서울유산] 잼배옥 한우 사골 도가니탕과 설렁탕을 만나보세요
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="/web/wcomingsoon/rwd/265289">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/22/aceff720-ae1f-486d-923b-eb16ec866a42.png/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">운동화가 아닙니다. 헬스장에서 신는 '고 기능' 헬스화'입니다.
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="/web/wcomingsoon/rwd/255275">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/14/1c5b47f7-5e6a-4be3-b491-e5156f8ee9ee.jpeg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">드디어 국내 상륙. 괴물 스펙 보조배터리 &lt;유그린 145W 보조배터리&gt;
+
+                            </div>
+                        </div>
+                    </a>
+                    <a class="CommonCard-G2" href="/web/wcomingsoon/rwd/255261">
+                        <div class="CommonCard-q" style="padding-top: 70%;">
+                            <div aria-hidden="true" class="CardThumbnail-kD CardThumbnail-c" style="background-image: url(&quot;https://cdn3.wadiz.kr/studio/images/2024/01/09/b6e36d45-85e9-4b30-a187-e6f00c0b9083.jpg/wadiz/resize/500/format/jpg/quality/85/&quot;); border-radius: 8px;">
+                            </div>
+                        </div>
+                        <div class="CommonCard-Li">
+                            <div class="CommonCard-m">청담동 예비 신부들의 비밀 헤어 클리닉! 홈케어로 누리는 찰랑이는 머릿결
+
+                            </div>
+                        </div>
+                    </a>  
+            </div>
+        </div>
+    </div>
+    <p>
+        <a href="https://www.wadiz.kr/web/wreward/collection/seolbenefitrun?order=recommend&amp;endYn=N" rel="noopener noreferrer" target="_blank"><img src="https://cdn.wadiz.kr/ft/images/green001/2024/0130/20240130171448665_45.jpg/wadiz/format/jpg/quality/80" class="fr-fic fr-dib">
+        </a>
+        
+            <img src="https://cdn.wadiz.kr/ft/images/green001/2024/0130/20240130171448950_45.jpg/wadiz/format/jpg/quality/80" class="fr-fic fr-dib">
+        
+    </p>
+    <div class="article-attached">
+        <ul> </ul>
+    </div>
+    <div class="wcommunity">
+        <div class="wcommunity-area">
+            <button type="button" class="btn-symp">
+                <span id="sympCount">1</span>
+            </button>
+            <div class="btn-share">
+                <button class="kakao" onclick="wadiz.share.kakao({ onelink: kakaoOnelink });"></button>
+                <button class="facebook" onclick="wadiz.share.facebook();"></button>
+                <button class="twitter" onclick="wadiz.share.twitter();"></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!------>
+    <div class="wboard-bottom">
+        <div class="wboard-comment">
+            <p class="comment-num">
+                <em>이벤트</em>
+                말머리의 다른 게시글
+            </p>
+            <div class="wboard-list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p class="title">
+                                <em class="category">이벤트<button class="twitter" onclick="wadiz.share.twitter();">
+                                </button>
+                            </em>
+                            
+                          [공간와디즈] '원랩 플래그십 스토어 성수' Grand Open Event! (~2/14)
+                        
+                            </p>
+                            <p class="info">
+                                <span class="date">
+                                    원랩 2024.02.01
+                                </span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="title">
+                                <em class="category">이벤트</em>
+                                
+                          [이벤트] 설날맞이 특별한 혜택이 서포터님을 기다려요! | 설날맞이 혜택런 (2/1~2/12)
+                        
+                            </p>
+                            <p class="info">
+                                <span class="date">
+                                    원랩 2024.01.30
+                                </span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wboard-btn-wrap">
+            <a class="wz button" href="/templates/html/notification_sunghyun/notify_main.html" onclick="moveList()">목록으로 돌아가기</a>
+        </div>
+    </div>
+    
+
+
+
+        <!---------------------------푸터 작업------------------------------->
         <footer id="footer" class="web-footer inner-utils">
             <div class="FooterMenu_container">
                 <div class="FooterMenu_bar">
@@ -871,6 +1122,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="FooterContainer_container">
                 <div class="FooterContainer_inner">
                     <section class="FooterContainer_leftSection">
@@ -986,7 +1239,47 @@
                 </div>
             </div>
         </footer>
+        <div class="Float-a">
+            <button type="button" class="Float-Y" title="위로 이동">
+                <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon__1ahWE" aria-hidden="true">
+                    <path d="M33 30l-1.4 1.4L20 19.8 8.4 31.4 7 30l13-13zm1-21H6v2h28z">
+
+                    </path>
+                </svg>
+            </button>
+        </div>
     </body>
-    
+    <script>
+    document.addEventListener("scroll", function() {
+  // 스크롤 위치를 가져오기
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  // 스크롤 위치에 따라 스타일 변경
+  var scroll1 = document.getElementById("scroll1");
+
+  if (scrollTop >= 4000 && scrollTop < 6000) {
+    // 4000을 넘기면 translateX: 100%, top: 96px
+    scroll1.style.transform = "translateX(100%)";
+    scroll1.style.top = "96px";
+  } else if (scrollTop >= 6000 && scrollTop < 8000) {
+    // 6000을 넘기면 translateX: 0%, top: 196px
+    scroll1.style.transform = "translateX(0%)";
+    scroll1.style.top = "196px";
+  } else if (scrollTop >= 8000) {
+    // 8000을 넘기면 translateX: 100%, top: 196px
+    scroll1.style.transform = "translateX(100%)";
+    scroll1.style.top = "196px";
+  } else {
+    // 기본값: translateX: 0%, top: 96px
+    scroll1.style.transform = "translateX(0%)";
+    scroll1.style.top = "96px";
+  }
+});
+
+const topBtn = document.querySelector(".Float-Y");
+topBtn.addEventListener("click",(e)=>{
+    window.scrollTo({ top: 0, behavior: "smooth" });
+})
+</script>
    
 </html>
