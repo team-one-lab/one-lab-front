@@ -5,7 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>로그인 클론코딩(보조업무)</title>
         <link rel="stylesheet" href="/staticfiles/css/login-yujin/login.css" />
-        <link rel="preload" href="/staticfiles/css/login-yujin/login.font.css" />
+        <link
+            rel="stylesheet"
+            as="style"
+            crossorigin
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+        />
     </head>
     <body>
         <div id="page-container">
@@ -38,10 +43,7 @@
                                         </a>
                                     </li>
                                     <li class="signup">
-                                        <a
-                                            href="회원가입화면 이동"
-                                            class="item"
-                                        >
+                                        <a href="회원가입화면 이동" class="item">
                                             <span>회원가입</span>
                                         </a>
                                     </li>
@@ -61,14 +63,8 @@
                                             d="M38 6.06H2V31h11.8v3.88h12.4V31H38zm-2.12 22.85H4.12V8.14h31.76z"
                                         ></path>
                                     </svg>
-                                    <p class="PreviewOverlay_title__1p_pc">
-                                        미리보기 모드
-                                    </p>
-                                    <p
-                                        class="PreviewOverlay_description__3Cqx5"
-                                    >
-                                        저장한 내용을 미리 볼 수 있어요.
-                                    </p>
+                                    <p class="PreviewOverlay_title__1p_pc">미리보기 모드</p>
+                                    <p class="PreviewOverlay_description__3Cqx5">저장한 내용을 미리 볼 수 있어요.</p>
                                 </div>
                                 <!---------------------------------------------------------------------------------------------------->
                             </div>
@@ -82,13 +78,8 @@
                             <section aria-labelledby="emailLogin">
                                 <!-- <h3 class="BlindText">email 로그인</h3> -->
                                 <form class="SignInForm-1G">
-                                    <div
-                                        class="SignInForm-Nh"
-                                        data-test-id="emailField"
-                                    >
-                                        <label class="BlindText-K9"
-                                            >이메일</label
-                                        >
+                                    <div class="SignInForm-Nh" data-test-id="emailField">
+                                        <label class="BlindText-K9">이메일</label>
                                         <input
                                             data-test-id="email"
                                             id="email"
@@ -100,14 +91,10 @@
                                             class="Input-email"
                                             aria-invalid="false"
                                         />
+                                        <p>이메일 형식이 올바르지 않습니다.</p>
                                     </div>
-                                    <div
-                                        class="SignInForm-Nh"
-                                        data-test-id="passwordField"
-                                    >
-                                        <label class="BlindText-K9"
-                                            >비밀번호</label
-                                        >
+                                    <div class="SignInForm-Nh" data-test-id="passwordField">
+                                        <label class="BlindText-K9">비밀번호</label>
                                         <input
                                             data-test-id="password"
                                             id="password"
@@ -120,27 +107,15 @@
                                             aria-invalid="false"
                                         />
                                     </div>
-                                    <div
-                                        class="SignInForm-kc"
-                                        style="margin-top: 0%"
-                                    >
+                                    <div class="SignInForm-kc" style="margin-top: 0%">
                                         <p class="SignInForm-e2">
-                                            <a
-                                                href="비밀번호 찾기 화면 이동"
-                                                data-test-id="findPasswordLink"
-                                            >
+                                            <a href="비밀번호 찾기 화면 이동" data-test-id="findPasswordLink">
                                                 로그인 정보를 잊으셨나요?
                                             </a>
                                         </p>
                                     </div>
-                                    <button
-                                        data-test-id="loginSubmitButton"
-                                        class="Button-1G"
-                                        type="submit"
-                                    >
-                                        <span class="Button-7g"
-                                            >이메일로 로그인하기</span
-                                        >
+                                    <button data-test-id="loginSubmitButton" class="Button-1G" type="submit">
+                                        <span class="Button-7g">이메일로 로그인하기</span>
                                     </button>
                                 </form>
                             </section>
@@ -194,11 +169,7 @@
                                         </span>
                                     </button>
                                     <div class="sns-button-three">
-                                        <button
-                                            aria-label="구글로 인증하기"
-                                            class="button-google"
-                                            type="button"
-                                        >
+                                        <button aria-label="구글로 인증하기" class="button-google" type="button">
                                             <span>
                                                 <span class="button-child-1">
                                                     <svg
@@ -209,23 +180,12 @@
                                                         viewBox="0 0 20 20"
                                                     >
                                                         <defs>
-                                                            <path
-                                                                id="a"
-                                                                d="M0 0h348v46H0z"
-                                                            ></path>
+                                                            <path id="a" d="M0 0h348v46H0z"></path>
                                                         </defs>
-                                                        <g
-                                                            fill="none"
-                                                            fill-rule="evenodd"
-                                                        >
-                                                            <g
-                                                                transform="translate(-16 -13)"
-                                                            >
+                                                        <g fill="none" fill-rule="evenodd">
+                                                            <g transform="translate(-16 -13)">
                                                                 <use></use>
-                                                                <path
-                                                                    stroke="#DADCE0"
-                                                                    d="M-.5-.5h349v47H-.5z"
-                                                                ></path>
+                                                                <path stroke="#DADCE0" d="M-.5-.5h349v47H-.5z"></path>
                                                             </g>
                                                             <path
                                                                 fill="#4285F4"
@@ -243,37 +203,46 @@
                                                                 fill="#EA4335"
                                                                 d="M10 4.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C14.463 1.891 12.426 1 10 1a8.997 8.997 0 0 0-8.043 4.958L4.964 8.29C5.672 6.163 7.656 4.58 10 4.58z"
                                                             ></path>
-                                                            <path
-                                                                d="M0 0h20v20H0z"
-                                                            ></path>
+                                                            <path d="M0 0h20v20H0z"></path>
                                                         </g>
                                                     </svg>
                                                 </span>
                                             </span>
                                         </button>
-                                        <button
-                                            aria-label="페이스북으로 인증하기"
-                                            class="button-child-2"
-                                            type="button"
-                                        >
+                                        <button aria-label="페이스북으로 인증하기" class="button-child-2" type="button">
                                             <span>
                                                 <span class="button-child-2-2">
-                                                    <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="svg-facebook" aria-hidden="true"><path d="M14.4 19.547h5.673v-5.256a8.559 8.559 0 0 1 2.4-6.132c2.618-2.628 6.109-2.3 11.127-1.861v5.913h-3.71a3.374 3.374 0 0 0-2.29.766 3.514 3.514 0 0 0-.655 2.3v4.27h6.437l-.873 6.57h-5.564V43.2h-6.872V26.118H14.4v-6.57z"></path></svg>
+                                                    <svg
+                                                        viewBox="0 0 48 48"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="svg-facebook"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            d="M14.4 19.547h5.673v-5.256a8.559 8.559 0 0 1 2.4-6.132c2.618-2.628 6.109-2.3 11.127-1.861v5.913h-3.71a3.374 3.374 0 0 0-2.29.766 3.514 3.514 0 0 0-.655 2.3v4.27h6.437l-.873 6.57h-5.564V43.2h-6.872V26.118H14.4v-6.57z"
+                                                        ></path>
                                                     </svg>
                                                 </span>
                                             </span>
                                         </button>
-                                        <button aria-label="애플로 인증하기" class="button-apple"
-                                        type="button">
-                                        <span>
-                                            <span class="button-child-3">
-                                                <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="svg-apple" aria-hidden="true"><path d="M24.96 26c-1.12 1.68-2.32 3.28-4.08 3.28s-2.32-1.04-4.4-1.04-2.64 1.04-4.4 1.12S9.04 27.6 7.92 26c-2.32-3.28-4-9.36-1.68-13.44 1.098-1.973 3.148-3.299 5.512-3.36 1.688 0 3.368 1.12 4.408 1.12s3.04-1.44 5.12-1.2a6.157 6.157 0 0 1 4.867 2.62c-1.691 1.087-2.82 2.936-2.867 5.053a5.926 5.926 0 0 0 3.562 5.352 13.472 13.472 0 0 1-1.913 3.901zm-7.6-21.36a6.072 6.072 0 0 1 3.894-1.998c.038.139.045.303.045.469 0 1.44-.521 2.759-1.386 3.777A4.871 4.871 0 0 1 16.04 8.8h-.042a6.886 6.886 0 0 1-.016-.451 5.66 5.66 0 0 1 1.384-3.716z">
-
-                                                    </path>
-                                                </svg>
+                                        <button aria-label="애플로 인증하기" class="button-apple" type="button">
+                                            <span>
+                                                <span class="button-child-3">
+                                                    <svg
+                                                        viewBox="0 0 32 32"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="svg-apple"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            d="M24.96 26c-1.12 1.68-2.32 3.28-4.08 3.28s-2.32-1.04-4.4-1.04-2.64 1.04-4.4 1.12S9.04 27.6 7.92 26c-2.32-3.28-4-9.36-1.68-13.44 1.098-1.973 3.148-3.299 5.512-3.36 1.688 0 3.368 1.12 4.408 1.12s3.04-1.44 5.12-1.2a6.157 6.157 0 0 1 4.867 2.62c-1.691 1.087-2.82 2.936-2.867 5.053a5.926 5.926 0 0 0 3.562 5.352 13.472 13.472 0 0 1-1.913 3.901zm-7.6-21.36a6.072 6.072 0 0 1 3.894-1.998c.038.139.045.303.045.469 0 1.44-.521 2.759-1.386 3.777A4.871 4.871 0 0 1 16.04 8.8h-.042a6.886 6.886 0 0 1-.016-.451 5.66 5.66 0 0 1 1.384-3.716z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </button>
+                                        </button>
                                     </div>
                                 </div>
                             </section>
@@ -281,8 +250,7 @@
                                 <p>
                                     아직 와디즈 계정이 없나요?
                                     <a href="계정찾기화면이동" data-test-id="signupLink">회원가입</a>
-                                </p>       
-
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -290,4 +258,5 @@
             </main>
         </div>
     </body>
+    <script src="/staticfiles/js/login-yujin/login.js"></script>
 </html>

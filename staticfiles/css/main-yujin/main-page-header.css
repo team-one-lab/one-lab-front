@@ -43,8 +43,6 @@ body {
     line-height: inherit;
     color: inherit;
     font-size: 15px;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-text-size-adjust: none;
     font-weight: 400;
     font-family: inherit;
 }
@@ -54,7 +52,6 @@ button {
     background-color: transparent;
     color: inherit;
     outline: none;
-    -webkit-appearance: none;
     margin: 0;
     border: 0;
     padding: 0;
@@ -92,7 +89,6 @@ a {
     color: inherit;
     text-decoration: none;
     outline: none;
-    -webkit-appearance: none;
     margin: 0;
     border: 0;
     vertical-align: baseline;
@@ -231,7 +227,6 @@ span {
     min-height: 40px;
     line-height: 40px;
     color: #212529;
-    -webkit-appearance: none;
 }
 
 .SearchTag_emptyTag {
@@ -256,7 +251,6 @@ span {
     background: none;
     padding-right: 32px;
     width: 100%;
-    -webkit-appearance: none;
     -ms-appearance: none;
     appearance: none;
     font-size: 14px;
@@ -423,7 +417,6 @@ button:not(:disabled) {
     white-space: nowrap;
     color: #495057;
     font-size: 16px;
-    -webkit-appearance: none;
 }
 
 .Button_md {

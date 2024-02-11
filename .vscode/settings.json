@@ -1,3 +1,15 @@
 {
-    "liveServer.settings.port": 3002
+    "workbench.colorTheme": "Default Dark Modern",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.port": 3001,
+    "editor.fontSize": 13,
+    "window.zoomLevel": 1,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 120,
+    "prettier.embeddedLanguageFormatting": "off",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "editor.formatOnSave": true
 }

@@ -1,3 +1,12 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+html {
+    font-family: Pretendard Variable,pretendard,-apple-system,blinkmacsystemfont,
+    system-ui,roboto,Helvetica Neue,
+    Segoe UI,Apple SD Gothic Neo,Noto Sans KR,
+    Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,
+    Segoe UI Symbol,sans-serif;
+}
+
 div,h1,a,span,header,ul, li, section, h3, form,label,p
 input,form
 {
@@ -265,14 +274,7 @@ li{
 section{
     display: block;
 }
-.BlindText-K9{
-    position: absolute;
-    margin: -1px;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
+
 h3{
     display: block;
     font-size: 1.17em;
@@ -289,6 +291,15 @@ h3{
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
+.SignInForm_field {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: inline;
+    color: #f25555;
+}
+
 .BlindText-K9{
     position: absolute;
     margin: -1px;
@@ -313,16 +324,15 @@ h3{
     /* -webkit-appearance: none; */
     font-weight: 400;
 }
+
 input{
     font-family: inherit;
+    margin: 0;
 }
 input, textarea{
     background: none;
 }
-input[type="email" i] {
-    padding-block: 1px;
-    padding-inline: 2px;
-}
+
 .Input-pw, .Input-email{
     height: 48px;
     min-height: 48px;
@@ -330,10 +340,15 @@ input[type="email" i] {
     font-size: 16px;
     font-weight: 400;
 }
-input[type="password" i]{
-    padding-block: 1px;
-    padding-inline: 2px;
+
+.Input-email:hover {
+    border-color: #868e96;
 }
+
+.Input-pw:hover {
+    border-color: #868e96;
+}
+
 .SignInForm-e2{
     float: right;
     line-height: 0px;
@@ -356,7 +371,6 @@ a, button{
     background-color: #e7f9f9;
     color: #00c4c4;
     padding: 9px 23px;
-    height: 48px;
     font-size: 16px;
     width: 100%;
     cursor: pointer;
@@ -364,18 +378,22 @@ a, button{
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
-    border: 1px solid #cdd3d8;
+    border: 0px solid #cdd3d8;
     border-radius: 4px;
     /* background-color: rgba(0,0,0,0); */
     cursor: pointer;
-    padding: 9px 23px;
     height: 48px;
     vertical-align: middle;
     text-decoration: none;
     white-space: nowrap;
     /* color: #495057; */
-    font-size: 16px;
     /* -webkit-appearance: none; */
+}
+
+.Button-1G:hover {
+    border-color: #b9eeee;
+    background-color: #b9eeee;
+    color: #00b2b2;
 }
 
 .Button-1G span{
@@ -401,7 +419,7 @@ a, button{
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
-    border: 1px solid #cdd3d8;
+    border: 0px solid #cdd3d8;
     border-radius: 4px;
     /* background-color: rgba(0,0,0,0); */
     cursor: pointer;
@@ -414,6 +432,17 @@ a, button{
     font-size: 16px;
     /* -webkit-appearance: none; */
 }
+
+.btn-first:hover {
+    border: 1px solid #cdd3d8;
+    border-color: #adb5bd;
+    color: #343a40;
+}
+
+.btn-first .Button-children {
+    vertical-align: top;
+}
+
 .sns-Button-naver{
     padding: 9px 23px;
     height: 48px;
@@ -439,7 +468,8 @@ a, button{
     display: inline-block;
 
 }
-button{
+.button{
+    margin: 0;
     font-family: inherit;
 }
 
@@ -477,6 +507,12 @@ button{
     font-size: 16px;
     /* -webkit-appearance: none; */
 }
+
+.button-google:hover {
+    border-color: #adb5bd;
+    color: #343a40;
+}
+
 .button-google span{
     vertical-align: text-top;
     display: inline-flex;
@@ -515,6 +551,10 @@ button{
     display: inline-flex;
     align-items: center;
 }
+
+.button-child-2:hover {
+    color: #343a40;
+}
 .button-child-2-2{
     vertical-align: top;
     text-align: center;
@@ -551,6 +591,13 @@ button{
     text-decoration: none;
     white-space: nowrap;
 }
+
+.button-apple:hover {
+    background-color: #000;
+    border-color: #adb5bd;
+    color: #343a40;
+}
+
 .button-child-3{
     vertical-align: top;
     display: inline-flex;
