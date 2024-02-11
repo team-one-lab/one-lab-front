@@ -16,6 +16,7 @@ const certificationNumberBtn = document.querySelector(
 const certificationNumberForm = document.querySelector(
   ".certification-number-form"
 );
+const timerSpan = document.querySelector(".count-time");
 // 인증번호 다시 보내기
 const retry = document.querySelector(".retry");
 // 인증하기시 모달
@@ -34,7 +35,6 @@ const passwordCheckValidate = document.querySelector(
 );
 const passwordVisibleBtn = document.querySelectorAll(".password-visible-btn");
 const joinSubmitBtn = document.querySelector(".join-submit-btn");
-
 
 // 이메일 유효성 검사
 emailInput.addEventListener("keyup", (e) => {
@@ -67,7 +67,7 @@ function timer() {
   let time = 179;
   let min = "";
   let sec = "";
-  const timerSpan = document.querySelector(".count-time");
+
   timerInterval = setInterval(() => {
     min = parseInt(time / 60);
     sec = time % 60;
@@ -180,6 +180,7 @@ certificationNumberBtn.addEventListener("click", (e) => {
     certificationInput.disabled = true;
     certificationNumberBtn.disabled = true;
     clearInterval(timerInterval);
+    timerSpan.innerText = "";
     animationTarget = successToastInner;
   } else if (!isCertification) {
     animationTarget = errorToastInner;
@@ -236,6 +237,7 @@ passwordCheckInput.addEventListener("keyup", (e) => {
   passwordCheckInput.style.border = "1px solid #f66";
   if (inputValue != inputCheckValue) {
     passwordCheckValidate.classList.add("validate");
+    joinSubmitBtn.disabled = true;
   } else if (inputValue === inputCheckValue) {
     passwordCheckInput.style.border = "";
     passwordCheckValidate.classList.remove("validate");
