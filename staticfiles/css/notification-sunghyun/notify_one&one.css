@@ -670,7 +670,7 @@ template {
 }
 @media (min-width: 360px){
     .bg-home {
-        background-image: url(/staticfiles/images/back-img.png);
+        background-image: url(/staticfiles/css/admin-sunghyun/images/back-img.png);
     }
 }
 @media (min-width: 360px){
@@ -1099,5 +1099,28 @@ li {
 @media (min-width: 360px){
     .bottom-0 {
         bottom: 0;
+    }
+}
+.floating-button {
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    background: url(/staticfiles/css/admin-sunghyun/images/chatbot.png) no-repeat center/100%;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+@media screen and (min-width: 1097px){
+    .floating-button {
+        position: fixed;
+        z-index: 9999;
+        width: 60px !important;
+        height: 60px !important;
     }
 }

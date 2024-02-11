@@ -590,7 +590,7 @@ table {
 .inner-contents img {
     display: block;
     max-width: 100%;
-    vertical-align: top;
+    /* vertical-align: top; */
 }
 .inner-contents a{
     transition: color 0.3s;
@@ -816,7 +816,7 @@ canvas, img, picture, video {
     font-size: 13px;
     color: #e4e4e4;
     border: 1px solid #e4e4e4;
-    background: url(/staticfiles/images/icon_gray_heart.png) no-repeat 15px 8px;
+    background: url(/staticfiles/css/admin-sunghyun/images/icon_gray_heart.png) no-repeat 15px 8px;
     background-size: 15px 13px;
 }
 .btn-share {
@@ -832,13 +832,13 @@ canvas, img, picture, video {
     background-size: cover;
 }
 button.kakao {
-    background-image: url(/staticfiles/images/icon_gray_kakao.png);
+    background-image: url(/staticfiles/css/admin-sunghyun/images/icon_gray_kakao.png);
 }
 button.facebook {
-    background-image: url(/staticfiles/images/icon_gray_facebook.png);
+    background-image: url(/staticfiles/css/admin-sunghyun/images/icon_gray_facebook.png);
 }
 button.twitter {
-    background-image: url(/staticfiles/images/icon_gray_twitter.png);
+    background-image: url(/staticfiles/css/admin-sunghyun/images/icon_gray_twitter.png);
 }
 
 .wcommunity-area:after{
@@ -921,7 +921,7 @@ button.twitter {
     font-size: 16px;
     font-weight: 400;
     box-sizing: border-box !important;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
 }
 
 .Float-a{
