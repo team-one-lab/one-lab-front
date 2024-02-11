@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             layOut.classList.add("MoreMenu");
         }
-
+        console.log("MoreMenu");
         if (layOut.style.display === "none" || layOut.style.display === "") {
             layOut.style.display = "block";
         } else {

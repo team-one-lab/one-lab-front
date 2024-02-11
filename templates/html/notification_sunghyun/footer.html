@@ -3,489 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
-        <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
-        <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/footer.css">
         <link
             rel="stylesheet"
-            as="style"
-            crossorigin
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+            href="/staticfiles/css/notification-sunghyun/footer.css"
         />
-        <link
-            rel="stylesheet"
-            href="/staticfiles/css/notification-sunghyun/notify_one&one.css"
-        />
-        <title>OneLab 일대일 문의</title>
+        <title>푸터</title>
     </head>
-    <body class>
-        <div></div>
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
-        />
-        <div class="layout-column" x-data="Widgets.mobileMenu">
-            <header
-                class="header-shadow"
-                x-data="Widgets.header({ isFixed: false, isSticky: true })"
-                :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"
-            >
-                <nav class="navbar-full">
-                    <a href="/hc/ko" class="navbar-auto">
-                        <img
-                            class="block-fluid"
-                            id="logo"
-                            src="/staticfiles/images/help.png"
-                            alt="도움말 센터 헬프 센터 홈페이지"
-                        />
-                    </a>
-                    <!-- <button
-                        class="navbar-toggle lg:hidden"
-                        x-ref="toggle"
-                        :aria-expanded="isOpen && true"
-                        @click="toggle"
-                        @keydown.escape="toggle"
-                        aria-expanded="false"
-                    >
-                        <span>탐색메뉴 토글</span>
-                    </button> -->
-                    <div
-                        class="nav-end"
-                        x-show="isOpen"
-                        :class="{ 'text-header': isOpen }"
-                        x-transition:enter="transition-fast"
-                        x-transition:enter-start="translate-x-full"
-                        x-transition:enter-end="translate-x-0"
-                        x-transition:leave="transition-fast"
-                        x-transition:leave-start="translate-x-0 text-header"
-                        x-transtion:leave-end="translate-x-full text-header"
-                        style="display: none"
-                    >
-                        <!-- <div class="search-0" x-data="Widgets.search">
-                        <form role="search" class="form-0" data-search action="/hc/ko/search"
-                        accept-charset="UTF-8" method="get">
-                        <input name="utf8" type="hidden" value="✓" autocomplete="off">
-                        <input type="search" name="query" id="query" placeholder="검색어를 입력해주세요."
-                        aria-label="검색어를 입력해주세요." style="display: none;">
-                        </form>
-                    </div> -->
-                        <!-- </div> -->
-                        <div
-                            data-element="template"
-                            data-template="category-dropdown"
-                        ></div>
-                        <a
-                            class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                            href="#"
-                            >문의등록</a
-                        >
-                        <a
-                            class="button button-yds1 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                            href="#"
-                            >메이커센터
-                        </a>
-                        <a
-                            class="button button-yds3 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-179"
-                            href="#"
-                            >와디즈 바로가기
-                        </a>
-                    </div>
-                </nav>
-            </header>
-            <main role="main">
-                <div class="hero-hidden">
-                    <div class="relative-8">
-                        <div class="my-left">
-                            <img src="/staticfiles/images/background-img.svg" />
-                        </div>
-                        <!----------->
-                        <div
-                            class="search search-lg my-4 text-base font-size-lg shadow-lg max-w-sm md:my-5 md:font-size-xl"
-                        >
-                            <h2 class="sr-only">검색</h2>
-                            <form
-                                role="search"
-                                class="form-0"
-                                data-search
-                                data-instant="true"
-                                autocomplete="off"
-                                action="/hc/ko/search"
-                                acceot-charset="UTF-8"
-                                method="get"
-                            >
-                                <input
-                                    name="utf8"
-                                    type="hidden"
-                                    value="✓"
-                                    autocomplete="off"
-                                />
-                                <zd-autocomplete-announcement
-                                    id="b8438bab-f64f-4ae8-80da-b65614319a10"
-                                    aria-live="polite"
-                                    role="listbox"
-                                >
-                                </zd-autocomplete-announcement>
-                                <input
-                                    type="search"
-                                    name="query"
-                                    id="query1"
-                                    placeholder="검색어를 입력해주세요."
-                                    autocomplete="off"
-                                    aria-autocomplete="both"
-                                    aria-expanded="false"
-                                    role="combobox"
-                                    aria-owns="b8438bab-f64f-4ae8-80da-b65614319a10"
-                                    data-gtm-form-interact-field-id="0"
-                                    aria-label="검색어를 입력해주세요"
-                                />
-                            </form>
-                            <svg
-                                class="search-icon fill-current transition"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 12 12"
-                                aria-hidden="true"
-                            >
-                                <use xlink:href="#icon-search"></use>
-                            </svg>
-                        </div>
-                        <div id="popular-keywords">
-                            <div
-                                class="flex flex-first flex-wrap mt-5 mb-4"
-                                x-data="Widgets.popularKeywords"
-                                x-init="parseKeywords('펀딩, 프리오더, 스토어, 서포터클럽')"
-                            >
-                                <template
-                                    x-for="(keyword,index) in keywords"
-                                    :key="index"
-                                >
-                                    #document-fragment
-                                </template>
-                                <div class="flex align-items-center m-1">
-                                    <a
-                                        class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
-                                        :href="keyword.html_url"
-                                        :title="keyword.title"
-                                        id="b1"
-                                        x-text="keyword.title"
-                                        href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
-                                        title="펀딩"
-                                        >펀딩
-                                    </a>
-                                </div>
-                                <div class="flex align-items-center m-1">
-                                    <a
-                                        class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
-                                        :href="keyword.html_url"
-                                        :title="keyword.title"
-                                        id="b2"
-                                        x-text="keyword.title"
-                                        href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
-                                        title="프리오더"
-                                        >프리오더
-                                    </a>
-                                </div>
-                                <div class="flex align-items-center m-1">
-                                    <a
-                                        class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
-                                        :href="keyword.html_url"
-                                        :title="keyword.title"
-                                        id="b3"
-                                        x-text="keyword.title"
-                                        href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
-                                        title="스토어"
-                                        >스토어
-                                    </a>
-                                </div>
-                                <div class="flex align-items-center m-1">
-                                    <a
-                                        class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
-                                        :href="keyword.html_url"
-                                        :title="keyword.title"
-                                        id="b4"
-                                        x-text="keyword.title"
-                                        href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
-                                        title="서포터클럽"
-                                        >서포터클럽
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="absolute z-10 top-0 left-0 h-full w-full bg-hero-divider"
-                    ></div>
-                    <div class="absolute z-0 top-0 left-0 w-full h-full">
-                        <div class="relative w-full h-full overflow-hidden">
-                            <div
-                                class="absolute top-0 left-0 w-full bg-home bg-cover bg-center"
-                                x-data="Widgets.parallaxImage"
-                                style="
-                                    height: 200%;
-                                    transform: translate3d(0px, 0px, 0px);
-                                "
-                            >
-                        
-                    </div>
-                        
-                </div>
-                    </div>
-                    </div>
-                    <div class="relative-40" id="page-container">
-                        <div class="content-blocks" id="content-blocks">
-                            <div class="container-center">
-                                <div class="row">
-                                    <div class="mb-4 ydsbackground-1 md:col-6 lg:col-4 xl:col-3" >
-                                        <img class="hidden mt-4 sm:inline-block" id="img2" alt="서포터"
-                                        data-asset="image" data-asset-id="category-25448157450521"
-                                        src="	https://theme.zdassets.com/theme_assets/13612819/fd1d804abe5082c865396600c2bcf98244b275b5.svg"
-                                        style="height: 40px; width: 40px; margin-top: 1rem;
-                                        font-weight: bold;
-                                        font-family: 'Pretendard'">
-                                        <h4 class="my-4 text-right">
-                                            <a class="link-stretched hover:no-underline" id="sup-id" href="#">
-                                                서포터
-                                            </a>
-                                        </h4>
-                                    </div>
-
-                                    <div class="mb-4 ydsbackground-1 md:col-6 lg:col-4 xl:col-3" >
-                                        <img class="hidden mt-4 sm:inline-block" id=img1 alt="메이커"
-                                        data-asset="image" data-asset-id="category-25448157450521"
-                                        src="	https://theme.zdassets.com/theme_assets/13612819/496e0fa045ae026332d2ff661ab89df0ca541a6d.svg
-                                        "
-                                        style="height: 40px; width: 40px; margin-top: 1rem;
-                                        font-weight: bold;
-                                        font-family: 'Pretendard'">
-                                        <h4 class="my-4 text-right">
-                                            <a class="link-stretched hover:no-underline" id="sup-id" href="#">
-                                                메이커
-                                            </a>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="promoted-articles ydsgraybackground" id="promoted-articles">
-                            <div class="container py-4">
-                                <h2 class="flex align-items-baseline ydsh2"
-                                x-data="{ src: Theme.assets['promoted-articles-heading'] }">
-                                <template x-if="src">
-                                    #document-fragment
-                                </template>
-                                자주 묻는 질문
-                                </h2>
-                                <div class="list-bordered border border-radius overflow-hidden">
-                                    <div class="bg-white" x-data="{ open: false }">
-                                        <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn1" >
-                                          알림 신청한 프로젝트는 어디서 확인하나요?
-                                          <svg class="fill-current pointer-events-none ml-3" :class="open &amp;&amp; 'rotate-180'" width="14px" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg" >
-                                            <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
-                                          </svg>
-                                        </a>
-                                        <div class="content px-6 py-2 ydscontent collapse" id="article-6" >
-                                          마이와디즈의 [찜·알림신청]에서 확인하실 수 있어요.
-                                            찜. 알림 신청 목록 뿐만 아니라 최근에 본 프로젝트 목록까지 확인할 수 있어요.&nbsp;프로젝트 이미지 우측 상단의 하트를 클릭해서 구독 ...
-                                            <p class="my-4 text-right btnpadding-right">
-                                              <a class="button button-outline button-sm" href="/hc/ko/articles/17845227566745-%EC%95%8C%EB%A6%BC-%EC%8B%A0%EC%B2%AD%ED%95%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%8A%94-%EC%96%B4%EB%94%94%EC%84%9C-%ED%99%95%EC%9D%B8%ED%95%98%EB%82%98%EC%9A%94">
-                                                  자세히보기
-                                                </a>
-                                            </p>
-                                          </div>
-                                      </div>
-                                      <!------>
-                                      <div class="bg-white" x-data="{ open: false }">
-                                        <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn2" >
-                                          회원 정보 변경은 어떻게 하나요?
-                                          <svg class="fill-current pointer-events-none ml-3" :class="open &amp;&amp; 'rotate-180'" width="14px" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
-                                          </svg>
-                                        </a>
-                                        <div class="content px-6 py-2 ydscontent collapse" id="article-7" >
-                                          
-                                            기본 정보 설정에서 닉네임, 이메일, 연락처 등을 언제든 변경할 수 있어요.
-                                            
-                                            마이와디즈의 설정에서 닉네임, 이메일, 휴대폰번호 등 기본 정보를 변경하실 수 있으며, 알림 설정도 변경할...
-                                            <p class="my-4 text-right btnpadding-right">
-                                              <a class="button button-outline button-sm" href="/hc/ko/articles/7052709194265-%ED%9A%8C%EC%9B%90-%EC%A0%95%EB%B3%B4-%EB%B3%80%EA%B2%BD%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%98%EB%82%98%EC%9A%94">
-                                                  자세히보기
-                                                </a>
-                                            </p>
-                                          </div>
-                                      </div>
-                                      <!------>
-                                      <div class="bg-white" x-data="{ open: false }">
-                                        <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn3" data-active-class="text-primary">
-                                          펀딩 참여 내역은 어떻게 확인하나요?
-                                          <svg class="fill-current pointer-events-none ml-3" :class="open &amp;&amp; 'rotate-180'" width="14px" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
-                                          </svg>
-                                        </a>
-                                        <div class="content px-6 py-2 ydscontent collapse" id="article-8" >
-                                          서포터님이 참여한 프로젝트는 [참여 내역]에서 확인할 수 있어요.
-                                            참여한 펀딩·프리오더의 예약 취소를 원하시는 경우, 참여 내역에서 결제상태를 확인 후 직접 취소할 수 있어요.
-                                            
-                                            👉 참...
-                                            <p class="my-4 text-right btnpadding-right">
-                                              <a class="button button-outline button-sm" href="/hc/ko/articles/7054803825817-%ED%8E%80%EB%94%A9-%EC%B0%B8%EC%97%AC-%EB%82%B4%EC%97%AD%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%99%95%EC%9D%B8%ED%95%98%EB%82%98%EC%9A%94">
-                                                  자세히보기
-                                                </a>
-                                            </p>
-                                          </div>
-                                        </div>                              
-                                    </div>
-                                </div>
-                            <div class="video-library">
-
-                                <div class="container py-4">
-                                    <h2 class="inline-flex align-items-baseline mt-6" x-data="{ src: Theme.assets['promoted-videos-heading'] }">
-                                        <template x-if="src">
-                                            #document-fragment
-                                        </template>
-                                        원랩 TV
-                                    </h2>
-                                    <div class="relative overflow-hidden" data-element="video-library" data-layout="grid"
-                                    data-columns="3" data-template="video-library" data-play-inline="false" data-ids="
-                                    z4V6RoIxytc, uR7NzL_86Gs, S2caXNaKpDg,tlhEgarJRQk, Xix85yjSLr0, plIJCkiw-Ls
-                                  ">
-                                    <ul class="list-unstyled row">
-                                        <li class="mb-6 md:col-4">
-                                            <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="z4V6RoIxytc" data-fancybox="" href="https://www.youtube.com/watch?v=z4V6RoIxytc" style="background-image: url(/staticfiles/images/youtube-1.jpg);">
-                                                    <iframe class="relative z-20 invisible" id="z4V6RoIxytc" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 편한 신발 브랜드 제누이오 성공 비결, 명품급 신발을 싸게 팔 수 있는 이유 | 게임체인저 제누이오" width="640" height="360" src="https://www.youtube.com/embed/z4V6RoIxytc?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=1">
-
-                                                    </iframe>
-                                                    <div class="absolute-center z-10 flex p-4 circle button button-primary">
-                                                        <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
-                                                            <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
-
-                                                            </path>
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                                <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="z4V6RoIxytc">
-                                                    04:56
-                                                </span>
-                                            </div>
-                                            <h3 class="h4 my-4" data-title="z4V6RoIxytc">(ENG) 편한 신발 브랜드 제누이오 성공 비결, 명품급 신발을 싸게 팔 수 있는 이유 | 게임체인저 제누이오
-
-                                            </h3>
-                                        </li>
-                                        <li class="mb-6 md:col-4">
-                                            <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="uR7NzL_86Gs" data-fancybox="" href="https://www.youtube.com/watch?v=uR7NzL_86Gs" style="background-image: url(https://img.youtube.com/vi/uR7NzL_86Gs/0.jpg);">
-                                                    <iframe class="relative z-20 invisible" id="uR7NzL_86Gs" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="상세페이지 기획만 잘해도 펀딩 성공할 수 있다?ㅣGame Changer - 제누이오ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/uR7NzL_86Gs?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=2">
-
-                                                    </iframe>
-                                                    <div class="absolute-center z-10 flex p-4 circle button button-primary">
-                                                        <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
-                                                            <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
-
-                                                            </path>
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                                <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="uR7NzL_86Gs">
-                                                    05:45
-                                                </span>
-                                            </div>
-                                            <h3 class="h4 my-4" data-title="uR7NzL_86Gs">상세페이지 기획만 잘해도 펀딩 성공할 수 있다?ㅣGame Changer - 제누이오ㅣ 와디즈 아카데미
-
-                                            </h3>
-                                        </li>
-                                        <li class="mb-6 md:col-4">
-                                            <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="S2caXNaKpDg" data-fancybox="" href="https://www.youtube.com/watch?v=S2caXNaKpDg" style="background-image: url(https://img.youtube.com/vi/S2caXNaKpDg/0.jpg);">
-                                                    <iframe class="relative z-20 invisible" id="S2caXNaKpDg" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="전자책 쓰는법 어렵지 않아요. 퇴사후 전자책 부업으로 6억 매출 달성한 방법 공개 ㅣGame Changer - 유성우ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/S2caXNaKpDg?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=3">
-
-                                                    </iframe>
-                                                    <div class="absolute-center z-10 flex p-4 circle button button-primary">
-                                                        <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
-                                                            <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
-
-                                                            </path>
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                                <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="S2caXNaKpDg">
-                                                    05:23
-                                                </span>
-                                            </div>
-                                            <h3 class="h4 my-4" data-title="S2caXNaKpDg">전자책 쓰는법 어렵지 않아요. 퇴사후 전자책 부업으로 6억 매출 달성한 방법 공개 ㅣGame Changer - 유성우ㅣ 와디즈 아카데미
-
-                                            </h3>
-                                        </li>
-                                        <li class="mb-6 md:col-4">
-                                            <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="tlhEgarJRQk" data-fancybox="" href="https://www.youtube.com/watch?v=tlhEgarJRQk" style="background-image: url(https://img.youtube.com/vi/tlhEgarJRQk/0.jpg);">
-                                                    <iframe class="relative z-20 invisible" id="tlhEgarJRQk" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="온라인 부업 아이템, 돈 버는 전자책 펀딩 방법 알려드립니다 | Game Changer 유성우 작가" width="640" height="360" src="https://www.youtube.com/embed/tlhEgarJRQk?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=4">
-
-                                                    </iframe>
-                                                    <div class="absolute-center z-10 flex p-4 circle button button-primary">
-                                                        <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
-                                                            <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
-
-                                                            </path>
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                                <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="tlhEgarJRQk">05:14
-
-                                                </span>
-                                            </div>
-                                            <h3 class="h4 my-4" data-title="tlhEgarJRQk">온라인 부업 아이템, 돈 버는 전자책 펀딩 방법 알려드립니다 | Game Changer 유성우 작가</h3></li><li class="mb-6 md:col-4">
-                                                <div class="relative w-full ratio ratio-16-9">
-                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="Xix85yjSLr0" data-fancybox="" href="https://www.youtube.com/watch?v=Xix85yjSLr0" style="background-image: url(https://img.youtube.com/vi/Xix85yjSLr0/0.jpg);">
-                                                        <iframe class="relative z-20 invisible" id="Xix85yjSLr0" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 와디즈 펀딩 성공한 스텐팬 사용법 1인자 쿠자의 주방! 노하우 털이 ㅣGame Changer - 쿠자의주방ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/Xix85yjSLr0?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=5">
-
-                                                        </iframe>
-                                                        <div class="absolute-center z-10 flex p-4 circle button button-primary">
-                                                            <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
-                                                                <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
-
-                                                                </path>
-                                                            </svg>
-                                                        </div>
-                                                    </a>
-                                                    <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="Xix85yjSLr0">
-                                                        05:16
-                                                    </span>
-                                                </div>
-                                                <h3 class="h4 my-4" data-title="Xix85yjSLr0">(ENG) 와디즈 펀딩 성공한 스텐팬 사용법 1인자 쿠자의 주방! 노하우 털이 ㅣGame Changer - 쿠자의주방ㅣ 와디즈 아카데미
-
-                                                </h3>
-                                            </li>
-                                            <li class="mb-6 md:col-4">
-                                                <div class="relative w-full ratio ratio-16-9">
-                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="plIJCkiw-Ls" data-fancybox="" href="https://www.youtube.com/watch?v=plIJCkiw-Ls" style="background-image: url(https://img.youtube.com/vi/plIJCkiw-Ls/0.jpg);">
-                                                        <iframe class="relative z-20 invisible" id="plIJCkiw-Ls" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="EP. 0 레지나 뷰티 '디마프'의 우당탕탕 펀딩 도전기 | 서포터를 찾습니다 | 와디즈아카데미" width="640" height="360" src="https://www.youtube.com/embed/plIJCkiw-Ls?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=6">
-
-                                                        </iframe>
-                                                        <div class="absolute-center z-10 flex p-4 circle button button-primary">
-                                                            <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
-                                                                <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
-
-                                                                </path>
-                                                            </svg>
-                                                        </div>
-                                                    </a>
-                                                    <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="plIJCkiw-Ls">
-                                                        04:50
-                                                    </span>
-                                                </div>
-                                                <h3 class="h4 my-4" data-title="plIJCkiw-Ls">EP. 0 레지나 뷰티 '디마프'의 우당탕탕 펀딩 도전기 | 서포터를 찾습니다 | 와디즈아카데미
-
-                                                </h3>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
+    <body>
         <footer id="footer" class="web-footer inner-utils">
             <div class="FooterMenu_container">
                 <div class="FooterMenu_bar">
@@ -1194,134 +718,53 @@
                 </div>
             </div>
         </footer>
-        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-            <symbol id="icon-search">
-                <circle
-                    cx="4.5"
-                    cy="4.5"
-                    r="4"
-                    fill="none"
-                    stroke="currentColor"
-                ></circle>
-                <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    d="M11 11L7.5 7.5"
-                ></path>
-            </symbol>
-            <symbol id="icon-lock">
-                <rect
-                    width="12"
-                    height="9"
-                    x="2"
-                    y="7"
-                    fill="currentColor"
-                    rx="1"
-                    ry="1"
-                ></rect>
-                <path
-                    fill="none"
-                    stroke="currentColor"
-                    d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
-                ></path>
-            </symbol>
-            <symbol id="icon-star">
-                <polygon
-                    points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
-                ></polygon>
-            </symbol>
-            <symbol id="icon-chevron-down">
-                <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
-                ></path>
-            </symbol>
-            <symbol id="icon-agent">
-                <path
-                    fill="currentColor"
-                    d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
-                ></path>
-            </symbol>
-
-            <symbol id="shape-book">
-                <path
-                    d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
-                ></path>
-            </symbol>
-        </svg>
-     
     </body>
     <script>
-    // document.addEventListener("DOMContentLoaded", function () {
-    // // 첫 번째 버튼 요소 및 메뉴 요소 가져오기
-    // const btn1 = document.querySelector("#cbtn1");
-    // const layOut1 = document.querySelector("#article-6");
+        // 문서가 로드되면 실행되는 이벤트 핸들러
+        document.addEventListener("DOMContentLoaded", function () {
+            // 버튼 요소를 가져온다
+            const btn = document.querySelector("#btn");
 
-    // // 두 번째 버튼 요소 및 메뉴 요소 가져오기
-    // const btn2 = document.querySelector("#cbtn2");
-    // const layOut2 = document.querySelector("#article-7");
+            // 메뉴 요소를 가져온다. (드롭다운 메뉴)
+            const layOut = document.querySelector(".menu-d");
 
-    // // 세 번째 버튼 요소 및 메뉴 요소 가져오기
-    // const btn3 = document.querySelector("#cbtn3");
-    // const layOut3 = document.querySelector("#article-8");
+            // 버튼 클릭 이벤트 핸들러
+            btn.addEventListener("click", function (event) {
+                // 이벤트 전파 방지
+                event.stopPropagation();
 
-    // // 버튼 클릭 이벤트 핸들러 - 첫 번째 버튼
-    // btn1.addEventListener("click", function (event) {
-    //     event.stopPropagation();
-    //     toggleMenu(layOut1);
-    // });
+                // MoreMenu 클래스를 토글 ("MoreMenu는 가상 요소")
+                if (layOut.classList.contains("MoreMenu")) {
+                    layOut.classList.remove("MoreMenu");
+                } else {
+                    layOut.classList.add("MoreMenu");
+                }
 
-    // // 버튼 클릭 이벤트 핸들러 - 두 번째 버튼
-    // btn2.addEventListener("click", function (event) {
-    //     event.stopPropagation();
-    //     toggleMenu(layOut2);
-    // });
+                // 메뉴 요소의 디스플레이 상태를 변경하여 보이거나 숨기기
+                if (
+                    layOut.style.display === "none" ||
+                    layOut.style.display === ""
+                ) {
+                    layOut.style.display = "block";
+                } else {
+                    layOut.style.display = "none";
+                }
 
-    // // 버튼 클릭 이벤트 핸들러 - 세 번째 버튼
-    // btn3.addEventListener("click", function (event) {
-    //     event.stopPropagation();
-    //     toggleMenu(layOut3);
-    // });
+                // 콘솔에 MoreMenu 출력한다.
+                console.log("MoreMenu");
+            });
 
-    // // 문서의 다른 영역을 클릭할 때 숨김 이벤트 핸들러
-    // document.addEventListener("click", function (event) {
-    //     hideMenusExcept([layOut1, layOut2, layOut3], [btn1, btn2, btn3], event);
-    // });
+            // 문서의 다른 영역을 클릭할 때 숨김 이벤트 핸들러
+            document.addEventListener("click", function (event) {
+                // 버튼이나 메뉴 영역 외의 곳을 클릭했을 때
+                if (event.target !== btn && !layOut.contains(event.target)) {
+                    // 메뉴 숨기기
+                    layOut.style.display = "none";
 
-    // // 특정 메뉴를 토글하는 함수
-    // function toggleMenu(menu) {
-    //     if (menu.classList.contains("MoreMenu")) {
-    //         menu.classList.remove("MoreMenu");
-    //     } else {
-    //         menu.classList.add("MoreMenu");
-    //     }
-
-    //     if (menu.style.display === "none" || menu.style.display === "") {
-    //         menu.style.display = "block";
-    //     } else {
-    //         menu.style.display = "none";
-    //     }
-
-    //     console.log("MoreMenu");
-    // }
-
-    // // 다른 메뉴를 숨기는 함수
-    //     function hideMenusExcept(menus, buttons, event) {
-    //         for (let i = 0; i < menus.length; i++) {
-    //             const menu = menus[i];
-    //             const button = buttons[i];
-    //             if (event.target !== button && !menu.contains(event.target)) {
-    //                 menu.style.display = "none";
-    //                 menu.classList.remove("MoreMenu");
-    //             }
-    //         }
-    //     }
-    // });
-
-        
-        /*-------------------------------------*/
-      
+                    // MoreMenu 클래스 제거
+                    layOut.classList.remove("MoreMenu");
+                }
+            });
+        });
     </script>
 </html>
