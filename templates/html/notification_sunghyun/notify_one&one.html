@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
         <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
+        <script src="/staticfiles/js/notify-sunghyun/notify-one&one-modal.js"></script>
+        <!-- <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/notify_one&&one-chat.css"> -->
+        <link rel="html_url" href="/templates/html/notification_sunghyun/notify_one&one-chat.html">
         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/footer.css">
         <link
             rel="stylesheet"
@@ -40,16 +43,7 @@
                             alt="도움말 센터 헬프 센터 홈페이지"
                         />
                     </a>
-                    <!-- <button
-                        class="navbar-toggle lg:hidden"
-                        x-ref="toggle"
-                        :aria-expanded="isOpen && true"
-                        @click="toggle"
-                        @keydown.escape="toggle"
-                        aria-expanded="false"
-                    >
-                        <span>탐색메뉴 토글</span>
-                    </button> -->
+                    
                     <div
                         class="nav-end"
                         x-show="isOpen"
@@ -62,15 +56,7 @@
                         x-transtion:leave-end="translate-x-full text-header"
                         style="display: none"
                     >
-                        <!-- <div class="search-0" x-data="Widgets.search">
-                        <form role="search" class="form-0" data-search action="/hc/ko/search"
-                        accept-charset="UTF-8" method="get">
-                        <input name="utf8" type="hidden" value="✓" autocomplete="off">
-                        <input type="search" name="query" id="query" placeholder="검색어를 입력해주세요."
-                        aria-label="검색어를 입력해주세요." style="display: none;">
-                        </form>
-                    </div> -->
-                        <!-- </div> -->
+                        
                         <div
                             data-element="template"
                             data-template="category-dropdown"
@@ -236,7 +222,376 @@
                             <div class="container-center">
                                 <div class="row">
                                     <!------------챗봇 버튼---------------------------------------------->
-                                    <button class="floating-button" onclick="chatModal()"></button>
+                                    <div id="buttonContainer">
+                                    <button class="floating-button" onclick="openModal()"></button>
+                                  </div>
+                                    <!-- 숨겨진 모달 -->
+                                    <div id="myModal" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close" onclick="closeModal()">&times;</span>
+                                        <!-- notify_one-chat.html 파일 내용이 여기에 들어갑니다 -->
+                                        <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/notify_one&&one-chat.css">
+                                        <div style="background-color: rgb(255, 255, 255)">
+                                          <div>
+                                              <div role="presentation">
+                                                  <div role="presentation" class="sc-zorsnq-0 eUGVYL">
+                                                      <section class="sc-vrqbdz-0 gSikFX sc-vrqbdz-0 gSikFX">
+                                                          <div class="sc-vrqbdz-2 kTapgX">
+                                                              <figure
+                                                                  data-garden-id="avatars.avatar"
+                                                                  data-garden-version="8.18.0"
+                                                                  aria-atomic="true"
+                                                                  aria-live="polite"
+                                                                  class="sc-vrqbdz-4 iZrkML sc-gzVnrw bNWAfz"
+                                                              >
+                                                                  <img
+                                                                      src="https://wadiz6256.zendesk.com/embeddable/avatars/1900001007468"
+                                                                      alt="회사 로고"
+                                                                  />
+                                                              </figure>
+                                                              <div class="sc-vrqbdz-3 byEuur">
+                                                                  <h2 class="sc-vrqbdz-5 hQhTcL">
+                                                                      와디즈 고객센터
+                                                                  </h2>
+                                                                  <p class="sc-vrqbdz-6 hXcozW">
+                                                                      궁금하신 사항을 검색해보세요!
+                                                                  </p>
+                                                              </div>
+                                                          </div>
+                                                          <div class="sc-vrqbdz-8 kmeNDk">
+                                                              <div class="sc-2nitf7-10 cDiLKi">
+                                                                  <button
+                                                                      data-garden-id="buttons.icon_button"
+                                                                      data-garden-version="8.13.0"
+                                                                      type="button"
+                                                                      aria-label="채널 연결 메뉴 옵션"
+                                                                      aria-haspopup="true"
+                                                                      data-toggle="true"
+                                                                      aria-expanded="false"
+                                                                      class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
+                                                                  >
+                                                                      <svg
+                                                                          data-garden-id="buttons.icon"
+                                                                          data-garden-version="8.13.0"
+                                                                          theme="[object Object]"
+                                                                          class="sc-bwzfXH hDrfMZ sc-2nitf7-9 iRaNEz"
+                                                                          xmlns="http://www.w3.org/2000/svg"
+                                                                          width="16"
+                                                                          height="16"
+                                                                          focusable="false"
+                                                                          viewBox="0 0 16 16"
+                                                                      >
+                                                                          <g fill="currentColor">
+                                                                              <circle
+                                                                                  cx="2.5"
+                                                                                  cy="8"
+                                                                                  r="1.5"
+                                                                              ></circle>
+                                                                              <circle
+                                                                                  cx="8"
+                                                                                  cy="8"
+                                                                                  r="1.5"
+                                                                              ></circle>
+                                                                              <circle
+                                                                                  cx="13.5"
+                                                                                  cy="8"
+                                                                                  r="1.5"
+                                                                              ></circle>
+                                                                          </g>
+                                                                      </svg></button
+                                                                  ><input
+                                                                      data-garden-id="dropdowns.input"
+                                                                      data-garden-version="8.49.4"
+                                                                      aria-invalid="false"
+                                                                      aria-autocomplete="list"
+                                                                      aria-labelledby="downshift-0-label"
+                                                                      autocomplete="off"
+                                                                      id="downshift-0-input"
+                                                                      readonly=""
+                                                                      tabindex="-1"
+                                                                      class="StyledInput-sc-hzhvmp-0 etSNgg StyledTextInput-sc-k12n8x-0 dpIHJq"
+                                                                      value=""
+                                                                  />
+                                                              </div>
+                                                              <div
+                                                                  data-garden-id="dropdowns.menu_wrapper"
+                                                                  data-garden-version="8.49.4"
+                                                                  class="StyledMenuWrapper-sc-tiwdxz-0 hPndRc"
+                                                                  style="
+                                                                      position: absolute;
+                                                                      top: 0px;
+                                                                      left: 0px;
+                                                                      opacity: 0;
+                                                                      pointer-events: none;
+                                                                  "
+                                                              >
+                                                                  <ul
+                                                                      data-garden-id="dropdowns.menu"
+                                                                      data-garden-version="8.49.4"
+                                                                      class="sc-xr7o5-4 sc-2nitf7-0 bWoiQd StyledMenu-sc-1vpttfd-0 dfwXOG"
+                                                                      role="menu"
+                                                                      aria-labelledby="downshift-0-label"
+                                                                      id="downshift-0-menu"
+                                                                  ></ul>
+                                                              </div>
+                                                          </div>
+                                                          <div class="sc-vrqbdz-8 kmeNDk">
+                                                              <button
+                                                                  data-garden-id="buttons.icon_button"
+                                                                  data-garden-version="8.13.0"
+                                                                  type="button"
+                                                                  aria-label="닫기"
+                                                                  class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
+                                                                  onclick="closeModal()"
+                                                              >
+                                                                  <svg
+                                                                      data-garden-id="buttons.icon"
+                                                                      data-garden-version="8.13.0"
+                                                                      theme="[object Object]"
+                                                                      class="sc-bwzfXH hDrfMZ sc-vrqbdz-7 fbohUV"
+                                                                      xmlns="http://www.w3.org/2000/svg"
+                                                                      width="21"
+                                                                      height="13"
+                                                                      viewBox="0 0 21 13"
+                                                                      focusable="false"
+                                                                      role="presentation"
+                                                                  >
+                                                                      <path
+                                                                          fill-rule="evenodd"
+                                                                          clip-rule="evenodd"
+                                                                          fill="currentColor"
+                                                                          d="M20.1005 2.7169L10.9931 11.8244C10.4724 12.3451 9.62815 12.3451 9.10745 11.8244L-8.00829e-06 2.7169L1.88561 0.831278L10.0503 8.99593L18.2149 0.831278L20.1005 2.7169Z"
+                                                                      ></path>
+                                                                  </svg>
+                                                              </button>
+                                                          </div>
+                                                      </section>
+                                                      <div
+                                                          role="alert"
+                                                          aria-live="assertive"
+                                                          class="sc-16spsp-0 jGrxQN"
+                                                      ></div>
+                                                      <div class="sc-pd54d8-0 gDmSQI">
+                                                          <div class="sc-vsbu1b-0 elDGjL">
+                                                              <div
+                                                                  role="log"
+                                                                  aria-live="polite"
+                                                                  class="sc-vsbu1b-1 kmIcd"
+                                                              >
+                                                                  <div class="sc-s12goo-0 dqeAJH">
+                                                                      <p class="sc-s12goo-1 gVDlUa">
+                                                                          오후 5:21
+                                                                      </p>
+                                                                  </div>
+                                                                  <div class="sc-19o5u7w-1 bXNGeC">
+                                                                      <p class="sc-gn17d5-0 ddVeKf">
+                                                                          와디즈 고객센터 봇
+                                                                      </p>
+                                                                      <div class="sc-19o5u7w-0 eFkXQN">
+                                                                          <figure
+                                                                              data-garden-id="avatars.avatar"
+                                                                              data-garden-version="8.18.0"
+                                                                              aria-atomic="false"
+                                                                              aria-live="off"
+                                                                              aria-hidden="true"
+                                                                              class="sc-184kaec-0 cOEDyw sc-gzVnrw bNWAfz"
+                                                                          >
+                                                                              <img
+                                                                                  src="https://static.zdassets.com/web_widget/latest/default_avatar.png"
+                                                                                  alt=""
+                                                                                  class="sc-184kaec-1 gepXPG"
+                                                                              />
+                                                                          </figure>
+                                                                          <div
+                                                                              shape="standalone"
+                                                                              class="sc-dnrc9s-0 sc-dnrc9s-2 iZPSvc"
+                                                                              aria-live="polite"
+                                                                          >
+                                                                              <div
+                                                                                  class="sc-1t4lziz-1 jMwAnd"
+                                                                              >
+                                                                                  <span class="Linkify"
+                                                                                      ><span
+                                                                                          class="sc-1t4lziz-3 iKrfcR"
+                                                                                          >와디즈 고객센터
+                                                                                          봇님의 말: </span
+                                                                                      ><span
+                                                                                          class="sc-1t4lziz-0 cWdXBY"
+                                                                                          >안녕하세요. 😊 우리
+                                                                                          일상의 새로운
+                                                                                          가능성을 그려가는
+                                                                                          곳, 라이프디자인
+                                                                                          펀딩플랫폼
+                                                                                          와디즈입니다.
+                                                                                          궁금하신 내용을
+                                                                                          메시지 입력란에 직접
+                                                                                          입력해 주시거나
+                                                                                          문의자 유형을 선택해
+                                                                                          주세요. 👏️
+                                                                                          펀딩/프리오더에
+                                                                                          참여하셨거나 스토어
+                                                                                          상품을 구매하셨다면
+                                                                                          [서포터]를 선택해
+                                                                                          주시고, ✍️
+                                                                                          프로젝트를 오픈하실
+                                                                                          예정이거나, 이미
+                                                                                          진행하고 계신다면
+                                                                                          [메이커]를 선택해
+                                                                                          주세요.</span
+                                                                                      ></span
+                                                                                  >
+                                                                                  <div
+                                                                                      class="sc-1t4lziz-2 ySToq"
+                                                                                  >
+                                                                                      <div
+                                                                                          class="sc-1y64x11-0 hxbZy"
+                                                                                      ></div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div
+                                                                          class="receipt-appear-done receipt-enter-done"
+                                                                      >
+                                                                          <div class="sc-185i3zb-0 cVcuIa">
+                                                                              <div class="sc-p7l048-0 cPlSDe">
+                                                                                  <div
+                                                                                      class="sc-p7l048-2 jduwmO"
+                                                                                  ></div>
+                                                                                  <p
+                                                                                      class="sc-p7l048-1 hTkgti"
+                                                                                  >
+                                                                                      오후 5:21
+                                                                                  </p>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div>
+                                                                      <div class="sc-2ravpp-0 cauRJz">
+                                                                          <div class="sc-as5ded-0 distqQ">
+                                                                              <button
+                                                                                  data-garden-id="buttons.button"
+                                                                                  data-garden-version="8.13.0"
+                                                                                  type="button"
+                                                                                  class="sc-as5ded-1 hoMxzy sc-htpNat kbREso"
+                                                                              >
+                                                                                  🥰 서포터</button
+                                                                              ><button
+                                                                                  data-garden-id="buttons.button"
+                                                                                  data-garden-version="8.13.0"
+                                                                                  type="button"
+                                                                                  class="sc-as5ded-1 hoMxzy sc-htpNat kbREso"
+                                                                              >
+                                                                                  🧐 메이커
+                                                                              </button>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div style="height: 1px"></div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="sc-6fatmo-0 gXymJE">
+                                                              <button
+                                                                  data-garden-id="buttons.icon_button"
+                                                                  data-garden-version="8.13.0"
+                                                                  type="button"
+                                                                  aria-label="파일 업로드"
+                                                                  class="sc-htpNat sc-k22q4b-0 sc-fcxw62-1 hrKGAE sc-EHOje jJOPWF"
+                                                              >
+                                                                  <svg
+                                                                      xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16"
+                                                                      height="16"
+                                                                      focusable="false"
+                                                                      viewBox="0 0 16 16"
+                                                                      data-garden-id="buttons.icon"
+                                                                      data-garden-version="8.13.0"
+                                                                      theme="[object Object]"
+                                                                      class="sc-bwzfXH hDrfMZ"
+                                                                  >
+                                                                      <path
+                                                                          fill="none"
+                                                                          stroke="currentColor"
+                                                                          stroke-linecap="round"
+                                                                          d="M9.5 4v7.7c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5V3C6.5 1.6 7.6.5 9 .5s2.5 1.1 2.5 2.5v9c0 1.9-1.6 3.5-3.5 3.5S4.5 13.9 4.5 12V4"
+                                                                      ></path>
+                                                                  </svg></button
+                                                              ><input
+                                                                  type="file"
+                                                                  accept=".3g2, .3gp, .7z, .aac, .amr, .avi, .bmp, .csv, .doc, .docx, .eml, .gif, .heic, .heif, .ics, .jfif, .jpeg, .jpg, .key, .log, .m4a, .m4v, .mov, .mp3, .mp4, .mp4a, .mpeg, .mpg, .mpga, .neon, .numbers, .odt, .oga, .ogg, .ogv, .opus, .pages, .pdf, .png, .pps, .ppsx, .ppt, .pptx, .qt, .svg, .tif, .tiff, .txt, .vcf, .wav, .webm, .webp, .wmv, .xls, .xlsx, .xml, .yaml, .yml, .zip"
+                                                                  multiple=""
+                                                                  class="sc-fcxw62-0 kGDiPU"
+                                                              />
+                                                              <div class="sc-1vpqusk-3 jIIPJQ">
+                                                                  <div
+                                                                      data-garden-id="forms.field"
+                                                                      data-garden-version="8.49.4"
+                                                                      class="sc-1vpqusk-4 dCVhlJ StyledField-sc-12gzfsu-0 bJlzcx"
+                                                                  >
+                                                                      <label
+                                                                          data-garden-id="forms.input_label"
+                                                                          data-garden-version="8.49.4"
+                                                                          id="2val-field_1.3.10--label"
+                                                                          for="2val-field_1.3.10--input"
+                                                                          data-garden-container-id="containers.field"
+                                                                          data-garden-container-version="1.3.10"
+                                                                          hidden=""
+                                                                          class="StyledLabel-sc-2utmsz-0 bYrRLL"
+                                                                          >메시지 입력</label
+                                                                      ><textarea
+                                                                          data-garden-id="forms.textarea"
+                                                                          data-garden-version="8.49.4"
+                                                                          aria-invalid="false"
+                                                                          id="2val-field_1.3.10--input"
+                                                                          aria-labelledby="2val-field_1.3.10--label"
+                                                                          aria-describedby=""
+                                                                          rows="1"
+                                                                          placeholder="메시지 입력"
+                                                                          class="StyledTextInput-sc-k12n8x-0 sc-1vpqusk-2 kDwPNr StyledTextarea-sc-wxschl-0 zLLnd"
+                                                                          style="
+                                                                              height: 40px;
+                                                                              overflow: hidden;
+                                                                          "
+                                                                      ></textarea
+                                                                      ><textarea
+                                                                          data-garden-id="forms.textarea"
+                                                                          data-garden-version="8.49.4"
+                                                                          aria-invalid="false"
+                                                                          aria-hidden="true"
+                                                                          readonly=""
+                                                                          class="StyledTextInput-sc-k12n8x-0 sc-1vpqusk-2 kDwPNr StyledTextarea-sc-wxschl-0 ktPxGI"
+                                                                          tabindex="-1"
+                                                                          style="width: 308px"
+                                                                      ></textarea>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div
+                                          id="a11y-status-message"
+                                          role="status"
+                                          aria-live="polite"
+                                          aria-relevant="additions text"
+                                          style="
+                                              border: 0px;
+                                              clip: rect(0px, 0px, 0px, 0px);
+                                              height: 1px;
+                                              margin: -1px;
+                                              overflow: hidden;
+                                              padding: 0px;
+                                              position: absolute;
+                                              width: 1px;
+                                          "
+                                      ></div>
+                                        <!------------------------------------------------------->
+                                        <div id="notifyContent"></div>
+                                      </div>
+                                    </div>
                                     <!------------챗봇 버튼-------------------------------------------------->
                                     <div class="mb-4 ydsbackground-1 md:col-6 lg:col-4 xl:col-3" >
                                         <img class="hidden mt-4 sm:inline-block" id="img2" alt="서포터"
@@ -493,7 +848,7 @@
         <!-- 푸터 클론코딩 제작 -->
       <footer class="footer-6" id="footer">
         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="svg-shape" viewBox="0 0 1200 120">
-          <use xlink:href="#shape-book"></use>
+          <!-- <use xlink:href="#shape-book"></use> -->
         </svg>
         <div class="container-7"> </div>
         <!-- svg 에서 symbol 가져오기 -->
@@ -732,77 +1087,44 @@
                 ></path>
             </symbol>
         </svg>
-     
+    
     </body>
-    <script>
-    // document.addEventListener("DOMContentLoaded", function () {
-    // // 첫 번째 버튼 요소 및 메뉴 요소 가져오기
-    // const btn1 = document.querySelector("#cbtn1");
-    // const layOut1 = document.querySelector("#article-6");
-
-    // // 두 번째 버튼 요소 및 메뉴 요소 가져오기
-    // const btn2 = document.querySelector("#cbtn2");
-    // const layOut2 = document.querySelector("#article-7");
-
-    // // 세 번째 버튼 요소 및 메뉴 요소 가져오기
-    // const btn3 = document.querySelector("#cbtn3");
-    // const layOut3 = document.querySelector("#article-8");
-
-    // // 버튼 클릭 이벤트 핸들러 - 첫 번째 버튼
-    // btn1.addEventListener("click", function (event) {
-    //     event.stopPropagation();
-    //     toggleMenu(layOut1);
-    // });
-
-    // // 버튼 클릭 이벤트 핸들러 - 두 번째 버튼
-    // btn2.addEventListener("click", function (event) {
-    //     event.stopPropagation();
-    //     toggleMenu(layOut2);
-    // });
-
-    // // 버튼 클릭 이벤트 핸들러 - 세 번째 버튼
-    // btn3.addEventListener("click", function (event) {
-    //     event.stopPropagation();
-    //     toggleMenu(layOut3);
-    // });
-
-    // // 문서의 다른 영역을 클릭할 때 숨김 이벤트 핸들러
-    // document.addEventListener("click", function (event) {
-    //     hideMenusExcept([layOut1, layOut2, layOut3], [btn1, btn2, btn3], event);
-    // });
-
-    // // 특정 메뉴를 토글하는 함수
-    // function toggleMenu(menu) {
-    //     if (menu.classList.contains("MoreMenu")) {
-    //         menu.classList.remove("MoreMenu");
-    //     } else {
-    //         menu.classList.add("MoreMenu");
-    //     }
-
-    //     if (menu.style.display === "none" || menu.style.display === "") {
-    //         menu.style.display = "block";
-    //     } else {
-    //         menu.style.display = "none";
-    //     }
-
-    //     console.log("MoreMenu");
-    // }
-
-    // // 다른 메뉴를 숨기는 함수
-    //     function hideMenusExcept(menus, buttons, event) {
-    //         for (let i = 0; i < menus.length; i++) {
-    //             const menu = menus[i];
-    //             const button = buttons[i];
-    //             if (event.target !== button && !menu.contains(event.target)) {
-    //                 menu.style.display = "none";
-    //                 menu.classList.remove("MoreMenu");
-    //             }
-    //         }
-    //     }
-    // });
-
-        
-        /*-------------------------------------*/
+    <script>             
       
+    function openModal() {
+      var modal = document.getElementById("myModal");
+      var floatingButton = document.querySelector(".floating-button");
+
+      
+      var buttonStyle = window.getComputedStyle(floatingButton);
+      var buttonPosition = buttonStyle.getPropertyValue('position');
+
+     
+      var buttonParent = floatingButton.parentElement;
+      var parentRect = buttonParent.getBoundingClientRect();
+
+      var buttonRect = floatingButton.getBoundingClientRect();
+      var leftPosition = buttonRect.left - parentRect.left;
+      var topPosition = buttonRect.top - parentRect.top + floatingButton.offsetHeight;
+
+     
+
+      modal.style.display = "block";
+
+      // 모달 외부를 클릭하면 모달이 닫히도록 이벤트 추가
+      window.addEventListener('click', outsideModalClick);
+    }
+
+    // 모달 닫기 함수
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+
+      // 모달 외부 클릭 이벤트 제거
+      window.removeEventListener('click', outsideModalClick);
+    }
+
+   
+
     </script>
 </html>
