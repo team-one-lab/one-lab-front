@@ -292,7 +292,7 @@ h3{
     margin-bottom: 16px;
 }
 
-.SignInForm_field {
+.SignInForm_field p {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.5;
