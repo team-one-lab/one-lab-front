@@ -171,6 +171,8 @@ let isCertification = false;
 let timeoutId;
 certificationNumberBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  //  isCertification는 인증 여부를 담는 변수입니다.
+  // 인증이 안되었을시 이벤트를 보고 싶으면 false로 변경하세요
   isCertification = true;
   let animationTarget;
   if (isCertification) {
