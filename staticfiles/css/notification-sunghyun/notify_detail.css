@@ -368,7 +368,7 @@ li, ul{
     
 }
 .S-v{
-    border: 1px solid #00c4c4;
+    border: 1px solid #008244;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
@@ -501,7 +501,7 @@ button{
     border-radius: 4px;
     vertical-align: top;
     border-color: #00c4c4;
-    background-color: #00c4c4;
+    background-color: #008244;
     color: #fff;
     padding: 9px 15px;
     height: 40px;

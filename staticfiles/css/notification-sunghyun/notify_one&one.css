@@ -68,7 +68,7 @@ a:-webkit-any-link {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-        z-index: 97;
+        z-index: 300;
         height: 80px;
         background-color: rgba(255, 255, 255, 1);
         font-weight: bold;
@@ -1039,7 +1039,62 @@ li {
         border-radius: 50%;
     }
 }
+/**--------------------------------*/
+/* 모달에 대한 스타일 */
+.modal {
+    background: none; 
+    overflow-y: hidden;
+    font-size: initial;
+    min-height: 80%;
+    box-sizing: border-box;
+    line-height: 20px;
+    color: rgb(47, 57, 65);
+    font-feature-settings: "kern", "kern";
+    font-kerning: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 86%;
+    right: 20%;
+    top: 60%;
+    bottom: 60%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 387px;
+    overflow: auto;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 5%;
+    /* margin: -1px;
+    width: 100%; */
+    pointer-events: auto;
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  /* 닫기 버튼에 대한 스타일 */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
 
+  #buttonContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
 @media (min-width: 360px){
     .z-10 {
         z-index: 10;
@@ -1058,7 +1113,7 @@ li {
         top: 50%;
         left: 50%;
         /* transform: translate3d(-50%, -50%, 0); */
-        z-index: 100;
+        z-index: 80;
     }
 }
 .button-primary {
@@ -1124,3 +1179,4 @@ li {
         height: 60px !important;
     }
 }
+
