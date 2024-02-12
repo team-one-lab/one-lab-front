@@ -361,7 +361,7 @@ li, ul{
     
 }
 .S-v{
-    border: 1px solid #00c4c4;
+    border: 1px solid #008244;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
@@ -493,8 +493,8 @@ button{
     margin-top: 8px;
     border-radius: 4px;
     vertical-align: top;
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008244;
+    background-color: #008244;
     color: #fff;
     padding: 9px 15px;
     height: 40px;
@@ -590,9 +590,14 @@ button{
     color: #000;
 }
 .ui-tabs li.active>a {
-    border-bottom: 3px solid #00c4c4;
+    border-bottom: 3px solid #008244;
     color: #00b2b2;
     font-weight: 500;
+}
+.ui-tabs li.deactive>a {
+    
+    color: #000;
+    
 }
 .ui-tabs li a{
     display: block;
