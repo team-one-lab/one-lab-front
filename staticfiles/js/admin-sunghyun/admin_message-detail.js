@@ -98,7 +98,8 @@ function addList() {
     button.classList.add("delete"); // 클래스명 추가
 
     // 버튼 태그 CSS 속성 적용
-    button.style.backgroundImage = 'url("/staticfiles/images/trash.jpg")';
+    button.style.backgroundImage =
+        'url("/staticfiles/css/admin-sunghyun/images/trash.jpg")';
     button.style.width = "50px";
     button.style.height = "50px";
     button.style.border = "#e6e6e7";
