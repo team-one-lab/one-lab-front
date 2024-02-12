@@ -6,7 +6,6 @@
         <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
         <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
         <script src="/staticfiles/js/notify-sunghyun/notify-one&one-modal.js"></script>
-        <!-- <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/notify_one&&one-chat.css"> -->
         <link rel="html_url" href="/templates/html/notification_sunghyun/notify_one&one-chat.html">
         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/footer.css">
         <link
@@ -21,20 +20,36 @@
         />
         <title>OneLab 일대일 문의</title>
     </head>
-    <body class>
-        <div></div>
-        <link
+
+    <!------------1대1 문의사항 이쪽 부분은 진짜 헷갈리는 부분이 많을 수 있으니 주의 바랍니다.-------->
+    <!---------클래스명 같은 경우에 죄다 미디어쿼리나 챗봇 창 등등 헷갈리는 부분들이 많아서
+    -----------클래스명 전체를 쓴 부분도 있고, 줄인 부분도 있으니 양해부탁드립니다.------------->
+
+    <!------------작업 시작------------------------------------------->
+    <body class> <!----------도무지 이해가 안되는 부분-------------------->
+        <div></div> <!----------이건 굳이 왜 있는건데? ㅡㅡ ------------>
+        
+        <link 
             rel="stylesheet"
             type="text/css"
             href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
-        />
+        /> <!----------------얘내는 여기다가 모듈 연결을 했습니다.-------------------------->
+
+        <!------------------모바일 메뉴라길래 모바일 화면에서만 보이는건줄 알았지만
+        --------------------알고보니 전체 레이아웃 div 태그입니다.(.layout-column)----------------->
         <div class="layout-column" x-data="Widgets.mobileMenu">
+
+        <!------------헤더 작업 시작------------------------------------->
             <header
                 class="header-shadow"
                 x-data="Widgets.header({ isFixed: false, isSticky: true })"
                 :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"
             >
+
+            <!---------로고부분부터 시작 되는 헤더 부분------------->
                 <nav class="navbar-full">
+            
+                    <!--------로고 부분------------------------>
                     <a href="/hc/ko" class="navbar-auto">
                         <img
                             class="block-fluid"
@@ -43,7 +58,9 @@
                             alt="도움말 센터 헬프 센터 홈페이지"
                         />
                     </a>
-                    
+                    <!--------로고 부분 작업 완료----------------->
+
+                    <!----------로고 옆 부분 3개 버튼들을 감싸는 div 태그 시작------------->
                     <div
                         class="nav-end"
                         x-show="isOpen"
@@ -61,31 +78,43 @@
                             data-element="template"
                             data-template="category-dropdown"
                         ></div>
+                        <!--------문의 등록 버튼--------------->
                         <a
                             class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
                             href="#"
                             >문의등록</a
                         >
+                        <!---------메이커센터 버튼---------------->
                         <a
                             class="button button-yds1 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
                             href="#"
                             >메이커센터
                         </a>
+                        <!-------바로가기 버튼------------->
                         <a
                             class="button button-yds3 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-179"
                             href="#"
-                            >와디즈 바로가기
+                            >원랩 바로가기
                         </a>
                     </div>
                 </nav>
+                <!-------------로고 옆부분 레이아웃 작업 완료-------------------->
             </header>
+            <!------------헤더 작업 완료--------------------------------------->
+
+            <!-----------바디 작업 시작----------------------------------->
             <main role="main">
+            <!------------첫번째 바디 부분 백그라운드 이미지 있는 바디 작업 시작-------------------->
                 <div class="hero-hidden">
+            <!-------------첫번째 바디 부분 백그라운드 이미지 내 문구, 검색창, 버튼 작업 시작---------------------------->
                     <div class="relative-8">
+            <!--------------문구 작업 시작-------------------------------------------------->
                         <div class="my-left">
                             <img src="/staticfiles/css/admin-sunghyun/images/background-img.svg" />
                         </div>
-                        <!----------->
+            <!--------------문구 작업 완료---------------------------------------------------->
+
+            <!-----------------검색창 작업 시작----------------------------------------------->
                         <div
                             class="search search-lg my-4 text-base font-size-lg shadow-lg max-w-sm md:my-5 md:font-size-xl"
                         >
@@ -135,6 +164,10 @@
                                 <use xlink:href="#icon-search"></use>
                             </svg>
                         </div>
+
+            <!----------------------검색창 작업 완료------------------------------------>
+
+            <!----------------검색창 밑에 조그만 버튼 4개 작업 시작------------------------->
                         <div id="popular-keywords">
                             <div
                                 class="flex flex-first flex-wrap mt-5 mb-4"
@@ -197,7 +230,12 @@
                                 </div>
                             </div>
                         </div>
+                <!--------------버튼 4개 작업 완료---------------------------------------->
                     </div>
+                <!----------------첫번째 바디부분  백그라운드 내 문구,검색창,버튼 작업 완료-------------------------->
+                
+                
+                <!----------------첫번째 바디부분 백그라운드 배경 이미지 해상도 설정-------------------------------->
                     <div
                         class="absolute z-10 top-0 left-0 h-full w-full bg-hero-divider"
                     ></div>
@@ -214,22 +252,28 @@
                         
                     </div>
                         
-                </div>
                     </div>
                     </div>
+                    </div>
+                <!-------------------첫번째 바디부분 백그라운드 배경 이미지 해상도 설정 완료------------------------>
+
+                <!-------------------두번째 바디 작업 시작------------------------------------------ -->
                     <div class="relative-40" id="page-container">
                         <div class="content-blocks" id="content-blocks">
                             <div class="container-center">
                                 <div class="row">
-                                    <!------------챗봇 버튼---------------------------------------------->
+
+                                    <!------------챗봇 버튼(클릭시 myModal이라는 id명을 지닌 div 태그 생성(챗봇 채팅 부분 이미지구현)---------------------------------------------->
                                     <div id="buttonContainer">
-                                    <button class="floating-button" onclick="openModal()"></button>
+                                    <button class="floating-button" onclick="openModal()"></button> <!---openModal 함수와 연동-->
                                   </div>
-                                    <!-- 숨겨진 모달 -->
+
+                                    <!------- 숨겨진 모달 : 챗봇 메세지가 나오는 부분 시작------>
                                     <div id="myModal" class="modal">
                                       <div class="modal-content">
                                         <span class="close" onclick="closeModal()">&times;</span>
-                                        <!-- notify_one-chat.html 파일 내용이 여기에 들어갑니다 -->
+
+                    <!---------------------------- 챗봇 메세지 html 내용이 여기에 들어갑니다 (꽤 긴 코드이니 유의바람) ---------->
                                         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/notify_one&&one-chat.css">
                                         <div style="background-color: rgb(255, 255, 255)">
                                           <div>
@@ -588,11 +632,19 @@
                                               width: 1px;
                                           "
                                       ></div>
-                                        <!------------------------------------------------------->
+                                        
                                         <div id="notifyContent"></div>
                                       </div>
                                     </div>
-                                    <!------------챗봇 버튼-------------------------------------------------->
+
+                    <!-----------------------챗봇 메시지 작업 완료------------------------------------------------>
+                                    <!----------------------------챗봇 메세지 부분 끝---------------->
+
+                    
+                            <!---------------두번째 바디 부분 div 태그 큰거 두개 작업 시작----------->
+
+
+                            <!-------------첫번째 div 태그------------------------------------------>
                                     <div class="mb-4 ydsbackground-1 md:col-6 lg:col-4 xl:col-3" >
                                         <img class="hidden mt-4 sm:inline-block" id="img2" alt="서포터"
                                         data-asset="image" data-asset-id="category-25448157450521"
@@ -606,7 +658,8 @@
                                             </a>
                                         </h4>
                                     </div>
-
+                            <!------------첫번째 div 태그 작업 완료--------------------------------->       
+                            <!-------------두번째 div 태그---------------------------------->        
                                     <div class="mb-4 ydsbackground-1 md:col-6 lg:col-4 xl:col-3" >
                                         <img class="hidden mt-4 sm:inline-block" id=img1 alt="메이커"
                                         data-asset="image" data-asset-id="category-25448157450521"
@@ -622,8 +675,11 @@
                                         </h4>
                                     </div>
                                 </div>
+                            <!--------두번째 div 태그 완료------------------------------------------------------->    
                             </div>
                         </div>
+
+                        <!---------세번째 바디 작업 시작 (자주묻는질문, 드롭다운 메뉴들 나오는 작업 구현)-->
                         <div class="promoted-articles ydsgraybackground" id="promoted-articles">
                             <div class="container py-4">
                                 <h2 class="flex align-items-baseline ydsh2"
@@ -633,7 +689,10 @@
                                 </template>
                                 자주 묻는 질문
                                 </h2>
+
+                                
                                 <div class="list-bordered border border-radius overflow-hidden">
+                                    <!-------------첫번째 드롭다운 메뉴 시작-------------------->
                                     <div class="bg-white" x-data="{ open: false }">
                                         <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn1" >
                                           알림 신청한 프로젝트는 어디서 확인하나요?
@@ -641,6 +700,7 @@
                                             <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
                                           </svg>
                                         </a>
+                                        <!------- a 태그 클릭시 나오는 드롭다운------------------------->
                                         <div class="content px-6 py-2 ydscontent collapse" id="article-6" >
                                           마이와디즈의 [찜·알림신청]에서 확인하실 수 있어요.
                                             찜. 알림 신청 목록 뿐만 아니라 최근에 본 프로젝트 목록까지 확인할 수 있어요.&nbsp;프로젝트 이미지 우측 상단의 하트를 클릭해서 구독 ...
@@ -651,7 +711,9 @@
                                             </p>
                                           </div>
                                       </div>
-                                      <!------>
+                                      <!------------------------------------------------------------------>
+
+                                      <!-------------두번째 드롭다운 메뉴 시작-------------------->
                                       <div class="bg-white" x-data="{ open: false }">
                                         <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn2" >
                                           회원 정보 변경은 어떻게 하나요?
@@ -659,6 +721,7 @@
                                             <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
                                           </svg>
                                         </a>
+                                        <!------- a 태그 클릭시 나오는 드롭다운------------------------->
                                         <div class="content px-6 py-2 ydscontent collapse" id="article-7" >
                                           
                                             기본 정보 설정에서 닉네임, 이메일, 연락처 등을 언제든 변경할 수 있어요.
@@ -671,7 +734,7 @@
                                             </p>
                                           </div>
                                       </div>
-                                      <!------>
+                                      <!-------------세번째 드롭다운 메뉴 시작-------------------->
                                       <div class="bg-white" x-data="{ open: false }">
                                         <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn3" data-active-class="text-primary">
                                           펀딩 참여 내역은 어떻게 확인하나요?
@@ -679,6 +742,7 @@
                                             <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
                                           </svg>
                                         </a>
+                                         <!------- a 태그 클릭시 나오는 드롭다운------------------------->
                                         <div class="content px-6 py-2 ydscontent collapse" id="article-8" >
                                           서포터님이 참여한 프로젝트는 [참여 내역]에서 확인할 수 있어요.
                                             참여한 펀딩·프리오더의 예약 취소를 원하시는 경우, 참여 내역에서 결제상태를 확인 후 직접 취소할 수 있어요.
@@ -693,6 +757,8 @@
                                         </div>                              
                                     </div>
                                 </div>
+
+                            <!-------------유튜브 동영상 목록 바디 작업 시작----------------------------------------->
                             <div class="video-library">
 
                                 <div class="container py-4">
@@ -840,6 +906,7 @@
                                 </div>
                             </div>
                         </div>
+                    <!------------------------------유튜브 동영상 목록 작업 완료------------------------->
                     </div>
                 </div>
             </main>
@@ -1098,8 +1165,9 @@
       
       var buttonStyle = window.getComputedStyle(floatingButton);
       var buttonPosition = buttonStyle.getPropertyValue('position');
-
-     
+      console.log(buttonStyle);
+      console.log(buttonPosition);
+      floatingButton.style.display = "none"
       var buttonParent = floatingButton.parentElement;
       var parentRect = buttonParent.getBoundingClientRect();
 
@@ -1111,15 +1179,16 @@
 
       modal.style.display = "block";
 
-      // 모달 외부를 클릭하면 모달이 닫히도록 이벤트 추가
-      window.addEventListener('click', outsideModalClick);
+      // 모달 외부를 클릭하면 모달이 닫힘
+      // window.addEventListener('click', outsideModalClick);
     }
 
     // 모달 닫기 함수
     function closeModal() {
+      var floatingButton = document.querySelector(".floating-button")
       var modal = document.getElementById("myModal");
       modal.style.display = "none";
-
+      floatingButton.style.display = "block";
       // 모달 외부 클릭 이벤트 제거
       window.removeEventListener('click', outsideModalClick);
     }
