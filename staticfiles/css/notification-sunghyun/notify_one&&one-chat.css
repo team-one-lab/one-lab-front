@@ -1,0 +1,576 @@
+/** 챗봇 화면 CSS **/
+
+.eUGVYL {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0px;
+    background-color: rgb(255, 255, 255);
+    overscroll-behavior: none;
+}
+.gSikFX {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    padding: 0.75rem 0.75rem 0.75rem 0.5rem;
+    background-color: rgb(251, 255, 255);
+    color: rgb(36, 66, 66);
+    word-break: break-word;
+}
+.kTapgX {
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 2.5rem;
+    min-width: 0px;
+}
+.iZrkML.iZrkML {
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+}
+
+.bNWAfz {
+    display: inline-flex;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition: box-shadow 0.25s ease-in-out 0s, color 0.1s ease-in-out 0s;
+    margin: 0px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    box-shadow: transparent 0px 0px 0px 2px;
+    background-color: transparent;
+    color: transparent;
+}
+
+blockquote, dd, dl, fieldset, figure, pre {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bNWAfz::before, .bNWAfz > img {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+}
+.bNWAfz::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: box-shadow 0.25s ease-in-out 0s;
+    content: "";
+}
+.bNWAfz::before {
+    box-shadow: 0px 0px 0px 2px inset;
+}
+
+.bNWAfz > img {
+    box-sizing: inherit;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+.bNWAfz::after {
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    transition: all 0.25s ease-in-out 0s, color 0s ease 0s;
+    opacity: 0;
+    border: 2px solid;
+    border-radius: 100px;
+    padding: 0px;
+    min-width: 0px;
+    max-width: 2em;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    line-height: 1px;
+    white-space: nowrap;
+    font-size: 0px;
+    font-weight: 600;
+    content: "";
+    box-sizing: content-box !important;
+}
+.bNWAfz::after {
+    background-color: transparent;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+.byEuur:not(:first-child) {
+    padding-left: 1rem;
+}
+
+.byEuur {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex: 1 1 0%;
+    color: rgb(36, 66, 66);
+    min-width: 0px;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+}
+.hQhTcL {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.028125rem;
+}
+
+
+
+.hXcozW {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.009375rem;
+}
+
+
+.kmeNDk:not(.sc-vrqbdz-8 + .sc-vrqbdz-8) {
+    padding-left: 1rem;
+}
+
+.kmeNDk {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 2rem;
+}
+.cDiLKi {
+    transition: opacity 0.2s ease-in 0s;
+    opacity: 1;
+}
+.dHXfJR.dHXfJR.dHXfJR {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgb(251, 255, 255);
+    color: rgb(47, 57, 65);
+    align-self: center;
+}
+
+.jJOPWF {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition: border-color 0.25s ease-in-out 0s, box-shadow 0.1s ease-in-out 0s, background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s;
+    margin: 0px;
+    border-radius: 100px;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: inherit;
+    font-weight: 400;
+    -webkit-font-smoothing: subpixel-antialiased;
+    box-sizing: border-box;
+    user-select: none;
+    height: 40px;
+    line-height: 38px;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 40px;
+    color: rgb(104, 115, 125);
+}
+
+.dHXfJR.dHXfJR.dHXfJR svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.jJOPWF .sc-bwzfXH {
+    width: 16px;
+    height: 16px;
+}
+
+.jJOPWF .sc-bwzfXH {
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+}
+
+.dHXfJR svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.iRaNEz {
+    transform: rotate(90deg);
+}
+
+.hDrfMZ {
+    transition: transform 0.25s ease-in-out 0s;
+}
+
+
+.dpIHJq[readonly], .dpIHJq[aria-readonly="true"] {
+    border-color: rgb(216, 220, 222);
+}
+
+.dpIHJq {
+    appearance: none;
+    transition: border-color 0.25s ease-in-out 0s, box-shadow 0.1s ease-in-out 0s, background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, z-index 0.25s ease-in-out 0s;
+    border: none rgb(216, 220, 222);
+    border-radius: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-family: inherit;
+    padding: 0px;
+    min-height: 1em;
+    line-height: 1.28571;
+    font-size: 14px;
+    background-color: transparent;
+    color: rgb(47, 57, 65);
+}
+
+.etSNgg {
+    position: fixed;
+    border: 0px;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hPndRc {
+    position: absolute;
+    z-index: 1000;
+    margin-top: 4px;
+    line-height: 0;
+    font-size: 0.01px;
+    visibility: hidden;
+    opacity: 0;
+}
+.bWoiQd.bWoiQd.bWoiQd {
+    border-radius: 1.25rem;
+}
+
+.dfwXOG {
+    max-height: 400px;
+    overflow-y: auto;
+    position: static !important;
+}
+
+.hPndRc > * {
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+    box-sizing: border-box;
+    border: 1px solid rgb(216, 220, 222);
+    border-radius: 4px;
+    box-shadow: rgba(23, 73, 77, 0.15) 0px 20px 30px 0px;
+    background-color: rgb(255, 255, 255);
+    cursor: default;
+    padding: 0px;
+    text-align: left;
+    white-space: normal;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.bWoiQd {
+    border-radius: 1.25rem;
+    border: 0px;
+}
+
+
+
+.kmeNDk + .sc-vrqbdz-8 {
+    margin-left: 3px;
+}
+
+.kmeNDk {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 2rem;
+}
+.jGrxQN {
+    display: flex;
+    flex-direction: row;
+}
+.gDmSQI {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.elDGjL {
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.kmIcd {
+    overflow-y: auto;
+    height: 100%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    overscroll-behavior-y: contain;
+}
+.dqeAJH {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75rem;
+}
+.gVDlUa {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    height: 1rem;
+    letter-spacing: 0px;
+    color: rgb(104, 115, 125);
+    align-self: center;
+}
+.bXNGeC {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 1rem;
+    margin-top: 0.75rem;
+}
+.ddVeKf {
+    margin: 0px 0px 0px 3rem;
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1rem;
+    color: rgb(104, 115, 125);
+}
+.eFkXQN {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+.cOEDyw.cOEDyw {
+    margin-right: 0.25rem;
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+.cOEDyw {
+    align-self: flex-end;
+    flex-shrink: 0;
+}
+
+.iZPSvc {
+    margin-top: 0.125rem;
+    min-width: 3.25rem;
+    transition: border-radius 0.15s linear 0.15s, opacity 0.3s linear 0s, background-color 0.2s linear 0s;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    border-color: rgb(233, 235, 237);
+    background-color: rgb(244, 246, 248);
+    color: rgb(0, 0, 0);
+    max-width: calc(100% - 6.25rem);
+    border-radius: 1.25rem;
+    animation: auto ease 0s 1 normal none running none;
+}
+.jMwAnd {
+    padding: 0.5rem 0.75rem;
+}
+.hxbZy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.receipt-appear-done .cVcuIa, .receipt-enter-done .cVcuIa {
+    max-height: none;
+}
+.cPlSDe {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.125rem;
+    margin-left: calc(3.25rem);
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+.receipt-appear-active .jduwmO, .receipt-appear-done .jduwmO, .receipt-enter-done .jduwmO {
+    transition: transform 0.3s cubic-bezier(0.66, 0, 0.12, 1) 0.6s, opacity 0.3s cubic-bezier(0.66, 0, 0.12, 1) 0.6s;
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+}
+.jduwmO {
+    border-top: 0.75rem solid rgb(244, 246, 248);
+    border-right: 0.75rem solid transparent;
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+}
+.receipt-appear-active .hTkgti, .receipt-appear-done .hTkgti, .receipt-enter-done .hTkgti {
+    transition: opacity 0.3s ease 0.9s;
+    opacity: 1;
+}
+.hTkgti {
+    color: rgb(104, 115, 125);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin: 0px 0px 0px 0.5rem;
+    opacity: 1;
+}
+.cauRJz {
+    overflow: hidden;
+    transition: max-height 0s linear 0s, opacity 0.3s linear 0.3s;
+}
+.distqQ {
+    margin: 0px calc(1rem) 0.25rem;
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+.hoMxzy.hoMxzy.hoMxzy {
+    font-size: 0.875rem;
+    height: 100%;
+    white-space: normal;
+    line-height: 1.25rem;
+    border-radius: 1.25rem;
+    border-color: rgb(2, 9, 8);
+    color: rgb(2, 9, 8);
+    margin: 0.5rem 0px 0px calc(0.5rem);
+    padding: 0.5rem 1rem;
+    text-align: start;
+}
+.kbREso {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition: border-color 0.25s ease-in-out 0s, box-shadow 0.1s ease-in-out 0s, background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s;
+    margin: 0px;
+    border: 1px solid rgb(31, 115, 183);
+    border-radius: 100px;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: inherit;
+    font-weight: 400;
+    -webkit-font-smoothing: subpixel-antialiased;
+    box-sizing: border-box;
+    user-select: none;
+    padding: 0px 1.07143em;
+    height: 40px;
+    line-height: 38px;
+    font-size: 14px;
+    background-color: transparent;
+    color: rgb(31, 115, 183);
+}
+.gXymJE {
+    display: flex;
+    flex-shrink: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    padding: 0.75rem;
+}
+.hrKGAE.hrKGAE.hrKGAE {
+    align-self: flex-end;
+    margin-right: 0.5rem;
+}
+
+.hrKGAE.hrKGAE.hrKGAE {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(135, 146, 157);
+    align-self: center;
+}
+.kGDiPU {
+    display: none;
+}
+.jIIPJQ {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    position: relative;
+}
+.bJlzcx {
+    position: relative;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-size: 0px;
+}
+.bYrRLL[hidden] {
+    display: inline;
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.bYrRLL {
+    vertical-align: middle;
+    line-height: 1.42857;
+    color: rgb(47, 57, 65);
+    font-size: 14px;
+    font-weight: 600;
+}
+.kDwPNr.kDwPNr.kDwPNr {
+    border-radius: 1.375rem;
+    border: 1px solid rgb(115, 115, 115);
+    background: transparent;
+    min-height: 2.5rem;
+    padding: 0.625rem calc(2.5rem) 0.625rem 1rem;
+    box-shadow: none;
+    font-size: 0.875rem;
+    scrollbar-width: none;
+}
+.zLLnd {
+    appearance: none;
+    transition: border-color 0.25s ease-in-out 0s, box-shadow 0.1s ease-in-out 0s, background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, z-index 0.25s ease-in-out 0s;
+    border: 1px solid rgb(216, 220, 222);
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-family: inherit;
+    padding: 0.714286em 0.857143em;
+    min-height: 40px;
+    line-height: 1.28571;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(47, 57, 65);
+    resize: none;
+    overflow: auto;
+}

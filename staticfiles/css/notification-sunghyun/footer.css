@@ -1,0 +1,1115 @@
+/* ##### 푸터 설정 ##### */
+
+
+
+/* <footer class="footer-6" id="footer"></footer> */
+/* class="footer-6" */
+@media (min-width: 360px)
+{.footer-6 {
+    margin-top: 2rem;
+    font-family: 'Pretendard Variable';
+    /* position: relative; */
+    background-color: rgba(255, 255, 255, 0);
+}}
+
+.footer-6{
+    display: block;
+}
+
+
+/* <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="svg-shape" viewBox="0 0 1200 120"></svg> */
+/* class="svg-shape" */
+@media (min-width: 360px)
+{.svg-shape {
+    position: relative;
+    /* z-index: 20; */
+    width: 100%;
+    height: 4rem;
+    fill: #fff;
+}}
+
+
+/* <use xlink:href="#shape-book"></use> */
+/* 적용할 CSS 없음 */
+
+
+/* <div class="container-7"></div> */
+/* class="container-7" */
+@media (min-width: 360px)
+{.container-7 {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}}
+
+@media (min-width: 1200px)
+{.container-7 {
+    max-width: 1140px;
+}}
+
+.container-7 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+
+/* <svg xmlns="http://www.w3.org/2000/svg" class="hidden"></svg> */
+/* class="hidden" */
+/* 적용할 CSS 없음 */
+/* svg > symbol 들 html 문서에 복붙 */
+
+
+/* <div class="main-container"></div> */
+/* class="main-container" */
+@media (min-width: 360px)
+{.main-container {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    overflow: hidden;
+}}
+
+
+/* <div class="containerq"></div> */
+/* class="containerq" */
+@media (min-width: 360px)
+{.containerq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    min-width: 0;
+}}
+
+@media (min-width: 360px)
+{.main-container * {
+    box-sizing: border-box;
+}}
+
+
+/* <div class="divider"></div> */
+/* class="divider" */
+@media (min-width: 360px)
+{.divider {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}}
+
+
+/* <div class="full-divider"></div> */
+/* class="full-divider" */
+@media (min-width: 360px)
+{.full-divider {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 1px;
+    background: rgb(233, 236, 239);
+    overflow: hidden;
+}}
+
+
+/* <div class="box"></div> */
+/* class="box" */
+@media (min-width: 360px)
+{.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 497px;
+    height: 40px;
+    /* z-index: 90; */
+    padding: 10px 80px 10px 80px;
+}}
+
+
+/* <div class="box-1"></div> */
+/* class="box-1" */
+@media (min-width: 360px)
+{.box-1 {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 24px;
+    min-height: 0;
+}}
+
+
+/* <div class="text-gray"></div> */
+/* class="text-gray" */
+@media (min-width: 360px)
+{.text-gray {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 6px;
+    border-radius: 4px;
+}}
+
+
+/* <span class="button-text">정책.약관</span> */
+/* class="button-text" */
+@media (min-width: 360px)
+{.button-text {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <div class="system-icon"></div> */
+/* class="system-icon" */
+@media (min-width: 360px)
+{.system-icon {
+    flex-shrink: 0;
+    position: relative;
+    width: 16px;
+    height: 16px;
+}}
+
+
+/* <div class="fill"></div> */
+/* class="fill" */
+@media (min-width: 360px)
+{.fill {
+    position: absolute;
+    width: 78.52%;
+    height: 42.8%;
+    top: 29.48%;
+    left: 10.74%;
+    background: url(https://theme.zdassets.com/theme_assets/13612819/23114dc93a3c334b9123315f976d6bf70fd27978.png) no-repeat center;
+    background-size: 100% 100%;
+    /* z-index: 2; */
+}}
+
+
+/* <div class="text-gray-2" onclick="location.href='https://www.wadiz.kr/web/wterms/privacy'"></div> */
+/* class="text-gray-2" */
+@media (min-width: 360px)
+{.text-gray-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 6px;
+    border-radius: 4px;
+}}
+
+
+/* <span class="button-text-3"></span> */
+/* class="button-text-3" */
+@media (min-width: 360px)
+{.button-text-3 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <div class="system-icon-4"></div> */
+/* class="system-icon-4" */
+@media (min-width: 360px)
+{.system-icon-4 {
+    flex-shrink: 0;
+    position: relative;
+    width: 16px;
+    height: 16px;
+}}
+
+
+/* <div class="fill-5"></div> */
+/* class="fill-5" */
+@media (min-width: 360px)
+{.fill-5 {
+    position: absolute;
+    width: 78.52%;
+    height: 42.8%;
+    top: 29.48%;
+    left: 10.74%;
+    background: url(https://theme.zdassets.com/theme_assets/13612819/23114dc93a3c334b9123315f976d6bf70fd27978.png) no-repeat center;
+    background-size: 100% 100%;
+    /* z-index: 3; */
+}}
+
+
+/* <div class="divider-6"></div> */
+/* class="divider-6" */
+@media (min-width: 360px)
+{.divider-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}}
+
+
+/* <div class="full-7"></div> */
+/* class="full-7" */
+@media (min-width: 360px)
+{.full-7 {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 1px;
+    background: rgb(233, 236, 239);
+    overflow: hidden;
+}}
+
+
+/* <div class="container-8"></div> */
+/* class="container-8" */
+@media (min-width: 360px)
+{.container-8 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 80px;
+    /* z-index: 80; */
+    min-width: 0;
+    height: 261px;
+    padding: 40px 80px 40px 80px;
+}}
+
+
+/* <div class="box-9"></div> */
+/* class="box-9" */
+@media (min-width: 360px)
+{.box-9 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 18px;
+    width: 249px;
+    min-height: 0;
+}}
+
+
+/* <div class="box-a"></div> */
+/* class="box-a" */
+@media (min-width: 360px)
+{.box-a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    width: 161px;
+}}
+
+
+/* <div class="box-b"></div> */
+/* class="box-b" */
+@media (min-width: 360px)
+{.box-b {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    min-width: 0;
+    height: 28px;
+}}
+
+
+/* <div class="system-icon-c"></div> */
+/* class="system-icon-c" */
+@media (min-width: 360px)
+{.system-icon-c {
+    flex-shrink: 0;
+    position: relative;
+    width: 24px;
+    height: 24px;
+}}
+
+
+/* <div class="fill-d"></div> */
+/* class="fill-d" */
+@media (min-width: 360px)
+{.fill-d {
+    position: absolute;
+    width: 88.35%;
+    height: 88.33%;
+    top: 5.83%;
+    left: 5.83%;
+    background: url(https://theme.zdassets.com/theme_assets/13612819/cb0370a3af97ac243dbf91e1e65d3fa5d9e253d9.png) no-repeat center;
+    background-size: 100% 100%;
+    /* z-index: 4; */
+}}
+
+
+/* <span class="wadiz-help-center">와디즈 도움말센터</span> */
+/* class="wadiz-help-center" */
+@media (min-width: 360px)
+{.wadiz-help-center {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 28px;
+    font-family: Pretendard Variable;
+    color: rgb(33, 37, 41);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <div class="text-button"></div> */
+/* class="text-button" */
+@media (min-width: 360px)
+{.text-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 6px;
+    border-radius: 4px;
+}}
+
+
+/* <span class="button-text-f">채팅 상담하기</span> */
+/* class="button-text-f" */
+@media (min-width: 360px)
+{.button-text-f {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 28px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.05px;
+    word-break: break-word;
+}}
+
+
+/* <div class="system-icon-10"></div> */
+/* class="system-icon-10" */
+@media (min-width: 360px)
+{.system-icon-10 {
+    flex-shrink: 0;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}}
+
+
+/* <div class="fill-11"></div> */
+/* class="fill-11" */
+@media (min-width: 360px)
+{.fill-11 {
+    position: absolute;
+    width: 78.55%;
+    height: 42.8%;
+    top: 29.48%;
+    left: 10.74%;
+    background: url(https://theme.zdassets.com/theme_assets/13612819/23114dc93a3c334b9123315f976d6bf70fd27978.png) no-repeat center;
+    background-size: 100% 100%;
+    /* z-index: 5; */
+}}
+
+
+/* <div class="text-12" onclick="location.href='https://helpcenter.wadiz.kr/hc/ko/requests/new'"></div> */
+/* class="text-12" */
+@media (min-width: 360px)
+{.text-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 6px;
+    border-radius: 4px;
+}}
+
+
+/* <span class="button-text-13">문의 등록하기</span> */
+/* class="button-text-13" */
+@media (min-width: 360px)
+{.button-text-13 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 28px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.05px;
+    word-break: break-word;
+}}
+
+
+/* <div class="system-icon-14"></div> */
+/* class="system-icon-14" */
+@media (min-width: 360px)
+{.system-icon-14 {
+    flex-shrink: 0;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}}
+
+
+/* <div class="fill-15"></div> */
+/* class="fill-15" */
+@media (min-width: 360px)
+{.fill-15 {
+    position: absolute;
+    width: 78.55%;
+    height: 42.8%;
+    top: 29.48%;
+    left: 10.74%;
+    background: url(https://theme.zdassets.com/theme_assets/13612819/23114dc93a3c334b9123315f976d6bf70fd27978.png) no-repeat center;
+    background-size: 100% 100%;
+    /* z-index: 6; */
+}}
+
+
+/* <div class="divider-16"></div> */
+/* class="divider-16" */
+@media (min-width: 360px)
+{.divider-16 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    min-width: 0;
+}}
+
+
+/* <div class="full-17"></div> */
+/* class="full-17" */
+@media (min-width: 360px)
+{.full-17 {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 1px;
+    background: rgb(233, 236, 239);
+    overflow: hidden;
+}}
+
+
+/* <div class="box-18"></div> */
+/* class="box-18" */
+@media (min-width: 360px)
+{.box-18 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 4px;
+    min-width: 0;
+}}
+
+
+/* <span class="counseling-available-time">상담 가능 시간</span> */
+/* class="counseling-available-time" */
+@media (min-width: 360px)
+{.counseling-available-time {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(134, 142, 150);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <span class="counseling-available-date">평일 오전 9시 ~ 오후 6시 (주말, 공휴일 제외)</span> */
+/* class="counseling-available-date" */
+@media (min-width: 360px)
+{.counseling-available-date {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(134, 142, 150);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <div class="box-19"></div> */
+/* class="box-19" */
+@media (min-width: 360px)
+{.box-19 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 40px;
+}}
+
+
+/* <div class="box-1a"></div> */
+/* class="box-1a" */
+@media (min-width: 360px)
+{.box-1a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+}}
+
+
+/* <div class="box-1b"></div> */
+/* class="box-1b" */
+@media (min-width: 360px)
+{.box-1b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+}}
+
+
+/* <div class="box-1c"></div> */
+/* class="box-1c" */
+@media (min-width: 360px)
+{.box-1c {
+    display: flex;
+    align-items: flex-end;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 4px;
+    height: 20px;
+    padding: 0 74px 0 0;
+}}
+
+
+/* <span class="wadiz">와디즈(주)</span> */
+/* class="wadiz" */
+@media (min-width: 360px)
+{.wadiz {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <div class="divider-1d"></div> */
+/* class="divider-1d" */
+@media (min-width: 360px)
+{.divider-1d {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    height: 16px;
+}}
+
+
+/* <div class="middle-divider"></div> */
+/* class="middle-divider" */
+@media (min-width: 360px)
+{.middle-divider {
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 1px;
+    min-height: 0;
+    background: rgb(233, 236, 239);
+    overflow: hidden;
+}}
+
+
+/* <span class="representative-director">대표이사</span> */
+/* class="representative-director" */
+@media (min-width: 360px)
+{.representative-director {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <span class="main-name">신혜성</span> */
+/* class="main-name" */
+@media (min-width: 360px)
+{.main-name {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <div class="divider-1e"></div> */
+/* class="divider-1e" */
+@media (min-width: 360px)
+{.divider-1e {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    height: 16px;
+}}
+
+
+/* <div class="middle-1f"></div> */
+/* class="middle-1f" */
+@media (min-width: 360px)
+{.middle-1f {
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 1px;
+    min-height: 0;
+    background: rgb(233, 236, 239);
+    overflow: hidden;
+}}
+
+
+/* <span class="business-number">사업자등록번호 258-87-01370</span> */
+/* class="business-number" */
+@media (min-width: 360px)
+{.business-number {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <div class="divider-20"></div> */
+/* class="divider-20" */
+@media (min-width: 360px)
+{.divider-20 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    height: 16px;
+}}
+
+
+/* <div class="middle-21"></div> */
+/* class="middle-21" */
+@media (min-width: 360px)
+{.middle-21 {
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 1px;
+    min-height: 0;
+    background: rgb(233, 236, 239);
+    overflow: hidden;
+}}
+
+
+/* <span class="sales-number">통신판매업신고번호 2021-성남분당C-1153</span> */
+/* class="sales-number" */
+@media (min-width: 360px)
+{.sales-number {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <div class="divider-22"></div> */
+/* class="divider-22" */
+@media (min-width: 360px)
+{.divider-22 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    height: 16px;
+}}
+
+
+/* <div class="middle-23"></div> */
+/* class="middle-23" */
+@media (min-width: 360px)
+{.middle-23 {
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 1px;
+    min-height: 0;
+    background: rgb(233, 236, 239);
+    overflow: hidden;
+}}
+
+
+/* <span class="span-address">경기 성남시 분당구 판교로 242 PDC A동 402호</span> */
+/* class="span-address" */
+@media (min-width: 360px)
+{.span-address {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <div class="box-24"></div> */
+/* class="box-24" */
+@media (min-width: 360px)
+{.box-24 {
+    display: flex;
+    align-items: flex-end;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 4px;
+    height: 20px;
+}}
+
+
+/* <span class="span-email-consultation">이메일 상담</span> */
+/* class="span-email-consultation" */
+@media (min-width: 360px)
+{.span-email-consultation {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <div class="divider-25"></div> */
+/* class="divider-25" */
+@media (min-width: 360px)
+{.divider-25 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    height: 16px;
+}}
+
+
+/* <div class="middle-26"></div> */
+/* class="middle-26" */
+@media (min-width: 360px)
+{.middle-26 {
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 1px;
+    min-height: 0;
+    background: rgb(233, 236, 239);
+    overflow: hidden;
+}}
+
+
+/* <span class="span-email">info@wadiz.kr</span> */
+/* class="span-email" */
+@media (min-width: 360px)
+{.span-email {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <div class="divider-27"></div> */
+/* class="divider-27" */
+@media (min-width: 360px)
+{.divider-27 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    height: 16px;
+}}
+
+
+/* <div class="middle-28"></div> */
+/* class="middle-28" */
+@media (min-width: 360px)
+{.middle-28 {
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 1px;
+    min-height: 0;
+    background: rgb(233, 236, 239);
+    overflow: hidden;
+}}
+
+
+/* <span class="wired-counseling">유선 상담 1661-9056</span> */
+/* class="wired-counseling" */
+@media (min-width: 360px)
+{.wired-counseling {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <span class="wadiz-co-ltd">ⓒ wadiz Co., Ltd.</span> */
+/* class="wadiz-co-ltd" */
+@media (min-width: 360px)
+{.wadiz-co-ltd {
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    word-break: break-word;
+}}
+
+
+/* <span class="wadiz-disclaimer"></span> */
+/* class="wadiz-disclaimer" */
+@media (min-width: 360px)
+{.wadiz-disclaimer {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 40px;
+    font-family: Pretendard Variable;
+    color: rgb(134, 142, 150);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    overflow: hidden;
+    word-break: break-word;
+}}
+
+
+/* <div class="box-29"></div> */
+/* class="box-29" */
+@media (min-width: 360px)
+{.box-29 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    width: 194px;
+    height: 24px;
+}}
+
+
+/* <div class="box-2a" onclick="location.href='https://play.google.com/store/apps/details?id=com.markmount.wadiz&pli=1'"></div> */
+/* class="box-2a" */
+@media (min-width: 360px)
+{.box-2a {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 8px;
+    min-width: 0;
+    min-height: 0;
+}}
+
+
+/* <div class="artwork-logo-1"></div> */
+/* class="artwork-logo-1" */
+@media (min-width: 360px)
+{.artwork-logo-1 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background: url(https://theme.zdassets.com/theme_assets/13612819/cc34cc7bfae1dab45c2a08e3c5167fce24a7009a.png) no-repeat center;
+    background-size: cover;
+}}
+
+
+/* <span class="android-app">Android앱</span> */
+/* class="android-app" */
+@media (min-width: 360px)
+{.android-app {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    word-break: break-word;
+}}
+
+
+/* <div class="box-2b"></div> */
+/* class="box-2b" */
+@media (min-width: 360px)
+{.box-2b {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    width: 67px;
+    min-height: 0;
+}}
+
+
+/* <div class="artwork-logo-2" onclick="location.href='https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'"></div> */
+/* class="artwork-logo-2" */
+@media (min-width: 360px)
+{.artwork-logo-2 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background: url(https://theme.zdassets.com/theme_assets/13612819/0aa3f86bb1b2e28aaf28ea469a3e7a0cc680eb2d.png) no-repeat center;
+    background-size: cover;
+}}
+
+
+/* <span class="ios-app">iOS앱</span> */
+/* class="ios-app" */
+@media (min-width: 360px)
+{.ios-app {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    min-width: 0;
+    height: 20px;
+    font-family: Pretendard Variable;
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    word-break: break-word;
+}}
+

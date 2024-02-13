@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="/staticfiles/css/share-soyoung/share-list.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <title>자료 요청/공유 목록</title>
+</head>
+<body>
+    <!--헤더-->
+                        <!-- 로그인 된 헤더 부분 추가 -->
+                        <!-- <div class="notification-btn-container">
+                            <button class="notification-btn">
+                                <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="notice-icon-svg" aria-hidden="true">
+                                    <path fill="none" d="M0 0h40v40H0z"></path>
+                                    <path d="M36.78 32l-.89-1.56a16.92 16.92 0 0 1-2.18-8.68v-7.12A12.78 12.78 0 0 0 30 5.54a13.86 13.86 0 0 0-9.91-4 14.05 14.05 0 0 0-9.95 4 12.74 12.74 0 0 0-3.76 9.1v7.14a16.92 16.92 0 0 1-2.18 8.68L3.22 32h10.91a5.58 5.58 0 0 0 .2 2.8 5.75 5.75 0 0 0 4.44 3.86 5.52 5.52 0 0 0 1 .09 5.79 5.79 0 0 0 3.71-1.36 5.7 5.7 0 0 0 2-4.38 4.88 4.88 0 0 0-.11-1zM8.37 21.78v-7.14A10.66 10.66 0 0 1 11.52 7 11.81 11.81 0 0 1 20 3.66 11.92 11.92 0 0 1 28.48 7a10.65 10.65 0 0 1 3.14 7.62v7.14a19.52 19.52 0 0 0 1.67 8.16H6.71a19.52 19.52 0 0 0 1.66-8.14zM23.42 33a3.64 3.64 0 0 1-7.11 1.13 3.41 3.41 0 0 1 0-2.14h7a3.18 3.18 0 0 1 .11 1.01z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="header-desktop-user">
+                            <div class="user-container">
+                                <button type="button" class="user-btn-avatar">
+                                    <div>
+                                        <div class="avatar" style="width: 32px; height: 32px;">
+                                            <span class="avatar-image" style="background-image: url(&quot;https://www.wadiz.kr/wwwwadiz/green001/sns_profile_pics/20210807204707869_56659417.jpg&quot;), url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYzl1cmF3eHIyYSIgZD0iTTAgMGg4MHY4MEgweiIvPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8Zz4KICAgICAgICAgICAgPG1hc2sgaWQ9IjZ2emt3OXN5NWIiIGZpbGw9IiNmZmYiPgogICAgICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjYzl1cmF3eHIyYSIvPgogICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik04MCA0MGMwIDIyLjA5Mi0xNy45MDkgNDAtNDAgNDBTMCA2Mi4wOTIgMCA0MCAxNy45MDkgMCA0MCAwczQwIDE3LjkwOCA0MCA0MCIgZmlsbD0iI0U5RUNFRiIgbWFzaz0idXJsKCM2dnprdzlzeTViKSIvPgogICAgICAgIDwvZz4KICAgICAgICA8cGF0aCBkPSJtMjIuMzA1IDI2LjkxNC4yMyAyLjEyMWMtLjAxLjI5LjA0OS41NTkuMTgxLjgwNy4wODUuMjYxLjIyOC40ODUuNDMzLjY3Ni4xOS4yMDMuNDEzLjM0OC42NzQuNDMyLjI0OS4xMzIuNTE5LjE5MS44MDYuMThsLjU1Ny0uMDc1Yy4zNTUtLjA5OS42NjMtLjI3OS45MjQtLjUzN2wuMzI4LS40MjVjLjE5LS4zMjYuMjg1LS42OC4yODctMS4wNTgtLjA3OC0uNzA2LS4xNTQtMS40MTUtLjIzLTIuMTIxLjAxLS4yOS0uMDUtLjU1OS0uMTgtLjgwN2ExLjU3IDEuNTcgMCAwIDAtLjQzNC0uNjc1IDEuNTUzIDEuNTUzIDAgMCAwLS42NzQtLjQzMyAxLjU4NCAxLjU4NCAwIDAgMC0uODA3LS4xOGMtLjE4NS4wMjYtLjM3Mi4wNS0uNTU3LjA3NWEyLjA4MyAyLjA4MyAwIDAgMC0uOTI1LjUzOGwtLjMyNi40MjRjLS4xOS4zMjctLjI4NS42NzktLjI4NyAxLjA1OE01My44ODIgMjcuMzI4djIuNTIyYzAgLjUzOC4yMzMgMS4xMDIuNjEzIDEuNDgyLjE5LjIwMy40MTQuMzQ4LjY3NC40MzMuMjUuMTMuNTE4LjE5LjgwNy4xOC41NDItLjAyNCAxLjEwNC0uMjAyIDEuNDgxLS42MTMuMzc2LS40MS42MTQtLjkxNC42MTQtMS40ODJ2LTIuNTIyYzAtLjUzNi0uMjM0LTEuMS0uNjE0LTEuNDhhMS41NzYgMS41NzYgMCAwIDAtLjY3NC0uNDM0IDEuNTczIDEuNTczIDAgMCAwLS44MDctLjE4Yy0uNTQyLjAyNC0xLjEwNC4yMDItMS40ODEuNjE0LS4zNzYuNDA5LS42MTMuOTEzLS42MTMgMS40OE0zNi4yOTcgMjUuOTQ1Yy0uNzQzIDQuMzM1LTEuNDg0IDguNjczLTIuMjI1IDEzLjAxLS4xODQgMS4wNzUuMjg1IDIuMzA3IDEuNDYzIDIuNTc2IDEuMDE0LjIzIDIuMzc4LS4zMDkgMi41NzYtMS40NjJsMi4yMjUtMTMuMDExYy4xODQtMS4wNzUtLjI4NS0yLjMwOC0xLjQ2My0yLjU3Ny0xLjAxNS0uMjMtMi4zOC4zMDgtMi41NzYgMS40NjRNNDUuMTU4IDUwLjM4NmMtLjE2LS4zMy0uMTAxLS40NzctLjA0NS0uODA2LS4xMTEuMTc1LS4xMjUuMjAxLS4wNDIuMDc3YS4zNy4zNyAwIDAgMSAuMjAzLS4xNzhjLS4yMi4xMTctLjIzNS4xMzgtLjA0Ny4wNjRhMy40MyAzLjQzIDAgMCAxLS4zOTMuMTE2Yy0uMDgyLjAyLS42NTkuMS0uMjY1LjA1Ny0xLjExNS4xMjQtMi4yNC4xOS0zLjM2LjI4NWwtNi44NzcuNTc3Yy0xLjA4OS4wOTItMi4xNDguODk3LTIuMDk1IDIuMDk0LjA0OCAxLjA1Ni45MjYgMi4xOTIgMi4wOTUgMi4wOTNsOC44NC0uNzRjMS40NS0uMTIzIDMuMDQxLS4xMyA0LjI4Ny0uOTggMS42LTEuMDkzIDIuMTYzLTMuMDI4IDEuMzE2LTQuNzcyLS40OC0uOTktMS45NjYtMS4zMzMtMi44NjYtLjc1Mi0xLjAxMy42NTQtMS4yNjMgMS44MDctLjc1IDIuODY1IiBmaWxsPSIjQ0REM0Q4Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=&quot;); box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset;"></span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div> -->
+                        <!-- 끝 -->
+                        
+                        <!-- <div class="web-header-funding-open funding-open">
+                            <button
+                                aria-label="프로젝트 만들기"
+                                class="Button_button Button_primary Button_contained Button_md funding-open-button"
+                                type="button"
+                            >
+                                <span><span class="Button_children">프로젝트 만들기</span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="PreviewOverlay_container">
+                        <svg
+                            viewBox="0 0 40 40"
+                            focusable="false"
+                            role="presentation"
+                            class="withIcon_icon"
+                            aria-hidden="true"
+                            style="width: 24px; height: 24px;"
+                        >
+                            <path fill="none" d="M0 0h40v40H0z"></path>
+                            <path d="M38 6.06H2V31h11.8v3.88h12.4V31H38zm-2.12 22.85H4.12V8.14h31.76z"></path>
+                        </svg>
+                        <p class="PreviewOverlay_title">미리보기 모드</p>
+                        <p class="PreviewOverlay_description">저장한 내용을 미리 볼 수 있어요.</p>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div> -->
+    <!-- 헤더 끝 -->
+    <div class="main-wrapper-content">
+        <div></div>
+            <div class="comingsoon-banners-container">
+                <div class="comingsoon-banners-item">
+                    <div class="commingsoon-banner-item-container">
+                        <a href="" rel="noopener nofollow noreferrer" class="comingsoon-banner-item" style="background-image: url('https://cdn.wadiz.kr/ft/images/green001/2024/0202/20240202195136465_8780.jpg/wadiz/format/jpg/quality/80');">
+                            <div class="comingsoon-banner-item-text-box">
+                                <p class="comingsoon-banner-item-main-text">직접 체험해보고 구매하세요</p>
+                                <p class="comingsoon-banner-item-sub-text">성수동 공간와디즈에서 만나는 '조금 다른 일상'</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <div class="main-category-margin"></div>
+            <div class="category-tab-container" style="top: 0px">
+                <div class="category-tab-contents">
+                    <div class="tabs-mobile-root">
+                        <div class="tabs-mobile-wrapper">
+                            <ul class="tabs-mobile-tab" style="gap: 4px">
+                                <li>
+                                    <button class="image-tab active">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('http://d1ruwxjthziwe4.cloudfront.net/category/2024:01:03:6dc5a2a5-f243-4d36-a44a-7580b939f3a9.png');"></div>
+                                                <div class="image-tab-thumbnail" style="background-image: url('http://d1ruwxjthziwe4.cloudfront.net/category/2024:01:03:3ab00b2f-5acb-46ce-9bcf-d61feb65a33e.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label active" data-text="전체 학과">전체 학과</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/economics-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/economics-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="경영/경제">경영/경제</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/computer-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/computer-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="컴퓨터/전기/전자">컴퓨터/전기/전자</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/mechanical-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/mechanical-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="기계">기계</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/architectural-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/architectural-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="건축/토목">건축/토목</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/industry-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/industry-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="재료/산업/안전">재료/산업/안전</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/agriculture-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/agriculture-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="농림/수산/축산">농림/수산/축산</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/social-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/social-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="사회/과학">사회/과학</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/nursing-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/nursing-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="간호/보건">간호/보건</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/medical-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/medical-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="의예/의학">의예/의학</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/chemical-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/chemical-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="화공/에너지">화공/에너지</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/bio-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/bio-a.png')"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="화학/생명/환경">화학/생명/환경</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/math-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/math-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="수학/물리/천문">수학/물리/천문</span>
+                                        </div>
+                                    </button>
+                                </li>
+
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/edu-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/edu-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="교육">교육</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/language-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/language-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="언어/문학">언어/문학</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/humanities-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/humanities-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="인문학">인문학</span>
+                                        </div>
+                                    </button>
+                                </li>
+
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/art-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/art-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="미술/응용예술">미술/응용예술</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/life-science-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/life-science-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="생활과학">생활과학</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/music-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/music-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="음악/연극/영화">음악/연극/영화</span>
+                                        </div>
+                                    </button>
+                                </li>
+
+                                <li>
+                                    <button class="image-tab">
+                                        <div class="image-tab-thumbnail-container">
+                                            <div class="image-tab-thumbnail-placeholder">
+                                                <div class="image-tab-thumbnail" style="background-image: url('/templates/html/community-soyoung/images/health-na.png');"></div>
+                                                <div class="image-tab-thumbnail image-tab-hide" style="background-image: url('/templates/html/community-soyoung/images/health-a.png');"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-tab-label-container">
+                                            <span class="image-tab-label" data-text="체육/무용">체육/무용</span>
+                                        </div>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tabs-mobile-nav">
+                                <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="next-tab-svg" aria-hidden="true" style = "width: 20px; height: 20px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-category-margin"></div>
+            <div class="main-container">
+                <div class="main-category" style="position: relative;">
+                    <div class="main-filter-wrap">
+                        <div class="order-select-sort-container">
+                            <div class="order-select-content">
+                                <span>전체</span>
+                                <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="down-arrow-svg" aria-hidden="true">
+                                    <path d="M16 22.4L5.6 12l1.12-1.12L16 20.16l9.28-9.28L26.4 12 16 22.4z"></path>
+                                </svg>
+                            </div>
+                            <select name="" id="" class="order-select-box">
+                                <option value="">전체</option>
+                                <option value="1">1학년</option>
+                                <option value="2">2학년</option>
+                                <option value="2">3학년</option>
+                                <option value="2">4학년</option>
+                            </select>
+                        </div>
+                        <ul class="order-select-desktop-sort-container">
+                            <li class="order-select-desktop-sort-item active">최신순</li>
+                            <li class="order-select-desktop-sort-item">인기순</li>
+                        </ul>
+                        <div style="position: absolute; left: 96%; border: 1px solid gray; padding: 6px;">
+                            <a href="/templates/html/share-soyoung/share-want.html">
+                                <button type="button">글 작성</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-layout-container" style="grid-template-columns: repeat(4, calc(25% - 18px)); gap: 24px;">
+                    <div class="home-vertical-card-container">
+                        <a href="" class="home-vertical-card-content">
+                            <div class="home-vertical-card-thumbnail-box" style="padding-top: 56.25%;">
+                                <div class="home-vertical-card-thumbnail-wrap">
+                                    <div class="thumbnail-img-container">
+                                        <img class="thumbnail-img" src="https://cdn3.wadiz.kr/studio/images/2024/02/06/459d592b-44c0-4c23-bb76-4ba72b2129a3.jpeg/wadiz/resize/800/format/jpg/quality/85/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-vertical-card-info-box">
+                                <div class="home-vertical-card-info">
+                                    <p class="info-string-wrapper">457명 참여</p>
+                                    <strong class="title">자취생 필수품 남은 음식도 갓만든 촉촉한 요리로! 아쿠아웨이브</strong>
+                                    <p class="home-vertical-card-maker-name-wrapper">롱테일컴퍼니</p>
+                                </div>
+                                <div class="home-vertical-card-badge-group">
+                                    <div class="reward-badge-group-container">
+                                        <span class="label-badge">1,086만 원+</span>
+                                        <span class="label-badge">12일 남음</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 뭔지 모르겠는 요소 -->
+                            <div class="card-spinnder-container">
+                                <div class="card-spinnder-loader" style="width: 32px; height: 32px;">
+                                    <svg viewBox="25 25 50 50" aria-label="Loading">
+                                        <g class="loader-circular">
+                                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <button type="button" class="wish-btn">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="wish-icon" aria-hidden="true">
+                                <path class="like-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>    
+                                <path class="dislike-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="home-vertical-card-container">
+                        <a href="" class="home-vertical-card-content">
+                            <div class="home-vertical-card-thumbnail-box" style="padding-top: 56.25%;">
+                                <div class="home-vertical-card-thumbnail-wrap">
+                                    <div class="thumbnail-img-container">
+                                        <img class="thumbnail-img" src="https://cdn3.wadiz.kr/studio/images/2024/02/06/459d592b-44c0-4c23-bb76-4ba72b2129a3.jpeg/wadiz/resize/800/format/jpg/quality/85/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-vertical-card-info-box">
+                                <div class="home-vertical-card-info">
+                                    <p class="info-string-wrapper">457명 참여</p>
+                                    <strong class="title">자취생 필수품 남은 음식도 갓만든 촉촉한 요리로! 아쿠아웨이브</strong>
+                                    <p class="home-vertical-card-maker-name-wrapper">롱테일컴퍼니</p>
+                                </div>
+                                <div class="home-vertical-card-badge-group">
+                                    <div class="reward-badge-group-container">
+                                        <span class="label-badge">1,086만 원+</span>
+                                        <span class="label-badge">12일 남음</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 뭔지 모르겠는 요소 -->
+                            <div class="card-spinnder-container">
+                                <div class="card-spinnder-loader" style="width: 32px; height: 32px;">
+                                    <svg viewBox="25 25 50 50" aria-label="Loading">
+                                        <g class="loader-circular">
+                                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <button type="button" class="wish-btn">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="wish-icon" aria-hidden="true">
+                                <path class="like-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>    
+                                <path class="dislike-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="home-vertical-card-container">
+                        <a href="" class="home-vertical-card-content">
+                            <div class="home-vertical-card-thumbnail-box" style="padding-top: 56.25%;">
+                                <div class="home-vertical-card-thumbnail-wrap">
+                                    <div class="thumbnail-img-container">
+                                        <img class="thumbnail-img" src="https://cdn3.wadiz.kr/studio/images/2024/02/06/459d592b-44c0-4c23-bb76-4ba72b2129a3.jpeg/wadiz/resize/800/format/jpg/quality/85/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-vertical-card-info-box">
+                                <div class="home-vertical-card-info">
+                                    <p class="info-string-wrapper">457명 참여</p>
+                                    <strong class="title">자취생 필수품 남은 음식도 갓만든 촉촉한 요리로! 아쿠아웨이브</strong>
+                                    <p class="home-vertical-card-maker-name-wrapper">롱테일컴퍼니</p>
+                                </div>
+                                <div class="home-vertical-card-badge-group">
+                                    <div class="reward-badge-group-container">
+                                        <span class="label-badge">1,086만 원+</span>
+                                        <span class="label-badge">12일 남음</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 뭔지 모르겠는 요소 -->
+                            <div class="card-spinnder-container">
+                                <div class="card-spinnder-loader" style="width: 32px; height: 32px;">
+                                    <svg viewBox="25 25 50 50" aria-label="Loading">
+                                        <g class="loader-circular">
+                                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <button type="button" class="wish-btn">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="wish-icon" aria-hidden="true">
+                                <path class="like-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>    
+                                <path class="dislike-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="home-vertical-card-container">
+                        <a href="" class="home-vertical-card-content">
+                            <div class="home-vertical-card-thumbnail-box" style="padding-top: 56.25%;">
+                                <div class="home-vertical-card-thumbnail-wrap">
+                                    <div class="thumbnail-img-container">
+                                        <img class="thumbnail-img" src="https://cdn3.wadiz.kr/studio/images/2024/02/06/459d592b-44c0-4c23-bb76-4ba72b2129a3.jpeg/wadiz/resize/800/format/jpg/quality/85/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-vertical-card-info-box">
+                                <div class="home-vertical-card-info">
+                                    <p class="info-string-wrapper">457명 참여</p>
+                                    <strong class="title">자취생 필수품 남은 음식도 갓만든 촉촉한 요리로! 아쿠아웨이브</strong>
+                                    <p class="home-vertical-card-maker-name-wrapper">롱테일컴퍼니</p>
+                                </div>
+                                <div class="home-vertical-card-badge-group">
+                                    <div class="reward-badge-group-container">
+                                        <span class="label-badge">1,086만 원+</span>
+                                        <span class="label-badge">12일 남음</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 뭔지 모르겠는 요소 -->
+                            <div class="card-spinnder-container">
+                                <div class="card-spinnder-loader" style="width: 32px; height: 32px;">
+                                    <svg viewBox="25 25 50 50" aria-label="Loading">
+                                        <g class="loader-circular">
+                                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <button type="button" class="wish-btn">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="wish-icon" aria-hidden="true">
+                                <path class="like-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>    
+                                <path class="dislike-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="home-vertical-card-container">
+                        <a href="" class="home-vertical-card-content">
+                            <div class="home-vertical-card-thumbnail-box" style="padding-top: 56.25%;">
+                                <div class="home-vertical-card-thumbnail-wrap">
+                                    <div class="thumbnail-img-container">
+                                        <img class="thumbnail-img" src="https://cdn3.wadiz.kr/studio/images/2024/02/06/459d592b-44c0-4c23-bb76-4ba72b2129a3.jpeg/wadiz/resize/800/format/jpg/quality/85/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-vertical-card-info-box">
+                                <div class="home-vertical-card-info">
+                                    <p class="info-string-wrapper">457명 참여</p>
+                                    <strong class="title">자취생 필수품 남은 음식도 갓만든 촉촉한 요리로! 아쿠아웨이브</strong>
+                                    <p class="home-vertical-card-maker-name-wrapper">롱테일컴퍼니</p>
+                                </div>
+                                <div class="home-vertical-card-badge-group">
+                                    <div class="reward-badge-group-container">
+                                        <span class="label-badge">1,086만 원+</span>
+                                        <span class="label-badge">12일 남음</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 뭔지 모르겠는 요소 -->
+                            <div class="card-spinnder-container">
+                                <div class="card-spinnder-loader" style="width: 32px; height: 32px;">
+                                    <svg viewBox="25 25 50 50" aria-label="Loading">
+                                        <g class="loader-circular">
+                                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <button type="button" class="wish-btn">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="wish-icon" aria-hidden="true">
+                                <path class="like-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>    
+                                <path class="dislike-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="home-vertical-card-container">
+                        <a href="" class="home-vertical-card-content">
+                            <div class="home-vertical-card-thumbnail-box" style="padding-top: 56.25%;">
+                                <div class="home-vertical-card-thumbnail-wrap">
+                                    <div class="thumbnail-img-container">
+                                        <img class="thumbnail-img" src="https://cdn3.wadiz.kr/studio/images/2024/02/06/459d592b-44c0-4c23-bb76-4ba72b2129a3.jpeg/wadiz/resize/800/format/jpg/quality/85/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-vertical-card-info-box">
+                                <div class="home-vertical-card-info">
+                                    <p class="info-string-wrapper">457명 참여</p>
+                                    <strong class="title">자취생 필수품 남은 음식도 갓만든 촉촉한 요리로! 아쿠아웨이브</strong>
+                                    <p class="home-vertical-card-maker-name-wrapper">롱테일컴퍼니</p>
+                                </div>
+                                <div class="home-vertical-card-badge-group">
+                                    <div class="reward-badge-group-container">
+                                        <span class="label-badge">1,086만 원+</span>
+                                        <span class="label-badge">12일 남음</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 뭔지 모르겠는 요소 -->
+                            <div class="card-spinnder-container">
+                                <div class="card-spinnder-loader" style="width: 32px; height: 32px;">
+                                    <svg viewBox="25 25 50 50" aria-label="Loading">
+                                        <g class="loader-circular">
+                                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <button type="button" class="wish-btn">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="wish-icon" aria-hidden="true">
+                                <path class="like-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>    
+                                <path class="dislike-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="home-vertical-card-container">
+                        <a href="" class="home-vertical-card-content">
+                            <div class="home-vertical-card-thumbnail-box" style="padding-top: 56.25%;">
+                                <div class="home-vertical-card-thumbnail-wrap">
+                                    <div class="thumbnail-img-container">
+                                        <img class="thumbnail-img" src="https://cdn3.wadiz.kr/studio/images/2024/02/06/459d592b-44c0-4c23-bb76-4ba72b2129a3.jpeg/wadiz/resize/800/format/jpg/quality/85/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-vertical-card-info-box">
+                                <div class="home-vertical-card-info">
+                                    <p class="info-string-wrapper">457명 참여</p>
+                                    <strong class="title">자취생 필수품 남은 음식도 갓만든 촉촉한 요리로! 아쿠아웨이브</strong>
+                                    <p class="home-vertical-card-maker-name-wrapper">롱테일컴퍼니</p>
+                                </div>
+                                <div class="home-vertical-card-badge-group">
+                                    <div class="reward-badge-group-container">
+                                        <span class="label-badge">1,086만 원+</span>
+                                        <span class="label-badge">12일 남음</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 뭔지 모르겠는 요소 -->
+                            <div class="card-spinnder-container">
+                                <div class="card-spinnder-loader" style="width: 32px; height: 32px;">
+                                    <svg viewBox="25 25 50 50" aria-label="Loading">
+                                        <g class="loader-circular">
+                                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <button type="button" class="wish-btn">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="wish-icon" aria-hidden="true">
+                                <path class="like-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>    
+                                <path class="dislike-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="home-vertical-card-container">
+                        <a href="" class="home-vertical-card-content">
+                            <div class="home-vertical-card-thumbnail-box" style="padding-top: 56.25%;">
+                                <div class="home-vertical-card-thumbnail-wrap">
+                                    <div class="thumbnail-img-container">
+                                        <img class="thumbnail-img" src="https://cdn3.wadiz.kr/studio/images/2024/02/06/459d592b-44c0-4c23-bb76-4ba72b2129a3.jpeg/wadiz/resize/800/format/jpg/quality/85/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-vertical-card-info-box">
+                                <div class="home-vertical-card-info">
+                                    <p class="info-string-wrapper">457명 참여</p>
+                                    <strong class="title">자취생 필수품 남은 음식도 갓만든 촉촉한 요리로! 아쿠아웨이브</strong>
+                                    <p class="home-vertical-card-maker-name-wrapper">롱테일컴퍼니</p>
+                                </div>
+                                <div class="home-vertical-card-badge-group">
+                                    <div class="reward-badge-group-container">
+                                        <span class="label-badge">1,086만 원+</span>
+                                        <span class="label-badge">12일 남음</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 뭔지 모르겠는 요소 -->
+                            <!-- <div class="card-spinnder-container">
+                                <div class="card-spinnder-loader" style="width: 32px; height: 32px;">
+                                    <svg viewBox="25 25 50 50" aria-label="Loading">
+                                        <g class="loader-circular">
+                                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div> -->
+                        </a>
+                        <button type="button" class="wish-btn">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="wish-icon" aria-hidden="true">
+                                <path class="like-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>    
+                                <path class="dislike-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="home-vertical-card-container">
+                        <a href="" class="home-vertical-card-content">
+                            <div class="home-vertical-card-thumbnail-box" style="padding-top: 56.25%;">
+                                <div class="home-vertical-card-thumbnail-wrap">
+                                    <div class="thumbnail-img-container">
+                                        <img class="thumbnail-img" src="https://cdn3.wadiz.kr/studio/images/2024/02/06/459d592b-44c0-4c23-bb76-4ba72b2129a3.jpeg/wadiz/resize/800/format/jpg/quality/85/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-vertical-card-info-box">
+                                <div class="home-vertical-card-info">
+                                    <p class="info-string-wrapper">457명 참여</p>
+                                    <strong class="title">자취생 필수품 남은 음식도 갓만든 촉촉한 요리로! 아쿠아웨이브</strong>
+                                    <p class="home-vertical-card-maker-name-wrapper">롱테일컴퍼니</p>
+                                </div>
+                                <div class="home-vertical-card-badge-group">
+                                    <div class="reward-badge-group-container">
+                                        <span class="label-badge">1,086만 원+</span>
+                                        <span class="label-badge">12일 남음</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 뭔지 모르겠는 요소 -->
+                            <div class="card-spinnder-container">
+                                <div class="card-spinnder-loader" style="width: 32px; height: 32px;">
+                                    <svg viewBox="25 25 50 50" aria-label="Loading">
+                                        <g class="loader-circular">
+                                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <button type="button" class="wish-btn">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="wish-icon" aria-hidden="true">
+                                <path class="like-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>    
+                                <path class="dislike-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="home-vertical-card-container">
+                        <a href="" class="home-vertical-card-content">
+                            <div class="home-vertical-card-thumbnail-box" style="padding-top: 56.25%;">
+                                <div class="home-vertical-card-thumbnail-wrap">
+                                    <div class="thumbnail-img-container">
+                                        <img class="thumbnail-img" src="https://cdn3.wadiz.kr/studio/images/2024/02/06/459d592b-44c0-4c23-bb76-4ba72b2129a3.jpeg/wadiz/resize/800/format/jpg/quality/85/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-vertical-card-info-box">
+                                <div class="home-vertical-card-info">
+                                    <p class="info-string-wrapper">457명 참여</p>
+                                    <strong class="title">자취생 필수품 남은 음식도 갓만든 촉촉한 요리로! 아쿠아웨이브</strong>
+                                    <p class="home-vertical-card-maker-name-wrapper">롱테일컴퍼니</p>
+                                </div>
+                                <div class="home-vertical-card-badge-group">
+                                    <div class="reward-badge-group-container">
+                                        <span class="label-badge">1,086만 원+</span>
+                                        <span class="label-badge">12일 남음</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 뭔지 모르겠는 요소 -->
+                            <div class="card-spinnder-container">
+                                <div class="card-spinnder-loader" style="width: 32px; height: 32px;">
+                                    <svg viewBox="25 25 50 50" aria-label="Loading">
+                                        <g class="loader-circular">
+                                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <button type="button" class="wish-btn">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="wish-icon" aria-hidden="true">
+                                <path class="like-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>    
+                                <path class="dislike-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="home-vertical-card-container">
+                        <a href="" class="home-vertical-card-content">
+                            <div class="home-vertical-card-thumbnail-box" style="padding-top: 56.25%;">
+                                <div class="home-vertical-card-thumbnail-wrap">
+                                    <div class="thumbnail-img-container">
+                                        <img class="thumbnail-img" src="https://cdn3.wadiz.kr/studio/images/2024/02/06/459d592b-44c0-4c23-bb76-4ba72b2129a3.jpeg/wadiz/resize/800/format/jpg/quality/85/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-vertical-card-info-box">
+                                <div class="home-vertical-card-info">
+                                    <p class="info-string-wrapper">457명 참여</p>
+                                    <strong class="title">자취생 필수품 남은 음식도 갓만든 촉촉한 요리로! 아쿠아웨이브</strong>
+                                    <p class="home-vertical-card-maker-name-wrapper">롱테일컴퍼니</p>
+                                </div>
+                                <div class="home-vertical-card-badge-group">
+                                    <div class="reward-badge-group-container">
+                                        <span class="label-badge">1,086만 원+</span>
+                                        <span class="label-badge">12일 남음</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 뭔지 모르겠는 요소 -->
+                            <!-- <div class="card-spinnder-container">
+                                <div class="card-spinnder-loader" style="width: 32px; height: 32px;">
+                                    <svg viewBox="25 25 50 50" aria-label="Loading">
+                                        <g class="loader-circular">
+                                            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div> -->
+                        </a>
+                        <button type="button" class="wish-btn">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="wish-icon" aria-hidden="true">
+                                <path class="like-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>    
+                                <path class="dislike-icon" d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="main-intersection"></div>
+            </div>
+        </div>
+        <div class="floating-buttons-container">
+            <button type="button" class="float-top-btn">
+                <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="go-up-arrow-svg" aria-hidden="true">
+                    <path d="M33 30l-1.4 1.4L20 19.8 8.4 31.4 7 30l13-13zm1-21H6v2h28z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="/staticfiles/js/share-soyoung/share-list.js"></script>
+</html>
