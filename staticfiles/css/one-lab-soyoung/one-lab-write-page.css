@@ -232,16 +232,6 @@ div.sidebar-menu-list-margin {
     height: 8px;
 }
 
-/* a.sidebar-menu-item-nav-link {
-    color: rgba(0,0,0,.54);
-    display: block;
-    position: relative;
-    cursor: pointer;
-    padding: 16px 24px;
-    font-size: 13px;
-    font-weight: 700;
-} */
-
 a.sidebar-menu-item-nav-link {
     display: block;
     position: relative;
@@ -1003,7 +993,7 @@ i.icon-camera{
     margin-left: 4px;
 }
 
-i.icon-camera::before {
+/* i.icon-camera::before {
     display: inline-block;
     margin-top: -0.2em;
     vertical-align: middle;
@@ -1015,7 +1005,7 @@ i.icon-camera::before {
     font-feature-settings: normal;
     font-variant: normal;
     content: "";
-}
+} */
 
 div.img-file-btn-input {
     position: absolute;
@@ -1339,4 +1329,51 @@ input[type=text]:focus {
 
 label.img-file-btn-label:hover button.img-file-btn {
     background-color: #60646b;
+}
+
+div.join-member-emails-list {
+    margin: 8px 0;
+}
+
+div.join-member-emails-badge {
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 15px;
+    background-color: #e9ecef;
+    padding: 8px 12px;
+    color: #495057;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+button.join-member-emails-remove-btn {
+    margin-left: 10px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    width: 10px;
+    height: 14px;
+    font-size: 10px;
+}
+
+svg.remove-btn-svg {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
 }
