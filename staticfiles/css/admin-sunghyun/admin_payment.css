@@ -713,3 +713,20 @@ p{
     color: #8a8a8b;
     fill: #8a8a8b;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 3px;
+}
+th {
+    background-color: #f2f2f2;
+}
+input{
+    width: 120px;
+    text-align: center;
+}
