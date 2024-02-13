@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+    </head>
+    <body>
+        <style>
+            @font-face {
+                font-family: "NEXON Lv2 Gothic Bold";
+                src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff")
+                    format("woff");
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            body {
+                margin: 0px;
+            }
+            .navBox {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: bold;
+                font-family: "NEXON Lv2 Gothic Bold";
+                font-size: 1.5em;
+                margin: 5px;
+            }
+            .iconBtn {
+                width: 35px;
+                cursor: pointer;
+            }
+            .menuWrap.on {
+                right: 0;
+            }
+            .menuWrap {
+                position: fixed;
+                top: 0;
+                right: -300px;
+                z-index: 400;
+                width: 300px;
+                height: 100%;
+                padding: 50px 20px;
+                box-sizing: border-box;
+                transition: right 0.3s ease-in-out;
+                background-color: #f0f0f0;
+            }
+            #menuBtn {
+                width: 35px;
+                z-index: 401;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+            }
+            #dimmed {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 300;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            .btnRotate {
+                transform: rotate(-90deg);
+                transition: all 0.3s ease-in-out;
+            }
+        </style>
+
+        <div class="navBox">
+            <img
+                class="iconBtn"
+                src="./leftchevron.png"
+                style="margin-left: -5px"
+            />
+            <span>박지원</span>
+            <img class="iconBtn" id="menuBtn" src="./menuBtn.png" />
+        </div>
+        <div class="menuWrap">
+            <nav id="menu">
+                <ul class="menuList">
+                    <li class="listStyle"><a href="#">Home</a></li>
+
+                    <li class="listStyle">
+                        <a href="#">마이페이지</a>
+                    </li>
+                    <li class="listStyle">
+                        <a href="#">로그인</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                document
+                    .querySelector("#menuBtn")
+                    .addEventListener("click", function (e) {
+                        if (
+                            document
+                                .querySelector(".menuWrap")
+                                .classList.contains("on")
+                        ) {
+                            //메뉴 slide
+                            document
+                                .querySelector(".menuWrap")
+                                .classList.remove("on");
+                            document.getElementById("menuBtn").src =
+                                "./menuBtn.png";
+                            document
+                                .querySelector("#menuBtn")
+                                .classList.remove("btnRotate");
+                            document.querySelector("#dimmed").remove();
+                        } else {
+                            //메뉴 slideIn
+                            document
+                                .querySelector(".menuWrap")
+                                .classList.add("on");
+                            document.getElementById("menuBtn").src =
+                                "./cross.png";
+                            document
+                                .querySelector("#menuBtn")
+                                .classList.add("btnRotate");
+                            let div = document.createElement("div");
+                            div.id = "dimmed";
+                            document.body.append(div);
+
+                            //페이지 스크롤 락  모바일 이벤트 차단
+                            document
+                                .querySelector("#dimmed")
+                                .addEventListener(
+                                    "scroll touchmove touchend mousewheel",
+                                    function (e) {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        return false;
+                                    }
+                                );
+                        }
+                    });
+            });
+        </script>
+    </body>
+</html>

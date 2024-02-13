@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
         <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
+        <script src="/staticfiles/js/notification_sunghyun_app/notify_one&one-app.js"></script>
        
         
         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/footer.css">
@@ -26,8 +27,8 @@
     -----------클래스명 전체를 쓴 부분도 있고, 줄인 부분도 있으니 양해부탁드립니다.------------->
 
     <!------------작업 시작------------------------------------------->
-    <body class> <!----------도무지 이해가 안되는 부분-------------------->
-        <div></div> <!----------이건 굳이 왜 있는건데? ㅡㅡ ------------>
+    <body class> 
+        <div></div> 
         
         <link 
             rel="stylesheet"
@@ -37,7 +38,7 @@
 
         <!------------------모바일 메뉴라길래 모바일 화면에서만 보이는건줄 알았지만
         --------------------알고보니 전체 레이아웃 div 태그입니다.(.layout-column)----------------->
-        <div class="layout-column" x-data="Widgets.mobileMenu">
+        <div class="layout-column" x-data="Widgets.mobileMenu" >
 
         <!------------헤더 작업 시작------------------------------------->
             <header
@@ -58,7 +59,7 @@
                             alt="도움말 센터 헬프 센터 홈페이지"
                         />
                     </a>
-			<!---------모바일 화면 헤더 부분 메뉴 버튼--------->
+			<!---------모바일 화면 헤더 부분 메뉴 버튼 2개 = x 버튼, 메뉴버튼--------->
                     <button class="navbar-hidden">
                         <span>
                             <!--::before-->
@@ -68,10 +69,20 @@
                             <!-- 탐색 메뉴 토글 -->
                         </span>
                     </button>
+
+                    <button class="navbar-hidden1">
+                        <span> 
+                            <!--::before-->
+                            <!--::after-->
+                        </span>
+                        <span class="sr-only"> 
+                            <!-- 탐색 메뉴 토글 -->
+                        </span>
+                    </button>
                     <!--------로고 부분 작업 완료----------------->
 
                     
-                    </div>
+                    
                 </nav>
                 <!-------------로고 옆부분 레이아웃 작업 완료-------------------->
             </header>
@@ -358,34 +369,7 @@
                                                               </div>
                                                           </div>
                                                           <div class="sc-vrqbdz-8 kmeNDk">
-                                                              <button
-                                                                  data-garden-id="buttons.icon_button"
-                                                                  data-garden-version="8.13.0"
-                                                                  type="button"
-                                                                  aria-label="닫기"
-                                                                  class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
-                                                                  onclick="closeModal()"
-                                                              >
-                                                                  <svg
-                                                                      data-garden-id="buttons.icon"
-                                                                      data-garden-version="8.13.0"
-                                                                      theme="[object Object]"
-                                                                      class="sc-bwzfXH hDrfMZ sc-vrqbdz-7 fbohUV"
-                                                                      xmlns="http://www.w3.org/2000/svg"
-                                                                      width="21"
-                                                                      height="13"
-                                                                      viewBox="0 0 21 13"
-                                                                      focusable="false"
-                                                                      role="presentation"
-                                                                  >
-                                                                      <path
-                                                                          fill-rule="evenodd"
-                                                                          clip-rule="evenodd"
-                                                                          fill="currentColor"
-                                                                          d="M20.1005 2.7169L10.9931 11.8244C10.4724 12.3451 9.62815 12.3451 9.10745 11.8244L-8.00829e-06 2.7169L1.88561 0.831278L10.0503 8.99593L18.2149 0.831278L20.1005 2.7169Z"
-                                                                      ></path>
-                                                                  </svg>
-                                                              </button>
+                                                              
                                                           </div>
                                                       </section>
                                                       <div
@@ -507,6 +491,34 @@
                                                                               >
                                                                                   🧐 메이커
                                                                               </button>
+                                                                              <button
+                                                                  data-garden-id="buttons.icon_button"
+                                                                  data-garden-version="8.13.0"
+                                                                  type="button"
+                                                                  aria-label="닫기"
+                                                                  class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
+                                                                  onclick="closeModal()"
+                                                              >
+                                                                  <svg
+                                                                      data-garden-id="buttons.icon"
+                                                                      data-garden-version="8.13.0"
+                                                                      theme="[object Object]"
+                                                                      class="sc-bwzfXH hDrfMZ sc-vrqbdz-7 fbohUV"
+                                                                      xmlns="http://www.w3.org/2000/svg"
+                                                                      width="21"
+                                                                      height="13"
+                                                                      viewBox="0 0 21 13"
+                                                                      focusable="false"
+                                                                      role="presentation"
+                                                                  >
+                                                                      <path
+                                                                          fill-rule="evenodd"
+                                                                          clip-rule="evenodd"
+                                                                          fill="currentColor"
+                                                                          d="M20.1005 2.7169L10.9931 11.8244C10.4724 12.3451 9.62815 12.3451 9.10745 11.8244L-8.00829e-06 2.7169L1.88561 0.831278L10.0503 8.99593L18.2149 0.831278L20.1005 2.7169Z"
+                                                                      ></path>
+                                                                  </svg>
+                                                              </button>
                                                                           </div>
                                                                       </div>
                                                                   </div>
@@ -753,7 +765,8 @@
                                     <ul class="list-unstyled row">
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="z4V6RoIxytc" data-fancybox="" href="https://www.youtube.com/watch?v=z4V6RoIxytc" style="background-image: url(https://img.youtube.com/vi/z4V6RoIxytc/0.jpg);">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="z4V6RoIxytc" 
+                                                data-fancybox="" id="video" href="#" style="background-image: url(https://img.youtube.com/vi/z4V6RoIxytc/0.jpg);">
                                                     <iframe class="relative z-20 invisible" id="z4V6RoIxytc" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 편한 신발 브랜드 제누이오 성공 비결, 명품급 신발을 싸게 팔 수 있는 이유 | 게임체인저 제누이오" width="640" height="360" src="https://www.youtube.com/embed/z4V6RoIxytc?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=1">
 
                                                     </iframe>
@@ -775,7 +788,7 @@
                                         </li>
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="uR7NzL_86Gs" data-fancybox="" href="https://www.youtube.com/watch?v=uR7NzL_86Gs" style="background-image: url(https://img.youtube.com/vi/uR7NzL_86Gs/0.jpg);">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="uR7NzL_86Gs" data-fancybox="" href="https://www.youtube.com/watch?v=uR7NzL_86Gs" style="background-image: url(https://img.youtube.com/vi/uR7NzL_86Gs/0.jpg);">
                                                     <iframe class="relative z-20 invisible" id="uR7NzL_86Gs" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="상세페이지 기획만 잘해도 펀딩 성공할 수 있다?ㅣGame Changer - 제누이오ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/uR7NzL_86Gs?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=2">
 
                                                     </iframe>
@@ -797,7 +810,7 @@
                                         </li>
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="S2caXNaKpDg" data-fancybox="" href="https://www.youtube.com/watch?v=S2caXNaKpDg" style="background-image: url(https://img.youtube.com/vi/S2caXNaKpDg/0.jpg);">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="S2caXNaKpDg" data-fancybox="" href="https://www.youtube.com/watch?v=S2caXNaKpDg" style="background-image: url(https://img.youtube.com/vi/S2caXNaKpDg/0.jpg);">
                                                     <iframe class="relative z-20 invisible" id="S2caXNaKpDg" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="전자책 쓰는법 어렵지 않아요. 퇴사후 전자책 부업으로 6억 매출 달성한 방법 공개 ㅣGame Changer - 유성우ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/S2caXNaKpDg?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=3">
 
                                                     </iframe>
@@ -819,7 +832,7 @@
                                         </li>
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="tlhEgarJRQk" data-fancybox="" href="https://www.youtube.com/watch?v=tlhEgarJRQk" style="background-image: url(https://img.youtube.com/vi/tlhEgarJRQk/0.jpg);">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="tlhEgarJRQk" data-fancybox="" href="https://www.youtube.com/watch?v=tlhEgarJRQk" style="background-image: url(https://img.youtube.com/vi/tlhEgarJRQk/0.jpg);">
                                                     <iframe class="relative z-20 invisible" id="tlhEgarJRQk" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="온라인 부업 아이템, 돈 버는 전자책 펀딩 방법 알려드립니다 | Game Changer 유성우 작가" width="640" height="360" src="https://www.youtube.com/embed/tlhEgarJRQk?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=4">
 
                                                     </iframe>
@@ -837,7 +850,7 @@
                                             </div>
                                             <h3 class="h4 my-4" data-title="tlhEgarJRQk">온라인 부업 아이템, 돈 버는 전자책 펀딩 방법 알려드립니다 | Game Changer 유성우 작가</h3></li><li class="mb-6 md:col-4">
                                                 <div class="relative w-full ratio ratio-16-9">
-                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="Xix85yjSLr0" data-fancybox="" href="https://www.youtube.com/watch?v=Xix85yjSLr0" style="background-image: url(https://img.youtube.com/vi/Xix85yjSLr0/0.jpg);">
+                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="Xix85yjSLr0" data-fancybox="" href="https://www.youtube.com/watch?v=Xix85yjSLr0" style="background-image: url(https://img.youtube.com/vi/Xix85yjSLr0/0.jpg);">
                                                         <iframe class="relative z-20 invisible" id="Xix85yjSLr0" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 와디즈 펀딩 성공한 스텐팬 사용법 1인자 쿠자의 주방! 노하우 털이 ㅣGame Changer - 쿠자의주방ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/Xix85yjSLr0?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=5">
 
                                                         </iframe>
@@ -859,7 +872,7 @@
                                             </li>
                                             <li class="mb-6 md:col-4">
                                                 <div class="relative w-full ratio ratio-16-9">
-                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="plIJCkiw-Ls" data-fancybox="" href="https://www.youtube.com/watch?v=plIJCkiw-Ls" style="background-image: url(https://img.youtube.com/vi/plIJCkiw-Ls/0.jpg);">
+                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="plIJCkiw-Ls" data-fancybox="" href="https://www.youtube.com/watch?v=plIJCkiw-Ls" style="background-image: url(https://img.youtube.com/vi/plIJCkiw-Ls/0.jpg);">
                                                         <iframe class="relative z-20 invisible" id="plIJCkiw-Ls" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="EP. 0 레지나 뷰티 '디마프'의 우당탕탕 펀딩 도전기 | 서포터를 찾습니다 | 와디즈아카데미" width="640" height="360" src="https://www.youtube.com/embed/plIJCkiw-Ls?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=6">
 
                                                         </iframe>
@@ -1061,12 +1074,12 @@
                   </span>
               </div>
               <div class="box-29">
-                <div class="box-2a" onclick="location.href='https://play.google.com/store/apps/details?id=com.markmount.wadiz&pli=1'">
+                <div class="box-2a" onclick="location.href='#'">
                   <div class="artwork-logo-1"></div>
                   <span class="android-app">Android앱</span>
                 </div>
                 <div class="box-2b">
-                  <div class="artwork-logo-2" onclick="location.href='https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'"></div>
+                  <div class="artwork-logo-2" onclick="location.href='#'"></div>
                   <span class="ios-app">iOS앱</span>
                 </div>
               </div>
@@ -1141,107 +1154,22 @@
             <span>조성현</span>
             <img class="iconBtn" id="menuBtn" src="./menuBtn.png" />
         </div>
-        <!----------------------->
+        <!----------슬라이드 메뉴 화면 ------------->
         <div class="menuWrap">
             <nav id="menu">
-                <ul class="menuList">
-                    <li class="listStyle"><a href="#">Home</a></li>
-
-                    <li class="listStyle">
-                        <a href="#">마이페이지</a>
-                    </li>
-                    <li class="listStyle">
-                        <a href="#">로그인</a>
-                    </li>
-                </ul>
+                <div class="btn-block" style="padding: 0 20px;">
+                    <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
+                    href="#">문의 등록</a>
+                    <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
+                    href="#">메이커센터</a>
+                </div>
+                <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
+                href="#" style="width: 140px; margin-right: 50px;">원랩 바로가기</a>
+                    
+                
+                
             </nav>
         </div>
     </body>
-    <script>             
-      
-    function openModal() {
-      var modal = document.getElementById("myModal");
-      var floatingButton = document.querySelector(".floating-button");
-
-      
-      var buttonStyle = window.getComputedStyle(floatingButton);
-      var buttonPosition = buttonStyle.getPropertyValue('position');
-      console.log(buttonStyle);
-      console.log(buttonPosition);
-      floatingButton.style.display = "none"
-      var buttonParent = floatingButton.parentElement;
-      var parentRect = buttonParent.getBoundingClientRect();
-
-      var buttonRect = floatingButton.getBoundingClientRect();
-      var leftPosition = buttonRect.left - parentRect.left;
-      var topPosition = buttonRect.top - parentRect.top + floatingButton.offsetHeight;
-
-     
-
-      modal.style.display = "block";
-
-      // 모달 외부를 클릭하면 모달이 닫힘
-      // window.addEventListener('click', outsideModalClick);
-    }
-
-    // 모달 닫기 함수
-    function closeModal() {
-      var floatingButton = document.querySelector(".floating-button")
-      var modal = document.getElementById("myModal");
-      modal.style.display = "none";
-      floatingButton.style.display = "block";
-      // 모달 외부 클릭 이벤트 제거
-      window.removeEventListener('click', outsideModalClick);
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-                document
-                    .querySelector(".navbar-hidden")
-                    .addEventListener("click", function (e) {
-                        if (
-                            document
-                                .querySelector(".menuWrap")
-                                .classList.contains("on")
-                        ) {
-                            //메뉴 slide
-                            document
-                                .querySelector(".menuWrap")
-                                .classList.remove("on");
-                            document.getElementById("menuBtn").src =
-                                "./menuBtn.png";
-                            document
-                                .querySelector("#menuBtn")
-                                .classList.remove("btnRotate");
-                            document.querySelector("#dimmed").remove();
-                        } else {
-                            //메뉴 slideIn
-                            document
-                                .querySelector(".menuWrap")
-                                .classList.add("on");
-                            document.getElementById("menuBtn").src =
-                                "./cross.png";
-                            document
-                                .querySelector("#menuBtn")
-                                .classList.add("btnRotate");
-                            let div = document.createElement("div");
-                            console.log(div);
-                            div.id = "dimmed";
-                            document.body.append(div);
-
-                            //페이지 스크롤 락  모바일 이벤트 차단
-                            document
-                                .querySelector("#dimmed")
-                                .addEventListener(
-                                    "scroll touchmove touchend mousewheel",
-                                    function (e) {
-                                        e.preventDefault();
-                                        e.stopPropagation();
-                                        return false;
-                                    }
-                                );
-                        }
-                    });
-            });
-
-    </script>
+    
 </html>
