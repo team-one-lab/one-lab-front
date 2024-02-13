@@ -3,7 +3,7 @@ const emailError = document.querySelector("p#emailError");
 
 emailInputs.forEach((emailInput) => {
     // 이메일 커서 클릭시 #00c4c4색상 변경
-    emailInput.addEventListener("focus", (e) => {
+    emailInput.addEventListener("keyup", (e) => {
         e.target.style.border = "1px solid #00c4c4"
     });
 
@@ -15,3 +15,4 @@ emailInputs.forEach((emailInput) => {
     });
     
 });
+
