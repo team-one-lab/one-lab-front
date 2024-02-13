@@ -1,0 +1,334 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+html {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-family: Pretendard,-apple-system,blinkmacsystemfont,system-ui,roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button{
+    font-family: inherit;
+    background-color: transparent;
+    color:inherit;
+    outline:none;
+    margin:0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+
+body {
+    line-height: inherit;
+    color:inherit;
+    font-size: 15px;
+    font-weight: 400;
+    font-family:inherit;
+}
+
+div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+input {
+    font-family: inherit;
+    background: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+strong {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+form {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+span {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+p{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+label {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.BottomModal_portal {
+    position: relative;
+    display: none;
+}
+
+.BottomModal_overlayAfterOpen {
+    background: rgba(0,0,0,.4);
+}
+
+.BottomModal_overlay {
+    transition-duration: .15s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .15s ease-in;
+    z-index: 9998;
+    text-align: center;
+}
+
+.BannerContainer_overlay [class*=BottomModal_content] {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-height: none;
+}
+.BottomModal_contentAfterOpen {
+    transform: translateY(0);
+    transition-timing-function: ease-in;
+    transition-delay: 0ms;
+}
+
+.BottomModal_content {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+    transition: .15s ease-out 50ms;
+    transition-property: transform;
+    outline: none;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.BannerContainer_overlay [class*=BottomModal_container] {
+    border-radius: 16px;
+    min-width: 400px;
+}
+
+.BottomModal_contentAfterOpen>.BottomModal_container {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.BottomModal_container {
+    display: inline-block;
+    position: relative;
+    transition: .15s ease-out;
+    transition-property: transform,opacity;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,.4);
+    width: auto;
+    max-height: none;
+    overflow-x: visible;
+    overflow-y: visible;
+    background-color: #fff;
+    padding-bottom : calc(-16px + env(safe-area-inset-bottom));
+    text-align: left;
+    pointer-events: auto;
+}
+
+.BannerContainer_modalContainer {
+    position: relative;
+    padding: 32px 24px 60px;
+    padding-bottom: 24px;
+
+}
+
+.BannerContainer_closeButton {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.withIcon_icon {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.BannerContainer_modalContainer .BannerContainer_modalTitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    display: block;
+    padding-right: 40px;
+}
+
+.BannerContainer_brMo {
+    display: inline-block;
+}
+
+.BannerContainer_modalDescription {
+    margin: -12px 0 28px;
+    color: #495057;
+}
+
+.NewsLetterTextField_form .NewsLetterTextField_textField {
+    margin-bottom: 16px;
+}
+
+.TextField_textField {
+    display: block;
+    position: relative;
+}
+
+.TextField_lg>label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.NewsLetterTextField_textField label {
+    display: none;
+}
+
+.TextField_textField>label {
+    padding-bottom: 4px;
+}
+
+.TextField_textField .TextField_field {
+    position: relative;
+}
+textarea {
+    font-family: Pretendard;
+    resize : none;
+}
+.Input_input.Input_lg {
+    height: 48px;
+    min-height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.Input_lg::placeholder{
+    color: #949fa8;
+}
+.Input_input.Input_content {
+    height: 160px;
+    min-height: 48px;
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 1.5;
+    
+}
+.Input_content::placeholder{
+    color: #949fa8;
+}
+
+
+.Input_input {
+    display: block;
+    transition-property: border-color,background-color,color;
+    transition-duration: .15s;
+    outline: none;
+    border: 1px solid #dde2e6;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 0 16px;
+    width: 100%;
+    color: #212529;
+}
+
+.Button_button.Button_primary.Button_contained {
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+    color: #fff;
+}
+
+.NewsLetterTextField_submitButton {
+    margin-top: 40px;
+}
+
+.Button_button.Button_xl {
+    padding: 9px 27px;
+    height: 56px;
+    font-size: 18px;
+}
+
+.Button_button.Button_block {
+    width: 100%;
+}
+
+.Button_button{
+    position: relative;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.NewsLetterTextField_submitButton span {
+    pointer-events: none;
+}
+
+.Button_button span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.Button_button .Button_children {
+    vertical-align: top;
+}
+
+.BottomModal_handle {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: 0 36px;
+    width: calc(100% - 72px);
+    height: 24px;
+}
+
+#openmodal {
+    font-family: inherit;
+    background-color: blue;
+    color:white;
+    outline:black;
+    cursor: pointer;
+}
