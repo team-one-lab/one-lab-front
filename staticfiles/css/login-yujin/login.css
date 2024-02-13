@@ -292,12 +292,13 @@ h3{
     margin-bottom: 16px;
 }
 
-.SignInForm_field p {
+.SignInForm-Nh p {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.5;
     display: inline;
     color: #f25555;
+    display: none;
 }
 
 .BlindText-K9{
@@ -349,18 +350,18 @@ input, textarea{
     border-color: #868e96;
 }
 
-.SignInForm-e2{
+.SignInForm-e2 {
     float: right;
     line-height: 0px;
     color: #adb5bd;
     font-size: 13px;
 }
-p{
+p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 a, button{
     color: inherit;

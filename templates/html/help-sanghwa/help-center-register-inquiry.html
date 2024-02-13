@@ -1,163 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 글꼴 설정 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <!-- 타이틀 설정 -->
-    <title>문의 등록-도움말 센터</title>
-  </head>
-  <body class>
-    <!-- body 의 메인부분 작성 -->
-    <main role="main">
-      <!-- CSS 연동 링크 -->
-      <link
-        rel="stylesheet"
-        href="/staticfiles/css/help-sanghwa/help-center-register-inquiry.css"
-      />
-      <div class="container flex-1 py-6" id="page-container">
-        <div class="row align-items-center">
-          <nav class="col font-size-md font-medium">
-            <ol class="breadcrumbs">
-              <li title="도움말센터">
-                <a href="https://helpcenter.wadiz.kr/hc/ko">도움말 센터</a>
-              </li>
-              <li title="문의등록">문의 등록</li>
-            </ol>
-          </nav>
-        </div>
-        <div class="row">
-          <div class="lg:col-9">
-            <header class="mb-5">
-              <h1>문의 등록</h1>
-            </header>
-            <div class="form">
-              <div data-element="template" data-template="form-tip">
-                <form
-                  id="new_request"
-                  class="request-form"
-                  data-form
-                  data-form-type="request"
-                  action="/hc/ko/requests"
-                  accept-charset="UTF-8"
-                  method="post"
-                >
-                  <h2>문의 접수하실 내용을 선택해 주세요:</h2>
-                  <ul class="list-unstyled row row-sm my-6 row-ds">
-                    <li
-                      class="md:col-6 lg:col-4 text-center mb-4"
-                      id="22181518326809"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 글꼴 설정 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+        <!-- 타이틀 설정 -->
+        <title>문의 등록-도움말 센터</title>
+    </head>
+    <body class>
+        <!-- body 의 메인부분 작성 -->
+        <main role="main">
+            <!-- CSS 연동 링크 -->
+            <link rel="stylesheet" href="/staticfiles/css/help-sanghwa/help-center-register-inquiry.css" />
+            <div class="container flex-1 py-6" id="page-container">
+                <div class="row align-items-center">
+                    <nav class="col font-size-md font-medium">
+                        <ol class="breadcrumbs">
+                            <li title="도움말센터">
+                                <a href="https://helpcenter.wadiz.kr/hc/ko">도움말 센터</a>
+                            </li>
+                            <li title="문의등록">문의 등록</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="lg:col-9">
+                        <header class="mb-5">
+                            <h1>문의 등록</h1>
+                        </header>
+                        <div class="form">
+                            <div data-element="template" data-template="form-tip">
+                                <form
+                                    id="new_request"
+                                    class="request-form"
+                                    data-form
+                                    data-form-type="request"
+                                    action="/hc/ko/requests"
+                                    accept-charset="UTF-8"
+                                    method="post"
+                                >
+                                    <h2>문의 접수하실 내용을 선택해 주세요:</h2>
+                                    <ul class="list-unstyled row row-sm my-6 row-ds">
+                                        <li class="md:col-6 lg:col-4 text-center mb-4" id="22181518326809">
+                                            <a
+                                                class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary"
+                                                href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=22181518326809"
+                                            >
+                                                <h4 class="yds-btnsize m-0 font-medium text-inherit">
+                                                    와디즈 문의하기
+                                                </h4>
+                                            </a>
+                                        </li>
+                                        <li class="md:col-6 lg:col-4 text-center mb-4" id="25535237543577">
+                                            <a
+                                                class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary"
+                                                href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=25535237543577"
+                                            >
+                                                <h4 class="yds-btnsize m-0 font-medium text-inherit">
+                                                    프로젝트 수정/변경요청하기
+                                                </h4>
+                                            </a>
+                                        </li>
+                                        <li class="md:col-6 lg:col-4 text-center mb-4" id="24699344939033">
+                                            <a
+                                                class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary"
+                                                href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=24699344939033"
+                                            >
+                                                <h4 class="yds-btnsize m-0 font-medium text-inherit">
+                                                    와디즈 광고서비스 문의하기
+                                                </h4>
+                                            </a>
+                                        </li>
+                                        <li class="md:col-6 lg:col-4 text-center mb-4" id="6476688975513">
+                                            <a
+                                                class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary"
+                                                href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=6476688975513"
+                                            >
+                                                <h4 class="yds-btnsize m-0 font-medium text-inherit">
+                                                    와디즈 파이낸스 문의하기
+                                                </h4>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <template id="tmpl-form-tip">
+                    #document-fragment
+                    <div
+                        class="note media"
+                        x-data="{ show: false }"
+                        x-init="show = !!Util.getURLParameter('ticket_form_id')"
+                        :class="{ 'hidden': !show }"
                     >
-                      <a
-                        class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary"
-                        href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=22181518326809"
-                      >
-                        <h4 class="yds-btnsize m-0 font-medium text-inherit">
-                          와디즈 문의하기
-                        </h4>
-                      </a>
-                    </li>
-                    <li
-                      class="md:col-6 lg:col-4 text-center mb-4"
-                      id="25535237543577"
-                    >
-                      <a
-                        class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary"
-                        href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=25535237543577"
-                      >
-                        <h4 class="yds-btnsize m-0 font-medium text-inherit">
-                          프로젝트 수정/변경요청하기
-                        </h4>
-                      </a>
-                    </li>
-                    <li
-                      class="md:col-6 lg:col-4 text-center mb-4"
-                      id="24699344939033"
-                    >
-                      <a
-                        class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary"
-                        href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=24699344939033"
-                      >
-                        <h4 class="yds-btnsize m-0 font-medium text-inherit">
-                          와디즈 광고서비스 문의하기
-                        </h4>
-                      </a>
-                    </li>
-                    <li
-                      class="md:col-6 lg:col-4 text-center mb-4"
-                      id="6476688975513"
-                    >
-                      <a
-                        class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary"
-                        href="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=6476688975513"
-                      >
-                        <h4 class="yds-btnsize m-0 font-medium text-inherit">
-                          와디즈 파이낸스 문의하기
-                        </h4>
-                      </a>
-                    </li>
-                  </ul>
-                </form>
-              </div>
+                        <svg
+                            class="svg-icon font-size-2xl bottom-0"
+                            fill="rgba(66, 245, 233, 1)"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                        >
+                            <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                                <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                                <circle opacity="0.3" cx="12" cy="12" r="10"></circle>
+                                <rect x="11" y="10" width="2" height="7" rx="1"></rect>
+                                <rect x="11" y="7" width="2" height="2" rx="1"></rect>
+                            </g>
+                        </svg>
+                        <div class="media-body1 font-size-md font-medium ml-3">
+                            문의 등록시, 관련된 답변은 1 영업일 이후에 답변 받으실 수 있습니다 💌 &lt;br&gt;만약, 빠른
+                            답변을 원하시는 경우 &lt;b&gt;&lt;a href="https://bit.ly/46ukfeW" target="_blank"&gt;와디즈
+                            고객센터&lt;/a&gt;&lt;/b&gt; 클릭하신 후 [Web Widget 열기] 버튼 클릭하셔서
+                            &lt;br&gt;궁금하신 내용을 검색해 보세요! 감사합니다. 😉
+                        </div>
+                    </div>
+                </template>
+                <a href="https://www.wadiz.kr/web/project/registration?type=aiAdvisorModalOpen">
+                    <img
+                        src="https://theme.zdassets.com/theme_assets/13612819/70b1977be0a68c0c7e333ae43321efbb048f90cd.PNG"
+                        alt="AI"
+                        style="width: 100%"
+                    />
+                </a>
+                <button class="floating-button" onclick="zE('messenger', 'open');"></button>
             </div>
-          </div>
-        </div>
-        <template id="tmpl-form-tip">
-          #document-fragment
-          <div
-            class="note media"
-            x-data="{ show: false }"
-            x-init="show = !!Util.getURLParameter('ticket_form_id')"
-            :class="{ 'hidden': !show }"
-          >
-            <svg
-              class="svg-icon font-size-2xl bottom-0"
-              fill="rgba(66, 245, 233, 1)"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <g stroke="none" stroke-width="1" fill-rule="evenodd">
-                <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
-                <circle opacity="0.3" cx="12" cy="12" r="10"></circle>
-                <rect x="11" y="10" width="2" height="7" rx="1"></rect>
-                <rect x="11" y="7" width="2" height="2" rx="1"></rect>
-              </g>
-            </svg>
-            <div class="media-body1 font-size-md font-medium ml-3">
-              문의 등록시, 관련된 답변은 1 영업일 이후에 답변 받으실 수 있습니다
-              💌 &lt;br&gt;만약, 빠른 답변을 원하시는 경우 &lt;b&gt;&lt;a
-              href="https://bit.ly/46ukfeW" target="_blank"&gt;와디즈
-              고객센터&lt;/a&gt;&lt;/b&gt; 클릭하신 후 [Web Widget 열기] 버튼
-              클릭하셔서 &lt;br&gt;궁금하신 내용을 검색해 보세요! 감사합니다. 😉
-            </div>
-          </div>
-        </template>
-        <a
-          href="https://www.wadiz.kr/web/project/registration?type=aiAdvisorModalOpen"
-        >
-          <img
-            src="https://theme.zdassets.com/theme_assets/13612819/70b1977be0a68c0c7e333ae43321efbb048f90cd.PNG"
-            alt="AI"
-            style="width: 100%"
-          />
-        </a>
-        <button
-          class="floating-button"
-          onclick="zE('messenger', 'open');"
-        ></button>
-      </div>
-    </main>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/staticfiles/css/help-sanghwa/clone_coding_help_center.css"
-    />
-  </body>
+        </main>
+        <link rel="stylesheet" type="text/css" href="/staticfiles/css/help-sanghwa/clone_coding_help_center.css" />
+    </body>
 </html>

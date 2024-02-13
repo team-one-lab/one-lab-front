@@ -63,8 +63,10 @@
                                                 data-testid="full-agreement-checkbox"
                                                 type="checkbox"
                                                 class="Checkbox_input"
-                                            /><span class="Checkbox_icon" aria-hidden="true"
-                                                ><svg
+                                                id="all"
+                                            />
+                                            <span class="Checkbox_icon" aria-hidden="true">
+                                                <svg
                                                     viewBox="0 0 16 2"
                                                     focusable="false"
                                                     role="presentation"
@@ -105,7 +107,8 @@
                                                     name="funding"
                                                     required=""
                                                     type="checkbox"
-                                                    class="Checkbox_input"
+                                                    class="Checkbox_input possible parent"
+                                                    id="detail"
                                                 /><span class="Checkbox_icon" aria-hidden="true"
                                                     ><svg
                                                         viewBox="0 0 16 2"
@@ -137,7 +140,7 @@
                                                 ></label
                                             >
                                         </div>
-                                        <button class="AccordionCheckbox_accordionButton" aria-label="내용 닫기">
+                                        <button class="AccordionCheckbox_accordionButton" aria-label="내용 보기">
                                             <svg
                                                 viewBox="0 0 32 32"
                                                 focusable="false"
@@ -147,21 +150,24 @@
                                                 style="width: 16px; height: 16px;"
                                             >
                                                 <path
-                                                    d="M16 9.6L26.4 20l-1.12 1.12L16 11.84l-9.28 9.28L5.6 20 16 9.6z"
+                                                    d="M16 22.4L5.6 12l1.12-1.12L16 20.16l9.28-9.28L26.4 12 16 22.4z"
                                                 ></path>
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="service-join">
+                                    <div class="detail-join">
                                         <div
                                             class="AccordionCheckbox_accordionHeader ServiceAgreementCheckbox_terms TermsConfirmBody_terms"
                                         >
                                             <div>
                                                 <label
                                                     class="Checkbox_checkbox Checkbox_sm Checkbox_labeled AccordionCheckbox_checkbox"
-                                                    ><input required="" type="checkbox" class="Checkbox_input" /><span
-                                                        class="Checkbox_icon"
-                                                        aria-hidden="true"
+                                                    ><input
+                                                        required=""
+                                                        type="checkbox"
+                                                        class="Checkbox_input possible children"
+                                                        id="detail"
+                                                    /><span class="Checkbox_icon" aria-hidden="true"
                                                         ><svg
                                                             viewBox="0 0 16 2"
                                                             focusable="false"
@@ -283,9 +289,12 @@
                                             <div>
                                                 <label
                                                     class="Checkbox_checkbox Checkbox_sm Checkbox_labeled AccordionCheckbox_checkbox"
-                                                    ><input required="" type="checkbox" class="Checkbox_input" /><span
-                                                        class="Checkbox_icon"
-                                                        aria-hidden="true"
+                                                    ><input
+                                                        required=""
+                                                        type="checkbox"
+                                                        class="Checkbox_input possible children"
+                                                        id="detail"
+                                                    /><span class="Checkbox_icon" aria-hidden="true"
                                                         ><svg
                                                             viewBox="0 0 16 2"
                                                             focusable="false"
@@ -418,9 +427,12 @@
                                             <div>
                                                 <label
                                                     class="Checkbox_checkbox Checkbox_sm Checkbox_labeled AccordionCheckbox_checkbox"
-                                                    ><input required="" type="checkbox" class="Checkbox_input" /><span
-                                                        class="Checkbox_icon"
-                                                        aria-hidden="true"
+                                                    ><input
+                                                        required=""
+                                                        type="checkbox"
+                                                        class="Checkbox_input possible children"
+                                                        id="detail"
+                                                    /><span class="Checkbox_icon" aria-hidden="true"
                                                         ><svg
                                                             viewBox="0 0 16 2"
                                                             focusable="false"
@@ -622,9 +634,12 @@
                                         <div data-testid="service-agreement-checkbox">
                                             <label
                                                 class="Checkbox_checkbox Checkbox_md Checkbox_labeled AccordionCheckbox_checkbox"
-                                                ><input name="funding" type="checkbox" class="Checkbox_input" /><span
-                                                    class="Checkbox_icon"
-                                                    aria-hidden="true"
+                                                ><input
+                                                    name="funding"
+                                                    type="checkbox"
+                                                    class="Checkbox_input"
+                                                    id="detail"
+                                                /><span class="Checkbox_icon" aria-hidden="true"
                                                     ><svg
                                                         viewBox="0 0 16 2"
                                                         focusable="false"
@@ -667,7 +682,8 @@
                                                     name="funding"
                                                     required=""
                                                     type="checkbox"
-                                                    class="Checkbox_input"
+                                                    class="Checkbox_input possible"
+                                                    id="detail"
                                                 /><span class="Checkbox_icon" aria-hidden="true"
                                                     ><svg
                                                         viewBox="0 0 16 2"
@@ -719,4 +735,6 @@
             </div>
         </div>
     </body>
+    <script src="/staticfiles/js/terms-of-service-yujin/terms-of-service.js"></script>
+    <script src="/staticfiles/js/terms-of-service-yujin/terms-of-service-detail.js"></script>
 </html>
