@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/one-lab-soyoung/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="/staticfiles/css/pay-list-soyoung/pay-list.css">
+    <title>결제 내역</title>
+</head>
+<body>
+    <!-- 헤더 -->
+    <div class="main-wrapper-content">
+        <!-- 전체 리스트 다 감싸는 섹션 -->
+        <section class="order-list-page-container">
+            <h2>나의 포인트 충전 내역</h2>
+            <ul class="cardlist-container" style="width: calc(100% + 0px);">
+                <!-- 충전 내역 1개 li -->
+                <li class="cardlist-item-container" style="width: calc(100% - 0.01px); margin-left: 0px; margin-bottom: 0px; margin-right: 0px;">
+                    <div class="purchase-summary-card">
+                        <!-- 주문번호와 일자 -->
+                        <dl class="card-etc-area">
+                            <dt class="blind-text">주문번호</dt>
+                            <dd>240206-105934-0001</dd>
+                            <dt class="blind-text">주문일자</dt>
+                            <dd>2024-02-06 11:00:12</dd>
+                        </dl>
+                        <!-- 상품 사진과 결제상태 및 상품명 -->
+                        <div class="purchase-card-content">
+                            <div class="purchase-card-thumbnail">
+                                <div class="thumbnail-placeholder">
+                                    <div class="thumnail-visible" style="background-image: url('/templates/html/pay-list-soyoung/images/point.png');"></div>
+                                </div>
+                            </div>
+                            <dl class="purchase-card-title">
+                                <dt class="blind-text">상태</dt>
+                                <dd>
+                                    <span class="badge-container">
+                                        <span class="badge">결제 완료</span>
+                                    </span>
+                                </dd>
+                                <dt class="blind-text">상품명</dt>
+                                <dd class="purchase-card-title-text">[100 포인트 충천!]</dd>
+                                <dd class="purchase-description">
+                                    <span class="purchase-seller-name">원랩</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- 리스트 내, 오른편 하단 상세보기 클릭시 결제 내역 상세로 이동 -->
+                        <a href="/templates/html/pay-list-soyoung/pay-list-detail.html">
+                        <div class="purchase-card-detail-text">상세보기
+                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="purchase-detail-arrow-svg" aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"></path>
+                            </svg>
+                        </div></a>
+                    </div>
+                </li>
+                <!-- 포인트 충전시마다 list 추가 -->
+            </ul>
+            <div></div>
+        </section>
+        <!-- 푸터 -->
+    </div>
+</body>
+</html>
