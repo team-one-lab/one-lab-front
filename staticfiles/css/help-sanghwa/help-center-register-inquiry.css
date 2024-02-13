@@ -329,11 +329,18 @@ body{
 }
 }
 
-a {
+.navbar-auto {
     color: rgb(89 189 181);
     text-decoration: none;
     background-color: transparent;
     touch-action: manipulation;
+}
+
+.navbar-auto:hover {
+    color: #212121;
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
 }
 
 
@@ -653,7 +660,7 @@ input[type="search"] {
 }
 
 input[type=search]::placeholder {
-    font-size: 0.875em;
+    font-size: 13px;
     color: rgb(187, 187, 187);
 }
 
@@ -759,7 +766,9 @@ input {
 
 .button-header-1:hover{
     color: #00C4C4;
+    border-color: #00C4C4;
     text-decoration: none;
+    background-color: #fff;
 }
 
 a {
@@ -815,6 +824,8 @@ a {
 .button-header-2:hover{
     color: #00C4C4;
     text-decoration: none;
+    background-color: #fff;
+    border-color: #00C4C4;
 }
 
 a {
@@ -869,6 +880,8 @@ a {
 .button-header-3:hover{
     color: #00C4C4;
     text-decoration: none;
+    background-color: #fff;
+    border-color: #00C4C4;
 }
 
 a {
@@ -967,7 +980,7 @@ main{
 @media (min-width: 360px)
 {.col-medium {
     font-weight: 500;
-    font-size: 0.9375rem;
+    font-size: 13.23px;
 }}
 
 .col-medium {
@@ -1014,11 +1027,17 @@ ol {
 /* <a href="">도움말 센터</a> */
 /* a 부분 설정 */
 
-a {
+.breadcrumbs > li > a {
     color: rgb(89 189 181);
     text-decoration: none;
     background-color: transparent;
     touch-action: manipulation;
+}
+
+.breadcrumbs > li > a:hover {
+    color: #000;
+    text-decoration: underline;
+    border: none;
 }
 
 
@@ -1099,7 +1118,7 @@ a {
 
 h1 {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 28.4px;
     font-family: 'Pretendard Variable';
     margin: 0.5rem 0 3rem;
     line-height: 1.4;
@@ -1125,7 +1144,7 @@ h1 {
 /* h2 자체 설정 */
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 21.4px;
     font-weight: 600;
     font-family: 'Pretendard';
     margin: 0.5rem 0 3rem;
@@ -1194,186 +1213,87 @@ ul {
 }
 
 
-/* <a class="card-primary" href="" > */
+/* <a class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary" href="" > */
 /* class="card-primary" */
 
-
-
-
 @media (min-width: 360px)
-{.h-full {
+{.card-primary {
     height: 100%;
-}}
-
-@media (min-width: 360px)
-{.p-5 {
     padding: 1.5rem;
-}}
-
-@media (min-width: 360px)
-{.border-primary {
     border-color: rgba(5, 5, 6, 1);
-}}
-
-@media (min-width: 360px)
-{.text-primary {
     color: rgba(5, 5, 6, 1);
-}}
-
-@media (min-width: 360px)
-{.card {
     position: relative;
     display: flex;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
     background-clip: border-box;
-    border: 1px solid #e2e8f0;
+    border: 1px solid black;
     border-radius: 10px;
-}}
-
-.link-plain {
     text-decoration: none;
-}
+}}
 
 a {
     background-color: transparent;
     touch-action: manipulation;
 }
 
-.list-unstyled {
-    list-style: none;
+a:hover{
+    background-color: #000;
+    color: white;
+    border: 1px solid black;
 }
 
 
-/* <h4 class="yds-btnsize m-0 font-medium text-inherit">와디즈 문의하기</h4> */
-
+/* <h4 class="yds-inherit"> */
+/* class="yds-inherit" */
 
 @media (min-width: 360px)
-{.m-0 {
+{.yds-inherit {
     margin: 0;
-}}
-
-@media (min-width: 360px)
-{.text-inherit {
+    font-weight: 500;
     color: inherit;
+    font-size: 14.4px;
+    font-family: 'Pretendard Variable';
 }}
-
-.yds-btnsize {
-    font-size: 1rem;
-    font-family: 'Pretendard';
-}
 
 h4 {
     line-height: 1.4;
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
-/* 해당없음이란?? 적용할 CSS 는 없고, HTML 코드만 작성되있는 부분!!! */
-
-
-/* <li class="md:col-6 lg:col-4 text-center mb-4" id="25535237543577"></li> */
-/* 해당없음 */
-
-
-/* <a class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary" href=""></a> */
-/* 해당없음 */
-
-
-/* <h4 class="yds-btnsize m-0 font-medium text-inherit">프로젝스 수정/변경요청하기</h4> */
-/* 해당없음 */
-
-
-/* <li class="md:col-6 lg:col-4 text-center mb-4" id="24699344939033"></li> */
-/* 해당없음 */
-
-
-/* <a class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary" href=""></a> */
-/* 해당없음 */
-
-
-/* <h4 class="yds-btnsize m-0 font-medium text-inherit">와디즈 광고서비스 문의하기</h4> */
-/* 해당없음 */
-
-
-/* <li class="md:col-6 lg:col-4 text-center mb-4" id="6476688975513"></li> */
-/* 해당없음 */
-
-
-/* <a class="card p-5 link-plain border-primary h-full text-primary hover:text-primary-inverse hover:bg-primary" href=""></a> */
-/* 해당없음 */
-
-
-/* h4 class="yds-btnsize m-0 font-medium text-inherit">와디즈 파이낸스 문의하기</h4> */
-/* 해당없음 */
-
-
-/* <template id="tmpl-form-tip"> #document-fragment </template> */
-
-template {
-    display: none;
-}
-
-
-/* <div class="note media" x-data="{ show: false }" x-init="show = !!Util.getURLParameter('ticket_form_id')" :class="{ 'hidden': !show }"></div> */
-/* 해당없음 */
-
-
-/* <svg class="svg-icon font-size-2xl bottom-0" fill="rgba(66, 245, 233, 1)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg> */
-/* 해당없음 */
-
-
-/* <g stroke="none" stroke-width="1" fill-rule="evenodd"></g> */
-/* 해당없음 */
-
-
-/* <rect opacity="0" x="0" y="0" width="24" height="24"></rect> */
-/* <circle opacity="0.3" cx="12" cy="12" r="10"></circle> */
-/* <rect x="11" y="10" width="2" height="7" rx="1"></rect> */
-/* <rect x="11" y="7" width="2" height="2" rx="1"></rect> */
-/* 해당없음 */
-
-
-/* <div class="media-body1 font-size-md font-medium ml-3"> */
-/* 해당없음 */
-
-
-/* 문의 등록시, 관련된 답변은 1 영업일 이후에 답변 받으실 수 있습니다
-💌 &lt;br&gt;만약, 빠른 답변을 원하시는 경우 &lt;b&gt;&lt;a
-href="" target="_blank"&gt;와디즈
-고객센터&lt;/a&gt;&lt;/b&gt; 클릭하신 후 [Web Widget 열기] 버튼
-클릭하셔서 &lt;br&gt;궁금하신 내용을 검색해 보세요! 감사합니다. 😉 */
-/* 해당없음 */
+/* html에 버튼 3개 더 추가 (총 4개) */
+/* CSS 적용 없음 */
 
 
 /* <a href=""></a> */
-/* 해당없음 */
+/* a 태그에 css 속성 적용 */
+
+a {
+    color: rgb(89 189 181);
+    text-decoration: none;
+    background-color: transparent;
+    touch-action: manipulation;
+}
 
 
-/* <img src="https://theme.zdassets.com/theme_assets/13612819/70b1977be0a68c0c7e333ae43321efbb048f90cd.PNG" alt="AI" style="width: 100%" /> */
+/* <img src="https://theme.zdassets.com/theme_assets/13612819/70b1977be0a68c0c7e333ae43321efbb048f90cd.PNG" alt="AI" style="width: 100%;"> */
+/* 이미지 태그 설정 */
+/* class="banner-img" */
 
 img {
     vertical-align: middle;
     border-style: none;
-}
-
-img {
     max-width: 100%;
     height: auto;
 }
 
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
+.banner-img:hover {
+    border: none;
 }
 
 
-/* <button class="floating-button" onclick="zE('messenger', 'open');"></button> */
-
+/* <button class="floating-button" onclick="zE( 'messenger' , 'open' );"></button> */
+/* class="floating-button" */
 
 .floating-button {
     position: fixed;
@@ -1388,38 +1308,23 @@ img {
     cursor: pointer;
 }
 
-@media (min-width: 360px)
-{.floating-button {
-    width: 60px !important;
-    height: 60px !important;
+@media (min-width: 360px) {
+    @media screen and (min-width: 1097px) {
+        .floating-button{
+            width: 60px !important;
+            height: 60px !important;
+        }
+    }
 }
-}
-
-@media screen and (min-width: 1097px)
-{.floating-button {
-    width: 60px !important;
-    height: 60px !important;
-}}
 
 button {
     text-transform: none;
     overflow: visible;
     touch-action: manipulation;
+    -webkit-appearance: button;
     font-family: inherit;
     font-size: 100%;
     margin: 0;
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    padding-block: 1px;
-    padding-inline: 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: buttonborder;
-    border-image: initial;
 }
 
 
