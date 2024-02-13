@@ -143,6 +143,10 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
     color: #000000;
     fill: #000000;
 }
+
+input::placeholder{
+    text-align: center;
+}
 .flex-end{
     justify-content: flex-end;
     align-items: center;
