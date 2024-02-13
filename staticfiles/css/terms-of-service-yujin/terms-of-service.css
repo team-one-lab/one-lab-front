@@ -40,6 +40,7 @@ button {
     margin: 0;
     vertical-align: baseline;
     background-color: transparent;
+    border: #fff;
 }
 
 article {
@@ -74,6 +75,12 @@ p {
 
 h5 {
     margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+h2 {
     border: 0;
     padding: 0;
     vertical-align: baseline;
@@ -323,6 +330,16 @@ main {
     padding: 0;
 }
 
+.Checkbox_input_detail {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    padding: 0;
+}
+
 .Checkbox_checkbox .Checkbox_icon {
     display: block;
     position: relative;
@@ -468,6 +485,7 @@ button:not(:disabled) {
     max-height: 180px;
     overflow-y: scroll;
     color: #495057;
+    display:none;
 }
 
 .Terms_terms article {
@@ -648,7 +666,7 @@ button:not(:disabled) {
     font-size: 16px;
 }
 
-.Button_button.Button_disabled, .Button_button:disabled, .Button_button[disabled] {
+.Button_button.Button_disabled {
     opacity: .4;
     cursor: default;
     pointer-events: none;
@@ -664,7 +682,7 @@ button:not(:disabled) {
     font-size: 16px;
 }
 
-.Button_contained {
+.Button_button {
     border-color: #00c4c4;
     background-color: #00c4c4;
     color: #fff;
@@ -674,4 +692,55 @@ button:not(:disabled) {
     display: inline-flex;
     align-items: center;
     vertical-align: top;
+}
+
+.Terms_terms article h2 {
+    margin: 1em 0 0!important;
+    font-weight: 700!important;
+    color: rgba(0,0,0,.54)!important;
+    font-size: 12px!important;
+    line-height: 1.5;
+}
+
+.service-join {
+    display: none;
+}
+
+.Checkbox_checkbox .Checkbox_input:checked+.Checkbox_icon {
+    border: solid 1px #00b2b2;
+    background-color: #00c4c4;
+}
+
+.Checkbox_checkbox:hover .Checkbox_input:checked+.Checkbox_icon {
+    border-color: #00a2a2;
+    background-color: #00b2b2;
+}
+
+
+.Checkbox_checkbox .Checkbox_input.Checkbox_icon .Checkbox_removeIcon {
+    opacity: 0;
+}
+
+.Checkbox_input+.Checkbox_icon .Checkbox_removeIcon {
+    opacity: 0;
+}
+
+.Checkbox_checkbox .Checkbox_input:checked+.Checkbox_icon svg {
+    fill: #fff;
+}
+
+.Checkbox_checkbox .Checkbox_input:checked+.Checkbox_icon .Checkbox_checkIcon {
+    opacity: 1;
+}
+
+.detail-join {
+    display:none;
+}
+
+.detail-join.active {
+    display: block;
+}
+
+.TermsAgreementCheckbox_children.active {
+    display: block;
 }
