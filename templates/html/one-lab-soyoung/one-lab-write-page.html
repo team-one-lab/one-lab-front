@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/templates/html/one-lab-soyoung/favicon/favicon-32x32.png">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="stylesheet" href="/staticfiles/css/one-lab-soyoung/one-lab-write-page.css">
     <title>원랩 글쓰기</title>
@@ -116,7 +116,7 @@
                                     </button>
                                     <div class="announce-button-container">
                                         <!-- 이미지 태그에 쪽지 아이콘 -->
-                                        <img src="https://static.wadiz.kr/studio/funding/static/media/announcement.56f4b8e3.svg" alt="" class="announce-button-icon">
+                                        <img src="" alt="" class="announce-button-icon">
                                         <!-- a태그 클릭시 쪽지함으로 이동 -->
                                         <a href=""></a>
                                         
@@ -128,6 +128,7 @@
                                     </button>
                                 </div>
                             </nav>
+
                             <!-- 저장버튼 클릭시 전송될 form -->
                             <form action="">
                                 <section class="section-container" style="max-width: 630px;">
@@ -162,12 +163,16 @@
                                                             등록하기
                                                         </button>
                                                         <div class="img-file-btn-input">
-                                                            <input accept="image/jpg,image/jpeg,image/png" name="uploadFile" placeholder="" type="file" value="">
+                                                            <input class="file" accept="image/jpg,image/jpeg,image/png" name="uploadFile" placeholder="" type="file" value="">
                                                         </div>
                                                     </label>
                                                     <em class="helper error"></em>
                                                     <em class="helper img-form-field-helper">3MB 이하의 JPG, JPEG, PNG 파일</em>
                                                     <em class="helper img-form-field-helper">해상도 300x300 픽셀 이상</em>
+                                                </div>
+                                                <div class="prev-img-field" style="width: 100px; display: none; position: relative;">
+                                                    <img class="preview-img" src="" alt="이미지 미리보기">
+                                                    <button class="close-btn" type="button">&times;</button> <!-- x 버튼 추가 -->
                                                 </div>
                                             </div>
                                         </div>
@@ -196,6 +201,17 @@
                                                     <span class="insert-btn-text">추가</span>
                                                 </span>
                                             </button>
+                                        </div>
+                                        <!-- 추가 버튼 클릭하면 input태그의 value값이 list로 추가됨(x버튼도 함께)  -->
+                                        <div class="join-member-emails-list">
+                                            <!-- <div class="join-member-emails-badge">
+                                                <span>wmoon0023@gmail.com</span>
+                                                <button type="button" class="join-member-emails-remove-btn">
+                                                    <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="remove-btn-svg" aria-hidden="true">
+                                                        <path d="M33.4 8L32 6.6l-12 12-12-12L6.6 8l12 12-12 12L8 33.4l12-12 12 12 1.4-1.4-12-12 12-12z"></path>
+                                                    </svg>
+                                                </button>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </section>
@@ -264,73 +280,6 @@
                                     </div>
                                 </div>
                                 </section>
-                                <!-- <section class="section-container" style="max-width: 630px;">
-                                    <div class="section-header profile">
-                                        <h3 class="section-title member">홈페이지</h3>
-                                    </div>
-                                    <div class="section-content">
-                                        <div class="open-link-fields">
-                                            <div class="open-link-field">
-                                                <div class="url-field">
-                                                    <label for=""></label>
-                                                    <div class="text-field">
-                                                        <input type="text" name="" id="" class="maker-input input-url" placeholder="홈페이지 URL 입력" value="">
-                                                    </div>
-                                                </div>
-                                                <button class="go-link-btn" type="button" style="min-width: 48px; height: 48px;">
-                                                    <span>
-                                                        <span class="go-link-btn-img">
-                                                            <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="go-link-btn-icon" aria-hidden="true" style="width: 20px; height: 20px;">
-                                                                <path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
-                                                                <path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
-                                                            </svg>
-                                                        </span>
-                                                    </span>
-                                                </button>
-                                                <a href="" class="go-link-btn" style="min-width: 48px; height: 48px; display: none;">
-                                                    <span>
-                                                        <span class="go-link-btn-img">
-                                                            <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="go-link-btn-icon" aria-hidden="true" style="width: 20px; height: 20px;">
-                                                                <path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
-                                                                <path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
-                                                            </svg>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="open-link-fields">
-                                            <div class="open-link-field">
-                                                <div class="url-field">
-                                                    <label for=""></label>
-                                                    <div class="text-field">
-                                                        <input type="text" name="" id="" class="maker-input input-url" placeholder="홈페이지 URL 입력" value="">
-                                                    </div>
-                                                </div>
-                                                <button class="go-link-btn" type="button" style="min-width: 48px; height: 48px;">
-                                                    <span>
-                                                        <span class="go-link-btn-img">
-                                                            <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="go-link-btn-icon" aria-hidden="true" style="width: 20px; height: 20px;">
-                                                                <path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
-                                                                <path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
-                                                            </svg>
-                                                        </span>
-                                                    </span>
-                                                </button>
-                                                <a href="" class="go-link-btn" style="min-width: 48px; height: 48px; display: none;">
-                                                    <span>
-                                                        <span class="go-link-btn-img">
-                                                            <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="go-link-btn-icon" aria-hidden="true" style="width: 20px; height: 20px;">
-                                                                <path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
-                                                                <path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
-                                                            </svg>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section> -->
                                 <section class="section-container" style="max-width: 630px;">
                                     <div class="section-header profile">
                                         <h3 class="section-title member">SNS</h3>
@@ -414,6 +363,6 @@
         </div>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="/staticfiles/js/one-lab-list/one-lab-write-page.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/staticfiles/js/one-lab-soyoung/one-lab-write-page.js"></script>
 </html>

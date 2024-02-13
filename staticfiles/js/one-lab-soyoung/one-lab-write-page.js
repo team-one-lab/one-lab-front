@@ -76,71 +76,89 @@ const inputField = document.getElementById('title-input');
 const helperMsg = document.querySelector('.helper-msg');
 
 inputField.addEventListener('input', function() {
+    console.log('ss')
     const maxLength = 30;
     const remainingChars = maxLength - this.value.length;
     helperMsg.textContent = remainingChars + '자 남음';
 });
 
 
-// $(".sidebar-menu-item-nav-link").on("click", function(e) {
-//     // e.preventDefault();
-//     if($('.sidebar-reward-sublist-container').css('display') == 'block'){
-//         $('.sidebar-reward-sublist-container').css("display", "none");
-//     }else {
-//         $(".sidebar-reward-sublist-container").css("display", "block");
-//     }
-// })
+document.addEventListener("DOMContentLoaded", function() {
+  var addButton = document.querySelector('.insert-btn');
+  var emailInput = document.querySelector('.input-member-email');
+  var emailList = document.querySelector('.join-member-emails-list');
 
-// $(document).ready(function(){
-//     $("a.sidebar-menu-item-nav-link").on("click", function(e){
-//         // e.preventDefault();
-//         var svgIcon = $(this).find("svg.sidebar-menu-open-icon.active");
-        
-//         if (svgIcon.length > 0) {
-//             var currentRotation = getRotationDegrees(svgIcon);
-//             console.log(currentRotation)
-//             if (currentRotation === 90) {
-//                 svgIcon.css('transform', 'rotate(-90deg)');
-                
-//             } else {
-//                 svgIcon.css('transform', 'rotate(90deg)');
-//             }
-//         }
-//     });
-// });
+  addButton.addEventListener('click', function() {
+      var email = emailInput.value.trim(); // 이메일 입력 값 가져오기 및 공백 제거
 
-// // 회전각을 구하는 함수
-// function getRotationDegrees(element) {
-//     var transform = element.css('transform');
-//     if (transform === 'none') return 0;
+      if (validateEmail(email)) {
+          addEmailToList(email);
+          emailInput.value = ''; // 입력 필드 초기화
+      } else {
+          var helperMessage = document.querySelector('.helper-message-email');
+          helperMessage.style.display = 'block';
+      }
+  });
 
-//     var values = transform.split('(')[1].split(')')[0].split(',');
-//     var a = values[0];
-//     var b = values[1];
-//     var angle = Math.atan2(b, a);
-//     var degrees = angle * (180 / Math.PI);
+  function validateEmail(email) {
+      // 간단한 이메일 유효성 검사를 수행합니다.
+      // 여기서는 간단히 '@' 문자를 포함하는지만을 확인합니다.
+      return email.includes('@');
+  }
 
-//     return (degrees < 0) ? degrees + 360 : degrees;
-// }
+  function addEmailToList(email) {
+      var emailBadge = document.createElement('div');
+      emailBadge.classList.add('join-member-emails-badge');
+      emailBadge.innerHTML = `
+          <span>${email}</span>
+          <button type="button" class="join-member-emails-remove-btn">
+              <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="remove-btn-svg" aria-hidden="true">
+                  <path d="M33.4 8L32 6.6l-12 12-12-12L6.6 8l12 12-12 12L8 33.4l12-12 12 12 1.4-1.4-12-12 12-12z"></path>
+              </svg>
+          </button>
+      `;
+      emailList.appendChild(emailBadge);
+      attachRemoveEventHandler(emailBadge); // remove 버튼에 이벤트 핸들러 추가
+  }
 
-
-
-// $("a.sidebar-sublist-nav-link").on("click", function(e) {
-//     // e.preventDefault();
-//     var notActive = $("a.sidebar-sublist-nav-link").not(".sublist-active");
-//     var active = $("a.sidebar-sublist-nav-link.sublist-active");
-
-//     if (active.length === 0) {
-//         // 현재 active 클래스가 없으면 클래스를 추가
-//         notActive.addClass("sublist-active");
-//     } else {
-//         // 현재 active 클래스가 있으면 모든 요소에서 클래스를 제거한 후 현재 요소에 추가
-//         $("a.sidebar-sublist-nav-link").removeClass("sublist-active");
-//         $(this).addClass("sublist-active");
-//     }
-// });
+  function attachRemoveEventHandler(emailBadge) {
+      var removeButton = emailBadge.querySelector('.join-member-emails-remove-btn');
+      removeButton.addEventListener('click', function() {
+          emailBadge.remove(); // 해당 이메일 요소 제거
+      });
+  }
+});
 
 
+// 이미지 파일 업로드시 미리보기, x버튼 누르면 사라지고 원상복구
+document.addEventListener("DOMContentLoaded", function() {
+  const fileDOM = document.querySelector('.file');
+  const prevImgField = document.querySelector('.prev-img-field');
+  const closeButton = document.querySelector('.close-btn');
+  const buttonWrapper = document.querySelector('.img-form-field-btn-wrapper');
+
+  fileDOM.addEventListener('change', () => {
+      const reader = new FileReader();
+      
+      buttonWrapper.style.display = 'none'; // 등록하기 버튼 숨기기
+      prevImgField.style.display = 'block'; // 미리보기 이미지 필드 보이기
+      closeButton.style.display = 'inline-block'; // x 버튼 보이기
+
+      reader.onload = ({ target }) => {
+          const previewImg = prevImgField.querySelector('.preview-img');
+          previewImg.src = target.result; // 선택한 이미지 파일의 데이터 URL을 미리보기 이미지의 src에 할당
+      };
+
+      reader.readAsDataURL(fileDOM.files[0]); // 이미지 파일을 읽어들임
+  });
+
+  closeButton.addEventListener('click', () => {
+      buttonWrapper.style.display = 'block'; // 등록하기 버튼 보이기
+      prevImgField.style.display = 'none'; // 미리보기 이미지 필드 숨기기
+      closeButton.style.display = 'none'; // x 버튼 숨기기
+      fileDOM.value = ''; // 파일 입력 필드 초기화
+  });
+});
 
 
 
