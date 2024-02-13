@@ -13,7 +13,7 @@ body {
     font-family: inherit;
 }
 
-div, h2, span, p, strong {
+div, h2, span, p, strong, button {
     margin: 0;
     border: 0;
     padding: 0;
@@ -29,6 +29,10 @@ ul, li {
 a, button {
     color: inherit;
     outline: none;
+}
+
+button {
+    background-color: transparent;
 }
 
 a {

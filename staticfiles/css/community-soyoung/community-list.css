@@ -57,6 +57,11 @@ em {
     font-style: normal;
 }
 
+li.write-form {
+    padding: 0 4px !important;
+    height: 40px !important;
+}
+
 main.main-board {
     color: #44484b;
 }

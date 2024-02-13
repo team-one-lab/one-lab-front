@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/staticfiles/css/one-lab-soyoung/one-lab-list.css">
+    <link rel="stylesheet" href="/staticfiles/css/one-lab-soyoung/one-lab-list-web.css">
     <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <title>와디즈</title>
+    <title>원랩 목록</title>
 </head>
 <body>
     <div class="page-container">
@@ -23,26 +23,27 @@
                         <div class="main-list-count">624</div>
                         <div class="main-list-count-kor">개</div>
                     </div>
-                    <div class="main-list-filter-container">
+                    <!-- 전체/인기순 필터 부분 -->
+                    <div class="main-list-filter-container" style="position: relative;">
                         <ul class="filter-list-wrapper">
                             <button type="button" class="major-btn active-btn">
                                 <span>전체</span>
                             </button>
                             <button type="button" class="major-btn">
-                                <span>펀딩</span>
+                                <span>인기글</span>
                             </button>
-                            <button type="button" class="major-btn">
-                                <span>오픈예정</span>
-                            </button>
-                            <button type="button" class="major-btn">
-                                <span>스토어</span>
-                            </button>
-                            <button type="button" class="major-btn">
-                                <span>프리오더</span>
-                            </button>
+                            <!-- 글 작성 버튼 -->
+                            <div style="position: absolute; left: 94.5%; border: 1px solid gray; padding: 6px;">
+                                <a href="/templates/html/one-lab-soyoung/one-lab-write-page.html">
+                                    <button type="button">글 작성</button>
+                                </a>
+                            </div>
                         </ul>
+                        
                     </div>
+                    <!-- 광고 배너~ 전체 리스트들 감싸는 div -->
                     <div class="search-result-container">
+                        <!-- 광고 배너 -->
                         <div class="adv-banner-box">
                             <div class="event-banner" style="background-color: rgb(210, 217, 222);">
                                 <div class="banner-ad-badge">AD</div>
@@ -106,6 +107,7 @@
                                     </div>
                                 </div> -->
                                 
+                                <!-- 리스트 1개 시작 -->
                                 <div class="one-lab-list-card">
                                     <a class="list-card-content" href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580">
                                         <div class="list-card-thumbnailBox" style="padding-top: 56.25%;">
@@ -154,6 +156,7 @@
                                             </svg>
                                     </button> 
                                 </div>
+                                <!-- 리스트 1개 끝 -->
 
                                 <div class="one-lab-list-card">
                                     <a class="list-card-content" href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580">
@@ -503,6 +506,7 @@
                             </div>
                         </div>
 
+                        <!-- 더보기 버튼 -->
                         <div class="search-result-more-container">
                             <button class="get-more-result-btn">
                                 <span>
@@ -521,5 +525,5 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 
-<script src="/staticfiles/js/one-lab-list/one-lab-list.js"></script>
+<script src="/staticfiles/js/one-lab-soyoung/one-lab-list-web.js"></script>
 </html>

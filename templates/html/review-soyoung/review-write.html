@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="/staticfiles/css/share-soyoung/main-page-header.css">
+    <link rel="stylesheet" href="/staticfiles/css/review-soyoung/review-write.css">
+    <title>후기 등록</title>
+</head>
+    <body>
+        <!--헤더 자리-->
+        <!-- 메인 시작 -->
+        <main class="review-main">
+            <div class="container" id="page-container">
+                <div class="route-wrapper">
+                    <nav class="route-wrap-nav">
+                        <ol class="review-route-ol">
+                            <li title="후기 등록">후기 등록</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="review-form-container">
+                    <div class="review-form-wrapper">
+                        <header class="review-title">
+                            <h1>후기 등록</h1>
+                        </header>
+                        <div class="form-inner">
+                            <form action="" id="new-review-request" class="review-request-form">
+                                <input type="hidden" name="utf-8" autocomplete="off">
+                                <div class="form-field-select-product" style="display: block;">
+                                    <label for="registration-review" class="select-product-text">후기를 작성할 상품을 선택해 주세요:)</label>
+                                    <!-- <a href="" class="select-product-box" aria-expanded="false" style="max-width: 100%;">상품명 1</a> -->
+                                    <div class="select-product-panel" style="display: none; width: 97%;">
+                                        <ul style="transition: left 0.2s ease 0s;">
+                                            <li aria-selected="false">-</li>
+                                            <li aria-selected="true">상품명1</li>
+                                            <li aria-selected="false">상품명2</li>
+                                            <li aria-selected="false">상품명3</li>
+                                        </ul>
+                                    </div>
+                                    <a class="select-product-box" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="_dvqa5i1it" aria-label="후기를 작성할 상품을 선택해 주세요:)" style="max-width: 100%;">상품명 1</a>
+                                    
+                                    <select name="registration-review" id="registration-review" autofocus="autofocus" style="display: none;" aria-label="후기를 작성할 상품을 선택해 주세요:)">
+                                        <option value="" selected="selected">상품명 1</option>
+                                        <option value="">상품명 2</option>
+                                        <option value="">상품명 3</option>
+                                        <option value="">상품명 4</option>
+                                        <option value="">상품명 5</option>
+                                    </select>
+                                </div>
+                                <div class="form-field-review-score">
+                                    <label for="" class="select-review-score">상품 별점</label>
+                                    <div class="review-score-wrap">
+                                        <div class="review-score-box">
+                                            <div class ="star-rating">
+                                                <span class="star on" value="1"> </span>
+                                                <span class="star" value="2"> </span>
+                                                <span class="star" value="3"> </span>
+                                                <span class="star" value="4"> </span>
+                                                <span class="star" value="5"> </span>
+                                              </div>
+                                            <div class="choice-text none">선택해주세요</div>
+                                            <div class="choice-text one" style="display: none;">1점(별로에요)</div>
+                                            <div class="choice-text two" style="display: none;">2점(그저 그래요)</div>
+                                            <div class="choice-text three" style="display: none;">3점(보통이에요)</div>
+                                            <div class="choice-text four" style="display: none;">4점(괜찮아요)</div>
+                                            <div class="choice-text five" style="display: none;">5점(좋아요)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 후기글 작성 섹션 -->
+                                <div class="form-field-review-text">
+                                    <label for="" class="write-reivew-text">후기를 작성해 주세요</label>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <!-- 후기 사진 첨부 섹션 -->
+                                <div class="form-field-file">
+                                    <label for="" class="file-upload">첨부 파일
+                                        <span class="optional">(선택 사항)</span>
+                                    </label>
+                                    <div class="upload-dropzone">
+                                        <input type="file" multiple="true" name="" id="file-input">
+                                        <span>
+                                            <a href="">파일 추가</a>
+                                            또는 파일을 여기로 드래그
+                                        </span>
+                                    </div>
+                                    <div class="upload-error" style="display: none;">
+                                        <span>이미지 파일만 업로드 가능합니다.</span>
+                                    </div>
+                                    <!-- 업로드 시, 파일 미리보기 되는 부분 -->
+                                    <ul class="upload-pool">
+                                        <li class="upload-item" id="file-list">
+                                            <button class="cancel-upload" style="display: none;">X</button>
+                                            <img id="thumbnail" src="#" alt="Thumbnail" style="display: none;" width="100px">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <footer>
+                                    <input type="submit" name="commit" value="제출">
+                                </footer>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="/staticfiles/js/review-soyoung/review-write.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
