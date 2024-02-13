@@ -65,87 +65,87 @@ $(document).ready(function() {
 // });
 
 
-// $(document).ready(function(){
-//     $("li.category-node-container").on("click", function(e) {
-//         // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-//         var clickedElement = $(this);
-//         var categoryNodeItems = clickedElement.find('ul.category-node-items');
-//         var expandBtn = clickedElement.find(".category-node-expand-btn");
+$(document).ready(function(){
+    $("li.category-node-container").on("click", function(e) {
+        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
+        var clickedElement = $(this);
+        var categoryNodeItems = clickedElement.find('ul.category-node-items');
+        var expandBtn = clickedElement.find(".category-node-expand-btn");
 
-//         // 다른 모든 li의 category-node-items를 숨김
-//         $("li.category-node-container").not(clickedElement).find('ul.category-node-items').slideUp(150);
+        // 다른 모든 li의 category-node-items를 숨김
+        $("li.category-node-container").not(clickedElement).find('ul.category-node-items').slideUp(150);
         
-//         // 다른 모든 li의 rotate 클래스 제거
-//         $("li.category-node-container").not(clickedElement).find(".category-node-expand-btn").removeClass('rotate');
+        // 다른 모든 li의 rotate 클래스 제거
+        $("li.category-node-container").not(clickedElement).find(".category-node-expand-btn").removeClass('rotate');
 
-//         // 현재 클릭된 li에 대해 작업 수행
+        // 현재 클릭된 li에 대해 작업 수행
 
-//         // category-node-expand-btn에 rotate 클래스를 토글
-//         expandBtn.toggleClass('rotate');
+        // category-node-expand-btn에 rotate 클래스를 토글
+        expandBtn.toggleClass('rotate');
 
-//         // 선택된 li에 대한 스타일링
-//         clickedElement.toggleClass('selected');
+        // 선택된 li에 대한 스타일링
+        clickedElement.toggleClass('selected');
 
-//         // ul.category-node-items의 토글 효과 적용
-//         categoryNodeItems.slideToggle(150);
-//     });
-// });
-
-
-// $(document).ready(function(){
-//     $("li.category-node-container").on("click", function(e) {
-//         // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-//         var clickedElement = $(this);
-//         var nodeLabel = clickedElement.find('span.category-node-label');
-
-//         // 다른 모든 li의 category-node-items를 숨김
-//         $("li.category-node-container").not(clickedElement).find('span.category-node-label').removeClass('active');
-
-//         nodeLabel.toggleClass('active')
-//     });
-// });
-
-// $(document).ready(function(){
-//     $("li.category-node-container").on("mouseover", function(e) {
-//         // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-//         var clickedElement = $(this);
-//         var nodeLabel = clickedElement.find('span.category-node-label');
-
-//         nodeLabel.css('font-weight', '700')
-//     });
-// });
+        // ul.category-node-items의 토글 효과 적용
+        categoryNodeItems.slideToggle(150);
+    });
+});
 
 
-// $(document).ready(function(){
-//     $("li.category-node-container").on("mouseout", function(e) {
-//         // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-//         var clickedElement = $(this);
-//         var nodeLabel = clickedElement.find('span.category-node-label');
+$(document).ready(function(){
+    $("li.category-node-container").on("click", function(e) {
+        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
+        var clickedElement = $(this);
+        var nodeLabel = clickedElement.find('span.category-node-label');
 
-//         nodeLabel.css('font-weight', '400')
-//     });
-// });
+        // 다른 모든 li의 category-node-items를 숨김
+        $("li.category-node-container").not(clickedElement).find('span.category-node-label').removeClass('active');
 
-// $(document).ready(function(){
-//     $("li.sub-category-node-container").on("mouseover", function(e) {
-//         // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-//         var clickedElement = $(this);
-//         var nodeLabel = clickedElement.find('span.sub-category-node-label');
+        nodeLabel.toggleClass('active')
+    });
+});
 
-//         nodeLabel.css('font-weight', '700')
-//     });
-// });
+$(document).ready(function(){
+    $("li.category-node-container").on("mouseover", function(e) {
+        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
+        var clickedElement = $(this);
+        var nodeLabel = clickedElement.find('span.category-node-label');
+
+        nodeLabel.css('font-weight', '700')
+    });
+});
 
 
-// $(document).ready(function(){
-//     $("li.sub-category-node-container").on("mouseout", function(e) {
-//         // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-//         var clickedElement = $(this);
-//         var nodeLabel = clickedElement.find('span.sub-category-node-label');
+$(document).ready(function(){
+    $("li.category-node-container").on("mouseout", function(e) {
+        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
+        var clickedElement = $(this);
+        var nodeLabel = clickedElement.find('span.category-node-label');
 
-//         nodeLabel.css('font-weight', '400')
-//     });
-// });
+        nodeLabel.css('font-weight', '400')
+    });
+});
+
+$(document).ready(function(){
+    $("li.sub-category-node-container").on("mouseover", function(e) {
+        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
+        var clickedElement = $(this);
+        var nodeLabel = clickedElement.find('span.sub-category-node-label');
+
+        nodeLabel.css('font-weight', '700')
+    });
+});
+
+
+$(document).ready(function(){
+    $("li.sub-category-node-container").on("mouseout", function(e) {
+        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
+        var clickedElement = $(this);
+        var nodeLabel = clickedElement.find('span.sub-category-node-label');
+
+        nodeLabel.css('font-weight', '400')
+    });
+});
 
 
 // 모달창 나타나고 없어지기
@@ -195,27 +195,27 @@ $(".input-text").on("focus", function(e) {
     $(this).css('border-color', '#00c4c4')
 })
 
-$(document).ready(function() {
-    // 파일 업로드 버튼이 클릭되었을 때의 이벤트 처리
-    $(".reward-item-add-btn-box").on("click", function() {
-        // 파일 선택을 위한 input 요소 생성
-        var fileInput = $('<input type="file">');
+// $(document).ready(function() {
+//     // 파일 업로드 버튼이 클릭되었을 때의 이벤트 처리
+//     $(".reward-item-add-btn-box").on("click", function() {
+//         // 파일 선택을 위한 input 요소 생성
+//         var fileInput = $('<input type="file">');
 
-        // 파일이 선택되었을 때의 이벤트 처리
-        fileInput.on("change", function() {
-            // 선택된 파일 객체
-            var selectedFile = this.files[0];
+//         // 파일이 선택되었을 때의 이벤트 처리
+//         fileInput.on("change", function() {
+//             // 선택된 파일 객체
+//             var selectedFile = this.files[0];
 
-            // 여기에 파일 업로드 로직을 추가하면 됩니다.
-            console.log("선택된 파일:", selectedFile);
+//             // 여기에 파일 업로드 로직을 추가하면 됩니다.
+//             console.log("선택된 파일:", selectedFile);
             
-            // 여기에 선택된 파일을 업로드하는 코드를 추가하면 됩니다.
-        });
+//             // 여기에 선택된 파일을 업로드하는 코드를 추가하면 됩니다.
+//         });
 
-        // 파일 선택 창을 열기
-        fileInput.click();
-    });
-});
+//         // 파일 선택 창을 열기
+//         fileInput.click();
+//     });
+// });
 
 
 // textarea 글 작성시 글자수 계산
@@ -226,3 +226,58 @@ introductionText.addEventListener('input', function() {
     const remainingChars = 500 - this.value.length;
     introductionCount.textContent = remainingChars + '자 남음';
 });
+
+
+// 파일 입력시 미리보기 및 x버튼생성
+document.addEventListener("DOMContentLoaded", function() {
+    const sectionContent = document.querySelector('.check-document .section-content');
+    const fileInput = document.querySelector('.reward-item-add-btn-box input[type="file"]');
+
+    document.querySelector('.reward-item-add-btn-box').addEventListener('click', function() {
+        fileInput.click(); // hidden input 요소를 클릭하여 파일 업로드 창을 엽니다.
+    });
+
+    fileInput.addEventListener('change', function(event) {
+        const fileList = event.target.files;
+        if (fileList.length > 0) {
+            const file = fileList[0];
+            if (isImageFile(file)) {
+                displayPreviewImage(file);
+            } else {
+                alert('이미지 파일을 업로드해주세요.');
+                fileInput.value = ''; // 파일 입력 필드 초기화
+            }
+        }
+    });
+
+    function isImageFile(file) {
+        return file.type.startsWith('image/');
+    }
+
+    function displayPreviewImage(file) {
+        const reader = new FileReader();
+
+        reader.onload = function(event) {
+            const imageUrl = event.target.result;
+            const imageElement = document.createElement('img');
+            imageElement.src = imageUrl;
+            imageElement.style.width = "100px"
+            imageElement.style.position = "relative"
+            sectionContent.appendChild(imageElement);
+
+            const closeButton = document.createElement('button');
+            closeButton.textContent = 'x';
+            closeButton.classList.add('close-btn');
+            closeButton.addEventListener('click', function() {
+                imageElement.remove();
+                closeButton.remove();
+                fileInput.value = ''; // 파일 입력 필드 초기화
+            });
+            sectionContent.appendChild(closeButton);
+        };
+
+        reader.readAsDataURL(file);
+    }
+});
+
+
