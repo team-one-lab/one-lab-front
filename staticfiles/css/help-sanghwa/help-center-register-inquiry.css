@@ -1,12 +1,14 @@
 /* 글꼴 설정 */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 html {
-    font-family: Pretendard Variable,pretendard,-apple-system,blinkmacsystemfont,
+    font-family: Pretendard Variable, pretendard,-apple-system,blinkmacsystemfont,
     system-ui,roboto,Helvetica Neue,
     Segoe UI,Apple SD Gothic Neo,Noto Sans KR,
     Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,
     Segoe UI Symbol,sans-serif;
 }
+
 
 /* 전체적인 설정 */
 
@@ -660,7 +662,7 @@ input[type="search"] {
 }
 
 input[type=search]::placeholder {
-    font-size: 13px;
+    font-size: 100%;
     color: rgb(187, 187, 187);
 }
 
@@ -980,7 +982,7 @@ main{
 @media (min-width: 360px)
 {.col-medium {
     font-weight: 500;
-    font-size: 13.23px;
+    font-size: 0.9375rem;
 }}
 
 .col-medium {
@@ -1118,7 +1120,7 @@ ol {
 
 h1 {
     font-weight: bold;
-    font-size: 28.4px;
+    font-size: 2rem;
     font-family: 'Pretendard Variable';
     margin: 0.5rem 0 3rem;
     line-height: 1.4;
@@ -1144,7 +1146,7 @@ h1 {
 /* h2 자체 설정 */
 
 h2 {
-    font-size: 21.4px;
+    font-size: 1.5rem;
     font-weight: 600;
     font-family: 'Pretendard';
     margin: 0.5rem 0 3rem;
@@ -1253,7 +1255,7 @@ a:hover{
     margin: 0;
     font-weight: 500;
     color: inherit;
-    font-size: 14.4px;
+    font-size: 1rem;
     font-family: 'Pretendard Variable';
 }}
 
