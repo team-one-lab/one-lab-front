@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
-        <script src="/staticfiles/js/notify-sunghyun-app/notify-one&one-app.js"></script>
+        <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
        
         
         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/footer.css">
@@ -58,44 +58,19 @@
                             alt="도움말 센터 헬프 센터 홈페이지"
                         />
                     </a>
+			<!---------모바일 화면 헤더 부분 메뉴 버튼--------->
+                    <button class="navbar-hidden">
+                        <span>
+                            <!--::before-->
+                            <!--::after-->
+                        </span>
+                        <span class="sr-only">
+                            <!-- 탐색 메뉴 토글 -->
+                        </span>
+                    </button>
                     <!--------로고 부분 작업 완료----------------->
 
-                    <!----------로고 옆 부분 3개 버튼들을 감싸는 div 태그 시작------------->
-                    <!-- <div
-                        class="nav-end"
-                        x-show="isOpen"
-                        :class="{ 'text-header': isOpen }"
-                        x-transition:enter="transition-fast"
-                        x-transition:enter-start="translate-x-full"
-                        x-transition:enter-end="translate-x-0"
-                        x-transition:leave="transition-fast"
-                        x-transition:leave-start="translate-x-0 text-header"
-                        x-transtion:leave-end="translate-x-full text-header"
-                        style="display: none"
-                    >
-                        
-                        <div
-                            data-element="template"
-                            data-template="category-dropdown"
-                        ></div> -->
-                        <!--------문의 등록 버튼--------------->
-                        <!-- <a
-                            class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                            href="#"
-                            >문의등록</a
-                        > -->
-                        <!---------메이커센터 버튼---------------->
-                        <!-- <a
-                            class="button button-yds1 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                            href="#"
-                            >메이커센터
-                        </a> -->
-                        <!-------바로가기 버튼------------->
-                        <a
-                            class="button button-yds3 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-179"
-                            href="#"
-                            >원랩 바로가기
-                        </a>
+                    
                     </div>
                 </nav>
                 <!-------------로고 옆부분 레이아웃 작업 완료-------------------->
@@ -174,6 +149,7 @@
                                 x-data="Widgets.popularKeywords"
                                 x-init="parseKeywords('펀딩, 프리오더, 스토어, 서포터클럽')"
                             >
+                            <div class="flex-center">
                                 <template
                                     x-for="(keyword,index) in keywords"
                                     :key="index"
@@ -229,6 +205,7 @@
                                     </a>
                                 </div>
                             </div>
+                            </div>
                         </div>
                 <!--------------버튼 4개 작업 완료---------------------------------------->
                     </div>
@@ -261,6 +238,7 @@
                     <div class="relative-40" id="page-container">
                         <div class="content-blocks" id="content-blocks">
                             <div class="container-center">
+                                
                                 <div class="row">
 
                                     <!------------챗봇 버튼(클릭시 myModal이라는 id명을 지닌 div 태그 생성(챗봇 채팅 부분 이미지구현)---------------------------------------------->
@@ -649,7 +627,7 @@
                                         <img class="hidden mt-4 sm:inline-block" id="img2" alt="서포터"
                                         data-asset="image" data-asset-id="category-25448157450521"
                                         src="	https://theme.zdassets.com/theme_assets/13612819/fd1d804abe5082c865396600c2bcf98244b275b5.svg"
-                                        style="height: 40px; width: 40px; margin-top: 1rem;
+                                        style="height: 40px; width: 40px; margin-top: 3rem;
                                         font-weight: bold;
                                         font-family: 'Pretendard'">
                                         <h4 class="my-4 text-right">
@@ -665,7 +643,7 @@
                                         data-asset="image" data-asset-id="category-25448157450521"
                                         src="	https://theme.zdassets.com/theme_assets/13612819/496e0fa045ae026332d2ff661ab89df0ca541a6d.svg
                                         "
-                                        style="height: 40px; width: 40px; margin-top: 1rem;
+                                        style="height: 40px; width: 40px; margin-top: 3rem;
                                         font-weight: bold;
                                         font-family: 'Pretendard'">
                                         <h4 class="my-4 text-right">
@@ -701,7 +679,7 @@
                                           </svg>
                                         </a>
                                         <!------- a 태그 클릭시 나오는 드롭다운------------------------->
-                                        <div class="content px-6 py-2 ydscontent collapse" id="article-6" >
+                                        <div class="content px-6 py-2 ydscontent collapse" id="article-6" style="font-size: 14px;" >
                                           마이와디즈의 [찜·알림신청]에서 확인하실 수 있어요.
                                             찜. 알림 신청 목록 뿐만 아니라 최근에 본 프로젝트 목록까지 확인할 수 있어요.&nbsp;프로젝트 이미지 우측 상단의 하트를 클릭해서 구독 ...
                                             <p class="my-4 text-right btnpadding-right">
@@ -722,7 +700,7 @@
                                           </svg>
                                         </a>
                                         <!------- a 태그 클릭시 나오는 드롭다운------------------------->
-                                        <div class="content px-6 py-2 ydscontent collapse" id="article-7" >
+                                        <div class="content px-6 py-2 ydscontent collapse" id="article-7" style="font-size: 14px;" >
                                           
                                             기본 정보 설정에서 닉네임, 이메일, 연락처 등을 언제든 변경할 수 있어요.
                                             
@@ -743,7 +721,7 @@
                                           </svg>
                                         </a>
                                          <!------- a 태그 클릭시 나오는 드롭다운------------------------->
-                                        <div class="content px-6 py-2 ydscontent collapse" id="article-8" >
+                                        <div class="content px-6 py-2 ydscontent collapse" id="article-8" style="font-size: 14px;">
                                           서포터님이 참여한 프로젝트는 [참여 내역]에서 확인할 수 있어요.
                                             참여한 펀딩·프리오더의 예약 취소를 원하시는 경우, 참여 내역에서 결제상태를 확인 후 직접 취소할 수 있어요.
                                             
@@ -1154,7 +1132,30 @@
                 ></path>
             </symbol>
         </svg>
-    
+        <div class="navBox">
+            <img
+                class="iconBtn"
+                src="./leftchevron.png"
+                style="margin-left: -5px"
+            />
+            <span>조성현</span>
+            <img class="iconBtn" id="menuBtn" src="./menuBtn.png" />
+        </div>
+        <!----------------------->
+        <div class="menuWrap">
+            <nav id="menu">
+                <ul class="menuList">
+                    <li class="listStyle"><a href="#">Home</a></li>
+
+                    <li class="listStyle">
+                        <a href="#">마이페이지</a>
+                    </li>
+                    <li class="listStyle">
+                        <a href="#">로그인</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </body>
     <script>             
       
@@ -1193,7 +1194,54 @@
       window.removeEventListener('click', outsideModalClick);
     }
 
-   
+    document.addEventListener("DOMContentLoaded", function () {
+                document
+                    .querySelector(".navbar-hidden")
+                    .addEventListener("click", function (e) {
+                        if (
+                            document
+                                .querySelector(".menuWrap")
+                                .classList.contains("on")
+                        ) {
+                            //메뉴 slide
+                            document
+                                .querySelector(".menuWrap")
+                                .classList.remove("on");
+                            document.getElementById("menuBtn").src =
+                                "./menuBtn.png";
+                            document
+                                .querySelector("#menuBtn")
+                                .classList.remove("btnRotate");
+                            document.querySelector("#dimmed").remove();
+                        } else {
+                            //메뉴 slideIn
+                            document
+                                .querySelector(".menuWrap")
+                                .classList.add("on");
+                            document.getElementById("menuBtn").src =
+                                "./cross.png";
+                            document
+                                .querySelector("#menuBtn")
+                                .classList.add("btnRotate");
+                            let div = document.createElement("div");
+                            console.log(div);
+                            div.id = "dimmed";
+                            document.body.append(div);
+
+                            //페이지 스크롤 락  모바일 이벤트 차단
+                            document
+                                .querySelector("#dimmed")
+                                .addEventListener(
+                                    "scroll touchmove touchend mousewheel",
+                                    function (e) {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        return false;
+                                    }
+                                );
+                        }
+                    });
+            });
 
     </script>
 </html>

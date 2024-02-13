@@ -872,14 +872,17 @@ section{
 }
 .min-5{
     justify-content: center;
-    min-width: 380px;
+   
     display: flex;
-    margin-left: 45px;
+    margin-left: 70px;
+}
+input::placeholder{
+    text-align: center;
 }
 .grid-px{
     padding-left: 12px;
     padding-right: 12px;
-    column-gap: 228px;
+    column-gap: 108px;
     grid-auto-flow: column;
     display: grid;
 }
