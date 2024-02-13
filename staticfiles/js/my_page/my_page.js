@@ -26,11 +26,8 @@ for( let i = 0; i < tabList2.length; i++) {
         e.preventDefault();
         for (var j=0; j<tabList2.length; j++){
             tabList2[j].classList.remove("Tab_active");
-            // contents2.style.display = 'none';
         }
         this.classList.add("Tab_active");
-        // activeCont = this.getAttribute("href");
-        // contents2.style.display='block';
     });
 }
 
@@ -38,7 +35,7 @@ for( let i = 0; i < tabList2.length; i++) {
 // 모달창 켜고 끄기 구현
 
 const modal = document.getElementById("modal")
-const btnModal = document.querySelector(".MyWadizSupporterProjectInfo_gaElement")
+const btnModal = document.querySelector(".my-page-project-show-like")
 const closeModal = document.getElementById("closeModal")
 // console.log(btnModal)
 // console.log(closeModal)
