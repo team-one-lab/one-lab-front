@@ -1,7 +1,8 @@
-const closebtn = document.querySelector(".BannerContainer_closeButton");
-const modal = document.querySelector(".BottomModal_portal");
+const closebtn = document.querySelector(".banner-container-close-button");
+const modal = document.querySelector(".bottom-modal-portal");
 const openbtn = document.getElementById("openmodal");
-
+const sendbtn = document.getElementById("send-button");
+console.log(sendbtn);
 
 closebtn.addEventListener("click", (e)=> {
     modal.style.display= 'none';
@@ -10,4 +11,8 @@ closebtn.addEventListener("click", (e)=> {
 
 openbtn.addEventListener("click", (e)=> {
     modal.style.display = 'block';
+})
+
+sendbtn.addEventListener("click", () => {
+    closebtn.click();
 })

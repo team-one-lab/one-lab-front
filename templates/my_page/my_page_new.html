@@ -606,7 +606,7 @@
                                         <button
                                             href="#tab2"
                                             type="button"
-                                            class="Tab_tab undefined Tab_md"
+                                            class="Tab_tab undefined Tab_first Tab_md Tab_active"
                                             data-value="1"
                                         >
                                             <span>나의 좋아요</span>
@@ -614,7 +614,7 @@
                                     </li>
                                 </ul>
                             </div>
-
+                            <!-- 모달창 태그 -->
                             <div id="tab2" class="RecentView_content">
                                 <div class="WishView_container">
                                     <div class="CategoryFilter_container">
@@ -625,6 +625,7 @@
                                                 class="CategoryFilter_filterItem"
                                             >
                                                 <button
+                                                    id="select_all_btn"
                                                     type="button"
                                                     class="Tab_tab Tab_first Tab_active Tab_rectangle Tab_md"
                                                 >
@@ -635,6 +636,7 @@
                                                 class="CategoryFilter_filterItem"
                                             >
                                                 <button
+                                                    id="community_btn"
                                                     type="button"
                                                     class="Tab_tab Tab_first Tab_rectangle Tab_md"
                                                 >
@@ -645,6 +647,7 @@
                                                 class="CategoryFilter_filterItem"
                                             >
                                                 <button
+                                                    id="competition_btn"
                                                     type="button"
                                                     class="Tab_tab Tab_first Tab_rectangle Tab_md"
                                                 >
@@ -655,6 +658,7 @@
                                                 class="CategoryFilter_filterItem"
                                             >
                                                 <button
+                                                    id="share_btn"
                                                     type="button"
                                                     class="Tab_tab Tab_first Tab_rectangle Tab_md"
                                                 >
@@ -665,6 +669,7 @@
                                                 class="CategoryFilter_filterItem"
                                             >
                                                 <button
+                                                    id="onelab_btn"
                                                     type="button"
                                                     class="Tab_tab Tab_first Tab_rectangle Tab_md"
                                                 >
@@ -673,17 +678,325 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="EmptyContainer_container">
+                                    <hr class="my-page-accumulate-divider" />
+                                    <!-- 좋아요 한 글이 있을 때의 창 -->
+                                    <div id="total-page">
+                                        <div
+                                            id="page"
+                                            class="Wishview_list_wrap"
+                                        >
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            id="page"
+                                            class="Wishview_list_wrap"
+                                        >
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            id="page"
+                                            class="Wishview_list_wrap"
+                                        >
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            id="page"
+                                            class="Wishview_list_wrap"
+                                        >
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 좋아요 한 글이 없을 때의 창 -->
+                                    <div
+                                        id="EmptyContainer"
+                                        class="EmptyContainer_container"
+                                    >
                                         <div class="EmptyContainer_content">
                                             <strong class="EmptyContainer_title"
-                                                >찜·알림신청한 프로젝트가
-                                                없어요</strong
+                                                >좋아요 한 글이
+                                                없습니다!</strong
                                             >
                                             <p
                                                 class="EmptyContainer_description"
                                             >
-                                                실시간 검색어를 통해 새로운
-                                                프로젝트를 탐색해 보세요
+                                                아래 태그에서 원하는 커뮤니티를
+                                                찾아 좋아요를 눌러보세요!
                                             </p>
                                             <ul
                                                 class="EmptyContainer_searchList"

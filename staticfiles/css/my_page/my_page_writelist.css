@@ -71,6 +71,15 @@ html {
     display: block;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
 body {
     display : block;
     font-family: inherit;
@@ -121,6 +130,12 @@ h2{
     vertical-align: baseline;
 }
 
+h3 {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
 input {
     color: inherit;
     font-family: inherit;
@@ -135,8 +150,20 @@ input[type="text" i] {
     padding-block: 1px;
     padding-inline: 2px;
 }
-
-
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    vertical-align: baseline;
+}
 span{
     margin: 0;
     border: 0;
@@ -207,7 +234,7 @@ span{
     max-width: none;
 }
 
-.GNBDesktop_container {
+.GNBDesktop-container {
     display: inline-block;
     position: static;
     right: 0;
@@ -223,13 +250,13 @@ span{
     vertical-align: top;
 }
 
-.GNBDesktop_item {
+.GNBDesktop-item {
     display: inline-block;
     vertical-align: middle;
     text-decoration: none;
     color: #212529;
 }
-.GNBDesktop_link {
+.GNBDesktop-link {
     line-height: 30px;
     font-size: 20px;
     font-weight: 700;
@@ -252,7 +279,7 @@ span{
     vertical-align: top;
 }
 
-.DesktopSearchApp_container {
+.desktop-search-app-container {
     min-width: 360px;
     display: inline-block;
     position: relative;
@@ -260,7 +287,7 @@ span{
     height: 56px;
 }
 
-.SearchController_container {
+.search-controller-container {
     border: 1px solid #00c4c4;
     font-size: 14px;
     font-weight: 400;
@@ -278,17 +305,17 @@ span{
     color: #212529;
 }
 
-.SearchTag_emptyTag {
+.search-tag-empty-tag {
     position: relative;
     width: 16px;
 }
-.SearchController_keyword {
+.search-controller-keyword {
     display: flex;
     position: relative;
     flex: 1 1 0%;
     margin-right: 40px;
 }
-.SearchController_keyword input {
+.search-controller-keyword input {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -301,7 +328,7 @@ span{
     appearance: none;
     font-size: 14px;
 }
-.SearchController_searchIcon {
+.search-controller-search-icon {
     position: absolute;
     top: 52%;
     right: 16px;
@@ -310,10 +337,10 @@ span{
     z-index: 1;
     pointer-events: visible;
 }
-.SearchController_searchIcon svg {
+.search-controller-search-icon svg {
     display: block;
 }
-.GNBDesktop_icon {
+.GNBDesktop-icon {
     display: inline-block;
     position: relative;
     transform: rotate(90deg);
@@ -337,7 +364,7 @@ span{
     overflow: hidden;
 } */
 
-.DesktopSearchApp_conditionContainer {
+.desktop-search-app-condition-container {
     position: absolute;
     top: 56px;
     left: 0;
@@ -350,13 +377,13 @@ span{
     width: 511px;
 }
 
-.DesktopSearchApp_footer {
+.desktop-search-app-footer {
     position: relative;
     padding: 13px 16px 11px;
     text-align: right;
 }
 
-.DesktopSearchApp_footer button {
+.desktop-search-app-footer button {
     line-height: 20px;
     font-size: 14px;
     font-weight: 400;
@@ -366,20 +393,20 @@ span{
     font-weight: 500;
 }
 
-.HeaderDesktop_user {
+.header-desktop-user {
     display: inline-block;
     position: relative;
     vertical-align: top;
 }
 
-.User_container {
+.user-container {
     display: inline-block;
     position: relative;
     vertical-align: top;
     white-space: nowrap;
 }
 
-.User_btnSign {
+.user-btn-sign {
     display: inline-block;
     cursor: pointer;
     padding: 0 8px;
@@ -398,7 +425,7 @@ span{
     margin-left: 12px;
 }
 
-.Button_contained .Button_childeren {
+.button-contained .button-childeren {
     border-color: #00c4c4;
     background-color: #00c4c4;
     color: #fff;
@@ -410,11 +437,11 @@ span{
     vertical-align: top;
 }
 
-.Button_children {
+.button-children {
     vertical-align: top;
 }
 
-.PreviewOverlay_container {
+.preview-overlay-container {
     line-height: 20px;
     font-size: 14px;
     font-weight: 400;
@@ -431,14 +458,14 @@ span{
     background-color: #fff1f1;
     color: #f66;
 }
-.PreviewOverlay_title {
+.preview-overlay-title {
     line-height: 28px;
     font-size: 16px;
     margin-left: 8px;
     font-weight: 700;
 }
 
-.PreviewOverlay_description {
+.preview-overlay-description {
     margin-left: 16px;
 }
 input {
@@ -465,12 +492,12 @@ button {
     vertical-align: baseline;
 }
 
-.NotificationButton_container{
+.notification-button-container{
     display: inline-block;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-.NotificationButton_btnNotification {
+.notification-button-btn-notification {
     width: 56px;
     height: 56px;
     display: inline-flex;
@@ -480,15 +507,15 @@ button {
     background-color: transparent;
 }
 
-.withIcon_icon.withIcon_inline {
+.with-icon-icon .with-icon_inline {
     display: inline;
 }
 
-.NotificationButton_btnNotification svg {
+.notification-button-btn-notification svg {
     color: #000;
     font-size: 24px;
 }
-.withIcon_icon{
+.with-icon-icon {
     transform: scale(1);
     transition: transform .3s ease-out;
     width: 1em;
@@ -496,20 +523,20 @@ button {
     fill: currentColor;
 }
 
-.HeaderDesktop_user {
+.header-desktop-user {
     display: inline-block;
     position: relative;
     vertical-align: top;
 }
 
-.User_container {
+.user-container {
     display: inline-block;
     position: relative;
     vertical-align: top;
     white-space: nowrap;
 }
 
-.User_btnAvatar {
+.user-btn-avatar {
     display: inline-block;
     cursor: pointer;
     width: 56px;
@@ -517,7 +544,7 @@ button {
     line-height: 56px;
 }
 
-.Avatar_avatar {
+.avatar-avatar {
     display: inline-flex;
     position: relative;
     outline: none;
@@ -526,7 +553,7 @@ button {
     padding: 0;
     vertical-align: middle;
 }
-.Avatar_avatar>span {
+.avatar-avatar>span {
     display: block;
     position: absolute;
     opacity: 1;
@@ -549,19 +576,19 @@ span {
     vertical-align: top;
 }
 
-.Button_contained {
+.button-contained {
     border-color: #00c4c4;
     background-color: #00c4c4;
     color: #fff;
 }
 
-.Button_md {
+.button-md {
     padding: 9px 15px;
     height: 40px;
     font-size: 14px;
 }
 
-.Button_button {
+.button-button {
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
@@ -571,26 +598,26 @@ span {
     cursor: pointer;
 }
 
-.Button_button span {
+.button-button span {
     display: inline-flex;
     align-items: center;
     vertical-align: top;
 }
 
-.MainWrapper_content {
+.main-wrapper-content {
     transition: padding-top .25s;
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.MyFundingListContainer_container {
+.my-funding-list-container-container {
     margin: 0 auto;
     padding: 0 0 138px;
     width: 100%;
     color: #212529;
 }
 
-.MyFundingListContainer_title {
+.my-funding-list-container-title {
     font-size: 32px;
     font-weight: 700;
     line-height: 1.35;
@@ -603,7 +630,7 @@ span {
     padding: 56px 0 24px;
 }
 
-.MyFundingListContainer_topArea{
+.my-funding-list-container-top-area{
     position: relative;
     margin: 24px auto 0;
     padding: 16px 16px 35px;
@@ -617,7 +644,7 @@ span {
     overflow-wrap: break-word;
 }
 
-.MyFundingListContainer_selectBox {
+.my-funding-list-container-select-box {
     position: absolute;
     top: 3px;
     left: 16px;
@@ -660,12 +687,12 @@ span {
 }
 
 
-.select-menu__control {
+.select-menu-control {
     border: 1px solid #dde2e6;
     border-radius: 3px;
     box-shadow: none;
 }
-.select-menu__control--menu-is-open {
+.select-menu-control--menu-is-open {
     border-color: #00c4c4!important;
 }
 
@@ -697,7 +724,7 @@ span {
     box-sizing: border-box;
 }
 
-.css-1uccc91-singleValue {
+.css-1uccc91-single-value {
     color: rgb(51, 51, 51);
     margin-left: 2px;
     margin-right: 2px;
@@ -711,7 +738,7 @@ span {
     box-sizing: border-box;
 }
 
-.css-62g3xt-dummyInput {
+.css-62g3xt-dummy-input {
     background: 0px center;
     border: 0px;
     font-size: inherit;
@@ -734,7 +761,7 @@ span {
     box-sizing: border-box;
 }
 
-.css-tlfecz-indicatorContainer {
+.css-tlfecz-indicator-container {
     color: rgb(204, 204, 204);
     display: flex;
     padding: 8px;
@@ -742,13 +769,13 @@ span {
     box-sizing: border-box;
 }
 
-.select-menu__indicator {
+.select-menu-indicator {
     pointer-events: none;
     font-size: 24px;
 }
 
 
-.withIcon_icon {
+.with-icon-icon {
     display:block;
     transform: scale(1);
     transition: transform .3s ease-out;
@@ -757,7 +784,7 @@ span {
     fill: currentColor;
 }
 
-.select-menu__menu {
+.select-menu-menu {
     display : none;
     z-index: 1110;
     margin-top: 4px;
@@ -766,7 +793,16 @@ span {
     padding: 8px 4px;
 }
 
-.select-menu__menu-list :hover {
+.css-9g7j0m-menu {
+    top: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 8px;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.select-menu-menu-list :hover {
     background-color: #cce6f9;
 }
 .show {
@@ -781,7 +817,7 @@ span {
     box-sizing: border-box;
 }
 
-.select-menu__option {
+.select-menu-option {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
@@ -808,13 +844,75 @@ span {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     box-sizing: border-box;
 }
-.select-menu__option--is-selected {
+.select-menu-option--is-selected {
     background-color: rgba(0,0,0,0)!important;
     color: #00b2b2!important;
 }
 
-.MyFundingList_emptyList__c-kwM {
+.my-funding-list-empty-list-c-kwM {
     height: 500px;
     text-align: center;
     line-height: 500px;
+}
+
+.board-main {
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 100%;
+    width: calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right) - 32px);
+    max-width: 800px;
+    padding-top: 17px;
+    min-width: 632px!important;
+}
+
+.article {
+    padding: 20px 0 0;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+}
+
+.article .info {
+    padding-bottom: 20px;
+    line-height: 18px;
+    font-size: 13px;
+}
+
+
+.article .thumb {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 108px;
+    width: 144px;
+    float: right;
+    background-color: #eaeaea;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.article>em+.info .thumb {
+    margin-top: -24px;
+}
+
+.info .title {
+    margin-right: 200px;
+    padding-bottom: 12px;
+    line-height: 28px;
+    font-size: 20px;
+    color: #212529;
+}
+
+.created-at {
+    font-size: 13px;
+    margin-right: 8px;
+    color: #696f75;
+}
+
+.article:after {
+    display: block;
+    clear: both;
+    content: "";
 }
