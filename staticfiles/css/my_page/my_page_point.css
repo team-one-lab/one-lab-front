@@ -116,295 +116,7 @@ i {
     padding: 0;
     vertical-align: baseline;
 }
-/* ----------------헤더---------------------- */
-.web-header {
-    position: static;
-    transition: top .25s;
-    width: 100%;
-}
 
-.header-wrapper {
-    position: relative;
-    border-bottom: 1px solid #f2f4f6;
-    padding: 0;
-    height: 56px;
-    text-align: left;
-    top: 0;
-    z-index: 9998;
-    background-color: #fff;
-    width: 100%;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1440px;
-    height: 100%;
-}
-.header-container {
-    padding: 0 80px;
-}
-
-.wadiz-logo {
-    position: static;
-    display: inline-block;
-    top: 0;
-    left: 16px;
-    margin: 0;
-    line-height: 22px;
-    font-size: 32px;
-}
-
-.wadiz-logo>a {
-    display: block;
-    padding: 14px 0 18px;
-}
-.label {
-    display: block;
-    position: absolute;
-    left: -9999px;
-    visibility: none;
-    height: 1px;
-}
-
-.wadiz-logo>a svg {
-    max-width: none;
-}
-
-.GNBDesktop_container {
-    display: inline-block;
-    position: static;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    flex-shrink: 0;
-    justify-content: space-between;
-    z-index: 1;
-    margin-left: 24px;
-    padding: 0;
-    width: auto;
-    list-style: none;
-    vertical-align: top;
-}
-
-.GNBDesktop_item {
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: none;
-    color: #212529;
-}
-.GNBDesktop_link {
-    line-height: 30px;
-    font-size: 20px;
-    font-weight: 700;
-    position: relative;
-    transition: .2s;
-    cursor: pointer;
-    padding: 14px 16px;
-    text-align: center;
-    color: #212529;
-}
-
-.web-header-utils {
-    display: flex;
-    position: relative;
-    margin-left: auto;
-    top: 0;
-    right: 0;
-    vertical-align: top;
-}
-
-.DesktopSearchApp_container {
-    min-width: 360px;
-    display: inline-block;
-    position: relative;
-    padding: 8px 16px 8px 0;
-    height: 56px;
-}
-
-.SearchController_container {
-    border: 1px solid #00c4c4;
-    font-size: 14px;
-    font-weight: 400;
-    display: flex;
-    position: relative;
-    transition-property: border-color,background-color,color;
-    transition-duration: .15s;
-    outline: none;
-    border-radius: 4px;
-    background-color: #fff;
-    padding: 0 10px 0 0;
-    height: 40px;
-    min-height: 40px;
-    line-height: 40px;
-    color: #212529;
-}
-
-.SearchTag_emptyTag {
-    position: relative;
-    width: 16px;
-}
-.SearchController_keyword {
-    display: flex;
-    position: relative;
-    flex: 1 1 0%;
-    margin-right: 40px;
-}
-.SearchController_keyword input {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    position: relative;
-    flex-grow: 1;
-    outline: none;
-    background: none;
-    padding-right: 32px;
-    width: 100%;
-    appearance: none;
-    font-size: 14px;
-}
-.SearchController_searchIcon {
-    position: absolute;
-    top: 52%;
-    right: 16px;
-    left: auto;
-    transform: translateY(-52%);
-    z-index: 1;
-    pointer-events: visible;
-}
-.SearchController_searchIcon svg {
-    display: block;
-}
-.GNBDesktop_icon {
-    display: inline-block;
-    position: relative;
-    transform: rotate(90deg);
-    animation: GNBDesktop_slide-up__x9vwA .15s forwards;
-    margin-left: 4px;
-    color: #212529;
-    font-size: 18px;
-}
-/* .MoreMenuDesktop_container {
-    position: absolute;
-    right: 0;
-    left: 0;
-    transition-property: max-height;
-    transition-duration: .15s;
-    transition-timing-function: ease-in-out;
-    visibility: hidden;
-    z-index: 9000;
-    background: #fff;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-} */
-
-.DesktopSearchApp_conditionContainer {
-    position: absolute;
-    top: 56px;
-    left: 0;
-    border-radius: 16px;
-    box-shadow: 0 0 5px rgba(10,22,70,.06), 0 16px 16px -1px rgba(10,22,70,.1);
-    background-color: #fff;
-    height: fit-content;
-    max-height: 90vh;
-    overflow: hidden;
-    width: 511px;
-}
-
-.DesktopSearchApp_footer {
-    position: relative;
-    padding: 13px 16px 11px;
-    text-align: right;
-}
-
-.DesktopSearchApp_footer button {
-    line-height: 20px;
-    font-size: 14px;
-    font-weight: 400;
-    cursor: pointer;
-    padding: 8px;
-    color: #adb5bd;
-    font-weight: 500;
-}
-
-.HeaderDesktop_user {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-}
-
-.User_container {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    white-space: nowrap;
-}
-
-.User_btnSign {
-    display: inline-block;
-    cursor: pointer;
-    padding: 0 8px;
-    text-align: center;
-    line-height: 56px;
-    color: #495057;
-    font-size: 15px;
-}
-
-.web-header-funding-open {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.funding-open {
-    margin-left: 12px;
-}
-
-.Button_contained .Button_childeren {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
-    color: #fff;
-}
-
-.funding-open-button {
-    margin-top: 8px;
-    border-radius: 4px;
-    vertical-align: top;
-}
-
-.Button_children {
-    vertical-align: top;
-}
-
-.PreviewOverlay_container {
-    line-height: 20px;
-    font-size: 14px;
-    font-weight: 400;
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid #ff9d9d;
-    border-bottom: 1px solid #ff9d9d;
-    background-color: #fff1f1;
-    color: #f66;
-}
-.PreviewOverlay_title {
-    line-height: 28px;
-    font-size: 16px;
-    margin-left: 8px;
-    font-weight: 700;
-}
-
-.PreviewOverlay_description {
-    margin-left: 16px;
-}
 input {
     color:inherit;
     font-family: inherit;
@@ -429,77 +141,6 @@ button {
     vertical-align: baseline;
 }
 
-.NotificationButton_container{
-    display: inline-block;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-.NotificationButton_btnNotification {
-    width: 56px;
-    height: 56px;
-    display: inline-flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-}
-
-.withIcon_icon.withIcon_inline {
-    display: inline;
-}
-
-.NotificationButton_btnNotification svg {
-    color: #000;
-    font-size: 24px;
-}
-.withIcon_icon{
-    transform: scale(1);
-    transition: transform .3s ease-out;
-    width: 1em;
-    height: 1em;
-    fill: currentColor;
-}
-
-.HeaderDesktop_user {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-}
-
-.User_container {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    white-space: nowrap;
-}
-
-.User_btnAvatar {
-    display: inline-block;
-    cursor: pointer;
-    width: 56px;
-    vertical-align: top;
-    line-height: 56px;
-}
-
-.Avatar_avatar {
-    display: inline-flex;
-    position: relative;
-    outline: none;
-    border: none;
-    border-radius: 100%;
-    padding: 0;
-    vertical-align: middle;
-}
-.Avatar_avatar>span {
-    display: block;
-    position: absolute;
-    opacity: 1;
-    border-radius: 100%;
-    background: no-repeat 50%/cover;
-    width: 100%;
-    height: 100%;
-}
-
 span {
     margin: 0;
     border: 0;
@@ -507,40 +148,43 @@ span {
     vertical-align: baseline;
 }
 
-.web-header-funding-open .funding-open-button {
-    margin-top: 8px;
-    border-radius: 4px;
-    vertical-align: top;
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    vertical-align: baseline;
 }
 
-.Button_contained {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
-    color: #fff;
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    vertical-align: baseline;
 }
 
-.Button_md {
-    padding: 9px 15px;
-    height: 40px;
-    font-size: 14px;
+dl {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
 
-.Button_button {
-    position: relative;
-    transition-property: background-color,border-color,color,opacity;
-    transition-duration: .15s;
-    border: 1px solid #cdd3d8;
-    text-decoration: none;
-    white-space: nowrap;
-    cursor: pointer;
+dt {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
 
-.Button_button span {
-    display: inline-flex;
-    align-items: center;
-    vertical-align: top;
+dd{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
-
 /* ----------메인----------- */
 
 .black-bg-wrap{
@@ -661,9 +305,75 @@ i.wadizicon{
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
     font-variant: normal;
-    speak: none;
 }
 
 .wa-chevron-right::before{
     content: "";
+}
+
+.point-list ul {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+}
+
+.point-list li {
+    max-width: 800px;
+    margin-bottom: -1px;
+    border-top: 1px solid #E6EAED;
+    border-bottom: 1px solid #E6EAED;
+}
+
+.point-card {
+    padding: 24px 0;
+    background : #fff;
+}
+
+.point-card dl {
+    width: 100%;
+    display: table;
+}
+
+.point-card dl dt {
+    width: 50%;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.point-card dl dt .title {
+    margin-bottom: 8px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #44484B;
+}
+
+.point-card dl dt .sub-title {
+    font-size: 13px;
+    line-height: 18px;
+    color: #90949C;
+}
+
+.point-card dl dd {
+    width: 50%;
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+}
+
+.point-card dl dd .point.plus {
+    color: #557CF2;
+}
+
+.point-card dl dd .point {
+    margin-bottom: 8px;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.point-card dl dd .date {
+    font-size: 13px;
+    line-height: 18px;
+    color: #90949C;
 }
