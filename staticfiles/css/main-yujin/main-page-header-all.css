@@ -1,0 +1,580 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+html {
+    font-family: Pretendard Variable,pretendard,-apple-system,blinkmacsystemfont,
+    system-ui,roboto,Helvetica Neue,
+    Segoe UI,Apple SD Gothic Neo,Noto Sans KR,
+    Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,
+    Segoe UI Symbol,sans-serif;
+}
+
+:root {
+    --scrollbar-width: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+main {
+    display: block;
+
+}
+
+header {
+    display: block;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+h1 {
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+body {
+    line-height: inherit;
+    color: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+button {
+    font-family: inherit;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+input {
+    color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+form {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+}
+
+ul {
+    margin: 0;
+    border: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+span {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.web-header {
+    position: static;
+    transition: top .25s;
+    width: 100%;
+}
+
+.header-wrapper {
+    position: relative;
+    border-bottom: 1px solid #f2f4f6;
+    padding: 0;
+    height: 56px;
+    text-align: left;
+    top: 0;
+    z-index: 9998;
+    background-color: #fff;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100%;
+}
+
+.header-container {
+    padding: 0 80px;
+}
+
+.wadiz-logo {
+    position: static;
+    display: inline-block;
+    top: 0;
+    left: 16px;
+    margin: 0;
+    line-height: 22px;
+    font-size: 32px;
+}
+
+.wadiz-logo>a {
+    display: block;
+    padding: 14px 0 18px;
+}
+
+.label {
+    display: block;
+    position: absolute;
+    left: -9999px;
+    visibility: none;
+    height: 1px;
+}
+
+.wadiz-logo>a svg {
+    max-width: none;
+}
+
+.GNBDesktop_container {
+    display: inline-block;
+    position: static;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-shrink: 0;
+    justify-content: space-between;
+    z-index: 1;
+    margin-left: 24px;
+    padding: 0;
+    width: auto;
+    list-style: none;
+    vertical-align: top;
+}
+
+.GNBDesktop_item {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #212529;
+}
+
+.GNBDesktop_link {
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    transition: .2s;
+    cursor: pointer;
+    padding: 14px 16px;
+    text-align: center;
+    color: #212529;
+}
+
+.web-header-utils {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    top: 0;
+    right: 0;
+    vertical-align: top;
+}
+
+.DesktopSearchApp_container {
+    min-width: 360px;
+    display: inline-block;
+    position: relative;
+    padding: 8px 16px 8px 0;
+    height: 56px;
+}
+
+.SearchController_container {
+    border: 1px solid #00c4c4;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    position: relative;
+    transition-property: border-color,background-color,color;
+    transition-duration: .15s;
+    outline: none;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 0 10px 0 0;
+    height: 40px;
+    min-height: 40px;
+    line-height: 40px;
+    color: #212529;
+}
+
+.SearchTag_emptyTag {
+    position: relative;
+    width: 16px;
+}
+
+.SearchController_keyword {
+    display: flex;
+    position: relative;
+    flex: 1 1 0%;
+    margin-right: 40px;
+}
+
+.SearchController_keyword input {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    flex-grow: 1;
+    outline: none;
+    background: none;
+    padding-right: 32px;
+    width: 100%;
+    appearance: none;
+    font-size: 14px;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.SearchController_searchIcon {
+    position: absolute;
+    top: 52%;
+    right: 16px;
+    left: auto;
+    transform: translateY(-52%);
+    z-index: 1;
+    pointer-events: visible;
+}
+
+.SearchController_searchIcon svg {
+    display: block;
+}
+
+.withIcon_icon {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.GNBDesktop_icon {
+    display: inline-block;
+    position: relative;
+    transform: rotate(90deg);
+    animation: GNBDesktop_slide-up__x9vwA .15s forwards;
+    margin-left: 4px;
+    color: #212529;
+    font-size: 18px;
+}
+
+.MoreMenuDesktop_container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    transition-property: max-height;
+    transition-duration: .15s;
+    transition-timing-function: ease-in-out;
+    visibility: hidden;
+    z-index: 9000;
+    background: #fff;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.MoreMenuDesktop_innerContainer {
+    display: flex;
+    margin: 0 auto;
+    padding: 48px 0 64px 140px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.MoreMenuDesktop_bannerContainer {
+    padding-right: 24px;
+}
+
+.MoreMenuBanner_container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    background-color: #e9ecef;
+    cursor: pointer;
+    padding: 9px 16px;
+    width: 200px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.MoreMenuBanner_inner {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 82px;
+}
+
+.DesktopSearchApp_conditionContainer {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    border-radius: 16px;
+    box-shadow: 0 0 5px rgba(10,22,70,.06), 0 16px 16px -1px rgba(10,22,70,.1);
+    background-color: #fff;
+    height: fit-content;
+    max-height: 90vh;
+    overflow: hidden;
+    width: 511px;
+}
+
+.DesktopSearchApp_footer {
+    position: relative;
+    padding: 13px 16px 11px;
+    text-align: right;
+}
+
+.DesktopSearchApp_footer button {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 8px;
+    color: #adb5bd;
+    font-weight: 500;
+}
+
+.HeaderDesktop_user {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.User_container {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.User_btnSign {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 8px;
+    text-align: center;
+    line-height: 56px;
+    color: #495057;
+    font-size: 15px;
+}
+
+.web-header-funding-open {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.funding-open {
+    margin-left: 12px;
+}
+
+.Button_button {
+    position: relative;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    padding: 9px 23px;
+    height: 48px;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #495057;
+    font-size: 16px;
+}
+
+.Button_md {
+    padding: 9px 15px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.Button_contained {
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+    color: #fff;
+}
+
+.funding-open-button {
+    margin-top: 8px;
+    border-radius: 4px;
+    vertical-align: top;
+}
+
+.Button_button span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.Button_children {
+    vertical-align: top;
+}
+
+.PreviewOverlay_container {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ff9d9d;
+    border-bottom: 1px solid #ff9d9d;
+    background-color: #fff1f1;
+    color: #f66;
+}
+
+.PreviewOverlay_title {
+    line-height: 28px;
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 700;
+}
+
+.PreviewOverlay_description {
+    margin-left: 16px;
+}
+
+.header-wrapper {
+    position: relative;
+    border-bottom: 1px solid #f2f4f6;
+    padding: 0;
+    height: 56px;
+    text-align: left;
+}
+
+.MainWrapper_content {
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: padding-top .25s;
+}
+
+.MainPopBanner_container {
+    position: fixed;
+    bottom: 74px;
+    left: 16px;
+    transform: translate(0);
+    transition-property: transform,opacity;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+    z-index: 9999;
+    width: 87px;
+    height: 42px;
+}
+
+.MainPopBanner_isClose {
+    transform: translateY(10px);
+    opacity: 0;
+    pointer-events: none;
+    left: calc((100vw - 1440px)/2 - 105px);
+    bottom: 40px;
+    width: 145px;
+    height: 68px;
+}
+
+.MainPopBanner_banner {
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+}
+
+.GNBCategoryBar_container {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #f2f4f6;
+}
+
+.GNBCategoryBar_mainCategoriesWrapper {
+    position: relative;
+    color: #212529;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.GNBCategoryBar_mainCategories {
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    height: 52px;
+    gap: 40px;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.GNBCategoryBar_mainCategory {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.GNBCategoryBar_navigation {
+    position: absolute;
+    width: 40px;
+    height: 52px;
+    right: 79px;
+    top: 0;
+    background: linear-gradient(90deg,rgba(255,255,255,0) 0%,#FFFFFF 60%);
+    color: #495057;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+}
