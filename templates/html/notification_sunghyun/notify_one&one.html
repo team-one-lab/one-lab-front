@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
         <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
-        <script src="/staticfiles/js/notify-sunghyun/notify-one&one-modal.js"></script>
-        <link rel="html_url" href="/templates/html/notification_sunghyun/notify_one&one-chat.html">
+       
+        <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/footer.css">
         <link
             rel="stylesheet"
@@ -26,8 +26,8 @@
     -----------클래스명 전체를 쓴 부분도 있고, 줄인 부분도 있으니 양해부탁드립니다.------------->
 
     <!------------작업 시작------------------------------------------->
-    <body class> <!----------도무지 이해가 안되는 부분-------------------->
-        <div></div> <!----------이건 굳이 왜 있는건데? ㅡㅡ ------------>
+    <body class> 
+        <div></div> 
         
         <link 
             rel="stylesheet"
@@ -174,6 +174,7 @@
                                 x-data="Widgets.popularKeywords"
                                 x-init="parseKeywords('펀딩, 프리오더, 스토어, 서포터클럽')"
                             >
+                            <div class="flex-center">
                                 <template
                                     x-for="(keyword,index) in keywords"
                                     :key="index"
@@ -228,6 +229,7 @@
                                         >서포터클럽
                                     </a>
                                 </div>
+                            </div>
                             </div>
                         </div>
                 <!--------------버튼 4개 작업 완료---------------------------------------->
@@ -381,16 +383,14 @@
                                                           </div>
                                                           <div class="sc-vrqbdz-8 kmeNDk">
                                                               <button
-                                                                  data-garden-id="buttons.icon_button"
-                                                                  data-garden-version="8.13.0"
+                                                                 
                                                                   type="button"
                                                                   aria-label="닫기"
                                                                   class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
                                                                   onclick="closeModal()"
                                                               >
                                                                   <svg
-                                                                      data-garden-id="buttons.icon"
-                                                                      data-garden-version="8.13.0"
+                                                                      
                                                                       theme="[object Object]"
                                                                       class="sc-bwzfXH hDrfMZ sc-vrqbdz-7 fbohUV"
                                                                       xmlns="http://www.w3.org/2000/svg"
@@ -649,7 +649,7 @@
                                         <img class="hidden mt-4 sm:inline-block" id="img2" alt="서포터"
                                         data-asset="image" data-asset-id="category-25448157450521"
                                         src="	https://theme.zdassets.com/theme_assets/13612819/fd1d804abe5082c865396600c2bcf98244b275b5.svg"
-                                        style="height: 40px; width: 40px; margin-top: 1rem;
+                                        style="height: 40px; width: 40px; margin-top: 3rem;
                                         font-weight: bold;
                                         font-family: 'Pretendard'">
                                         <h4 class="my-4 text-right">
@@ -665,7 +665,7 @@
                                         data-asset="image" data-asset-id="category-25448157450521"
                                         src="	https://theme.zdassets.com/theme_assets/13612819/496e0fa045ae026332d2ff661ab89df0ca541a6d.svg
                                         "
-                                        style="height: 40px; width: 40px; margin-top: 1rem;
+                                        style="height: 40px; width: 40px; margin-top: 3rem;
                                         font-weight: bold;
                                         font-family: 'Pretendard'">
                                         <h4 class="my-4 text-right">
@@ -1175,7 +1175,6 @@
       var leftPosition = buttonRect.left - parentRect.left;
       var topPosition = buttonRect.top - parentRect.top + floatingButton.offsetHeight;
 
-     
 
       modal.style.display = "block";
 

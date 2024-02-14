@@ -103,9 +103,10 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
     z-index: 20;
     left: 0;
     top: 0;
+    border: solid 0.7px rgb(219, 213, 213);
     position: sticky;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: #ffffff;
     display: flex;
 }
 .flex-center{
@@ -130,8 +131,8 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #fff;
-    fill: #fff;
+    color: #000000;
+    fill: #000000;
 }
 .font-center{
     align-items: center;
