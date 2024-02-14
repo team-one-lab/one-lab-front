@@ -316,7 +316,7 @@ ul.sidebar-reward-sublist-container {
     padding-left: 44px;
 }
 
-a.sidebar-sublist-nav-link {
+/* a.sidebar-sublist-nav-link {
     display: block;
     position: relative;
     cursor: pointer;
@@ -324,7 +324,7 @@ a.sidebar-sublist-nav-link {
     color: #212529;
     font-size: 13px;
     font-weight: 700;
-}
+} */
 
 a.sidebar-sublist-nav-link.sublist-active {
     color: #00a2a2;
