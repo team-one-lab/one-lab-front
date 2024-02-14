@@ -84,16 +84,16 @@ label {
     vertical-align: baseline;
 }
 
-.BottomModal_portal {
+.bottom-modal-portal {
     position: relative;
     display: none;
 }
 
-.BottomModal_overlayAfterOpen {
+.bottom-modal-overlay-after-open {
     background: rgba(0,0,0,.4);
 }
 
-.BottomModal_overlay {
+.bottom-modal-overlay {
     transition-duration: .15s;
     overflow-x: hidden;
     overflow-y: auto;
@@ -107,19 +107,19 @@ label {
     text-align: center;
 }
 
-.BannerContainer_overlay [class*=BottomModal_content] {
+.banner-container-overlay [class*=bottom-modal-content] {
     display: flex;
     justify-content: center;
     height: 100%;
     max-height: none;
 }
-.BottomModal_contentAfterOpen {
+.bottom-modal-content-after-open {
     transform: translateY(0);
     transition-timing-function: ease-in;
     transition-delay: 0ms;
 }
 
-.BottomModal_content {
+.bottom-modal-content {
     padding-top: 5%;
     padding-bottom: 5%;
     flex-direction: column;
@@ -135,17 +135,17 @@ label {
     pointer-events: none;
 }
 
-.BannerContainer_overlay [class*=BottomModal_container] {
+.banner-container-overlay [class*=bottom-modal-container] {
     border-radius: 16px;
     min-width: 400px;
 }
 
-.BottomModal_contentAfterOpen>.BottomModal_container {
+.bottom-modal-content-after-open>.bottom-modal-container {
     transform: translateY(0);
     opacity: 1;
 }
 
-.BottomModal_container {
+.bottom-modal-container {
     display: inline-block;
     position: relative;
     transition: .15s ease-out;
@@ -162,14 +162,14 @@ label {
     pointer-events: auto;
 }
 
-.BannerContainer_modalContainer {
+.banner-container-modal-container {
     position: relative;
     padding: 32px 24px 60px;
     padding-bottom: 24px;
 
 }
 
-.BannerContainer_closeButton {
+.banner-container-close-button {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -177,7 +177,7 @@ label {
     font-size: 24px;
 }
 
-.withIcon_icon {
+.with-icon-icon {
     display: block;
     transform: scale(1);
     transition: transform .3s ease-out;
@@ -186,7 +186,7 @@ label {
     fill: currentColor;
 }
 
-.BannerContainer_modalContainer .BannerContainer_modalTitle {
+.banner-container-modal-container .banner-container-modal-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.5;
@@ -195,56 +195,56 @@ label {
     padding-right: 40px;
 }
 
-.BannerContainer_brMo {
+.banner-container-brMo {
     display: inline-block;
 }
 
-.BannerContainer_modalDescription {
+.banner-container-modal-description {
     margin: -12px 0 28px;
     color: #495057;
 }
 
-.NewsLetterTextField_form .NewsLetterTextField_textField {
+.news-letter-text-field-form .news-letter-text-field-text-field {
     margin-bottom: 16px;
 }
 
-.TextField_textField {
+.text-field-text-field {
     display: block;
     position: relative;
 }
 
-.TextField_lg>label {
+.text-field_lg>label {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
 }
 
-.NewsLetterTextField_textField label {
+.news-letter-text-field-text-field label {
     display: none;
 }
 
-.TextField_textField>label {
+.text-field-text-field>label {
     padding-bottom: 4px;
 }
 
-.TextField_textField .TextField_field {
+.text-field-text-feld .text-field-field {
     position: relative;
 }
 textarea {
     font-family: Pretendard;
     resize : none;
 }
-.Input_input.Input_lg {
+.input-input.input-lg {
     height: 48px;
     min-height: 48px;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
 }
-.Input_lg::placeholder{
+.input-lg::placeholder{
     color: #949fa8;
 }
-.Input_input.Input_content {
+.input-input.input-content {
     height: 160px;
     min-height: 48px;
     font-size: 15px;
@@ -252,12 +252,12 @@ textarea {
     line-height: 1.5;
     
 }
-.Input_content::placeholder{
+.input-content::placeholder{
     color: #949fa8;
 }
 
 
-.Input_input {
+.input-input {
     display: block;
     transition-property: border-color,background-color,color;
     transition-duration: .15s;
@@ -270,27 +270,27 @@ textarea {
     color: #212529;
 }
 
-.Button_button.Button_primary.Button_contained {
+.button-button.button-primary.button-contained {
     border-color: #00c4c4;
     background-color: #00c4c4;
     color: #fff;
 }
 
-.NewsLetterTextField_submitButton {
+.news-letter-text-field-submit-button {
     margin-top: 40px;
 }
 
-.Button_button.Button_xl {
+.button-button.button-xl {
     padding: 9px 27px;
     height: 56px;
     font-size: 18px;
 }
 
-.Button_button.Button_block {
+.button-button.button-block {
     width: 100%;
 }
 
-.Button_button{
+.button-button{
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
@@ -302,21 +302,21 @@ textarea {
     cursor: pointer;
 }
 
-.NewsLetterTextField_submitButton span {
+.news-letter-text-field-submit-button span {
     pointer-events: none;
 }
 
-.Button_button span {
+.button-button span {
     display: inline-flex;
     align-items: center;
     vertical-align: top;
 }
 
-.Button_button .Button_children {
+.button-button .button-children {
     vertical-align: top;
 }
 
-.BottomModal_handle {
+.bottom-modal-handle {
     display: block;
     position: absolute;
     top: 0;

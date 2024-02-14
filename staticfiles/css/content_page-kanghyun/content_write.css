@@ -203,6 +203,7 @@ h1{
 form {
     display: block;
     margin-top: 0em;
+    margin-bottom: 10em;
 }
 
 select {
@@ -764,7 +765,7 @@ label{
     top: 25%;
 }
 
-#request_issue_type_select{
+#request-issue-type-select{
     display: block;
     position: absolute; 
     z-index: 1; 
@@ -787,7 +788,7 @@ label{
     border-radius: 8px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-#request_custom_fields_6760067845017{
+#request-custom-fields-6760067845017{
     width:100%;
 }
 option {
@@ -964,7 +965,7 @@ p {
     bottom: 10em;
 }
 
-#attach_field {
+#attach-field {
     position: relative;
     top: 4em;
 }
