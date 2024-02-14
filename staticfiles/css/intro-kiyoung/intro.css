@@ -516,3 +516,7 @@ button:not(:disabled) {
 .bannercontainer-A {
     width: 85.5%;
 }
+
+.banneritem-icon {
+    background-position: left center;
+}
