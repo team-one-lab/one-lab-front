@@ -1,0 +1,479 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+html {
+    font-family: Pretendard Variable,pretendard,-apple-system,blinkmacsystemfont,
+    system-ui,roboto,Helvetica Neue,
+    Segoe UI,Apple SD Gothic Neo,Noto Sans KR,
+    Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,
+    Segoe UI Symbol,sans-serif;
+}
+
+:root {
+    --scrollbar-width: 0;
+}
+
+body {
+    line-height: inherit;
+    color: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+:after {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+header {
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+span {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+ul {
+    margin: 0;
+    border: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    vertical-align: baseline;
+}
+
+p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+h2 {
+    border: 0;
+    vertical-align: baseline;
+}
+
+form {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+input {
+    color: inherit;
+    font-family: inherit;
+    background: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+em {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+#wz-header {
+    position: static;
+    font-family: inherit;
+    background: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.web-header {
+    position: static;
+    transition: top .25s;
+    width: 100%;
+}
+
+.web-header-large {
+    display: block;
+}
+
+.web-header-simple {
+    display: block;
+    position: relative;
+}
+
+.header-wrapper {
+    border-bottom: 1px solid #f2f4f6;
+    padding: 0;
+    height: 56px;
+    text-align: left;
+    top: 0;
+    z-index: 9998;
+    background-color: #fff;
+    width: 100%;
+}
+
+.header-container {
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100%;
+}
+
+.wadiz-logo {
+    display: inline-block;
+    position: static;
+    margin: 0;
+    line-height: 22px;
+    font-size: 32px;
+}
+
+.wadiz-logo>a {
+    padding: 14px 0 18px;
+    display: block;
+}
+
+.label {
+    display: block;
+    position: absolute;
+    left: -9999px;
+    height: 1px;
+}
+
+.wadiz-logo>a svg {
+    max-width: none;
+}
+
+.gnb-large {
+    display: block;
+    position: absolute;
+    right: 80px;
+    left: auto;
+    color: #495057;
+    margin-left: 24px;
+    box-shadow: none;
+    width: auto;
+    z-index: 1;
+    list-style: none;
+    vertical-align: top;
+}
+
+.gnb-large li {
+    float: left;
+    width: auto;
+}
+
+.item {
+    margin-left: 16px;
+    padding: 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #495057;
+}
+
+.item span {
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 1px;
+    line-height: 55px;
+    color: #000;
+    display: block;
+}
+
+.PreviewOverlay_container {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ff9d9d;
+    border-bottom: 1px solid #ff9d9d;
+    background-color: #fff1f1;
+    color: #f66;
+}
+
+.withIcon_icon {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.PreviewOverlay_title {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 8px;
+    font-weight: 700;
+}
+
+.PreviewOverlay_description {
+    margin-left: 16px;
+}
+
+h2.wz.text {
+    word-break: keep-all;
+}
+
+h2.wz.text.display1 {
+    line-height: 40px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.account-find .page-header .wz.text.display1 {
+    padding: 0 16px;
+    padding-top: 56px;
+    padding-bottom: 36px;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    color: #000;
+}
+
+.tab-list {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition-property: background-color,-webkit-backdrop-filter,backdrop-filter;
+    transition-duration: .5s;
+    z-index: 100;
+    box-shadow: 0 1px #00000014;
+    background: #fff;
+    width: 100%;
+}
+
+.tab-list ul {
+    padding: 0 16px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    color: #000;
+}
+
+.tab-list li {
+    margin-right: 24px;
+    width: auto;
+    float: left;
+}
+
+.tab-list li.active {
+    border-bottom: 2px solid #00c4c4;
+    height: 47px;
+}
+
+.tab-list li.active a {
+    color: #00b2b2;
+}
+
+.tab-list a {
+    display: block;
+    width: 100%;
+    height: 47px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 48px;
+    color: #90949c;
+    font-size: 15px;
+}
+
+.tab-list ul:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.page-body {
+    background: #f5f7fa;
+}
+
+.wz.container {
+    font-size: 15px;
+    font-weight: 400;
+    box-sizing: border-box;
+    line-height: 20px;
+    position: relative;
+    color: #000;
+    padding: 0 16px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(0,0,0,0);
+    padding-top: 24px;
+    padding-bottom: 160px;
+    width: 100%;
+    max-width: 400px;
+}
+
+p.wz.text.body1 {
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.account-find .wz.container.id-check .wz.text.body1 {
+    margin-bottom: 40px;
+    color: #0000008a;
+}
+
+.wz.form .field {
+    margin: 24px 0;
+}
+
+.text-hidden {
+    margin: -1px 0 0!important;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.field.label-hidden > label {
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.84);
+    font-size: 17px;
+    display: none;
+}
+
+.wz.input {
+    display: block;
+    position: relative;
+    font-size: 17px;
+}
+
+.wz.input > input {
+    box-sizing: border-box;
+    transition-property: border-color, height, padding-right, color;
+    transition-duration: 0.2s, 0s;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background: #fff;
+    padding: 0 0.9411764706em;
+    width: 100%;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.84);
+    height: 48px;
+    line-height: 1.2em;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.wz.input::after {
+    display: inline-block;
+    margin-top: -0.2em;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: "wadizicon" !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
+    content: "\e934";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition-property: transform, opacity;
+    transition-duration: 0.2s;
+    opacity: 0;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    pointer-events: none;
+    color: #00c4c4;
+    font-size: 1.4117647059em;
+}
+
+.wz.form .field .helper {
+    margin-top: 4px;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.error {
+    display: none;
+    color: #f25555;
+}
+
+.wz.form .field.error .wz.input > input {
+    border-color: #f66;
+    background-color: rgba(255, 155, 155, 0.06);
+}
+
+.wz.button {
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box !important;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 1.4117647059em;
+    height: 48px;
+    vertical-align: middle;
+    transition-property: background-color, border-color, color, opacity;
+    transition-duration: 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: inline-block;
+    padding-top: 0.07em;
+    text-decoration: none;
+}
+
+.wz.button.block {
+    width: 100%;
+    text-align: center;
+}
+
+.wz.button.primary {
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+    color: #fff;
+}
+
+.wz.container.id-result {
+    display: none;
+}
