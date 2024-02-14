@@ -1,3 +1,12 @@
+img {
+    max-width: 100%;
+    vertical-align: top;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
 
 .ConfirmModal_overlay {
     display: inline-flex;
@@ -445,3 +454,100 @@ a .EmptyContainer_hash {
 #modal{
     display:none;
 }
+
+#EmptyContainer{
+    display:none;
+}
+
+/* 모달창 내의 게시글 탭 */
+.TableLayout_container {
+    display: grid;
+    width: 100%;
+}
+
+.WishCard_container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.HomeVerticalCard_container {
+    position: relative;
+    border-radius: 8px 0 0;
+    overflow: hidden;
+}
+
+.HomeVerticalCard_content_content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.HomeVerticalCard_infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+}
+
+.HomeVerticalCard_info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.HomeVerticalCard_title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 50px;
+    line-height: 50px;
+}
+
+.Title_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #212529;
+}
+
+.HomeVerticalCard_makerNameWrapper {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    height: 18px;
+    color: #868e96;
+}
+
+strong {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.my-page-accumulate-divider{
+    margin: 12px 0;
+    height: 1px;
+    background-color: #f2f4f6;
+    opacity: 1;
+    border: 0;
+    width: 100%;
+}
+
+#total-page{
+    height: 480px;
+    overflow: scroll;
+}
+
+.Wishview_list_wrap {
+    display: block;
+}
+
