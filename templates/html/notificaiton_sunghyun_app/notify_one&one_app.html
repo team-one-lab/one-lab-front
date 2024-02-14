@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
         <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
-        <script src="/staticfiles/js/notification_sunghyun_app/notify_one&one-app.js"></script>
+        <script src="/staticfiles/js/notify-sunghyun-app/notify-one&one-app-chat.js"></script>
+        <script src="/staticfiles/js/notify-sunghyun-app/notify-one&one-app.js"></script>
        
-        
+        <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/footer.css">
         <link
             rel="stylesheet"
@@ -70,7 +71,7 @@
                         </span>
                     </button>
 
-                    <button class="navbar-hidden1">
+                    <button class="navbar-hidden1" style="display: none;">
                         <span> 
                             <!--::before-->
                             <!--::after-->
@@ -260,7 +261,7 @@
                                     <!------- 숨겨진 모달 : 챗봇 메세지가 나오는 부분 시작------>
                                     <div id="myModal" class="modal">
                                       <div class="modal-content">
-                                        <span class="close" onclick="closeModal()">&times;</span>
+                                        <button class="close">&times;</button>
 
                     <!---------------------------- 챗봇 메세지 html 내용이 여기에 들어갑니다 (꽤 긴 코드이니 유의바람) ---------->
                                         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/notify_one&&one-chat.css">
@@ -271,8 +272,7 @@
                                                       <section class="sc-vrqbdz-0 gSikFX sc-vrqbdz-0 gSikFX">
                                                           <div class="sc-vrqbdz-2 kTapgX">
                                                               <figure
-                                                                  data-garden-id="avatars.avatar"
-                                                                  data-garden-version="8.18.0"
+                                                                 
                                                                   aria-atomic="true"
                                                                   aria-live="polite"
                                                                   class="sc-vrqbdz-4 iZrkML sc-gzVnrw bNWAfz"
@@ -292,20 +292,20 @@
                                                               </div>
                                                           </div>
                                                           <div class="sc-vrqbdz-8 kmeNDk">
-                                                              <div class="sc-2nitf7-10 cDiLKi">
+                                                              <div class="sc-2nitf7-10 cDiLKi" onclick="closeModal()">
                                                                   <button
-                                                                      data-garden-id="buttons.icon_button"
-                                                                      data-garden-version="8.13.0"
+                                                                    
                                                                       type="button"
                                                                       aria-label="채널 연결 메뉴 옵션"
                                                                       aria-haspopup="true"
                                                                       data-toggle="true"
+                                                                      
                                                                       aria-expanded="false"
+                                                                      id="close-btn"
                                                                       class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
                                                                   >
                                                                       <svg
-                                                                          data-garden-id="buttons.icon"
-                                                                          data-garden-version="8.13.0"
+                                                                          
                                                                           theme="[object Object]"
                                                                           class="sc-bwzfXH hDrfMZ sc-2nitf7-9 iRaNEz"
                                                                           xmlns="http://www.w3.org/2000/svg"
@@ -333,8 +333,7 @@
                                                                           </g>
                                                                       </svg></button
                                                                   ><input
-                                                                      data-garden-id="dropdowns.input"
-                                                                      data-garden-version="8.49.4"
+                                                                     
                                                                       aria-invalid="false"
                                                                       aria-autocomplete="list"
                                                                       aria-labelledby="downshift-0-label"
@@ -347,8 +346,7 @@
                                                                   />
                                                               </div>
                                                               <div
-                                                                  data-garden-id="dropdowns.menu_wrapper"
-                                                                  data-garden-version="8.49.4"
+                                                                 
                                                                   class="StyledMenuWrapper-sc-tiwdxz-0 hPndRc"
                                                                   style="
                                                                       position: absolute;
@@ -368,6 +366,38 @@
                                                                   ></ul>
                                                               </div>
                                                           </div>
+                                                          <div class="sc-vrqbdz-8 kmeNDk">
+                                                            <button
+                                                                data-garden-id="buttons.icon_button"
+                                                                data-garden-version="8.13.0"
+                                                                type="button"
+                                                                aria-label="닫기"
+                                                                id="close-btn1"
+                                                                onclick="closeModal()"
+                                                                class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
+                                                                
+                                                            >
+                                                                <svg
+                                                                    data-garden-id="buttons.icon"
+                                                                    data-garden-version="8.13.0"
+                                                                    theme="[object Object]"
+                                                                    class="sc-bwzfXH hDrfMZ sc-vrqbdz-7 fbohUV"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="21"
+                                                                    height="13"
+                                                                    viewBox="0 0 21 13"
+                                                                    focusable="false"
+                                                                    role="presentation"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        fill="currentColor"
+                                                                        d="M20.1005 2.7169L10.9931 11.8244C10.4724 12.3451 9.62815 12.3451 9.10745 11.8244L-8.00829e-06 2.7169L1.88561 0.831278L10.0503 8.99593L18.2149 0.831278L20.1005 2.7169Z"
+                                                                    ></path>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
                                                           <div class="sc-vrqbdz-8 kmeNDk">
                                                               
                                                           </div>
@@ -491,15 +521,15 @@
                                                                               >
                                                                                   🧐 메이커
                                                                               </button>
-                                                                              <button
+                                                                              <!-- <button
                                                                   data-garden-id="buttons.icon_button"
                                                                   data-garden-version="8.13.0"
                                                                   type="button"
                                                                   aria-label="닫기"
                                                                   class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
                                                                   onclick="closeModal()"
-                                                              >
-                                                                  <svg
+                                                              > -->
+                                                                  <!-- <svg
                                                                       data-garden-id="buttons.icon"
                                                                       data-garden-version="8.13.0"
                                                                       theme="[object Object]"
@@ -518,7 +548,7 @@
                                                                           d="M20.1005 2.7169L10.9931 11.8244C10.4724 12.3451 9.62815 12.3451 9.10745 11.8244L-8.00829e-06 2.7169L1.88561 0.831278L10.0503 8.99593L18.2149 0.831278L20.1005 2.7169Z"
                                                                       ></path>
                                                                   </svg>
-                                                              </button>
+                                                              </button> -->
                                                                           </div>
                                                                       </div>
                                                                   </div>
@@ -1146,15 +1176,17 @@
             </symbol>
         </svg>
         <div class="navBox">
-            <img
+            <!-- <img
                 class="iconBtn"
                 src="./leftchevron.png"
                 style="margin-left: -5px"
             />
-            <span>조성현</span>
-            <img class="iconBtn" id="menuBtn" src="./menuBtn.png" />
+            <span>조성현</span> -->
+            <!-- <img class="iconBtn" id="menuBtn" src="./menuBtn.png" /> -->
         </div>
         <!----------슬라이드 메뉴 화면 ------------->
+         -슬라이드 등장시 백그라운드 설정
+         <div class="backdrop" style="display: none;"></div>
         <div class="menuWrap">
             <nav id="menu">
                 <div class="btn-block" style="padding: 0 20px;">
@@ -1165,11 +1197,12 @@
                 </div>
                 <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
                 href="#" style="width: 140px; margin-right: 50px;">원랩 바로가기</a>
+                
                     
                 
                 
             </nav>
         </div>
     </body>
-    
+  
 </html>

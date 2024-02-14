@@ -1,65 +1,53 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // 첫 번째 버튼 요소 및 메뉴 요소 가져오기
-    const btn1 = document.querySelector("#cbtn1");
-    const layOut1 = document.querySelector("#article-6");
+    const navbarHidden = document.querySelector(".navbar-hidden");
+    const navbarHidden1 = document.querySelector(".navbar-hidden1");
+    const menuWrap = document.querySelector(".menuWrap");
+    const backDrop = document.querySelector(".backdrop");
 
-    // 두 번째 버튼 요소 및 메뉴 요소 가져오기
-    const btn2 = document.querySelector("#cbtn2");
-    const layOut2 = document.querySelector("#article-7");
-
-    // 세 번째 버튼 요소 및 메뉴 요소 가져오기
-    const btn3 = document.querySelector("#cbtn3");
-    const layOut3 = document.querySelector("#article-8");
-
-    // 버튼 클릭 이벤트 핸들러 - 첫 번째 버튼
-    btn1.addEventListener("click", function (event) {
-        event.stopPropagation();
-        toggleMenu(layOut1);
-    });
-
-    // 버튼 클릭 이벤트 핸들러 - 두 번째 버튼
-    btn2.addEventListener("click", function (event) {
-        event.stopPropagation();
-        toggleMenu(layOut2);
-    });
-
-    // 버튼 클릭 이벤트 핸들러 - 세 번째 버튼
-    btn3.addEventListener("click", function (event) {
-        event.stopPropagation();
-        toggleMenu(layOut3);
-    });
-
-    // 문서의 다른 영역을 클릭할 때 숨김 이벤트 핸들러
-    document.addEventListener("click", function (event) {
-        hideMenusExcept([layOut1, layOut2, layOut3], [btn1, btn2, btn3], event);
-    });
-
-    // 특정 메뉴를 토글하는 함수
-    function toggleMenu(menu) {
-        if (menu.classList.contains("MoreMenu")) {
-            menu.classList.remove("MoreMenu");
+    navbarHidden.addEventListener("click", function () {
+        if (menuWrap.classList.contains("on")) {
+            // 메뉴 slide가 이미 되있을때
+            console.log(navbarHidden);
+            menuWrap.classList.remove("on");
+            navbarHidden.style.display = "none";
+            navbarHidden1.style.display = "block";
         } else {
-            menu.classList.add("MoreMenu");
-        }
+            // 메뉴 slide 시작하려고할때
+            menuWrap.classList.add("on");
+            backDrop.style.display = "block";
+            navbarHidden.style.display = "none";
+            navbarHidden1.style.display = "block";
 
-        if (menu.style.display === "none" || menu.style.display === "") {
-            menu.style.display = "block";
-        } else {
-            menu.style.display = "none";
-        }
+            console.log(backDrop);
 
-        console.log("MoreMenu");
-    }
+            // 슬라이드 메뉴 이외의 영역 터치시 메뉴 닫기
+            backDrop.addEventListener("click", function () {
+                menuWrap.classList.remove("on");
+                navbarHidden.style.display = "block";
+                navbarHidden1.style.display = "none";
+                backDrop.style.display = "none";
+            });
 
-    // 다른 메뉴를 숨기는 함수
-    function hideMenusExcept(menus, buttons, event) {
-        for (let i = 0; i < menus.length; i++) {
-            const menu = menus[i];
-            const button = buttons[i];
-            if (event.target !== button && !menu.contains(event.target)) {
-                menu.style.display = "none";
-                menu.classList.remove("MoreMenu");
-            }
+            // 페이지 스크롤 락 모바일 이벤트 차단
+            div.addEventListener(
+                "scroll touchmove touchend mousewheel",
+                function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return false;
+                }
+            );
         }
-    }
+    });
+
+    // // .navbar-hidden1을 클릭하여 메뉴 닫기
+    // navbarHidden1.addEventListener("click", function () {
+    //     console.log(navbarHidden1);
+    //     if (menuWrap.classList.contains("on")) {
+    //         // 메뉴 slide
+    //         menuWrap.classList.remove("on");
+    //         navbarHidden.style.display = "block";
+    //         navbarHidden1.style.display = "none";
+    //     }
+    // });
 });
