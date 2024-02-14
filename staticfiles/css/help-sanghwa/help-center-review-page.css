@@ -653,7 +653,7 @@ input[type="search"] {
 }
 
 input[type=search]::placeholder {
-    font-size: 0.875em;
+    font-size: 1em;
     color: rgb(187, 187, 187);
 }
 
