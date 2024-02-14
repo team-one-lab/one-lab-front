@@ -1,0 +1,291 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --rpv-core__annotation--link-hover-background-color: rgba(255, 255, 0, .2);
+    --rpv-core__annotation-popup-wrapper-background-color: #faf089;
+    --rpv-core__annotation-popup-wrapper-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+    --rpv-core__annotation-popup-content-border-top-color: #1a202c;
+    --rpv-core__arrow-border-color: rgba(0, 0, 0, .3);
+    --rpv-core__asking-password-color: #000;
+    --rpv-core__asking-password-wrapper-background-color: #fff;
+    --rpv-core__asking-password-wrapper-border-color: rgba(0, 0, 0, .3);
+    --rpv-core__button-background-color: rgba(0, 0, 0, .3);
+    --rpv-core__button-color: #000;
+    --rpv-core__doc-error-background-color: #fff;
+    --rpv-core__doc-error-text-background-color: #c02424;
+    --rpv-core__doc-error-text-color: #fff;
+    --rpv-core__doc-loading-background-color: #fff;
+    --rpv-core__full-screen-target-background-color: #fff;
+    --rpv-core__inner-page-background-color: #fff;
+    --rpv-core__menu-divider-border-bottom-color: rgba(0, 0, 0, .3);
+    --rpv-core__menu-item-color: #000;
+    --rpv-core__menu-item--hover-background-color: rgba(0, 0, 0, .1);
+    --rpv-core__menu-item--disabled-color: rgba(0, 0, 0, .3);
+    --rpv-core__minimal-button-color: #000;
+    --rpv-core__minimal-button--hover-background-color: rgba(0, 0, 0, .1);
+    --rpv-core__minimal-button--disabled-color: rgba(0, 0, 0, .3);
+    --rpv-core__minimal-button--selected-background-color: rgba(0, 0, 0, .1);
+    --rpv-core__modal-body-background-color: #fff;
+    --rpv-core__modal-body-border-color: rgba(0, 0, 0, .3);
+    --rpv-core__modal-overlay-background-color: rgba(0, 0, 0, .5);
+    --rpv-core__page-layer-box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .2);
+    --rpv-core__popover-body-background-color: #fff;
+    --rpv-core__popover-body-border-color: rgba(0, 0, 0, .3);
+    --rpv-core__popover-body-color: #000;
+    --rpv-core__primary-button-background-color: #2566e8;
+    --rpv-core__primary-button-color: #fff;
+    --rpv-core__progress-bar-background-color: rgba(0, 0, 0, .1);
+    --rpv-core__progress-bar-progress-background-color: #2566e8;
+    --rpv-core__progress-bar-progress-color: #fff;
+    --rpv-core__separator-border-bottom-color: rgba(0, 0, 0, .3);
+    --rpv-core__spinner-border-color: rgba(0, 0, 0, .4);
+    --rpv-core__spinner-border-transparent-color: transparent;
+    --rpv-core__splitter-background-color: transparent;
+    --rpv-core__splitter--hover-background-color: rgba(0, 0, 0, .2);
+    --rpv-core__text-layer-text--selection-background-color: rgb(0, 0, 255, 1);
+    --rpv-core__text-layer-text--selection-color: transparent;
+    --rpv-core__textbox-background-color: #fff;
+    --rpv-core__textbox-border-color: rgba(0, 0, 0, .2);
+    --rpv-core__textbox-color: #000;
+    --rpv-core__tooltip-body-background-color: #000;
+    --rpv-core__tooltip-body-color: #fff;
+}
+
+:root {
+    --scrollbar-width: 0;
+}
+
+html {
+    font-family: Pretendard Variable,pretendard,-apple-system,blinkmacsystemfont,system-ui,roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 14px;
+    background-color: rgba(252, 252, 252, 1);
+    height: 100%;
+    line-height: 1.15;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+&:before{
+    transform: translateX(-15px);
+    opacity: 0;
+    content: '\27F6';
+    position: absolute;
+
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+&:after{
+    transform:none;
+    content: '\27F6';
+    position: absolute;
+}
+
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #403b3b;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2;
+    margin: 0;
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Pretendard';
+    margin: 0.5rem 0 3rem;
+    line-height: 1.4;
+    color: rgba(8, 8, 8, 1);
+
+}
+
+ul {
+    padding: 0 0 0 1.5rem;
+    margin: 0 0 1rem;
+}
+
+article{
+    display: block;
+}
+
+section {
+    display: block;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-weight: bold;
+    margin: 0.5rem 0 3rem;
+    line-height: 1.4;
+    color: rgba(8, 8, 8, 1);
+}
+
+strong {
+    font-weight: 700;
+}
+
+p {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+a{
+    color: rgb(89 189 181);
+    text-decoration: none;
+    background-color: transparent;
+    touch-action: manipulation;
+}
+/* 메인 css 적용 */
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex{
+    display: flex !important;
+}
+
+.layout {
+    position: relative;
+    background-color: #fff;
+    z-index: 0;
+}
+
+[role="main"] {
+    flex-grow: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    max-width: 100%;
+}
+
+header {
+    display: block;
+}
+
+.py-6 {
+    padding-top: 6rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.mb-5{
+    margin-bottom: 1.5rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.font-size-md {
+    font-size: 0.9375rem;
+}
+
+.list-divider {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.row-lg {
+    margin-right: -2.5rem;
+    margin-left: -2.5rem;
+    margin-top: -7rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.mt-6 {
+    margin-top: 2rem;
+    font-family: 'Pretendard';
+}
+
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+    min-height: 1px;
+    min-width: 0;
+}
+
+.row-lg > [class*="col"] {
+    padding-left: 2.5rem;
+}
+
+.mb-6{
+    margin-bottom: 2rem;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}

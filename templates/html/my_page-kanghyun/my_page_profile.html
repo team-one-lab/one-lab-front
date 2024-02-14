@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>프로필 설정</title>
+        <link
+            rel="stylesheet"
+            href="/staticfiles/css/my_page-kanghyun/my_page_profile(new).css"
+        />
+    </head>
+    <body>
+        <div id="page-container">
+            <!-- 헤더 -->
+            <div class="web-header"></div>
+            <!-- 바디 -->
+            <div id="waccountWrap">
+                <div class="waccount-wrap">
+                    <div id="waccountContainer">
+                        <h3>프로필 정보 설정</h3>
+                        <div id="tabContent1" class="tab-content">
+                            <h5>프로필 사진</h5>
+                            <div class="profileimg-wrap">
+                                <button
+                                    type="button"
+                                    id="resultProfileImg"
+                                    class="profileimg"
+                                >
+                                    <label for="attach">
+                                        <div class="image"></div>
+                                    </label>
+                                    <input
+                                        type="file"
+                                        id="attach"
+                                        style="display:none"
+                                    />
+                                </button>
+                                <p class="setting-profileimg">
+                                    <button type="button" id="btn_updatePhoto">
+                                        <span>바꾸기</span>
+                                    </button>
+                                    <button type="button" id="btn_deletePhoto">
+                                        삭제
+                                    </button>
+                                </p>
+                            </div>
+
+                            <h5>학교 / 전공</h5>
+                            <ul class="input-div2">
+                                <li>
+                                    <input
+                                        type="text"
+                                        class="input-text"
+                                        maxlength="20"
+                                        id="school"
+                                        placeholder="학교"
+                                        value=""
+                                    />
+                                </li>
+                                <li>
+                                    <input
+                                        type="text"
+                                        class="input-text"
+                                        maxlength="20"
+                                        id="major"
+                                        placeholder="전공"
+                                        value=""
+                                    />
+                                </li>
+                            </ul>
+                            <h5>
+                                취득한 자격증을 적어주세요(ex.토익900,
+                                정보처리기사)
+                            </h5>
+                            <div class="textarea-wrap">
+                                <textarea
+                                    id="introduceme"
+                                    maxlength="80"
+                                ></textarea>
+                            </div>
+                            <h5>간단한 한 마디로 나를 소개해주세요</h5>
+                            <div class="textarea-wrap">
+                                <textarea
+                                    id="introduceme"
+                                    maxlength="250"
+                                ></textarea>
+                            </div>
+
+                            <ul class="lst_thumb"></ul>
+                            <div class="btn-bottom">
+                                <ul class="btn-div2">
+                                    <li>
+                                        <button
+                                            type="button"
+                                            class="wz button gray btn-darkgray"
+                                        >
+                                            취소
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                            type="button"
+                                            class="wz button primary btn-mint"
+                                        >
+                                            확인
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 확인창 모달 -->
+            <div id="confirm-modal"></div>
+            <section id="alertify-o" class="alertify-o alertify-o-alert">
+                <a
+                    id="alertify-o-resetFocusBack"
+                    class="alertify-o-resetFocus"
+                    href="#"
+                    >Reset Focus</a
+                >
+                <article class="alertify-o-inner">
+                    <p
+                        class="alertify-o-message"
+                        style="font-size:15px;padding-top:2px;"
+                    >
+                        프로필 설정이 성공적으로 변경되었습니다.
+                    </p>
+                    <nav class="alertify-o-buttons">
+                        <button
+                            class="alertify-o-button alertify-o-button-ok"
+                            id="alertify-o-ok"
+                        >
+                            확인
+                        </button>
+                    </nav>
+                </article>
+            </section>
+        </div>
+    </body>
+    <script src="/staticfiles/js/my_page-kanghyun/my_page_profile.js"></script>
+</html>
