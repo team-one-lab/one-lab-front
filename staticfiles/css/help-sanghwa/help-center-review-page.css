@@ -318,7 +318,7 @@ body{
 }
 
 
-/* <a href="https://helpcenter.wadiz.kr/hc/ko" class="navbar-auto"> */
+/* <a href="" class="navbar-auto"> */
 /* class="navbar-auto" */
 @media (min-width: 360px) {
 .navbar-auto{
@@ -1208,6 +1208,9 @@ a {
 
 }
 
+a.link-underline:hover {
+    text-decoration: none;
+}
 
 
 .link-underline::after{
@@ -1657,7 +1660,7 @@ a {
 }}
 
 
-/* <div class="text-gray-2" onclick="location.href='https://www.wadiz.kr/web/wterms/privacy'"></div> */
+/* <div class="text-gray-2" onclick="location.href=''"></div> */
 /* class="text-gray-2" */
 @media (min-width: 360px)
 {.text-gray-2 {
@@ -1905,7 +1908,7 @@ a {
 }}
 
 
-/* <div class="text-12" onclick="location.href='https://helpcenter.wadiz.kr/hc/ko/requests/new'"></div> */
+/* <div class="text-12" onclick="location.href=''"></div> */
 /* class="text-12" */
 @media (min-width: 360px)
 {.text-12 {
@@ -2467,7 +2470,7 @@ a {
 }}
 
 
-/* <div class="box-2a" onclick="location.href='https://play.google.com/store/apps/details?id=com.markmount.wadiz&pli=1'"></div> */
+/* <div class="box-2a" onclick="location.href=''"></div> */
 /* class="box-2a" */
 @media (min-width: 360px)
 {.box-2a {
@@ -2529,7 +2532,7 @@ a {
 }}
 
 
-/* <div class="artwork-logo-2" onclick="location.href='https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'"></div> */
+/* <div class="artwork-logo-2" onclick="location.href=''"></div> */
 /* class="artwork-logo-2" */
 @media (min-width: 360px)
 {.artwork-logo-2 {

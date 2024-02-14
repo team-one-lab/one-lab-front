@@ -1,0 +1,334 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+html {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-family: Pretendard,-apple-system,blinkmacsystemfont,system-ui,roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button{
+    font-family: inherit;
+    background-color: transparent;
+    color:inherit;
+    outline:none;
+    margin:0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+
+body {
+    line-height: inherit;
+    color:inherit;
+    font-size: 15px;
+    font-weight: 400;
+    font-family:inherit;
+}
+
+div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+input {
+    font-family: inherit;
+    background: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+strong {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+form {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+span {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+p{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+label {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.bottom-modal-portal {
+    position: relative;
+    display: none;
+}
+
+.bottom-modal-overlay-after-open {
+    background: rgba(0,0,0,.4);
+}
+
+.bottom-modal-overlay {
+    transition-duration: .15s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .15s ease-in;
+    z-index: 9998;
+    text-align: center;
+}
+
+.banner-container-overlay [class*=bottom-modal-content] {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-height: none;
+}
+.bottom-modal-content-after-open {
+    transform: translateY(0);
+    transition-timing-function: ease-in;
+    transition-delay: 0ms;
+}
+
+.bottom-modal-content {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+    transition: .15s ease-out 50ms;
+    transition-property: transform;
+    outline: none;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.banner-container-overlay [class*=bottom-modal-container] {
+    border-radius: 16px;
+    min-width: 400px;
+}
+
+.bottom-modal-content-after-open>.bottom-modal-container {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.bottom-modal-container {
+    display: inline-block;
+    position: relative;
+    transition: .15s ease-out;
+    transition-property: transform,opacity;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,.4);
+    width: auto;
+    max-height: none;
+    overflow-x: visible;
+    overflow-y: visible;
+    background-color: #fff;
+    padding-bottom : calc(-16px + env(safe-area-inset-bottom));
+    text-align: left;
+    pointer-events: auto;
+}
+
+.banner-container-modal-container {
+    position: relative;
+    padding: 32px 24px 60px;
+    padding-bottom: 24px;
+
+}
+
+.banner-container-close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.with-icon-icon {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.banner-container-modal-container .banner-container-modal-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    display: block;
+    padding-right: 40px;
+}
+
+.banner-container-brMo {
+    display: inline-block;
+}
+
+.banner-container-modal-description {
+    margin: -12px 0 28px;
+    color: #495057;
+}
+
+.news-letter-text-field-form .news-letter-text-field-text-field {
+    margin-bottom: 16px;
+}
+
+.text-field-text-field {
+    display: block;
+    position: relative;
+}
+
+.text-field_lg>label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.news-letter-text-field-text-field label {
+    display: none;
+}
+
+.text-field-text-field>label {
+    padding-bottom: 4px;
+}
+
+.text-field-text-feld .text-field-field {
+    position: relative;
+}
+textarea {
+    font-family: Pretendard;
+    resize : none;
+}
+.input-input.input-lg {
+    height: 48px;
+    min-height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.input-lg::placeholder{
+    color: #949fa8;
+}
+.input-input.input-content {
+    height: 160px;
+    min-height: 48px;
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 1.5;
+    
+}
+.input-content::placeholder{
+    color: #949fa8;
+}
+
+
+.input-input {
+    display: block;
+    transition-property: border-color,background-color,color;
+    transition-duration: .15s;
+    outline: none;
+    border: 1px solid #dde2e6;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 0 16px;
+    width: 100%;
+    color: #212529;
+}
+
+.button-button.button-primary.button-contained {
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+    color: #fff;
+}
+
+.news-letter-text-field-submit-button {
+    margin-top: 40px;
+}
+
+.button-button.button-xl {
+    padding: 9px 27px;
+    height: 56px;
+    font-size: 18px;
+}
+
+.button-button.button-block {
+    width: 100%;
+}
+
+.button-button{
+    position: relative;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.news-letter-text-field-submit-button span {
+    pointer-events: none;
+}
+
+.button-button span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.button-button .button-children {
+    vertical-align: top;
+}
+
+.bottom-modal-handle {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: 0 36px;
+    width: calc(100% - 72px);
+    height: 24px;
+}
+
+#openmodal {
+    font-family: inherit;
+    background-color: blue;
+    color:white;
+    outline:black;
+    cursor: pointer;
+}

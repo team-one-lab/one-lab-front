@@ -541,6 +541,8 @@ button:not(:disabled) {
     margin: 0 auto;
     padding: 0 80px;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
 }
 
 .GNBCategoryBar_mainCategories {
@@ -552,7 +554,6 @@ button:not(:disabled) {
     gap: 40px;
     align-items: center;
     overflow-x: auto;
-    -ms-overflow-style: none;
     scrollbar-width: none;
 }
 

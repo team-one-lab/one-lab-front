@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko" style="--scrolbar-width: 17px;">
+    <head>
+        <meta charset="Utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>쪽지보내기 모달</title>
+        <link
+            rel="stylesheet"
+            href="/staticfiles/css/note-kanghyun/note_sending.css"
+        />
+    </head>
+    <body>
+        <button id="openmodal">open modal</button>
+        <div class="bottom-modal-portal">
+            <div
+                class="bottom-modal-overlay banner-container-overlay bottom-modal-overlay-after-open"
+            >
+                <div
+                    class="bottom-modal-content bottom-modal-content-after-open"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-modal="true"
+                >
+                    <div class="bottom-modal-container">
+                        <div class="banner-container-modal-container">
+                            <button
+                                type="button"
+                                aria-label="닫기"
+                                class="banner-container-close-button"
+                            >
+                                <svg
+                                    viewbox="0 0 40 40"
+                                    focusable="false"
+                                    role="presentation"
+                                    class="with-icon-icon"
+                                    aria-hiden="true"
+                                >
+                                    <path
+                                        d="M33.4 8L32 6.6l-12 12-12-12L6.6 8l12 12-12 12L8 33.4l12-12 12 12 1.4-1.4-12-12 12-12z"
+                                    ></path>
+                                </svg></button
+                            ><strong class="banner-container-modal-title"
+                                >쪽지
+                                <span class="banner-container-brmo"
+                                    >보내기</span
+                                ></strong
+                            >
+                            <p class="banner-container-modal-description">
+                                받으실 분의 이름과 이메일을 적어주세요.
+                            </p>
+                            <div class="news-letter-text-field-box">
+                                <form class="news-letter-text-field-form">
+                                    <div
+                                        class="text-field-text-field text-field-lg news-letter-text-field-text-field"
+                                    >
+                                        <label></label>
+                                        <div class="text-field-field">
+                                            <input
+                                                name="name"
+                                                placeholder="이름"
+                                                maxlength="30"
+                                                type="text"
+                                                class="input-input input-lg"
+                                                aria-invalid="false"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="text-field-text-field text-field-lg news-letter-text-field-text-field"
+                                    >
+                                        <label></label>
+                                        <div class="text-field-field">
+                                            <input
+                                                name="email"
+                                                placeholder="이메일 주소"
+                                                maxlength="64"
+                                                type="text"
+                                                class="input-input input-lg"
+                                                aria-invalid="false"
+                                                value=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="text-field-text-field text-field-lg news-letter-text-field-text-field"
+                                    >
+                                        <label></label>
+                                        <div class="text-field-field">
+                                            <textarea
+                                                class="input-input input-content"
+                                                placeholder="내용을 입력하세요"
+                                                maxlength="200"
+                                                cols="30"
+                                                rows="10"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                                <button
+                                    id="send-button"
+                                    class="button-button button-primary button-contained button-xl button-block news-letter-text-field-submit-button"
+                                    type="button"
+                                >
+                                    <span
+                                        ><span class="button-children"
+                                            >보내기</span
+                                        ></span
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bottom-modal-handle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/staticfiles/js/note-kanghyun/note_sending.js"></script>
+</html>
