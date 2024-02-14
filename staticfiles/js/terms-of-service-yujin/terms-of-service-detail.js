@@ -1,5 +1,5 @@
 // 회원 서비스 가입란 선택 시 나오는 상세보기
-const services = document.querySelector(".TermsConfirmBody_service");
+const services = document.querySelector(".AccordionCheckbox_accordionButton");
 const detailJoin = document.querySelector(".detail-join");
 // console.log(services);
 
@@ -17,5 +17,16 @@ buttons.forEach((button) => {
     const sibling = parent.nextElementSibling
     button.addEventListener("click", function() {
         sibling.classList.toggle('active')
+    })
+})
+
+
+// 화살표 누를시 방향 전환
+
+const arrows = document.querySelectorAll(".AccordionCheckbox_accordionButton");
+
+arrows.forEach((arrow) => {
+    arrow.addEventListener("click", function() {
+            arrow.classList.toggle('active')
     })
 })
