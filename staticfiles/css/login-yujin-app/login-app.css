@@ -1,0 +1,203 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+html {
+    font-family: Pretendard Variable,pretendard,-apple-system,blinkmacsystemfont,
+    system-ui,roboto,Helvetica Neue,
+    Segoe UI,Apple SD Gothic Neo,Noto Sans KR,
+    Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,
+    Segoe UI Symbol,sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: inherit;
+    color: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: inherit;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+header {
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+button {
+    font-family: inherit;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+span {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.web-header {
+    z-index: 1201;
+    position: sticky;
+    top: 0;
+    transition: top .25s;
+    width: 100%;
+}
+
+.web-header-mobile {
+    display: block;
+    position: relative;
+}
+
+.header-wrapper {
+    position: relative;
+    top: 0;
+    z-index: 9998;
+    background-color: #fff;
+    width: 100%;
+    height: 56px;
+    text-align: center;
+}
+
+.header-container {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1440px;
+    height: 100%;
+}
+
+.header-mobile-arrow-button {
+    left: 6px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.arrow-icon {
+    color: #495057;
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+}
+
+.home-button {
+    right: 6px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+}
+
+.home-icon {
+    color: #495057;
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+}
+
+.mainwrapper-content {
+    transition: padding-top .25s;
+    padding-top: 0;
+}
+
+.account-container {
+    position: relative;
+    margin: 24px auto 0;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 390px;
+    overflow: hidden;
+}
+
+.account-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.signin-button {
+    margin-bottom: -8px;
+}
+
+.app-button-container {
+    margin-top:54px;
+}
+
+.popper-container:not() {
+    position:relative;
+}
+
+.app-launch-button {
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+    color: #fff;
+    margin-top: 6px;
+    width: 100%;
+    position: relative;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    padding: 9px 23px;
+    height: 48px;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.app-launch-button span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.button-children {
+    vertical-align: top;
+}

@@ -2674,8 +2674,8 @@ footer {
     color: #fff;
 }
 
-.KeyVisualBanner_button {
-        margin: 0;
+.KeyVisualBanner_container .KeyVisualBanner_wrap .KeyVisualBanner_arrows .KeyVisualBanner_button {
+    margin: 0;
     background: rgba(0,0,0,.4);
     width: 40px;
     height: 40px;
