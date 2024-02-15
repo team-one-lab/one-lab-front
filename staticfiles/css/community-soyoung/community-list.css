@@ -66,20 +66,10 @@ main.main-board {
     color: #44484b;
 }
 
-@media screen and (min-width: 769px) {
-    div.board-header {
-        max-width: 800px;
-        padding-top: 64px;
-        padding-bottom: 48px;
-    }
-}
-
-@media screen and (min-width: 1097px) {
-    div.board-header {
-        display: block;
-        width: 100%;
-        max-width: 1000px;
-    }
+div.board-header {
+    max-width: 800px;
+    padding-top: 64px;
+    padding-bottom: 48px;
 }
 
 div.board-header {
@@ -90,12 +80,10 @@ div.board-header {
     text-align: left;
 }
 
-@media screen and (min-width: 769px) {
-    h2.title {
-        text-align: center;
-        line-height: 52px;
-        font-size: 48px;
-    }
+h2.title {
+    text-align: center;
+    line-height: 52px;
+    font-size: 48px;
 }
 
 h2.title {
