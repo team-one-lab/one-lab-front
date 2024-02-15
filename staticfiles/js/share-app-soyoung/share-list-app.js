@@ -60,6 +60,7 @@ buttons.forEach((button) => {
     })
 })
 
+
 // 모달 확장 버튼 클릭 시, 서브 메뉴나오고 화살표 180도 회전
 const expandLists = document.querySelectorAll('.list-item')
 expandLists.forEach((expandList) => {
@@ -72,50 +73,49 @@ expandLists.forEach((expandList) => {
 })
 
 
-// 닫기 버튼 요소를 가져옵니다.
+// 닫기 버튼
 const closeButton = document.querySelector('.close-icon-wrapper');
 
-// 모달 오버레이 요소를 가져옵니다.
+// 모달 오버레이(뒷 배경)
 const modalOverlay = document.querySelector('.bottom-modal-overlay');
 
-// 모달 컨텐츠 요소를 가져옵니다.
+// 모달 컨텐츠
 const modalContent = document.querySelector('.bottom-modal-content');
 
 // 초기에 모달을 숨기는 함수를 정의합니다.
 function hideModal() {
-    // 모달 오버레이의 투명도를 0으로 설정합니다.
+    // 모달 오버레이의 투명도 0
     modalOverlay.style.opacity = '0';
-    // 모달 오버레이의 z-index를 0으로 설정합니다.
+    // 모달 오버레이 z-index 0
     modalOverlay.style.zIndex = '0';
-    // 모달 컨텐츠의 위치를 아래로 이동하여 숨깁니다.
+    // 모달 컨텐츠의 위치를 아래로 숨기기
     modalContent.style.transform = 'translateY(100%)';
 }
 
-// 초기에 모달을 숨깁니다.
+// 1. 초기에 모달을 숨기기
 hideModal();
 
-// 닫기 버튼 클릭 시 동작할 함수를 정의합니다.
+// 닫기 버튼 클릭 시 동작할 함수
 function closeModal() {
-    // 모달을 숨깁니다.
+    // 모달을 숨기기
     hideModal();
 }
 
 // 닫기 버튼에 클릭 이벤트 리스너를 추가합니다.
 closeButton.addEventListener('click', closeModal);
 
-// 모바일 링크 요소를 가져옵니다.
+// 모바일 링크(카테고리 탭)
 const mobileLink = document.querySelector('div.mobile-link');
 
-// 모달을 열고 닫는 함수를 정의합니다.
+// 모달을 열고 닫는 함수
 function toggleModal() {
-    // 모달 오버레이와 모달 컨텐츠를 보이게 합니다.
+    // 모달 오버레이와 모달 컨텐츠 보이게
     modalOverlay.style.opacity = '1';
     modalOverlay.style.zIndex = '9998';
     modalContent.style.transform = 'translateY(0)';
 }
 
-// 모바일 링크를 클릭하면 모달을 엽니다.
+// 모바일 링크를 클릭하면 모달 열기
 mobileLink.addEventListener('click', toggleModal);
-
 
 
