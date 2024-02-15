@@ -30,6 +30,35 @@ header {
     vertical-align: baseline;
 }
 
+ul {
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    vertical-align: baseline;
+}
+
+span {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+a {
+    color: inherit;
+    outline: none;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
 .web-header {
     z-index: 1201;
     top: 0;
@@ -55,4 +84,75 @@ header {
     padding: 0 16px;
     max-width: 1440px;
     height: 100%;
+}
+
+.mobile-container {
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+    transform: translateY(0);
+    transition: transform .25s;
+    z-index: 100;
+    margin-left: 0;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,.15);
+    background-color: #fff;
+    padding: 0 0 8px;
+    padding-bottom: calc(8px + env(safe-area-inset-bottom));
+    width: 100%;
+    list-style: none;
+}
+
+.mobile-item {
+    position: relative;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+}
+
+.mobile-link {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transition: .2s;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    width: 100%;
+    max-width: 72px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.home-icon {
+    color: #212529;
+    margin-bottom: 3px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 24px;
+    position: absolute;
+    top: 3px;
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+}
+
+.mobile-text {
+    color: #212529;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.5;
+    display: block;
+    position: absolute;
+    top: 33px;
+}
+
+.community {
+
 }
