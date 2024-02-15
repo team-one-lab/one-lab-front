@@ -441,6 +441,13 @@ main {
     transform: translateY(-50%);
 }
 
+.AccordionCheckbox_accordionButton.active {
+    position: absolute!important;
+    top: 35%;
+    right: 0;
+    transform: rotate(180deg);
+}
+
 button:not(:disabled) {
     cursor: pointer;
 }
@@ -744,3 +751,4 @@ button:not(:disabled) {
 .TermsAgreementCheckbox_children.active {
     display: block;
 }
+

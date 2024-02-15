@@ -62,15 +62,9 @@ body li, body ol, body ul {
     -webkit-transform: scaleZ(1);
     transform: scaleZ(1);
     z-index: -1;
-    background: url(https://spacewadiz.com/_next/static/media/img-hero.b8978ba00ff24be5b16665a8f5e2f0a5.jpg) no-repeat 50%/cover;
+    background: url(/staticfiles/images/main_logo.jpg);
     width: 100%;
     height: 100vh;
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceBackground_bg {
-        background-image: url(https://github-production-user-asset-6210df.s3.amazonaws.com/129862668/304275608-6d883b2a-0914-4b17-9684-5bc07f58b011.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240213%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240213T021402Z&X-Amz-Expires=300&X-Amz-Signature=410dcd6be609a64466a087ca509a450454f42966a977033558dd513b9bef9951&X-Amz-SignedHeaders=host&actor_id=129862668&key_id=0&repo_id=627376786);
-    }
 }
 
 .SpaceHeader_observer {
@@ -98,74 +92,46 @@ body li, body ol, body ul {
 .SpaceHeader_wrapper {
     margin-right: auto;
     margin-left: auto;
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceHeader_wrapper {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        padding-right: 16px;
-        padding-left: 16px;
-        max-width: 1000px;
-        box-sizing: content-box;
-    }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 1000px;
+    box-sizing: content-box;
 }
 
 .SpaceHeader_top {
     padding: 16px;
-    height: 56px;
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceHeader_top {
-        padding-left: 0;
-        height: auto;
-    }
+    padding-left: 0;
+    height: auto;
 }
 
 .SpaceHeader_logo {
     margin: 4px 0;
     width: auto;
-    height: 16px;
+    height: 20px;
     fill: #fff;
     transition-property: fill;
     transition-duration: .25s;
 }
 
-@media screen and (min-width: 640px) {
-    .SpaceHeader_logo {
-        height: 20px;
-    }
-}
-
 /* 헤더 네비 쪽 css */
 .SpaceHeader_nav {
-    height: 48px;
+    height: 72px;
 }
 
-@media screen and (min-width: 640px) {
-    .SpaceHeader_nav {
-        height: 72px;
-    }
-}
+
 
 .SpaceHeader_nav ul {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 16px;
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceHeader_nav ul{
-        justify-content: space-around;
-        margin: 0 16px;
-    }
 }
 
 .SpaceHeader_nav ul>li[aria-hidden] {
@@ -175,8 +141,8 @@ body li, body ol, body ul {
 a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     display: block;
     transition-property: color,box-shadow;
-    padding: 10px 8px;
-    height: 48px;
+    padding: 22px 18px;
+    height: 72px;
     line-height: 28px;
     letter-spacing: -.4px;
     color: #fff;
@@ -185,25 +151,15 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     transition-duration: .25s;
 }
 
-@media screen and (min-width: 640px) {
-    a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
-        padding: 22px 18px;
-        height: 72px;
-    }
-}
+
 
 .SpaceHeader_home {
-    position: absolute;
+    position: static;
     top: 16px;
     right: 16px;
 
 }
 
-@media screen and (min-width: 640px) {
-    .SpaceHeader_home {
-        position: static;
-    }
-}
 
 
 .SpaceHeader_wadizLogo {
@@ -272,14 +228,9 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     pointer-events: all;
 }
 
-@media screen and (min-width: 640px) {
-    .SpaceSection_container {
-        padding-top: 160px;
-    }
-}
-
 .SpaceAboutSection_about {
     background: #efede6;
+    padding-top: 160px;
 }
 
 .SpaceSection_wrapper {
@@ -289,17 +240,11 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     padding-left: 16px;
     max-width: 1000px;
     box-sizing: border-box;
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceSection_wrapper {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-    }
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .SpaceSection_title {
@@ -310,19 +255,19 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     font-size: 28px;
 }
 
-@media screen and (min-width: 640px) {
-    .SpaceSection_title:before {
-        position: absolute;
-        top: 50%;
-        left: -15px;
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-        background: #000;
-        width: 100%;
-        height: 1px;
-        content: "";
-    }
+
+.SpaceSection_title:before {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    background: #000;
+    width: 100%;
+    height: 1px;
+    content: "";
 }
+
 
 .title_back {
     background: no-repeat 0 50%/contain;
@@ -330,27 +275,15 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
 
 .SpaceSectionTitle_title {
     background-image: url(https://spacewadiz.com/_next/static/media/title-about.85fdf1605679de93908cb2dd3c1d6527.svg);
-    height: 25px;
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceSectionTitle_title {
-        width: 338px;
-        height: 35px;
-    }
+    width: 338px;
+    height: 35px;
 }
 
 .SpaceSection_main {
-    margin-bottom: 48px;
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceSection_main {
-        -ms-flex: 1 1;
-        flex: 1 1;
-        padding-right: 20px;
-        margin-bottom: 144px;
-    }
+    -ms-flex: 1 1;
+    flex: 1 1;
+    padding-right: 20px;
+    margin-bottom: 144px;
 }
 
 .SpaceSection_main>p {
@@ -372,28 +305,25 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     padding-left: 16px;
     max-width: 1000px;
     box-sizing: border-box;
+    position: relative;
+    margin-bottom: 144px;
+    min-height: 530px;
 }
 
 
-@media screen and (min-width: 640px) {
-    .SpaceIntroduceSection_wrapper {
-        position: relative;
-        margin-bottom: 144px;
-        min-height: 530px;
-    }
+
+.SpaceIntroduceSection_title {
+    margin-bottom: 35px;
+    margin-right: 460px;
+    width: auto;
+    min-width: 215px;
 }
 
-@media screen and (min-width: 640px) {
-    .SpaceIntroduceSection_title {
-        margin-bottom: 35px;
-        margin-right: 460px;
-        width: auto;
-        min-width: 215px;
-    }
-}
 
 .SpaceSectionTitle_introduce {
     background: no-repeat 0 50%/contain;
+    width: 157px;
+    height: 35px;
 }
 
 .SpaceSectionTitle_titles {
@@ -401,25 +331,18 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     height: 25px;
 }
 
-@media screen and (min-width: 640px) {
-    .SpaceSectionTitle_introduce {
-        width: 157px;
-        height: 35px;
-    }
-}
-
 .SpaceIntroduceSection_main {
     margin-bottom: 48px;
 }
 
-@media screen and (min-width: 640px) {
+/* @media screen and (min-width: 640px) {
     .SpaceIntroduceSection_main {
         margin-right: 460px;
         width: auto;
         min-width: 215px;
         margin-bottom: 144px;
     }
-}
+} */
 
 .SpaceIntroduceSection_floor {
     margin-top: 32px;
@@ -427,7 +350,7 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     padding-top: 97.11816%;
 }
 
-@media screen and (min-width: 640px) {
+/* @media screen and (min-width: 640px) {
     .SpaceIntroduceSection_floor {
         position: absolute;
         right: 16px;
@@ -437,27 +360,27 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
         width: 440px;
         height: 418px;
     }
-}
+} */
 
 .SpaceIntroduceSection_workStation {
     margin-top: 55px;
 }
 
-@media screen and (min-width: 640px) {
+/* @media screen and (min-width: 640px) {
     .SpaceIntroduceSection_workStation {
         margin-top: 40px;
     }
-}
+} */
 
 .SpaceIntroduceSection_btnWrap {
     margin-bottom: 30px;
 }
 
-@media screen and (min-width: 640px) {
+/* @media screen and (min-width: 640px) {
     .SpaceIntroduceSection_workStationRequest {
         display: inline-block;
     }
-}
+} */
 
 .SpaceIntroduceSection_workStationRequest {
     display: inline-block;
@@ -469,11 +392,11 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 640px) {
+/* @media screen and (min-width: 640px) {
     .SpaceIntroduceSection_workStationRequest {
         display: inline-block;
     }
-}
+} */
 
 .SpaceIntroduceSection_workStation .SpaceIntroduceSection_btnWrap a:first-child {
     margin-right: 16px;
@@ -533,14 +456,8 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
 
 /* 입점 안내 쪽 css */
 .SpaceStoreSection_store {
-    background: url(https://spacewadiz.com/_next/static/media/store.b99f55444e3156c7764f7d2ce87facc6.jpg) no-repeat 50%/cover;
+    background-image: url(https://spacewadiz.com/_next/static/media/store-large.ab5cf8575c9e0e2b84615801e8f3c047.jpg);
     color: #fff;
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceStoreSection_store {
-        background-image: url(https://spacewadiz.com/_next/static/media/store-large.ab5cf8575c9e0e2b84615801e8f3c047.jpg);
-    }
 }
 
 .SpaceSection_wrappers {
@@ -552,11 +469,11 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 640px) {
-    .space_title::before {
-        background: #fff;
-    }
+
+.space_title::before {
+    background: #fff;
 }
+
 
 .spaceSectionTitle_titles {
     background: no-repeat 0 50%/contain;
@@ -564,52 +481,31 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
 
 .spaceSection_titles {
     background-image: url(https://spacewadiz.com/_next/static/media/title-store.3f8f39371a64a4a6c46118e9e20a8fcb.svg);
-    height: 25px;
-}
-
-@media screen and (min-width: 640px) {
-    .spaceSection_titles {
-        height: 35px;
-    }
+    height: 35px;
 }
 
 .spaceSection_main {
-    margin-bottom: 48px;
+    margin-bottom: 144px;
 }
 
-@media screen and (min-width: 640px) {
-    .spaceSection_main {
-        margin-bottom: 144px;
-    }
+
+
+.SpaceStoreSection_box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-@media screen and (min-width: 640px) {
-    .SpaceStoreSection_box {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-}
 
 .SpaceStoreBox_box {
     margin: 20px -6px;
     background: #fff;
     text-align: center;
     color: #1d2129;
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceStoreBox_box {
-        margin-right: 0;
-        margin-left: 0;
-    }
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceStoreSection_box>div {
-        width: calc(50% - 11px);
-    }
+    width: calc(50% - 11px);
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .SpaceStoreBox_main {
@@ -655,15 +551,8 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
 }
 
 .SpaceStoreBox_description>p {
-    line-height: 26px;
-    font-size: 15px;
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceStoreBox_description>p {
-        line-height: 28px;
-        font-size: 17px;
-    }
+    line-height: 28px;
+    font-size: 17px;
 }
 
 .SpaceStoreBox_buttons {
@@ -721,14 +610,9 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     padding-left: 16px;
     max-width: 1000px;
     box-sizing: border-box;
-}
-
-@media screen and (min-width: 950px) {
-    .SpaceLocationSection_wrapper {
-        position: relative;
-        margin-bottom: 180px;
-        height: 360px;
-    }
+    position: relative;
+    margin-bottom: 180px;
+    height: 360px;
 }
 
 .SpaceSectionTitles_title {
@@ -737,44 +621,23 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
 
 .SpaceSectionTitle_location {
     background-image: url(https://spacewadiz.com/_next/static/media/title-location.2a3a3e6b9d746201ae4263d329551383.svg);
-    height: 25px;
+    height: 35px;
 }
 
-@media screen and (min-width: 640px) {
-    .SpaceSectionTitle_location {
-        height: 35px;
-    }
-}
+
 
 .SpaceLocationSection_main {
-    margin-bottom: 48px;
-}
-
-@media screen and (min-width: 640px) {
-    .SpaceLocationSection_main {
-        margin-bottom: 144px;
-    }
-}
-
-@media screen and (min-width: 950px) {
-    .SpaceLocationSection_main {
-        height: 100%;
-    }
+    height: 100%;
+    margin-bottom: 144px;
 }
 
 /* 지도 쪽  css*/
 .SpaceLocationSection_map {
-    height: 215px;
-}
-
-@media screen and (min-width: 950px) {
-    .SpaceLocationSection_map {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 574px;
-        height: 360px;
-    }
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 574px;
+    height: 360px;
 }
 
 .SpaceLocationMap_frame {
@@ -783,13 +646,7 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
 }
 
 .SpaceLocationSection_address {
-    margin-top: 30px;
-}
-
-@media screen and (min-width: 950px) {
-    .SpaceLocationSection_address {
-        margin-top: 46px;
-    }
+    margin-top: 46px;
 }
 
 .SpaceLocationSection_address dt, .SpaceLocationSection_address dd{
@@ -805,13 +662,7 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
 }
 
 .SpaceLocationSection_openHour {
-    margin-top: 20px;
-}
-
-@media screen and (min-width: 950px) {
-    .SpaceLocationSection_openHour {
-        margin-top: 28px;
-    }
+    margin-top: 28px;
 }
 
 .SpaceLocationSection_openHour dd, .SpaceLocationSection_openHour dt {
@@ -832,15 +683,9 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
 }
 
 .SpaceLocationSection_parking {
-    margin-top: 30px;
+    margin-top: 55px;
     padding-left: 3px;
     line-height: 26px;
     color: #495057;
     font-size: 15px;
-}
-
-@media screen and (min-width: 950px) {
-    .SpaceLocationSection_parking {
-        margin-top: 55px;
-    }
 }
