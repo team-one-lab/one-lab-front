@@ -2,7 +2,7 @@
     position: relative;
     background: #babdc0;
     overflow: hidden;
-    width: 2000px;
+    width: 1903px;
     margin: 0 auto;
 
 }
@@ -124,13 +124,6 @@
     color: #fff;
 }
 
-.VisualSlide_container {
-    height: 40vh;
-    display: block;
-    position: relative;
-    background: #f2f4f6 no-repeat 50%/cover;
-}
-
 .VisualSlide_badge {
     line-height: 18px;
     font-size: 13px;
@@ -209,25 +202,9 @@
     z-index: 10;
     padding: 30px 0;
 }
-/* 
-.KeyVisualBanner_button {
-    display: inline-block;
-    transition: color .2s;
-    margin: 0 0 0 8px;
-    outline: none;
-    border: 0;
-    border-radius: 0;
-    background: rgba(0,0,0,0);
-    cursor: pointer;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    line-height: 0;
-    color: rgba(255,255,255,.5);
-    font-size: 0;
-} */
 
- .KeyVisualBanner_button {
+
+.KeyVisualBanner_container .KeyVisualBanner_wrap .KeyVisualBanner_arrows.KeyVisualBanner_button {
     margin: 0;
     background: rgba(0,0,0,.4);
     width: 40px;
