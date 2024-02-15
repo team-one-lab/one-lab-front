@@ -105,43 +105,25 @@ ol, ul {
     padding: 0 0 0 1.5rem;
 }
 
-@media (min-width: 360px) {
-    .flex-column {
-        flex-direction: column;
-        flex: 1;
-        display: flex !important;
-        position: relative;
-        background-color: #fff;
-        z-index: 0;
-    }
+
+.flex-column {
+    flex-direction: column;
+    flex: 1;
+    display: flex !important;
+    position: relative;
+    background-color: #fff;
+    z-index: 0;
 }
+
 
 .container {
     margin-right: auto;
     margin-left: auto;
     width: 100%;
     padding: 0 2rem;
-}
-
-@media (min-width: 992px){ 
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px){ 
-    .container {
-        max-width: 1140px;
-    }
-}
-
-
-@media (min-width: 360px) { 
-    .container {
-        padding-bottom: 1rem;
-        padding-top: 6rem;
-        flex: 1;
-    }
+    padding-bottom: 1rem;
+    padding-top: 6rem;
+    max-width: 1140px;
 }
 
 /* 위에쪽 네비 css */
@@ -150,62 +132,56 @@ ol, ul {
     flex-wrap: wrap;
     flex-grow: 1;
     justify-content: center;
+    align-items: center;
 }
 
-@media (min-width: 360px) {
-    .align-items-center {
-        align-items: center;
-    }
-}
+
 
 .col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%; 
+    font-weight: 500;
+    font-size: 0.9375rem;
 }
 
-@media (min-width: 360px) {
-    .col {
-        font-weight: 500;
-        font-size: 0.9375rem;
-    }
+
+
+
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 1rem;
 }
 
-@media (min-width: 360px) {
-    .breadcrumbs {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
-        list-style: none;
-        margin-bottom: 1rem;
-    }
+
+
+.breadcrumbs > * + * {
+    padding-left: 0.5rem;
 }
 
-@media (min-width: 360px) {
-    .breadcrumbs > * + * {
-        padding-left: 0.5rem;
-    }
+
+
+.breadcrumbs li {
+    color: #4A5568;
 }
 
-@media (min-width: 360px) {
-    .breadcrumbs li {
-        color: #4A5568;
-    }
+
+
+.breadcrumbs > * + *::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    content: "/";
 }
 
-@media (min-width: 360px) {
-    .breadcrumbs > * + *::before {
-        display: inline-block;
-        padding-right: 0.5rem;
-        content: "/";
-    }
+
+
+.breadcrumbs li + li::before {
+    color: #4A5568
 }
 
-@media (min-width: 360px) {
-    .breadcrumbs li + li::before {
-        color: #4A5568
-    }
-}
 
 .row {
     display: flex;
@@ -215,21 +191,19 @@ ol, ul {
 }
 
 
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .lg\:col-9 {
-            flex: 0 0 75%;
-            max-width: 75%;
-        }
-    }
+
+.lg\:col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
 }
 
+
 /* 맨위쪽 큰 글씨 쪽 css */
-@media (min-width: 360px) {
-    .mb-5 {
-        margin-bottom: 1.5rem;
-    }
+
+.mb-5 {
+    margin-bottom: 1.5rem;
 }
+
 
 .h1 {
     font-weight: bold;
@@ -309,14 +283,14 @@ ol, ul {
     font-size: 0.875rem;
 }
 
-@media (min-width: 360px) {
-    .request-form p {
-        white-space: pre !important;
-        color: #333;
-        font-family: Pretendard;
-        font-size: 14px;
-    }
+
+.request-form p {
+    white-space: pre !important;
+    color: #333;
+    font-family: Pretendard;
+    font-size: 14px;
 }
+
 
 .hc-multiselect {
     -webkit-animation: none 0s ease 0s 1 normal none running;
@@ -613,28 +587,27 @@ button, select, .nesty-input, .hc-multiselect-toggle {
 }
 
 /* 맨밑 제출 버튼쪽 css */
-@media (min-width: 360px) {
-    .form input[type="submit"] {
-        display: inline-block;
-        padding: 0.5em 1.25em;
-        font-weight: 600;
-        line-height: 1.5;
-        color: #403b3b;
-        text-align: center;
-        vertical-align: middle;
-        user-select: none;
-        background-color: transparent;
-        border: 1px solid #e2e8f0;
-        cursor: pointer;
-        border-radius: 8px;
-        transition: 0.15s ease-in-out;
-        color: #fff;
-        border-color: rgba(5, 5, 6, 1);
-        background-color: rgba(5, 5, 6, 1);
-        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        padding: 0.5em 1.5em;
-        font-size: 1.125rem;
-    }
+
+.form input[type="submit"] {
+    display: inline-block;
+    padding: 0.5em 1.25em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #403b3b;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.15s ease-in-out;
+    color: #fff;
+    border-color: rgba(5, 5, 6, 1);
+    background-color: rgba(5, 5, 6, 1);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5em 1.5em;
+    font-size: 1.125rem;
 }
