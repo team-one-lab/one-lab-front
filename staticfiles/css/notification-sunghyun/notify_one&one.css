@@ -47,6 +47,17 @@ a {
 a, area, button, [role="button"], input:not([type="range"]), label, select, .nesty-input, .hc-multiselect-toggle, summary, textarea {
     touch-action: manipulation;
 }
+.link-stretched::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0);
+}
 a:-webkit-any-link {
     /* color: -webkit-link; */
     cursor: pointer;
@@ -68,6 +79,7 @@ a:-webkit-any-link {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
+        font-size: 14px;
         z-index: 300;
         height: 80px;
         background-color: rgba(255, 255, 255, 1);
@@ -113,7 +125,7 @@ a:-webkit-any-link {
 }
 @media (min-width: 360px){
     #logo {
-        height: 30px;
+        height: 24px;
     }
 }
 
@@ -263,9 +275,11 @@ input[type="search"] {
     align-items: center;
     font-family: 'Pretendard';
     font-style: Medium;
-    font-size: 0.95rem;
+    font-size: 13px;
+    margin: 7px;
     flex: none;
     order: 1;
+    padding: 4.9875px 16.625px;
     flex-grow: 0;
     text-align: center;
 }
@@ -300,23 +314,26 @@ input[type="search"] {
     align-items: center;
     font-family: 'Pretendard';
     font-style: Medium;
-    font-size: 0.95rem;
+    font-size: 13px;
     flex: none;
     order: 1;
+    padding: 4.9875px 16.625px;
     flex-grow: 0;
     text-align: center;
 }
 .button-yds3 {
     color: #00C4C4;
+    padding: 5.25px 17.5px;
     border-color: #00C4C4;
     box-shadow: inset 0px -1px 0px #F0F2F5;
-    width: 150px;
+    width: 140px;
     height: 45px;
     display: flex;
+    margin: 7px;
     justify-content: center;
     align-items: center;
     font-family: 'Pretendard';
-    font-size: 1rem;
+    font-size: 13px;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -335,23 +352,17 @@ input[type="search"] {
         font-weight: bold;
         font-family: 'Pretendard';
         font-style: Medium;
-        height: 376px;
+        height: 357px;
     }
 }
-@media (min-width: 360px){
-    @media (min-width: 992px){
-        .relative-8{
-            padding-bottom: 4rem; 
-            padding-top: 4rem;
-        }
-    }
-    
-}
+
 
 @media (min-width: 360px){
     .relative-8{
         z-index: 30;
         position: relative;
+        font-size: 14.7px;
+        padding: 56px 28px;
     }
 }
 @media (min-width: 1200px){
@@ -363,12 +374,14 @@ input[type="search"] {
     margin-right: auto;
     margin-left: auto;
     width: 100%;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
+    padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 @media (min-width: 360px){
     .my-left{
-        margin-bottom: 2rem;
-        margin-top: 2rem;
+        /* margin-bottom: 2rem; */
+        margin-top: 1rem;
         font-family: 'Pretendard';
         text-align: left;
     }
@@ -400,6 +413,7 @@ img {
 @media (min-width: 768px){
     .md\:my-5 {
         margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 }
 @media (min-width: 768px){
@@ -418,7 +432,7 @@ img {
 
 @media (min-width: 360px){
     .mb-4, .my-4 {
-        margin-bottom: 1rem;
+        
         font-weight: bold;
         font-family: 'Pretendard';
     }
@@ -451,7 +465,11 @@ img {
         margin-bottom: 0;
     }
 }
-
+.flex-center{
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex !important;
+}
 .form-0{
     display: flex;
     margin-left: -0.5rem;
@@ -489,7 +507,10 @@ zd-autocomplete-announcement {
 }
 #query1{
     padding-left: 2.5em;
-    /* padding: 0.675em 1em; */
+    height: 60.63px;
+    margin: 0 7px;
+    padding: 11.8175px 17.5px 11.8175px 43.75px;
+    
 }
 .search [type="search"] {
     padding: 0.5em 0.75em;
@@ -592,25 +613,28 @@ template {
         margin-top: -2rem;
     }
 }
+
+#query1::placeholder{
+    font-size: 18px;
+    color: #d6d2d2;
+    fill: #aaa;
+}
 .badge {
     position: relative;
-    top: -1px;
+    top: -5px;
     padding: 0.25em 0.375em;
-    font-size: 1.05rem;
+    font-size: 14.7px;
     font-weight: 600;
     line-height: 1;
     border-radius: 8px;
+    margin: -28px 0 0;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
     /* color: #fdfdfd; */
     /* background-color: #000000; */
     transition: 0.15s ease-in-out;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    border-radius: 8px;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding: 7px 10.5px;
 }
 .badge:hover{
     background-color: #00C4C4;
@@ -763,7 +787,9 @@ template {
         border-radius: 1rem;
         background: var(--mint-m-100, #E7F9F9);
         flex: 1 0 9.1%;
-        max-width: 15%; 
+        max-width: 15.72%; 
+        width: 299px;
+        height: 101.59px;
         justify-content: center;
         align-items: center;
         margin: 2vw;

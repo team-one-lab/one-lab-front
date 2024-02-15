@@ -8,6 +8,7 @@
             href="/staticfiles/css/notification-sunghyun/notify_detail.css"
         />
         <script src="/staticfiles/js/notify-sunghyun/notify.js"></script>
+        <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
         <link rel="stylesheet" href="/staticfiles/css/font/font.css">
         <link rel="stylesheet" href="/staticfiles/css/font/font-awesome-css.min.css">
@@ -257,16 +258,16 @@
                                 <div class="Tabs-bP">
                                     <div class="TableLayout-hv" style="grid-template-columns: repeat(2, calc(50% + 0px));
                                     gap:0px; background-color: rgb(29,33,41);">
-                                    <button role="tab" type="button" class="Tabs-TE">
+                                    <button role="tab" type="button" class="Tabs-TE" id="1">
                                         <div class="Tabs-ct" style="color: rgb(255,148,119);">02.09(금)</div>
                                     </button>
-                                    <button role="tab" type="button" class="Tabs-TE">
+                                    <button role="tab" type="button" class="Tabs-TE" id="2">
                                         <div class="Tabs-ct" style="color: rgb(255,148,119);">02.10(토)</div>
                                     </button>
-                                    <button role="tab" type="button" class="Tabs-TE">
+                                    <button role="tab" type="button" class="Tabs-TE" id="3">
                                         <div class="Tabs-ct" style="color: rgb(255,148,119);">02.11(일)</div>
                                     </button>
-                                    <button role="tab" type="button" class="Tabs-TE">
+                                    <button role="tab" type="button" class="Tabs-TE" id="4">
                                         <div class="Tabs-ct" style="color: rgb(255,148,119);">02.12(월)</div>
                                     </button>
                                 </div>
@@ -603,19 +604,21 @@
     <div class="article-attached">
         <ul> </ul>
     </div>
-    <div class="wcommunity">
-        <div class="wcommunity-area">
-            
-            <div class="btn-share">
-                <!-------------아마 카톡,페이스북,트위터로 연결되는 함수를 담은 버튼 태그 인 듯합니다.-->
-                <button class="kakao" onclick="wadiz.share.kakao({ onelink: kakaoOnelink });"></button>
-                <button class="facebook" onclick="wadiz.share.facebook();"></button>
-                <button class="twitter" onclick="wadiz.share.twitter();"></button>
+            <div class="wcommunity">
+                <div class="wcommunity-area">
+                    
+                    <div class="btn-share">
+                        <!-------------아마 카톡,페이스북,트위터로 연결되는 함수를 담은 버튼 태그 인 듯합니다.-->
+                        <button class="kakao" onclick="wadiz.share.kakao({ onelink: kakaoOnelink });"></button>
+                        <button class="facebook" onclick="wadiz.share.facebook();"></button>
+                        <button class="twitter" onclick="wadiz.share.twitter();"></button>
+                    </div>
+                </div>
             </div>
         </div>
+        </div>
     </div>
-    </div>
-    </div>
+    
     <!--------------------카톡,페북,트윗 레이아웃 작업 완료-------------------------------->
     
     <!----------------------하단 이벤트 항목 레이아웃 시작------------------------------------->
@@ -666,7 +669,7 @@
             <a class="wz button" href="/templates/html/notification_sunghyun/notify_main.html" onclick="moveList()">목록으로 돌아가기</a>
         </div>
     </div>
-    
+</div>
     <!----------------하단 이벤트 항목 레이아웃 완료------------------------------------------>
 
 

@@ -591,7 +591,7 @@ button{
 }
 .ui-tabs li.active>a {
     border-bottom: 3px solid #008244;
-    color: #00b2b2;
+    color: #008244;
     font-weight: 500;
 }
 .ui-tabs li.deactive>a {

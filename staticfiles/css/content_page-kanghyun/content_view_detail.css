@@ -1,0 +1,372 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+    --rpv-core__annotation--link-hover-background-color: rgba(255, 255, 0, .2);
+    --rpv-core__annotation-popup-wrapper-background-color: #faf089;
+    --rpv-core__annotation-popup-wrapper-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+    --rpv-core__annotation-popup-content-border-top-color: #1a202c;
+    --rpv-core__arrow-border-color: rgba(0, 0, 0, .3);
+    --rpv-core__asking-password-color: #000;
+    --rpv-core__asking-password-wrapper-background-color: #fff;
+    --rpv-core__asking-password-wrapper-border-color: rgba(0, 0, 0, .3);
+    --rpv-core__button-background-color: rgba(0, 0, 0, .3);
+    --rpv-core__button-color: #000;
+    --rpv-core__doc-error-background-color: #fff;
+    --rpv-core__doc-error-text-background-color: #c02424;
+    --rpv-core__doc-error-text-color: #fff;
+    --rpv-core__doc-loading-background-color: #fff;
+    --rpv-core__full-screen-target-background-color: #fff;
+    --rpv-core__inner-page-background-color: #fff;
+    --rpv-core__menu-divider-border-bottom-color: rgba(0, 0, 0, .3);
+    --rpv-core__menu-item-color: #000;
+    --rpv-core__menu-item--hover-background-color: rgba(0, 0, 0, .1);
+    --rpv-core__menu-item--disabled-color: rgba(0, 0, 0, .3);
+    --rpv-core__minimal-button-color: #000;
+    --rpv-core__minimal-button--hover-background-color: rgba(0, 0, 0, .1);
+    --rpv-core__minimal-button--disabled-color: rgba(0, 0, 0, .3);
+    --rpv-core__minimal-button--selected-background-color: rgba(0, 0, 0, .1);
+    --rpv-core__modal-body-background-color: #fff;
+    --rpv-core__modal-body-border-color: rgba(0, 0, 0, .3);
+    --rpv-core__modal-overlay-background-color: rgba(0, 0, 0, .5);
+    --rpv-core__page-layer-box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .2);
+    --rpv-core__popover-body-background-color: #fff;
+    --rpv-core__popover-body-border-color: rgba(0, 0, 0, .3);
+    --rpv-core__popover-body-color: #000;
+    --rpv-core__primary-button-background-color: #2566e8;
+    --rpv-core__primary-button-color: #fff;
+    --rpv-core__progress-bar-background-color: rgba(0, 0, 0, .1);
+    --rpv-core__progress-bar-progress-background-color: #2566e8;
+    --rpv-core__progress-bar-progress-color: #fff;
+    --rpv-core__separator-border-bottom-color: rgba(0, 0, 0, .3);
+    --rpv-core__spinner-border-color: rgba(0, 0, 0, .4);
+    --rpv-core__spinner-border-transparent-color: transparent;
+    --rpv-core__splitter-background-color: transparent;
+    --rpv-core__splitter--hover-background-color: rgba(0, 0, 0, .2);
+    --rpv-core__text-layer-text--selection-background-color: rgb(0, 0, 255, 1);
+    --rpv-core__text-layer-text--selection-color: transparent;
+    --rpv-core__textbox-background-color: #fff;
+    --rpv-core__textbox-border-color: rgba(0, 0, 0, .2);
+    --rpv-core__textbox-color: #000;
+    --rpv-core__tooltip-body-background-color: #000;
+    --rpv-core__tooltip-body-color: #fff;
+}
+
+html {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html {
+    font-family: Pretendard,-apple-system,blinkmacsystemfont,system-ui,roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: inherit;
+    color: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: inherit;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+button {
+    font-family: inherit;
+    outline: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+main {
+    display: block;
+}
+section {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+section {
+    display: block;
+}
+
+span {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+h3 {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    vertical-align: baseline;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    vertical-align: baseline;
+}
+
+:before {
+    box-sizing: border-box;
+}
+
+/* 클래스 css 적용 */
+
+.web-header {
+    position: static;
+    transition: top .25s;
+    width: 100%;
+}
+
+.main-wrapper-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: padding-top .25s;
+}
+
+.main-container-root {
+    background-color: #fff;
+}
+
+.detail-header-container {
+    margin: 40px auto;
+    padding: 0 80px;
+    max-width: 1440px;
+    
+}
+
+.detail-header-detail-image-area {
+    flex: 0 0 51.79%;
+    padding-top: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.detail-header-image {
+    position: relative;
+    margin: 0 auto;
+    max-width: 633px;
+    height: 470px;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn2.wadiz.kr/2023/11/21/30005099-941c-4ddb-899e-97eaae082c7b.gif);
+}
+
+.detail-header-detail-info-area {
+    flex: 0 0 48.21%;
+    padding: 0 28px 0 10.9%;
+    max-width: 100%;
+}
+
+.detail-info-container {
+    position: relative;
+}
+
+.detail-info-header-container {
+    margin-top: 16px;
+}
+
+.detail-info-header-title-info {
+    margin-top: 16px;
+    display: flex;
+}
+
+.detail-info-header-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.5;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.product-buy-info-container {
+    margin-top: auto;
+}
+
+.product-float-button-container {
+    display: flex;
+    padding-top: 12px;
+    text-align: center;
+    gap: 16px;
+}
+
+.product-float-button-wish-button-box {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    position: relative;
+}
+
+.button-button {
+    position: relative;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    padding: 9px 23px;
+    height: 48px;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #495057;
+    font-size: 16px;
+}
+
+.product-float-button-wish-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    margin-right: 12px;
+    border-radius: 3px;
+    min-width: 56px;
+}
+
+.product-float-button-wish-button * {
+    pointer-events: none;
+}
+
+.button-button span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.button-children {
+    vertical-align: top;
+}
+
+.with-icon {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.product-float-button-wish-button svg {
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.product-float-button-wish-button svg path {
+    fill: #868e96;
+}
+
+.button-button span svg {
+    display: inline-block;
+}
+
+span.product-float-button-count {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
+    color: #868e96;
+}
+
+.button-primary.button-contained {
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+    color: #fff;
+}
+
+.product-float-button-button {
+    display: block;
+    width: 100%;
+}
+
+.button-button.button-xl {
+    padding: 9px 27px;
+    height: 56px;
+    font-size: 18px;
+}
+
+.contents-detail-wrapper {
+    flex: 0 0 66.9%;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.contents-detail-container {
+    width: 100%;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.contents-detail-header {
+    margin: 0 0 40px;
+}
+
+.contents-detail-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.contents-detail-description {
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    padding: 16px;
+    white-space: pre-line;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.contents-detail-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 16px;
+    color: #212529;
+}
+
+.button-button.product-float-button-wish-button.active path {
+    fill:crimson
+}
