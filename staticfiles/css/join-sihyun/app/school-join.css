@@ -90,15 +90,18 @@ video {
   letter-spacing: 0;
   vertical-align: baseline;
 }
+
 *,
 :after,
 :before {
   box-sizing: border-box;
 }
+
 body,
 table th {
   font-weight: 400;
 }
+
 body,
 button,
 input,
@@ -106,6 +109,7 @@ select,
 textarea {
   font-family: inherit;
 }
+
 body {
   overflow-x: hidden;
   line-height: inherit;
@@ -128,6 +132,9 @@ a {
 a,
 button {
   color: inherit;
+}
+button {
+  background-color: transparent;
 }
 li,
 ol,
@@ -238,115 +245,77 @@ html.wadiz-app.scroll-top .web-header {
 .web-header .header-wrapper .header-container {
   padding: 0 80px;
 }
-
-.web-header .wadiz-logo {
-  display: inline-block;
+.header-back-btn {
+  left: 6px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+}
+.header-back-btn:not(:disabled) {
+  cursor: pointer;
+}
+.back-btn-icon {
+  display: block;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+  fill: currentColor;
+  color: #495057;
+}
+.home-link-anker {
+  right: 6px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+}
+.home-link-anker-icon {
+  color: #495057;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+  fill: currentColor;
+}
+.preview-overlay-container {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: none;
   position: absolute;
   top: 0;
-  left: 16px;
-  margin: 0;
-  line-height: 22px;
-  font-size: 32px;
-}
-.web-header .wadiz-logo {
-  position: static;
-}
-.web-header .web-header-simple .wadiz-logo {
-  display: inline-block;
-  position: static;
-}
-.web-header .wadiz-logo .label {
-  display: block;
-  position: absolute;
-  left: -9999px;
-  visibility: none;
-  height: 1px;
-}
-.web-header .wadiz-logo > a {
-  display: block;
-  padding: 14px 0 18px;
-}
-.web-header .wadiz-logo > a svg {
-  max-width: none;
-}
-
-.web-header .gnb-large {
-  display: flex;
-  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
-  justify-content: space-between;
-  z-index: 1;
-  margin-left: 0;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  vertical-align: top;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ff9d9d;
+  border-bottom: 1px solid #ff9d9d;
+  background-color: #fff1f1;
+  color: #f66;
 }
-.web-header .gnb-large {
-  display: inline-block;
-  position: relative;
-  position: -webkit-sticky;
-  position: static;
-  margin-left: 24px;
-  box-shadow: none;
-  width: auto;
-}
-
-.web-header .web-header-simple .header-container .gnb-large {
-  display: none;
-  position: absolute;
-  right: 80px;
-  left: auto;
-  color: #495057;
-}
-.web-header .web-header-simple .header-container .gnb-large {
+.withIcon-icon {
   display: block;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+  fill: currentColor;
 }
-
-.web-header .gnb-large li {
-  width: 100%;
-}
-.web-header .gnb-large li {
-  float: left;
-  width: auto;
-}
-
-.web-header .gnb-large .item {
-  display: block;
-  padding-top: 7px;
-  padding-bottom: 2px;
-  text-align: center;
-  text-decoration: none;
-  color: #495057;
-}
-.web-header .gnb-large .item {
-  padding: 0 16px;
-}
-.web-header .web-header-simple .header-container .gnb-large .item {
-  margin-left: 16px;
-  padding: 0;
-}
-
-.web-header .gnb-large .item span {
-  display: block;
-  line-height: 16px;
-  font-size: 10px;
-}
-.web-header .gnb-large .item span {
-  padding-top: 1px;
-  line-height: 55px;
-  color: #000;
-  font-size: 19px;
+.preview-overlay-title {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 8px;
   font-weight: 700;
 }
-.web-header .web-header-simple .header-container .gnb-large .item span {
-  font-size: 15px;
-  font-weight: 400;
+.preview-overlay-description {
+  margin-left: 16px;
 }
-
 .main-wrapper {
   transition: padding-top 0.25s;
   padding-top: 0;
@@ -375,9 +344,7 @@ html.scroll-top .main-wrapper {
   max-width: 390px;
   overflow: hidden;
 }
-.easy-login-box {
-  margin-top: 78px;
-}
+
 .main-container .easy-login-title-box {
   display: flex;
   flex-direction: row;
@@ -387,7 +354,7 @@ html.scroll-top .main-wrapper {
 .easy-login-title {
   margin-right: 8px;
   line-height: 44px;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
   color: #212529;
 }
@@ -450,7 +417,7 @@ button:not(:disabled) {
   border-color: #adb5bd;
 }
 .another-login-box {
-  margin-top: 56px;
+  margin-top: 48px;
   display: flex;
   justify-content: center;
 }
@@ -536,7 +503,7 @@ button:not(:disabled) {
   position: relative;
   margin: 49px auto;
   margin-bottom: 0;
-  padding: 0 16px 120px 16px;
+  padding: 0 16px 40px 16px;
   width: 100%;
   max-width: 390px;
   overflow: hidden;
@@ -1204,7 +1171,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   z-index: 9998;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0,0,0,0);
   overflow: hidden;
 }
 

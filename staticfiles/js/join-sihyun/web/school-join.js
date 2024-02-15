@@ -261,3 +261,130 @@ passwordVisibleBtn.forEach((btn) => {
     }
   });
 });
+// 체크박스 선택
+//전체 선택
+NodeList.prototype.filter = Array.prototype.filter;
+const checkboxCheckbox = document.querySelectorAll(".Checkbox_checkbox");
+const allCheckBox = document.querySelector(".all-check-box");
+const checkboxInputs = document.querySelectorAll(".Checkbox_input");
+const serviceCheck = document.querySelector(".service-check");
+const childrenInputs = document.querySelectorAll(".children");
+const confSubmitBtn = document.querySelector(".Button_button");
+checkboxCheckbox.forEach((label) => {
+  label.addEventListener("click", () => {
+    let count = 0;
+    const input = label.querySelector("input");
+    if (input.classList.contains("all-check-box")) {
+      if (input.checked) {
+        checkboxInputs.forEach((item) => {
+          item.checked = true;
+        });
+      } else {
+        checkboxInputs.forEach((item) => {
+          item.checked = false;
+        });
+      }
+    } else if (!input.classList.contains("all-check-box")) {
+      allCheckBox.checked = false;
+      if (input.classList.contains("service-check")) {
+        if (input.checked) {
+          childrenInputs.forEach((item) => {
+            item.checked = true;
+          });
+        } else {
+          childrenInputs.forEach((item) => {
+            item.checked = false;
+          });
+        }
+      } else if (!input.classList.contains("service-check")) {
+        serviceCheck.checked = false;
+        let miniCount = 0;
+        childrenInputs.forEach((item) => {
+          if (item.checked) {
+            miniCount += 1;
+          } else {
+            miniCount -= 1;
+          }
+        });
+        if (miniCount === 3) {
+          serviceCheck.checked = true;
+        }
+      }
+    }
+    let possibleCount = 0;
+    checkboxInputs.forEach((item) => {
+      if (item.checked) {
+        count += 1;
+        if (item.classList.contains("possible")) {
+          possibleCount += 1;
+        } else {
+          possibleCount -= 1;
+        }
+      } else {
+        count -= 1;
+      }
+    });
+    if (count >= 5) {
+      allCheckBox.checked = true;
+    }
+    if (count >= 5 || possibleCount >= 5) {
+      confSubmitBtn.classList.remove("Button_disabled");
+      confSubmitBtn.disabled = false;
+    } else {
+      confSubmitBtn.classList.add("Button_disabled");
+      confSubmitBtn.disabled = true;
+    }
+  });
+});
+
+// 회원 서비스 가입란 선택 시 나오는 상세보기
+const services = document.querySelector(".AccordionCheckbox_accordionButton");
+const detailJoin = document.querySelector(".detail-join");
+
+services.addEventListener("click", function () {
+  detailJoin.classList.toggle("active");
+});
+
+// 회원가입 약관, 서포터 이용약관, 개인정보 수집 및 이용 동의 선택시 나오는 상세보기
+const terms = document.querySelectorAll(".TermsAgreementCheckbox_children");
+const buttons = document.querySelectorAll(".AccordionCheckbox_text");
+
+buttons.forEach((button) => {
+  const parent = button.parentElement;
+  const sibling = parent.nextElementSibling;
+  button.addEventListener("click", function () {
+    sibling.classList.toggle("active");
+  });
+});
+
+// 화살표 누를시 방향 전환
+
+const arrows = document.querySelectorAll(".AccordionCheckbox_accordionButton");
+
+arrows.forEach((arrow) => {
+  arrow.addEventListener("click", function () {
+    arrow.classList.toggle("active");
+  });
+});
+
+// 약관동의 모달 띄우기
+const reactModalPortal = document.querySelector(".ReactModalPortal");
+joinSubmitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (e.target.closest(".join-submit-btn")) {
+    reactModalPortal.classList.add("terms-modal-open");
+  }
+});
+
+//약관동의 모달 업애기(밖에 클릭시)
+reactModalPortal.addEventListener("click", (e) => {
+  if (!e.target.closest(".ReactModal__Content")) {
+    reactModalPortal.classList.remove("terms-modal-open");
+  }
+  if (e.target.closest(".ConfirmModal_closeIconWrapper")) {
+    reactModalPortal.classList.remove("terms-modal-open");
+  }
+  if (e.target.closest(".Button_block")) {
+    reactModalPortal.classList.remove("terms-modal-open");
+  }
+});
