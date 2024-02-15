@@ -417,7 +417,7 @@ button:not(:disabled) {
   border-color: #adb5bd;
 }
 .another-login-box {
-  margin-top: 56px;
+  margin-top: 48px;
   display: flex;
   justify-content: center;
 }
