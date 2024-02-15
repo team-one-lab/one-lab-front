@@ -408,7 +408,7 @@ button:not(:disabled) {
 .funding-open {
     margin-left: 12px;
 }
-/* 
+
 .Button_button {
     position: relative;
     transition-property: background-color,border-color,color,opacity;
@@ -424,7 +424,7 @@ button:not(:disabled) {
     white-space: nowrap;
     color: #495057;
     font-size: 16px;
-} */
+}
 
 .Button_md {
     padding: 9px 15px;
