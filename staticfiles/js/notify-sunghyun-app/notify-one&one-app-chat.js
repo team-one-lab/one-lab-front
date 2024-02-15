@@ -24,3 +24,4 @@ function closeModal() {
     floatingButton.style.display = "block";
     header.style.display = "block";
 }
+h;

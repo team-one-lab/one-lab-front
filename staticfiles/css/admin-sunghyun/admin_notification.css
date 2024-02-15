@@ -71,7 +71,19 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 }
 
 /*----------*/
-
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 3px;
+}
+th {
+    background-color: #f2f2f2;
+}
     .lg\:px-\[32px\] {
         padding-left: 32px;
         padding-right: 32px;

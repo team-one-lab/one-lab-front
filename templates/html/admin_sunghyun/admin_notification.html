@@ -106,7 +106,7 @@ admin_competition = 공모전/대회 관리 페이지
                                 
                                 </div>
                                 <h2 class="admin-name">관리자</h2>
-                                <a traget="_blank" href="/templates/html/admin_sunghyun/admin_account.html">
+                                <a traget="_blank" href="#">
                                     <button aria-label="button" class="relative-disabled" type="button">
                                         <div class="flex-center">관리자 계정관리</div>
                                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" 
@@ -121,7 +121,7 @@ admin_competition = 공모전/대회 관리 페이지
                         <!-------------------------메뉴 관리----------------------------->
                         <ul class="px-py">
                             <li class="fill false hover:surface_light">
-                                <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_main.html"> <!--메인 관리-->
+                                <a class="flex-grow" href="#"> <!--메인 관리-->
                                     <svg viewBox="0 0 24 25" fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-secondary">
@@ -132,7 +132,7 @@ admin_competition = 공모전/대회 관리 페이지
                                 </a>
                             </li>
                             <li class="fill false hover:surface_light">
-                                <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_user.html"> <!--회원 관리-->
+                                <a class="flex-grow" href="#"> <!--회원 관리-->
 
                                     <svg width="24" height="24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +144,7 @@ admin_competition = 공모전/대회 관리 페이지
                                 </a>
                             </li>
                             <li class="fill surface_light hover:surface_light">
-                                <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_notification.html"> <!--공지사항 관리 화면 이동-->
+                                <a class="flex-grow" href="#"> <!--공지사항 관리 화면 이동-->
 
                                     <svg width="24" height="24" fill="none" 
                                     xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +169,7 @@ admin_competition = 공모전/대회 관리 페이지
                                 </a>
                             </li> -->
                             <li class="fill false hover:surface_light">
-                                <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_payment.html"> <!--결제내역 관리 화면 이동-->
+                                <a class="flex-grow" href="#"> <!--결제내역 관리 화면 이동-->
 
                                     <svg width="24" height="24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +182,7 @@ admin_competition = 공모전/대회 관리 페이지
                                 </a>
                             </li>
                             <li class="fill false hover:surface_light">
-                                <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_competition.html"> <!--결제내역 관리 화면 이동-->
+                                <a class="flex-grow" href="#"> <!--결제내역 관리 화면 이동-->
 
                                     <svg width="24" height="24" fill="none" 
                                     xmlns="http://www.w3.org/2000/svg" 
@@ -273,104 +273,140 @@ admin_competition = 공모전/대회 관리 페이지
                                             <!-- </div> -->
                                         </div>
                                         <div class="content_primary">
-                                            <div class="min-5">제목</div>
-                                        <div class="grid-px">
+                                            <!-- <div class="min-5">제목</div> -->
+                                        <!-- <div class="grid-px">
                                             <div>조회 수</div>
                                             <div>작성일자</div>
                                             <div>추천 수</div>
                                             <div>삭제</div>
-                                        </div>
+                                        </div> -->
                                         
                                         </div>
 
                                         <!-----------------버튼에서 admin_notification-write.html 과 연결됩니다.-->
                                         <table>
-                                
+                                            <tr>
+                                                <th scope="col">제목
+                                                  <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                          class="wh-60">
+                                                              <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                              <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                                  </svg>
+                                                </th>
+                                                <th scope="col">조회수
+                                                  <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                          class="wh-60">
+                                                              <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                              <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                                  </svg>
+                                                </th>
+                                                <!-- <th scope="col">제목
+                                                  <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                          class="wh-60">
+                                                              <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                              <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                                  </svg>
+                                                </th> -->
+                                                <th scope="col">작성일자
+                                                  <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                          class="wh-60">
+                                                              <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                              <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                                  </svg>
+                                                </th>
+                                                <th scope="col">추천 수
+                                                  <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                          class="wh-60">
+                                                              <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                              <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                                  </svg>
+                                                </th>
+                                                <th scope="col">작성
+                                                    <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                            class="wh-60">
+                                                                <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                                <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                                    </svg>
+                                                  </th>
+                                                
+                                              </tr>
                                             <tr>
                                                 <!-- <td><input type="" style="width: 220px;"></td> -->
-                                                <td><input type="text"placeholder="제목" style="align-items: center; width: 180px;"></td>
-                                                
-                                                <td><input type="text"placeholder="조회 수" style="align-items: center; width: 80px; margin-left: 230px;"></td>
-                                                <td><input type="text"placeholder="작성일자" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><input type="text"placeholder="추천 수" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 70px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
+                                                <td >제목</td>
+                                                <td>작성자</td>
+                                                <td>제목</td>
+                                                <td>작성일자</td>
+                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                                   </button>
                                               </td>
                                               </tr>
                                               <tr>
                                                 <!-- <td><input type="" style="width: 220px;"></td> -->
-                                                <td><input type="text"placeholder="제목" style="align-items: center; width: 180px;"></td>
-                                                
-                                                <td><input type="text"placeholder="조회 수" style="align-items: center; width: 80px; margin-left: 230px;"></td>
-                                                <td><input type="text"placeholder="작성일자" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><input type="text"placeholder="추천 수" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 70px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
+                                                <td >제목</td>
+                                                <td>작성자</td>
+                                                <td>제목</td>
+                                                <td>작성일자</td>
+                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                                   </button>
                                               </td>
                                               </tr>
                                               <tr>
                                                 <!-- <td><input type="" style="width: 220px;"></td> -->
-                                                <td><input type="text"placeholder="제목" style="align-items: center; width: 180px;"></td>
-                                                
-                                                <td><input type="text"placeholder="조회 수" style="align-items: center; width: 80px; margin-left: 230px;"></td>
-                                                <td><input type="text"placeholder="작성일자" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><input type="text"placeholder="추천 수" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 70px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
+                                                <td >제목</td>
+                                                <td>작성자</td>
+                                                <td>제목</td>
+                                                <td>작성일자</td>
+                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                                   </button>
                                               </td>
                                               </tr>
                                               <tr>
                                                 <!-- <td><input type="" style="width: 220px;"></td> -->
-                                                <td><input type="text"placeholder="제목" style="align-items: center; width: 180px;"></td>
-                                                
-                                                <td><input type="text"placeholder="조회 수" style="align-items: center; width: 80px; margin-left: 230px;"></td>
-                                                <td><input type="text"placeholder="작성일자" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><input type="text"placeholder="추천 수" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 70px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
+                                                <td >제목</td>
+                                                <td>작성자</td>
+                                                <td>제목</td>
+                                                <td>작성일자</td>
+                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                                   </button>
                                               </td>
                                               </tr>
                                               <tr>
                                                 <!-- <td><input type="" style="width: 220px;"></td> -->
-                                                <td><input type="text"placeholder="제목" style="align-items: center; width: 180px;"></td>
-                                                
-                                                <td><input type="text"placeholder="조회 수" style="align-items: center; width: 80px; margin-left: 230px;"></td>
-                                                <td><input type="text"placeholder="작성일자" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><input type="text"placeholder="추천 수" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 70px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
+                                                <td >제목</td>
+                                                <td>작성자</td>
+                                                <td>제목</td>
+                                                <td>작성일자</td>
+                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                                   </button>
                                               </td>
                                               </tr>
                                               <tr>
                                                 <!-- <td><input type="" style="width: 220px;"></td> -->
-                                                <td><input type="text"placeholder="제목" style="align-items: center; width: 180px;"></td>
-                                                
-                                                <td><input type="text"placeholder="조회 수" style="align-items: center; width: 80px; margin-left: 230px;"></td>
-                                                <td><input type="text"placeholder="작성일자" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><input type="text"placeholder="추천 수" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 70px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
+                                                <td >제목</td>
+                                                <td>작성자</td>
+                                                <td>제목</td>
+                                                <td>작성일자</td>
+                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                                   </button>
                                               </td>
                                               </tr>
                                               <tr>
                                                 <!-- <td><input type="" style="width: 220px;"></td> -->
-                                                <td><input type="text"placeholder="제목" style="align-items: center; width: 180px;"></td>
-                                                
-                                                <td><input type="text"placeholder="조회 수" style="align-items: center; width: 80px; margin-left: 230px;"></td>
-                                                <td><input type="text"placeholder="작성일자" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><input type="text"placeholder="추천 수" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 70px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
+                                                <td >제목</td>
+                                                <td>작성자</td>
+                                                <td>제목</td>
+                                                <td>작성일자</td>
+                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                                   </button>
                                               </td>
                                               </tr>
                                               <tr>
                                                 <!-- <td><input type="" style="width: 220px;"></td> -->
-                                                <td><input type="text"placeholder="제목" style="align-items: center; width: 180px;"></td>
-                                                
-                                                <td><input type="text"placeholder="조회 수" style="align-items: center; width: 80px; margin-left: 230px;"></td>
-                                                <td><input type="text"placeholder="작성일자" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><input type="text"placeholder="추천 수" style="align-items: center; width: 80px; margin-left: 70px;"></td>
-                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 70px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
+                                                <td >제목</td>
+                                                <td>작성자</td>
+                                                <td>제목</td>
+                                                <td>작성일자</td>
+                                                <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                                   </button>
                                               </td>
                                               </tr>

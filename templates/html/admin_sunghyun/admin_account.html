@@ -29,7 +29,7 @@ admin_competition = 공모전/대회 관리 페이지
             rel="stylesheet"
             href="/staticfiles/css/admin-sunghyun/admin_account.css"
         />
-        <!-- <script src="/staticfiles/js/admin-sunghyun/admin_main.js"></script> -->
+       
         <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
         <link rel="preload" href="/staticfiles/css/test_admin_font.css" />
         <meta charset="UTF-8" />
@@ -278,26 +278,8 @@ admin_competition = 공모전/대회 관리 페이지
                 </div>
             </div>
         </body>
-        
-         <script>
-           
-        function clickAdd() {
-            document.querySelector('#inputImage').addEventListener("change", (e) => {
-            let selectFile = e.target.files[0]; 
-            const file = URL.createObjectURL(selectFile);
-            document.querySelector(".image").src = file;
-        });
-    }
-        function clickAdd2() {
-            document.querySelector('#inputImage2').addEventListener("change", (e) => {
-            let selectFile = e.target.files[0]; 
-            const file = URL.createObjectURL(selectFile);
-            document.querySelector(".image2").src = file;
-        });
-    }
-
-
-        </script>
+         
+         <script src="/staticfiles/js/admin-sunghyun/admin_account.js"></script>
 
         
     </html>
