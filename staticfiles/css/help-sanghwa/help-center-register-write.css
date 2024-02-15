@@ -198,7 +198,7 @@ html{
 }
 
 /* 전체적인 body before */
-@media (min-width: 360px) {
+
 &:before {
     transform: translateX(-15px);
     opacity: 0;
@@ -208,10 +208,9 @@ html{
     top: -25%;
 }
 
-}
 
 /* 전체적인 body after */
-@media (min-width: 360px) {
+
 &:after {
     transform: none;
     content: '\27F6';
@@ -219,7 +218,7 @@ html{
     right: 0;
     top: -25%;
 }
-}
+
 
 
 /* ##### 전체body 클래스 설정 ##### */
@@ -239,13 +238,13 @@ body{
 
 /* <div class="layout-column" x-data="Widgets.mobileMenu"></div> */
 /* 클래스 layout-column */
-@media (min-width: 360px) {
+
 .layout-column{
     flex-direction: column;
     flex: 1;
     display: flex !important;
 }
-}
+
 
 .layout-column{
     position: relative;
@@ -259,7 +258,7 @@ body{
 
 /* <header class="header_unstuck" x-data="Widgets.header({ isFixed: false, isSticky: true })" :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"></header> */
 /* class="header_unstuck" */
-@media (min-width: 360) {
+
 .header_unstuck{
     transition: 0.3s;
     border-bottom: 1px solid #e2e8f0;
@@ -272,7 +271,7 @@ body{
     font-weight: bold;
     font-family: 'Pretendard Variable';
 }
-}
+
 
 .header_unstuck{
     transition: 0.3s;
@@ -291,7 +290,7 @@ body{
 
 /* <nav class="navbar_full"></nav> */
 /* class="navbar_full" */
-@media (min-width: 360px) {
+
 .navbar_full{
     height: 100%;
     display: flex;
@@ -302,13 +301,12 @@ body{
     font-weight: bold;
     font-family: 'Pretendard Variable';
 }
-}
 
-@media (min-width: 1200px) {
+
 .navbar_full{
     max-width: 1140px;
 }
-}
+
 
 .navbar_full{
     margin-right: auto;
@@ -320,14 +318,14 @@ body{
 
 /* <a href="" class="navbar-auto"> */
 /* class="navbar-auto" */
-@media (min-width: 360px) {
+
 .navbar-auto{
     color: #212121;
     margin-right: auto;
     display: inline-flex;
     align-items: center;
 }
-}
+
 
 a {
     color: rgb(89 189 181);
@@ -339,14 +337,14 @@ a {
 
 /* <img class="block-fluid" id="logo" src="https://theme.zdassets.com/theme_assets/13612819/a2bda3d577fa2698038267539c34a696a70da97c.png" alt="도움말 센터 헬프 센터 홈 페이지"> */
 /* class="block-fluid" */
-@media (min-width: 360px) {
+
 #logo {
     height: 24px;
 }
 .block-fluid{
     display: block !important;
 }
-}
+
 
 .block-fluid {
     max-width: 100%;
@@ -360,7 +358,7 @@ img {
 
 /* <button class="navbar-hidden" x-ref="toggle" :aria-expanded="isOpen && 'true'" @click="toggle" @keydown.escape="toggle" aria-expanded="false"></button> */
 /* class="navbar-hidden" */
-@media (min-width: 360px) {
+
 .navbar-hidden{
     color: #212121;
     margin-left: 0.5rem;
@@ -376,15 +374,15 @@ img {
     order: 1;
     z-index: 100;
 }
-}
 
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .navbar-hidden{
-            display: none !important;
-        }
-    }
+
+
+    
+.navbar-hidden{
+    display: none !important;
 }
+    
+
 
 button{
     text-transform: none;
@@ -399,7 +397,7 @@ button{
 
 /* <span></span> */
 /* 클래스 navbar-hidden > 태그 span */
-@media (min-width: 360px) {
+
 .navbar-hidden span {
     background-color: currentColor;
     height: 2px;
@@ -410,33 +408,33 @@ button{
     position: relative;
     pointer-events: none;
 }
-}
+
 
 /* span 태그에 적용할 before 에만 들어가는 요소 */
-@media (min-width: 360px) {
+
 .navbar-hidden span::before{
     top: -7px;
 }
-}
+
 
 /* span 태그에 적용할 after 에만 들어가는 요소 */
-@media (min-width: 360px) {
+
 .navbar-hidden span::after{
     top: 7px;
 }
-}
+
 
 /* span 태그에 적용할 before, after 동시에 들어가는 요소 */
-@media (min-width: 360px) {
+
 .navbar-hidden span::before, .navbar-hidden::after {
     position: absolute;
     content: "";
     left: 0;
 }
-}
+
 
 /* span 태그와 span 태그의 before, span 태그의 after 동시에 들어가는 요소 */
-@media (min-width: 360px) {
+
 .navbar-hidden span, .navbar-hidden span::before, .navbar-hidden::after {
     background-color: currentColor;
     height: 2px;
@@ -444,11 +442,11 @@ button{
     outline: 1px solid transparent;
     transition: background-color 0.15s, transform 0.15s;
 }
-}
+
 
 /* <span class="sr-only">탐색 메뉴 토글</span> */
 /* class="sr-only" */
-@media (min-width: 360px) {
+
 .sr-only{
     position: absolute;
     width: 1px;
@@ -460,7 +458,7 @@ button{
     clip-path: inset(50%);
     border: 0;
 }
-}
+
 
 .sr-only{
     border: 0;
@@ -476,15 +474,13 @@ button{
 
 /* <div class="backdrop-hidden" x-show="isOpen" @click="close" x-transition:enter="x-transition-fast" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="x-transition-fast" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none"></div> */
 /* class="backdrop-hidden" */
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .backdrop-hidden{
-            display: none !important;
-        }
-    }
+
+.backdrop-hidden{
+    display: none !important;
 }
 
-@media (min-width: 360px) {
+
+
 .backdrop-hidden{
     position: fixed;
     top: 0;
@@ -495,44 +491,42 @@ button{
     background-color: rgba(0, 0, 0, 0.25);
     z-index: 98;
 }
-}
+
 
 
 /* <div class="nav-end" x-show="isOpen" :class="{ 'text-header': isOpen }" x-transition:enter="x-transition-fast" x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="x-transition-fast" x-transition:leave-start="translate-x-0 text-header" x-transition:leave-end="translate-x-full text-header" style="display: none"> */
 /* class="nav-end" */
-@media (min-width: 360px) {
+
 .nav-end{
     z-index: 99;
     flex: 1;
     margin-bottom: 0;
     list-style: none;
 }
+
+
+
+.nav-end{
+    justify-content: flex-end;
+    align-items: center;
+    display: flex !important;
+    font-size: 0.9375rem;
+    position: revert;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    text-align: left;
+    max-width: none;
+    background-color: transparent;
+    box-shadow: none;
 }
 
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .nav-end{
-            justify-content: flex-end;
-            align-items: center;
-            display: flex !important;
-            font-size: 0.9375rem;
-            position: revert;
-            padding: 0;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: auto;
-            text-align: left;
-            max-width: none;
-            background-color: transparent;
-            box-shadow: none;
-        }
-    }
-}
 
 
 /* <div class="search-0" x-data="Widgets.search"> */
 /* class="search-0" */
-@media (min-width: 360px) {
+
 .search-0{
     font-weight: bold;
     font-family: 'Pretendard Variable';
@@ -540,20 +534,18 @@ button{
     display: flex !important;
     color: #403b3b;
 }
+
+
+
+.search-0{
+    max-width: 20rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+    flex: 1;
+
 }
 
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .search-0{
-            max-width: 20rem;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-            margin-bottom: 0;
-            flex: 1;
-
-        }
-    }
-}
 
 .search-0{
     position: relative;
@@ -568,12 +560,12 @@ button{
     margin-right: -0.5rem;
 }
 
-@media (min-width: 360px) {
-    .form-0{
-        margin-bottom: 0;
-        flex: 1;
-    }
+
+.form-0{
+    margin-bottom: 0;
+    flex: 1;
 }
+
 
 
 /* <input name="utf8" type="hidden" value="✓" autocomplete="off"> */
@@ -689,21 +681,21 @@ input {
     left: 0;
 }
 
-@media (min-width: 360px) {
-    .search-transition{
-        transition: 0.3s;
-        fill: currentColor;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 1em;
-        margin-right: 1em;
-        bottom: -0.125em;
-        display: inline-block;
-        width: 1em;
-        line-height: 1;
-    }
+
+.search-transition{
+    transition: 0.3s;
+    fill: currentColor;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 1em;
+    margin-right: 1em;
+    bottom: -0.125em;
+    display: inline-block;
+    width: 1em;
+    line-height: 1;
 }
+
 
 
 /* <use xlink:href="#icon-search"></use> */
@@ -715,22 +707,20 @@ input {
 
 /* <a class="button-header-1" href=""> 문의 등록 </a> */
 /* class="button-header-1" */
-@media (min-width: 360px) {
-    .button-header-1{
-        margin: 0.5rem;
-        align-self: center;
-    }
+
+.button-header-1{
+    margin: 0.5rem;
+    align-self: center;
 }
 
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .button-header-1{
-            margin-bottom: 0;
-            margin-top: 0;
-            order: inherit;
-        }
-    }
+
+
+.button-header-1{
+    margin-bottom: 0;
+    margin-top: 0;
+    order: inherit;
 }
+
 
 .button-header-1{
     color: #00C4C4;
@@ -770,21 +760,18 @@ a {
 
 /* <a class="button-header-2" href="">메이커센터 </a> */
 /* class="button-header-2" */
-@media (min-width: 360px) {
-    .button-header-2{
-        margin: 0.5rem;
-        align-self: center;
-    }
+
+.button-header-2{
+    margin: 0.5rem;
+    align-self: center;
 }
 
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .button-header-2{
-            margin-bottom: 0;
-            margin-top: 0;
-            order: inherit;
-        }
-    }
+
+
+.button-header-2{
+    margin-bottom: 0;
+    margin-top: 0;
+    order: inherit;
 }
 
 .button-header-2{
@@ -825,20 +812,18 @@ a {
 
 /* <a class="button-header-3" href="">와디즈 바로가기 </a> */
 /* class="button-header-3" */
-@media (min-width: 360px) {
-    .button-header-3{
-        margin: 0.5rem;
-        align-self: center;
-    }
+
+.button-header-3{
+    margin: 0.5rem;
+    align-self: center;
 }
 
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .button-header-2{
-            order: inherit;
-        }
-    }
+
+
+.button-header-2{
+    order: inherit;
 }
+
 
 .button-header-3{
     color: #00C4C4;
@@ -849,7 +834,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard Variable';
     font-size: 1rem;
     flex: none;
     flex-grow: 0;
@@ -909,11 +894,11 @@ font-size:13px
     flex-grow: 1;
 }
 
-@media (min-width: 360px)
-{main {
+
+main {
     display: flex;
     flex-direction: column;
-}}
+}
 
 main{
     max-width: 100%;
@@ -926,8 +911,8 @@ main{
 
 /* <div class="container-6" id="page-container"></div> */
 /* 클래스 container-6 */
-@media (min-width: 360px)
-{.container-6 {
+
+.container-6 {
     padding-bottom: 1rem;
     padding-top: 6rem;
     flex: 1;
@@ -936,15 +921,15 @@ main{
     margin-left: auto;
     width: 100%;
     padding: 0 2rem;
-}}
+}
 
 
 /* <div class="row-center"></div> */
 /* 클래스: row-center */
-@media (min-width: 360px)
-{.row-center {
+
+.row-center {
     align-items: center;
-}}
+}
 
 .row-center {
     display: flex;
@@ -955,11 +940,11 @@ main{
 
 /* <nav class="col"></nav> */
 /* 클래스: col */
-@media (min-width: 360px)
-{.col {
+
+.col {
     font-weight: 500;
     font-size: 0.9375rem;
-}}
+}
 
 .col{
     flex-basis: 0;
@@ -980,14 +965,14 @@ nav{
 
 /* <ol class="breadcrumbs"></ol> */
 /* 클래스: breadcrumbs , ol{} 설정*/
-@media (min-width: 360px)
-{.breadcrumbs {
+
+.breadcrumbs {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     list-style: none;
     margin-bottom: 1rem;
-}}
+}
 
 ol {
     padding: 0 0 0 1.5rem;
@@ -998,10 +983,10 @@ ol {
 /* <li title="도움말 센터"></li> */
 /* li{} 설정 */
 
-@media (min-width: 360px)
-{.breadcrumbs > li {
+
+.breadcrumbs > li {
     color: #4A5568;
-}}
+}
 
 /* <a class="help-center" href="">도움말 센터</a> */
 /* 클래스: help-center */
@@ -1024,27 +1009,27 @@ ol {
 /* <li title="문의 등록">문의 등록</li> */
 /* li{} 설정 */
 
-@media (min-width: 360px)
-{.breadcrumbs > li {
-    color: #4A5568;
-}}
 
-@media (min-width: 360px)
-{.breadcrumbs > * + * {
+.breadcrumbs > li {
+    color: #4A5568;
+}
+
+
+.breadcrumbs > * + * {
     padding-left: 0.5rem;
-}}
+}
 
-@media (min-width: 360px)
-{.breadcrumbs li + li::before {
+
+.breadcrumbs li + li::before {
     color: #4A5568;
-}}
+}
 
-@media (min-width: 360px)
-{.breadcrumbs > * + *::before {
+
+.breadcrumbs > * + *::before {
     display: inline-block;
     padding-right: 0.5rem;
     content: "/";
-}}
+}
 
 
 /* <div class="row"></div> */
@@ -1060,14 +1045,12 @@ ol {
 /* <div class="lg:col-9"></div> */
 /* 클래스 lg:col-9 */
 
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .lg\:col-9 {
-            flex: 0 0 75%;
-            max-width: 75%;
-        }
-    }
+
+.lg\:col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
 }
+
 
 .lg\:col-9 {
     position: relative;
@@ -1082,10 +1065,10 @@ ol {
 /* <header class="mb-5"></header> */
 /* 클래스: mb-5 */
 
-@media (min-width: 360px)
-{.mb-5 {
+
+.mb-5 {
     margin-bottom: 1.5rem;
-}}
+}
 
 .header {
     display: block;
@@ -1167,30 +1150,109 @@ label {
         aria-label="문의 접수하실 내용을 선택해주세요:&#41;"
         style="max-width: 100%"
     >와디즈 문의하기</a> */
-.form-field .nesty-input {
+
+
+.form-field1 .nesty-input {
+    padding: 0.5em 0.75em;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    border-radius: 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-field1 .nesty-input{
     padding-right: 2em;
     background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" width="10" height="6"%3E%3Cpath fill="%232D3748" d="M0 0h10L5 6 0 0z"/%3E%3C/svg%3E') no-repeat #fff;
     background-position: right 0.75em center;
     appearance: none;
-    padding: 0.5em 0.75em;
-    color: inherit;
-    border: 1px solid #e2e8f0;
-    width: 100%;
-    border-radius: 8px;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.form-field .nesty-input {
-    padding: 0.5em 0.75em;
-    color: inherit;
-    border: 1px solid #e2e8f0;
-    width: 100%;
-    border-radius: 8px;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+.form-field1 .nesty-input:hover {
+    border-color: rgba(199, 203, 199, 1);
+}
+
+.form-field1 .nesty-input:focus {
+    outline: 0;
+    border-color: rgba(5, 5, 6, 1);
+    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
 }
 
 .nesty-input {
     height: auto;
+    text-transform: none;
+    line-height: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 150px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    z-index: 1;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.nesty-input:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* nesty-input ::after */
+
+.nesty-input::after {
+    color: #999;
+    line-height: 1em;
+    position: absolute;
+    right: 10px;
+    top: 25%;
+}
+
+.nesty-input::after {
+    content: "";
+}
+
+
+/* <select name="request[ticket-form-id]" class="request-select" aria-label="문의 접수하실 내용을 선택해주세요:&#41;" autofocus="autofocus" style="display: none;"> */
+/* 클래스: request-select */
+
+.form-field1 .request-select {
+    padding: 0.5em 0.75em;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    border-radius: 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-field1 .request-select:hover {
+    border-color: rgba(199, 203, 199, 1);
+}
+
+.form-field1 .request-select:focus {
+    outline: 0;
+    border-color: rgba(5, 5, 6, 1);
+    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
+}
+
+.form-field1 > .request-select {
+    padding-right: 2em;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" width="10" height="6"%3E%3Cpath fill="%232D3748" d="M0 0h10L5 6 0 0z"/%3E%3C/svg%3E') no-repeat #fff;
+    background-position: right 0.75em center;
+    appearance: none;
+}
+
+.request-select {
     text-transform: none;
     line-height: inherit;
     touch-action: manipulation;
@@ -1200,6 +1262,767 @@ label {
 }
 
 
+/* <div class="form-field"> */
+/* 클래스: form-field */
+
+.form-field {
+    margin-bottom: 1.5rem;
+}
+.form-field1 {
+    margin-bottom: 1.5rem;
+}
+
+
+/* <label for="request-anonymous-requester-email"> */
+/* .form-field > label */
+
+.form-field > label {
+    display: block;
+    margin: 0 0 0.5rem;
+    font-size: 0.9375rem;
+}
+.form-field1 > label {
+    display: block;
+    margin: 0 0 0.5rem;
+    font-size: 0.9375rem;
+}
+
+.form-field > label::after {
+    margin-left: 2px;
+    content: "*";
+    color: #FC8181;
+}
+
+
+/* <input type="text" name="request[anonymous-requester-email]" id="request-anonymous-requester-email" aria-required="true"> */
+/* .form-field > input */
+
+.form-field > input {
+    padding: 0.5em 0.75em;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-field > input:hover {
+    border-color: rgba(199, 203, 199, 1);
+}
+
+.form-field > input:focus {
+    outline: 0;
+    border-color: rgba(5, 5, 6, 1);
+    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
+}
+
+/* <label id="request-custom-fields-6760067845017-label" for="request-custom-fields-6760067845017"> */
+/* 공통 적용할 after CSS */
+
+.form-field > label::after {
+    margin-left: 2px;
+    content: "*";
+    color: #FC8181;
+}
+
+
+/* <input type="hidden" name="request[custom_fields][6760067845017]" id="request_custom_fields_6760067845017" autocomplete="off" data-tagger="[{&quot;label&quot;:&quot;-&quot;,&quot;value&quot;:&quot;&quot;},{&quot;label&quot;:&quot;프로젝트를 개설한 메이커&quot;,&quot;value&quot;:&quot;펀딩메이커&quot;},{&quot;label&quot;:&quot;프로젝트에 참여한 서포터&quot;,&quot;value&quot;:&quot;펀딩서포터&quot;},{&quot;label&quot;:&quot;기타 제3자 (권리침해 등 이해관계자)&quot;,&quot;value&quot;:&quot;기타__제_3자_&quot;}]" aria-required="true" aria-labelledby="request_custom_fields_6760067845017_label" value="" data-gtm-form-interact-field-id="0"> */
+.form-field .nesty-input {
+    padding: 0.5em 0.75em;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    border-radius: 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-field .nesty-input {
+    padding-right: 2em;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" width="10" height="6" %3E%3Cpath fill="%232D3748" d="M0 0h10L5 6 0 0z"/%3E%3C/svg%3E') no-repeat #fff;
+    background-position: right 0.75em center;
+    appearance: none;
+}
+
+.form-field > input {
+    padding: 0.5em 0.75em;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-field > input:hover {
+    border-color: rgba(199, 203, 199, 1);
+}
+
+.form-field > input:focus {
+    outline: 0;
+    border-color: rgba(5, 5, 6, 1);
+    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
+}
+
+/* <a class="nesty-input" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="_jrhyeuiv7" aria-required="true" aria-labelledby="request_custom_fields_6760067845017_label" style="max-width: 100%;">-</a> */
+.form-field .nesty-input:hover {
+    border-color: rgba(199, 203, 199, 1);
+}
+
+.form-field1 .nesty-input:hover {
+    border-color: rgba(199, 203, 199, 1);
+}
+
+.nesty-input.nesty-input:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nesty-input1.nesty-input:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.form-field .nesty-input:focus {
+    outline: 0;
+    border-color: rgba(5, 5, 6, 1);
+    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
+}
+
+.form-field1 .nesty-input:focus {
+    outline: 0;
+    border-color: rgba(5, 5, 6, 1);
+    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
+}
+
+
+/* <input type="text" name="request[custom_fields][6477991452185]" id="request_custom_fields_6477991452185" aria-required="true" aria-describedby="request_custom_fields_6477991452185_hint" aria-labelledby="request_custom_fields_6477991452185_label" disabled=""> */
+.form-field > input:disabled {
+    border-color: #e2e8f0;
+    background-color: #E2E8F0;
+    cursor: not-allowed;
+}
+
+
+/* <p id="request_custom_fields_6477991452185_hint">와디즈 로그인 시 사용하시는 이메일 주소 (와디즈계정)을 알려주세요.</p> */
+.form-field > p {
+    margin: 0.25rem 0 0;
+}
+
+.request-form p {
+    color: #333;
+    font-family: Pretendard Variable;
+    font-size: 14px;
+}
+
+
+/* <p id="request_custom_fields_6824739764505_hint">⚡프로젝트 번호 확인 방법 : 마이와디즈 &gt; 메이커스튜디오 &gt; 화면 왼쪽 상단 아래 숫자 5~6자리</p> */
+[hidden] {
+    display: none;
+}
+
+
+/* <textarea
+    class="text-area"
+    name="request[description]"
+    aria-required="true"
+    aria-describedby="request_description_hint"
+    aria-labelledby="request_description_label"
+    data-helper="wysiwyg"
+    style="visibility: hidden; display: none"
+    aria-hidden="true"
+    ></textarea> */
+.form-field > .text-area {
+    padding: 0.5em 0.75em;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.form-field > .text-area {
+    min-height: 8em;
+}
+
+.text-area {
+    overflow: auto;
+    resize: vertical;
+    line-height: inherit;line-height: inherit;
+    touch-action: manipulation;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+/* <div
+    role="application"
+    id="hc-wysiwyg"
+    data-test-id="zd-wysiwyg-editor"
+> */
+
+#hc-wysiwyg {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    resize: vertical;
+    height: 250px;
+    min-height: 100px;
+}
+
+
+/* <div role="toolbar" aria-label="편집기 도구 모음"> */
+
+#hc-wysiwyg [role=toolbar] {
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    height: 35px;
+    padding: 5px 10px;
+    position: relative;
+    user-select: none;
+}
+
+
+/* <span aria-haspopup="true" aria-expanded="false"> */
+
+#hc-wysiwyg [role=toolbar]>[aria-haspopup=true] {
+    position: relative;
+}
+
+
+/* <span
+    role="button"
+    title="단락 스타일"
+    tabindex="0"
+    class="wysiwyg-icon-formats"
+></span> */
+
+#hc-wysiwyg [class^=wysiwyg-icon-] {
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    color: #525252;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 4px;
+    padding: 0 5px;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 24px;
+    width: auto;
+}
+
+[class^=wysiwyg-icon-] {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.wysiwyg-icon-formats {
+    background-image: url('https://static.zdassets.com/hc/assets/text-stroke-2901fc68f0898259656b155b6e0ba92f..svg') !important;
+}
+
+[role="button"] {
+    touch-action: manipulation;
+}
+
+
+/* <span role="menu" aria-hidden="true" tabindex="-1"> */
+
+#hc-wysiwyg [role=menu][aria-hidden=true] {
+    display: none;
+}
+
+#hc-wysiwyg [role=menu] {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    left: 0;
+    top: 100%;
+    margin-top: 8px;
+    min-width: 150px;
+    padding: 5px 0;
+    outline: none;
+}
+
+
+/* <span
+    role="button"
+    title=""
+    tabindex="0"
+    data-block="p"
+    aria-selected="true"
+    >일반 텍스트
+</span> */
+
+#hc-wysiwyg [role=menu]>[role=button][data-block=p] {
+    font: normal normal 12px sans-serif;
+}
+
+#hc-wysiwyg [role=menu]>[role=button] {
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    display: block;
+    height: auto !important;
+    line-height: 1 !important;
+    margin: 0;
+    padding: 8px 20px;
+    text-align: initial;
+    white-space: nowrap;
+}
+
+
+/* <span
+        role="button"
+        title=""
+        tabindex="0"
+        data-block="h2">
+            헤더 2
+    </span> */
+
+#hc-wysiwyg [role=menu]>[role=button][data-block=h2] {
+    font: bold normal 16px sans-serif;
+}
+
+
+/* <span
+    role="button"
+    title=""
+    tabindex="0"
+    data-block="h3"
+    >헤더 3</span
+> */
+
+#hc-wysiwyg [role=menu]>[role=button][data-block=h3] {
+    font: bold normal 14px sans-serif;
+}
+
+
+/* <span
+    role="button"
+    title=""
+    tabindex="0"
+    data-block="h4"
+    >헤더 4</span
+> */
+
+#hc-wysiwyg [role=menu]>[role=button][data-block=h4] {
+    font: bold normal 13px sans-serif;
+}
+
+
+/* <span
+    role="button"
+    title="굵게"
+    tabindex="0"
+    class="wysiwyg-icon-bold"
+></span> */
+
+.wysiwyg-icon-bold {
+    background-image: url('https://static.zdassets.com/hc/assets/bold-stroke-c075ecfab5f51c3e3fc9b218f0bb5379..svg') !important;
+}
+
+
+/* <span
+    role="button"
+    title="기울임꼴"
+    tabindex="0"
+    class="wysiwyg-icon-italic"
+></span> */
+
+.wysiwyg-icon-italic {
+    background-image: url('https://static.zdassets.com/hc/assets/italic-stroke-70c33a4f2eb08e92c4317b86aa029a59..svg') !important;
+}
+
+
+/* <span role="separator"></span><span role="separator"></span> */
+
+#hc-wysiwyg [role=separator] {
+    border: 0;
+    background: #ddd;
+    width: 1px;
+    height: 24px;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+
+/* <span
+    role="button"
+    title="글머리 기호 목록"
+    tabindex="0"
+    class="wysiwyg-icon-bullist"
+></span> */
+
+.wysiwyg-icon-bullist {
+    background-image: url('https://static.zdassets.com/hc/assets/list-bullet-stroke-04b8bc257b35bc8f92daf5a5d7e1955f..svg') !important;
+}
+
+
+/* <span
+    role="button"
+    title="번호 매기기 목록"
+    tabindex="0"
+    class="wysiwyg-icon-numlist"
+></span> */
+
+.wysiwyg-icon-numlist {
+    background-image: url('https://static.zdassets.com/hc/assets/list-number-stroke-0f55516854b2cc29ed275ce293d0e1a8..svg') !important;
+}
+
+
+/* <span role="separator"></span> */
+/* CSS 적용할꺼 없음 */
+
+
+/* <span
+    role="button"
+    title="코드 블록"
+    tabindex="0"
+    class="wysiwyg-icon-code-block"
+></span> */
+
+.wysiwyg-icon-code-block {
+    background-image: url('https://static.zdassets.com/hc/assets/terminal-cli-stroke-1bdbc63926aa2ada431dcc1ce4ae5601..svg') !important;
+}
+
+
+/* <span
+    role="button"
+    title="링크 삽입/편집"
+    tabindex="0"
+    class="wysiwyg-icon-link"
+></span> */
+
+.wysiwyg-icon-link {
+    background-image: url('https://static.zdassets.com/hc/assets/link-stroke-7106f546349740ac359b04ed1bb73b6c..svg') !important;
+}
+
+
+/* <span
+    role="button"
+    title="인용"
+    tabindex="0"
+    class="wysiwyg-icon-quote"
+></span> */
+
+.wysiwyg-icon-quote {
+    background-image: url('https://static.zdassets.com/hc/assets/quote-stroke-2a6ea1ba5e86bff41a38c0f8f7d45207..svg') !important;
+}
+
+
+/* <div role="form" aria-expanded="false"></div> */
+
+#hc-wysiwyg [role=form][aria-expanded=false] {
+    left: -100%;
+}
+
+#hc-wysiwyg [role=form] {
+    background: #f5f5f5;
+    border-bottom: 1px solid #ececec;
+    padding: 4px 10px;
+    position: absolute;
+    height: 35px;
+    top: 0;
+    transition: left .2s ease-in;
+    width: 100%;
+    z-index: 20;
+}
+
+
+/* <div role="group"> */
+
+#hc-wysiwyg [role=group] {
+    border-radius: 0;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+#hc-wysiwyg [role=group] {
+    height: calc(100% - 35px);
+}
+
+
+/* class="tox-edit-area-iframe" */
+
+#hc-wysiwyg [role=group], #hc-wysiwyg [role=group] iframe {
+    border-radius: 0;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+#hc-wysiwyg [role=group] iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* <div role="alert" aria-hidden="true"></div> */
+
+#hc-wysiwyg [role=alert][aria-hidden=true] {
+    display: none;
+}
+
+#hc-wysiwyg [role=alert] {
+    background: #fff;
+    border-top: 1px solid #ececec;
+    bottom: 0;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+}
+
+
+/* <input name="content_type" type="hidden" value="text/html" /> */
+/* 적용할 CSS 없음 */
+
+/* <input type="hidden" name="request[description_mimetype]" value="text/html" style="display: none" autocomplete="off" /> */
+/* 적용할 CSS 없음 */
+
+/* <p id="request_description_hint"> */
+/* 적용할 CSS 없음 */
+
+
+/* <input name="request[custom_fields][27967111082905]" type="hidden" value="off" autocomplete="off" disabled="" /> */
+
+.boolean input {
+    padding: 0.5rem;
+    margin-right: 0.5em;
+    width: auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* <input aria-required="true" aria-labelledby="request_custom_fields_27967111082905_label" type="checkbox" value="on" name="request[custom_fields][27967111082905]" disabled="" /> */
+
+[type="checkbox"] {
+    box-sizing: border-box;
+}
+
+
+/* <span class="optional">&#40;선택 사항&#41;</span> */
+
+.form-field1 .optional {
+    margin-left: 2px;
+}
+
+
+/* <div id="upload-dropzone" class="upload-dropzone"></div> */
+/* 클래스: upload-dropzone */
+
+.upload-dropzone {
+    font-size: 12px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.upload-dropzone {
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+/* <input type="file" multiple="true" id="request-attachments" data-fileupload="true" data-dropzone="upload-dropzone" data-error="upload-error" data-create-url="" data-name="request[attachments][]" data-pool="request-attachments-pool" data-delete-confirm-msg="" aria-describedby="upload-error" /> */
+
+.upload-dropzone input[type=file] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* <span> <a>파일 추가</a> 또는 파일을 여기로 드래그 </span> */
+
+.upload-dropzone span {
+    display: inline-block;
+    line-height: 24px;
+    padding: 10px;
+}
+
+.upload-dropzone span {
+    color: inherit;
+}
+
+
+/* <a>파일 추가</a> */
+
+a {
+    color: rgb(89 189 181);
+    background-color: transparent;
+}
+
+.upload-dropzone a {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+/* <div id="upload-error" class="notification" style="display: none;"></div> */
+/* 클래스: notification */
+
+#upload-error {
+    margin-top: 10px;
+}
+
+.notification {
+    border: 1px solid #e35b66;
+    color: #cc3340;
+    border-radius: 4px;
+    line-height: 14px;
+    padding: 5px;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    background: #ffeded;
+    font-family: sans-serif;
+    font-size: 13px;
+    transition: height .2s;
+    width: 100%;
+}
+
+.notification {
+    background-color: #fff0f1;
+}
+
+
+/* <ul id="request-attachments-pool" class="upload-pool" data-template="upload-template"></ul> */
+/* 클래스: "upload-pool" */
+
+.upload-pool {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+/* <input class="main-footer-input" type="submit" name="commit" value="제출"> */
+
+.main-footer-input[type="submit"] {
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.15s ease-in-out;
+    color: #fff;
+    border-color: rgba(5, 5, 6, 1);
+    background-color: rgba(5, 5, 6, 1);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5em 1.5em;
+    font-size: 1.125rem;
+}
+
+.main-footer-input[type="submit"]:hover {
+    text-decoration: none;
+}
+
+.main-footer-input[type="submit"]:hover {
+    color: #fff;
+    border-color: #000;
+    background-color: #000;
+}
+
+.main-footer-input[type="submit"]:focus {
+    outline: 0;
+}
+
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+
+/* <a class="last-a" href=""> */
+
+a {
+    touch-action: manipulation;
+}
+
+a {
+    color: rgb(89 189 181);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+/* <img src="https://theme.zdassets.com/theme_assets/13612819/70b1977be0a68c0c7e333ae43321efbb048f90cd.PNG" alt="AI" style="width: 100%;" /> */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none; 
+}
+
+
+/* <button class="floating-button" onclick="zE ('messenger' , 'open');" ></button> */
+/* 클래스: floating-button */
+
+button {
+    -webkit-appearance: button;
+}
+
+button {
+    touch-action: manipulation;
+}
+
+button {
+    overflow: visible;
+}
+
+button {
+    text-transform: none;
+}
+
+.floating-button {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.floating-button {
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    right: 20px;
+    background: url('https://theme.zdassets.com/theme_assets/13612819/14c6b8380fa64abfa1df24209b5abb4bcb9fef88.png') no-repeat center/100%;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
 
 
 
@@ -1208,13 +2031,14 @@ label {
 
 /* <footer class="footer-6" id="footer"></footer> */
 /* class="footer-6" */
-@media (min-width: 360px)
-{.footer-6 {
-    margin-top: 2rem;
-    font-family: 'Pretendard Variable';
-    position: relative;
-    background-color: rgba(255, 255, 255, 0);
-}}
+
+.footer-6 {
+margin-top: 2rem;
+font-family: 'Pretendard Variable';
+position: relative;
+background-color: rgba(255, 255, 255, 0);
+}
+
 
 .footer-6{
     display: block;
@@ -1223,14 +2047,14 @@ label {
 
 /* <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="svg-shape" viewBox="0 0 1200 120"></svg> */
 /* class="svg-shape" */
-@media (min-width: 360px)
-{.svg-shape {
+
+.svg-shape {
     position: relative;
     z-index: 20;
     width: 100%;
     height: 4rem;
     fill: #fff;
-}}
+}
 
 
 /* <use xlink:href="#shape-book"></use> */
@@ -1241,16 +2065,16 @@ label {
 
 /* <div class="container-7"></div> */
 /* class="container-7" */
-@media (min-width: 360px)
-{.container-7 {
+
+.container-7 {
     padding-bottom: 3rem;
     padding-top: 3rem;
-}}
+}
 
-@media (min-width: 1200px)
-{.container-7 {
+
+.container-7 {
     max-width: 1140px;
-}}
+}
 
 .container-7 {
     margin-right: auto;
@@ -1268,8 +2092,8 @@ label {
 
 /* <div class="main-container"></div> */
 /* class="main-container" */
-@media (min-width: 360px)
-{.main-container {
+
+.main-container {
     display: flex;
     align-content: space-around;
     flex-wrap: wrap;
@@ -1277,13 +2101,13 @@ label {
     background: rgb(255, 255, 255);
     box-sizing: border-box;
     overflow: hidden;
-}}
+}
 
 
 /* <div class="containerq"></div> */
 /* class="containerq" */
-@media (min-width: 360px)
-{.containerq {
+
+.containerq {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1291,18 +2115,18 @@ label {
     flex-wrap: nowrap;
     flex-shrink: 0;
     min-width: 0;
-}}
+}
 
-@media (min-width: 360px)
-{.main-container * {
+
+.main-container * {
     box-sizing: border-box;
-}}
+}
 
 
 /* <div class="divider"></div> */
 /* class="divider" */
-@media (min-width: 360px)
-{.divider {
+
+.divider {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1310,25 +2134,24 @@ label {
     align-self: stretch;
     flex-wrap: nowrap;
     flex-shrink: 0;
-}}
-
+}
 
 /* <div class="full-divider"></div> */
 /* class="full-divider" */
-@media (min-width: 360px)
-{.full-divider {
+
+.full-divider {
     align-self: stretch;
     flex-shrink: 0;
     height: 1px;
     background: rgb(233, 236, 239);
     overflow: hidden;
-}}
+}
 
 
 /* <div class="box"></div> */
 /* class="box" */
-@media (min-width: 360px)
-{.box {
+
+.box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1338,13 +2161,13 @@ label {
     gap: 497px;
     height: 40px;
     padding: 10px 80px 10px 80px;
-}}
+}
 
 
 /* <div class="box-1"></div> */
 /* class="box-1" */
-@media (min-width: 360px)
-{.box-1 {
+
+.box-1 {
     display: flex;
     align-items: center;
     align-self: stretch;
@@ -1354,13 +2177,13 @@ label {
     flex-basis: 0;
     gap: 24px;
     min-height: 0;
-}}
+}
 
 
 /* <div class="text-gray"></div> */
 /* class="text-gray" */
-@media (min-width: 360px)
-{.text-gray {
+
+.text-gray {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1369,13 +2192,13 @@ label {
     flex-shrink: 0;
     gap: 6px;
     border-radius: 4px;
-}}
+}
 
 
 /* <span class="button-text">정책.약관</span> */
 /* class="button-text" */
-@media (min-width: 360px)
-{.button-text {
+
+.button-text {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -1386,24 +2209,24 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="system-icon"></div> */
 /* class="system-icon" */
-@media (min-width: 360px)
-{.system-icon {
+
+.system-icon {
     flex-shrink: 0;
     position: relative;
     width: 16px;
     height: 16px;
-}}
+}
 
 
 /* <div class="fill"></div> */
 /* class="fill" */
-@media (min-width: 360px)
-{.fill {
+
+.fill {
     position: absolute;
     width: 78.52%;
     height: 42.8%;
@@ -1412,13 +2235,13 @@ label {
     background: url(https://theme.zdassets.com/theme_assets/13612819/23114dc93a3c334b9123315f976d6bf70fd27978.png) no-repeat center;
     background-size: 100% 100%;
     z-index: 2;
-}}
+}
 
 
 /* <div class="text-gray-2" onclick="location.href=''"></div> */
 /* class="text-gray-2" */
-@media (min-width: 360px)
-{.text-gray-2 {
+
+.text-gray-2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1427,13 +2250,13 @@ label {
     flex-shrink: 0;
     gap: 6px;
     border-radius: 4px;
-}}
+}
 
 
 /* <span class="button-text-3"></span> */
 /* class="button-text-3" */
-@media (min-width: 360px)
-{.button-text-3 {
+
+.button-text-3 {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -1444,24 +2267,24 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="system-icon-4"></div> */
 /* class="system-icon-4" */
-@media (min-width: 360px)
-{.system-icon-4 {
+
+.system-icon-4 {
     flex-shrink: 0;
     position: relative;
     width: 16px;
     height: 16px;
-}}
+}
 
 
 /* <div class="fill-5"></div> */
 /* class="fill-5" */
-@media (min-width: 360px)
-{.fill-5 {
+
+.fill-5 {
     position: absolute;
     width: 78.52%;
     height: 42.8%;
@@ -1470,13 +2293,13 @@ label {
     background: url(https://theme.zdassets.com/theme_assets/13612819/23114dc93a3c334b9123315f976d6bf70fd27978.png) no-repeat center;
     background-size: 100% 100%;
     z-index: 3;
-}}
+}
 
 
 /* <div class="divider-6"></div> */
 /* class="divider-6" */
-@media (min-width: 360px)
-{.divider-6 {
+
+.divider-6 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1484,25 +2307,24 @@ label {
     align-self: stretch;
     flex-wrap: nowrap;
     flex-shrink: 0;
-}}
+}
 
 
 /* <div class="full-7"></div> */
 /* class="full-7" */
-@media (min-width: 360px)
-{.full-7 {
+
+.full-7 {
     align-self: stretch;
     flex-shrink: 0;
     height: 1px;
     background: rgb(233, 236, 239);
     overflow: hidden;
-}}
-
+}
 
 /* <div class="container-8"></div> */
 /* class="container-8" */
-@media (min-width: 360px)
-{.container-8 {
+
+.container-8 {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -1513,13 +2335,13 @@ label {
     min-width: 0;
     height: 261px;
     padding: 40px 80px 40px 80px;
-}}
+}
 
 
 /* <div class="box-9"></div> */
 /* class="box-9" */
-@media (min-width: 360px)
-{.box-9 {
+
+.box-9 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1529,13 +2351,13 @@ label {
     gap: 18px;
     width: 249px;
     min-height: 0;
-}}
+}
 
 
 /* <div class="box-a"></div> */
 /* class="box-a" */
-@media (min-width: 360px)
-{.box-a {
+
+.box-a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1543,13 +2365,13 @@ label {
     flex-shrink: 0;
     gap: 8px;
     width: 161px;
-}}
+}
 
 
 /* <div class="box-b"></div> */
 /* class="box-b" */
-@media (min-width: 360px)
-{.box-b {
+
+.box-b {
     display: flex;
     align-items: center;
     align-self: stretch;
@@ -1558,24 +2380,24 @@ label {
     gap: 8px;
     min-width: 0;
     height: 28px;
-}}
+}
 
 
 /* <div class="system-icon-c"></div> */
 /* class="system-icon-c" */
-@media (min-width: 360px)
-{.system-icon-c {
+
+.system-icon-c {
     flex-shrink: 0;
     position: relative;
     width: 24px;
     height: 24px;
-}}
+}
 
 
 /* <div class="fill-d"></div> */
 /* class="fill-d" */
-@media (min-width: 360px)
-{.fill-d {
+
+.fill-d {
     position: absolute;
     width: 88.35%;
     height: 88.33%;
@@ -1584,13 +2406,13 @@ label {
     background: url(https://theme.zdassets.com/theme_assets/13612819/cb0370a3af97ac243dbf91e1e65d3fa5d9e253d9.png) no-repeat center;
     background-size: 100% 100%;
     z-index: 4;
-}}
+}
 
 
 /* <span class="wadiz-help-center">와디즈 도움말센터</span> */
 /* class="wadiz-help-center" */
-@media (min-width: 360px)
-{.wadiz-help-center {
+
+.wadiz-help-center {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: auto;
@@ -1602,13 +2424,13 @@ label {
     line-height: 28px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="text-button"></div> */
 /* class="text-button" */
-@media (min-width: 360px)
-{.text-button {
+
+.text-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1616,13 +2438,13 @@ label {
     flex-shrink: 0;
     gap: 6px;
     border-radius: 4px;
-}}
+}
 
 
 /* <span class="button-text-f">채팅 상담하기</span> */
 /* class="button-text-f" */
-@media (min-width: 360px)
-{.button-text-f {
+
+.button-text-f {
     flex-shrink: 0;
     flex-basis: auto;
     height: 28px;
@@ -1634,24 +2456,24 @@ label {
     text-align: center;
     letter-spacing: -0.05px;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="system-icon-10"></div> */
 /* class="system-icon-10" */
-@media (min-width: 360px)
-{.system-icon-10 {
+
+.system-icon-10 {
     flex-shrink: 0;
     position: relative;
     width: 20px;
     height: 20px;
-}}
+}
 
 
 /* <div class="fill-11"></div> */
 /* class="fill-11" */
-@media (min-width: 360px)
-{.fill-11 {
+
+.fill-11 {
     position: absolute;
     width: 78.55%;
     height: 42.8%;
@@ -1660,13 +2482,13 @@ label {
     background: url(https://theme.zdassets.com/theme_assets/13612819/23114dc93a3c334b9123315f976d6bf70fd27978.png) no-repeat center;
     background-size: 100% 100%;
     z-index: 5;
-}}
+}
 
 
 /* <div class="text-12" onclick="location.href=''"></div> */
 /* class="text-12" */
-@media (min-width: 360px)
-{.text-12 {
+
+.text-12 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1674,13 +2496,13 @@ label {
     flex-shrink: 0;
     gap: 6px;
     border-radius: 4px;
-}}
+}
 
 
 /* <span class="button-text-13">문의 등록하기</span> */
 /* class="button-text-13" */
-@media (min-width: 360px)
-{.button-text-13 {
+
+.button-text-13 {
     flex-shrink: 0;
     flex-basis: auto;
     height: 28px;
@@ -1692,24 +2514,24 @@ label {
     text-align: center;
     letter-spacing: -0.05px;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="system-icon-14"></div> */
 /* class="system-icon-14" */
-@media (min-width: 360px)
-{.system-icon-14 {
+
+.system-icon-14 {
     flex-shrink: 0;
     position: relative;
     width: 20px;
     height: 20px;
-}}
+}
 
 
 /* <div class="fill-15"></div> */
 /* class="fill-15" */
-@media (min-width: 360px)
-{.fill-15 {
+
+.fill-15 {
     position: absolute;
     width: 78.55%;
     height: 42.8%;
@@ -1718,13 +2540,13 @@ label {
     background: url(https://theme.zdassets.com/theme_assets/13612819/23114dc93a3c334b9123315f976d6bf70fd27978.png) no-repeat center;
     background-size: 100% 100%;
     z-index: 6;
-}}
+}
 
 
 /* <div class="divider-16"></div> */
 /* class="divider-16" */
-@media (min-width: 360px)
-{.divider-16 {
+
+.divider-16 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1733,25 +2555,25 @@ label {
     flex-wrap: nowrap;
     flex-shrink: 0;
     min-width: 0;
-}}
+}
 
 
 /* <div class="full-17"></div> */
 /* class="full-17" */
-@media (min-width: 360px)
-{.full-17 {
+
+.full-17 {
     align-self: stretch;
     flex-shrink: 0;
     height: 1px;
     background: rgb(233, 236, 239);
     overflow: hidden;
-}}
+}
 
 
 /* <div class="box-18"></div> */
 /* class="box-18" */
-@media (min-width: 360px)
-{.box-18 {
+
+.box-18 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1760,13 +2582,13 @@ label {
     flex-shrink: 0;
     gap: 4px;
     min-width: 0;
-}}
+}
 
 
 /* <span class="counseling-available-time">상담 가능 시간</span> */
 /* class="counseling-available-time" */
-@media (min-width: 360px)
-{.counseling-available-time {
+
+.counseling-available-time {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -1777,13 +2599,13 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <span class="counseling-available-date">평일 오전 9시 ~ 오후 6시 (주말, 공휴일 제외)</span> */
 /* class="counseling-available-date" */
-@media (min-width: 360px)
-{.counseling-available-date {
+
+.counseling-available-date {
     align-self: stretch;
     flex-shrink: 0;
     flex-basis: auto;
@@ -1795,13 +2617,13 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="box-19"></div> */
 /* class="box-19" */
-@media (min-width: 360px)
-{.box-19 {
+
+.box-19 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1810,13 +2632,13 @@ label {
     flex-shrink: 0;
     flex-basis: 0;
     gap: 40px;
-}}
+}
 
 
 /* <div class="box-1a"></div> */
 /* class="box-1a" */
-@media (min-width: 360px)
-{.box-1a {
+
+.box-1a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1824,13 +2646,13 @@ label {
     flex-wrap: nowrap;
     flex-shrink: 0;
     gap: 16px;
-}}
+}
 
 
 /* <div class="box-1b"></div> */
 /* class="box-1b" */
-@media (min-width: 360px)
-{.box-1b {
+
+.box-1b {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1838,13 +2660,13 @@ label {
     flex-wrap: nowrap;
     flex-shrink: 0;
     gap: 8px;
-}}
+}
 
 
 /* <div class="box-1c"></div> */
 /* class="box-1c" */
-@media (min-width: 360px)
-{.box-1c {
+
+.box-1c {
     display: flex;
     align-items: flex-end;
     align-self: stretch;
@@ -1853,13 +2675,13 @@ label {
     gap: 4px;
     height: 20px;
     padding: 0 74px 0 0;
-}}
+}
 
 
 /* <span class="wadiz">와디즈(주)</span> */
 /* class="wadiz" */
-@media (min-width: 360px)
-{.wadiz {
+
+.wadiz {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -1870,38 +2692,38 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="divider-1d"></div> */
 /* class="divider-1d" */
-@media (min-width: 360px)
-{.divider-1d {
+
+.divider-1d {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
     flex-shrink: 0;
     height: 16px;
-}}
+}
 
 
 /* <div class="middle-divider"></div> */
 /* class="middle-divider" */
-@media (min-width: 360px)
-{.middle-divider {
+
+.middle-divider {
     align-self: stretch;
     flex-shrink: 0;
     width: 1px;
     min-height: 0;
     background: rgb(233, 236, 239);
     overflow: hidden;
-}}
+}
 
 
 /* <span class="representative-director">대표이사</span> */
 /* class="representative-director" */
-@media (min-width: 360px)
-{.representative-director {
+
+.representative-director {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -1912,13 +2734,13 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <span class="main-name">신혜성</span> */
 /* class="main-name" */
-@media (min-width: 360px)
-{.main-name {
+
+.main-name {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -1929,38 +2751,38 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="divider-1e"></div> */
 /* class="divider-1e" */
-@media (min-width: 360px)
-{.divider-1e {
+
+.divider-1e {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
     flex-shrink: 0;
     height: 16px;
-}}
+}
 
 
 /* <div class="middle-1f"></div> */
 /* class="middle-1f" */
-@media (min-width: 360px)
-{.middle-1f {
+
+.middle-1f {
     align-self: stretch;
     flex-shrink: 0;
     width: 1px;
     min-height: 0;
     background: rgb(233, 236, 239);
     overflow: hidden;
-}}
+}
 
 
 /* <span class="business-number">사업자등록번호 258-87-01370</span> */
 /* class="business-number" */
-@media (min-width: 360px)
-{.business-number {
+
+.business-number {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -1971,38 +2793,38 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="divider-20"></div> */
 /* class="divider-20" */
-@media (min-width: 360px)
-{.divider-20 {
+
+.divider-20 {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
     flex-shrink: 0;
     height: 16px;
-}}
+}
 
 
 /* <div class="middle-21"></div> */
 /* class="middle-21" */
-@media (min-width: 360px)
-{.middle-21 {
+
+.middle-21 {
     align-self: stretch;
     flex-shrink: 0;
     width: 1px;
     min-height: 0;
     background: rgb(233, 236, 239);
     overflow: hidden;
-}}
+}
 
 
 /* <span class="sales-number">통신판매업신고번호 2021-성남분당C-1153</span> */
 /* class="sales-number" */
-@media (min-width: 360px)
-{.sales-number {
+
+.sales-number {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -2013,38 +2835,38 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="divider-22"></div> */
 /* class="divider-22" */
-@media (min-width: 360px)
-{.divider-22 {
+
+.divider-22 {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
     flex-shrink: 0;
     height: 16px;
-}}
+}
 
 
 /* <div class="middle-23"></div> */
 /* class="middle-23" */
-@media (min-width: 360px)
-{.middle-23 {
+
+.middle-23 {
     align-self: stretch;
     flex-shrink: 0;
     width: 1px;
     min-height: 0;
     background: rgb(233, 236, 239);
     overflow: hidden;
-}}
+}
 
 
 /* <span class="span-address">경기 성남시 분당구 판교로 242 PDC A동 402호</span> */
 /* class="span-address" */
-@media (min-width: 360px)
-{.span-address {
+
+.span-address {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: auto;
@@ -2056,13 +2878,13 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="box-24"></div> */
 /* class="box-24" */
-@media (min-width: 360px)
-{.box-24 {
+
+.box-24 {
     display: flex;
     align-items: flex-end;
     align-self: stretch;
@@ -2070,13 +2892,13 @@ label {
     flex-shrink: 0;
     gap: 4px;
     height: 20px;
-}}
+}
 
 
 /* <span class="span-email-consultation">이메일 상담</span> */
 /* class="span-email-consultation" */
-@media (min-width: 360px)
-{.span-email-consultation {
+
+.span-email-consultation {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -2087,38 +2909,38 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="divider-25"></div> */
 /* class="divider-25" */
-@media (min-width: 360px)
-{.divider-25 {
+
+.divider-25 {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
     flex-shrink: 0;
     height: 16px;
-}}
+}
 
 
 /* <div class="middle-26"></div> */
 /* class="middle-26" */
-@media (min-width: 360px)
-{.middle-26 {
+
+.middle-26 {
     align-self: stretch;
     flex-shrink: 0;
     width: 1px;
     min-height: 0;
     background: rgb(233, 236, 239);
     overflow: hidden;
-}}
+}
 
 
 /* <span class="span-email">info@wadiz.kr</span> */
 /* class="span-email" */
-@media (min-width: 360px)
-{.span-email {
+
+.span-email {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -2129,38 +2951,38 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="divider-27"></div> */
 /* class="divider-27" */
-@media (min-width: 360px)
-{.divider-27 {
+
+.divider-27 {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
     flex-shrink: 0;
     height: 16px;
-}}
+}
 
 
 /* <div class="middle-28"></div> */
 /* class="middle-28" */
-@media (min-width: 360px)
-{.middle-28 {
+
+.middle-28 {
     align-self: stretch;
     flex-shrink: 0;
     width: 1px;
     min-height: 0;
     background: rgb(233, 236, 239);
     overflow: hidden;
-}}
+}
 
 
 /* <span class="wired-counseling">유선 상담 1661-9056</span> */
 /* class="wired-counseling" */
-@media (min-width: 360px)
-{.wired-counseling {
+
+.wired-counseling {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -2171,13 +2993,13 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <span class="wadiz-co-ltd">ⓒ wadiz Co., Ltd.</span> */
 /* class="wadiz-co-ltd" */
-@media (min-width: 360px)
-{.wadiz-co-ltd {
+
+.wadiz-co-ltd {
     flex-shrink: 0;
     flex-basis: auto;
     height: 20px;
@@ -2188,13 +3010,13 @@ label {
     line-height: 20px;
     text-align: center;
     word-break: break-word;
-}}
+}
 
 
 /* <span class="wadiz-disclaimer"></span> */
 /* class="wadiz-disclaimer" */
-@media (min-width: 360px)
-{.wadiz-disclaimer {
+
+.wadiz-disclaimer {
     align-self: stretch;
     flex-shrink: 0;
     height: 40px;
@@ -2208,13 +3030,13 @@ label {
     white-space: nowrap;
     overflow: hidden;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="box-29"></div> */
 /* class="box-29" */
-@media (min-width: 360px)
-{.box-29 {
+
+.box-29 {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -2222,13 +3044,13 @@ label {
     gap: 32px;
     width: 194px;
     height: 24px;
-}}
+}
 
 
 /* <div class="box-2a" onclick="location.href=''"></div> */
 /* class="box-2a" */
-@media (min-width: 360px)
-{.box-2a {
+
+.box-2a {
     display: flex;
     align-items: center;
     align-self: stretch;
@@ -2239,25 +3061,25 @@ label {
     gap: 8px;
     min-width: 0;
     min-height: 0;
-}}
+}
 
 
 /* <div class="artwork-logo-1"></div> */
 /* class="artwork-logo-1" */
-@media (min-width: 360px)
-{.artwork-logo-1 {
+
+.artwork-logo-1 {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
     background: url(https://theme.zdassets.com/theme_assets/13612819/cc34cc7bfae1dab45c2a08e3c5167fce24a7009a.png) no-repeat center;
     background-size: cover;
-}}
+}
 
 
 /* <span class="android-app">Android앱</span> */
 /* class="android-app" */
-@media (min-width: 360px)
-{.android-app {
+
+.android-app {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: auto;
@@ -2269,13 +3091,13 @@ label {
     line-height: 20px;
     text-align: left;
     word-break: break-word;
-}}
+}
 
 
 /* <div class="box-2b"></div> */
 /* class="box-2b" */
-@media (min-width: 360px)
-{.box-2b {
+
+.box-2b {
     display: flex;
     align-items: center;
     align-self: stretch;
@@ -2284,25 +3106,25 @@ label {
     gap: 8px;
     width: 67px;
     min-height: 0;
-}}
+}
 
 
 /* <div class="artwork-logo-2" onclick="location.href=''"></div> */
 /* class="artwork-logo-2" */
-@media (min-width: 360px)
-{.artwork-logo-2 {
+
+.artwork-logo-2 {
     flex-shrink: 0;
     width: 24px;
     height: 24px;
     background: url(https://theme.zdassets.com/theme_assets/13612819/0aa3f86bb1b2e28aaf28ea469a3e7a0cc680eb2d.png) no-repeat center;
     background-size: cover;
-}}
+}
 
 
 /* <span class="ios-app">iOS앱</span> */
 /* class="ios-app" */
-@media (min-width: 360px)
-{.ios-app {
+
+.ios-app {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: auto;
@@ -2315,6 +3137,32 @@ label {
     line-height: 20px;
     text-align: left;
     word-break: break-word;
-}}
+}
 
+
+/* <div class="nesty-panel" id="_mn1kxwrhu" style="display: none; top: 325.695px; left: 319px; width: 785px;"></div> */
+/* 자바스크립트 */
+
+.nesty-panel {
+    height: auto;
+    max-height: 150px;
+}
+
+.nesty-panel {
+    background: #fff;
+    border: 1px solid #aaa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    min-width: 100px;
+    position: absolute !important;
+    z-index: 999;
+}
+
+.nesty-panel, .nesty-panel ul {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.nesty-input, .nesty-panel {
+    box-sizing: border-box;
+}
 

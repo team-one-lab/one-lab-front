@@ -200,7 +200,7 @@ html {
 }
 
 /* 전체적인 body before */
-@media (min-width: 360px) {
+
 &:before {
     transform: translateX(-15px);
     opacity: 0;
@@ -210,10 +210,9 @@ html {
     top: -25%;
 }
 
-}
 
 /* 전체적인 body after */
-@media (min-width: 360px) {
+
 &:after {
     transform: none;
     content: '\27F6';
@@ -221,7 +220,7 @@ html {
     right: 0;
     top: -25%;
 }
-}
+
 
 
 /* ##### 전체body 클래스 설정 ##### */
@@ -241,13 +240,13 @@ body{
 
 /* <div class="layout-column" x-data="Widgets.mobileMenu"></div> */
 /* 클래스 layout-column */
-@media (min-width: 360px) {
+
 .layout-column{
     flex-direction: column;
     flex: 1;
     display: flex !important;
 }
-}
+
 
 .layout-column{
     position: relative;
@@ -261,7 +260,7 @@ body{
 
 /* <header class="header_unstuck" x-data="Widgets.header({ isFixed: false, isSticky: true })" :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"></header> */
 /* class="header_unstuck" */
-@media (min-width: 360) {
+
 .header_unstuck{
     transition: 0.3s;
     border-bottom: 1px solid #e2e8f0;
@@ -274,7 +273,7 @@ body{
     font-weight: bold;
     font-family: 'Pretendard Variable';
 }
-}
+
 
 .header_unstuck{
     transition: 0.3s;
@@ -293,7 +292,7 @@ body{
 
 /* <nav class="navbar_full"></nav> */
 /* class="navbar_full" */
-@media (min-width: 360px) {
+
 .navbar_full{
     height: 100%;
     display: flex;
@@ -304,12 +303,9 @@ body{
     font-weight: bold;
     font-family: 'Pretendard Variable';
 }
-}
 
-@media (min-width: 1200px) {
 .navbar_full{
     max-width: 1140px;
-}
 }
 
 .navbar_full{
@@ -322,14 +318,14 @@ body{
 
 /* <a href="" class="navbar-auto"> */
 /* class="navbar-auto" */
-@media (min-width: 360px) {
+
 .navbar-auto{
     color: #212121;
     margin-right: auto;
     display: inline-flex;
     align-items: center;
 }
-}
+
 
 .navbar-auto {
     color: rgb(89 189 181);
@@ -348,14 +344,15 @@ body{
 
 /* <img class="block-fluid" id="logo" src="https://theme.zdassets.com/theme_assets/13612819/a2bda3d577fa2698038267539c34a696a70da97c.png" alt="도움말 센터 헬프 센터 홈 페이지"> */
 /* class="block-fluid" */
-@media (min-width: 360px) {
+
 #logo {
     height: 24px;
 }
+
 .block-fluid{
     display: block !important;
 }
-}
+
 
 .block-fluid {
     max-width: 100%;
@@ -369,7 +366,7 @@ img {
 
 /* <button class="navbar-hidden" x-ref="toggle" :aria-expanded="isOpen && 'true'" @click="toggle" @keydown.escape="toggle" aria-expanded="false"></button> */
 /* class="navbar-hidden" */
-@media (min-width: 360px) {
+
 .navbar-hidden{
     color: #212121;
     margin-left: 0.5rem;
@@ -385,14 +382,9 @@ img {
     order: 1;
     z-index: 100;
 }
-}
 
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .navbar-hidden{
-            display: none !important;
-        }
-    }
+.navbar-hidden{
+    display: none !important;
 }
 
 button{
@@ -408,7 +400,7 @@ button{
 
 /* <span></span> */
 /* 클래스 navbar-hidden > 태그 span */
-@media (min-width: 360px) {
+
 .navbar-hidden span {
     background-color: currentColor;
     height: 2px;
@@ -419,33 +411,33 @@ button{
     position: relative;
     pointer-events: none;
 }
-}
+
 
 /* span 태그에 적용할 before 에만 들어가는 요소 */
-@media (min-width: 360px) {
+
 .navbar-hidden span::before{
     top: -7px;
 }
-}
+
 
 /* span 태그에 적용할 after 에만 들어가는 요소 */
-@media (min-width: 360px) {
+
 .navbar-hidden span::after{
     top: 7px;
 }
-}
+
 
 /* span 태그에 적용할 before, after 동시에 들어가는 요소 */
-@media (min-width: 360px) {
+
 .navbar-hidden span::before, .navbar-hidden::after {
     position: absolute;
     content: "";
     left: 0;
 }
-}
+
 
 /* span 태그와 span 태그의 before, span 태그의 after 동시에 들어가는 요소 */
-@media (min-width: 360px) {
+
 .navbar-hidden span, .navbar-hidden span::before, .navbar-hidden::after {
     background-color: currentColor;
     height: 2px;
@@ -453,11 +445,11 @@ button{
     outline: 1px solid transparent;
     transition: background-color 0.15s, transform 0.15s;
 }
-}
+
 
 /* <span class="sr-only">탐색 메뉴 토글</span> */
 /* class="sr-only" */
-@media (min-width: 360px) {
+
 .sr-only{
     position: absolute;
     width: 1px;
@@ -469,7 +461,7 @@ button{
     clip-path: inset(50%);
     border: 0;
 }
-}
+
 
 .sr-only{
     border: 0;
@@ -485,15 +477,13 @@ button{
 
 /* <div class="backdrop-hidden" x-show="isOpen" @click="close" x-transition:enter="x-transition-fast" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="x-transition-fast" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none"></div> */
 /* class="backdrop-hidden" */
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .backdrop-hidden{
-            display: none !important;
-        }
-    }
+
+.backdrop-hidden{
+    display: none !important;
 }
 
-@media (min-width: 360px) {
+
+
 .backdrop-hidden{
     position: fixed;
     top: 0;
@@ -504,38 +494,33 @@ button{
     background-color: rgba(0, 0, 0, 0.25);
     z-index: 98;
 }
-}
 
 
 /* <div class="nav-end" x-show="isOpen" :class="{ 'text-header': isOpen }" x-transition:enter="x-transition-fast" x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="x-transition-fast" x-transition:leave-start="translate-x-0 text-header" x-transition:leave-end="translate-x-full text-header" style="display: none"> */
 /* class="nav-end" */
-@media (min-width: 360px) {
+
 .nav-end{
     z-index: 99;
     flex: 1;
     margin-bottom: 0;
     list-style: none;
 }
-}
 
-@media (min-width: 360px) {
-    @media (min-width: 992px) {
-        .nav-end{
-            justify-content: flex-end;
-            align-items: center;
-            display: flex !important;
-            font-size: 0.9375rem;
-            position: revert;
-            padding: 0;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: auto;
-            text-align: left;
-            max-width: none;
-            background-color: transparent;
-            box-shadow: none;
-        }
-    }
+
+.nav-end{
+    justify-content: flex-end;
+    align-items: center;
+    display: flex !important;
+    font-size: 0.9375rem;
+    position: revert;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    text-align: left;
+    max-width: none;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 
