@@ -364,7 +364,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     cursor: pointer;
     height: 40px;
     text-align: left;
@@ -615,4 +615,8 @@ footer {
 
 footer.inner-utils .FooterContainer_container {
     padding-bottom: 0;
+}
+
+.active {
+    display:block;
 }

@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/one-lab-soyoung/favicon/favicon-32x32.png">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="/staticfiles/css/share-app-soyoung/share-list-app.css">
+    <title>자료 공유 목록</title>
+</head>
+<body class="show-gnb" style="overflow: auto;">
+    <div id="page-container">
+        <main id="main-app">
+            <div class="web-header">
+                <div class="web-header-mobile">
+                    <header class="header-wrapper">
+                        <div class="header-container" style="display: flex;">
+                            <ul class="mobile-container">
+                                <li class="mobile-item">
+                                    <!-- a태그 클릭시 메인페이지 이동 -->
+                                    <a href="" class="mobile-link">
+                                        <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="icon-svg home-svg" aria-hidden="true" style="width: 28px; height: 28px;">
+                                            <path d="M38.32 26.87v-13h-1.88a1.73 1.73 0 0 0-1.73 1.59A6.82 6.82 0 0 0 23.26 20a6.67 6.67 0 0 0 2.45 5.61 8 8 0 0 0 9.74.25 1.56 1.56 0 0 0 1.47 1l1.4.01zm-7.49-2.39a3.88 3.88 0 0 1-3.72-4 3.88 3.88 0 0 1 3.72-4 3.88 3.88 0 0 1 3.72 4 3.88 3.88 0 0 1-3.72 4zM19.77 13.86L17.14 22l-2.65-8.1H11.9a1.73 1.73 0 0 0-1.65 1.2L8 22l-2.63-8.1H1.68L6 26.87h3.7l2.87-8.35 2.86 8.35h3.7l4.33-13-3.69-.01z"></path>
+                                        </svg>
+                                        <span class="mobile-text">홈</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-item">
+                                    <!-- a태그 클릭시 커뮤니티 페이지 이동 -->
+                                    <a href="" class="mobile-link">
+                                        <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="icon-svg community-svg" aria-hidden="true" style="width: 35px; height: 35px;">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21 5.5a4.502 4.502 0 0 1-2.979 4.236l1.343 6.267a3.5 3.5 0 1 1-3.345 3.127l-4.537-1.297a5.5 5.5 0 1 1-1.878-6.874l3.192-2.903A4.5 4.5 0 1 1 21 5.5zm-3.233 3.048a3.301 3.301 0 1 0-2.536-6.096 3.301 3.301 0 0 0 2.536 6.096zM16.5 10a4.482 4.482 0 0 1-2.896-1.056l-3.084 2.803a5.517 5.517 0 0 1 1.35 4.95l4.479 1.279a3.513 3.513 0 0 1 1.842-1.723l-1.343-6.266A4.46 4.46 0 0 1 16.5 10zm-10 1.2a4.28 4.28 0 0 1 3.132 1.354 4.285 4.285 0 0 1 1.08 3.811 4.27 4.27 0 0 1-.403 1.133 4.317 4.317 0 0 1-2.067 1.934A4.3 4.3 0 1 1 6.5 11.2zm13.895 10.42a2.3 2.3 0 1 0-.895.18 2.3 2.3 0 0 0 .895-.18z"></path>
+                                        </svg>
+                                        <span class="mobile-text">커뮤니티</span>
+                                    </a>
+                                </li>
+                                <!-- 카테고리 리스트 나오기 -->
+                                <li class="mobile-item">
+                                    <div class="mobile-link">
+                                        <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="icon-svg category-svg" aria-hidden="true" style="width: 30px; height: 30px;">
+                                            <path d="M28.8 8.8H3.2V7.2h25.6zm0 6.4H3.2v1.6h25.6zm0 8H3.2v1.6h25.6z"></path>
+                                        </svg>
+                                        <span class="mobile-text">카테고리</span>
+                                    </div>
+                                </li>
+                                <li class="mobile-item">
+                                    <!-- a태그 클릭시 좋아요 페이지 이동 -->
+                                    <a href="" class="mobile-link">
+                                        <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="icon-svg like-svg" aria-hidden="true" style="width: 28px; height: 28px;">
+                                            <path d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085zm-5.28 21.84l-.88.8-.88-.8h-.08C8.4 19.76 4 15.84 4 11.44l-.001-.082A5.76 5.76 0 0 1 9.928 5.6a6.542 6.542 0 0 1 4.865 2.232l.486.567h1.52l.48-.56a6.548 6.548 0 0 1 4.877-2.24l.084-.001a5.76 5.76 0 0 1 5.76 5.76l-.001.085c0 4.396-4.4 8.316-11.12 14.396z"></path>
+                                        </svg>
+                                        <span class="mobile-text">좋아요</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-item">
+                                    <!-- a태그 클릭시 마이 페이지 이동 -->
+                                    <a href="" class="mobile-link">
+                                        <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="icon-svg mypage-svg" aria-hidden="true" style="width: 23px; height: 23px;">
+                                            <path d="M20.27 22.3a9.43 9.43 0 1 0-9.42-9.42 9.43 9.43 0 0 0 9.42 9.42zm0-16.76a7.34 7.34 0 1 1-7.34 7.34 7.34 7.34 0 0 1 7.34-7.34zm0 20.05c-6.52 0-15.19 1.09-15.19 10.57h2.08c0-5.95 3.92-8.49 13.11-8.49s13.11 2.54 13.11 8.49h2.08c0-9.48-8.67-10.57-15.19-10.57z"></path>
+                                        </svg>
+                                        <span class="mobile-text">마이페이지</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="header-mobile-button back">
+                                <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg back-arrow-svg" aria-hidden="true" style="width: 24px; height: 24px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.076 2.576l.848.848L8.35 12l8.575 8.576-.848.848L6.65 12l9.425-9.424z"></path></svg>
+                            </button>
+                            <a href="" class="header-mobile-button home">
+                                <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="icon-svg go-home-svg" aria-hidden="true" style="width: 24px; height: 24px;">
+                                    <path d="M13.38 36.13h2.4v-13.9h8.44v13.9h2.4V19.84H13.38v16.29z"></path>
+                                    <path d="M20 3.41L3.8 14.49v21.64h2.4V15.75L20 6.32l13.8 9.43v20.38h2.4V14.49L20 3.41z"></path>
+                                    <path fill="none" d="M0 0h40v40H0z"></path>
+                                </svg>
+                            </a>
+                            <button class="header-mobile-button search">
+                                <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="icon-svg search-svg" aria-hidden="true" style="width: 24px; height: 24px;">
+                                    <path fill="none" d="M0 0h40v40H0z"></path>
+                                    <path d="M29.2 27.91a14.38 14.38 0 1 0-1.42 1.4l7.16 7.15.07.08 1.41-1.41zM18.45 6a12.36 12.36 0 0 1 8.35 3.23 12.24 12.24 0 0 1 4 8.59A12.39 12.39 0 1 1 17.88 6z"></path>
+                                </svg>
+                            </button>
+                            <div class="title-field-container">
+                                <p class="title-field-title">자료 목록</p>
+                            </div>
+                            <!-- div.preview-overlay -->
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <!-- 헤더 제외 전체 감싸는 div -->
+            <div class="main-wrapper-content">
+                <div class="main-root-container">
+                    <div class="main-category-margin"></div>
+                    <!-- 리스트 탭 -->
+                    <div class="category-tab-container" style="top: 56px; margin-bottom: 8px;">
+                        <div class="category-contents">
+                            <div class="tabs-mobile-root">
+                                <div class="tabs-mobile-wrapper">
+                                    <ul class="mobile-tabs-list hide-scrollbar" style="gap: 4px;">
+                                        <li>
+                                            <button class="image-tab active">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('http://d1ruwxjthziwe4.cloudfront.net/category/2024:01:03:6dc5a2a5-f243-4d36-a44a-7580b939f3a9.png');"></div>
+                                                        <div class="tab-thumbnail" style="background-image: url('http://d1ruwxjthziwe4.cloudfront.net/category/2024:01:03:3ab00b2f-5acb-46ce-9bcf-d61feb65a33e.png');"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="전체 학과">전체 학과</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/economics-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/economics-a.png');"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="경영/경제">경영/경제</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/computer-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/computer-a.png');"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="컴퓨터공학">컴퓨터공학</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/mechanical-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/mechanical-a.png');"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="전기/전자">전기/전자</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/architectural-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/architectural-a.png');"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="건축/토목">건축/토목</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/industry-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/industry-a.png');"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="재료/산업">재료/산업</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/social-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/social-a.png')"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="사회/과학">사회/과학</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/nursing-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/nursing-a.png');"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="간호/보건">간호/보건</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/medical-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/medical-a.png');"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="의예/의학">의예/의학</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/chemical-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/chemical-a.png')"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="화공/에너지">화공/에너지</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/math-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/math-a.png')"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="수학/물리">수학/물리</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/language-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/language-a.png')"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="언어/문학">언어/문학</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/humanities-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/humanities-a.png')"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="인문학">인문학</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/art-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/art-a.png')"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="미술/예술">미술/예술</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/life-science-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/life-science-a.png')"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="생활과학">생활과학</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="image-tab">
+                                                <div class="image-thumbnail-container">
+                                                    <div class="tab-thumbnail-placeholder">
+                                                        <div class="tab-thumbnail" style="background-image: url('/templates/html/share-app-soyoung/images/music-na.png');"></div>
+                                                        <div class="tab-thumbnail img-hide" style="background-image: url('/templates/html/share-app-soyoung/images/music-a.png')"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-label-container">
+                                                    <span class="tab-label-text" data-text="음악/영화">음악/영화</span>
+                                                </div>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-category-margin"></div>
+                    <div class="main-contents" style="z-index: 9998;">
+                        <div class="main-category">
+                            <div>
+                                <div class="order-select-container">
+                                    <div class="order-select-content">
+                                        <span>인기순</span>
+                                        <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="icon-svg expand-svg" style="width: 13px; height: 13px" aria-hidden="true">
+                                            <path d="M16 22.4L5.6 12l1.12-1.12L16 20.16l9.28-9.28L26.4 12 16 22.4z"></path>
+                                        </svg>
+                                    </div>
+                                    <select name="" id="" class="select-box">
+                                        <option value="popular">인기순</option>
+                                        <option value="recent">최신순</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 리스트 목록 -->
+                        <div class="card-list-container">
+                            <div class="table-layout-container" style="grid-template-columns: repeat(1, calc(100% + 0px)); gap: 16px 24px;">
+                                <!-- 리스트 1개 -->
+                                <div class="card-container" style="height: 108px;">
+                                    <a href="" class="card-content">
+                                        <div class="card-thumbnail-box">
+                                            <div class="card-thumbnail-wrap">
+                                                <div class="thumbnail-image-container">
+                                                    <img src="https://cdn1.wadiz.kr/images/20240213/1707816787028.jpg/wadiz/optimize" alt="" class="thumbnail-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-info-box">
+                                            <div class="card-info">
+                                                <strong class="card-title">
+                                                    스마트 무선 CCTV | 90일 장마에도 끄떡없이 철통감시!
+                                                </strong>
+                                                <p class="card-user-name">유피코리아</p>
+                                                <div class="price-info-wrapper">
+                                                    <span>78,400 포인트</span>
+                                                </div>
+                                                <div class="badge-group-wrapper">
+                                                    <div class="rating-score-wrapper">
+                                                        <div class="rating-score-container">
+                                                            <div class="rating-score-icon"></div>
+                                                            <span class="rating-score">4.6</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="card-action-wrapper">
+                                        <button type="button" class="like-button">
+                                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="icon-svg like-button-svg" aria-hidden="true">
+                                                <path d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- 리스트 1개 -->
+                                <div class="card-container" style="height: 108px;">
+                                    <a href="" class="card-content">
+                                        <div class="card-thumbnail-box">
+                                            <div class="card-thumbnail-wrap">
+                                                <div class="thumbnail-image-container">
+                                                    <img src="https://cdn1.wadiz.kr/images/20240213/1707816787028.jpg/wadiz/optimize" alt="" class="thumbnail-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-info-box">
+                                            <div class="card-info">
+                                                <strong class="card-title">
+                                                    스마트 무선 CCTV | 90일 장마에도 끄떡없이 철통감시!
+                                                </strong>
+                                                <p class="card-user-name">유피코리아</p>
+                                                <div class="price-info-wrapper">
+                                                    <span>78,400 포인트</span>
+                                                </div>
+                                                <div class="badge-group-wrapper">
+                                                    <div class="rating-score-wrapper">
+                                                        <div class="rating-score-container">
+                                                            <div class="rating-score-icon"></div>
+                                                            <span class="rating-score">4.6</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="card-action-wrapper">
+                                        <button type="button" class="like-button">
+                                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="icon-svg like-button-svg" aria-hidden="true">
+                                                <path d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div style="height: 1px;"></div>
+                        </div>
+                    </div>
+                </div>
+            <div style="height: 160px;"></div>
+            </div>
+            <div class="floating-buttons-container">
+                <button type="button" class="float-top-btn">
+                    <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="go-up-arrow-svg" aria-hidden="true">
+                        <path d="M33 30l-1.4 1.4L20 19.8 8.4 31.4 7 30l13-13zm1-21H6v2h28z"></path>
+                    </svg>
+                </button>
+            </div>
+        </main>
+    </div>
+    <div style="position: absolute; opacity: 0;"></div>
+    <div class="bottom-modal-portal">
+        <div class="bottom-modal-overlay">
+            <div class="bottom-modal-content">
+                <div class="bottom-modal-container">
+                    <div class="bottom-modal-header">
+                        <div class="close-icon-root">
+                            <button class="close-icon-wrapper">
+                                <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="icon-svg close-svg" aria-hidden="true">
+                                    <path d="M33.4 8L32 6.6l-12 12-12-12L6.6 8l12 12-12 12L8 33.4l12-12 12 12 1.4-1.4-12-12 12-12z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="modal-header-title">카테고리</p>
+                    </div>
+                    <div class="select-modal-container">
+                        <div class="selector-container">
+                            <ul class="selector-left">
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/economics-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">경영/경제</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <!-- 2번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/computer-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">컴퓨터공학</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 3번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/mechanical-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">전기/전자</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 4번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/architectural-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">건축/토목</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 5번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/industry-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">재료/산업</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 6번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/social-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">사회/과학</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 7번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/nursing-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">간호/보건</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- 8번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/medical-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">의예/의학</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 9번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/math-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">수학/물리</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 10번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/language-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">언어/문학</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 11번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/language-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">인문학</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 12번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/art-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">미술/예술</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 13번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/life-science-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">생활과학</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 14번째 대카 -->
+                                <li class="list-container">
+                                    <div class="list-item" style="height: 48px; padding: 0px 24px;">
+                                        <div class="list-content">
+                                            <div class="list-image-wrap">
+                                                <img class="list-img-icon" src="/templates/html/share-app-soyoung/images/music-a.png" alt="">
+                                            </div>
+                                            <span class="list-label">음악/영화</span>
+                                        </div>
+                                        <div class="list-expand-button">
+                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="icon-svg expand-svg" aria-hidden="true" style="width: 16px; height: 16px;">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- 소카 -->
+                                    <ul class="list-items">
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-list-container">
+                                            <div class="sub-list-item" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-list-content">
+                                                    <div class="sub-list-img-wrap"></div>
+                                                    <span class="sub-list-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/staticfiles/js/share-app-soyoung/share-list-app.js"></script>
+</html>

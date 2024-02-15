@@ -56,12 +56,12 @@ button {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 1097px){
-    .mainWrapper-content {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+
+.mainWrapper-content {
+    padding-top: 0;
+    padding-bottom: 0;
 }
+
 
 div.main-container {
     margin: 0 auto;
@@ -122,16 +122,16 @@ div.main-list-filter-container {
     box-sizing: content-box;
 }
 
-@media screen and (min-width: 1097px) {
-    div.main-list-filter-container>ul.filter-list-wrapper {
-        display: flex;
-        position: relative;
-        flex-direction: row;
-        align-items: flex-start;
-        margin: 0;
-        gap: 12px;
-    }
+
+div.main-list-filter-container>ul.filter-list-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    gap: 12px;
 }
+
 
 ul.filter-list-wrapper button {
     border-radius: 8px;
@@ -277,22 +277,21 @@ div.banner-text>strong {
     white-space: nowrap;
 }
 
-@media screen and (min-width: 1097px) {
-    div.search-result-card-container {
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
-        gap: 40px 60px;
-        display: flex;
-    }
+
+div.search-result-card-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px 60px;
+    display: flex;
 }
 
-@media screen and (min-width: 1097px) {
-    div.table-layout-container {
-        width: 100%;
-        display: grid;
-    }
+
+div.table-layout-container {
+    width: 100%;
+    display: grid;
 }
+
 
 div.one-lab-list-card {
     position: relative;

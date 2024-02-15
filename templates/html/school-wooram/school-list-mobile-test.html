@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="/staticfiles/css/school-wooram/school-list-mobile-test.css.css"
+        />
+        <script src="/staticfiles/js/school-wooram/school-list-mobile-test.js"></script>
+        <link
+            rel="stylesheet"
+            as="style"
+            crossorigin
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+        />
+        <title>Document</title>
+    </head>
+    <body class="snow-gnb">
+        <div id="page-container">
+            <main id="main-app">
+                <!-- 헤더 -->
+                <div class="web-header"></div>
+
+                <!-- 메인 -->
+                <div class="MainWrapper_content">
+                    <div>
+                        <!-- 헤더 쪽 -->
+                        <div class="web-header">
+                            <div class="MobileTitleBar_container">
+                                <div class="MobileTitleBar_buttonWrap">
+                                    <button
+                                        class="MobileTitleBar_button Button_button"
+                                    >
+                                        <span>
+                                            <span class="Button_children">
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 24px;
+                                                        height: 24px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M16.076 2.576l.848.848L8.35 12l8.575 8.576-.848.848L6.65 12l9.425-9.424z"
+                                                    ></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <button
+                                        class="modal_btnss" 
+                                    ><!-----원래 클래스명 : Button_button Button_text modal_btnss---->
+                                        <span>
+                                            <span class="Button_children">
+                                                <svg
+                                                    viewBox="0 0 32 32"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 24px;
+                                                        height: 24px;
+                                                    "
+                                                >
+                                                    <path
+                                                        d="M28.8 8.8H3.2V7.2h25.6zm0 6.4H3.2v1.6h25.6zm0 8H3.2v1.6h25.6z"
+                                                    ></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </div>
+
+                                <!-- 검색창 쪽 -->
+                                <div class="MobileTitleBar_content">
+                                    <form>
+                                        <div class="SearchController_container">
+                                            <div class="SearchTag_curatedTag">
+                                                <span>DIY</span>
+                                                <button type="button">
+                                                    <svg
+                                                        viewBox="0 0 40 40"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon_icon"
+                                                        style="
+                                                            width: 12px;
+                                                            height: 12px;
+                                                        "
+                                                    >
+                                                        <path
+                                                            d="M33.4 8L32 6.6l-12 12-12-12L6.6 8l12 12-12 12L8 33.4l12-12 12 12 1.4-1.4-12-12 12-12z"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div
+                                                class="SearchController_keyword"
+                                            >
+                                                <input
+                                                    type="search"
+                                                    placeholder
+                                                    value
+                                                />
+                                            </div>
+                                            <button
+                                                type="submit"
+                                                class="SearchController_searchIcon"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 40 40"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 24px;
+                                                        height: 24px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill="none"
+                                                        d="M0 0h40v40H0z"
+                                                    ></path>
+                                                    <path
+                                                        d="M29.2 27.91a14.38 14.38 0 1 0-1.42 1.4l7.16 7.15.07.08 1.41-1.41zM18.45 6a12.36 12.36 0 0 1 8.35 3.23 12.24 12.24 0 0 1 4 8.59A12.39 12.39 0 1 1 17.88 6z"
+                                                    ></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 네비게이션 쪽 -->
+                        <div class="MobileSearchAppResult_tabMenu">
+                            <ul class="SearchResultTabs_tabContainer">
+                                <button
+                                    type="button"
+                                    class="Tab_tab Tab_first Tab_active Tab_sm"
+                                >
+                                    <span>전체</span>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="Tab_tab Tab_first Tab_sm"
+                                >
+                                    <span>펀딩</span>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="Tab_tab Tab_first Tab_sm"
+                                >
+                                    <span>오픈예정</span>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="Tab_tab Tab_first Tab_sm"
+                                >
+                                    <span>스토어</span>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="Tab_tab Tab_first Tab_sm"
+                                >
+                                    <span>프리오더</span>
+                                </button>
+                            </ul>
+                        </div>
+
+                        <!-- 목록쪽 -->
+                        <div class="MobileSearchAppResult_resultContainer">
+                            <div class="SearchResult_container">
+                                <div class="SearchResult_cardContainer">
+                                    <div
+                                        class="TableLayout_container"
+                                        style="
+                                            grid-template-columns: repeat(
+                                                1,
+                                                calc(100% + 0px)
+                                            );
+                                            gap: 16px 24px;
+                                        "
+                                    >
+                                        <div
+                                            class="HomeHorizontalCard_container"
+                                            style="height: 108px"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="HomeHorizontalCard_content"
+                                            >
+                                                <!-- 왼쪽 그림 쪽 -->
+                                                <div
+                                                    class="HomeHorizontalCard_thumbnailBox"
+                                                >
+                                                    <div
+                                                        class="HomeHorizontalCard_thumbnailWrap"
+                                                    >
+                                                        <div
+                                                            class="ThumbnailImage_container"
+                                                        >
+                                                            <img
+                                                                class="ThumbnailImage_img"
+                                                                src="https://cdn2.wadiz.kr/2022/03/21/68977b9f-c10d-4021-ae85-c76af85d27ae.jpg/wadiz/resize/400/format/jpg/quality/85/"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="WadizOnlyWrapper_container"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 오른쪽 글씨쪽 -->
+                                                <div
+                                                    class="HomeHorizontalCard_infoBox"
+                                                >
+                                                    <div
+                                                        class="HomeHorizontalCard_info"
+                                                    >
+                                                        <strong
+                                                            class="Title_title"
+                                                            >글로벌 프린터 명가
+                                                            HP 개발, 고성능
+                                                            파인큐브
+                                                            핸드프린터</strong
+                                                        >
+                                                        <p
+                                                            class="HomeHorizontalCard_makerNameWrapper"
+                                                        >
+                                                            주식회사 라온
+                                                        </p>
+                                                        <div
+                                                            class="PriceInfoWrapper_container"
+                                                        >
+                                                            <span
+                                                                >273,000원</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="HomeHorizontalCard_badgeGroupWrapper"
+                                                        >
+                                                            <div
+                                                                class="StoreRatingWrapper_ratingWrapper"
+                                                            >
+                                                                <div
+                                                                    class="RatingScore_container"
+                                                                >
+                                                                    <div
+                                                                        class="RatingScore_icon"
+                                                                    ></div>
+                                                                    <span
+                                                                        class="RatingScore_score"
+                                                                        >4.5</span
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="StoreBadgeGroup_container"
+                                                            >
+                                                                <div
+                                                                    class="StoreBadgeGroup_badges"
+                                                                >
+                                                                    <span
+                                                                        class="LabelBadge_badge"
+                                                                        >무료배송</span
+                                                                    >
+                                                                    <span
+                                                                        class="LabelBadge_badge"
+                                                                    >
+                                                                        <i
+                                                                            class="StoreBadgeGroup_icon"
+                                                                        ></i>
+                                                                        와배송
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="CardSpinner_container"
+                                                >
+                                                    <div
+                                                        class="CardSpinner_loader"
+                                                        style="
+                                                            width: 32px;
+                                                            height: 32px;
+                                                        "
+                                                    >
+                                                        <svg
+                                                            viewBox="25 25 50 50"
+                                                        >
+                                                            <g
+                                                                class="Loader_circular"
+                                                            >
+                                                                <circle
+                                                                    class="Loader_path"
+                                                                    cx="50"
+                                                                    cy="50"
+                                                                    r="20"
+                                                                    fill="none"
+                                                                    stroke-width="4"
+                                                                    stroke-miterlimit="10"
+                                                                ></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <!-- 하트 버튼 쪽 -->
+                                            <div
+                                                class="HomeHorizontalCard_actionWrapper"
+                                            >
+                                                <button
+                                                    type="button"
+                                                    class="WishButton_button WishButton_smallArea"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 32 32"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon_icon"
+                                                    >
+                                                        <path
+                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="HomeHorizontalCard_container"
+                                            style="height: 108px"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="HomeHorizontalCard_content"
+                                            >
+                                                <!-- 왼쪽 그림 쪽 -->
+                                                <div
+                                                    class="HomeHorizontalCard_thumbnailBox"
+                                                >
+                                                    <div
+                                                        class="HomeHorizontalCard_thumbnailWrap"
+                                                    >
+                                                        <div
+                                                            class="ThumbnailImage_container"
+                                                        >
+                                                            <img
+                                                                class="ThumbnailImage_img"
+                                                                src="https://cdn2.wadiz.kr/2022/03/21/68977b9f-c10d-4021-ae85-c76af85d27ae.jpg/wadiz/resize/400/format/jpg/quality/85/"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="WadizOnlyWrapper_container"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 오른쪽 글씨쪽 -->
+                                                <div
+                                                    class="HomeHorizontalCard_infoBox"
+                                                >
+                                                    <div
+                                                        class="HomeHorizontalCard_info"
+                                                    >
+                                                        <strong
+                                                            class="Title_title"
+                                                            >글로벌 프린터 명가
+                                                            HP 개발, 고성능
+                                                            파인큐브
+                                                            핸드프린터</strong
+                                                        >
+                                                        <p
+                                                            class="HomeHorizontalCard_makerNameWrapper"
+                                                        >
+                                                            주식회사 라온
+                                                        </p>
+                                                        <div
+                                                            class="PriceInfoWrapper_container"
+                                                        >
+                                                            <span
+                                                                >273,000원</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="HomeHorizontalCard_badgeGroupWrapper"
+                                                        >
+                                                            <div
+                                                                class="StoreRatingWrapper_ratingWrapper"
+                                                            >
+                                                                <div
+                                                                    class="RatingScore_container"
+                                                                >
+                                                                    <div
+                                                                        class="RatingScore_icon"
+                                                                    ></div>
+                                                                    <span
+                                                                        class="RatingScore_score"
+                                                                        >4.5</span
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="StoreBadgeGroup_container"
+                                                            >
+                                                                <div
+                                                                    class="StoreBadgeGroup_badges"
+                                                                >
+                                                                    <span
+                                                                        class="LabelBadge_badge"
+                                                                        >무료배송</span
+                                                                    >
+                                                                    <span
+                                                                        class="LabelBadge_badge"
+                                                                    >
+                                                                        <i
+                                                                            class="StoreBadgeGroup_icon"
+                                                                        ></i>
+                                                                        와배송
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="CardSpinner_container"
+                                                >
+                                                    <div
+                                                        class="CardSpinner_loader"
+                                                        style="
+                                                            width: 32px;
+                                                            height: 32px;
+                                                        "
+                                                    >
+                                                        <svg
+                                                            viewBox="25 25 50 50"
+                                                        >
+                                                            <g
+                                                                class="Loader_circular"
+                                                            >
+                                                                <circle
+                                                                    class="Loader_path"
+                                                                    cx="50"
+                                                                    cy="50"
+                                                                    r="20"
+                                                                    fill="none"
+                                                                    stroke-width="4"
+                                                                    stroke-miterlimit="10"
+                                                                ></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <!-- 하트 버튼 쪽 -->
+                                            <div
+                                                class="HomeHorizontalCard_actionWrapper"
+                                            >
+                                                <button
+                                                    type="button"
+                                                    class="WishButton_button WishButton_smallArea"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 32 32"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon_icon"
+                                                    >
+                                                        <path
+                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="HomeHorizontalCard_container"
+                                            style="height: 108px"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="HomeHorizontalCard_content"
+                                            >
+                                                <!-- 왼쪽 그림 쪽 -->
+                                                <div
+                                                    class="HomeHorizontalCard_thumbnailBox"
+                                                >
+                                                    <div
+                                                        class="HomeHorizontalCard_thumbnailWrap"
+                                                    >
+                                                        <div
+                                                            class="ThumbnailImage_container"
+                                                        >
+                                                            <img
+                                                                class="ThumbnailImage_img"
+                                                                src="https://cdn2.wadiz.kr/2022/03/21/68977b9f-c10d-4021-ae85-c76af85d27ae.jpg/wadiz/resize/400/format/jpg/quality/85/"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="WadizOnlyWrapper_container"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 오른쪽 글씨쪽 -->
+                                                <div
+                                                    class="HomeHorizontalCard_infoBox"
+                                                >
+                                                    <div
+                                                        class="HomeHorizontalCard_info"
+                                                    >
+                                                        <strong
+                                                            class="Title_title"
+                                                            >글로벌 프린터 명가
+                                                            HP 개발, 고성능
+                                                            파인큐브
+                                                            핸드프린터</strong
+                                                        >
+                                                        <p
+                                                            class="HomeHorizontalCard_makerNameWrapper"
+                                                        >
+                                                            주식회사 라온
+                                                        </p>
+                                                        <div
+                                                            class="PriceInfoWrapper_container"
+                                                        >
+                                                            <span
+                                                                >273,000원</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="HomeHorizontalCard_badgeGroupWrapper"
+                                                        >
+                                                            <div
+                                                                class="StoreRatingWrapper_ratingWrapper"
+                                                            >
+                                                                <div
+                                                                    class="RatingScore_container"
+                                                                >
+                                                                    <div
+                                                                        class="RatingScore_icon"
+                                                                    ></div>
+                                                                    <span
+                                                                        class="RatingScore_score"
+                                                                        >4.5</span
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="StoreBadgeGroup_container"
+                                                            >
+                                                                <div
+                                                                    class="StoreBadgeGroup_badges"
+                                                                >
+                                                                    <span
+                                                                        class="LabelBadge_badge"
+                                                                        >무료배송</span
+                                                                    >
+                                                                    <span
+                                                                        class="LabelBadge_badge"
+                                                                    >
+                                                                        <i
+                                                                            class="StoreBadgeGroup_icon"
+                                                                        ></i>
+                                                                        와배송
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="CardSpinner_container"
+                                                >
+                                                    <div
+                                                        class="CardSpinner_loader"
+                                                        style="
+                                                            width: 32px;
+                                                            height: 32px;
+                                                        "
+                                                    >
+                                                        <svg
+                                                            viewBox="25 25 50 50"
+                                                        >
+                                                            <g
+                                                                class="Loader_circular"
+                                                            >
+                                                                <circle
+                                                                    class="Loader_path"
+                                                                    cx="50"
+                                                                    cy="50"
+                                                                    r="20"
+                                                                    fill="none"
+                                                                    stroke-width="4"
+                                                                    stroke-miterlimit="10"
+                                                                ></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <!-- 하트 버튼 쪽 -->
+                                            <div
+                                                class="HomeHorizontalCard_actionWrapper"
+                                            >
+                                                <button
+                                                    type="button"
+                                                    class="WishButton_button WishButton_smallArea"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 32 32"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon_icon"
+                                                    >
+                                                        <path
+                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="HomeHorizontalCard_container"
+                                            style="height: 108px"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="HomeHorizontalCard_content"
+                                            >
+                                                <!-- 왼쪽 그림 쪽 -->
+                                                <div
+                                                    class="HomeHorizontalCard_thumbnailBox"
+                                                >
+                                                    <div
+                                                        class="HomeHorizontalCard_thumbnailWrap"
+                                                    >
+                                                        <div
+                                                            class="ThumbnailImage_container"
+                                                        >
+                                                            <img
+                                                                class="ThumbnailImage_img"
+                                                                src="https://cdn2.wadiz.kr/2022/03/21/68977b9f-c10d-4021-ae85-c76af85d27ae.jpg/wadiz/resize/400/format/jpg/quality/85/"
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="WadizOnlyWrapper_container"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 오른쪽 글씨쪽 -->
+                                                <div
+                                                    class="HomeHorizontalCard_infoBox"
+                                                >
+                                                    <div
+                                                        class="HomeHorizontalCard_info"
+                                                    >
+                                                        <strong
+                                                            class="Title_title"
+                                                            >글로벌 프린터 명가
+                                                            HP 개발, 고성능
+                                                            파인큐브
+                                                            핸드프린터</strong
+                                                        >
+                                                        <p
+                                                            class="HomeHorizontalCard_makerNameWrapper"
+                                                        >
+                                                            주식회사 라온
+                                                        </p>
+                                                        <div
+                                                            class="PriceInfoWrapper_container"
+                                                        >
+                                                            <span
+                                                                >273,000원</span
+                                                            >
+                                                        </div>
+                                                        <div
+                                                            class="HomeHorizontalCard_badgeGroupWrapper"
+                                                        >
+                                                            <div
+                                                                class="StoreRatingWrapper_ratingWrapper"
+                                                            >
+                                                                <div
+                                                                    class="RatingScore_container"
+                                                                >
+                                                                    <div
+                                                                        class="RatingScore_icon"
+                                                                    ></div>
+                                                                    <span
+                                                                        class="RatingScore_score"
+                                                                        >4.5</span
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="StoreBadgeGroup_container"
+                                                            >
+                                                                <div
+                                                                    class="StoreBadgeGroup_badges"
+                                                                >
+                                                                    <span
+                                                                        class="LabelBadge_badge"
+                                                                        >무료배송</span
+                                                                    >
+                                                                    <span
+                                                                        class="LabelBadge_badge"
+                                                                    >
+                                                                        <i
+                                                                            class="StoreBadgeGroup_icon"
+                                                                        ></i>
+                                                                        와배송
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="CardSpinner_container"
+                                                >
+                                                    <div
+                                                        class="CardSpinner_loader"
+                                                        style="
+                                                            width: 32px;
+                                                            height: 32px;
+                                                        "
+                                                    >
+                                                        <svg
+                                                            viewBox="25 25 50 50"
+                                                        >
+                                                            <g
+                                                                class="Loader_circular"
+                                                            >
+                                                                <circle
+                                                                    class="Loader_path"
+                                                                    cx="50"
+                                                                    cy="50"
+                                                                    r="20"
+                                                                    fill="none"
+                                                                    stroke-width="4"
+                                                                    stroke-miterlimit="10"
+                                                                ></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <!-- 하트 버튼 쪽 -->
+                                            <div
+                                                class="HomeHorizontalCard_actionWrapper"
+                                            >
+                                                <button
+                                                    type="button"
+                                                    class="WishButton_button WishButton_smallArea"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 32 32"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon_icon"
+                                                    >
+                                                        <path
+                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </main>
+        </div>
+        <div id="wadiz-app-banner"></div>
+
+        <!-- 모달창 부분 -->
+        <div class="BottomModal_overlay"></div>
+        <div class="BottomModal_portal bottom_modal">
+                <div class="BottomModal_content">
+                    <div class="BottomModal_container">
+                        <div class="BottomModalHeader_header">
+                            <div class="BottomModalHeader_closeIconRoot">
+                                <button
+                                    class="BottomModalHeader_closeIconWrapper"
+                                >
+                                    <svg
+                                        viewBox="0 0 40 40"
+                                        focusable="false"
+                                        role="presentation"
+                                        class="withIcon_icon BottomModalHeader_closeIcon"
+                                    >
+                                        <path
+                                            d="M33.4 8L32 6.6l-12 12-12-12L6.6 8l12 12-12 12L8 33.4l12-12 12 12 1.4-1.4-12-12 12-12z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="BottomModalHeader_title">카테고리</p>
+                        </div>
+
+                        <!-- 카테고리 밑에 쪽 -->
+                        <div class="CategorySelectModal_container">
+                            <div class="CategorySelector_container">
+                                <ul class="CategorySelector_left">
+                                    <li
+                                        class="CategoryNode_container CategoryNode_expanded"
+                                    >
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >테크·가전</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButton toggle_btn"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- 눌르면 슬라이드 카테고리 쪽 -->
+                                        <ul
+                                            class="CategoryNode_items"
+                                            style="height: 440px"
+                                        >
+                                            <li
+                                                class="SubCategoryNode_container"
+                                            >
+                                                <div
+                                                    class="SubCategoryNode_subItem"
+                                                    style="
+                                                        height: 44px;
+                                                        padding: 0px 24px;
+                                                    "
+                                                >
+                                                    <div
+                                                        class="SubCategoryNode_content"
+                                                    >
+                                                        <div
+                                                            class="SubCategoryNode_imageWrap"
+                                                        ></div>
+                                                        <span
+                                                            class="SubCategoryNode_label"
+                                                            >테크·가전
+                                                            전체</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="SubCategoryNode_container"
+                                            >
+                                                <div
+                                                    class="SubCategoryNode_subItem"
+                                                    style="
+                                                        height: 44px;
+                                                        padding: 0px 24px;
+                                                    "
+                                                >
+                                                    <div
+                                                        class="SubCategoryNode_content"
+                                                    >
+                                                        <div
+                                                            class="SubCategoryNode_imageWrap"
+                                                        ></div>
+                                                        <span
+                                                            class="SubCategoryNode_label"
+                                                            >테크·가전
+                                                            전체</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="SubCategoryNode_container"
+                                            >
+                                                <div
+                                                    class="SubCategoryNode_subItem"
+                                                    style="
+                                                        height: 44px;
+                                                        padding: 0px 24px;
+                                                    "
+                                                >
+                                                    <div
+                                                        class="SubCategoryNode_content"
+                                                    >
+                                                        <div
+                                                            class="SubCategoryNode_imageWrap"
+                                                        ></div>
+                                                        <span
+                                                            class="SubCategoryNode_label"
+                                                            >테크·가전
+                                                            전체</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="SubCategoryNode_container"
+                                            >
+                                                <div
+                                                    class="SubCategoryNode_subItem"
+                                                    style="
+                                                        height: 44px;
+                                                        padding: 0px 24px;
+                                                    "
+                                                >
+                                                    <div
+                                                        class="SubCategoryNode_content"
+                                                    >
+                                                        <div
+                                                            class="SubCategoryNode_imageWrap"
+                                                        ></div>
+                                                        <span
+                                                            class="SubCategoryNode_label"
+                                                            >테크·가전
+                                                            전체</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="SubCategoryNode_container"
+                                            >
+                                                <div
+                                                    class="SubCategoryNode_subItem"
+                                                    style="
+                                                        height: 44px;
+                                                        padding: 0px 24px;
+                                                    "
+                                                >
+                                                    <div
+                                                        class="SubCategoryNode_content"
+                                                    >
+                                                        <div
+                                                            class="SubCategoryNode_imageWrap"
+                                                        ></div>
+                                                        <span
+                                                            class="SubCategoryNode_label"
+                                                            >테크·가전
+                                                            전체</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="SubCategoryNode_container"
+                                            >
+                                                <div
+                                                    class="SubCategoryNode_subItem"
+                                                    style="
+                                                        height: 44px;
+                                                        padding: 0px 24px;
+                                                    "
+                                                >
+                                                    <div
+                                                        class="SubCategoryNode_content"
+                                                    >
+                                                        <div
+                                                            class="SubCategoryNode_imageWrap"
+                                                        ></div>
+                                                        <span
+                                                            class="SubCategoryNode_label"
+                                                            >테크·가전
+                                                            전체</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="SubCategoryNode_container"
+                                            >
+                                                <div
+                                                    class="SubCategoryNode_subItem"
+                                                    style="
+                                                        height: 44px;
+                                                        padding: 0px 24px;
+                                                    "
+                                                >
+                                                    <div
+                                                        class="SubCategoryNode_content"
+                                                    >
+                                                        <div
+                                                            class="SubCategoryNode_imageWrap"
+                                                        ></div>
+                                                        <span
+                                                            class="SubCategoryNode_label"
+                                                            >테크·가전
+                                                            전체</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="SubCategoryNode_container"
+                                            >
+                                                <div
+                                                    class="SubCategoryNode_subItem"
+                                                    style="
+                                                        height: 44px;
+                                                        padding: 0px 24px;
+                                                    "
+                                                >
+                                                    <div
+                                                        class="SubCategoryNode_content"
+                                                    >
+                                                        <div
+                                                            class="SubCategoryNode_imageWrap"
+                                                        ></div>
+                                                        <span
+                                                            class="SubCategoryNode_label"
+                                                            >테크·가전
+                                                            전체</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="SubCategoryNode_container"
+                                            >
+                                                <div
+                                                    class="SubCategoryNode_subItem"
+                                                    style="
+                                                        height: 44px;
+                                                        padding: 0px 24px;
+                                                    "
+                                                >
+                                                    <div
+                                                        class="SubCategoryNode_content"
+                                                    >
+                                                        <div
+                                                            class="SubCategoryNode_imageWrap"
+                                                        ></div>
+                                                        <span
+                                                            class="SubCategoryNode_label"
+                                                            >테크·가전
+                                                            전체</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="SubCategoryNode_container"
+                                            >
+                                                <div
+                                                    class="SubCategoryNode_subItem"
+                                                    style="
+                                                        height: 44px;
+                                                        padding: 0px 24px;
+                                                    "
+                                                >
+                                                    <div
+                                                        class="SubCategoryNode_content"
+                                                    >
+                                                        <div
+                                                            class="SubCategoryNode_imageWrap"
+                                                        ></div>
+                                                        <span
+                                                            class="SubCategoryNode_label"
+                                                            >테크·가전
+                                                            전체</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                    <li class="CategoryNode_container">
+                                        <div
+                                            class="CategoryNode_item"
+                                            style="
+                                                height: 48px;
+                                                padding: 0px 24px;
+                                            "
+                                        >
+                                            <div class="CategoryNode_content">
+                                                <div
+                                                    class="CategoryNode_imageWrap"
+                                                >
+                                                    <img
+                                                        class="CategoryNode_icon"
+                                                        src="/school-wmoon/images/cate_img.png"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <span class="CategoryNode_label"
+                                                    >패션</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="CategoryNode_expandButtons"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    style="
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    "
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul></ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const modalPlay = document.querySelector(".bottom_modal");
+        const modalCancelBtn = document.querySelector(".BottomModalHeader_closeIconWrapper");
+        const bottomModal = document.querySelector(".BottomModal_overlay");
+        const divBtn = document.querySelector(".BottomModal_content");
+        const overlay = document.querySelector(".BottomModal_overlay");
+        const modalBtn = document.querySelector(".modal_btnss");
+        const transForm = document.querySelector(".transform");
+
+        const modalContainer = document.querySelector(".modal_btnss.on");
+
+        modalBtn.addEventListener("click", function () {
+            if (modalBtn.classList.contains("on")) {
+                overlay.classList.remove("on");
+                modalPlay.classList.remove("transForm");
+                setTimeout(() => {
+                    modalPlay.style.display = "none";
+                    overlay.style.display = "none";
+                }, 3000); 
+            } else {
+                bottomModal.style.display = "block";
+                modalBtn.classList.add("on");
+                overlay.style.display = "none";
+                setTimeout(() => {
+                    modalPlay.style.display = "block";
+                    modalPlay.classList.add("transForm");
+                }, 0); 
+                divBtn.style.display = "block";
+            }
+        });
+
+        modalCancelBtn.addEventListener("click", function () {
+            overlay.style.display = "none";
+            modalBtn.classList.remove('on');
+            divBtn.style.transform = "translateY(100%)";
+            divBtn.style.backgroundColor = "none";
+            modalPlay.classList.remove("transForm");
+        });
+
+        
+        modalBtn.addEventListener("click", function () {
+            if (!modalBtn.classList.contains("on")) {
+                bottomModal.style.display = "block";
+                modalBtn.classList.add("on");
+                overlay.style.display = "none";
+                setTimeout(() => {
+                    modalPlay.style.display = "block";
+                    modalPlay.classList.add("transForm");
+                }, 0); 
+                divBtn.style.display = "block";
+            }
+        });
+
+
+      
+    </script>
+</html>
