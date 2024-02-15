@@ -491,6 +491,10 @@ label.ol.text.display1 {
     max-width: 400px;
 }
 
+.account-find .ol.container.pw-check {
+    padding-bottom: 10px;
+}
+
 .account-find .page-header .ol.text.display1 {
     padding-top: 56px;
     padding-bottom: 36px;
@@ -574,7 +578,7 @@ label.ol.text.body1 {
     font-weight: 400;
 }
 
-.account-find .ol.container.id-check .ol.text.body1 {
+.account-find .ol.container.pw-check .ol.text.body1 {
     margin-bottom: 40px;
     color: #0000008a;
 }
@@ -746,11 +750,7 @@ label.ol.text.body1 {
     color: #fff;
 }
 
-.id-check {
-    display: block;
-}
-
-.id-result {
+.account-find .ol.container.id-result {
     display: none;
 }
 
@@ -811,4 +811,216 @@ label.ol.text.headline2 {
     margin-bottom: 16px;
     text-align: center;
     line-height: 46px;
+}
+
+input,
+textarea {
+    background: none;
+}
+
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+}
+
+.account-find .ol.container.pw-check .ol.button {
+    margin-bottom: 12px;
+}
+
+/* modal css */
+
+.modal1-portal {
+    position: static;
+}
+
+.modal1-overlay {
+    transition-duration: 80ms;
+}
+
+.modal1-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition-property: opacity;
+    opacity: 0;
+    z-index: 20000;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal1-oao {
+    opacity: 1;
+}
+
+.modal1-overlay.modal1-basic {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal1-content {
+    transition-duration: 80ms;
+}
+
+.modal1-content {
+    position: relative;
+    transition-property: opacity;
+    transition-timing-function: ease-out;
+    outline: none;
+    min-height: 100%;
+}
+
+.modal1-cao {
+    transform: none;
+}
+
+.modal1-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+
+.modal1-wrap {
+    background: none;
+}
+
+.modal1-wrapbox {
+    position: relative;
+    padding-top: 56px;
+    padding-bottom: 32px;
+    height: 100%;
+    text-align: left;
+}
+
+.modal1-wrapbox {
+    height: auto;
+}
+
+.modal1-wrapbox {
+    display: inline-block;
+    margin: 5%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    background: #fff;
+    min-width: 300px;
+}
+
+.modal1-box {
+    position: relative;
+    margin: 0 auto;
+    padding: 24px 32px 32px;
+    min-width: 320px;
+    min-height: 100%;
+}
+
+.modal1-box {
+    max-width: 560px;
+}
+
+.modal1-title {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 32px;
+    color: #44484b;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.modal1-message {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    color: #44484b;
+}
+
+.modal1-message p {
+    margin: 12px 0;
+    line-height: 24px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.modal1-ba {
+    margin-top: 31px;
+    text-align: right;
+}
+
+.modal1-btn-check {
+    margin-left: 10px;
+}
+
+.modal1-btn-check {
+    position: relative;
+    transition-property: background-color, border-color, color, opacity;
+    transition-duration: 0.15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 9px 23px;
+    height: 48px;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #495057;
+    font-size: 16px;
+    -webkit-appearance: none;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.modal1-btn-check:not([class*='Button_lg']) {
+    padding: 9px 24px;
+    line-height: 1.75;
+    font-size: 16px;
+}
+
+.modal1-ba .modal1-btn-check {
+    float: right;
+}
+
+.modal1-btn-check span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.modal1-btn-check .modal1-btn-close {
+    vertical-align: top;
+}
+
+.modal1-wrap button.modal1-btn-close {
+    position: fixed;
+    top: -26px;
+    left: 28px;
+    transition: color 0.2s;
+    z-index: 50001;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 50%;
+    background: hsla(0, 0%, 100%, 0.7);
+    cursor: pointer;
+    padding: 0 !important;
+    width: 30px !important;
+    height: 30px !important;
+    color: #60656a;
+    font-size: 22px !important;
+    background: hsla(0, 0%, 100%, 0.95);
+}
+
+.modal1-wrap button.modal1-btn-close {
+    background-color: hsla(0, 0%, 100%, 0.85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.modal1-wrap button.modal1-btn-close {
+    position: absolute;
 }
