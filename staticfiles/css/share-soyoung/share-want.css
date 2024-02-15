@@ -351,22 +351,11 @@ a.sidebar-menu-item-nav-link.can-open {
     font-weight: 700;
 }
 
-@media screen and (min-width: 769px) {
-    div.layout-contents {
-        position: relative;
-        flex: 1 1;
-        overflow-x: auto;
-        overflow-y: auto;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    section.page-container {
-        padding: 40px 64px;
-        width: calc(100vw - 360px);
-        min-width: 800px;
-        max-width: 1280px;
-    }
+section.page-container {
+    padding: 40px 64px;
+    width: calc(100vw - 360px);
+    min-width: 800px;
+    max-width: 1280px;
 }
 
 section.page-container {
@@ -408,12 +397,10 @@ li.page-position-item:last-child::after {
     content: "";
 }
 
-@media screen and (min-width: 769px) {
-    h2.page-title {
-        line-height: 48px;
-        font-size: 36px;
-        font-weight: 700;
-    }
+h2.page-title {
+    line-height: 48px;
+    font-size: 36px;
+    font-weight: 700;
 }
 
 div.page-guide {
@@ -485,10 +472,8 @@ i.banner-guide-gpt-icon {
     min-height: 40px;
 }
 
-@media screen and (min-width: 769px){
-    div.page-content {
-        margin-top: 80px;
-    }
+div.page-content {
+    margin-top: 80px;
 }
 
 div.page-content {
@@ -688,10 +673,8 @@ strong.announce-list-title {
     display: block;
 }
 
-@media screen and (min-width: 769px) {
-    ul.announce-list {
-        height: calc(100% - 50px);
-    }
+ul.announce-list {
+    height: calc(100% - 50px);
 }
 
 ul.announce-list {
@@ -710,10 +693,8 @@ li.announce-list-item {
     gap: 8px;
 }
 
-@media screen and (min-width: 769px) {
-    li.announce-list-item {
-        padding: 16px 24px;
-    }
+li.announce-list-item {
+    padding: 16px 24px;
 }
 
 div.announce-list-item-badge-area {
@@ -1438,10 +1419,8 @@ button.reward-item-add-btn-box {
     height: 240px;
 }
 
-@media screen and (min-width: 769px) {
-    button.reward-item-add-btn-box {
-        width: 420px;
-    }
+button.reward-item-add-btn-box {
+    width: 420px;
 }
 
 button.reward-item-add-btn-box>div>svg {
@@ -1546,12 +1525,6 @@ input::placeholder {
     color: #acb8c4;
 }
 
-
-@media screen and (min-width: 769px) {
-    div.maker-info-container-btn-wrapper {
-        margin-top: 80px;
-    }
-}
 
 button.save-btn {
     width: 420px;
