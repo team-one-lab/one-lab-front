@@ -212,7 +212,7 @@ li {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
-    color: #00c4c4;
+    color: #008243;
 }
 
 .serviceinfo-term {
@@ -328,7 +328,7 @@ li {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.5;
-    color: #00c4c4;
+    color: #008243;
 }
 
 .serviceprovide-question {
@@ -501,8 +501,8 @@ button:not(:disabled) {
     display: block;
     margin-top: 16px;
     border-radius: 4px;
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     padding: 0 16px;
     height: 40px;
     line-height: 40px;
