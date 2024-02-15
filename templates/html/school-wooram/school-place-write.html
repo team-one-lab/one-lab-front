@@ -3,16 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="/staticfiles/css/school-wooram/school-place-write.css"
-        />
-        <link
-            rel="stylesheet"
-            as="style"
-            crossorigin
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
-        />
+        <link rel="stylesheet" href="/staticfiles/css/school-wooram/school-place-write.css" />
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
         <title>대회 글쓰기</title>
     </head>
     <body>
@@ -45,328 +37,104 @@
                                 <form action="" class="request-form">
                                     <!-- 첫번쨰 텍스트 -->
                                     <input name="utf8" type="hidden" />
-                                    <div
-                                        class="form-field"
-                                        style="display: block"
-                                    ></div>
+                                    <div class="form-field" style="display: block"></div>
                                     <!-- 첫번쨰  문의 접수하실 내용쪽 -->
-                                    <div
-                                        class="form-field select optional request_ticket_form_id"
-                                        style="display: block"
-                                    >
-                                        <label for="request_issue_type_select"
-                                            >문의 접수하실 내용을
-                                            선택해주세요:)</label
-                                        >
-                                        <a
-                                            class="nesty-input"
-                                            href=""
-                                            style="
-                                                max-width: 100%;
-                                                display: none;
-                                            "
-                                            >프로젝트 수정/변경요청하기</a
-                                        >
-                                        <select
-                                            name="request[ticket_form_id]"
-                                            id="request_issue_type_select"
-                                        >
-                                            <option value="">
-                                                프로젝트 수정/변경요청하기
-                                            </option>
-                                            <option value="">
-                                                프로젝트 수정/변경요청하기
-                                            </option>
-                                            <option value="">
-                                                프로젝트 수정/변경요청하기
-                                            </option>
-                                            <option value="">
-                                                프로젝트 수정/변경요청하기
-                                            </option>
-                                            <option value="">
-                                                프로젝트 수정/변경요청하기
-                                            </option>
+                                    <div class="form-field select optional request_ticket_form_id" style="display: block">
+                                        <label for="request_issue_type_select">문의 접수하실 내용을 선택해주세요:)</label>
+                                        <a class="nesty-input" href="" style="max-width: 100%; display: none">프로젝트 수정/변경요청하기</a>
+                                        <select name="request[ticket_form_id]" id="request_issue_type_select">
+                                            <option value="">프로젝트 수정/변경요청하기</option>
+                                            <option value="">프로젝트 수정/변경요청하기</option>
+                                            <option value="">프로젝트 수정/변경요청하기</option>
+                                            <option value="">프로젝트 수정/변경요청하기</option>
+                                            <option value="">프로젝트 수정/변경요청하기</option>
                                             <option value=""></option>
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <div
-                                        class="form-field string required request_anonymous_requester_email"
-                                    >
-                                        <label
-                                            for="request_anonymous_requester_email"
-                                            >이메일 주소</label
-                                        >
-                                        <input
-                                            name="request[anonymous_requester_email]"
-                                            id="request_anonymous_requester_email"
-                                            type="text"
-                                        />
+                                    <div class="form-field string required request_anonymous_requester_email">
+                                        <label for="request_anonymous_requester_email">이메일 주소</label>
+                                        <input name="request[anonymous_requester_email]" id="request_anonymous_requester_email" type="text" />
                                     </div>
-                                    <div
-                                        class="form-field string required request_custom_fields_6477991452185"
-                                    >
-                                        <label
-                                            id="request_custom_fields_label"
-                                            for="request_custom_fields"
-                                            >와디즈 이메일 계정</label
-                                        >
-                                        <input
-                                            id="request_custom_fields"
-                                            type="text"
-                                        />
-                                        <p class="request_custom_fields">
-                                            와디즈 로그인 시 사용하시는 이메일
-                                            주소 (와디즈계정)을 알려주세요.
-                                        </p>
+                                    <div class="form-field string required request_custom_fields_6477991452185">
+                                        <label id="request_custom_fields_label" for="request_custom_fields">와디즈 이메일 계정</label>
+                                        <input id="request_custom_fields" type="text" />
+                                        <p class="request_custom_fields">와디즈 로그인 시 사용하시는 이메일 주소 (와디즈계정)을 알려주세요.</p>
                                     </div>
-                                    <div
-                                        class="form-field string required request_custom_fields"
-                                    >
-                                        <label
-                                            id="request_custom_fields_label"
-                                            for="request_custom_fields"
-                                            >연락처(숫자만 입력)</label
-                                        >
-                                        <input
-                                            name=""
-                                            id="request_custom_fields1"
-                                            type="text"
-                                        />
+                                    <div class="form-field string required request_custom_fields">
+                                        <label id="request_custom_fields_label" for="request_custom_fields">연락처(숫자만 입력)</label>
+                                        <input name="" id="request_custom_fields1" type="text" />
                                     </div>
-                                    <div
-                                        class="form-field string required request_custom_fields"
-                                    >
-                                        <label
-                                            id="request_custom_fields_label"
-                                            for=""
-                                            >프로젝트번호
-                                        </label>
+                                    <div class="form-field string required request_custom_fields">
+                                        <label id="request_custom_fields_label" for="">프로젝트번호 </label>
                                         <input type="text" />
+                                        <p id="request_custom_fields_hint">⚡프로젝트 번호 확인 방법 : 마이와디즈 > 메이커스튜디오 > 화면 왼쪽 상단 아래 숫자 5~6자리</p>
+                                    </div>
+                                    <div class="form-field string required request_custom_fields">
+                                        <label id="request_custom_fields_label" for="request_custom_fields">프로젝트 명</label>
+                                        <input name="" id="request_custom_fields1" type="text" />
+                                    </div>
+                                    <div class="form-field string required request_custom_fields">
+                                        <label for="request_custom_fields">요금제</label>
+                                        <input autocomplete="off" type="hidden" />
+                                        <a class="nesty-input" style="max-width: 100%; display: inline-block" href="">-</a>
+                                    </div>
+                                    <div class="form-field string required request_custom_fields">
+                                        <label for="request_custom_fields">요금제</label>
+                                        <input autocomplete="off" type="hidden" />
+                                        <a class="nesty-input" style="max-width: 100%; display: inline-block" href="">-</a>
+                                    </div>
+                                    <div class="form-field string required request_custom_fields">
+                                        <label for="request_custom_fields">요금제</label>
+                                        <input autocomplete="off" type="hidden" />
+                                        <a class="nesty-input" style="max-width: 100%; display: inline-block" href="">-</a>
                                         <p id="request_custom_fields_hint">
-                                            ⚡프로젝트 번호 확인 방법 :
-                                            마이와디즈 > 메이커스튜디오 > 화면
-                                            왼쪽 상단 아래 숫자 5~6자리
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="form-field string required request_custom_fields"
-                                    >
-                                        <label
-                                            id="request_custom_fields_label"
-                                            for="request_custom_fields"
-                                            >프로젝트 명</label
-                                        >
-                                        <input
-                                            name=""
-                                            id="request_custom_fields1"
-                                            type="text"
-                                        />
-                                    </div>
-                                    <div
-                                        class="form-field string required request_custom_fields"
-                                    >
-                                        <label for="request_custom_fields"
-                                            >요금제</label
-                                        >
-                                        <input
-                                            autocomplete="off"
-                                            type="hidden"
-                                        />
-                                        <a
-                                            class="nesty-input"
-                                            style="
-                                                max-width: 100%;
-                                                display: inline-block;
-                                            "
-                                            href=""
-                                            >-</a
-                                        >
-                                    </div>
-                                    <div
-                                        class="form-field string required request_custom_fields"
-                                    >
-                                        <label for="request_custom_fields"
-                                            >요금제</label
-                                        >
-                                        <input
-                                            autocomplete="off"
-                                            type="hidden"
-                                        />
-                                        <a
-                                            class="nesty-input"
-                                            style="
-                                                max-width: 100%;
-                                                display: inline-block;
-                                            "
-                                            href=""
-                                            >-</a
-                                        >
-                                    </div>
-                                    <div
-                                        class="form-field string required request_custom_fields"
-                                    >
-                                        <label for="request_custom_fields"
-                                            >요금제</label
-                                        >
-                                        <input
-                                            autocomplete="off"
-                                            type="hidden"
-                                        />
-                                        <a
-                                            class="nesty-input"
-                                            style="
-                                                max-width: 100%;
-                                                display: inline-block;
-                                            "
-                                            href=""
-                                            >-</a
-                                        >
-                                        <p id="request_custom_fields_hint">
-                                            프로젝트 심사 진행 중이시라면
-                                            프로젝트 수정 요청은 문의등록하기가
-                                            아닌
+                                            프로젝트 심사 진행 중이시라면 프로젝트 수정 요청은 문의등록하기가 아닌
                                             <a href="">reward@wadiz.kr</a>
-                                            메일 발송 또는 피드백 수정 시 직접
-                                            진행해주세요. 프로젝트 진행 시점
-                                            (프로젝트 최종 심사 완료 ~ 종료)을
-                                            확인한 후 승인 수정 요청해주세요.
+                                            메일 발송 또는 피드백 수정 시 직접 진행해주세요. 프로젝트 진행 시점 (프로젝트 최종 심사 완료 ~ 종료)을 확인한 후 승인 수정 요청해주세요.
                                         </p>
                                     </div>
-                                    <div
-                                        class="form-field string required request_custom_fields"
-                                    >
-                                        <label for="request_custom_fields"
-                                            >요금제</label
-                                        >
-                                        <input
-                                            autocomplete="off"
-                                            type="hidden"
-                                        />
-                                        <a
-                                            class="nesty-input"
-                                            style="
-                                                max-width: 100%;
-                                                display: inline-block;
-                                            "
-                                            href=""
-                                            >-</a
-                                        >
-                                        <p id="request_custom_fields_hint">
-                                            관계기관/ 지재권 위반 사항은 증빙
-                                            자료를 필수로 첨부해주세요.
-                                        </p>
+                                    <div class="form-field string required request_custom_fields">
+                                        <label for="request_custom_fields">요금제</label>
+                                        <input autocomplete="off" type="hidden" />
+                                        <a class="nesty-input" style="max-width: 100%; display: inline-block" href="">-</a>
+                                        <p id="request_custom_fields_hint">관계기관/ 지재권 위반 사항은 증빙 자료를 필수로 첨부해주세요.</p>
                                     </div>
-                                    <div
-                                        class="form-field required request_custom_fields"
-                                    >
-                                        <label for="request_custom_fields"
-                                            >수정 필요한 영역 (중복 선택
-                                            가능)</label
-                                        >
+                                    <div class="form-field required request_custom_fields">
+                                        <label for="request_custom_fields">수정 필요한 영역 (중복 선택 가능)</label>
                                         <div class="hc-multiselect">
-                                            <div
-                                                class="hc-multiselect-toggle"
-                                                id="request_custom_fields"
-                                            >
+                                            <div class="hc-multiselect-toggle" id="request_custom_fields">
                                                 <ul></ul>
                                             </div>
-                                            <div
-                                                class="hc-multiselect-menu"
-                                            ></div>
+                                            <div class="hc-multiselect-menu"></div>
                                         </div>
                                         <p id="request_custom_fields_hint">
-                                            * 프로젝트 제목(공백 포함 40자 이내)
-                                            : 총 2회에 가능하며, 광고심의 규정에
-                                            어긋날 경우 / 글자수 초과인 경우
-                                            수정 요청이 반려 될 수 있어요. *
-                                            대표 이미지 (공백 포함 40자 이내) :
-                                            교체용 파일 첨부 필수 / 뷰티리워드는
-                                            분할 이미지가 불가해요. * 프로젝트
-                                            스토리 : 심의 결과에 따라 반려되거나
-                                            모니터에 따라 재수정 요청이 있을 수
-                                            있어요. * 리워드 설계 : 본 프로젝트
-                                            진행중 리워드 수정은 어려워요! *
-                                            프로젝트 일정 : 프로젝트 종료일과
-                                            리워드 발송일 기간이 중복되지 않도록
-                                            반드시 확인해 주세요. ※ 아래 수정
-                                            템플릿 양식을 다운 받아, 작성 후
-                                            해당 파일을 필수로 첨부해주세요.
-                                            <button
-                                                style="
-                                                    padding: 0px 20px;
-                                                    font-size: 16px;
-                                                    color: black;
-                                                    background: white;
-                                                    border: 1px solid
-                                                        rgb(0, 196, 196);
-                                                    border-radius: 5px;
-                                                    cursor: pointer;
-                                                    margin-left: -125px;
-                                                "
-                                            >
-                                                <img
-                                                    src="https://theme.zdassets.com/theme_assets/13612819/c3538bf5b68e7b5fb9efb70beae9cd9952502c6f.png"
-                                                    style="
-                                                        vertical-align: middle;
-                                                        margin-right: 5px;
-                                                        height: 20px;
-                                                        width: auto;
-                                                        margin-left: -161px;
-                                                    "
-                                                    alt=""
-                                                />수정 양식 다운받기
+                                            * 프로젝트 제목(공백 포함 40자 이내) : 총 2회에 가능하며, 광고심의 규정에 어긋날 경우 / 글자수 초과인 경우 수정 요청이 반려 될 수 있어요. * 대표 이미지 (공백 포함 40자 이내) : 교체용 파일 첨부 필수 / 뷰티리워드는 분할 이미지가 불가해요. * 프로젝트 스토리 :
+                                            심의 결과에 따라 반려되거나 모니터에 따라 재수정 요청이 있을 수 있어요. * 리워드 설계 : 본 프로젝트 진행중 리워드 수정은 어려워요! * 프로젝트 일정 : 프로젝트 종료일과 리워드 발송일 기간이 중복되지 않도록 반드시 확인해 주세요. ※ 아래 수정 템플릿 양식을 다운
+                                            받아, 작성 후 해당 파일을 필수로 첨부해주세요.
+                                            <button style="padding: 0px 20px; font-size: 16px; color: black; background: white; border: 1px solid rgb(0, 196, 196); border-radius: 5px; cursor: pointer; margin-left: -125px">
+                                                <img src="https://theme.zdassets.com/theme_assets/13612819/c3538bf5b68e7b5fb9efb70beae9cd9952502c6f.png" style="vertical-align: middle; margin-right: 5px; height: 20px; width: auto; margin-left: -161px" alt="" />수정 양식 다운받기
                                             </button>
                                         </p>
                                     </div>
 
                                     <!-- 텍스트쪽 -->
-                                    <div
-                                        class="form-field text required request_description"
-                                    >
-                                        <label
-                                            id="request_description_label"
-                                            for=""
-                                            >문의사항을 알려주세요.</label
-                                        >
-                                        <textarea
-                                            name=""
-                                            id="request_description"
-                                            cols="30"
-                                            rows="10"
-                                            style="
-                                                visibility: hidden;
-                                                display: none;
-                                            "
-                                        ></textarea>
-                                        <div
-                                            role="application"
-                                            class="hc-wysiwyg"
-                                        >
+                                    <div class="form-field text required request_description">
+                                        <label id="request_description_label" for="">문의사항을 알려주세요.</label>
+                                        <textarea name="" id="request_description" cols="30" rows="10" style="visibility: hidden; display: none"></textarea>
+                                        <div role="application" class="hc-wysiwyg">
                                             <div role="toolbar">
                                                 <span aria-haspopup="true">
-                                                    <span
-                                                        role="button"
-                                                        class="wysiwyg-icon-formats"
-                                                    ></span>
-                                                    <span
-                                                        role="menu"
-                                                        aria-hidden="true"
-                                                    >
+                                                    <span role="button" class="wysiwyg-icon-formats"></span>
+                                                    <span role="menu" aria-hidden="true">
                                                         <span></span>
                                                         <span></span>
                                                         <span></span>
                                                         <span></span>
                                                     </span>
                                                 </span>
-                                                <span
-                                                    role="button"
-                                                    class="wysiwyg-icon-bold"
-                                                ></span>
-                                                <span
-                                                    role="button"
-                                                    class="wysiwyg-icon-italic"
-                                                ></span>
+                                                <span role="button" class="wysiwyg-icon-bold"></span>
+                                                <span role="button" class="wysiwyg-icon-italic"></span>
                                                 <span></span>
                                                 <span></span>
                                                 <span></span>
@@ -375,100 +143,39 @@
                                                 <span></span>
                                                 <span></span>
                                             </div>
-                                            <div
-                                                role="form"
-                                                aria-expanded="false"
-                                            ></div>
+                                            <div role="form" aria-expanded="false"></div>
                                             <div role="group">
                                                 <!-- <iframe id="request_description_ifr" class="tox-edit-area__iframe" src="" frameborder="0"></iframe> -->
-                                                <textarea
-                                                    name=""
-                                                    class="tox-edit-area__iframe"
-                                                    cols="30"
-                                                    rows="10"
-                                                ></textarea>
+                                                <textarea name="" class="tox-edit-area__iframe" cols="30" rows="10"></textarea>
                                             </div>
-                                            <div
-                                                role="alert"
-                                                aria-hidden="true"
-                                            ></div>
+                                            <div role="alert" aria-hidden="true"></div>
                                             <div>
-                                                <input
-                                                    type="hidden"
-                                                    value="text/html"
-                                                />
+                                                <input type="hidden" value="text/html" />
                                             </div>
                                         </div>
-                                        <input
-                                            type="hidden"
-                                            value="text/html"
-                                            style="display: none"
-                                            autocomplete="off"
-                                        />
-                                        <p class="request_description_hint">
-                                            ※ 추가적인 문의 내용 확인 및
-                                            정보제공에 대한 동의가 필요한 경우
-                                            전화로 연락 드릴 수 있습니다.
-                                        </p>
+                                        <input type="hidden" value="text/html" style="display: none" autocomplete="off" />
+                                        <p class="request_description_hint">※ 추가적인 문의 내용 확인 및 정보제공에 대한 동의가 필요한 경우 전화로 연락 드릴 수 있습니다.</p>
                                     </div>
-                                    <div
-                                        class="form-field string optional request_custom_fields"
-                                    >
-                                        <label
-                                            id="request_custom_fields_label"
-                                            for=""
-                                            >※ 개인정보 동의 시 아래
-                                            선택해주세요 🥰
-                                            <span class="optional"
-                                                >(선택 사항)</span
-                                            >
+                                    <div class="form-field string optional request_custom_fields">
+                                        <label id="request_custom_fields_label" for=""
+                                            >※ 개인정보 동의 시 아래 선택해주세요 🥰
+                                            <span class="optional">(선택 사항)</span>
                                         </label>
-                                        <input
-                                            type="hidden"
-                                            autocomplete="off"
-                                            aria-required="false"
-                                        />
-                                        <a
-                                            class="nesty-input"
-                                            aria-haspopup="true"
-                                            aria-expanded="false"
-                                            style="
-                                                max-width: 100%;
-                                                display: block;
-                                            "
-                                            href=""
-                                            >-</a
-                                        >
+                                        <input type="hidden" autocomplete="off" aria-required="false" />
+                                        <a class="nesty-input" aria-haspopup="true" aria-expanded="false" style="max-width: 100%; display: block" href="">-</a>
                                         <p class="request_custom_fields_hint">
-                                            정보를 입력해주시면 답변 알림 및
-                                            신속하고 정확한 상담이 가능합니다.
-                                            아래의 개인정보 수집 및 이용 정책을
-                                            확인하셨다면 체크 박스에
-                                            체크해주세요. ① 수집항목: (필수)
-                                            이메일 주소, 연락처, 이름/ (선택)
-                                            와디즈 이메일 계정 ② 수집목적: 상담
-                                            답변 알림 및 정보 제공 ③ 보유기간:
-                                            [정보 수집으로부터 3년 후 파기]
-                                            개인정보 수집 동의를 거부할 수
-                                            있으나, 거부할 경우 연락 수단의
-                                            부재로 답변 알림 및 상담이 제한될 수
-                                            있습니다.
+                                            정보를 입력해주시면 답변 알림 및 신속하고 정확한 상담이 가능합니다. 아래의 개인정보 수집 및 이용 정책을 확인하셨다면 체크 박스에 체크해주세요. ① 수집항목: (필수) 이메일 주소, 연락처, 이름/ (선택)와디즈 이메일 계정 ② 수집목적: 상담 답변 알림 및 정보 제공 ③
+                                            보유기간: [정보 수집으로부터 3년 후 파기] 개인정보 수집 동의를 거부할 수 있으나, 거부할 경우 연락 수단의 부재로 답변 알림 및 상담이 제한될 수 있습니다.
                                         </p>
                                     </div>
                                     <!-- 맨밑 파일쪽 -->
                                     <div class="form-field">
                                         <label for="request-attachments">
                                             첨부 파일
-                                            <span class="optional"
-                                                >(선택 사항)</span
-                                            >
+                                            <span class="optional">(선택 사항)</span>
                                         </label>
                                         <div class="upload-dropzone">
-                                            <input
-                                                id="attach"
-                                                type="file"
-                                                multiple="true"
-                                            />
+                                            <input id="attach" type="file" multiple="true" />
                                             <span>
                                                 <a>파일 추가</a>
                                                 또는 파일을 여기로 드래그
@@ -485,24 +192,15 @@
 
                                     <!-- 맨밑 제출 버튼쪽 -->
                                     <footer>
-                                        <input
-                                            type="submit"
-                                            name="commit"
-                                            value="제출"
-                                        />
+                                        <input type="submit" name="commit" value="제출" />
                                     </footer>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a
-                    href="https://www.wadiz.kr/web/project/registration?type=aiAdvisorModalOpen"
-                >
-                    <img
-                        src="https://theme.zdassets.com/theme_assets/13612819/70b1977be0a68c0c7e333ae43321efbb048f90cd.PNG"
-                        alt=""
-                    />
+                <a href="https://www.wadiz.kr/web/project/registration?type=aiAdvisorModalOpen">
+                    <img src="https://theme.zdassets.com/theme_assets/13612819/70b1977be0a68c0c7e333ae43321efbb048f90cd.PNG" alt="" />
                 </a>
             </main>
 

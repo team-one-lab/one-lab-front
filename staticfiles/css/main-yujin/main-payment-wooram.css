@@ -69,22 +69,10 @@ hr {
     height: 8px;
 }
 
-@media screen and (min-width: 1097px) {
-    hr {
-        height: 1px; 
-    }
-}
-
 .MainWrapper_content {
     padding-top: 0;
+    padding-bottom: 0;
     transition: padding-top .25s;
-}
-
-@media screen and (min-width: 1097px) {
-    .MainWrapper_content {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
 }
 
 .PaymentLayout_root {
@@ -95,37 +83,27 @@ hr {
 
 .PaymentLayout_paymentLayoutContainer {
     position: relative;
-    background-color: #f2f4f6;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 64px 0;
+    background-color: #fff;
     width: 100%;
-}
-
-@media screen and (min-width: 1097px) {
-    .PaymentLayout_paymentLayoutContainer {
-        display: flex;
-        justify-content: space-between;
-        margin: 40px 64px 0;
-        background-color: #fff;
-        width: 100%;
-        max-width: 1280px;
-    }
+    max-width: 1280px;
 }
 
 /* 왼쪽 부분쪽 css */
-@media screen and (min-width: 1097px) {
-    .PaymentLayout_paymentLayoutContainer .PaymentLayout_leftPanel {
-        width: 100%;
-        width: calc((100% + 16px)/12*7 - 16px);
-    }
+.PaymentLayout_paymentLayoutContainer .PaymentLayout_leftPanel {
+    width: 100%;
+    width: calc((100% + 16px)/12*7 - 16px);
 }
 
-@media screen and (min-width: 1097px) {
-    .PaymentLayout_paymentLayoutContainer .PaymentLayout_leftPanel .PaymentLayout_pageTitle {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 1.5;
-        padding: 0 16px;
-    }
+.PaymentLayout_paymentLayoutContainer .PaymentLayout_leftPanel .PaymentLayout_pageTitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 0 16px;
 }
+
 
 .StorePaymentSection_container {
     background-color: #fff;
@@ -1052,27 +1030,22 @@ label.Radio_radio>input:checked+.Radio_icon, label.Radio_radio>input:checked:hov
 }
 
 /* 오른쪽 부분 css */
-@media screen and (min-width: 1097px) {
-    .PaymentLayout_rightPanel {
-        width: calc((100% + 16px)*.375 - 8px);
-    }
+.PaymentLayout_rightPanel {
+    width: calc((100% + 16px)*.375 - 8px);
 }
 
-@media screen and (min-width: 1097px) {
-    .PaymentLayout_floatingSection {
-        position: sticky;
-        top: 40px;
-    }
+.PaymentLayout_floatingSection {
+    position: sticky;
+    top: 40px;
 }
 
 
-@media screen and (min-width: 1097px) {
-    .PaymentLayout_paymentAmount {
-        border: 1px solid #e9ecef;
-        border-radius: 8px;
-        padding: 24px;
-    }    
-}
+.PaymentLayout_paymentAmount {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 24px;
+}    
+
 
 .BasePrice_priceArea {
     display: flex;
@@ -1282,13 +1255,13 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
 }
 
 /* 결제 진행 필수 동의 부분쪽 css */
-@media screen and (min-width: 1097px) {
-    .StorePaymentSection_container.PaymentLayout_floating {
-        padding-top: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+
+.StorePaymentSection_container.PaymentLayout_floating {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
+
 
 .PaymentTerms_container {
     display: flex;
@@ -1454,12 +1427,10 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
 }
 
 /* 버튼 부분 쪽 css */
-
-@media screen and (min-width: 1097px) {
-    .payment {
-        margin-top: 24px;
-    }
+.payment {
+    margin-top: 24px;
 }
+
 
 .Button_primarys {
     border-color: #00c4c4;
