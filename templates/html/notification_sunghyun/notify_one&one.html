@@ -3,8 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
-        <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
+       
        
         <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/footer.css">
@@ -267,13 +266,13 @@
 
                                     <!------------챗봇 버튼(클릭시 myModal이라는 id명을 지닌 div 태그 생성(챗봇 채팅 부분 이미지구현)---------------------------------------------->
                                     <div id="buttonContainer">
-                                    <button class="floating-button" onclick="openModal()"></button> <!---openModal 함수와 연동-->
+                                    <button class="floating-button"></button> <!---openModal 함수와 연동-->
                                   </div>
 
                                     <!------- 숨겨진 모달 : 챗봇 메세지가 나오는 부분 시작------>
                                     <div id="myModal" class="modal">
                                       <div class="modal-content">
-                                        <span class="close" onclick="closeModal()">&times;</span>
+                                        <span class="close">&times;</span>
 
                     <!---------------------------- 챗봇 메세지 html 내용이 여기에 들어갑니다 (꽤 긴 코드이니 유의바람) ---------->
                                         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/notify_one&&one-chat.css">
@@ -913,286 +912,194 @@
         </div>
         <!----------------------푸터 시작 ------------------------------>
         <!-- 푸터 클론코딩 제작 -->
-      <footer class="footer-6" id="footer">
-        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="svg-shape" viewBox="0 0 1200 120">
-          <!-- <use xlink:href="#shape-book"></use> -->
-        </svg>
-        <div class="container-7"> </div>
-        <!-- svg 에서 symbol 가져오기 -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-          <!-- symbol-1 -->
-          <symbol id="icon-search">
-            <circle
-              cx="4.5"
-              cy="4.5"
-              r="4"
-              fill="none"
-              stroke="currentColor"
-            ></circle>
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              d="M11 11L7.5 7.5"
-            ></path>
-          </symbol>
-          <!-- symbol-2 -->
-          <symbol id="icon-lock">
-            <rect
-              width="12"
-              height="9"
-              x="2"
-              y="7"
-              fill="currentColor"
-              rx="1"
-              ry="1"
-            ></rect>
-            <path
-              fill="none"
-              stroke="currentColor"
-              d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
-            ></path>
-          </symbol>
-          <!-- symbol-3 -->
-          <symbol id="icon-star">
-            <polygon
-              points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
-            ></polygon>
-          </symbol>
-          <!-- symbol-4 -->
-          <symbol id="icon-chevron-down">
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
-            ></path>
-          </symbol>
-          <!-- symbol-5 -->
-          <symbol id="icon-agent">
-            <path
-              fill="currentColor"
-              d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
-            ></path>
-          </symbol>
-          <!-- symbol-6 -->
-          <symbol id="shape-book">
-            <path
-            d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
-            ></path>
-          </symbol>
-        </svg>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <div class="main-container">
-          <div class="containerq">
-            <div class="divider">
-              <div class="full-divider"></div>
-            </div>
-            <div class="box">
-              <div class="box-1">
-                <div class="text-gray">
-                  <span class="button-text">정책.약관</span>
-                  <div class="system-icon">
-                    <div class="fill"></div>
-                  </div>
-                </div>
-                <div class="text-gray-2" onclick="location.href='https://www.wadiz.kr/web/wterms/privacy'">
-                  <span class="button-text-3">개인정보처리방침</span>
-                  <div class="system-icon-4">
-                    <div class="fill-5"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="divider-6">
-              <div class="full-7"></div>
-            </div>
-          </div>
-          <div class="container-8">
-            <div class="box-9">
-              <div class="box-a">
-                <div class="box-b">
-                  <div class="system-icon-c">
-                    <div class="fill-d"></div>
-                  </div>
-                  <span class="wadiz-help-center">와디즈 도움말센터</span>
-                </div>
-                <div class="text-button">
-                  <span class="button-text-f">채팅 상담하기</span>
-                  <div class="system-icon-10">
-                    <div class="fill-11"></div>
-                  </div>
-                </div>
-                <div class="text-12" onclick="location.href='https://helpcenter.wadiz.kr/hc/ko/requests/new'">
-                  <span class="button-text-13">문의 등록하기</span>
-                  <div class="system-icon-14">
-                    <div class="fill-15"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="divider-16">
-                <div class="full-17"></div>
-              </div>
-              <div class="box-18">
-                <span class="counseling-available-time">상담 가능 시간</span>
-                <span class="counseling-available-date">평일 오전 9시 ~ 오후 6시 (주말, 공휴일 제외)
-                </span>
-              </div>
-            </div>
-            <div class="box-19">
-              <div class="box-1a">
-                <div class="box-1b">
-                  <div class="box-1c">
-                    <span class="wadiz">와디즈(주)</span>
-                    <div class="divider-1d">
-                      <div class="middle-divider"></div>
-                    </div>
-                    <span class="representative-director">대표이사</span>
-                    <span class="main-name">신혜성</span>
-                    <div class="divider-1e">
-                      <div class="middle-1f"></div>
-                    </div>
-                    <span class="business-number">사업자등록번호 258-87-01370</span>
-                    <div class="divider-20">
-                      <div class="middle-21"></div>
-                    </div>
-                    <span class="sales-number">통신판매업신고번호 2021-성남분당C-1153</span>
-                    <div class="divider-22">
-                      <div class="middle-23"></div>
-                    </div>
-                    <span class="span-address">경기 성남시 분당구 판교로 242 PDC A동 402호</span>
-                  </div>
-                  <div class="box-24">
-                    <span class="span-email-consultation">이메일 상담</span>
-                    <div class="divider-25">
-                      <div class="middle-26"></div>
-                    </div>
-                    <span class="span-email">info@wadiz.kr</span>
-                    <div class="divider-27">
-                      <div class="middle-28"></div>
-                    </div>
-                    <span class="wired-counseling">유선 상담 1661-9056</span>
-                    <span class="wadiz-co-ltd">ⓒ wadiz Co., Ltd.</span>
-                  </div>
-                </div>
-                <span class="wadiz-disclaimer">
-                  일부 상품의 경우 와디즈는 통신판매중개자이며 통신판매 당사자가 아닙니다.
-                  <br>
-                  해당되는 상품의 경우 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용
-                  을 확인하시기 바랍니다.
-                  </span>
-              </div>
-              <div class="box-29">
-                <div class="box-2a" onclick="location.href='https://play.google.com/store/apps/details?id=com.markmount.wadiz&pli=1'">
-                  <div class="artwork-logo-1"></div>
-                  <span class="android-app">Android앱</span>
-                </div>
-                <div class="box-2b">
-                  <div class="artwork-logo-2" onclick="location.href='https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'"></div>
-                  <span class="ios-app">iOS앱</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- 푸터 클론코딩 범위 -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-            <symbol id="icon-search">
+        <footer class="footer-6" id="footer">
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="svg-shape" viewBox="0 0 1200 120">
+              <use xlink:href="#shape-book"></use>
+            </svg>
+            <div class="container-7"> </div>
+            <!-- svg 에서 symbol 가져오기 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+              <!-- symbol-1 -->
+              <symbol id="icon-search">
                 <circle
-                    cx="4.5"
-                    cy="4.5"
-                    r="4"
-                    fill="none"
-                    stroke="currentColor"
+                  cx="4.5"
+                  cy="4.5"
+                  r="4"
+                  fill="none"
+                  stroke="currentColor"
                 ></circle>
                 <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    d="M11 11L7.5 7.5"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  d="M11 11L7.5 7.5"
                 ></path>
-            </symbol>
-            <symbol id="icon-lock">
+              </symbol>
+              <!-- symbol-2 -->
+              <symbol id="icon-lock">
                 <rect
-                    width="12"
-                    height="9"
-                    x="2"
-                    y="7"
-                    fill="currentColor"
-                    rx="1"
-                    ry="1"
+                  width="12"
+                  height="9"
+                  x="2"
+                  y="7"
+                  fill="currentColor"
+                  rx="1"
+                  ry="1"
                 ></rect>
                 <path
-                    fill="none"
-                    stroke="currentColor"
-                    d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
+                  fill="none"
+                  stroke="currentColor"
+                  d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
                 ></path>
-            </symbol>
-            <symbol id="icon-star">
+              </symbol>
+              <!-- symbol-3 -->
+              <symbol id="icon-star">
                 <polygon
-                    points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
+                  points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
                 ></polygon>
-            </symbol>
-            <symbol id="icon-chevron-down">
+              </symbol>
+              <!-- symbol-4 -->
+              <symbol id="icon-chevron-down">
                 <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
                 ></path>
-            </symbol>
-            <symbol id="icon-agent">
+              </symbol>
+              <!-- symbol-5 -->
+              <symbol id="icon-agent">
                 <path
-                    fill="currentColor"
-                    d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
+                  fill="currentColor"
+                  d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
                 ></path>
-            </symbol>
-
-            <symbol id="shape-book">
+              </symbol>
+              <!-- symbol-6 -->
+              <symbol id="shape-book">
                 <path
-                    d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+                d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
                 ></path>
-            </symbol>
-        </svg>
+              </symbol>
+            </svg>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <div class="main-container">
+              <div class="containerq">
+                <div class="divider">
+                  <div class="full-divider"></div>
+                </div>
+                <div class="box">
+                  <div class="box-1">
+                    <div class="text-gray">
+                      <span class="button-text">정책.약관</span>
+                      <div class="system-icon">
+                        <div class="fill"></div>
+                      </div>
+                    </div>
+                    <div class="text-gray-2" onclick="location.href='https://www.wadiz.kr/web/wterms/privacy'">
+                      <span class="button-text-3">개인정보처리방침</span>
+                      <div class="system-icon-4">
+                        <div class="fill-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="divider-6">
+                  <div class="full-7"></div>
+                </div>
+              </div>
+              <div class="container-8">
+                <div class="box-9">
+                  <div class="box-a">
+                    <div class="box-b">
+                      <div class="system-icon-c">
+                        <div class="fill-d"></div>
+                      </div>
+                      <span class="wadiz-help-center">와디즈 도움말센터</span>
+                    </div>
+                    <div class="text-button">
+                      <span class="button-text-f">채팅 상담하기</span>
+                      <div class="system-icon-10">
+                        <div class="fill-11"></div>
+                      </div>
+                    </div>
+                    <div class="text-12" onclick="location.href='https://helpcenter.wadiz.kr/hc/ko/requests/new'">
+                      <span class="button-text-13">문의 등록하기</span>
+                      <div class="system-icon-14">
+                        <div class="fill-15"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="divider-16">
+                    <div class="full-17"></div>
+                  </div>
+                  <div class="box-18">
+                    <span class="counseling-available-time">상담 가능 시간</span>
+                    <span class="counseling-available-date">평일 오전 9시 ~ 오후 6시 (주말, 공휴일 제외)
+                    </span>
+                  </div>
+                </div>
+                <div class="box-19">
+                  <div class="box-1a">
+                    <div class="box-1b">
+                      <div class="box-1c">
+                        <span class="wadiz">와디즈(주)</span>
+                        <div class="divider-1d">
+                          <div class="middle-divider"></div>
+                        </div>
+                        <span class="representative-director">대표이사</span>
+                        <span class="main-name">신혜성</span>
+                        <div class="divider-1e">
+                          <div class="middle-1f"></div>
+                        </div>
+                        <span class="business-number">사업자등록번호 258-87-01370</span>
+                        <div class="divider-20">
+                          <div class="middle-21"></div>
+                        </div>
+                        <span class="sales-number">통신판매업신고번호 2021-성남분당C-1153</span>
+                        <div class="divider-22">
+                          <div class="middle-23"></div>
+                        </div>
+                        <span class="span-address">경기 성남시 분당구 판교로 242 PDC A동 402호</span>
+                      </div>
+                      <div class="box-24">
+                        <span class="span-email-consultation">이메일 상담</span>
+                        <div class="divider-25">
+                          <div class="middle-26"></div>
+                        </div>
+                        <span class="span-email">info@wadiz.kr</span>
+                        <div class="divider-27">
+                          <div class="middle-28"></div>
+                        </div>
+                        <span class="wired-counseling">유선 상담 1661-9056</span>
+                        <span class="wadiz-co-ltd">ⓒ wadiz Co., Ltd.</span>
+                      </div>
+                    </div>
+                    <span class="wadiz-disclaimer">
+                      일부 상품의 경우 와디즈는 통신판매중개자이며 통신판매 당사자가 아닙니다.
+                      <br>
+                      해당되는 상품의 경우 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용
+                      을 확인하시기 바랍니다.
+                      </span>
+                  </div>
+                  <div class="box-29">
+                    <div class="box-2a" onclick="location.href='https://play.google.com/store/apps/details?id=com.markmount.wadiz&pli=1'">
+                      <div class="artwork-logo-1"></div>
+                      <span class="android-app">Android앱</span>
+                    </div>
+                    <div class="box-2b">
+                      <div class="artwork-logo-2" onclick="location.href='https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'"></div>
+                      <span class="ios-app">iOS앱</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- 푸터 클론코딩 범위 -->
     
     </body>
-    <script>             
-      
-    function openModal() {
-      var modal = document.getElementById("myModal");
-      var floatingButton = document.querySelector(".floating-button");
-
-      
-      var buttonStyle = window.getComputedStyle(floatingButton);
-      var buttonPosition = buttonStyle.getPropertyValue('position');
-      console.log(buttonStyle);
-      console.log(buttonPosition);
-      floatingButton.style.display = "none"
-      var buttonParent = floatingButton.parentElement;
-      var parentRect = buttonParent.getBoundingClientRect();
-
-      var buttonRect = floatingButton.getBoundingClientRect();
-      var leftPosition = buttonRect.left - parentRect.left;
-      var topPosition = buttonRect.top - parentRect.top + floatingButton.offsetHeight;
-
-
-      modal.style.display = "block";
-
-      // 모달 외부를 클릭하면 모달이 닫힘
-      // window.addEventListener('click', outsideModalClick);
-    }
-
-    // 모달 닫기 함수
-    function closeModal() {
-      var floatingButton = document.querySelector(".floating-button")
-      var modal = document.getElementById("myModal");
-      modal.style.display = "none";
-      floatingButton.style.display = "block";
-      // 모달 외부 클릭 이벤트 제거
-      window.removeEventListener('click', outsideModalClick);
-    }
-
-   
-
-    </script>
+    <script src="/staticfiles/js/notify-sunghyun-app/notify-one&one-app-chat.js"></script>
+    <script src="/staticfiles/js/notify-sunghyun/notify.js"></script>   
+    <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
+    <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
 </html>

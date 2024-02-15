@@ -1505,7 +1505,7 @@ footer {
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
     font-variant: normal;
-    content: "\e967";
+    content: url("	https://theme.zdassets.com/theme_assets/13612819/cc34cc7bfae1dab45c2a08e3c5167fce24a7009a.png");
 }
 
 
@@ -1520,7 +1520,7 @@ footer {
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
     font-variant: normal;
-    content: "\e90f";
+    content: url("	https://theme.zdassets.com/theme_assets/13612819/0aa3f86bb1b2e28aaf28ea469a3e7a0cc680eb2d.png")
 }
 
 .web-footer [class*=icon-]:before {
