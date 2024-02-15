@@ -43,6 +43,7 @@
   <body>
     <div></div>
     <div class="layout-column" x-data="Widgets.mobileMenu">
+
       <!-- 헤더 클론코딩 제작 -->
       <header
         class="header_unstuck"
@@ -169,17 +170,26 @@
               </header>
               <div class="div-form">
                 <div data-element="template" data-template="form-tip"></div>
-                <form id="new-request" class="request-form" data-form data-form-type="request" action="" accept-charset="UTF-8" method="post" data-gtm-form-interact-id="0">
+                <form
+                  id="new-request"
+                  class="request-form"
+                  data-form
+                  data-form-type="request"
+                  action=""
+                  accept-charset="UTF-8"
+                  method="post"
+                  data-gtm-form-interact-id="0"
+                >
                   <input
                     name="utf8"
                     type="hidden"
                     value="✓"
                     autocomplete="off"
                   />
-                  <div class="form-field" style="display: block;">
+                  <div class="form-field1" style="display: block">
                     <label for="request-issue-type-select"
-                      >문의 접수하실 내용을 선택해주세요:&#41;</label
-                    >
+                      >문의 접수하실 내용을 선택해주세요:&#41;
+                    </label>
                     <a
                       class="nesty-input"
                       tabindex="0"
@@ -188,42 +198,567 @@
                       aria-controls="-bcthp9dpd"
                       aria-label="문의 접수하실 내용을 선택해주세요:&#41;"
                       style="max-width: 100%"
-                      >와디즈 문의하기</a
                     >
+                      와디즈 문의하기
+                    </a>
                     <select
+                      class="request-select"
                       name="request[ticket-form-id]"
-                      id="request-issue-type-select"
                       aria-label="문의 접수하실 내용을 선택해주세요:&#41;"
                       autofocus="autofocus"
-                      style="display: none;"
+                      style="display: none"
                     >
                       <!-- 와디즈 도움말센터 문의등록 메인 페이지 이동 -->
                       <option data-url="" value="-">-</option>
                       <!-- 와디즈 도움말센터 문의등록 메인 페이지에서 와디즈 문의하기로 페이지 이동 -->
-                      <option data-url="" selected="selected" value="25535237543577">
+                      <option data-url="" selected="selected" value="1">
                         와디즈 문의하기
                       </option>
                       <!-- 와디즈 도움말센터 문의등록 메인 페이지에서 프로젝트 수정/변경 요청하기 페이지 이동 -->
-                      <option data-url="" value="24699344939033">
+                      <option data-url="" value="2">
                         프로젝트 수정/변경요청하기
                       </option>
                       <!-- 와디즈 도움말센터 문의등록 메인 페이지에서 와디즈 광고서비스 문의하기 페이지 이동 -->
-                      <option data-url="" value="24699344939033">
+                      <option data-url="" value="3">
                         와디즈 광고서비스 문의하기
                       </option>
                       <!-- 와디즈 도움말센터 문의등록 메인 페이지에서 와디즈 파이낸스 문의하기 페이지 이동 -->
-                      <option data-url="" value="6476688975513">
+                      <option data-url="" value="4">
                         와디즈 파이낸스 문의하기
                       </option>
                     </select>
                   </div>
-                  
+                  <div class="form-field">
+                    <label for="request-anonymous-requester-email">
+                      이메일 주소
+                    </label>
+                    <input
+                      type="text"
+                      name="request[anonymous-requester-email]"
+                      aria-required="true"
+                    />
                   </div>
+                  <div class="form-field">
+                    <label for="request-custom-fields-6760067845017">
+                      문의자 유형
+                    </label>
+                    <input
+                      type="hidden"
+                      name="request[custom_fields][6760067845017]"
+                      autocomplete="off"
+                      data-tagger='[{"label":"-","value":""},{"label":"프로젝트를 개설한 메이커","value":"펀딩메이커"},{"label":"프로젝트에 참여한 서포터","value":"펀딩서포터"},{"label":"기타 제3자 (권리침해 등 이해관계자)","value":"기타__제_3자_"}]'
+                      aria-required="true"
+                      aria-labelledby="request_custom_fields_6760067845017_label"
+                      value=""
+                      data-gtm-form-interact-field-id="0"
+                    />
+                    <a
+                      class="nesty-input"
+                      tabindex="0"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="_jrhyeuiv7"
+                      aria-required="true"
+                      aria-labelledby="request_custom_fields_6760067845017_label"
+                      style="max-width: 100%"
+                      >-</a
+                    >
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_6477991452185"
+                      >와디즈 이메일 계정</label
+                    >
+                    <input
+                      type="text"
+                      name="request[custom_fields][6477991452185]"
+                      aria-required="true"
+                      aria-describedby="request_custom_fields_6477991452185_hint"
+                      aria-labelledby="request_custom_fields_6477991452185_label"
+                      disabled=""
+                    />
+                    <p id="request_custom_fields_6477991452185_hint">
+                      와디즈 로그인 시 사용하시는 이메일 주소 (와디즈계정)을
+                      알려주세요.
+                    </p>
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_23081170422169"
+                      >희망 답변 경로</label
+                    >
+                    <input
+                      type="hidden"
+                      name="request[custom_fields][23081170422169]"
+                      value="메일"
+                      autocomplete="off"
+                      data-tagger='[{"label":"-","value":""},{"label":"메일","value":"메일","selected":true},{"label":"문자","value":"문자"},{"label":"메일+문자","value":"메일_문자"}]'
+                      aria-required="false"
+                      aria-labelledby="request_custom_fields_23081170422169_label"
+                      disabled=""
+                    /><a
+                      class="nesty-input"
+                      tabindex="0"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="_05bkq17df"
+                      aria-required="false"
+                      aria-labelledby="request_custom_fields_23081170422169_label"
+                      style="max-width: 100%"
+                      >메일</a
+                    >
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_6824739764505"
+                      >프로젝트번호
+                    </label>
+                    <input
+                      type="text"
+                      name="request[custom_fields][6824739764505]"
+                      aria-required="true"
+                      aria-describedby="request_custom_fields_6824739764505_hint"
+                      aria-labelledby="request_custom_fields_6824739764505_label"
+                      disabled=""
+                    />
+                    <p id="request_custom_fields_6824739764505_hint">
+                      ⚡프로젝트 번호 확인 방법 : 마이와디즈 &gt; 메이커스튜디오
+                      &gt; 화면 왼쪽 상단 아래 숫자 5~6자리
+                    </p>
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_6477667492761"
+                      >결제 번호/주문 번호</label
+                    >
+                    <input
+                      type="text"
+                      name="request[custom_fields][6477667492761]"
+                      aria-required="false"
+                      aria-describedby="request_custom_fields_6477667492761_hint"
+                      aria-labelledby="request_custom_fields_6477667492761_label"
+                      disabled=""
+                    />
+                    <p id="request_custom_fields_6477667492761_hint">
+                      마이와디즈 &gt; 펀딩·프리오더 혹은 스토어 &gt; 참여한 제품
+                      상세보기 &gt; 결제번호/주문번호 확인하실 수 있습니다.
+                    </p>
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_27979068804505"
+                      >소속 유형</label
+                    >
+                    <input
+                      type="hidden"
+                      name="request[custom_fields][27979068804505]"
+                      autocomplete="off"
+                      data-tagger='[{"label":"-","value":""},{"label":"경찰 등 정부 기관","value":"경찰_등_정부_기관"},{"label":"언론사","value":"언론사"},{"label":"기타","value":"소속유형_기타"}]'
+                      aria-required="true"
+                      aria-labelledby="request_custom_fields_27979068804505_label"
+                      value=""
+                      data-gtm-form-interact-field-id="1"
+                      disabled=""
+                    />
+                    <a
+                      class="nesty-input"
+                      tabindex="0"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="_r2hmi00on"
+                      aria-required="true"
+                      aria-labelledby="request_custom_fields_27979068804505_label"
+                      style="max-width: 100%"
+                      >-</a
+                    >
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_27979150221977"
+                      >기관명</label
+                    >
+                    <input
+                      type="text"
+                      name="request[custom_fields][27979150221977]"
+                      aria-required="true"
+                      aria-describedby="request_custom_fields_27979150221977_hint"
+                      aria-labelledby="request_custom_fields_27979150221977_label"
+                      disabled=""
+                    />
+                    <p id="request_custom_fields_27979150221977_hint">
+                      업무수행요청 공문 혹은 소속 기관 신분증/재직증명서 첨부
+                      필수
+                    </p>
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_27979159258393"
+                      >소속 부서</label
+                    >
+                    <input
+                      type="text"
+                      name="request[custom_fields][27979159258393]"
+                      aria-required="false"
+                      aria-labelledby="request_custom_fields_27979159258393_label"
+                      disabled=""
+                    />
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_27973193286041"
+                      >본인이름(실명)</label
+                    >
+                    <input
+                      type="text"
+                      name="request[custom_fields][27973193286041]"
+                      aria-required="false"
+                      aria-labelledby="request_custom_fields_27973193286041_label"
+                      disabled=""
+                    />
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_20417258048921"
+                      >연락처(숫자만 입력)</label
+                    >
+                    <input
+                      type="text"
+                      name="request[custom_fields][20417258048921]"
+                      aria-required="true"
+                      aria-labelledby="request_custom_fields_20417258048921_label"
+                      disabled=""
+                    />
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_27979249250969"
+                      >담당자명</label
+                    >
+                    <input
+                      type="text"
+                      name="request[custom_fields][27979249250969]"
+                      aria-required="false"
+                      aria-labelledby="request_custom_fields_27979249250969_label"
+                      disabled=""
+                    />
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_27986418138009"
+                      >개인/사업자 선택</label
+                    >
+                    <input
+                      type="hidden"
+                      name="request[custom_fields][27986418138009]"
+                      autocomplete="off"
+                      data-tagger='[{"label":"-","value":""},{"label":"개인","value":"개인"},{"label":"사업자","value":"사업자"}]'
+                      aria-required="true"
+                      aria-labelledby="request_custom_fields_27986418138009_label"
+                      value=""
+                      data-gtm-form-interact-field-id="2"
+                      disabled=""
+                    />
+                    <a
+                      class="nesty-input"
+                      tabindex="0"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="_trdf2jkl7"
+                      aria-required="true"
+                      aria-labelledby="request_custom_fields_27986418138009_label"
+                      style="max-width: 100%"
+                      >-</a
+                    >
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_27986499834393"
+                      >생년월일</label
+                    >
+                    <input
+                      type="text"
+                      name="request[custom_fields][27986499834393]"
+                      aria-required="false"
+                      aria-describedby="request_custom_fields_27986499834393_hint"
+                      aria-labelledby="request_custom_fields_27986499834393_label"
+                      disabled=""
+                    />
+                    <p id="request_custom_fields_27986499834393_hint">
+                      ex&#41; 1900년 0월 0일
+                    </p>
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_27986560784793"
+                      >사업자등록번호 (숫자만 입력)</label
+                    >
+                    <input
+                      type="text"
+                      name="request[custom_fields][27986560784793]"
+                      aria-required="false"
+                      aria-labelledby="request_custom_fields_27986560784793_label"
+                      disabled=""
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="request_description"
+                      >문의사항을 알려주세요.</label
+                    >
+                    <textarea
+                      class="text-area"
+                      name="request[description]"
+                      aria-required="true"
+                      aria-describedby="request_description_hint"
+                      aria-labelledby="request_description_label"
+                      data-helper="wysiwyg"
+                      style="visibility: hidden; display: none"
+                      aria-hidden="true"
+                    ></textarea>
+                    <div
+                      role="application"
+                      id="hc-wysiwyg"
+                      data-test-id="zd-wysiwyg-editor"
+                    >
+                      <div role="toolbar" aria-label="편집기 도구 모음">
+                        <span aria-haspopup="true" aria-expanded="false">
+                          <span
+                            role="button"
+                            title="단락 스타일"
+                            tabindex="0"
+                            class="wysiwyg-icon-formats"
+                          ></span>
+                          <span role="menu" aria-hidden="true" tabindex="-1">
+                            <span
+                              role="button"
+                              title=""
+                              tabindex="0"
+                              data-block="p"
+                              aria-selected="true"
+                              >일반 텍스트</span
+                            >
+                            <span
+                              role="button"
+                              title=""
+                              tabindex="0"
+                              data-block="h2"
+                              >헤더 2</span
+                            ><span
+                              role="button"
+                              title=""
+                              tabindex="0"
+                              data-block="h3"
+                              >헤더 3</span
+                            >
+                            <span
+                              role="button"
+                              title=""
+                              tabindex="0"
+                              data-block="h4"
+                              >헤더 4</span
+                            >
+                          </span>
+                        </span>
+                        <span
+                          role="button"
+                          title="굵게"
+                          tabindex="0"
+                          class="wysiwyg-icon-bold"
+                        ></span>
+                        <span
+                          role="button"
+                          title="기울임꼴"
+                          tabindex="0"
+                          class="wysiwyg-icon-italic"
+                        ></span>
+                        <span role="separator"></span>
+                        <span
+                          role="button"
+                          title="글머리 기호 목록"
+                          tabindex="0"
+                          class="wysiwyg-icon-bullist"
+                        ></span>
+                        <span
+                          role="button"
+                          title="번호 매기기 목록"
+                          tabindex="0"
+                          class="wysiwyg-icon-numlist"
+                        ></span>
+                        <span role="separator"></span>
+                        <span
+                          role="button"
+                          title="코드 블록"
+                          tabindex="0"
+                          class="wysiwyg-icon-code-block"
+                        ></span>
+                        <span
+                          role="button"
+                          title="링크 삽입/편집"
+                          tabindex="0"
+                          class="wysiwyg-icon-link"
+                        ></span>
+                        <span
+                          role="button"
+                          title="인용"
+                          tabindex="0"
+                          class="wysiwyg-icon-quote"
+                        ></span>
+                      </div>
+                      <div role="form" aria-expanded="false"></div>
+                      <div role="group">
+                        <iframe
+                          id="request_description_ifr"
+                          frameborder="0"
+                          allowtransparency="true"
+                          class="tox-edit-area-iframe"
+                          title="null"
+                        ></iframe>
+                      </div>
+                      <div role="alert" aria-hidden="true"></div>
+                      <div>
+                        <input
+                          name="content_type"
+                          type="hidden"
+                          value="text/html"
+                        />
+                      </div>
+                    </div>
+                    <input
+                      type="hidden"
+                      name="request[description_mimetype]"
+                      value="text/html"
+                      style="display: none"
+                      autocomplete="off"
+                    />
+                    <p id="request_description_hint">
+                      ※ 추가적인 문의 내용 확인 및 정보제공에 대한 동의가 필요한
+                      경우 전화로 연락 드릴 수 있습니다.
+                    </p>
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_27980602810905"
+                      >요청 사유</label
+                    >
+                    <input
+                      type="text"
+                      name="request[custom_fields][27980602810905]"
+                      aria-required="true"
+                      aria-describedby="request_custom_fields_27980602810905_hint"
+                      aria-labelledby="request_custom_fields_27980602810905_label"
+                      disabled=""
+                    />
+                    <p id="request_custom_fields_27980602810905_hint">
+                      * 요청자의 진위성(신원)이 확인될 경우 한해 정보제공이
+                      가능합니다. * 관련 법령, 회사 약관 및 정책, 내부
+                      가이드라인 등에 의해 제공 가능한 정보가 제한될 수
+                      있습니다.
+                    </p>
+                  </div>
+                  <div class="form-field boolean" hidden="">
+                    <label for="request_custom_fields_27967111082905"
+                      >※ 문의자의 정보 및 작성한 내용이 정확하며 사실과 일치함을
+                      진술합니다. 동의하신다면 O를 선택해주세요.</label
+                    >
+                    <input
+                      name="request[custom_fields][27967111082905]"
+                      type="hidden"
+                      value="off"
+                      autocomplete="off"
+                      disabled=""
+                    /><input
+                      aria-required="true"
+                      aria-labelledby="request_custom_fields_27967111082905_label"
+                      type="checkbox"
+                      value="on"
+                      name="request[custom_fields][27967111082905]"
+                      disabled=""
+                    />
+                  </div>
+                  <div class="form-field" hidden="">
+                    <label for="request_custom_fields_20409345989657"
+                      >※ 개인정보 동의 시 아래 선택해주세요.</label
+                    >
+                    <input
+                      type="hidden"
+                      name="request[custom_fields][20409345989657]"
+                      autocomplete="off"
+                      data-tagger='[{"label":"-","value":""},{"label":"네 동의합니다","value":"네_동의합니다"},{"label":"아니요 거부합니다","value":"아니요_거부합니다"}]'
+                      aria-required="false"
+                      aria-describedby="request_custom_fields_20409345989657_hint"
+                      aria-labelledby="request_custom_fields_20409345989657_label"
+                      value=""
+                      data-gtm-form-interact-field-id="3"
+                      disabled=""
+                    /><a
+                      class="nesty-input"
+                      tabindex="0"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="_tualhdmog"
+                      aria-required="false"
+                      aria-labelledby="request_custom_fields_20409345989657_label"
+                      aria-describedby="request_custom_fields_20409345989657_hint"
+                      style="max-width: 100%"
+                      >-</a
+                    >
+                    <p id="request_custom_fields_20409345989657_hint">
+                      정보를 입력해주시면 답변 알림 및 신속하고 정확한 상담이
+                      가능합니다. 아래의 개인정보 수집 및 이용 정책을
+                      확인하셨다면 체크 박스에 체크해주세요. ① 수집항목: (필수)
+                      이메일 주소, 연락처, 이름/ (선택) 와디즈 이메일 계정 ②
+                      수집목적: 상담 답변 알림 및 정보 제공 ③ 보유기간: [정보
+                      수집으로부터 3년 후 파기] 개인정보 수집 동의를 거부할 수
+                      있으나, 거부할 경우 연락 수단의 부재로 답변 알림 및 상담이
+                      제한될 수 있습니다.
+                    </p>
+                  </div>
+                  <div class="form-field1">
+                    <label for="request-attachments"
+                      >첨부 파일
+                      <span class="optional">&#40;선택 사항&#41;</span>
+                    </label>
+                    <div id="upload-dropzone" class="upload-dropzone">
+                      <input
+                        type="file"
+                        multiple="true"
+                        id="request-attachments"
+                        data-fileupload="true"
+                        data-dropzone="upload-dropzone"
+                        data-error="upload-error"
+                        data-create-url=""
+                        data-name="request[attachments][]"
+                        data-pool="request-attachments-pool"
+                        data-delete-confirm-msg=""
+                        aria-describedby="upload-error"
+                      />
+                      <span>
+                        <a>파일 추가</a>
+                        또는 파일을 여기로 드래그
+                      </span>
+                    </div>
+                    <div
+                      id="upload-error"
+                      class="notification"
+                      style="display: none"
+                    >
+                      <span data-upload-error-message=""></span>
+                    </div>
+                    <ul
+                      id="request-attachments-pool"
+                      class="upload-pool"
+                      data-template="upload-template"
+                    ></ul>
+                  </div>
+                  <footer>
+                    <input
+                      class="main-footer-input"
+                      type="submit"
+                      name="commit"
+                      value="제출"
+                    />
+                  </footer>
                 </form>
               </div>
             </div>
           </div>
         </div>
+        <a class="last-a" href="">
+          <img
+            src="https://theme.zdassets.com/theme_assets/13612819/70b1977be0a68c0c7e333ae43321efbb048f90cd.PNG"
+            alt="AI"
+            style="width: 100%"
+          />
+        </a>
+        <button
+          class="floating-button"
+          onclick="zE ('messenger' , 'open');"
+        ></button>
       </main>
       <!-- 메인 클론코딩 범위 -->
       <!-- 푸터 클론코딩 제작 -->
@@ -433,5 +968,17 @@
       </footer>
       <!-- 푸터 클론코딩 범위 -->
     </div>
+    <div class="nesty-panel" id="_mn1kxwrhu" style="display: none; top: 325.695px; left: 319px; width: 785px;"></div>
+    <div class="nesty-panel" id="_scbhhql3t" style="display: none;"></div>
+    <div class="nesty-panel" id="_u67ihprlf" style="display: none;"></div>
+    <div class="nesty-panel" id="_a85gembpw" style="display: none;"></div>
+    <div class="nesty-panel" id="_ne6ihf2z0" style="display: none;"></div>
+    <div class="nesty-panel" id="_rcto6hke5" style="display: none;"></div>
+    <div></div>
+    <div style="visibility: visible;">
+      <div></div>
+      <div></div>
+    </div>
+    <script src="/staticfiles/js/help-sanghwa/help-center-register-write.js"></script>
   </body>
 </html>
