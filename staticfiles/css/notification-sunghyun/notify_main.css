@@ -590,8 +590,8 @@ button{
     color: #000;
 }
 .ui-tabs li.active>a {
-    border-bottom: 3px solid #008244;
-    color: #008244;
+    border-bottom: 3px solid #00704A;
+    color: #00704A;
     font-weight: 500;
 }
 .ui-tabs li.deactive>a {
@@ -912,7 +912,7 @@ a, button {
 }
 
 .page a:hover {
-    color: #00b2b2;
-    fill: #00b2b2;
+    color: #00704A;
+    fill: #00704A;
    
 }

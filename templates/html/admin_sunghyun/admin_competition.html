@@ -48,7 +48,7 @@ admin_competition = 공모전/대회 관리 페이지
                 <nav class="sticky lg:px-[32px] lg:h-[58px]">
                     <div>
                         <div class="flex-center">
-                            <a href="/">
+                            <a href="#">
                                 <svg
                                     viewBox="0 0 32 16"
                                     xmlns="https://www.w3.org/2000/svg"
@@ -100,7 +100,8 @@ admin_competition = 공모전/대회 관리 페이지
                                 </button>
                                 </div>
                                 <h2 class="admin-name">관리자</h2>
-                                <a traget="_blank" href="/templates/html/admin_sunghyun/admin_account.html">
+                                <!--/templates/html/admin_sunghyun/admin_account.html으로 전송-->
+                                <a traget="_blank" href="#">
                                     <button aria-label="button" class="relative-disabled" type="button">
                                         <div class="flex-center">관리자 계정관리</div>
                                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" 
@@ -115,7 +116,7 @@ admin_competition = 공모전/대회 관리 페이지
                         <!-------------------------메뉴 관리----------------------------->
                         <ul class="px-py">
                             <li class="fill false hover:surface_light">
-                                <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_main.html"> <!--메인 관리-->
+                                <a class="flex-grow" href="#"> <!--메인 관리 /templates/html/admin_sunghyun/admin_main.html-->
                                     <svg viewBox="0 0 24 25" fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-secondary">
@@ -126,7 +127,7 @@ admin_competition = 공모전/대회 관리 페이지
                                 </a>
                             </li>
                             <li class="fill false hover:surface_light">
-                                <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_user.html"> <!--회원 관리-->
+                                <a class="flex-grow" href="#"> <!--회원 관리 /templates/html/admin_sunghyun/admin_user.html-->
 
                                     <svg width="24" height="24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -138,38 +139,26 @@ admin_competition = 공모전/대회 관리 페이지
                                 </a>
                             </li>
                             <li class="fill false hover:surface_light">
-                                <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_notification.html"> <!--공지사항 관리 화면 이동-->
+                                <a class="flex-grow" href="#"> <!--공지사항 관리 화면 이동-/templates/html/admin_sunghyun/admin_notification.html---->
 
                                     <svg width="24" height="24" fill="none" 
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-secondary">
-                                    <!-- <path d="M8.5 11.7h2a6.057 6.057 0 0 1 1.769.265 6.51 6.51 0 0 0-.888 1.335H8.5a4.4 4.4 0 0 0-4.4 4.4v1c0 .22.18.4.4.4h6.881c.295.59.677 1.129 1.129 1.6H4.5a2 2 0 0 1-2-2v-1a6 6 0 0 1 6-6Z"></path> -->
+                                    <path d="M8.5 11.7h2a6.057 6.057 0 0 1 1.769.265 6.51 6.51 0 0 0-.888 1.335H8.5a4.4 4.4 0 0 0-4.4 4.4v1c0 .22.18.4.4.4h6.881c.295.59.677 1.129 1.129 1.6H4.5a2 2 0 0 1-2-2v-1a6 6 0 0 1 6-6Z"></path>
                                     <path d="M2 5.111C2 4.498 2.45 4 3.007 4h15.099c.556 0 1.006.498 1.006 1.111 0 .614-.45 1.112-1.006 1.112h-15.1C2.452 6.223 2 5.725 2 5.11ZM2 10.668c0-.614.45-1.111 1.007-1.111h10.946a6.53 6.53 0 0 0-2.418 2.223H3.007C2.45 11.78 2 11.282 2 10.668ZM10.503 15.114H3.007C2.45 15.114 2 15.61 2 16.225s.45 1.111 1.007 1.111h7.818a6.496 6.496 0 0 1-.322-2.222Z" fill="#333334"></path>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.945 12.347a.665.665 0 0 1 .306-.74l.833-.49a.665.665 0 0 1 .795.092l.46.437c.167.16.398.231.63.23a.892.892 0 0 0 .626-.24l.451-.445a.665.665 0 0 1 .794-.105l.84.476a.665.665 0 0 1 .32.735l-.15.616a.895.895 0 0 0 .116.66c.118.2.298.36.522.423l.61.169c.287.079.486.338.488.635l.008.965a.665.665 0 0 1-.477.644l-.608.179a.892.892 0 0 0-.513.43.898.898 0 0 0-.105.663l.159.614a.665.665 0 0 1-.307.74l-.832.49a.665.665 0 0 1-.795-.092l-.46-.437a.898.898 0 0 0-.63-.23.893.893 0 0 0-.626.24l-.452.445a.665.665 0 0 1-.794.105l-.84-.476a.665.665 0 0 1-.319-.734l.15-.618a.894.894 0 0 0-.117-.66.894.894 0 0 0-.52-.421l-.612-.17a.665.665 0 0 1-.488-.635l-.008-.965a.665.665 0 0 1 .477-.643l.608-.18a.892.892 0 0 0 .514-.43.898.898 0 0 0 .105-.663l-.159-.614Zm3.115 4.279a1.283 1.283 0 1 0 0-2.567 1.283 1.283 0 0 0 0 2.567Z" fill="#333334"></path>
                                     </svg>
                                     <span class="block-secondary">공지사항 관리</span>
                                 </a>
                             </li>
-                            <!-- <li class="fill false hover:surface_light">
-                                <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_message.html"> <!--문의목록-->
-
-                                    <!-- <svg width="24" height="24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-secondary">  -->
-                                    <!-- <path d="M8.5 11.7h2a6.057 6.057 0 0 1 1.769.265 6.51 6.51 0 0 0-.888 1.335H8.5a4.4 4.4 0 0 0-4.4 4.4v1c0 .22.18.4.4.4h6.881c.295.59.677 1.129 1.129 1.6H4.5a2 2 0 0 1-2-2v-1a6 6 0 0 1 6-6Z"></path> -->
-                                    <!-- <path d="M8.892 9.13a.5.5 0 0 0-.862 0l-.576.977a.5.5 0 0 1-.33.236l-1.112.228a.5.5 0 0 0-.266.83l.748.806a.5.5 0 0 1 .13.394l-.12 1.092a.5.5 0 0 0 .697.513l1.06-.462a.5.5 0 0 1 .4 0l1.06.462a.5.5 0 0 0 .697-.513l-.12-1.092a.5.5 0 0 1 .13-.395l.748-.805a.5.5 0 0 0-.267-.83l-1.11-.228a.5.5 0 0 1-.33-.236l-.577-.977ZM18.108 10.3a.7.7 0 0 1-.7.7h-3.732a.7.7 0 1 1 0-1.4h3.732a.7.7 0 0 1 .7.7ZM17.408 14a.7.7 0 1 0 0-1.4h-3.732a.7.7 0 1 0 0 1.4h3.732Z"fill="#333334"></path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.2 8.4A4.4 4.4 0 0 1 6.6 4h10.7a4.4 4.4 0 0 1 4.4 4.4v6.8a4.4 4.4 0 0 1-4.4 4.4H6.6a4.4 4.4 0 0 1-4.4-4.4V8.4Zm4.4-2.8h10.7a2.8 2.8 0 0 1 2.8 2.8v6.8a2.8 2.8 0 0 1-2.8 2.8H6.6a2.8 2.8 0 0 1-2.8-2.8V8.4a2.8 2.8 0 0 1 2.8-2.8Z" fill="#333334"></path>
-                                    </svg>
-                                    <span class="block-secondary">문의 목록</span>
-                                </a>
-                            </li> -->
+                             
                             <li class="fill false hover:surface_light">
-                                <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_payment.html"> <!--결제내역 관리 화면 이동-->
+                                <a class="flex-grow" href="#"> <!----결제내역 관리 화면 이동---------/templates/html/admin_sunghyun/admin_payment.html---->
 
                                     <svg width="24" height="24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-secondary">
-                                    <!-- <path d="M8.5 11.7h2a6.057 6.057 0 0 1 1.769.265 6.51 6.51 0 0 0-.888 1.335H8.5a4.4 4.4 0 0 0-4.4 4.4v1c0 .22.18.4.4.4h6.881c.295.59.677 1.129 1.129 1.6H4.5a2 2 0 0 1-2-2v-1a6 6 0 0 1 6-6Z"></path> -->
+                                     <path d="M8.5 11.7h2a6.057 6.057 0 0 1 1.769.265 6.51 6.51 0 0 0-.888 1.335H8.5a4.4 4.4 0 0 0-4.4 4.4v1c0 .22.18.4.4.4h6.881c.295.59.677 1.129 1.129 1.6H4.5a2 2 0 0 1-2-2v-1a6 6 0 0 1 6-6Z"></path> 
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 4.3H8.7a4.4 4.4 0 0 0-4.4 4.4v6.6a4.4 4.4 0 0 0 4.4 4.4h6.6a4.4 4.4 0 0 0 4.4-4.4V8.7a4.4 4.4 0 0 0-4.4-4.4ZM8.7 2.7a6 6 0 0 0-6 6v6.6a6 6 0 0 0 6 6h6.6a6 6 0 0 0 6-6V8.7a6 6 0 0 0-6-6H8.7Z" fill="#333334"></path>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.874 14.516c.129.434.543.734 1.014.734.474 0 .89-.303 1.016-.74l.724-2.501h.66l.724 2.501c.126.437.542.74 1.015.74.472 0 .886-.3 1.015-.734l.743-2.507h.6c.34 0 .615-.264.615-.59a.603.603 0 0 0-.615-.589h-.252l.274-.925c.135-.454-.221-.905-.714-.905a.737.737 0 0 0-.72.539l-.338 1.291h-1.409l-.3-1.113A.992.992 0 0 0 11.96 9a.99.99 0 0 0-.967.721l-.295 1.11H9.283l-.339-1.293A.738.738 0 0 0 8.224 9c-.494 0-.85.451-.715.906l.274.924h-.168a.603.603 0 0 0-.615.59c0 .325.276.589.615.589h.516l.743 2.507Zm.718-2.507h.793l-.368 1.388h-.06l-.365-1.388Zm4.32 1.365-.368-1.365h.783l-.356 1.365h-.06Z" fill="#333334"></path>
                                     </svg>
@@ -177,7 +166,7 @@ admin_competition = 공모전/대회 관리 페이지
                                 </a>
                             </li>
                             <li class="fill surface_light hover:surface_light">
-                                <a class="flex-grow" href="/templates/html/admin_sunghyun/admin_competition.html"> <!--결제내역 관리 화면 이동-->
+                                <a class="flex-grow" href="#"> <!--결제내역 관리 화면 이동-->
 
                                     <svg width="24" height="24" fill="none" 
                                     xmlns="http://www.w3.org/2000/svg" 
@@ -255,7 +244,7 @@ admin_competition = 공모전/대회 관리 페이지
                                         <div class="content_primary">
                                             <div class="min-5">제목</div>
                                         <div class="grid-px">
-                                            <div>댓글 개수</div>
+                                            <div>추천수</div>
                                             <div>보기</div>
                                         </div>
                                 </div>
@@ -269,7 +258,7 @@ admin_competition = 공모전/대회 관리 페이지
                                                   <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
                                       </svg>
                                     </th>
-                                    <th scope="col">댓글 개수
+                                    <th scope="col">추천 수
                                       <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
                                               class="wh-60">
                                                   <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
@@ -289,7 +278,7 @@ admin_competition = 공모전/대회 관리 페이지
                                 <tr>
                                     <!-- <td><input type="" style="width: 220px;"></td> -->
                                     <td style= "width:560px;" >제목</td>
-                                    <td>댓글 개수</td>
+                                    <td>추천 수</td>
                                   
                                     <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                     </button>
@@ -298,7 +287,7 @@ admin_competition = 공모전/대회 관리 페이지
                                   <tr>
                                     <!-- <td><input type="" style="width: 220px;"></td> -->
                                     <td style= "width:560px;" >제목</td>
-                                    <td>댓글 개수</td>
+                                    <td>추천 수</td>
                                   
                                     <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                     </button>
@@ -307,7 +296,7 @@ admin_competition = 공모전/대회 관리 페이지
                                   <tr>
                                     <!-- <td><input type="" style="width: 220px;"></td> -->
                                     <td style= "width:560px;" >제목</td>
-                                    <td>댓글 개수</td>
+                                    <td>추천 수</td>
                                   
                                     <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                     </button>
@@ -316,7 +305,7 @@ admin_competition = 공모전/대회 관리 페이지
                                   <tr>
                                     <!-- <td><input type="" style="width: 220px;"></td> -->
                                     <td style= "width:560px;" >제목</td>
-                                    <td>댓글 개수</td>
+                                    <td>추천 수</td>
                                   
                                     <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                     </button>
@@ -325,7 +314,7 @@ admin_competition = 공모전/대회 관리 페이지
                                   <tr>
                                     <!-- <td><input type="" style="width: 220px;"></td> -->
                                     <td style= "width:560px;" >제목</td>
-                                    <td>댓글 개수</td>
+                                    <td>추천 수</td>
                                   
                                     <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                     </button>
@@ -334,7 +323,7 @@ admin_competition = 공모전/대회 관리 페이지
                                   <tr>
                                     <!-- <td><input type="" style="width: 220px;"></td> -->
                                     <td style= "width:560px;" >제목</td>
-                                    <td>댓글 개수</td>
+                                    <td>추천 수</td>
                                   
                                     <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                     </button>
@@ -343,7 +332,7 @@ admin_competition = 공모전/대회 관리 페이지
                                   <tr>
                                     <!-- <td><input type="" style="width: 220px;"></td> -->
                                     <td style= "width:560px;" >제목</td>
-                                    <td>댓글 개수</td>
+                                    <td>추천 수</td>
                                   
                                     <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                     </button>
@@ -352,7 +341,7 @@ admin_competition = 공모전/대회 관리 페이지
                                   <tr>
                                     <!-- <td><input type="" style="width: 220px;"></td> -->
                                     <td style= "width:560px;" >제목</td>
-                                    <td>댓글 개수</td>
+                                    <td>추천 수</td>
                                   
                                     <td><button class="auth1" onclick="location.href='#'" style= "width:60px; margin-left: 10px; background-color: rgb(19, 106, 11); color: aliceblue;"  >작성
                                       </button>
