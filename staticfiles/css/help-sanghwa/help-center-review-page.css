@@ -330,7 +330,7 @@ body{
 }
 
 a {
-    color: rgb(89 189 181);
+    color: #008243;
     text-decoration: none;
     background-color: transparent;
     touch-action: manipulation;
@@ -733,8 +733,8 @@ input {
 }
 
 .button-header-1{
-    color: #00C4C4;
-    border-color: #00C4C4;
+    color: #008243;
+    border-color: #008243;
     width: 100px;
     height: 45px;
     display: flex;
@@ -751,14 +751,14 @@ input {
     vertical-align: middle;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #00C4C4;
+    border: 1px solid #008243;
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
 }
 
 .button-header-1:hover{
-    color: #00C4C4;
+    color: #008243;
     text-decoration: none;
 }
 
@@ -788,8 +788,8 @@ a {
 }
 
 .button-header-2{
-    color: #00C4C4;
-    border-color: #00C4C4;
+    color: #008243;
+    border-color: #008243;
     width: 110px;
     height: 45px;
     display: flex;
@@ -806,14 +806,14 @@ a {
     vertical-align: middle;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #00C4C4;
+    border: 1px solid #008243;
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
 }
 
 .button-header-2:hover{
-    color: #00C4C4;
+    color: #008243;
     text-decoration: none;
 }
 
@@ -841,8 +841,8 @@ a {
 }
 
 .button-header-3{
-    color: #00C4C4;
-    border-color: #00C4C4;
+    color: #008243;
+    border-color: #008243;
     box-shadow: inset 0px -1px 0px #F0F2F5;
     width: 140px;
     height: 45px;
@@ -860,14 +860,14 @@ a {
     vertical-align: middle;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #00C4C4;
+    border: 1px solid #008243;
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
 }
 
 .button-header-3:hover{
-    color: #00C4C4;
+    color: #008243;
     text-decoration: none;
 }
 
@@ -1201,7 +1201,7 @@ ul {
 
 
 a {
-    color: rgb(89 189 181);
+    color: #008243;
     text-decoration: none;
     background-color: transparent;
     touch-action: manipulation;
@@ -1232,7 +1232,7 @@ a.link-underline:hover {
     .svg-500{
         fill: currentColor;
         margin-left: 0.25rem;
-        color: #ED8936;
+        color: orangered;
     }
 }
 
@@ -1292,7 +1292,7 @@ p {
 /* <a class="hover:no-underline" href=""> */
 /* class="hover:no-underline" */
 a {
-    color: rgb(89 189 181);
+    color: #008243;
     text-decoration: none;
     background-color: transparent;
     touch-action: manipulation;
@@ -1441,7 +1441,7 @@ ul {
 
 
 a {
-    color: rgb(89 189 181);
+    color: #008243;
     text-decoration: none;
     background-color: transparent;
     touch-action: manipulation;

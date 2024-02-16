@@ -7,6 +7,7 @@
         <!-- 자바스크립트 링크 연결 -->
         <script src="/staticfiles/css/help-sanghwa/plus-footer.js"></script>
         <script src="/staticfiles/css/help-sanghwa/plus-footer.js"></script>
+        <script src="/staticfiles/js/help-sanghwa/help-center-list-page.js"></script>
         <link rel="stylesheet" href="/staticfiles/css/help-sanghwa/plus-footer.css">
         <!-- 글꼴 적용 -->
         <link
@@ -27,7 +28,7 @@
             href="/staticfiles/css/help-sanghwa/help-center-list-page.css"
         />
         <!-- 웹페이지 주 제목 -->
-        <title>도움말 센터-일대일 문의</title>
+        <title>ONELAB-일대일 문의</title>
     </head>
     <body class>
         <div></div>
@@ -50,8 +51,8 @@
                         <img
                             class="block-fluid"
                             id="logo"
-                            src="/templates/html/help-sanghwa/images/help.png"
-                            alt="도움말 센터 헬프 센터 홈페이지"
+                            src="/templates/html/help-sanghwa/images/header-logo.png"
+                            alt="원랩 메인 로고"
                         />
                     </a>
                     <!-- <button
@@ -92,17 +93,17 @@
                         <a
                             class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
                             href="#"
-                            >문의등록</a
+                            >원랩 문의하기</a
                         >
                         <a
                             class="button button-yds1 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
                             href="#"
-                            >메이커센터
+                            >대회/공모전 문의하기
                         </a>
                         <a
                             class="button button-yds3 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-179"
                             href="#"
-                            >와디즈 바로가기
+                            >자료공유 및 장소공유
                         </a>
                     </div>
                 </nav>
@@ -167,7 +168,7 @@
                             <div
                                 class="flex flex-first flex-wrap mt-5 mb-4"
                                 x-data="Widgets.popularKeywords"
-                                x-init="parseKeywords('펀딩, 프리오더, 스토어, 서포터클럽')"
+                                x-init="parseKeywords('원랩 문의하기, 대회/공모전 문의하기, 자료공유 문의하기, 장소공유 문의하기')"
                             >
                                 <template
                                     x-for="(keyword,index) in keywords"
@@ -183,8 +184,8 @@
                                         id="b1"
                                         x-text="keyword.title"
                                         href=""
-                                        title="펀딩"
-                                        >펀딩
+                                        title="원랩 문의하기"
+                                        >원랩 문의하기
                                     </a>
                                 </div>
                                 <div class="flex align-items-center m-1">
@@ -195,8 +196,8 @@
                                         id="b2"
                                         x-text="keyword.title"
                                         href=""
-                                        title="프리오더"
-                                        >프리오더
+                                        title="대회/공모전 문의하기"
+                                        >대회/공모전 문의하기
                                     </a>
                                 </div>
                                 <div class="flex align-items-center m-1">
@@ -207,8 +208,8 @@
                                         id="b3"
                                         x-text="keyword.title"
                                         href=""
-                                        title="스토어"
-                                        >스토어
+                                        title="자료공유"
+                                        >자료공유
                                     </a>
                                 </div>
                                 <div class="flex align-items-center m-1">
@@ -219,8 +220,8 @@
                                         id="b4"
                                         x-text="keyword.title"
                                         href=""
-                                        title="서포터클럽"
-                                        >서포터클럽
+                                        title="장소공유"
+                                        >장소공유
                                     </a>
                                 </div>
                             </div>
@@ -258,7 +259,7 @@
                                         font-family: 'Pretendard'">
                                         <h4 class="my-4 text-right">
                                             <a class="link-stretched hover:no-underline" id="sup-id" href="#">
-                                                서포터
+                                                원랩 문의하기
                                             </a>
                                         </h4>
                                     </div>
@@ -272,7 +273,7 @@
                                         font-family: 'Pretendard'">
                                         <h4 class="my-4 text-right">
                                             <a class="link-stretched hover:no-underline" id="sup-id" href="#">
-                                                메이커
+                                                공유하기
                                             </a>
                                         </h4>
                                     </div>
@@ -291,7 +292,7 @@
                                 <div class="list-bordered border border-radius overflow-hidden">
                                     <div class="bg-white" x-data="{ open: false }">
                                         <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn1" >
-                                          알림 신청한 프로젝트는 어디서 확인하나요?
+                                          좋아요한 게시글들은 어디서 확인할 수 있나요?
                                           <svg class="fill-current pointer-events-none ml-3" :class="open &amp;&amp; 'rotate-180'" width="14px" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg" >
                                             <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
                                           </svg>
@@ -329,7 +330,7 @@
                                       <!------>
                                       <div class="bg-white" x-data="{ open: false }">
                                         <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn3" data-active-class="text-primary">
-                                          펀딩 참여 내역은 어떻게 확인하나요?
+                                          필요한 자료 요청은 어떻게 할 수 있나요?
                                           <svg class="fill-current pointer-events-none ml-3" :class="open &amp;&amp; 'rotate-180'" width="14px" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
                                           </svg>
@@ -364,8 +365,8 @@
                                     <ul class="list-unstyled row">
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="z4V6RoIxytc" data-fancybox="" href="https://www.youtube.com/watch?v=z4V6RoIxytc" style="background-image: url(https://img.youtube.com/vi/z4V6RoIxytc/0.jpg);">
-                                                    <iframe class="relative z-20 invisible" id="z4V6RoIxytc" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 편한 신발 브랜드 제누이오 성공 비결, 명품급 신발을 싸게 팔 수 있는 이유 | 게임체인저 제누이오" width="640" height="360" src="https://www.youtube.com/embed/z4V6RoIxytc?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=1">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="z4V6RoIxytc" data-fancybox="" href="" style="background-image: url(https://img.youtube.com/vi/z4V6RoIxytc/0.jpg);">
+                                                    <iframe class="relative z-20 invisible" id="z4V6RoIxytc" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 편한 신발 브랜드 제누이오 성공 비결, 명품급 신발을 싸게 팔 수 있는 이유 | 게임체인저 제누이오" width="640" height="360" src="">
 
                                                     </iframe>
                                                     <div class="absolute-center z-10 flex p-4 circle button button-primary">
@@ -386,8 +387,8 @@
                                         </li>
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="uR7NzL_86Gs" data-fancybox="" href="https://www.youtube.com/watch?v=uR7NzL_86Gs" style="background-image: url(https://img.youtube.com/vi/uR7NzL_86Gs/0.jpg);">
-                                                    <iframe class="relative z-20 invisible" id="uR7NzL_86Gs" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="상세페이지 기획만 잘해도 펀딩 성공할 수 있다?ㅣGame Changer - 제누이오ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/uR7NzL_86Gs?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=2">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="uR7NzL_86Gs" data-fancybox="" href="" style="background-image: url(https://img.youtube.com/vi/uR7NzL_86Gs/0.jpg);">
+                                                    <iframe class="relative z-20 invisible" id="uR7NzL_86Gs" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="상세페이지 기획만 잘해도 펀딩 성공할 수 있다?ㅣGame Changer - 제누이오ㅣ 와디즈 아카데미" width="640" height="360" src="">
 
                                                     </iframe>
                                                     <div class="absolute-center z-10 flex p-4 circle button button-primary">
@@ -408,8 +409,8 @@
                                         </li>
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="S2caXNaKpDg" data-fancybox="" href="https://www.youtube.com/watch?v=S2caXNaKpDg" style="background-image: url(https://img.youtube.com/vi/S2caXNaKpDg/0.jpg);">
-                                                    <iframe class="relative z-20 invisible" id="S2caXNaKpDg" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="전자책 쓰는법 어렵지 않아요. 퇴사후 전자책 부업으로 6억 매출 달성한 방법 공개 ㅣGame Changer - 유성우ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/S2caXNaKpDg?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=3">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="S2caXNaKpDg" data-fancybox="" href="" style="background-image: url(https://img.youtube.com/vi/S2caXNaKpDg/0.jpg);">
+                                                    <iframe class="relative z-20 invisible" id="S2caXNaKpDg" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="전자책 쓰는법 어렵지 않아요. 퇴사후 전자책 부업으로 6억 매출 달성한 방법 공개 ㅣGame Changer - 유성우ㅣ 와디즈 아카데미" width="640" height="360" src="">
 
                                                     </iframe>
                                                     <div class="absolute-center z-10 flex p-4 circle button button-primary">
@@ -430,8 +431,8 @@
                                         </li>
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="tlhEgarJRQk" data-fancybox="" href="https://www.youtube.com/watch?v=tlhEgarJRQk" style="background-image: url(https://img.youtube.com/vi/tlhEgarJRQk/0.jpg);">
-                                                    <iframe class="relative z-20 invisible" id="tlhEgarJRQk" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="온라인 부업 아이템, 돈 버는 전자책 펀딩 방법 알려드립니다 | Game Changer 유성우 작가" width="640" height="360" src="https://www.youtube.com/embed/tlhEgarJRQk?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=4">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="tlhEgarJRQk" data-fancybox="" href="" style="background-image: url(https://img.youtube.com/vi/tlhEgarJRQk/0.jpg);">
+                                                    <iframe class="relative z-20 invisible" id="tlhEgarJRQk" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="온라인 부업 아이템, 돈 버는 전자책 펀딩 방법 알려드립니다 | Game Changer 유성우 작가" width="640" height="360" src="">
 
                                                     </iframe>
                                                     <div class="absolute-center z-10 flex p-4 circle button button-primary">
@@ -448,8 +449,8 @@
                                             </div>
                                             <h3 class="h4 my-4" data-title="tlhEgarJRQk">온라인 부업 아이템, 돈 버는 전자책 펀딩 방법 알려드립니다 | Game Changer 유성우 작가</h3></li><li class="mb-6 md:col-4">
                                                 <div class="relative w-full ratio ratio-16-9">
-                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="Xix85yjSLr0" data-fancybox="" href="https://www.youtube.com/watch?v=Xix85yjSLr0" style="background-image: url(https://img.youtube.com/vi/Xix85yjSLr0/0.jpg);">
-                                                        <iframe class="relative z-20 invisible" id="Xix85yjSLr0" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 와디즈 펀딩 성공한 스텐팬 사용법 1인자 쿠자의 주방! 노하우 털이 ㅣGame Changer - 쿠자의주방ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/Xix85yjSLr0?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=5">
+                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="Xix85yjSLr0" data-fancybox="" href="" style="background-image: url(https://img.youtube.com/vi/Xix85yjSLr0/0.jpg);">
+                                                        <iframe class="relative z-20 invisible" id="Xix85yjSLr0" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 와디즈 펀딩 성공한 스텐팬 사용법 1인자 쿠자의 주방! 노하우 털이 ㅣGame Changer - 쿠자의주방ㅣ 와디즈 아카데미" width="640" height="360" src="">
 
                                                         </iframe>
                                                         <div class="absolute-center z-10 flex p-4 circle button button-primary">
@@ -470,8 +471,8 @@
                                             </li>
                                             <li class="mb-6 md:col-4">
                                                 <div class="relative w-full ratio ratio-16-9">
-                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="plIJCkiw-Ls" data-fancybox="" href="https://www.youtube.com/watch?v=plIJCkiw-Ls" style="background-image: url(https://img.youtube.com/vi/plIJCkiw-Ls/0.jpg);">
-                                                        <iframe class="relative z-20 invisible" id="plIJCkiw-Ls" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="EP. 0 레지나 뷰티 '디마프'의 우당탕탕 펀딩 도전기 | 서포터를 찾습니다 | 와디즈아카데미" width="640" height="360" src="https://www.youtube.com/embed/plIJCkiw-Ls?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=6">
+                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="plIJCkiw-Ls" data-fancybox="" href="" style="background-image: url(https://img.youtube.com/vi/plIJCkiw-Ls/0.jpg);">
+                                                        <iframe class="relative z-20 invisible" id="plIJCkiw-Ls" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="EP. 0 레지나 뷰티 '디마프'의 우당탕탕 펀딩 도전기 | 서포터를 찾습니다 | 와디즈아카데미" width="640" height="360" src="">
 
                                                         </iframe>
                                                         <div class="absolute-center z-10 flex p-4 circle button button-primary">
