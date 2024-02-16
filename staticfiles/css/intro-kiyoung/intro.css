@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body,
 button,
 html,
@@ -152,7 +156,13 @@ li {
 }
 
 .serviceinfo-inner {
-    padding: 80px 16px;
+    padding: 65px 16px;
+}
+
+.serviceinfo-inner {
+    border-bottom-style: solid !important;
+    border-bottom: 2px;
+    border-bottom-color: #eff3fd;
 }
 
 .serviceinfo-title {
@@ -237,6 +247,16 @@ li {
 
 .serviceinfo-listitem .serviceinfo-termdescription {
     word-break: keep-all;
+}
+
+.serviceinfo-listitem:hover {
+    background-color: #eff3fd;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.serviceinfo-listitem:not(:hover) {
+    transition: 0.5s ease-out;
 }
 
 .serviceprovide-container {
@@ -448,7 +468,7 @@ button {
 
 .bannercontainer-inner {
     flex-direction: row;
-    padding: 80px 16px;
+    padding: 65px 16px;
 }
 
 .banneritem-container {

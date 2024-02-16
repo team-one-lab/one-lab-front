@@ -48,3 +48,10 @@ emailCheck.addEventListener('click', () => {
     emailExistence.style.display = 'block';
     emailWrite.style.display = 'none';
 });
+
+const findPassword = document.querySelector('#btn-check-pw');
+const resetPage = document.querySelector('#joinedemail');
+
+findPassword.addEventListener('click', () => {
+    resetPage.innerText = '귀하의 등록된 이메일로 비밀번호를 재설정 할 수 있는 링크를 보내드렸습니다';
+});

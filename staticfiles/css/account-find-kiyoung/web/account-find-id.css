@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body,
 button,
 html,
@@ -102,10 +106,6 @@ video {
     border: 0;
     padding: 0;
     vertical-align: baseline;
-}
-
-:root {
-    --scrollbar-width: 0;
 }
 
 body,
@@ -267,6 +267,7 @@ button {
 .web-header .onelab-logo > a {
     display: block;
     padding: 11px 0 13px;
+    text-align: center;
 }
 
 .web-header .onelab-logo > a {
@@ -279,6 +280,11 @@ button {
     left: -9999px;
     visibility: none;
     height: 1px;
+}
+
+.logo-img {
+    width: 40%;
+    height: 40%;
 }
 
 .web-header .onelab-logo > a svg {
