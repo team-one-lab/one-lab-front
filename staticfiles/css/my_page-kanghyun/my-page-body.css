@@ -522,24 +522,24 @@ h4{
 .my-page-accumulate-title svg {
     display: inline-block;
     margin: 2px 0;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
 }
 
 .my-page-accumulate-name{
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
     margin-right: 4px;
     margin-left: 8px;
-    line-height: 20px;
+    line-height: 24px;
     white-space: nowrap;
     color: #495057;
     font-weight: 500;
 }
 
 .my-page-accumulate-value{
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
     text-align: right;
@@ -817,4 +817,96 @@ h4{
     width: 20px;
     height: 20px;
     vertical-align: top;
+}
+
+
+/* 추가수정부분 */
+.my-page-adbanner-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 16px;
+}
+
+.my-page-adbanner-wrapper {
+    max-width: 375px;
+    min-width: 320px;
+    flex-grow: 1;
+}
+
+.my-page-advertisement {
+    position: relative;
+}
+
+.my-page-advertisement-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    color: #212529;
+}
+
+.my-page-advertisement-thumbnailwrap {
+    position: relative;
+    border-radius: 8px;
+    padding-top: 34.44%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.card-thumbnail {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: .25s;
+    background: no-repeat 50%/cover border-box;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 10px;
+}
+
+.my-page-advertisement-ad {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: flex;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    width: 28px;
+    height: 20px;
+    color: #fff;
+}
+
+.my-page-advertisement-badge {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: flex;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    align-items: center;
+    opacity: .7;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    padding: 3px 8px;
+    color: #212529;
 }

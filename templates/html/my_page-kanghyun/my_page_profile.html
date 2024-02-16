@@ -6,6 +6,12 @@
 
         <title>프로필 설정</title>
         <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/templates/html/one-lab-soyoung/favicon/favicon-16x16.png"
+        />
+        <link
             rel="stylesheet"
             href="/staticfiles/css/my_page-kanghyun/my_page_profile(new).css"
         />
@@ -69,22 +75,25 @@
                                     />
                                 </li>
                             </ul>
-                            <h5>
-                                취득한 자격증을 적어주세요(ex.토익900,
-                                정보처리기사)
-                            </h5>
+                            <h5>취득한 자격증을 적어주세요.</h5>
                             <div class="textarea-wrap">
-                                <textarea
-                                    id="introduceme"
+                                <input
+                                    type="text"
+                                    class="input-text"
                                     maxlength="80"
-                                ></textarea>
+                                    placeholder="ex&#41; 토익 900, 정보처리기사"
+                                    value=""
+                                />
                             </div>
                             <h5>간단한 한 마디로 나를 소개해주세요</h5>
                             <div class="textarea-wrap">
-                                <textarea
-                                    id="introduceme"
-                                    maxlength="250"
-                                ></textarea>
+                                <input
+                                    type="text"
+                                    class="input-text input-text-large"
+                                    maxlength="80"
+                                    placeholder=""
+                                    value=""
+                                />
                             </div>
 
                             <ul class="lst_thumb"></ul>
