@@ -257,8 +257,8 @@ button:not(:disabled) {
 }
 
 .Button_button.Button_primarys.Button_contained {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     margin-left: 8px;
 }
@@ -618,7 +618,7 @@ button:not(:disabled) {
 }
 
 .new_menu {
-    background-color: rgb(222, 235, 255);
+    /* background-color: rgb(222, 235, 255); */
     color: inherit;
     cursor: default;
     display: block;
@@ -1433,8 +1433,8 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
 
 
 .Button_primarys {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     padding: 9px 23px;
     height: 48px;
@@ -1442,8 +1442,8 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
 }
 
 .Button_primary {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     width: 100%;
     padding: 9px 23px;
@@ -1521,4 +1521,8 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
   
 .select_menu_menu_list {
     display: none;
+}
+
+.select_menu_option:hover {
+    background-color: rgb(222, 235, 255);
 }

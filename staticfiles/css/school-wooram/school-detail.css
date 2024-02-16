@@ -1004,8 +1004,8 @@ a.Button_button {
 }
 
 .Button_primary {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     display: block;
     width: 100%;
@@ -1183,8 +1183,8 @@ a.Button_button {
 
 
 .Button_button.Button_primary.Button_contained {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
 }
 
@@ -1417,9 +1417,9 @@ a.Button_button {
 }
 
 .storeTabContents {
-    flex: 0 0 66.9%;
+    flex: 0 0 97.8%;
     padding-left: 37px;
-    max-width: 66.9%;
+    max-width: 100%;
     margin: 0;
 }
 
