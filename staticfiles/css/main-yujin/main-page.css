@@ -457,7 +457,7 @@ video {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    color: #00c4c4;
+    color: #008243;
 }
 
 .CurationVerticalCard_infoStringWrapper {
@@ -583,7 +583,7 @@ video {
 }
 
 .RecommendFundingWrap_fontHighlight {
-    color: #00a2a2;
+    color: #008243;
 }
 
 .RecommendFundingWrap_pageNum {
@@ -1669,7 +1669,8 @@ a.Button_button {
 }
 
 .Pagination_active button {
-    color: #00b2b2;
+    color: #008243;
+    font-weight: 700;
 }
 
 .EarlybirdDesktop_earlybirdList {
@@ -1761,7 +1762,7 @@ a.Button_button {
     font-weight: 700;
     margin-right: 4px;
     line-height: 20px;
-    color: #00c4c4;
+    color: #008243;
     font-size: 16px;
 }
 
@@ -1950,7 +1951,7 @@ a.Button_button {
 }
 
 .title_contentWrapper em {
-    color: #00a2a2;
+    color: #008243;
 }
 
 .HotFundingList_tooltip em {
@@ -2654,17 +2655,17 @@ footer {
 
 
 .KeyVisualBanner_button {
+    margin: 0;
+    background: rgba(0,0,0,.4);
+    width: 40px;
+    height: 40px;
     display: inline-block;
     transition: color .2s;
-    margin: 0 0 0 8px;
     outline: none;
     border: 0;
     border-radius: 0;
-    background: rgba(0,0,0,0);
     cursor: pointer;
     padding: 0;
-    width: 24px;
-    height: 24px;
     line-height: 0;
     color: rgba(255,255,255,.5);
     font-size: 0;
@@ -2673,13 +2674,13 @@ footer {
 .KeyVisualBanner_button:hover {
     color: #fff;
 }
-
+/* 
 .KeyVisualBanner_container .KeyVisualBanner_wrap .KeyVisualBanner_arrows .KeyVisualBanner_button {
     margin: 0;
     background: rgba(0,0,0,.4);
     width: 40px;
     height: 40px;
-}
+} */
 
 .LinkMenu_left {
     left: 50%;

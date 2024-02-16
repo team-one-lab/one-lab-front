@@ -431,7 +431,7 @@ main {
 }
 
 .ServiceAgreementCheckbox_required span {
-    color: #00b2b2;
+    color: #008243;
 }
 
 .AccordionCheckbox_accordionButton {
@@ -479,7 +479,7 @@ button:not(:disabled) {
 }
 
 .TermsAgreementCheckbox_required {
-    color: #00b2b2;
+    color: #008243;
 }
 
 .TermsAgreementCheckbox_children {
@@ -690,8 +690,8 @@ button:not(:disabled) {
 }
 
 .Button_button {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
 }
 
@@ -714,13 +714,13 @@ button:not(:disabled) {
 }
 
 .Checkbox_checkbox .Checkbox_input:checked+.Checkbox_icon {
-    border: solid 1px #00b2b2;
-    background-color: #00c4c4;
+    border: solid 1px #008243;
+    background-color: #008243;
 }
 
 .Checkbox_checkbox:hover .Checkbox_input:checked+.Checkbox_icon {
-    border-color: #00a2a2;
-    background-color: #00b2b2;
+    border-color: #00704A;
+    background-color: #00704A;
 }
 
 
