@@ -100,8 +100,16 @@ emailSubmitBtn.addEventListener("click", (e) => {
 });
 
 // 이메일 수정하기 버튼 클릭 시
-emailEditBtn.addEventListener("click", () => {
-  location.reload();
+emailEditBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  modalContainer.classList.remove("modal-open");
+  emailSubmitBtn.style.display = "block";
+  emailEditBtn.style.display = "none";
+  emailInput.disabled = false;
+  certificationNumberForm.style.display = "none";
+  retry.style.display = "none";
+  emailInput.value = "";
+  clearInterval(timerInterval);
 });
 
 // 인증번호 입력 시
@@ -145,7 +153,6 @@ modalContainer.addEventListener("click", (e) => {
     modalContainer.classList.remove("modal-open");
   }
 });
-
 // 이름 입력 시
 nameInput.addEventListener("keyup", (e) => {
   let inputValue = e.target.value;
@@ -387,4 +394,27 @@ reactModalPortal.addEventListener("click", (e) => {
   if (e.target.closest(".Button_block")) {
     reactModalPortal.classList.remove("terms-modal-open");
   }
+});
+
+const radioInputs = document.querySelectorAll(".radio-label");
+
+radioInputs.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    radioInputs.forEach((radio) => {
+      radio
+        .querySelector(".outer-radio-box")
+        .classList.remove("outer-radio-choice");
+      radio
+        .querySelector(".inner-radio-box")
+        .classList.remove("inner-radio-choice");
+    });
+    e.target
+      .closest("label")
+      .querySelector(".outer-radio-box")
+      .classList.add("outer-radio-choice");
+    e.target
+      .closest("label")
+      .querySelector(".inner-radio-box")
+      .classList.add("inner-radio-choice");
+  });
 });
