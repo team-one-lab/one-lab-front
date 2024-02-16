@@ -809,3 +809,166 @@ video {
 .Wishbutton-button.active path {
   fill: crimson;
 }
+
+/* 공모전 목록 페이지 */
+.css-list-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 60px;
+    padding-left: 0px;
+    padding-right: 0px
+}
+
+.mui-box-root-page {
+    max-width: 1420px;
+    width: 98%;
+    position: relative;
+    margin: 0px auto 20px;
+}
+
+.mui-box-roots {
+  max-width: 1280px;
+  min-width: 320px;
+  position: relative;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.css-1e9zf8e {
+  width: 1280px;
+  position: relative;
+  margin: 0px auto;
+}
+
+.swiper-container {
+  touch-action: pan-y;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  box-sizing: initial;
+  display: flex;
+  height: 100%;
+  position: relative;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform,-webkit-transform;
+  width: 100%;
+  z-index: 1;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    width: 100%;
+}
+
+.mui-box-root {
+  position: relative;
+  width: 237px;
+  height: 360px;
+  overflow: hidden;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.mui-box-root-container {
+  width: 237px;
+    height: 360px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+    background-image: url(https://static.makercenter.wadiz.kr/board/image/28ec8c44-710e-4c77-9002-82a39f99f65d.png);
+}
+
+.mui-box-root-css {
+  width: 237px;
+  height: 360px;
+  position: absolute;
+  left: 0px;
+  padding: 45px 22px 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 0px 0px 10px 10px;
+  bottom: -180px;
+  transition: all 0.2s ease-in-out 0s;
+  transform: translate(0px, 0px);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.mui-box-root-css-container {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700; 
+    margin-bottom: 30px;
+}
+
+.mui-box-root-iven {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    display: none;
+}
+
+.mui-box-roots-pd {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.mui-box-roots-fg {
+  font-weight: 700;
+    color: rgb(33, 37, 41);
+    line-height: 34px;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.mui-box-root-gg {
+  position: relative;
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mui-box-root-tt {
+    margin-right: 8px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-cra6bp {
+    max-width: 1280px;
+    min-width: 320px;
+    position: relative;
+    margin: 0px auto;
+    overflow: hidden;
+}

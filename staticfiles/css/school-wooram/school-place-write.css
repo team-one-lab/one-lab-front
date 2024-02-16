@@ -50,6 +50,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 a, area, button, [role="button"], input:not([type="range"]), label, select, .nesty-input, .hc-multiselect-toggle, summary, textarea {
     touch-action: manipulation;
+    
 }
 
 a {
@@ -610,4 +611,53 @@ button, select, .nesty-input, .hc-multiselect-toggle {
     margin-bottom: 1.5rem;
     padding: 0.5em 1.5em;
     font-size: 1.125rem;
+}
+
+.btn-upload {
+    width: 150px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid rgb(77,77,77);
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: rgb(77,77,77);
+      color: #fff;
+    }
+  }
+  
+#file {
+    display: none;
+}
+
+.btn-submit {
+    display: inline-block;
+    padding: 0.5em 1.25em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #403b3b;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.15s ease-in-out;
+    color: #fff;
+    border-color: rgba(5, 5, 6, 1);
+    background-color: #008243;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5em 8.5em;
+    font-size: 1.125rem;
+}
+
+.btn-div {
+    text-align: center;
 }
