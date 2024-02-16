@@ -811,3 +811,20 @@ input{
     fill: #fff;
     background-color: #260760;
 }
+.auth2{
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    justify-content: center;
+    height: 40px;
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    fill: #fff;
+    background-color: #007400;
+}
+.auth2:hover{
+    background-color: rgb(8, 183, 8);
+}

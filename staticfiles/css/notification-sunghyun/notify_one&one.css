@@ -605,8 +605,8 @@ template {
 }
 .badge:hover{
     background-color:  #00704A;
-    color: #000000;
-    fill: #000000;
+    color: #fcfcfc;
+    fill: #ffffff;
 }
 
     .w-full {

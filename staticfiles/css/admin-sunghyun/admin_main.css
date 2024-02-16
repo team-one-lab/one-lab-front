@@ -721,6 +721,7 @@ select{
     fill: #8a8a8b;
 }
 .final{
+    cursor: pointer;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 16px;

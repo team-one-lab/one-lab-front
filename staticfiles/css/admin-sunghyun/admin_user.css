@@ -812,5 +812,8 @@ input{
     line-height: 16px;
     color: #fff;
     fill: #fff;
-    background-color: #16830e;
+    background-color: #d0320b;
+}
+.auth1:hover{
+    background-color: #892107;
 }
