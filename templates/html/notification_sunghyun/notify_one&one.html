@@ -3,8 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
-        <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
+       
        
         <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/footer.css">
@@ -50,13 +49,13 @@
                 <nav class="navbar-full">
             
                     <!--------로고 부분------------------------>
-                    <a href="/hc/ko" class="navbar-auto">
+                    <a href="#" class="navbar-auto">
                         <img
                             class="block-fluid"
                             id="logo"
-                            src="/staticfiles/css/admin-sunghyun/images/help.png"
+                            src="/staticfiles/css/admin-sunghyun/images/header-logo.png"
                             alt="도움말 센터 헬프 센터 홈페이지"
-                        />
+                        /><span class="logo-fluid">&nbsp 1대1 문의센터</span>
                     </a>
                     <!--------로고 부분 작업 완료----------------->
 
@@ -85,11 +84,7 @@
                             >문의등록</a
                         >
                         <!---------메이커센터 버튼---------------->
-                        <a
-                            class="button button-yds1 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                            href="#"
-                            >메이커센터
-                        </a>
+                       
                         <!-------바로가기 버튼------------->
                         <a
                             class="button button-yds3 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-179"
@@ -110,7 +105,11 @@
                     <div class="relative-8">
             <!--------------문구 작업 시작-------------------------------------------------->
                         <div class="my-left">
-                            <img src="/staticfiles/css/admin-sunghyun/images/background-img.svg" />
+                            <h2 class="logo-font">
+                                <strong>교육 상향평준화의 중심 <br>
+                                    원랩 1대1 문의센터 입니다.</strong>
+                            </h2>
+                            <!-- <img src="/staticfiles/css/admin-sunghyun/images/background-img.svg" /> -->
                         </div>
             <!--------------문구 작업 완료---------------------------------------------------->
 
@@ -135,12 +134,13 @@
                                     value="✓"
                                     autocomplete="off"
                                 />
-                                <zd-autocomplete-announcement
+                                <!-- <zd-autocomplete-announcement
                                     id="b8438bab-f64f-4ae8-80da-b65614319a10"
                                     aria-live="polite"
                                     role="listbox"
                                 >
-                                </zd-autocomplete-announcement>
+                                </zd-autocomplete-announcement> -->
+                                
                                 <input
                                     type="search"
                                     name="query"
@@ -155,14 +155,10 @@
                                     aria-label="검색어를 입력해주세요"
                                 />
                             </form>
-                            <svg
-                                class="search-icon fill-current transition"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 12 12"
-                                aria-hidden="true"
-                            >
-                                <use xlink:href="#icon-search"></use>
-                            </svg>
+                            <svg class="search-icon fill-current transition" xmlns="https://static.thenounproject.com/png/875351-200.png" viewBox="0 0 12 12" aria-hidden="true">
+                                <use xlink:href="https://static.thenounproject.com/png/875351-200.png"></use>
+                              </svg>
+                            
                         </div>
 
             <!----------------------검색창 작업 완료------------------------------------>
@@ -189,8 +185,8 @@
                                         id="b1"
                                         x-text="keyword.title"
                                         href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
-                                        title="펀딩"
-                                        >펀딩
+                                        title="커뮤니티"
+                                        >커뮤니티
                                     </a>
                                 </div>
                                 <div class="flex align-items-center m-1">
@@ -201,8 +197,8 @@
                                         id="b2"
                                         x-text="keyword.title"
                                         href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
-                                        title="프리오더"
-                                        >프리오더
+                                        title="공모전,대회"
+                                        >공모전,대회
                                     </a>
                                 </div>
                                 <div class="flex align-items-center m-1">
@@ -213,8 +209,8 @@
                                         id="b3"
                                         x-text="keyword.title"
                                         href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
-                                        title="스토어"
-                                        >스토어
+                                        title="자료공유"
+                                        >자료공유
                                     </a>
                                 </div>
                                 <div class="flex align-items-center m-1">
@@ -225,8 +221,8 @@
                                         id="b4"
                                         x-text="keyword.title"
                                         href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
-                                        title="서포터클럽"
-                                        >서포터클럽
+                                        title="장소공유"
+                                        >장소공유
                                     </a>
                                 </div>
                             </div>
@@ -273,7 +269,7 @@
                                     <!------- 숨겨진 모달 : 챗봇 메세지가 나오는 부분 시작------>
                                     <div id="myModal" class="modal">
                                       <div class="modal-content">
-                                        <span class="close" onclick="closeModal()">&times;</span>
+                                        <span class="close">&times;</span>
 
                     <!---------------------------- 챗봇 메세지 html 내용이 여기에 들어갑니다 (꽤 긴 코드이니 유의바람) ---------->
                                         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/notify_one&&one-chat.css">
@@ -297,7 +293,7 @@
                                                               </figure>
                                                               <div class="sc-vrqbdz-3 byEuur">
                                                                   <h2 class="sc-vrqbdz-5 hQhTcL">
-                                                                      와디즈 고객센터
+                                                                      원랩 고객센터
                                                                   </h2>
                                                                   <p class="sc-vrqbdz-6 hXcozW">
                                                                       궁금하신 사항을 검색해보세요!
@@ -654,7 +650,7 @@
                                         font-family: 'Pretendard'">
                                         <h4 class="my-4 text-right">
                                             <a class="link-stretched hover:no-underline" id="sup-id" href="#">
-                                                서포터
+                                                자료공유 바로가기
                                             </a>
                                         </h4>
                                     </div>
@@ -670,7 +666,7 @@
                                         font-family: 'Pretendard'">
                                         <h4 class="my-4 text-right">
                                             <a class="link-stretched hover:no-underline" id="sup-id" href="#">
-                                                메이커
+                                                장소공유 바로가기
                                             </a>
                                         </h4>
                                     </div>
@@ -695,18 +691,17 @@
                                     <!-------------첫번째 드롭다운 메뉴 시작-------------------->
                                     <div class="bg-white" x-data="{ open: false }">
                                         <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn1" >
-                                          알림 신청한 프로젝트는 어디서 확인하나요?
+                                            좋아요한 게시글들은 어디서 확인할 수 있나요?
                                           <svg class="fill-current pointer-events-none ml-3" :class="open &amp;&amp; 'rotate-180'" width="14px" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg" >
                                             <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
                                           </svg>
                                         </a>
                                         <!------- a 태그 클릭시 나오는 드롭다운------------------------->
                                         <div class="content px-6 py-2 ydscontent collapse" id="article-6" >
-                                          마이와디즈의 [찜·알림신청]에서 확인하실 수 있어요.
-                                            찜. 알림 신청 목록 뿐만 아니라 최근에 본 프로젝트 목록까지 확인할 수 있어요.&nbsp;프로젝트 이미지 우측 상단의 하트를 클릭해서 구독 ...
+                                            마이페이지 내부의 좋아요 목록에서 확인하실 수 있습니다.
                                             <p class="my-4 text-right btnpadding-right">
                                               <a class="button button-outline button-sm" href="/hc/ko/articles/17845227566745-%EC%95%8C%EB%A6%BC-%EC%8B%A0%EC%B2%AD%ED%95%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%8A%94-%EC%96%B4%EB%94%94%EC%84%9C-%ED%99%95%EC%9D%B8%ED%95%98%EB%82%98%EC%9A%94">
-                                                  자세히보기
+                                                👉자세히보기
                                                 </a>
                                             </p>
                                           </div>
@@ -726,10 +721,10 @@
                                           
                                             기본 정보 설정에서 닉네임, 이메일, 연락처 등을 언제든 변경할 수 있어요.
                                             
-                                            마이와디즈의 설정에서 닉네임, 이메일, 휴대폰번호 등 기본 정보를 변경하실 수 있으며, 알림 설정도 변경할...
+                                            
                                             <p class="my-4 text-right btnpadding-right">
                                               <a class="button button-outline button-sm" href="/hc/ko/articles/7052709194265-%ED%9A%8C%EC%9B%90-%EC%A0%95%EB%B3%B4-%EB%B3%80%EA%B2%BD%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%98%EB%82%98%EC%9A%94">
-                                                  자세히보기
+                                                👉자세히보기
                                                 </a>
                                             </p>
                                           </div>
@@ -737,20 +732,19 @@
                                       <!-------------세번째 드롭다운 메뉴 시작-------------------->
                                       <div class="bg-white" x-data="{ open: false }">
                                         <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn3" data-active-class="text-primary">
-                                          펀딩 참여 내역은 어떻게 확인하나요?
+                                            필요한 자료 요청은 어떻게 할 수 있나요?
                                           <svg class="fill-current pointer-events-none ml-3" :class="open &amp;&amp; 'rotate-180'" width="14px" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
                                           </svg>
                                         </a>
                                          <!------- a 태그 클릭시 나오는 드롭다운------------------------->
                                         <div class="content px-6 py-2 ydscontent collapse" id="article-8" >
-                                          서포터님이 참여한 프로젝트는 [참여 내역]에서 확인할 수 있어요.
-                                            참여한 펀딩·프리오더의 예약 취소를 원하시는 경우, 참여 내역에서 결제상태를 확인 후 직접 취소할 수 있어요.
+                                            자료 게시판 내의 글쓰기 버튼을 클릭하여 요청하실 수 있습니다.
                                             
-                                            👉 참...
+                                            
                                             <p class="my-4 text-right btnpadding-right">
                                               <a class="button button-outline button-sm" href="/hc/ko/articles/7054803825817-%ED%8E%80%EB%94%A9-%EC%B0%B8%EC%97%AC-%EB%82%B4%EC%97%AD%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%99%95%EC%9D%B8%ED%95%98%EB%82%98%EC%9A%94">
-                                                  자세히보기
+                                                👉자세히보기
                                                 </a>
                                             </p>
                                           </div>
@@ -762,7 +756,7 @@
                             <div class="video-library">
 
                                 <div class="container py-4">
-                                    <h2 class="inline-flex align-items-baseline mt-6" x-data="{ src: Theme.assets['promoted-videos-heading'] }">
+                                    <!-- <h2 class="inline-flex align-items-baseline mt-6" x-data="{ src: Theme.assets['promoted-videos-heading'] }">
                                         <template x-if="src">
                                             #document-fragment
                                         </template>
@@ -905,7 +899,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     <!------------------------------유튜브 동영상 목록 작업 완료------------------------->
                     </div>
                 </div>
@@ -913,286 +907,12 @@
         </div>
         <!----------------------푸터 시작 ------------------------------>
         <!-- 푸터 클론코딩 제작 -->
-      <footer class="footer-6" id="footer">
-        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="svg-shape" viewBox="0 0 1200 120">
-          <!-- <use xlink:href="#shape-book"></use> -->
-        </svg>
-        <div class="container-7"> </div>
-        <!-- svg 에서 symbol 가져오기 -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-          <!-- symbol-1 -->
-          <symbol id="icon-search">
-            <circle
-              cx="4.5"
-              cy="4.5"
-              r="4"
-              fill="none"
-              stroke="currentColor"
-            ></circle>
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              d="M11 11L7.5 7.5"
-            ></path>
-          </symbol>
-          <!-- symbol-2 -->
-          <symbol id="icon-lock">
-            <rect
-              width="12"
-              height="9"
-              x="2"
-              y="7"
-              fill="currentColor"
-              rx="1"
-              ry="1"
-            ></rect>
-            <path
-              fill="none"
-              stroke="currentColor"
-              d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
-            ></path>
-          </symbol>
-          <!-- symbol-3 -->
-          <symbol id="icon-star">
-            <polygon
-              points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
-            ></polygon>
-          </symbol>
-          <!-- symbol-4 -->
-          <symbol id="icon-chevron-down">
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
-            ></path>
-          </symbol>
-          <!-- symbol-5 -->
-          <symbol id="icon-agent">
-            <path
-              fill="currentColor"
-              d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
-            ></path>
-          </symbol>
-          <!-- symbol-6 -->
-          <symbol id="shape-book">
-            <path
-            d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
-            ></path>
-          </symbol>
-        </svg>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <div class="main-container">
-          <div class="containerq">
-            <div class="divider">
-              <div class="full-divider"></div>
-            </div>
-            <div class="box">
-              <div class="box-1">
-                <div class="text-gray">
-                  <span class="button-text">정책.약관</span>
-                  <div class="system-icon">
-                    <div class="fill"></div>
-                  </div>
-                </div>
-                <div class="text-gray-2" onclick="location.href='https://www.wadiz.kr/web/wterms/privacy'">
-                  <span class="button-text-3">개인정보처리방침</span>
-                  <div class="system-icon-4">
-                    <div class="fill-5"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="divider-6">
-              <div class="full-7"></div>
-            </div>
-          </div>
-          <div class="container-8">
-            <div class="box-9">
-              <div class="box-a">
-                <div class="box-b">
-                  <div class="system-icon-c">
-                    <div class="fill-d"></div>
-                  </div>
-                  <span class="wadiz-help-center">와디즈 도움말센터</span>
-                </div>
-                <div class="text-button">
-                  <span class="button-text-f">채팅 상담하기</span>
-                  <div class="system-icon-10">
-                    <div class="fill-11"></div>
-                  </div>
-                </div>
-                <div class="text-12" onclick="location.href='https://helpcenter.wadiz.kr/hc/ko/requests/new'">
-                  <span class="button-text-13">문의 등록하기</span>
-                  <div class="system-icon-14">
-                    <div class="fill-15"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="divider-16">
-                <div class="full-17"></div>
-              </div>
-              <div class="box-18">
-                <span class="counseling-available-time">상담 가능 시간</span>
-                <span class="counseling-available-date">평일 오전 9시 ~ 오후 6시 (주말, 공휴일 제외)
-                </span>
-              </div>
-            </div>
-            <div class="box-19">
-              <div class="box-1a">
-                <div class="box-1b">
-                  <div class="box-1c">
-                    <span class="wadiz">와디즈(주)</span>
-                    <div class="divider-1d">
-                      <div class="middle-divider"></div>
-                    </div>
-                    <span class="representative-director">대표이사</span>
-                    <span class="main-name">신혜성</span>
-                    <div class="divider-1e">
-                      <div class="middle-1f"></div>
-                    </div>
-                    <span class="business-number">사업자등록번호 258-87-01370</span>
-                    <div class="divider-20">
-                      <div class="middle-21"></div>
-                    </div>
-                    <span class="sales-number">통신판매업신고번호 2021-성남분당C-1153</span>
-                    <div class="divider-22">
-                      <div class="middle-23"></div>
-                    </div>
-                    <span class="span-address">경기 성남시 분당구 판교로 242 PDC A동 402호</span>
-                  </div>
-                  <div class="box-24">
-                    <span class="span-email-consultation">이메일 상담</span>
-                    <div class="divider-25">
-                      <div class="middle-26"></div>
-                    </div>
-                    <span class="span-email">info@wadiz.kr</span>
-                    <div class="divider-27">
-                      <div class="middle-28"></div>
-                    </div>
-                    <span class="wired-counseling">유선 상담 1661-9056</span>
-                    <span class="wadiz-co-ltd">ⓒ wadiz Co., Ltd.</span>
-                  </div>
-                </div>
-                <span class="wadiz-disclaimer">
-                  일부 상품의 경우 와디즈는 통신판매중개자이며 통신판매 당사자가 아닙니다.
-                  <br>
-                  해당되는 상품의 경우 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용
-                  을 확인하시기 바랍니다.
-                  </span>
-              </div>
-              <div class="box-29">
-                <div class="box-2a" onclick="location.href='https://play.google.com/store/apps/details?id=com.markmount.wadiz&pli=1'">
-                  <div class="artwork-logo-1"></div>
-                  <span class="android-app">Android앱</span>
-                </div>
-                <div class="box-2b">
-                  <div class="artwork-logo-2" onclick="location.href='https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'"></div>
-                  <span class="ios-app">iOS앱</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- 푸터 클론코딩 범위 -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-            <symbol id="icon-search">
-                <circle
-                    cx="4.5"
-                    cy="4.5"
-                    r="4"
-                    fill="none"
-                    stroke="currentColor"
-                ></circle>
-                <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    d="M11 11L7.5 7.5"
-                ></path>
-            </symbol>
-            <symbol id="icon-lock">
-                <rect
-                    width="12"
-                    height="9"
-                    x="2"
-                    y="7"
-                    fill="currentColor"
-                    rx="1"
-                    ry="1"
-                ></rect>
-                <path
-                    fill="none"
-                    stroke="currentColor"
-                    d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
-                ></path>
-            </symbol>
-            <symbol id="icon-star">
-                <polygon
-                    points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
-                ></polygon>
-            </symbol>
-            <symbol id="icon-chevron-down">
-                <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
-                ></path>
-            </symbol>
-            <symbol id="icon-agent">
-                <path
-                    fill="currentColor"
-                    d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
-                ></path>
-            </symbol>
-
-            <symbol id="shape-book">
-                <path
-                    d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
-                ></path>
-            </symbol>
-        </svg>
+       
+          <!-- 푸터 클론코딩 범위 -->
     
     </body>
-    <script>             
-      
-    function openModal() {
-      var modal = document.getElementById("myModal");
-      var floatingButton = document.querySelector(".floating-button");
-
-      
-      var buttonStyle = window.getComputedStyle(floatingButton);
-      var buttonPosition = buttonStyle.getPropertyValue('position');
-      console.log(buttonStyle);
-      console.log(buttonPosition);
-      floatingButton.style.display = "none"
-      var buttonParent = floatingButton.parentElement;
-      var parentRect = buttonParent.getBoundingClientRect();
-
-      var buttonRect = floatingButton.getBoundingClientRect();
-      var leftPosition = buttonRect.left - parentRect.left;
-      var topPosition = buttonRect.top - parentRect.top + floatingButton.offsetHeight;
-
-
-      modal.style.display = "block";
-
-      // 모달 외부를 클릭하면 모달이 닫힘
-      // window.addEventListener('click', outsideModalClick);
-    }
-
-    // 모달 닫기 함수
-    function closeModal() {
-      var floatingButton = document.querySelector(".floating-button")
-      var modal = document.getElementById("myModal");
-      modal.style.display = "none";
-      floatingButton.style.display = "block";
-      // 모달 외부 클릭 이벤트 제거
-      window.removeEventListener('click', outsideModalClick);
-    }
-
-   
-
-    </script>
+    <script src="/staticfiles/js/notify-sunghyun-app/notify-one&one-app-chat.js"></script>
+    <script src="/staticfiles/js/notify-sunghyun/notify.js"></script>   
+    <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
+    <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
 </html>

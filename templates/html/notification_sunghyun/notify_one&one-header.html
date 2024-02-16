@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/notify_one&one-header.css">
+    </head>
+    <body class> 
+        <div></div> 
+        
+        <link 
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+        /> <!----------------얘내는 여기다가 모듈 연결을 했습니다.-------------------------->
+
+        <!------------------모바일 메뉴라길래 모바일 화면에서만 보이는건줄 알았지만
+        --------------------알고보니 전체 레이아웃 div 태그입니다.(.layout-column)----------------->
+        <div class="layout-column" x-data="Widgets.mobileMenu">
+
+        <header
+            class="header-shadow"
+            x-data="Widgets.header({ isFixed: false, isSticky: true })"
+            :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"
+        >
+            <!---------로고부분부터 시작 되는 헤더 부분------------->
+            <nav class="navbar-full">
+                <!--------로고 부분------------------------>
+                <a href="" class="navbar-auto">
+                    <img
+                        class="block-fluid"
+                        id="logo"
+                        src="/staticfiles/css/admin-sunghyun/images/header-logo.png"
+                        alt="도움말 센터 헬프 센터 홈페이지"
+                    /><span class="logo-fluid">&nbsp 1대1 문의센터</span>
+                </a>
+                <!--------로고 부분 작업 완료----------------->
+
+                <!----------로고 옆 부분 3개 버튼들을 감싸는 div 태그 시작------------->
+                <div
+                    class="nav-end"
+                    x-show="isOpen"
+                    :class="{ 'text-header': isOpen }"
+                    x-transition:enter="transition-fast"
+                    x-transition:enter-start="translate-x-full"
+                    x-transition:enter-end="translate-x-0"
+                    x-transition:leave="transition-fast"
+                    x-transition:leave-start="translate-x-0 text-header"
+                    x-transtion:leave-end="translate-x-full text-header"
+                    style="display: none"
+                >
+                    <div
+                        data-element="template"
+                        data-template="category-dropdown"
+                    ></div>
+                    <!--------문의 등록 버튼--------------->
+                    <a
+                        class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
+                        href=""
+                        >문의등록</a
+                    >
+                    <!---------메이커센터 버튼---------------->
+
+                    <!-------바로가기 버튼------------->
+                    <a
+                        class="button button-yds3 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-179"
+                        href=""
+                        >원랩 바로가기
+                    </a>
+                </div>
+            </nav>
+            <!-------------로고 옆부분 레이아웃 작업 완료-------------------->
+        </header>
+    </body>
+</html>
+
+<!------------헤더 작업 시작------------------------------------->

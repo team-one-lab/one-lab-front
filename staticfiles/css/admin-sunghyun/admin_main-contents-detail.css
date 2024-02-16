@@ -488,6 +488,7 @@ p{
 }
 
 .pt-full{
+    width: 920px;
     padding-top: 41px;
     padding-bottom: 26px;
     border-bottom-width: 1px;

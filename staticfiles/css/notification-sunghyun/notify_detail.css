@@ -322,11 +322,11 @@ li, ul{
 .withIcon_icon__5xc48.withIcon_inline__2zVGZ {
     display: inline;
 }
-@media screen and (min-width: 1097px){
+
     .MenuListItem_button__aQOTa svg {
         display: none!important;
     }
-}
+
 
 .MenuListItem_button__aQOTa svg {
     position: absolute;
@@ -452,20 +452,20 @@ button{
     overflow: hidden;
     width: 511px; 
 }
-@media screen and(min-width: 1097px){
+
     .web-utils{
         display: flex;
         position: relative;
         margin-left: auto;
 
     }
-}
-@media screen and(min-width:1360px){
+
+
     .D-P{
         min-width: 360px;
     }
     
-}
+
 .D-O{
     position: relative;
     padding: 13px 16px 11px;
@@ -791,13 +791,13 @@ canvas, img, picture, video {
     margin-bottom: 30px;
 }
 
-@media screen and (min-width: 960px){
+
     .wcommunity {
         width: 960px;
         margin: 0 auto;
     }
 
-}
+
 .wboard-list a:hover{
     background-color: #e3e9ea;
 }

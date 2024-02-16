@@ -8,7 +8,8 @@
             href="/staticfiles/css/notification-sunghyun-app/notify_main_app.css"
         />
         <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
-        <script src="/staticfiles/js/notify-sunghyun/notify.js"></script>
+        <!-- <script src="/staticfiles/js/notify-sunghyun/notify.js"></script> -->
+       
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
         <link rel="stylesheet" href="/staticfiles/css/font/font.css">
         <link rel="stylesheet" href="/staticfiles/css/font/font-awesome-css.min.css">
@@ -19,25 +20,70 @@
         <div id="page-container">
             <div class="black-wrap" style="display: none"></div>
             <!--헤더 작업 시작-->
-            <div id="wz-header">
+            <!-- <div id="wz-header">
                 <div class="web-header">
+                    --------모바일 헤더---------->
                     <div class="web-mobile">
                         <header class="header-wrapper">
                             <div class="header-container" style="display: flex;">
+                                <!-------왼쪽 화살표 svg--------->
                                 <button class="header-l" aria-label="이전 페이지로 가기">
-
+                                    <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="svgimg" aria-hidden="true" style="width: 24px; height: 24px;">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.076 2.576l.848.848L8.35 12l8.575 8.576-.848.848L6.65 12l9.425-9.424z">
+                                        </path>
+                                    </svg>
                                 </button>
+                                <!----------오른쪽 홈 이미지 svg-->
+                                <a href="#" class="header-qt">
+                                    <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="svgimg" aria-hidden="true" style="width: 24px; height: 24px;">
+                                        <path d="M13.38 36.13h2.4v-13.9h8.44v13.9h2.4V19.84H13.38v16.29z">
+
+                                        </path>
+                                        <path d="M20 3.41L3.8 14.49v21.64h2.4V15.75L20 6.32l13.8 9.43v20.38h2.4V14.49L20 3.41z">
+
+                                    </path>
+                                    <path fill="none" d="M0 0h40v40H0z">
+
+                                    </path>
+                                </svg>
+                            </a>
+                            <button class="header-mobile-25eko" aria-label="검색">
+                                <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="svgimg" aria-hidden="true" style="width: 24px; height: 24px;">
+                                    <path fill="none" d="M0 0h40v40H0z">
+
+                                    </path>
+                                    <path d="M29.2 27.91a14.38 14.38 0 1 0-1.42 1.4l7.16 7.15.07.08 1.41-1.41zM18.45 6a12.36 12.36 0 0 1 8.35 3.23 12.24 12.24 0 0 1 4 8.59A12.39 12.39 0 1 1 17.88 6z">
+
+                                    </path>
+                                </svg>
+                            </button>
+                            <div class="title-7x">
+                                <p class="title-o">원랩 공지사항</p>
                             </div>
+                            <div class="preview-h2">
+                                <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="svgimg" aria-hidden="true" style="width: 24px; height: 24px;">
+                                    <path fill="none" d="M0 0h40v40H0z">
 
+                                    </path>
+                                    <path d="M29.12 2.23H10.88a1 1 0 0 0-1 1v33.88a1 1 0 0 0 1 1h18.24a1 1 0 0 0 1-1V3.28a1 1 0 0 0-1-1.05zm-7.3 30.61A1.82 1.82 0 1 1 20 31a1.83 1.83 0 0 1 1.82 1.84zm6.26 3.23H11.92V4.32h16.16z">
 
-                        </header>
+                                    </path>
+                                    <path d="M18.18 6.89h3.65v2.08h-3.65z">
 
-                      <!-------------------->
-                <!--------헤더 작업완료 ------->
+                                    </path>
+                                </svg>
+                                <p class="preview-5h">미리보기 모드</p>
+                                <p class="preview-gg">저장한 내용을 미리 볼 수 있어요.</p>
+                            </div>
+                        </div>
+                    </header>
+                </div>         
             </div>
-            
-        </div>
-    </div>
+        </div> 
+         <!-------------------->
+        <!--------헤더 작업완료 ------->
+
+
         <!------------로그인 체크 확인 하는 부분---------------------->
         <form id="forwardForm" method="get">
             <input type="hidden" id="returnURL" name="returnURL">
@@ -49,11 +95,11 @@
          
         <main class="board-ui">
             <!----------------공지사항 화면 부분-------------------------->
-            <div class="ui-header">
+            <!-- <div class="ui-header">
                 <h2 class="title">공지 사항</h2>
-            </div>
+            </div> -->
             <!----------------공지사항 화면 부분-------------------------->
-            <div aria-hidden="true"></div> <!-------왜 있는지 모르겠지만 사이트에 있길래 작성함------>
+            <div aria-hidden="true"></div> 
             
             <!----------사이드 메뉴----------------------------->
             <div class="ui-tabs">
@@ -83,14 +129,10 @@
                     <li>
                         <a class="article" href="#">
                             <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
+                            <em class="status closed">진행 중
                             </em>
-                            <em class="notice">
-                                중요
-                            </em>
-                            <em class="notice">
-                                BEST
+                            <em class="notice">중요</em>
+                            <em class="notice">BEST
                             </em>
                             <div class="info">
                                 <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0201/20240201202145306_0.png/wadiz/resize/400/format/jpg/quality/80)">
@@ -106,14 +148,14 @@
                     <li>
                         <a class="article" href="#">
                             <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
+                            <em class="status closed">진행 중
+                                
                             </em>
-                            <em class="notice">
-                                중요
+                            <em class="notice">중요
+                                
                             </em>
-                            <em class="notice">
-                                BEST
+                            <em class="notice">BEST
+                                
                             </em>
                             <div class="info">
                                 <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0201/20240201134537164_0.jpg/wadiz/resize/400/format/jpg/quality/80)">
@@ -129,14 +171,14 @@
                     <li>
                         <a class="article" href="#">
                             <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
+                            <em class="status closed">진행 중
+                                
                             </em>
-                            <em class="notice">
-                                중요
+                            <em class="notice">중요
+                                
                             </em>
-                            <em class="notice">
-                                BEST
+                            <em class="notice">BEST
+                                
                             </em>
                             <div class="info">
                                 <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0130/20240130133719756_0.png/wadiz/resize/400/format/jpg/quality/80)">
@@ -152,14 +194,14 @@
                     <li>
                         <a class="article" href="#">
                             <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
+                            <em class="status closed">진행 중
+                                
                             </em>
-                            <em class="notice">
-                                중요
+                            <em class="notice">중요
+                                
                             </em>
-                            <em class="notice">
-                                BEST
+                            <em class="notice">BEST
+                                
                             </em>
                             <div class="info">
                                 <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0117/20240117091042069_0.png/wadiz/resize/400/format/jpg/quality/80)">
@@ -175,14 +217,14 @@
                     <li>
                         <a class="article" href="#">
                             <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
+                            <em class="status closed">진행 중
+                                
                             </em>
-                            <em class="notice">
-                                중요
+                            <em class="notice">중요
+                                
                             </em>
-                            <em class="notice">
-                                BEST
+                            <em class="notice">BEST
+                                
                             </em>
                             <div class="info">
                                 <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0110/20240110111412343_0.png/wadiz/resize/400/format/jpg/quality/80)">
@@ -198,14 +240,14 @@
                     <li>
                         <a class="article" href="#">
                             <em class="category">이벤트</em>
-                            <em class="status closed">
-                                진행 중
+                            <em class="status closed">진행 중
+                                
                             </em>
-                            <em class="notice">
-                                중요
+                            <em class="notice">중요
+                                
                             </em>
-                            <em class="notice">
-                                BEST
+                            <em class="notice">BEST
+                                
                             </em>
                             <div class="info">
                                 <div class="thumb" style="background-image:url(https://cdn.wadiz.kr/ft/images/green001/2024/0205/20240205092005471_0.jpg/wadiz/resize/400/format/jpg/quality/80)">
@@ -223,30 +265,34 @@
             <!--------메인 사이드 베너들 있는 화면---------------->
 
 
-            <!-----------1,2,3,4,5,6... 이동할 수 있는 번호 메뉴들---------------------->
+            <!-----------모바일용 버튼---------------------->
             <div class="board-footer">
                 <div class="pagination">
                     <!--모바일 버튼-->
-                    <button class="prev-page mobile-only" onclick="movePage(0)" disabled>
+                    <button class="prev-page icon-left mobile-only" onclick="movePage(0)" disabled>
                         <span class="text-hidden">이전 목록</span>
                     </button>
                     <div class="page">
                         <!--모바일용 페이지 리스트-->
                         <div class="mobile-only">
+                            <!-- <img class="arrow1;" src="/staticfiles/css/admin-sunghyun/images/button2.png"> -->
                             <span class="current-count">1</span>
                             /
                              <span class="total-count">
                                 <span>122</span>
                                 페이지
                             </span>
+                            <!-- <img class=arrow2; src="/staticfiles/css/admin-sunghyun/images/button1.png" style="margin: -3px 0 0;"> -->
                         </div>
+                        
+                        <!-------데스크탑용 버튼--------->
                          <div class="desktop-only">
                             
                             <button class="prev-page" onclick="movePage(0)" disabled>
-                                <img src="/staticfiles/css/admin-sunghyun/images/button2.png">
+                                <!-- <img src="/staticfiles/css/admin-sunghyun/images/button2.png"> -->
                             <span class=text-hidden>이전 목록</span>
                         </button>
-                        
+                        <!----------데스크탑용 페이지 리스트---------->
                             <a  href="#" onclick="movePage(1)">1</a>
                             <a  href="#" onclick="movePage(2)">2</a>
                             <a  href="#" onclick="movePage(3)">3</a>
@@ -260,7 +306,8 @@
                               </button>
                         </div>
                     </div>
-                    <button class="next-page mobile-only" onclick="movePage(2)">
+                    <!---------모바일용 버튼------------------------->
+                    <button class="next-page icon-right mobile-only" onclick="movePage(2)">
                     <span class="text-hidden">다음 목록</span>
                 </button>
             </div>
@@ -271,7 +318,7 @@
                 <form method="post" id="news-search">
                     <div class="filter-container">
                         <select id="searchSelectInBoard" class="filter" name>
-                            <option value="tc">제목 + 내용</option>
+                            <option value="tc">제목+내용</option>
                             <option value="t">제목</option>
                             <option value="c">내용</option>
                         </select>
@@ -283,6 +330,7 @@
                     </div>
                 </form>
                 <form id="fromSearch" name="formSearchBoard" action="/web/wboard/newBoardList/"></form>
+            </div>
             </div>
             <!-------------------------검색창 화면 완료----------------------->
                 
@@ -815,9 +863,16 @@
                                     <li>
                                         <a href="" target="_blank" rel="noreferrer">이메일 상담 info@wadiz.kr</a>
                                     </li>
-                                    <li>유선 상담 <a href="tel:1661-9056">1661-9056</a></li>
+                                    <li id="call">
+                                        유선 상담 
+                                        <a href="tel:1661-9056">1661-9056
+
+                                        </a>
+                                    </li>
                                 </ul>
-                                <span class="FooterInfo_copyright">© wadiz Co., Ltd.</span>
+                                </div>
+                                <span class="FooterInfo_copyright" style="width: 150px;">
+                                    © wadiz Co., Ltd.</span>
                             </div>
                         </address>
                         <div class="FooterContainer_infoNotice">
@@ -847,82 +902,5 @@
             </div>
         </footer>
     </body>
-    <script>
-/** 클릭시 boderBottom, font-color 변경 하는 js 코드  **/
-        const active1 = document.querySelector("#one")
-        const active2 = document.querySelector("#two")
-        const active3 = document.querySelector("#three")
-        const active4 = document.querySelector("#four")
-        active2.addEventListener("click",(e)=>{
-            active2.style.borderBottom = "3px solid #008244";
-            active2.style.color = "#008244";
-            active2.style.fontWeight = "500";
-
-            active1.style.color = "#000"
-            active1.style.borderBottom = "none"
-            active1.style.fontWeight = "400";
-
-            active3.style.color = "#000"
-            active3.style.borderBottom = "none"
-            active3.style.fontWeight = "400";
-
-            active4.style.color = "#000"
-            active4.style.borderBottom = "none"
-            active4.style.fontWeight = "400";
-        })
-        active1.addEventListener("click",(e)=>{
-            active1.style.borderBottom = "3px solid #008244";
-            active1.style.color = "#008244";
-            active1.style.fontWeight = "500";
-
-            active2.style.color = "#000"
-            active2.style.borderBottom = "none"
-            active2.style.fontWeight = "400";
-
-            active3.style.color = "#000"
-            active3.style.borderBottom = "none"
-            active3.style.fontWeight = "400";
-            
-            active4.style.color = "#000"
-            active4.style.borderBottom = "none"
-            active4.style.fontWeight = "400";
-        })
-        active3.addEventListener("click",(e)=>{
-            active3.style.borderBottom = "3px solid #008244";
-            active3.style.color = "#008244";
-            active3.style.fontWeight = "500";
-
-            active2.style.color = "#000"
-            active2.style.borderBottom = "none"
-            active2.style.fontWeight = "400";
-
-            active1.style.color = "#000"
-            active1.style.borderBottom = "none"
-            active1.style.fontWeight = "400";
-            
-            active4.style.color = "#000"
-            active4.style.borderBottom = "none"
-            active4.style.fontWeight = "400";
-        })
-        active4.addEventListener("click",(e)=>{
-            active4.style.borderBottom = "3px solid #008244";
-            active4.style.color = "#008244";
-            active4.style.fontWeight = "500";
-
-            active1.style.color = "#000"
-            active1.style.borderBottom = "none"
-            active1.style.fontWeight = "400";
-
-            active2.style.color = "#000"
-            active2.style.borderBottom = "none"
-            active2.style.fontWeight = "400";
-            
-            active3.style.color = "#000"
-            active3.style.borderBottom = "none"
-            active3.style.fontWeight = "400";
-        })
-
-  
-    </script>
-   
+    <script src="/staticfiles/js/notify-sunghyun-app/notify-main-app.js"></script>
 </html>

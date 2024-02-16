@@ -55,6 +55,19 @@ a{
     color: inherit;
     text-decoration: inherit;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 3px;
+}
+th {
+    background-color: #f2f2f2;
+}
 audio,canvas,embed,iframe,img,object,video,svg{
     display: block;
     /* vertical-align: middle; */
@@ -71,28 +84,28 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 }
 
 /*----------*/
-@media (min-width: 1024px){
+
     .lg\:px-\[32px\] {
         padding-left: 32px;
         padding-right: 32px;
     }
-}
-@media (min-width: 1024px){
+
+
     .lg\:h-\[58px\] {
         height:58px;
     }
-}
+
 /*----------*/
-@media (min-width: 1024px){
+
     .lg\:block {
     display: block;
     }
-}
-@media (min-width: 1024px){
+
+
     .lg\:hidden {
         display: none;
     }
-}
+
 
 .sticky{
     justify-content: space-between;

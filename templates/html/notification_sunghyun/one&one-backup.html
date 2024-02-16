@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
        
+       
         <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/footer.css">
         <link
@@ -14,7 +15,7 @@
         />
         <link
             rel="stylesheet"
-            href="/staticfiles/css/notification-sunghyun-app/notify_one&one_app.css"
+            href="/staticfiles/css/notification-sunghyun/notify_one&one.css"
         />
         <title>OneLab 일대일 문의</title>
     </head>
@@ -35,7 +36,7 @@
 
         <!------------------모바일 메뉴라길래 모바일 화면에서만 보이는건줄 알았지만
         --------------------알고보니 전체 레이아웃 div 태그입니다.(.layout-column)----------------->
-        <div class="layout-column" x-data="Widgets.mobileMenu" >
+        <div class="layout-column" x-data="Widgets.mobileMenu">
 
         <!------------헤더 작업 시작------------------------------------->
             <header
@@ -48,35 +49,53 @@
                 <nav class="navbar-full">
             
                     <!--------로고 부분------------------------>
-                    <a href="#" class="navbar-auto">
+                    <a href="/hc/ko" class="navbar-auto">
                         <img
                             class="block-fluid"
                             id="logo"
-                            src="/templates/html/admin_sunghyun/favicon/favicon/android-icon-192x192.png"
+                            src="/staticfiles/css/admin-sunghyun/images/help.png"
                             alt="도움말 센터 헬프 센터 홈페이지"
-                        />  <span style="padding: 0 15px; font-size: 16px;">OneLab 도움말 센터</span>
+                        />
                     </a>
-			<!---------모바일 화면 헤더 부분 메뉴 버튼 2개 = x 버튼, 메뉴버튼--------->
-                    <button class="navbar-hidden">
-                        <span>
-                            <!--::before-->
-                            <!--::after-->
-                        </span>
-                        <span class="sr-only">
-                            <!-- 탐색 메뉴 토글 -->
-                        </span>
-                    </button>
-
-                    <button class="navbar-hidden1" style="display: none;">
-                        <span> 
-                            <!--::before-->
-                            <!--::after-->
-                        </span>
-                        <span class="sr-only"> 
-                            <!-- 탐색 메뉴 토글 -->
-                        </span>
-                    </button>
                     <!--------로고 부분 작업 완료----------------->
+
+                    <!----------로고 옆 부분 3개 버튼들을 감싸는 div 태그 시작------------->
+                    <div
+                        class="nav-end"
+                        x-show="isOpen"
+                        :class="{ 'text-header': isOpen }"
+                        x-transition:enter="transition-fast"
+                        x-transition:enter-start="translate-x-full"
+                        x-transition:enter-end="translate-x-0"
+                        x-transition:leave="transition-fast"
+                        x-transition:leave-start="translate-x-0 text-header"
+                        x-transtion:leave-end="translate-x-full text-header"
+                        style="display: none"
+                    >
+                        
+                        <div
+                            data-element="template"
+                            data-template="category-dropdown"
+                        ></div>
+                        <!--------문의 등록 버튼--------------->
+                        <a
+                            class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
+                            href="#"
+                            >문의등록</a
+                        >
+                        <!---------메이커센터 버튼---------------->
+                        <a
+                            class="button button-yds1 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
+                            href="#"
+                            >메이커센터
+                        </a>
+                        <!-------바로가기 버튼------------->
+                        <a
+                            class="button button-yds3 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-179"
+                            href="#"
+                            >원랩 바로가기
+                        </a>
+                    </div>
                 </nav>
                 <!-------------로고 옆부분 레이아웃 작업 완료-------------------->
             </header>
@@ -90,8 +109,7 @@
                     <div class="relative-8">
             <!--------------문구 작업 시작-------------------------------------------------->
                         <div class="my-left">
-                            <!-- <img src="/staticfiles/css/admin-sunghyun/images/background-img.svg" /> -->
-                            <img src="//theme.zdassets.com/theme_assets/13612819/2109b7ffe656efeaf18cdbcf780a47c28a49fe01.svg">
+                            <img src="/staticfiles/css/admin-sunghyun/images/background-img.svg" />
                         </div>
             <!--------------문구 작업 완료---------------------------------------------------->
 
@@ -205,7 +223,7 @@
                                         :title="keyword.title"
                                         id="b4"
                                         x-text="keyword.title"
-                                        href=""
+                                        href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
                                         title="서포터클럽"
                                         >서포터클럽
                                     </a>
@@ -244,7 +262,6 @@
                     <div class="relative-40" id="page-container">
                         <div class="content-blocks" id="content-blocks">
                             <div class="container-center">
-                                
                                 <div class="row">
 
                                     <!------------챗봇 버튼(클릭시 myModal이라는 id명을 지닌 div 태그 생성(챗봇 채팅 부분 이미지구현)---------------------------------------------->
@@ -255,7 +272,7 @@
                                     <!------- 숨겨진 모달 : 챗봇 메세지가 나오는 부분 시작------>
                                     <div id="myModal" class="modal">
                                       <div class="modal-content">
-                                        <button class="close">&times;</button>
+                                        <span class="close">&times;</span>
 
                     <!---------------------------- 챗봇 메세지 html 내용이 여기에 들어갑니다 (꽤 긴 코드이니 유의바람) ---------->
                                         <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/notify_one&&one-chat.css">
@@ -266,7 +283,8 @@
                                                       <section class="sc-vrqbdz-0 gSikFX sc-vrqbdz-0 gSikFX">
                                                           <div class="sc-vrqbdz-2 kTapgX">
                                                               <figure
-                                                                 
+                                                                  data-garden-id="avatars.avatar"
+                                                                  data-garden-version="8.18.0"
                                                                   aria-atomic="true"
                                                                   aria-live="polite"
                                                                   class="sc-vrqbdz-4 iZrkML sc-gzVnrw bNWAfz"
@@ -286,20 +304,20 @@
                                                               </div>
                                                           </div>
                                                           <div class="sc-vrqbdz-8 kmeNDk">
-                                                              <div class="sc-2nitf7-10 cDiLKi" onclick="closeModal()">
+                                                              <div class="sc-2nitf7-10 cDiLKi">
                                                                   <button
-                                                                    
+                                                                      data-garden-id="buttons.icon_button"
+                                                                      data-garden-version="8.13.0"
                                                                       type="button"
                                                                       aria-label="채널 연결 메뉴 옵션"
                                                                       aria-haspopup="true"
                                                                       data-toggle="true"
-                                                                      
                                                                       aria-expanded="false"
-                                                                      id="close-btn"
                                                                       class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
                                                                   >
                                                                       <svg
-                                                                          
+                                                                          data-garden-id="buttons.icon"
+                                                                          data-garden-version="8.13.0"
                                                                           theme="[object Object]"
                                                                           class="sc-bwzfXH hDrfMZ sc-2nitf7-9 iRaNEz"
                                                                           xmlns="http://www.w3.org/2000/svg"
@@ -327,7 +345,8 @@
                                                                           </g>
                                                                       </svg></button
                                                                   ><input
-                                                                     
+                                                                      data-garden-id="dropdowns.input"
+                                                                      data-garden-version="8.49.4"
                                                                       aria-invalid="false"
                                                                       aria-autocomplete="list"
                                                                       aria-labelledby="downshift-0-label"
@@ -340,7 +359,8 @@
                                                                   />
                                                               </div>
                                                               <div
-                                                                 
+                                                                  data-garden-id="dropdowns.menu_wrapper"
+                                                                  data-garden-version="8.49.4"
                                                                   class="StyledMenuWrapper-sc-tiwdxz-0 hPndRc"
                                                                   style="
                                                                       position: absolute;
@@ -361,39 +381,32 @@
                                                               </div>
                                                           </div>
                                                           <div class="sc-vrqbdz-8 kmeNDk">
-                                                            <button
-                                                                data-garden-id="buttons.icon_button"
-                                                                data-garden-version="8.13.0"
-                                                                type="button"
-                                                                aria-label="닫기"
-                                                                id="close-btn1"
-                                                                onclick="closeModal()"
-                                                                class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
-                                                                
-                                                            >
-                                                                <svg
-                                                                    data-garden-id="buttons.icon"
-                                                                    data-garden-version="8.13.0"
-                                                                    theme="[object Object]"
-                                                                    class="sc-bwzfXH hDrfMZ sc-vrqbdz-7 fbohUV"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    width="21"
-                                                                    height="13"
-                                                                    viewBox="0 0 21 13"
-                                                                    focusable="false"
-                                                                    role="presentation"
-                                                                >
-                                                                    <path
-                                                                        fill-rule="evenodd"
-                                                                        clip-rule="evenodd"
-                                                                        fill="currentColor"
-                                                                        d="M20.1005 2.7169L10.9931 11.8244C10.4724 12.3451 9.62815 12.3451 9.10745 11.8244L-8.00829e-06 2.7169L1.88561 0.831278L10.0503 8.99593L18.2149 0.831278L20.1005 2.7169Z"
-                                                                    ></path>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                          <div class="sc-vrqbdz-8 kmeNDk">
-                                                              
+                                                              <button
+                                                                 
+                                                                  type="button"
+                                                                  aria-label="닫기"
+                                                                  class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
+                                                                  onclick="closeModal()"
+                                                              >
+                                                                  <svg
+                                                                      
+                                                                      theme="[object Object]"
+                                                                      class="sc-bwzfXH hDrfMZ sc-vrqbdz-7 fbohUV"
+                                                                      xmlns="http://www.w3.org/2000/svg"
+                                                                      width="21"
+                                                                      height="13"
+                                                                      viewBox="0 0 21 13"
+                                                                      focusable="false"
+                                                                      role="presentation"
+                                                                  >
+                                                                      <path
+                                                                          fill-rule="evenodd"
+                                                                          clip-rule="evenodd"
+                                                                          fill="currentColor"
+                                                                          d="M20.1005 2.7169L10.9931 11.8244C10.4724 12.3451 9.62815 12.3451 9.10745 11.8244L-8.00829e-06 2.7169L1.88561 0.831278L10.0503 8.99593L18.2149 0.831278L20.1005 2.7169Z"
+                                                                      ></path>
+                                                                  </svg>
+                                                              </button>
                                                           </div>
                                                       </section>
                                                       <div
@@ -515,34 +528,6 @@
                                                                               >
                                                                                   🧐 메이커
                                                                               </button>
-                                                                              <!-- <button
-                                                                  data-garden-id="buttons.icon_button"
-                                                                  data-garden-version="8.13.0"
-                                                                  type="button"
-                                                                  aria-label="닫기"
-                                                                  class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
-                                                                  onclick="closeModal()"
-                                                              > -->
-                                                                  <!-- <svg
-                                                                      data-garden-id="buttons.icon"
-                                                                      data-garden-version="8.13.0"
-                                                                      theme="[object Object]"
-                                                                      class="sc-bwzfXH hDrfMZ sc-vrqbdz-7 fbohUV"
-                                                                      xmlns="http://www.w3.org/2000/svg"
-                                                                      width="21"
-                                                                      height="13"
-                                                                      viewBox="0 0 21 13"
-                                                                      focusable="false"
-                                                                      role="presentation"
-                                                                  >
-                                                                      <path
-                                                                          fill-rule="evenodd"
-                                                                          clip-rule="evenodd"
-                                                                          fill="currentColor"
-                                                                          d="M20.1005 2.7169L10.9931 11.8244C10.4724 12.3451 9.62815 12.3451 9.10745 11.8244L-8.00829e-06 2.7169L1.88561 0.831278L10.0503 8.99593L18.2149 0.831278L20.1005 2.7169Z"
-                                                                      ></path>
-                                                                  </svg>
-                                                              </button> -->
                                                                           </div>
                                                                       </div>
                                                                   </div>
@@ -715,7 +700,7 @@
                                           </svg>
                                         </a>
                                         <!------- a 태그 클릭시 나오는 드롭다운------------------------->
-                                        <div class="content px-6 py-2 ydscontent collapse" id="article-6" style="font-size: 14px;" >
+                                        <div class="content px-6 py-2 ydscontent collapse" id="article-6" >
                                           마이와디즈의 [찜·알림신청]에서 확인하실 수 있어요.
                                             찜. 알림 신청 목록 뿐만 아니라 최근에 본 프로젝트 목록까지 확인할 수 있어요.&nbsp;프로젝트 이미지 우측 상단의 하트를 클릭해서 구독 ...
                                             <p class="my-4 text-right btnpadding-right">
@@ -736,7 +721,7 @@
                                           </svg>
                                         </a>
                                         <!------- a 태그 클릭시 나오는 드롭다운------------------------->
-                                        <div class="content px-6 py-2 ydscontent collapse" id="article-7" style="font-size: 14px;" >
+                                        <div class="content px-6 py-2 ydscontent collapse" id="article-7" >
                                           
                                             기본 정보 설정에서 닉네임, 이메일, 연락처 등을 언제든 변경할 수 있어요.
                                             
@@ -757,7 +742,7 @@
                                           </svg>
                                         </a>
                                          <!------- a 태그 클릭시 나오는 드롭다운------------------------->
-                                        <div class="content px-6 py-2 ydscontent collapse" id="article-8" style="font-size: 14px;">
+                                        <div class="content px-6 py-2 ydscontent collapse" id="article-8" >
                                           서포터님이 참여한 프로젝트는 [참여 내역]에서 확인할 수 있어요.
                                             참여한 펀딩·프리오더의 예약 취소를 원하시는 경우, 참여 내역에서 결제상태를 확인 후 직접 취소할 수 있어요.
                                             
@@ -789,8 +774,7 @@
                                     <ul class="list-unstyled row">
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="z4V6RoIxytc" 
-                                                data-fancybox="" id="video" href="#" style="background-image: url(https://img.youtube.com/vi/z4V6RoIxytc/0.jpg);">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="z4V6RoIxytc" data-fancybox="" href="https://www.youtube.com/watch?v=z4V6RoIxytc" style="background-image: url(https://img.youtube.com/vi/z4V6RoIxytc/0.jpg);">
                                                     <iframe class="relative z-20 invisible" id="z4V6RoIxytc" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 편한 신발 브랜드 제누이오 성공 비결, 명품급 신발을 싸게 팔 수 있는 이유 | 게임체인저 제누이오" width="640" height="360" src="https://www.youtube.com/embed/z4V6RoIxytc?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=1">
 
                                                     </iframe>
@@ -812,7 +796,7 @@
                                         </li>
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="uR7NzL_86Gs" data-fancybox="" href="https://www.youtube.com/watch?v=uR7NzL_86Gs" style="background-image: url(https://img.youtube.com/vi/uR7NzL_86Gs/0.jpg);">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="uR7NzL_86Gs" data-fancybox="" href="https://www.youtube.com/watch?v=uR7NzL_86Gs" style="background-image: url(https://img.youtube.com/vi/uR7NzL_86Gs/0.jpg);">
                                                     <iframe class="relative z-20 invisible" id="uR7NzL_86Gs" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="상세페이지 기획만 잘해도 펀딩 성공할 수 있다?ㅣGame Changer - 제누이오ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/uR7NzL_86Gs?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=2">
 
                                                     </iframe>
@@ -834,7 +818,7 @@
                                         </li>
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="S2caXNaKpDg" data-fancybox="" href="https://www.youtube.com/watch?v=S2caXNaKpDg" style="background-image: url(https://img.youtube.com/vi/S2caXNaKpDg/0.jpg);">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="S2caXNaKpDg" data-fancybox="" href="https://www.youtube.com/watch?v=S2caXNaKpDg" style="background-image: url(https://img.youtube.com/vi/S2caXNaKpDg/0.jpg);">
                                                     <iframe class="relative z-20 invisible" id="S2caXNaKpDg" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="전자책 쓰는법 어렵지 않아요. 퇴사후 전자책 부업으로 6억 매출 달성한 방법 공개 ㅣGame Changer - 유성우ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/S2caXNaKpDg?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=3">
 
                                                     </iframe>
@@ -856,7 +840,7 @@
                                         </li>
                                         <li class="mb-6 md:col-4">
                                             <div class="relative w-full ratio ratio-16-9">
-                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="tlhEgarJRQk" data-fancybox="" href="https://www.youtube.com/watch?v=tlhEgarJRQk" style="background-image: url(https://img.youtube.com/vi/tlhEgarJRQk/0.jpg);">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="tlhEgarJRQk" data-fancybox="" href="https://www.youtube.com/watch?v=tlhEgarJRQk" style="background-image: url(https://img.youtube.com/vi/tlhEgarJRQk/0.jpg);">
                                                     <iframe class="relative z-20 invisible" id="tlhEgarJRQk" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="온라인 부업 아이템, 돈 버는 전자책 펀딩 방법 알려드립니다 | Game Changer 유성우 작가" width="640" height="360" src="https://www.youtube.com/embed/tlhEgarJRQk?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=4">
 
                                                     </iframe>
@@ -874,7 +858,7 @@
                                             </div>
                                             <h3 class="h4 my-4" data-title="tlhEgarJRQk">온라인 부업 아이템, 돈 버는 전자책 펀딩 방법 알려드립니다 | Game Changer 유성우 작가</h3></li><li class="mb-6 md:col-4">
                                                 <div class="relative w-full ratio ratio-16-9">
-                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="Xix85yjSLr0" data-fancybox="" href="https://www.youtube.com/watch?v=Xix85yjSLr0" style="background-image: url(https://img.youtube.com/vi/Xix85yjSLr0/0.jpg);">
+                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="Xix85yjSLr0" data-fancybox="" href="https://www.youtube.com/watch?v=Xix85yjSLr0" style="background-image: url(https://img.youtube.com/vi/Xix85yjSLr0/0.jpg);">
                                                         <iframe class="relative z-20 invisible" id="Xix85yjSLr0" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 와디즈 펀딩 성공한 스텐팬 사용법 1인자 쿠자의 주방! 노하우 털이 ㅣGame Changer - 쿠자의주방ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/Xix85yjSLr0?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=5">
 
                                                         </iframe>
@@ -896,7 +880,7 @@
                                             </li>
                                             <li class="mb-6 md:col-4">
                                                 <div class="relative w-full ratio ratio-16-9">
-                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="plIJCkiw-Ls" data-fancybox="" href="https://www.youtube.com/watch?v=plIJCkiw-Ls" style="background-image: url(https://img.youtube.com/vi/plIJCkiw-Ls/0.jpg);">
+                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="plIJCkiw-Ls" data-fancybox="" href="https://www.youtube.com/watch?v=plIJCkiw-Ls" style="background-image: url(https://img.youtube.com/vi/plIJCkiw-Ls/0.jpg);">
                                                         <iframe class="relative z-20 invisible" id="plIJCkiw-Ls" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="EP. 0 레지나 뷰티 '디마프'의 우당탕탕 펀딩 도전기 | 서포터를 찾습니다 | 와디즈아카데미" width="640" height="360" src="https://www.youtube.com/embed/plIJCkiw-Ls?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=6">
 
                                                         </iframe>
@@ -928,97 +912,194 @@
         </div>
         <!----------------------푸터 시작 ------------------------------>
         <!-- 푸터 클론코딩 제작 -->
-     
-      <!-- 푸터 클론코딩 범위 -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-            <symbol id="icon-search">
+        <footer class="footer-6" id="footer">
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="svg-shape" viewBox="0 0 1200 120">
+              <use xlink:href="#shape-book"></use>
+            </svg>
+            <div class="container-7"> </div>
+            <!-- svg 에서 symbol 가져오기 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+              <!-- symbol-1 -->
+              <symbol id="icon-search">
                 <circle
-                    cx="4.5"
-                    cy="4.5"
-                    r="4"
-                    fill="none"
-                    stroke="currentColor"
+                  cx="4.5"
+                  cy="4.5"
+                  r="4"
+                  fill="none"
+                  stroke="currentColor"
                 ></circle>
                 <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    d="M11 11L7.5 7.5"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  d="M11 11L7.5 7.5"
                 ></path>
-            </symbol>
-            <symbol id="icon-lock">
+              </symbol>
+              <!-- symbol-2 -->
+              <symbol id="icon-lock">
                 <rect
-                    width="12"
-                    height="9"
-                    x="2"
-                    y="7"
-                    fill="currentColor"
-                    rx="1"
-                    ry="1"
+                  width="12"
+                  height="9"
+                  x="2"
+                  y="7"
+                  fill="currentColor"
+                  rx="1"
+                  ry="1"
                 ></rect>
                 <path
-                    fill="none"
-                    stroke="currentColor"
-                    d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
+                  fill="none"
+                  stroke="currentColor"
+                  d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
                 ></path>
-            </symbol>
-            <symbol id="icon-star">
+              </symbol>
+              <!-- symbol-3 -->
+              <symbol id="icon-star">
                 <polygon
-                    points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
+                  points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
                 ></polygon>
-            </symbol>
-            <symbol id="icon-chevron-down">
+              </symbol>
+              <!-- symbol-4 -->
+              <symbol id="icon-chevron-down">
                 <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
                 ></path>
-            </symbol>
-            <symbol id="icon-agent">
+              </symbol>
+              <!-- symbol-5 -->
+              <symbol id="icon-agent">
                 <path
-                    fill="currentColor"
-                    d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
+                  fill="currentColor"
+                  d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
                 ></path>
-            </symbol>
-
-            <symbol id="shape-book">
+              </symbol>
+              <!-- symbol-6 -->
+              <symbol id="shape-book">
                 <path
-                    d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+                d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
                 ></path>
-            </symbol>
-        </svg>
-        <div class="navBox">
-            <!-- <img
-                class="iconBtn"
-                src="./leftchevron.png"
-                style="margin-left: -5px"
-            />
-            <span>조성현</span> -->
-            <!-- <img class="iconBtn" id="menuBtn" src="./menuBtn.png" /> -->
-        </div>
-        <!----------슬라이드 메뉴 화면 ------------->
-         
-         <div class="backdrop" style="display: none;"></div>
-        <div class="menuWrap">
-            <nav id="menu">
-                <div class="btn-block" style="padding: 0 20px;">
-                    <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                    href="#">문의 등록</a>
-                    <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                    href="#">메이커센터</a>
+              </symbol>
+            </svg>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <div class="main-container">
+              <div class="containerq">
+                <div class="divider">
+                  <div class="full-divider"></div>
                 </div>
-                <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                href="#" style="width: 140px; margin-right: 50px;">원랩 바로가기</a>
-                
-                    
-                
-                
-            </nav>
-        </div>
+                <div class="box">
+                  <div class="box-1">
+                    <div class="text-gray">
+                      <span class="button-text">정책.약관</span>
+                      <div class="system-icon">
+                        <div class="fill"></div>
+                      </div>
+                    </div>
+                    <div class="text-gray-2" onclick="location.href='https://www.wadiz.kr/web/wterms/privacy'">
+                      <span class="button-text-3">개인정보처리방침</span>
+                      <div class="system-icon-4">
+                        <div class="fill-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="divider-6">
+                  <div class="full-7"></div>
+                </div>
+              </div>
+              <div class="container-8">
+                <div class="box-9">
+                  <div class="box-a">
+                    <div class="box-b">
+                      <div class="system-icon-c">
+                        <div class="fill-d"></div>
+                      </div>
+                      <span class="wadiz-help-center">와디즈 도움말센터</span>
+                    </div>
+                    <div class="text-button">
+                      <span class="button-text-f">채팅 상담하기</span>
+                      <div class="system-icon-10">
+                        <div class="fill-11"></div>
+                      </div>
+                    </div>
+                    <div class="text-12" onclick="location.href='https://helpcenter.wadiz.kr/hc/ko/requests/new'">
+                      <span class="button-text-13">문의 등록하기</span>
+                      <div class="system-icon-14">
+                        <div class="fill-15"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="divider-16">
+                    <div class="full-17"></div>
+                  </div>
+                  <div class="box-18">
+                    <span class="counseling-available-time">상담 가능 시간</span>
+                    <span class="counseling-available-date">평일 오전 9시 ~ 오후 6시 (주말, 공휴일 제외)
+                    </span>
+                  </div>
+                </div>
+                <div class="box-19">
+                  <div class="box-1a">
+                    <div class="box-1b">
+                      <div class="box-1c">
+                        <span class="wadiz">와디즈(주)</span>
+                        <div class="divider-1d">
+                          <div class="middle-divider"></div>
+                        </div>
+                        <span class="representative-director">대표이사</span>
+                        <span class="main-name">신혜성</span>
+                        <div class="divider-1e">
+                          <div class="middle-1f"></div>
+                        </div>
+                        <span class="business-number">사업자등록번호 258-87-01370</span>
+                        <div class="divider-20">
+                          <div class="middle-21"></div>
+                        </div>
+                        <span class="sales-number">통신판매업신고번호 2021-성남분당C-1153</span>
+                        <div class="divider-22">
+                          <div class="middle-23"></div>
+                        </div>
+                        <span class="span-address">경기 성남시 분당구 판교로 242 PDC A동 402호</span>
+                      </div>
+                      <div class="box-24">
+                        <span class="span-email-consultation">이메일 상담</span>
+                        <div class="divider-25">
+                          <div class="middle-26"></div>
+                        </div>
+                        <span class="span-email">info@wadiz.kr</span>
+                        <div class="divider-27">
+                          <div class="middle-28"></div>
+                        </div>
+                        <span class="wired-counseling">유선 상담 1661-9056</span>
+                        <span class="wadiz-co-ltd">ⓒ wadiz Co., Ltd.</span>
+                      </div>
+                    </div>
+                    <span class="wadiz-disclaimer">
+                      일부 상품의 경우 와디즈는 통신판매중개자이며 통신판매 당사자가 아닙니다.
+                      <br>
+                      해당되는 상품의 경우 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용
+                      을 확인하시기 바랍니다.
+                      </span>
+                  </div>
+                  <div class="box-29">
+                    <div class="box-2a" onclick="location.href='https://play.google.com/store/apps/details?id=com.markmount.wadiz&pli=1'">
+                      <div class="artwork-logo-1"></div>
+                      <span class="android-app">Android앱</span>
+                    </div>
+                    <div class="box-2b">
+                      <div class="artwork-logo-2" onclick="location.href='https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'"></div>
+                      <span class="ios-app">iOS앱</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- 푸터 클론코딩 범위 -->
+    
     </body>
-     <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
-        <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
-        <script src="/staticfiles/js/notify-sunghyun-app/notify-one&one-app-chat.js"></script>
-        <script src="/staticfiles/js/notify-sunghyun-app/notify-one&one-app.js"></script>
-       
+    <script src="/staticfiles/js/notify-sunghyun-app/notify-one&one-app-chat.js"></script>
+    <script src="/staticfiles/js/notify-sunghyun/notify.js"></script>   
+    <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
+    <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
 </html>
