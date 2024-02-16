@@ -551,7 +551,7 @@ div.price-info-wrapper {
     line-height: 1.5;
     display: flex;
     align-items: center;
-    color: #00c4c4;
+    color: #008243;
     gap: 4px;
 }
 
@@ -892,4 +892,120 @@ div.sub-list-img-wrap {
 
 span.sub-list-label {
     color: #212529;
+}
+
+div.announce-wrapper {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    width: 100%;
+    pointer-events: none;
+}
+
+div.announce-box.delete{
+    animation-name: delete;
+    animation-duration: .55s;
+    animation-timing-function: cubic-bezier(.08,.95,.16,1);
+}
+
+div.announce-box {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    left: 16px;
+    margin: 12px auto 0;
+    border-radius: 8px;
+    background-color: #212529;
+    padding: 16px;
+    box-sizing: border-box;
+    animation-fill-mode: forwards;
+}
+
+div.announce-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    pointer-events: all;
+}
+
+div.announce-box.insert {
+    animation-name: insert;
+    animation-duration: .35s;
+    animation-timing-function: cubic-bezier(.08,.95,.16,1);
+}
+
+@keyframes insert {
+    0% {
+        transform: translateY(-100%);
+        opacity: .2;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes delete {
+    0% {
+        transform: translateY(-100%);
+        opacity: .2;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+div.floating-buttons-container {
+    transform: translateY(-96px);
+    display: flex;
+    position: fixed;
+    right: 16px;
+    bottom: 20px;
+    flex-direction: column;
+    z-index: 1200;
+    gap: 12px;
+}
+
+button.float-top-btn {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(0);
+    display: block;
+    transition-property: opacity,transform;
+    transition-duration: .25s;
+}
+
+button.float-top-btn.active {
+    width: 44px;
+    height: 44px;
+    font-size: 32px;
+    transform: translateY(0);
+    pointer-events: auto;
+    opacity: 1;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    background: rgba(0,0,0,.3019607843);
+    padding: 0 0 env(safe-area-inset-bottom);
+    color: #fff;
+}
+
+svg.go-up-arrow-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
 }

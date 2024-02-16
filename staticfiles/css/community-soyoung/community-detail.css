@@ -629,11 +629,11 @@ button.login-modal-btn.go-member-btn {
     padding: 9px 23px;
     height: 48px;
     font-size: 16px;
-    color: #00c4c4;
+    color: #008243;
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
-    border: 1px solid #00c4c4;
+    border: 1px solid #008243;
     border-radius: 4px;
     background-color: rgba(0,0,0,0);
     vertical-align: middle;
@@ -651,8 +651,8 @@ span.go-member-text, span.go-to-login-text {
 }
 
 button.login-modal-btn.go-to-login-btn {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     white-space: nowrap;
     padding: 9px 23px;
@@ -717,7 +717,7 @@ form.comment-form-container {
 }
 
 div.comment-form-textarea>textarea {
-    padding-bottom: 48px;
+    padding-bottom: 47px;
     line-height: 20px;
     font-size: 15px;
     font-weight: 400;
@@ -799,11 +799,15 @@ textarea.comment-textarea:hover {
 }
 
 textarea.comment-textarea.active {
-    border: 1px solid #00c4c4;
+    border: 1px solid #008243;
 }
 
 button.comment-ok-btn.active {
-    background-color: #00c4c4;
-    border-color: #00c4c4;
+    background-color: #008243;
+    border-color: #008243;
     color: white;
+}
+
+button.comment-ok-btn.active.submit {
+    opacity: 1;
 }

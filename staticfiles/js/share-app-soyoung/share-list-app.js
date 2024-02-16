@@ -61,6 +61,7 @@ buttons.forEach((button) => {
 })
 
 
+
 // 모달 확장 버튼 클릭 시, 서브 메뉴나오고 화살표 180도 회전
 const expandLists = document.querySelectorAll('.list-item')
 expandLists.forEach((expandList) => {
@@ -83,7 +84,7 @@ const modalOverlay = document.querySelector('.bottom-modal-overlay');
 const modalContent = document.querySelector('.bottom-modal-content');
 
 // 초기에 모달을 숨기는 함수를 정의합니다.
-function hideModal() {
+function hideModal(e) {
     // 모달 오버레이의 투명도 0
     modalOverlay.style.opacity = '0';
     // 모달 오버레이 z-index 0
@@ -96,9 +97,12 @@ function hideModal() {
 hideModal();
 
 // 닫기 버튼 클릭 시 동작할 함수
-function closeModal() {
-    // 모달을 숨기기
-    hideModal();
+function closeModal(e) {
+    // 클릭한 부분이 뒷 배경이거나 닫기 버튼일 경우
+    if(e.target.classList[0] == "bottom-modal-overlay" || e.target.classList[1] == "close-svg" ){
+        // 모달을 숨기기
+        hideModal(e);
+    }
 }
 
 // 닫기 버튼에 클릭 이벤트 리스너를 추가합니다.
@@ -118,4 +122,34 @@ function toggleModal() {
 // 모바일 링크를 클릭하면 모달 열기
 mobileLink.addEventListener('click', toggleModal);
 
+modalOverlay.addEventListener('click',closeModal)
 
+
+// 좋아요 버튼을 클릭시, 알림창 나오기
+buttons.forEach((button) => {
+    button.addEventListener('click', function(e) {
+        const announceWrapper = document.querySelector('.announce-wrapper');
+    
+        // 새로운 알림 요소 생성
+        const newAnnounce = document.createElement('div');
+        newAnnounce.classList.add('announce-box');
+        
+        // 좋아요 여부에 따라 클래스 추가
+        if (button.classList.contains('active')) {
+            newAnnounce.classList.add('insert');
+            newAnnounce.innerHTML = '<div class="announce-content insert">좋아요 목록에 추가되었어요</div>';
+        } else {
+            newAnnounce.classList.add('delete');
+            newAnnounce.innerHTML = '<div class="announce-content delete">좋아요 목록에서 삭제되었어요</div>';
+        }
+        
+        // 알림을 화면에 표시
+        announceWrapper.appendChild(newAnnounce);
+        
+        // 1초 후에 알림을 화면에서 제거
+        setTimeout(function() {
+            announceWrapper.removeChild(newAnnounce);
+        }, 1000);
+    });
+    
+})

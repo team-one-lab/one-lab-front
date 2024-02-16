@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/one-lab-soyoung/favicon/favicon-32x32.png">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="stylesheet" href="/staticfiles/css/share-soyoung/share-want.css">
-    <title>웝랩 자료 요청/공유 글쓰기</title>
+    <title>원랩 자료 요청/공유 글쓰기</title>
 </head>
 <body>
     <div id="root">
@@ -16,20 +16,20 @@
                 <div class="sidebar-layout-contents">
                     <div class="sidebar-reword-info-container">
                         <div class="sidebar-reward-info-flag-group">
-                            <span class="sidebar-reward-info-flag1">프로젝트</span>
+                            <!-- <span class="sidebar-reward-info-flag1">프로젝트</span> -->
                             <span class="sidebar-reward-info-flag2">작성 중</span>
                         </div>
                         <a href="" class="sidebar-reward-info-project-name" target="_blank">
-                            익명이의<br>멋진 프로젝트
+                            익명이의<br>글 작성 페이지
                         </a>
                         <button class="project-number-box" type="button">
                             <span>
-                                <span class="project-number-text">
+                                <!-- <span class="project-number-text">
                                     프로젝트 번호 272066
-                                </span>
-                                <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="down-icon-svg" aria-hidden="true" style="width: 20px; height: 20px;">
+                                </span> -->
+                                <!-- <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="down-icon-svg" aria-hidden="true" style="width: 20px; height: 20px;">
                                     <path d="M16 22.4L5.6 12l1.12-1.12L16 20.16l9.28-9.28L26.4 12 16 22.4z"></path>
-                                </svg>
+                                </svg> -->
                             </span>
                         </button>
                     </div>
@@ -59,12 +59,22 @@
                     <section class="page-container">
                         <span class="blind-text-hidden">사이트 이동 경로</span>
                         <ol class="current-page-position-list">
-                            <li class="page-position-item">프로젝트 관리</li>
+                            <!-- <li class="page-position-item">프로젝트 관리</li> -->
                             <li class="page-position-item">자료 정보</li>
                         </ol>
-                        <h2 class="page-title">자료 정보</h2>
+                        <div style="display: flex; justify-content: space-between; width: 628px;">
+                            <h2 class="page-title">자료 정보</h2>
+                            <!-- 저장 버튼 -->
+                            <!-- <div class="maker-info-container-btn-wrapper"> -->
+                            <button class="save-btn">
+                                <span>
+                                    <span class="save-btn-text">저장하기</span>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- </div> -->
                         <div class="page-guide">
-                            <button class="banner-link-button-container" type="button">
+                            <!-- <button class="banner-link-button-container" type="button">
                                 <div class="banner-link-button-icon">
                                     <i class="banner-guide-icon"></i>
                                 </div>
@@ -72,7 +82,7 @@
                                     <p class="banner-link-button-description">다른 메이커들 다 본다는</p>
                                     <strong class="banner-link-button-title">필수 가이드 모음집</strong>
                                 </div>
-                            </button>
+                            </button> -->
                             <button type="button" class="banner-link-button-container banner-guide-button">
                                 <div class="banner-link-button-icon">
                                     <i class="banner-guide-gpt-icon"></i>
@@ -117,7 +127,7 @@
                                     <!-- 안내 아이콘 -> 쪽지 아이콘, 클릭 시 쪽지함 이동 -->
                                     <div class="announce-button-container">
                                         <!-- 쪽지 아이콘 -->
-                                        <img src="https://static.wadiz.kr/studio/funding/static/media/announcement.56f4b8e3.svg" alt="" class="announce-button-icon">
+                                        <!-- <img src="https://static.wadiz.kr/studio/funding/static/media/announcement.56f4b8e3.svg" alt="" class="announce-button-icon"> -->
                                         <!-- 쪽지함 경로 -->
                                         <a href=""></a>
                                     </div>
@@ -193,9 +203,6 @@
                                                             <strong class="radios-category">요청</strong>
                                                             원하는 자료가 없어요.
                                                         </span>
-                                                        <span class="radios-more-info">
-                                                            <a href="" class="radios-link">요청 유형 자세히 보기</a>
-                                                        </span>
                                                     </span>
                                                 </label>
                                                 <label for="" class="radio">
@@ -206,13 +213,8 @@
                                                             <strong class="radios category">공유</strong>
                                                             내가 가진 자료를 원랩에서 공개해요.
                                                             <span class="label-badge-container">
-                                                                <span class="get-money-label-badge">💰 바로 정산받을 수 있어요.</span>
+                                                                <span class="get-money-label-badge">포인트를 획득할 수 있어요.</span>
                                                             </span>
-                                                        </span>
-                                                        <span class="radios-more-info">
-                                                            <a class="radios-link" href="" target="_blank" rel="noreferrer">
-                                                                공유 유형 자세히 보기
-                                                            </a>
                                                         </span>
                                                     </span>
                                                 </label>
@@ -314,7 +316,7 @@
                                             <p class="reward-items-field">요청하는 자료의 예시 또는 공유하고자 하는 자료를 첨부해주세요.</p>
                                             <button class="reward-item-add-btn-box" type="button">
                                                 <div>
-                                                    <input type="file" name="" id="" style="display: none">
+                                                    <input type="file" accept="image/*, .pdf" name="" id="" style="display: none">
                                                     <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="reward-item-add-btn-icon" aria-hidden="true" style="width: 40px; height: 40px;">
                                                         <path d="M16 1.6C8.047 1.6 1.6 8.047 1.6 16S8.047 30.4 16 30.4 30.4 23.953 30.4 16 23.953 1.6 16 1.6zm8 15.2h-7.2V24h-1.6v-7.2H8v-1.6h7.2V8h1.6v7.2H24z"></path>
                                                     </svg>
@@ -349,14 +351,7 @@
                                     </div>
                                 </section>
                                 
-                                <!-- 저장 버튼 -->
-                                <div class="maker-info-container-btn-wrapper">
-                                    <button class="save-btn">
-                                        <span>
-                                            <span class="save-btn-text">저장하기</span>
-                                        </span>
-                                    </button>
-                                </div>
+                                
                             </form>
                         </div>
                     </section>
