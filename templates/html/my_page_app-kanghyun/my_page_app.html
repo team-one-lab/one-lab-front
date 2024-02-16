@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" style="--scrollbar-width: 17px;">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>마이페이지 반응형</title>
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/templates/html/one-lab-soyoung/favicon/favicon-16x16.png"
+        />
+        <link
+            rel="stylesheet"
+            href="/staticfiles/css/my_page_app-kanghyun/my_page_app.css"
+        />
+    </head>
+    <body style="overflow: auto;" class="show-gnb">
+        <div id="page-container">
+            <main id="main-app">
+                <div class="web-header">
+                    <div class="web-header-mobile">
+                        <header class="header-wrapper">
+                            <div
+                                class="header-container"
+                                style="display: flex;"
+                            >
+                                <ul class="mobile-container">
+                                    <li class="mobile-item">
+                                        <a href="" class="mobile-link">
+                                            <svg
+                                                viewBox="0 0 40 40"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="with-icon mobile-icon icon-home"
+                                                aria-hidden="true"
+                                                style="width: 28px; height: 28px;"
+                                            >
+                                                <path
+                                                    d="M38.32 26.87v-13h-1.88a1.73 1.73 0 0 0-1.73 1.59A6.82 6.82 0 0 0 23.26 20a6.67 6.67 0 0 0 2.45 5.61 8 8 0 0 0 9.74.25 1.56 1.56 0 0 0 1.47 1l1.4.01zm-7.49-2.39a3.88 3.88 0 0 1-3.72-4 3.88 3.88 0 0 1 3.72-4 3.88 3.88 0 0 1 3.72 4 3.88 3.88 0 0 1-3.72 4zM19.77 13.86L17.14 22l-2.65-8.1H11.9a1.73 1.73 0 0 0-1.65 1.2L8 22l-2.63-8.1H1.68L6 26.87h3.7l2.87-8.35 2.86 8.35h3.7l4.33-13-3.69-.01z"
+                                                ></path>
+                                            </svg>
+                                            <span class="mobile-text">홈</span>
+                                        </a>
+                                    </li>
+                                    <li class="mobile-item">
+                                        <a href="" class="mobile-link">
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="with-icon mobile-icon icon-feed"
+                                                aria-hidden="true"
+                                                style="width: 21px; height: 21px;"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M21 5.5a4.502 4.502 0 0 1-2.979 4.236l1.343 6.267a3.5 3.5 0 1 1-3.345 3.127l-4.537-1.297a5.5 5.5 0 1 1-1.878-6.874l3.192-2.903A4.5 4.5 0 1 1 21 5.5zm-3.233 3.048a3.301 3.301 0 1 0-2.536-6.096 3.301 3.301 0 0 0 2.536 6.096zM16.5 10a4.482 4.482 0 0 1-2.896-1.056l-3.084 2.803a5.517 5.517 0 0 1 1.35 4.95l4.479 1.279a3.513 3.513 0 0 1 1.842-1.723l-1.343-6.266A4.46 4.46 0 0 1 16.5 10zm-10 1.2a4.28 4.28 0 0 1 3.132 1.354 4.285 4.285 0 0 1 1.08 3.811 4.27 4.27 0 0 1-.403 1.133 4.317 4.317 0 0 1-2.067 1.934A4.3 4.3 0 1 1 6.5 11.2zm13.895 10.42a2.3 2.3 0 1 0-.895.18 2.3 2.3 0 0 0 .895-.18z"
+                                                ></path>
+                                            </svg>
+                                            <span
+                                                class="notification-badge-badge notification-badge-sm notification-badge-overlay mobile-badge notification-badge-circular"
+                                                >1</span
+                                            >
+                                            <span class="mobile-text"
+                                                >친구</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <!-- 소영이한테 받아서 집어넣는 모달창 -->
+                                    <li class="mobile-item">
+                                        <div class="mobile-link">
+                                            <svg
+                                                viewBox="0 0 32 32"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="with-icon mobile-icon"
+                                                aria-hidden="true"
+                                                style="width: 24px; height: 24px;"
+                                            >
+                                                <path
+                                                    d="M28.8 8.8H3.2V7.2h25.6zm0 6.4H3.2v1.6h25.6zm0 8H3.2v1.6h25.6z"
+                                                ></path>
+                                            </svg>
+                                            <span class="mobile-text"
+                                                >카테고리</span
+                                            >
+                                        </div>
+                                    </li>
+                                    <li class="mobile-item">
+                                        <a href="" class="mobile-link">
+                                            <svg
+                                                viewBox="0 0 32 32"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="with-icon mobile-icon"
+                                                aria-hidden="true"
+                                                style="width: 24px; height: 24px;"
+                                            >
+                                                <path
+                                                    d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085zm-5.28 21.84l-.88.8-.88-.8h-.08C8.4 19.76 4 15.84 4 11.44l-.001-.082A5.76 5.76 0 0 1 9.928 5.6a6.542 6.542 0 0 1 4.865 2.232l.486.567h1.52l.48-.56a6.548 6.548 0 0 1 4.877-2.24l.084-.001a5.76 5.76 0 0 1 5.76 5.76l-.001.085c0 4.396-4.4 8.316-11.12 14.396z"
+                                                ></path>
+                                            </svg>
+                                            <span
+                                                class="notification-badge-badge notification-badge-sm notification-badge-overlay mobile-badge notification-badge-circular"
+                                                >2</span
+                                            >
+                                            <span class="mobile-text"
+                                                >구독</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li class="mobile-item">
+                                        <a
+                                            href=""
+                                            class="mobile-link mobile-active"
+                                        >
+                                            <svg
+                                                viewBox="0 0 40 40"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="with-icon mobile-icon mobile-active"
+                                                aria-hidden="true"
+                                                style="width: 24px; height: 24px;"
+                                            >
+                                                <path
+                                                    d="M20.27 3.46a9.42 9.42 0 1 0 0 18.84 9.42 9.42 0 1 0 0-18.84zm0 22.13c-6.52 0-15.19 1.09-15.19 10.57h30.38c0-9.48-8.67-10.57-15.19-10.57z"
+                                                ></path>
+                                                <path
+                                                    fill="none"
+                                                    d="M0 0h40v40H0z"
+                                                ></path>
+                                            </svg>
+                                            <span class="mobile-text"
+                                                >마이와디즈</span
+                                            >
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div
+                                    class="title-field-container title-field-isleft"
+                                    style="color: rgb(33, 37, 41);"
+                                >
+                                    <p
+                                        class="title-field-title title-field-isleft"
+                                    >
+                                        ONELAB
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="user-type-container main-layout-user-type"
+                            >
+                                <div
+                                    id="user-type-tab"
+                                    class="user-type-button user-type-button-active"
+                                >
+                                    고등학생
+                                </div>
+                                <div class="user-type-button">회원님</div>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+                <div class="main-wrapper-content">
+                    <section class="my-page-layout">
+                        <div>
+                            <div class="my-page-profile-container">
+                                <div class="my-page-profile-info">
+                                    <div class="my-page-profile-profileimage">
+                                        <button
+                                            type="button"
+                                            class="my-page-detail-profile"
+                                        ></button>
+                                        <button
+                                            type="button"
+                                            class="my-page-edit-profile"
+                                        >
+                                            <svg
+                                                viewBox="0 0 32 32"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="with-icon"
+                                                aria-hidden="true"
+                                            >
+                                                <path
+                                                    d="M24 1.6L1.6 24v6.4H8L30.4 8zM7.36 28.8H3.2v-4.16L19.76 8.08l4.16 4.16zm17.68-17.68l-4.16-4.16L24 3.84 28.16 8z"
+                                                ></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="my-page-profile-profileuser">
+                                        <button
+                                            type="button"
+                                            class="my-page-profile-username"
+                                        >
+                                            <span
+                                                class="my-page-profile-textbox"
+                                            >
+                                                <span
+                                                    class="my-page-profile-name"
+                                                    >Respec-Do</span
+                                                >
+                                                <span>님</span>
+                                            </span>
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="with-icon with-icon-inline profile-icon"
+                                                aria-hidden="true"
+                                                style="width: 16px; height: 16px;"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                ></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-page-contents">
+                            <div class="my-page-section">
+                                <div class="my-page-contents-container">
+                                    <div class="my-page-contents">
+                                        <div class="my-page-points-container">
+                                            <div class="my-page-points-wrapper">
+                                                <a
+                                                    href=""
+                                                    class="my-page-points-display"
+                                                >
+                                                    <dl
+                                                        class="my-page-points-info"
+                                                    >
+                                                        <dt
+                                                            class="my-page-points-icon"
+                                                        >
+                                                            <svg
+                                                                viewBox="0 0 40 40"
+                                                                focusable="false"
+                                                                role="presentation"
+                                                                class="withIcon-icon"
+                                                                aria-hidden="true"
+                                                            >
+                                                                <g
+                                                                    data-name="레이어 2"
+                                                                >
+                                                                    <path
+                                                                        d="M21.19 12.5h-5.91v15.16h2.16v-4.59h3.75a7 7 0 0 0 4.63-1.41 4.75 4.75 0 0 0 1.69-3.87 4.77 4.77 0 0 0-1.69-3.88 7 7 0 0 0-4.63-1.41zm3.07 7.81a4.84 4.84 0 0 1-3.14.88h-3.68v-6.8h3.68a4.9 4.9 0 0 1 3.14.87 3.06 3.06 0 0 1 1.09 2.53 3 3 0 0 1-1.09 2.52z"
+                                                                    ></path>
+                                                                    <path
+                                                                        d="M20 1.67A18.33 18.33 0 1 0 38.33 20 18.35 18.35 0 0 0 20 1.67zm0 34.66A16.33 16.33 0 1 1 36.33 20 16.35 16.35 0 0 1 20 36.33z"
+                                                                    ></path>
+                                                                    <path
+                                                                        fill="none"
+                                                                        d="M0 0h40v40H0z"
+                                                                    ></path>
+                                                                </g>
+                                                            </svg>
+                                                            <span
+                                                                class="my-page-points-name"
+                                                                >포인트</span
+                                                            >
+                                                        </dt>
+                                                        <dd
+                                                            class="my-page-points-text"
+                                                        >
+                                                            100 P
+                                                        </dd>
+                                                    </dl>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="my-page-mycontents-container"
+                                        >
+                                            <div
+                                                class="my-page-mycontents-container-padding"
+                                            >
+                                                <div
+                                                    class="my-page-mycontents-wrapper"
+                                                >
+                                                    <a
+                                                        href=""
+                                                        class="my-page-mycontents"
+                                                    >
+                                                        <span
+                                                            >작성한 게시글
+                                                            보기</span
+                                                        >
+                                                        <span>
+                                                            <b>0</b>
+                                                        </span>
+                                                    </a>
+                                                    <hr
+                                                        class="my-page-contents-divider"
+                                                    />
+                                                    <a
+                                                        href=""
+                                                        class="my-page-mycontents"
+                                                    >
+                                                        <span
+                                                            >포인트 충전
+                                                            내역</span
+                                                        >
+                                                        <span>
+                                                            <b>0</b>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div
+                                                    class="my-page-certification-container"
+                                                >
+                                                    <a href="">
+                                                        <div
+                                                            class="my-page-certification-wrapper"
+                                                        >
+                                                            <div
+                                                                class="my-page-certification-info"
+                                                            >
+                                                                <i
+                                                                    class="my-page-certification-icon"
+                                                                    aria-hidden="true"
+                                                                ></i>
+                                                                <strong
+                                                                    class="my-page-certification-title"
+                                                                    >결제 정보
+                                                                    관리</strong
+                                                                >
+                                                            </div>
+                                                            <div
+                                                                class="my-page-certification-link"
+                                                            >
+                                                                <span
+                                                                    >카드
+                                                                    등록</span
+                                                                >
+                                                                <svg
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    focusable="false"
+                                                                    role="presentation"
+                                                                    class="with-icon"
+                                                                    aria-hidden="true"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                                    ></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-page-adbanner-container">
+                                <div class="my-page-adbanner-wrapper">
+                                    <a
+                                        href=""
+                                        class="my-page-advertisement-banner-container"
+                                    >
+                                        <p class="my-page-advertisement-title">
+                                            글로벌 캠퍼들의 선택. 유그린
+                                            파워스테이션
+                                        </p>
+                                        <div
+                                            class="my-page-advertisement-thumbnail-wrapper"
+                                        >
+                                            <div
+                                                aria-hidden="true"
+                                                class="my-page-advertisement-cardthumbnail"
+                                                style='background-image: url("https://cdn1.wadiz.kr/images/20240214/1707876843541.png/wadiz/optimize");'
+                                            ></div>
+                                            <div
+                                                class="my-page-advertisement-badge"
+                                            >
+                                                바로가기
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="with-icon"
+                                                    aria-hidden="true"
+                                                    style="width: 12px; height: 12px;"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="my-page-section">
+                                <h4 class="my-page-section-title">고객센터</h4>
+                                <div>
+                                    <ul>
+                                        <li class="my-page-menu-menu">
+                                            <button>
+                                                <span
+                                                    class="my-page-menu-icon"
+                                                    aria-hidden="true"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 40 40"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="with-icon"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            fill="none"
+                                                            d="M0 0h40v40H0z"
+                                                        ></path>
+                                                        <path
+                                                            d="M10.62 38.33V29H2.87V1.67h34.26v27.79H18.92zM5 27h7.7v6.11l5.3-5.73h17V3.75H5z"
+                                                        ></path>
+                                                        <path
+                                                            d="M12.84 13.28a1.87 1.87 0 1 0 0 3.74 1.87 1.87 0 1 0 0-3.74zm7.16 0a1.87 1.87 0 1 0 0 3.74 1.87 1.87 0 1 0 0-3.74zm7.16 0a1.87 1.87 0 1 0 0 3.74 1.87 1.87 0 1 0 0-3.74z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="my-page-menu-txt"
+                                                    >1:1 채팅 상담</span
+                                                >
+                                                <span
+                                                    class="my-page-menu-arrowicon"
+                                                    aria-hidden="true"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="with-icon"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            clip-rule="evenodd"
+                                                            d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="my-page-menu-menu">
+                                            <a href="">
+                                                <span
+                                                    class="my-page-menu-icon"
+                                                    aria-hidden="true"
+                                                >
+                                                    <i
+                                                        class="my-page-service-center-guide-icon"
+                                                    ></i>
+                                                </span>
+                                                <span class="my-page-menu-text"
+                                                    >도움말 센터</span
+                                                >
+                                                <span
+                                                    class="my-page-menu-arrowicon"
+                                                    aria-hidden="true"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="with-icon"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            clip-rule="evenodd"
+                                                            d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="my-page-section">
+                                <h4 class="my-page-section-title">공지사항</h4>
+                                <div>
+                                    <ul>
+                                        <li class="my-page-menu-menu">
+                                            <a href="">
+                                                <span
+                                                    class="my-page-menu-icon"
+                                                    aria-hidden="true"
+                                                >
+                                                    <i
+                                                        class="my-page-service-center-notice-icon"
+                                                    ></i>
+                                                </span>
+                                                <span class="my-page-menu-text"
+                                                    >공지사항</span
+                                                >
+                                                <span
+                                                    class="my-page-menu-arrowicon"
+                                                    aria-hidden="true"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="with-icon"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            clip-rule="evenodd"
+                                                            d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="my-page-section">
+                                <div class="my-page-loginmode-container">
+                                    <p class="my-page-loginmode-wrapper">
+                                        <span>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="16"
+                                                height="16"
+                                                viewBox="0 0 16 16"
+                                            >
+                                                <g
+                                                    fill="none"
+                                                    fill-rule="evenodd"
+                                                >
+                                                    <path
+                                                        d="M0.8 0.645H15.600000000000001V15.355H0.8z"
+                                                    ></path>
+                                                    <path
+                                                        fill="#4285F4"
+                                                        d="M13.471 6.598c.085.388.129.79.129 1.202 0 .204-.01.405-.032.603-.158 1.478-.89 2.79-1.976 3.727L9.65 10.575c.568-.393 1.01-.944 1.257-1.587h-3.27v-2.39h5.834z"
+                                                    ></path>
+                                                    <path
+                                                        fill="#34A853"
+                                                        d="M7.4 11.61c.82 0 1.573-.29 2.161-.773l1.89 1.515C10.404 13.372 8.975 14 7.4 14c-2.35 0-4.373-1.397-5.284-3.406L4.1 9.061c.381 1.466 1.714 2.549 3.3 2.549z"
+                                                    ></path>
+                                                    <path
+                                                        fill="#FBBC05"
+                                                        d="M2.385 5.187l1.734 1.58c-.188.435-.294.92-.294 1.433 0 .408.067.799.19 1.161l-1.773 1.585c-.177-.354-.321-.73-.428-1.124l-.206-1.95c.051-.98.329-1.894.777-2.685z"
+                                                    ></path>
+                                                    <path
+                                                        fill="#EA4335"
+                                                        d="M7.6 2c1.662 0 3.166.653 4.253 1.708L10.11 5.405C9.47 4.778 8.582 4.39 7.6 4.39c-1.66 0-3.051 1.108-3.427 2.6L2.126 5.421C3.066 3.404 5.163 2 7.6 2z"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        구글로 로그인 중
+                                    </p>
+                                    <button
+                                        class="button-button button-sm"
+                                        type="button"
+                                    >
+                                        <span>
+                                            <span class="button-children"
+                                                >로그아웃</span
+                                            >
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="floating-buttons-container"></div>
+            </main>
+        </div>
+    </body>
+</html>
