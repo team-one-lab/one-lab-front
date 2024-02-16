@@ -192,7 +192,7 @@ $("button.maker-type-select-btn").on("click", function(e) {
 })
 
 $(".input-text").on("focus", function(e) {
-    $(this).css('border-color', '#00c4c4')
+    $(this).css('border-color', '#008243')
 })
 
 // $(document).ready(function() {
@@ -228,7 +228,59 @@ introductionText.addEventListener('input', function() {
 });
 
 
-// 파일 입력시 미리보기 및 x버튼생성
+// // 파일 입력시 미리보기 및 x버튼생성
+// document.addEventListener("DOMContentLoaded", function() {
+//     const sectionContent = document.querySelector('.check-document .section-content');
+//     const fileInput = document.querySelector('.reward-item-add-btn-box input[type="file"]');
+
+//     document.querySelector('.reward-item-add-btn-box').addEventListener('click', function() {
+//         fileInput.click(); // hidden input 요소를 클릭하여 파일 업로드 창을 엽니다.
+//     });
+
+//     fileInput.addEventListener('change', function(event) {
+//         const fileList = event.target.files;
+//         if (fileList.length > 0) {
+//             const file = fileList[0];
+//             if (isImageFile(file)) {
+//                 displayPreviewImage(file);
+//             } else {
+//                 alert('이미지 파일을 업로드해주세요.');
+//                 fileInput.value = ''; // 파일 입력 필드 초기화
+//             }
+//         }
+//     });
+
+//     function isImageFile(file) {
+//         return file.type.startsWith('image/');
+//     }
+
+//     function displayPreviewImage(file) {
+//         const reader = new FileReader();
+
+//         reader.onload = function(event) {
+//             const imageUrl = event.target.result;
+//             const imageElement = document.createElement('img');
+//             imageElement.src = imageUrl;
+//             imageElement.style.width = "100px"
+//             imageElement.style.position = "relative"
+//             sectionContent.appendChild(imageElement);
+
+//             const closeButton = document.createElement('button');
+//             closeButton.textContent = 'x';
+//             closeButton.classList.add('close-btn');
+//             closeButton.addEventListener('click', function() {
+//                 imageElement.remove();
+//                 closeButton.remove();
+//                 fileInput.value = ''; // 파일 입력 필드 초기화
+//             });
+//             sectionContent.appendChild(closeButton);
+//         };
+
+//         reader.readAsDataURL(file);
+//     }
+// });
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const sectionContent = document.querySelector('.check-document .section-content');
     const fileInput = document.querySelector('.reward-item-add-btn-box input[type="file"]');
@@ -241,12 +293,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const fileList = event.target.files;
         if (fileList.length > 0) {
             const file = fileList[0];
-            if (isImageFile(file)) {
-                displayPreviewImage(file);
-            } else {
-                alert('이미지 파일을 업로드해주세요.');
-                fileInput.value = ''; // 파일 입력 필드 초기화
-            }
+            displayPreviewImage(file);
         }
     });
 
@@ -260,16 +307,26 @@ document.addEventListener("DOMContentLoaded", function() {
         reader.onload = function(event) {
             const imageUrl = event.target.result;
             const imageElement = document.createElement('img');
-            imageElement.src = imageUrl;
-            imageElement.style.width = "100px"
-            imageElement.style.position = "relative"
-            sectionContent.appendChild(imageElement);
+            let fileNameDiv = document.createElement('div'); // let으로 변경
+
+            if(isImageFile(file)){ // 수정: event 대신 file를 사용
+                imageElement.src = imageUrl;
+                imageElement.style.width = "100px";
+                imageElement.style.position = "relative";
+                sectionContent.appendChild(imageElement);
+            } else {
+                fileNameDiv.textContent = file.name; // 수정: 파일 이름을 텍스트 콘텐츠로 설정
+                console.log(file.name);
+                sectionContent.appendChild(fileNameDiv);
+            }
+            
 
             const closeButton = document.createElement('button');
             closeButton.textContent = 'x';
             closeButton.classList.add('close-btn');
             closeButton.addEventListener('click', function() {
                 imageElement.remove();
+                fileNameDiv.remove(); // 수정: 파일 이름 div도 제거
                 closeButton.remove();
                 fileInput.value = ''; // 파일 입력 필드 초기화
             });

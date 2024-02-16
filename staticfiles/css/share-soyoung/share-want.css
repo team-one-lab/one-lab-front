@@ -87,46 +87,21 @@ button {
     color: inherit;
 }
 
-@media screen and (min-width: 769px) {
-    #layout-container {
-        position: static;
-        overflow-y: auto;
-    }
-}
-
 #layout-container {
     height: 100%;
     overflow-x: hidden;
 }
 
-@media screen and (min-width: 769px) {
-    div.layout-main {
-        display: -ms-flexbox;
-        display: flex;
-        height: 100%;
-    }
+div.layout-main {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
 }
 
 div.layout-main {
     padding-top: 56px;
 }
 
-@media screen and (min-width: 769px) {
-    div.sidebar-layout-contents {
-        position: relative;
-        transform: none;
-        transition: none;
-        z-index: 0;
-        box-shadow: 1px 0 0 0 rgba(0,0,0,.06);
-        height: 100%;
-    }
-}
-
-@media screen and (min-width: 321px) {
-    div.sidebar-layout-contents {
-        width: 240px;
-    }
-}
 
 div.sidebar-layout-contents {
     display: flex;
@@ -138,7 +113,7 @@ div.sidebar-layout-contents {
 }
 
 div.sidebar-reword-info-container {
-    background-image: linear-gradient(118deg,#75d184,#65bfce);
+    background-image: linear-gradient(118deg,#75d184,#00704A);
     display: block;
     position: relative;
     cursor: pointer;
@@ -266,7 +241,7 @@ a.sidebar-menu-item-nav-link {
 }
 
 a.sidebar-menu-item-nav-link.active {
-    color: #00a2a2;
+    color: #00704A;
     display: block;
     position: relative;
     cursor: pointer;
@@ -327,7 +302,7 @@ ul.sidebar-reward-sublist-container {
 } */
 
 a.sidebar-sublist-nav-link.sublist-active {
-    color: #00a2a2;
+    color: #00704A;
     pointer-events: none;
     display: block;
     position: relative;
@@ -569,17 +544,17 @@ button.preview-btn {
     padding: 9px 15px;
     height: 40px;
     font-size: 14px;
-    border-color: #00c4c4;
-    color: #00c4c4;
+    border-color: #008243;
+    color: #008243;
     border-radius: 999em;
     position: relative;
     
 }
 
 button.preview-btn:hover {
-    border-color: #00c4c4;
+    border-color: #008243;
     background-color: #e7f9f9;
-    color: #00b2b2;
+    color: #00704A;
 }
 
 button.preview-btn>span {
@@ -595,8 +570,8 @@ span.preview-btn-text {
 }
 
 button.pre-save-btn {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     padding: 9px 15px;
     height: 40px;
@@ -605,8 +580,8 @@ button.pre-save-btn {
 }
 
 button.pre-save-btn:hover {
-    border-color: #00b2b2;
-    background-color: #00b2b2;
+    border-color: #00704A;
+    background-color: #00704A;
     color: #fff;
 }
 
@@ -913,7 +888,7 @@ button.category-select-btn {
 }
 
 button.category-select-btn:hover {
-    border: 1px solid #00b2b2;
+    border: 1px solid #00704A;
 }
 
 button.category-select-btn.btn {
@@ -1024,9 +999,9 @@ a.link {
     white-space: nowrap;
     font-weight: 500;
     transition: color .3s;
-    border-bottom: 1px solid #00c4c4;
+    border-bottom: 1px solid #008243;
     cursor: pointer;
-    color: #00c4c4;
+    color: #008243;
 }
 
 svg.show-guide-icon {
@@ -1094,7 +1069,7 @@ span.radio-icon::before {
 }
 
 span.radio-icon.active::before {
-    background-color: #00c4c4;
+    background-color: #008243;
 }
 
 span.radio-label {
@@ -1130,7 +1105,7 @@ span.label-badge-container {
 span.get-money-label-badge {
     border: 1px solid #e7f9f9;
     background-color: #e7f9f9;
-    color: #00c4c4;
+    color: #008243;
     height: auto;
     min-height: 22px;
     border-radius: 5px;
@@ -1152,7 +1127,7 @@ span.radios-more-info {
 
 a.radios-link {
     text-decoration: underline;
-    color: #00c4c4;
+    color: #008243;
 }
 
 section.section-container.project-intro {
@@ -1303,8 +1278,8 @@ button.maker-type-select-btn:hover {
 }
 
 button.maker-type-select-btn.active {
-    border-color: #00c4c4;
-    color: #00b2b2;
+    border-color: #008243;
+    color: #00704A;
     position: relative;
     flex: 1 1;
     padding-right: 0;
@@ -1527,10 +1502,9 @@ input::placeholder {
 
 
 button.save-btn {
-    width: 420px;
     max-width: 100%;
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     padding: 9px 23px;
     height: 48px;
@@ -1546,8 +1520,8 @@ button.save-btn {
 }
 
 button.save-btn:hover {
-    border-color: #00b2b2;
-    background-color: #00b2b2;
+    border-color: #00704A;
+    background-color: #00704A;
     color: #fff;
 }
 
@@ -1574,7 +1548,7 @@ input[type=text]:focus {
     transition-duration: .15s;
     border-radius: 4px;
     outline: none;
-    border: 1px solid #00c4c4!important;
+    border: 1px solid #008243!important;
 }
 
 

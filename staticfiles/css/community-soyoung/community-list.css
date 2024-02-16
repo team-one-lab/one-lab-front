@@ -58,8 +58,11 @@ em {
 }
 
 li.write-form {
-    padding: 0 4px !important;
-    height: 40px !important;
+    height: 32px !important;
+    line-height: 2; 
+    width: 60px; 
+    text-align: center;
+    left: 90%;
 }
 
 main.main-board {
@@ -129,8 +132,8 @@ div.list-tabs ul li {
 }
 
 div.list-tabs ul li.active>a {
-    border-bottom: 3px solid #00c4c4;
-    color: #00b2b2;
+    border-bottom: 3px solid #008243;
+    color: #008243;
     font-weight: 500;
 }
 
@@ -164,7 +167,7 @@ a.article {
 }
 
 em.category {
-    color: #00b2b2;
+    color: #008243;
     padding-bottom: 4px;
     line-height: 18px;
     font-size: 13px;
@@ -177,7 +180,7 @@ em.status.closed {
 }
 
 em.status {
-    color: #00b2b2;
+    color: #008243;
     padding-bottom: 4px;
     line-height: 18px;
     font-size: 13px;
@@ -461,7 +464,7 @@ button.btn-search {
 }
 
 div.desktop-only a:hover {
-    color: #00c4c4;
+    color: #008243;
 }
 
 h3.title:hover {

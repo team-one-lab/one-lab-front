@@ -360,12 +360,8 @@ svg.down-arrow-svg {
 }
 
 select.order-select-box {
+    border: none;
     position: absolute;
-    right: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 18px;
 }
 
 ul.order-select-desktop-sort-container {
@@ -462,7 +458,7 @@ p.info-string-wrapper {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    color: #00c4c4;
+    color: #008243;
 }
 
 strong.title {
@@ -635,4 +631,8 @@ svg.wish-icon path.like-icon {
     stroke: #f2f4f6;
     stroke-width: 2px;
     transition: fill .25s ease-in-out;
+}
+
+option {
+    border-radius: 0 !important;
 }
