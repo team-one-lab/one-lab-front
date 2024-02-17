@@ -256,10 +256,10 @@ body{
 /* ##### 헤더 부분 설정 ##### */
 
 
-/* <header class="header_unstuck" x-data="Widgets.header({ isFixed: false, isSticky: true })" :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"></header> */
-/* class="header_unstuck" */
+/* <header class="header-unstuck" x-data="Widgets.header({ isFixed: false, isSticky: true })" :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"></header> */
+/* class="header-unstuck" */
 
-.header_unstuck{
+.header-unstuck{
     transition: 0.3s;
     border-bottom: 1px solid #e2e8f0;
     visibility: visible;
@@ -273,7 +273,7 @@ body{
 }
 
 
-.header_unstuck{
+.header-unstuck{
     transition: 0.3s;
     border-bottom: 1px solid #e2e8f0;
     visibility: visible;
@@ -288,10 +288,10 @@ body{
 }
 
 
-/* <nav class="navbar_full"></nav> */
-/* class="navbar_full" */
+/* <nav class="navbar-full"></nav> */
+/* class="navbar-full" */
 
-.navbar_full{
+.navbar-full{
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -303,12 +303,12 @@ body{
 }
 
 
-.navbar_full{
+.navbar-full{
     max-width: 1140px;
 }
 
 
-.navbar_full{
+.navbar-full{
     margin-right: auto;
     margin-left: auto;
     width: 100%;
@@ -540,7 +540,7 @@ button{
 .search-0{
     max-width: 20rem;
     margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-right: 9.5rem;
     margin-bottom: 0;
     flex: 1;
 
@@ -748,7 +748,7 @@ input {
 }
 
 .button-header-1:hover{
-    color: #008243;
+    color: #00704A;
     text-decoration: none;
 }
 
@@ -800,7 +800,7 @@ a {
 }
 
 .button-header-2:hover{
-    color: #00C4C4;
+    color: #00704A;;
     text-decoration: none;
 }
 
@@ -852,7 +852,7 @@ a {
 }
 
 .button-header-3:hover{
-    color: #008243;
+    color: #00704A;;
     text-decoration: none;
 }
 
@@ -941,12 +941,12 @@ main{
 /* <nav class="col"></nav> */
 /* 클래스: col */
 
-.col {
+/* .col {
     font-weight: 500;
     font-size: 0.9375rem;
-}
+} */
 
-.col{
+/* .col{
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
@@ -956,80 +956,75 @@ main{
     width: 100%;
     min-height: 1px;
     min-width: 0;
-}
+} */
 
-nav{
+/* nav{
     display: block;
-}
+} */
 
 
 /* <ol class="breadcrumbs"></ol> */
 /* 클래스: breadcrumbs , ol{} 설정*/
 
-.breadcrumbs {
+/* .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     list-style: none;
     margin-bottom: 1rem;
-}
+} */
 
-ol {
+/* ol {
     padding: 0 0 0 1.5rem;
     margin: 0 0 1rem;
-}
+} */
 
 
 /* <li title="도움말 센터"></li> */
 /* li{} 설정 */
 
 
-.breadcrumbs > li {
+/* .breadcrumbs > li {
     color: #4A5568;
-}
+} */
 
 /* <a class="help-center" href="">도움말 센터</a> */
 /* 클래스: help-center */
 
-.help-center {
+/* .help-center {
     color: #008243;
     text-decoration: none;
     background-color: transparent;
     touch-action: manipulation;
+} */
 
-}
-
-.help-center:hover{
+/* .help-center:hover{
     color: #000;
     text-decoration: underline;
     background-color: transparent;
-}
+} */
 
 
 /* <li title="문의 등록">문의 등록</li> */
 /* li{} 설정 */
 
-
-.breadcrumbs > li {
+/* .breadcrumbs > li {
     color: #4A5568;
-}
+} */
 
-
-.breadcrumbs > * + * {
+/* .breadcrumbs > * + * {
     padding-left: 0.5rem;
-}
+} */
 
-
-.breadcrumbs li + li::before {
+/* .breadcrumbs li + li::before {
     color: #4A5568;
-}
+} */
 
-
-.breadcrumbs > * + *::before {
+/* .breadcrumbs > * + *::before {
     display: inline-block;
     padding-right: 0.5rem;
     content: "/";
-}
+} */
 
 
 /* <div class="row"></div> */

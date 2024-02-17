@@ -45,11 +45,11 @@
     <div class="layout-column" x-data="Widgets.mobileMenu">
       <!-- 헤더 클론코딩 제작 -->
       <header
-        class="header_unstuck"
+        class="header-unstuck"
         x-data="Widgets.header({ isFixed: false, isSticky: true })"
         :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"
       >
-        <nav class="navbar_full">
+        <nav class="navbar-full">
           <a href="" class="navbar-auto">
             <!-- 와디즈 도움말센터 이미지 -->
             <img
@@ -130,12 +130,12 @@
               data-element="template"
               data-template="category-dropdown"
             ></div>
-            <!-- 문의 등록 버튼 -->
-            <a class="button-header-1" href=""> 원랩 문의하기 </a>
-            <!-- 메이커센터 버튼 -->
-            <a class="button-header-2" href="">대회/공모전 문의하기 </a>
-            <!-- 와디즈 바로가기 버튼 -->
-            <a class="button-header-3" href="">자료공유 및 장소공유 </a>
+            <!-- 원랩 문의 버튼-->
+            <a class="button-header-1" href=""> 원랩 문의 </a>
+            <!-- 학교 문의 버튼-->
+            <a class="button-header-2" href=""> 학교 문의 </a>
+            <!-- 커뮤니티 버튼 -->
+            <!-- <a class="button-header-3" href=""> 커뮤니티 </a> -->
           </div>
         </nav>
       </header>
@@ -153,14 +153,14 @@
           style="padding-top: 6rem; padding-bottom: 1rem"
         >
           <div class="row-center">
-            <nav class="col">
+            <!-- <nav class="col">
               <ol class="breadcrumbs">
                 <li title="도움말 센터">
-                  <a class="help-center" href="">원랩 문의 등록</a>
+                  <a class="help-center" href="">도움말 센터</a>
                 </li>
                 <li title="문의 등록">문의 등록</li>
               </ol>
-            </nav>
+            </nav> -->
           </div>
           <div class="row">
             <div class="lg:col-9">
