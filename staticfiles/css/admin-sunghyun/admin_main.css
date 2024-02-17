@@ -894,3 +894,11 @@ p{
     color: #333334;
     fill: #333334;
 }
+
+
+.wrap{
+    width: 800px;
+    height: 500px;
+    margin: 30px 250px;
+}
+

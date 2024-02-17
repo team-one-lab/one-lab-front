@@ -71,19 +71,54 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 }
 
 /*----------*/
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-th, td {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 3px;
-}
-th {
-    background-color: #f2f2f2;
-}
+h2 { font-weight: border; }
+.hr1 { border: 0;
+height: 2px;
+background:  #d3d3d3;}
+    .grey { 
+     color: #727272;}
+     #strong { font-weight: 900;}
+
+            table {
+            width: 100%;
+            border-top: 1px solid #d3d3d3;
+            border-collapse: collapse;
+            }
+            th { background-color: #daefce ; 
+            border-top: 3px solid #daefce;
+            }
+            th, td {
+            border-bottom: 1px solid #d3d3d3;
+            padding: 10px;
+            }
+
+  .greylist {
+  width: 50px;
+  height: 30px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  background: grey;
+  border: solid 2px white;
+  border-radius: 5px;
+  }
+  .gradient {
+  width: 80px;
+  height: 30px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  background: linear-gradient( to bottom, grey, black );
+  border: solid 2px white;
+  border-radius: 5px;
+  }
+
+            .left {text-align: left;}
+            .right {  float: right;}
+            .center { text-align: center;}
+
+a {color:black;
+text-decoration-line : none;}
     .lg\:px-\[32px\] {
         padding-left: 32px;
         padding-right: 32px;
@@ -910,6 +945,7 @@ input::placeholder{
     border-bottom-width: 1px;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     min-height: 36px;
     display: flex;
     border-color: #e6e6e7;
