@@ -926,6 +926,9 @@ section{
 input::placeholder{
     text-align: center;
 }
+.dropdown-content{
+    margin-top: 32px;
+}
 .grid-px{
     padding-left: 12px;
     padding-right: 12px;
