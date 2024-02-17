@@ -50,7 +50,6 @@ article, aside, figcaption, figure, footer, header, main, nav, section {
 a, button {
     color: inherit;
     outline: none;
-    -webkit-appearance: none;
 }
 
 a {
@@ -122,7 +121,6 @@ strong {
     padding-top: 0;
     padding-bottom: 0;
   }
-}
 
 .MainContainer_root {
   background-color: #fff;
@@ -436,7 +434,7 @@ a.Button_button {
 }
 
 .ProjectSearchTags_hash {
-    color: #00c4c4;
+    color: #008243;
 }
 
 /* 맨 오른쪽 공유 그림 css */
@@ -815,7 +813,7 @@ a.Button_button {
     line-height: 18px;
     font-size: 12px;
     font-weight: 700;
-    color: #00c4c4;
+    color: #008243;
 }
 
 /*팝업 베너 css */
@@ -1031,8 +1029,8 @@ a.Button_button {
     font-weight: 400;
     padding: 6px 11px;
     height: 32px;
-    border-color: #00c4c4;
-    color: #00c4c4;
+    border-color: #008243;
+    color: #008243;
 }
 
 /* 재입고 알림신청 쪽 css */
@@ -1078,7 +1076,6 @@ a.Button_button {
     white-space: nowrap;
     color: #495057;
     font-size: 16px;
-    -webkit-appearance: none;
 }
 
 @media screen and (min-width: 769px) {
@@ -1125,8 +1122,8 @@ a.Button_button {
 }
 
 .Button_primary {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     display: block;
     width: 100%;
@@ -1279,7 +1276,7 @@ a.Button_button {
     line-height: 18px;
     font-size: 12px;
     font-weight: 400;
-    color: #00b2b2;
+    color: #00704A;
 }
 
 
@@ -1298,7 +1295,6 @@ a.Button_button {
     white-space: nowrap;
     color: #495057;
     font-size: 16px;
-    -webkit-appearance: none;
 }
 
 .Button_button.Button_sm {
@@ -1309,8 +1305,8 @@ a.Button_button {
 
 
 .Button_button.Button_primary.Button_contained {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
 }
 
@@ -1546,7 +1542,7 @@ a.Button_button {
     font-size: 14px;
     font-weight: 400;
     margin-left: 4px;
-    color: #00b2b2;
+    color: #00704A;
     font-weight: 500;
 }
 
@@ -1793,15 +1789,14 @@ a.Button_button {
     white-space: nowrap;
     color: #495057;
     font-size: 16px;
-    -webkit-appearance: none;
 }
 
 .Story_gaElement {
     padding: 9px 23px;
     height: 48px;
     font-size: 16px;
-    border-color: #00c4c4;
-    color: #00c4c4;
+    border-color: #008243;
+    color: #008243;
     width: 100%;
 }
 
@@ -2107,7 +2102,7 @@ a.Button_button {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    color: #00c4c4;
+    color: #008243;
 }
 
 .Title_title__3kHxQ {
@@ -2429,7 +2424,7 @@ a.Button_button {
     font-weight: 700;
     display: flex;
     gap: 4px;
-    color: #00c4c4;
+    color: #008243;
     align-items: center;
 }
 
@@ -2546,7 +2541,6 @@ a.Button_button {
     white-space: nowrap;
     color: #495057;
     font-size: 16px;
-    -webkit-appearance: none; 
 }
 
 .Button_lg {
@@ -2616,7 +2610,7 @@ a.Button_button {
     line-height: 18px;
     font-size: 12px;
     font-weight: 400;
-    color: #00c4c4;
+    color: #008243;
     display: flex;
     gap: 4px;
     pointer-events: none;
@@ -2704,8 +2698,8 @@ a.Button_button {
 }
 
 .Button_notification {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     display: block;
     width: 100%;
@@ -2718,10 +2712,8 @@ a.Button_button {
     border: 1px solid #cdd3d8;
     border-radius: 4px;
     cursor: pointer;
-    vertical-align: middle;
     text-decoration: none;
     white-space: nowrap;
-    -webkit-appearance: none;
 }
 
 .Button_childrens {
@@ -2810,6 +2802,18 @@ a.Button_button {
     color: #212529;
 }
 
-#check-btn3 { display: none; }
-#check-btn3:checked ~ .menubars3 { display: block; } 
-.menubars3 { display: none; }
+button.like-btn.active path{
+    fill:crimson
+}
+
+#check-btn3 { 
+    display: none; 
+}
+#check-btn3:checked ~ .menubars3 {
+    display: block;
+} 
+
+.menubars3 { 
+    display: none; 
+}
+

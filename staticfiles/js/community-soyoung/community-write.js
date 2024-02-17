@@ -174,7 +174,7 @@ textarea.addEventListener('input', function() {
 
 textarea.addEventListener('focus', function() {
     // textarea가 focus를 받았을 때 border 색을 변경
-    textarea.style.borderColor = '#00c4c4';
+    textarea.style.borderColor = '#008243';
 });
 
 // 문서 전체에 click 이벤트를 추가합니다.

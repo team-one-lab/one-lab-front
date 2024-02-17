@@ -28,7 +28,7 @@
                     <div class="VisualSlide_wrap">
                         <div class="VisualSlide_text">
                             <p class="VisualSlide_title">
-                                아이폰 스냅 하나로 월매출 1000검증 노하우
+                            아이폰 스냅 하나로 월매출 <br />1000 검증 노하우
                             </p>
                         </div>
                     </div>

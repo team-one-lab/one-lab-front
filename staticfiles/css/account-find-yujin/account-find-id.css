@@ -1,10 +1,8 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 html {
-    font-family: Pretendard Variable,pretendard,-apple-system,blinkmacsystemfont,
-    system-ui,roboto,Helvetica Neue,
-    Segoe UI,Apple SD Gothic Neo,Noto Sans KR,
-    Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,
-    Segoe UI Symbol,sans-serif;
+    font-family: Pretendard Variable, pretendard, -apple-system, blinkmacsystemfont, system-ui, roboto, Helvetica Neue,
+        Segoe UI, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+        sans-serif;
 }
 
 :root {
@@ -119,7 +117,7 @@ em {
 
 .web-header {
     position: static;
-    transition: top .25s;
+    transition: top 0.25s;
     width: 100%;
 }
 
@@ -161,7 +159,7 @@ em {
     font-size: 32px;
 }
 
-.wadiz-logo>a {
+.wadiz-logo > a {
     padding: 14px 0 18px;
     display: block;
 }
@@ -173,7 +171,7 @@ em {
     height: 1px;
 }
 
-.wadiz-logo>a svg {
+.wadiz-logo > a svg {
     max-width: none;
 }
 
@@ -235,7 +233,7 @@ em {
 .withIcon_icon {
     display: block;
     transform: scale(1);
-    transition: transform .3s ease-out;
+    transition: transform 0.3s ease-out;
     width: 1em;
     height: 1em;
     fill: currentColor;
@@ -277,8 +275,8 @@ h2.wz.text.display1 {
     position: relative;
     top: 0;
     left: 0;
-    transition-property: background-color,-webkit-backdrop-filter,backdrop-filter;
-    transition-duration: .5s;
+    transition-property: background-color, -webkit-backdrop-filter, backdrop-filter;
+    transition-duration: 0.5s;
     z-index: 100;
     box-shadow: 0 1px #00000014;
     background: #fff;
@@ -323,7 +321,7 @@ h2.wz.text.display1 {
 .tab-list ul:after {
     display: block;
     clear: both;
-    content: "";
+    content: '';
 }
 
 .page-body {
@@ -339,7 +337,7 @@ h2.wz.text.display1 {
     color: #000;
     padding: 0 16px;
     margin: 0 auto;
-    border-top: 1px solid rgba(0,0,0,0);
+    border-top: 1px solid rgba(0, 0, 0, 0);
     padding-top: 24px;
     padding-bottom: 160px;
     width: 100%;
@@ -362,7 +360,7 @@ p.wz.text.body1 {
 }
 
 .text-hidden {
-    margin: -1px 0 0!important;
+    margin: -1px 0 0 !important;
     height: 1px;
     overflow: hidden;
     text-indent: -9999px;
@@ -405,12 +403,12 @@ p.wz.text.body1 {
     vertical-align: middle;
     text-transform: none;
     line-height: 1;
-    font-family: "wadizicon" !important;
+    font-family: 'wadizicon' !important;
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
     speak: none;
-    content: "\e934";
+    content: '\e934';
     position: absolute;
     top: 0;
     right: 0;

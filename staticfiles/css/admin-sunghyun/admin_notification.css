@@ -71,28 +71,40 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 }
 
 /*----------*/
-@media (min-width: 1024px){
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 3px;
+}
+th {
+    background-color: #f2f2f2;
+}
     .lg\:px-\[32px\] {
         padding-left: 32px;
         padding-right: 32px;
     }
-}
-@media (min-width: 1024px){
+
+
     .lg\:h-\[58px\] {
         height:58px;
     }
-}
+
 /*----------*/
-@media (min-width: 1024px){
+
     .lg\:block {
     display: block;
     }
-}
-@media (min-width: 1024px){
+
+
     .lg\:hidden {
         display: none;
     }
-}
+
 
 .sticky{
     justify-content: space-between;
@@ -103,9 +115,10 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
     z-index: 20;
     left: 0;
     top: 0;
+    border: solid 0.7px rgb(219, 213, 213);
     position: sticky;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: #ffffff;
     display: flex;
 }
 .flex-center{
@@ -121,8 +134,8 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 .hidden-inverse{
     /* display: none; */
     width: 96px;
-    color: #fff;
-    fill: #fff;
+    color: #000000;
+    fill: #000000;
 }
 .font-inverse{
     margin-left: 10px;
@@ -136,11 +149,11 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 .font-center{
     align-items: center;
     display: flex;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    color: #fff;
-    fill: #fff;
+    color: #000000;
+    fill: #000000;
 }
 .flex-end{
     justify-content: flex-end;
@@ -871,14 +884,17 @@ section{
 }
 .min-5{
     justify-content: center;
-    min-width: 380px;
+   
     display: flex;
-    margin-left: 45px;
+    margin-left: 70px;
+}
+input::placeholder{
+    text-align: center;
 }
 .grid-px{
     padding-left: 12px;
     padding-right: 12px;
-    column-gap: 228px;
+    column-gap: 108px;
     grid-auto-flow: column;
     display: grid;
 }

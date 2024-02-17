@@ -90,15 +90,18 @@ video {
   letter-spacing: 0;
   vertical-align: baseline;
 }
+
 *,
 :after,
 :before {
   box-sizing: border-box;
 }
+
 body,
 table th {
   font-weight: 400;
 }
+
 body,
 button,
 input,
@@ -106,6 +109,7 @@ select,
 textarea {
   font-family: inherit;
 }
+
 body {
   overflow-x: hidden;
   line-height: inherit;
@@ -449,82 +453,14 @@ button:not(:disabled) {
   color: #343a40;
   border-color: #adb5bd;
 }
-.another-login-box {
-  margin-top: 56px;
-  display: flex;
-  justify-content: center;
-}
-.another-login-btn {
-  border-radius: 999em;
-  margin-left: 12px;
-  padding: 0;
-  width: 48px;
-  height: 48px;
-  text-align: center;
-  line-height: 48px;
-  font-size: 20px;
-  position: relative;
-  transition-property: background-color, border-color, color, opacity;
-  transition-duration: 0.15s;
-  border: 1px solid #cdd3d8;
-  vertical-align: middle;
-  text-decoration: none;
-  white-space: nowrap;
-  -webkit-appearance: none;
-}
-.another-login-btn:first-child {
-  margin-left: 0;
-}
-
-.another-login-btn span {
-  vertical-align: text-top;
-  display: inline-flex;
-  align-items: center;
-}
-.another-login-btn-icon-box {
-  vertical-align: top;
-  display: inline-flex;
-  align-items: center;
-}
-.another-login-btn-icon-box svg {
-  display: inline-block;
-}
 .google {
-  border-color: #ced4da;
+  border-color: #adb5bd;
   background-color: #fff;
+  color: #000;
 }
 .google:hover {
-  background-color: #fff;
-  border-color: #adb5bd;
-  color: #343a40;
-}
-.facebook {
-  border-color: #1877f2;
-  background-color: #1877f2;
-  color: #fff;
-}
-.facebook:hover {
-  background-color: #1877f2;
-  border-color: #adb5bd;
-  color: #343a40;
-}
-.apple {
-  border-color: #000;
-  background-color: #000;
-  color: #fff;
-}
-.apple:hover {
-  background-color: #000;
-  border-color: #adb5bd;
-  color: #343a40;
-}
-.login-icon-position {
-  display: inline-block;
-  transform: scale(1);
-  transition: transform 0.3s ease-out;
-  width: 1em;
-  height: 1em;
-  fill: currentColor;
+  background-color: #e9e9e9;
+  border-color: #e9e9e9;
 }
 .content-space-div {
   margin-top: 55px;
@@ -595,7 +531,7 @@ button:not(:disabled) {
   color: #212529;
   -webkit-appearance: none;
 }
-.email-input[disabled] {
+.email-input:disabled {
   color: #adb5bd;
   border-color: #f2f4f6;
   background-color: #f9fafb;
@@ -603,14 +539,14 @@ button:not(:disabled) {
   pointer-events: none;
 }
 .email-input:hover {
-  border-color: #868e96;
+  border-color: #00704a;
 }
 .email-input:focus {
-  border-color: #00c4c4;
+  border-color: #008243;
 }
 .email-submit-btn {
-  border-color: #00c4c4;
-  background-color: #00c4c4;
+  border-color: #008243;
+  background-color: #008243;
   color: #fff;
   margin-left: 8px;
   padding: 9px 15px;
@@ -637,8 +573,8 @@ button:not(:disabled) {
 }
 .email-edit-btn {
   display: none;
-  border-color: #00c4c4;
-  background-color: #00c4c4;
+  border-color: #008243;
+  background-color: #008243;
   color: #fff;
   margin-left: 8px;
   padding: 9px 15px;
@@ -709,7 +645,7 @@ button:not(:disabled) {
   border-color: #868e96;
 }
 .certification-number-input:focus {
-  border-color: #00c4c4;
+  border-color: #008243;
 }
 .count-time {
   font-size: 14px;
@@ -722,8 +658,8 @@ button:not(:disabled) {
   color: #e54545;
 }
 .certification-number-btn {
-  border-color: #00c4c4;
-  background-color: #00c4c4;
+  border-color: #008243;
+  background-color: #008243;
   color: #fff;
   margin-left: 8px;
   padding: 9px 15px;
@@ -774,6 +710,48 @@ button:not(:disabled) {
   position: relative;
 }
 .name-input {
+  height: 40px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+  transition-property: border-color, background-color, color;
+  transition-duration: 0.15s;
+  outline: none;
+  border: 1px solid #dde2e6;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 0 16px;
+  width: 100%;
+  vertical-align: middle;
+  color: #212529;
+  -webkit-appearance: none;
+}
+
+
+
+.easy-join-department-input-box {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  display: block;
+  position: relative;
+}
+.easy-join-department-input-box > label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+  padding-bottom: 4px;
+}
+.easy-join-department-input-box label {
+  display: block;
+  margin-bottom: 4px;
+}
+.department-input-box {
+  position: relative;
+}
+.department-input {
   height: 40px;
   min-height: 40px;
   font-size: 14px;
@@ -930,8 +908,8 @@ button:not(:disabled) {
   pointer-events: none;
 }
 .join-submit-btn {
-  border-color: #00c4c4;
-  background-color: #00c4c4;
+  border-color: #008243;
+  background-color: #008243;
   color: #fff;
   padding: 9px 23px;
   height: 48px;
@@ -1079,8 +1057,8 @@ input::placeholder {
 }
 .modal-submit-btn {
   margin-right: 0;
-  border-color: #00c4c4;
-  background-color: #00c4c4;
+  border-color: #008243;
+  background-color: #008243;
   color: #fff;
   padding: 9px 23px;
   height: 48px;
@@ -1192,4 +1170,654 @@ input::placeholder {
   line-height: 1.5;
   color: #fff;
   pointer-events: all;
+}
+
+.ConfirmModal_overlay {
+  display: inline-flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 9998;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.ConfirmModal_confirmModal {
+  display: inline-flex;
+  flex-direction: column;
+  outline: none;
+  border-radius: 16px;
+  box-shadow: 0 32px 40px -2px rgba(10, 22, 70, 0.12),
+    0 0 5px rgba(10, 22, 70, 0.06);
+  background: #fff;
+  padding: 24px;
+  max-height: calc(100vh - 160px);
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ConfirmModal_sizeSm {
+  width: 400px;
+  max-width: calc(100% - 48px);
+}
+
+.ConfirmModal_header {
+  display: flex;
+  flex-direction: column;
+}
+
+.ConfirmModal_closeIconRoot {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 8px;
+}
+
+.ConfirmModal_closeIconWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(6px, -6px);
+  border: 0;
+  background: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.withIcon_icon {
+  display: block;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.ConfirmModal_closeIcon {
+  width: 24px;
+  height: 24px;
+}
+
+[class*="ConfirmModal_title"] {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.ConfirmModal_titlePlaceholder {
+  height: 24px;
+}
+
+[class*="ConfirmModal_content"] {
+  height: 100%;
+}
+
+.ConfirmModal_content {
+  display: inline-flex;
+  flex-direction: column;
+  overflow: auto;
+  color: #495057;
+}
+
+.App_container {
+  max-width: 400px;
+  max-height: calc(100vh - 160px);
+  overflow: auto;
+}
+
+.TermsConfirmContainer_modalInner {
+  position: relative;
+}
+
+.TermsConfirmContainer_header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  padding-top: 12px;
+}
+
+.TermsConfirmHeader_container {
+  position: relative;
+  margin-top: -15px;
+  margin-bottom: 24px;
+  color: #212529;
+}
+
+.TermsConfirmHeader_title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.TermsConfirmHeader_description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.FullAgreementCheckbox_container {
+  border-bottom: solid 1px #f2f4f6;
+  padding-bottom: 16px;
+}
+
+.FullAgreementCheckbox_checkbox {
+  align-items: center;
+  transition: box-shadow 0.2s, background-color 0.3s;
+  border-radius: 3px;
+  cursor: pointer;
+  padding-left: 0;
+}
+
+.Checkbox_checkbox {
+  display: block;
+  position: relative;
+}
+
+.Checkbox_labeled {
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.Checkbox_input {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  margin: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+
+.Checkbox_input_detail {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  margin: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+
+.Checkbox_checkbox .Checkbox_icon {
+  display: block;
+  position: relative;
+  transition-property: opacity, border-color, background-color;
+  transition-duration: 0.15s;
+  opacity: 1;
+  z-index: 1;
+  border: 1px solid #cdd3d8;
+  border-radius: 2px;
+  background-color: #fff;
+  width: 1em;
+  height: 1em;
+}
+
+.Checkbox_checkbox.Checkbox_labeled .Checkbox_icon {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.Checkbox_checkbox.Checkbox_md .Checkbox_icon {
+  font-size: 20px;
+}
+
+.Checkbox_icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: opacity, width, fill;
+  transition-duration: 0.15s;
+  width: 0.7791666667em;
+  height: 0.7791666667em;
+  fill: #fff;
+}
+.Checkbox_checkbox.Checkbox_md .Checkbox_removeIcon {
+  width: 10px;
+}
+.Checkbox_removeIcon {
+  opacity: 0;
+}
+
+.Checkbox_checkbox.Checkbox_sm .Checkbox_removeIcon {
+  width: 8px;
+}
+
+.Checkbox_checkIcon {
+  opacity: 0;
+}
+
+.Checkbox_content {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: inline-block;
+  color: #495057;
+}
+
+.FullAgreementCheckbox_text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.FullAgreementCheckbox_subtext {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #868e96;
+}
+
+.AccordionCheckbox_accordionHeader {
+  position: relative;
+}
+
+.ServiceAgreementCheckbox_container {
+  padding: 16px 0;
+}
+
+.TermsConfirmBody_service {
+  margin-left: 16px;
+  border-bottom: solid 1px #f2f4f6;
+  padding-right: 16px;
+}
+
+.AccordionCheckbox_label {
+  color: #212529;
+}
+
+.ServiceAgreementCheckbox_required span {
+  color: #00704a;
+}
+
+.AccordionCheckbox_accordionButton {
+  position: absolute !important;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.AccordionCheckbox_accordionButton.active {
+  position: absolute !important;
+  top: 35%;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.AccordionCheckbox_accordionButton svg {
+  width: 20px;
+  height: 20px;
+  fill: #495057;
+}
+
+.ServiceAgreementCheckbox_terms {
+  padding: 16px 0;
+}
+
+.TermsConfirmBody_terms {
+  margin-left: 32px;
+  border-bottom: solid 1px #f2f4f6;
+  padding-right: 16px;
+}
+
+.Checkbox_checkbox.Checkbox_sm .Checkbox_icon {
+  font-size: 16px;
+}
+
+.AccordionCheckbox_smallLabel {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.TermsAgreementCheckbox_required {
+  color: #00704a;
+}
+
+.TermsAgreementCheckbox_children {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 32px;
+  background-color: #f2f4f6;
+  padding: 8px;
+  max-height: 180px;
+  overflow-y: scroll;
+  color: #495057;
+  display: none;
+}
+
+.Terms_terms article {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding-top: 24px;
+  position: relative;
+}
+
+.Terms_terms article {
+  color: rgba(0, 0, 0, 0.54) !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+
+.Terms_terms article h1 {
+  line-height: 1.35;
+  font-size: 32px;
+}
+
+.Terms_terms article h1 {
+  display: none;
+}
+
+.Terms_terms article h1 {
+  color: rgba(0, 0, 0, 0.54) !important;
+  font-size: 12px !important;
+}
+
+.Terms_terms article h1 {
+  margin: 1em 0 0 !important;
+  font-weight: 700 !important;
+}
+
+.Terms_terms article p {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: rgba(0, 0, 0, 0.54) !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 24px;
+  word-break: keep-all;
+}
+
+.Terms_terms article h5 {
+  margin: 1em 0 0 !important;
+  font-weight: 700 !important;
+  color: rgba(0, 0, 0, 0.54) !important;
+  font-size: 12px !important;
+  line-height: 28px;
+}
+
+.Terms_terms article ul {
+  margin: 16px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Terms_terms article li {
+  margin-bottom: 6px;
+  line-height: 24px;
+  word-break: keep-all;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Terms_terms article ul > li {
+  position: relative;
+  padding-left: 6px;
+  margin-bottom: 6px;
+}
+
+.Terms_terms article ul > li:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "\b7";
+}
+
+.Terms_terms article a {
+  color: rgba(0, 0, 0, 0.54) !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+
+.Terms_terms article a[target="_blank"] {
+  pointer-events: auto !important;
+}
+
+.Terms_terms article a[class="previous-terms"] {
+  display: none;
+}
+
+.Terms_terms article ol {
+  margin: 16px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.AccordionCheckbox_text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: #495057;
+}
+
+.HelperMessage_helperMessage {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+  margin-top: 4px;
+  color: #868e96;
+  font-style: normal;
+}
+
+.AccordionCheckbox_checkbox + em {
+  color: #212529;
+}
+
+.Checkbox_message.Checkbox_md {
+  padding-left: 28px;
+}
+
+.App_footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.FixedToast_toast {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: transform 0.15s, opacity 0.1s, background-color 0.3s, color 0.3s,
+    padding 0.05s ease-in;
+  opacity: 0;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  width: calc(100% - 32px);
+  text-align: center;
+  color: rgba(0, 0, 0, 0);
+}
+
+.TermsConfirmContainer_maketingGuide {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  word-break: keep-all;
+  color: #868e96;
+}
+
+.Button_button {
+  position: relative;
+  transition-property: background-color, border-color, color, opacity;
+  transition-duration: 0.15s;
+  border: 1px solid #cdd3d8;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  padding: 9px 23px;
+  height: 48px;
+  vertical-align: middle;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #495057;
+  font-size: 16px;
+}
+
+.Button_button.Button_disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+.Button_block {
+  width: 100%;
+}
+
+.Button_lg {
+  padding: 9px 23px;
+  height: 48px;
+  font-size: 16px;
+}
+
+.Button_button {
+  border-color: #008243;
+  background-color: #008243;
+  color: #fff;
+}
+
+.Button_button span {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+}
+
+.Terms_terms article h2 {
+  margin: 1em 0 0 !important;
+  font-weight: 700 !important;
+  color: rgba(0, 0, 0, 0.54) !important;
+  font-size: 12px !important;
+  line-height: 1.5;
+}
+
+.service-join {
+  display: none;
+}
+
+.Checkbox_checkbox .Checkbox_input:checked + .Checkbox_icon {
+  border: solid 1px #008243;
+  background-color: #008243;
+}
+
+.Checkbox_checkbox:hover .Checkbox_input:checked + .Checkbox_icon {
+  border-color: #00704a;
+  background-color: #00704a;
+}
+
+.Checkbox_checkbox .Checkbox_input.Checkbox_icon .Checkbox_removeIcon {
+  opacity: 0;
+}
+
+.Checkbox_input + .Checkbox_icon .Checkbox_removeIcon {
+  opacity: 0;
+}
+
+.Checkbox_checkbox .Checkbox_input:checked + .Checkbox_icon svg {
+  fill: #fff;
+}
+
+.Checkbox_checkbox
+  .Checkbox_input:checked
+  + .Checkbox_icon
+  .Checkbox_checkIcon {
+  opacity: 1;
+}
+
+.detail-join {
+  display: none;
+}
+
+.detail-join.active {
+  display: block;
+}
+
+.TermsAgreementCheckbox_children.active {
+  display: block;
+}
+.ReactModalPortal {
+  display: none;
+}
+.terms-modal-open {
+  display: block;
+}
+
+.esay-join-radio-bar {
+  display: flex;
+  padding: 20px 0px;
+  gap: 20px;
+}
+
+.radio-box {
+  display: flex;
+  align-items: center;
+}
+/* Input 요소에 대한 스타일 */
+.outer-radio-box {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid #999999;
+  background-color: #f8f8f8;
+}
+.outer-radio-choice {
+  background-color: #f3f4f6;
+  border: 2px solid #008243;
+  box-shadow: 0 0 0 2px #b5dbc8;
+}
+.inner-radio-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  z-index: 10;
+}
+.inner-radio-choice {
+  background-color: #008243;
+}
+/* Input 요소에 포커스가 됐을 때의 스타일 */
+.radio-input:focus {
+  box-shadow: 0 0 0 2px #008243;
+}
+
+/* Label 요소에 대한 스타일 */
+.radio-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
 }

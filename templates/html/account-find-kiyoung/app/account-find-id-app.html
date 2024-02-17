@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" class="show-footer">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>아이디 찾기</title>
+        <link rel="stylesheet" href="/staticfiles/css/account-find-kiyoung/app/account-find-id-app.css" />
+        <link rel="shortcut icon" href="/staticfiles/images/favicon.png" />
+        <link
+            rel="stylesheet"
+            as="style"
+            crossorigin
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+        />
+        <link rel="stylesheet" href="/staticfiles/css/font/font.css" />
+        <link rel="stylesheet" href="/staticfiles/css/font/font-awesome-css.min.css" />
+    </head>
+    <body class="show-gnb">
+        <div id="page-container">
+            <div class="black-bg-wrap" style="display: none"></div>
+            <div id="ol-header">
+                <div class="web-header">
+                    <div class="web-header-mobile">
+                        <header class="header-wrapper">
+                            <div class="header-container" style="display: flex">
+                                <ul class="mobile-container">
+                                    <li class="mobile-item">
+                                        <a href="" class="mobile-link">
+                                            <svg
+                                                viewBox="0 0 40 40"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="withicon-icon mobile-icon icon-home"
+                                                aria-hidden="true"
+                                                style="width: 28px; height: 28px"
+                                            >
+                                                <path
+                                                    d="M38.32 26.87v-13h-1.88a1.73 1.73 0 0 0-1.73 1.59A6.82 6.82 0 0 0 23.26 20a6.67 6.67 0 0 0 2.45 5.61 8 8 0 0 0 9.74.25 1.56 1.56 0 0 0 1.47 1l1.4.01zm-7.49-2.39a3.88 3.88 0 0 1-3.72-4 3.88 3.88 0 0 1 3.72-4 3.88 3.88 0 0 1 3.72 4 3.88 3.88 0 0 1-3.72 4zM19.77 13.86L17.14 22l-2.65-8.1H11.9a1.73 1.73 0 0 0-1.65 1.2L8 22l-2.63-8.1H1.68L6 26.87h3.7l2.87-8.35 2.86 8.35h3.7l4.33-13-3.69-.01z"
+                                                ></path>
+                                            </svg>
+                                            <span class="mobile-text">홈</span>
+                                        </a>
+                                    </li>
+                                    <li class="mobile-item">
+                                        <a href="" class="mobile-link">
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="withicon-icon mobile-icon icon-feed"
+                                                aria-hidden="true"
+                                                style="width: 21px; height: 21px"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M21 5.5a4.502 4.502 0 0 1-2.979 4.236l1.343 6.267a3.5 3.5 0 1 1-3.345 3.127l-4.537-1.297a5.5 5.5 0 1 1-1.878-6.874l3.192-2.903A4.5 4.5 0 1 1 21 5.5zm-3.233 3.048a3.301 3.301 0 1 0-2.536-6.096 3.301 3.301 0 0 0 2.536 6.096zM16.5 10a4.482 4.482 0 0 1-2.896-1.056l-3.084 2.803a5.517 5.517 0 0 1 1.35 4.95l4.479 1.279a3.513 3.513 0 0 1 1.842-1.723l-1.343-6.266A4.46 4.46 0 0 1 16.5 10zm-10 1.2a4.28 4.28 0 0 1 3.132 1.354 4.285 4.285 0 0 1 1.08 3.811 4.27 4.27 0 0 1-.403 1.133 4.317 4.317 0 0 1-2.067 1.934A4.3 4.3 0 1 1 6.5 11.2zm13.895 10.42a2.3 2.3 0 1 0-.895.18 2.3 2.3 0 0 0 .895-.18z"
+                                                ></path>
+                                            </svg>
+                                            <span class="mobile-text">친구</span>
+                                        </a>
+                                    </li>
+                                    <li class="mobile-item">
+                                        <div class="mobile-link">
+                                            <svg
+                                                viewBox="0 0 32 32"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="withicon-icon mobile-icon icon-feed"
+                                                aria-hidden="true"
+                                                style="width: 24px; height: 24px"
+                                            >
+                                                <path
+                                                    d="M28.8 8.8H3.2V7.2h25.6zm0 6.4H3.2v1.6h25.6zm0 8H3.2v1.6h25.6z"
+                                                ></path>
+                                            </svg>
+                                            <span class="mobile-text">카테고리</span>
+                                        </div>
+                                    </li>
+                                    <li class="mobile-item">
+                                        <a href="" class="mobile-link">
+                                            <svg
+                                                viewBox="0 0 32 32"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="withicon-icon mobile-icon icon-feed"
+                                                aria-hidden="true"
+                                                style="width: 24px; height: 24px"
+                                            >
+                                                <path
+                                                    d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085zm-5.28 21.84l-.88.8-.88-.8h-.08C8.4 19.76 4 15.84 4 11.44l-.001-.082A5.76 5.76 0 0 1 9.928 5.6a6.542 6.542 0 0 1 4.865 2.232l.486.567h1.52l.48-.56a6.548 6.548 0 0 1 4.877-2.24l.084-.001a5.76 5.76 0 0 1 5.76 5.76l-.001.085c0 4.396-4.4 8.316-11.12 14.396z"
+                                                ></path>
+                                            </svg>
+                                            <span class="mobile-text">구독</span>
+                                        </a>
+                                    </li>
+                                    <li class="mobile-item">
+                                        <a href="" class="mobile-link">
+                                            <svg
+                                                viewBox="0 0 40 40"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="withicon-icon mobile-icon icon-feed"
+                                                aria-hidden="true"
+                                                style="width: 24px; height: 24px"
+                                            >
+                                                <path
+                                                    d="M20.27 22.3a9.43 9.43 0 1 0-9.42-9.42 9.43 9.43 0 0 0 9.42 9.42zm0-16.76a7.34 7.34 0 1 1-7.34 7.34 7.34 7.34 0 0 1 7.34-7.34zm0 20.05c-6.52 0-15.19 1.09-15.19 10.57h2.08c0-5.95 3.92-8.49 13.11-8.49s13.11 2.54 13.11 8.49h2.08c0-9.48-8.67-10.57-15.19-10.57z"
+                                                ></path>
+                                                <path fill="none" d="M0 0h40v40H0z"></path>
+                                            </svg>
+                                            <span class="mobile-text">마이원랩</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button class="header-mobile-btn header-mobile-back" aria-label="이전페이지로 가기">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        focusable="false"
+                                        role="presentation"
+                                        class="withicon-icon button-icon"
+                                        aria-hidden="true"
+                                        style="width: 24px; height: 24px"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M16.076 2.576l.848.848L8.35 12l8.575 8.576-.848.848L6.65 12l9.425-9.424z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                                <a href="" class="header-mobile-btn header-mobile-home">
+                                    <svg
+                                        viewBox="0 0 40 40"
+                                        focusable="false"
+                                        role="presentation"
+                                        class="withicon-icon button-icon"
+                                        aria-hidden="true"
+                                        style="width: 24px; height: 24px"
+                                    >
+                                        <path d="M13.38 36.13h2.4v-13.9h8.44v13.9h2.4V19.84H13.38v16.29z"></path>
+                                        <path
+                                            d="M20 3.41L3.8 14.49v21.64h2.4V15.75L20 6.32l13.8 9.43v20.38h2.4V14.49L20 3.41z"
+                                        ></path>
+                                        <path fill="none" d="M0 0h40v40H0z"></path>
+                                    </svg>
+                                </a>
+                                <button class="header-mobile-btn header-mobile-search">
+                                    <svg
+                                        viewBox="0 0 40 40"
+                                        focusable="false"
+                                        role="presentation"
+                                        class="withicon-icon button-icon"
+                                        aria-hidden="true"
+                                        style="width: 24px; height: 24px"
+                                    >
+                                        <path fill="none" d="M0 0h40v40H0z"></path>
+                                        <path
+                                            d="M29.2 27.91a14.38 14.38 0 1 0-1.42 1.4l7.16 7.15.07.08 1.41-1.41zM18.45 6a12.36 12.36 0 0 1 8.35 3.23 12.24 12.24 0 0 1 4 8.59A12.39 12.39 0 1 1 17.88 6z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                                <div class="titlefield-container">
+                                    <p class="titlefield-title">아이디 찾기</p>
+                                </div>
+                                <div class="previewoverlay-container">
+                                    <svg
+                                        viewBox="0 0 40 40"
+                                        focusable="false"
+                                        role="presentation"
+                                        class="withicon-icon"
+                                        aria-hidden="true"
+                                        style="width: 24px; height: 24px"
+                                    >
+                                        <path fill="none" d="M0 0h40v40H0z"></path>
+                                        <path
+                                            d="M29.12 2.23H10.88a1 1 0 0 0-1 1v33.88a1 1 0 0 0 1 1h18.24a1 1 0 0 0 1-1V3.28a1 1 0 0 0-1-1.05zm-7.3 30.61A1.82 1.82 0 1 1 20 31a1.83 1.83 0 0 1 1.82 1.84zm6.26 3.23H11.92V4.32h16.16z"
+                                        ></path>
+                                        <path d="M18.18 6.89h3.65v2.08h-3.65z"></path>
+                                    </svg>
+                                    <p class="previewoverlay-title">미리보기 모드</p>
+                                    <p class="previewoverlay-description">저장한 내용을 미리 볼 수 있어요.</p>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+            </div>
+            <form id="forward-form" method="get">
+                <input type="hidden" id="return-url" name="return-url" />
+            </form>
+            <input type="hidden" id="sessionlogin-check" value="false" />
+            <div class="account-find">
+                <div class="page-header">
+                    <h2 class="ol text display1">아이디∙비밀번호 찾기</h2>
+                    <div class="tab-list">
+                        <ul>
+                            <li class="active">
+                                <a href="">아이디 찾기</a>
+                            </li>
+                            <li>
+                                <a href="">비밀번호 찾기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-body">
+                    <div class="ol container id-check" style="min-height: calc(100vh - 187px)">
+                        <p class="ol text body1">
+                            원랩은 이메일을 아이디로 사용합니다.<br />소유하고 계신 계정을 입력해보세요.<br />가입여부를
+                            확인해드립니다.
+                        </p>
+                        <form class="ol form" id="form-findid" onsubmit="checkEmail(); return false;">
+                            <div class="label-hidden field">
+                                <label class="text-hidden" for="username">이메일 주소</label>
+                                <div class="ol input">
+                                    <input
+                                        type="email"
+                                        id="username"
+                                        class="input-text"
+                                        value=""
+                                        placeholder="이메일 계정"
+                                        onkeydown="hitEnterky(event)"
+                                    />
+                                </div>
+                                <em class="helper error">이메일 형식이 올바르지 않습니다.</em>
+                            </div>
+                            <button id="btn-check" class="ol primary block button" type="button" onlick="checkEmail()">
+                                확인
+                            </button>
+                        </form>
+                    </div>
+                    <div class="ol container id-result">
+                        <div class="isjoin-email wrap">
+                            <p id="inputedemail" class="ol text headline2">이메일</p>
+                            <p id="joinedemail" class="ol text body1">
+                                회원으로 등록된 이메일 아이디입니다.<br />해당 이메일로 로그인하고 원랩을 이용하세요!
+                            </p>
+                            <p id="notjoinedemail" class="ol text body1" style="display: ">
+                                는 원랩에 등록되어 있지 않은 계정입니다.
+                            </p>
+                            <div class="inner-container">
+                                <a href="" id="gotojoin" class="ol primary block button">회원가입하기</a>
+                                <a href="" id="gotologin" class="ol primary block button">로그인</a>
+                                <a href="" id="btn-recheck" class="ol block button">다시 확인</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/staticfiles/js/account-find-kiyoung/app/account-find-id-app.js"></script>
+    </body>
+</html>

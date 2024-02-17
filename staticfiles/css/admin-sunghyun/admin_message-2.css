@@ -70,28 +70,28 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 }
 
 /*----------*/
-@media (min-width: 1024px){
+
     .lg\:px-\[32px\] {
         padding-left: 32px;
         padding-right: 32px;
     }
-}
-@media (min-width: 1024px){
+
+
     .lg\:h-\[58px\] {
         height:58px;
     }
-}
+
 /*----------*/
-@media (min-width: 1024px){
+
     .lg\:block {
     display: block;
     }
-}
-@media (min-width: 1024px){
+
+
     .lg\:hidden {
         display: none;
     }
-}
+
 
 .sticky{
     justify-content: space-between;
@@ -102,9 +102,10 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
     z-index: 20;
     left: 0;
     top: 0;
+    border: solid 0.7px rgb(219, 213, 213);
     position: sticky;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: #ffffff;
     display: flex;
 }
 .flex-center{

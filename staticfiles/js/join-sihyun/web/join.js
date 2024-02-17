@@ -22,6 +22,9 @@ const retry = document.querySelector(".retry");
 // 인증하기시 모달
 const modalContainer = document.querySelector(".modal-container");
 const modalSubmitBtn = document.querySelector(".modal-submit-btn");
+// 학과명
+const departmentInput = document.querySelector(".department-input");
+const departmentValidateMsgs = document.querySelector(".department-validate");
 // 이름
 const nameInput = document.querySelector(".name-input");
 const nameValidateMsgs = document.querySelectorAll(".name-validate");
@@ -100,8 +103,16 @@ emailSubmitBtn.addEventListener("click", (e) => {
 });
 
 // 이메일 수정하기 버튼 클릭 시
-emailEditBtn.addEventListener("click", () => {
-  location.reload();
+emailEditBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  modalContainer.classList.remove("modal-open");
+  emailSubmitBtn.style.display = "block";
+  emailEditBtn.style.display = "none";
+  emailInput.disabled = false;
+  certificationNumberForm.style.display = "none";
+  retry.style.display = "none";
+  emailInput.value = "";
+  clearInterval(timerInterval);
 });
 
 // 인증번호 입력 시
@@ -145,7 +156,19 @@ modalContainer.addEventListener("click", (e) => {
     modalContainer.classList.remove("modal-open");
   }
 });
+// 학과명 입력 시
+departmentInput.addEventListener("keyup", (e) => {
+  let inputValue = e.target.value;
+  const emptyDepartmentMsg = departmentValidateMsgs.classList;
+  departmentInput.style.border = "1px solid #f66";
 
+  if (!inputValue) {
+    emptyDepartmentMsg.add("validate");
+  } else {
+    departmentInput.style.border = "";
+    emptyDepartmentMsg.remove("validate");
+  }
+});
 // 이름 입력 시
 nameInput.addEventListener("keyup", (e) => {
   let inputValue = e.target.value;
@@ -259,5 +282,155 @@ passwordVisibleBtn.forEach((btn) => {
     } else {
       btn.previousElementSibling.type = "password";
     }
+  });
+});
+// 체크박스 선택
+//전체 선택
+NodeList.prototype.filter = Array.prototype.filter;
+const checkboxCheckbox = document.querySelectorAll(".Checkbox_checkbox");
+const allCheckBox = document.querySelector(".all-check-box");
+const checkboxInputs = document.querySelectorAll(".Checkbox_input");
+const serviceCheck = document.querySelector(".service-check");
+const childrenInputs = document.querySelectorAll(".children");
+const confSubmitBtn = document.querySelector(".Button_button");
+checkboxCheckbox.forEach((label) => {
+  label.addEventListener("click", () => {
+    let count = 0;
+    const input = label.querySelector("input");
+    if (input.classList.contains("all-check-box")) {
+      if (input.checked) {
+        checkboxInputs.forEach((item) => {
+          item.checked = true;
+        });
+      } else {
+        checkboxInputs.forEach((item) => {
+          item.checked = false;
+        });
+      }
+    } else if (!input.classList.contains("all-check-box")) {
+      allCheckBox.checked = false;
+      if (input.classList.contains("service-check")) {
+        if (input.checked) {
+          childrenInputs.forEach((item) => {
+            item.checked = true;
+          });
+        } else {
+          childrenInputs.forEach((item) => {
+            item.checked = false;
+          });
+        }
+      } else if (!input.classList.contains("service-check")) {
+        serviceCheck.checked = false;
+        let miniCount = 0;
+        childrenInputs.forEach((item) => {
+          if (item.checked) {
+            miniCount += 1;
+          } else {
+            miniCount -= 1;
+          }
+        });
+        if (miniCount === 3) {
+          serviceCheck.checked = true;
+        }
+      }
+    }
+    let possibleCount = 0;
+    checkboxInputs.forEach((item) => {
+      if (item.checked) {
+        count += 1;
+        if (item.classList.contains("possible")) {
+          possibleCount += 1;
+        } else {
+          possibleCount -= 1;
+        }
+      } else {
+        count -= 1;
+      }
+    });
+    if (count >= 5) {
+      allCheckBox.checked = true;
+    }
+    if (count >= 5 || possibleCount >= 5) {
+      confSubmitBtn.classList.remove("Button_disabled");
+      confSubmitBtn.disabled = false;
+    } else {
+      confSubmitBtn.classList.add("Button_disabled");
+      confSubmitBtn.disabled = true;
+    }
+  });
+});
+
+// 회원 서비스 가입란 선택 시 나오는 상세보기
+const services = document.querySelector(".AccordionCheckbox_accordionButton");
+const detailJoin = document.querySelector(".detail-join");
+
+services.addEventListener("click", function () {
+  detailJoin.classList.toggle("active");
+});
+
+// 회원가입 약관, 서포터 이용약관, 개인정보 수집 및 이용 동의 선택시 나오는 상세보기
+const terms = document.querySelectorAll(".TermsAgreementCheckbox_children");
+const buttons = document.querySelectorAll(".AccordionCheckbox_text");
+
+buttons.forEach((button) => {
+  const parent = button.parentElement;
+  const sibling = parent.nextElementSibling;
+  button.addEventListener("click", function () {
+    sibling.classList.toggle("active");
+  });
+});
+
+// 화살표 누를시 방향 전환
+
+const arrows = document.querySelectorAll(".AccordionCheckbox_accordionButton");
+
+arrows.forEach((arrow) => {
+  arrow.addEventListener("click", function () {
+    arrow.classList.toggle("active");
+  });
+});
+
+// 약관동의 모달 띄우기
+const reactModalPortal = document.querySelector(".ReactModalPortal");
+joinSubmitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (e.target.closest(".join-submit-btn")) {
+    reactModalPortal.classList.add("terms-modal-open");
+  }
+});
+
+//약관동의 모달 업애기(밖에 클릭시)
+reactModalPortal.addEventListener("click", (e) => {
+  if (!e.target.closest(".ReactModal__Content")) {
+    reactModalPortal.classList.remove("terms-modal-open");
+  }
+  if (e.target.closest(".ConfirmModal_closeIconWrapper")) {
+    reactModalPortal.classList.remove("terms-modal-open");
+  }
+  if (e.target.closest(".Button_block")) {
+    reactModalPortal.classList.remove("terms-modal-open");
+  }
+});
+
+const radioInputs = document.querySelectorAll(".radio-label");
+
+radioInputs.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    radioInputs.forEach((radio) => {
+      radio
+        .querySelector(".outer-radio-box")
+        .classList.remove("outer-radio-choice");
+      radio
+        .querySelector(".inner-radio-box")
+        .classList.remove("inner-radio-choice");
+    });
+    e.target
+      .closest("label")
+      .querySelector(".outer-radio-box")
+      .classList.add("outer-radio-choice");
+    e.target
+      .closest("label")
+      .querySelector(".inner-radio-box")
+      .classList.add("inner-radio-choice");
   });
 });

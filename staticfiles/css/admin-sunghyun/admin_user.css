@@ -70,28 +70,28 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 }
 
 /*----------*/
-@media (min-width: 1024px){
+
     .lg\:px-\[32px\] {
         padding-left: 32px;
         padding-right: 32px;
     }
-}
-@media (min-width: 1024px){
+
+
     .lg\:h-\[58px\] {
         height:58px;
     }
-}
+
 /*----------*/
-@media (min-width: 1024px){
+
     .lg\:block {
     display: block;
     }
-}
-@media (min-width: 1024px){
+
+
     .lg\:hidden {
         display: none;
     }
-}
+
 
 .sticky{
     justify-content: space-between;
@@ -102,9 +102,10 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
     z-index: 20;
     left: 0;
     top: 0;
+    border: solid 0.7px rgb(219, 213, 213);
     position: sticky;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: #ffffff;
     display: flex;
 }
 .flex-center{
@@ -120,8 +121,8 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 .hidden-inverse{
     /* display: none; */
     width: 96px;
-    color: #fff;
-    fill: #fff;
+    color: #000000;
+    fill: #000000;
 }
 
 .mt-between{
@@ -195,11 +196,11 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 .font-center{
     align-items: center;
     display: flex;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    color: #fff;
-    fill: #fff;
+    color: #000000;
+    fill: #000000;
 }
 .flex-end{
     justify-content: flex-end;
@@ -780,19 +781,20 @@ button:hover {
     fill: #8a8a8b;
 } */
 
-table{ border-collapse : collapse; }  /*이중선 제거*/
-th,td{
-      width: 130px;
-      /* width: 200px; */
-      height: 50px;
-      text-align: center;
-      border: 1px solid #000;
-      text-align: center;
-      align-items: center;
-      vertical-align: top;	/* 위 */
-      vertical-align: bottom;   /* 아래 */
-      vertical-align: middle;   /* 가운데 */
-    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 3px;
+}
+th {
+    background-color: #f2f2f2;
+}
 input{
     width: 160px;
     text-align: center;
@@ -802,12 +804,16 @@ input{
     padding-right: 16px;
     border-radius: 20px;
     justify-content: center;
-    height: 40px;
+    height: 30px;
+    width: 100px;
     position: relative;
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
     color: #fff;
     fill: #fff;
-    background-color: #2166e6;
+    background-color: #d0320b;
+}
+.auth1:hover{
+    background-color: #892107;
 }

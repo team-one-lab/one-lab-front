@@ -1,14 +1,15 @@
 // 페이지 번호 버튼 클릭 이벤트
-// const pageNumberButtons = document.querySelectorAll('.Pagination_listItem');
-// const pageNumberList = document.querySelectorAll('.Pagination_pageList');
+const pageNumberButtons = document.querySelectorAll('.Pagination_listItem');
+const pageNumberList = document.querySelectorAll('.Pagination_pageList');
 
-// pageNumberButtons.forEach((numberButton) => {
-//     numberButton.addEventListener("click", function(e) {
-//         numberButton.classList.toggle("Pagination_active");
-//         });
-//     });
-// });
-
+pageNumberButtons.forEach((numberButton) => {
+    numberButton.addEventListener("click", function() {
+        pageNumberButtons.forEach((otherButton) => {
+            otherButton.classList.remove("Pagination_active")
+        });
+            numberButton.classList.add("Pagination_active")
+        });
+    });
 
 //이전 이후 버튼 클릭 이벤트
 // const prevButton = document.querySelector('.Pagination_prev');

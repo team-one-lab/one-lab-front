@@ -23,6 +23,14 @@ a,button{
 
 }
 
+img {
+    max-width: 50%;
+    vertical-align: top;
+    margin-left: 80px;
+    border: 0;
+    padding: 0;
+}
+
 div {
     display: block;
 }
@@ -368,9 +376,9 @@ a, button{
 }
 .Button-1G{
     margin-top: 32px;
-    border-color: #e7f9f9;
-    background-color: #e7f9f9;
-    color: #00c4c4;
+    border-color: #e8f5e9;
+    background-color: #e8f5e9;
+    color: #008243;
     padding: 9px 23px;
     font-size: 16px;
     width: 100%;
@@ -392,9 +400,9 @@ a, button{
 }
 
 .Button-1G:hover {
-    border-color: #b9eeee;
-    background-color: #b9eeee;
-    color: #00b2b2;
+    border-color: #c8e6c9;
+    background-color: #c8e6c9;
+    color: #00704A;
 }
 
 .Button-1G span{
@@ -624,5 +632,6 @@ a, button{
 .SignInApp a{
     margin-left: 6px;
     text-decoration: underline;
-    color: #00c4c4;
+    color: #008243;
+    font-weight: 700;
 }

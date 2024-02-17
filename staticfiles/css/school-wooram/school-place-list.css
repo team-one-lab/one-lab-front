@@ -199,25 +199,13 @@ var {
 .MainWrapper_content {
   transition: padding-top 0.25s;
   padding-top: 0;
-}
-
-@media screen and (min-width: 1097px) {
-  .MainWrapper_content {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+  padding-bottom: 0;
 }
 
 html.scroll-top .MainWrapper_content,
 html.wadiz-app .MainWrapper_content,
 html.wadiz-app.scroll-top .MainWrapper_content {
   padding-top: 0;
-}
-
-@media screen and (min-width: 1097px) {
-  html.scroll-top .MainWrapper_content {
-    padding-top: 0;
-  }
 }
 
 .DesktopSearchResult_container {
@@ -280,7 +268,9 @@ html.wadiz-app.scroll-top .MainWrapper_content {
   font-weight: 400;
   display: flex;
   align-items: center;
-  padding-left: 16px;
+  margin: 16px 0;
+  padding: 0;
+  width: 100%;
   height: 40px;
   white-space: nowrap;
 }
@@ -290,22 +280,9 @@ hr {
   border: 0;
   background-color: #f2f4f6;
   width: 100%;
-  height: 8px;
+  height: 1px;
 }
 
-@media screen and (min-width: 1097px) {
-  hr {
-    height: 1px;
-  }
-}
-
-@media screen and (min-width: 1097px) {
-  .RelatedKeywords_container {
-    margin: 16px 0;
-    padding: 0;
-    width: 100%;
-  }
-}
 
 .RelatedKeywords_container .RelatedKeywords_title {
   line-height: 20px;
@@ -380,16 +357,16 @@ hr {
 }
 
 /* 전체 펀딩 오픈에정 css */
-@media screen and (min-width: 1097px) {
-  .SearchResultTabs_tabContainer {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0;
-    gap: 12px;
-  }
+
+.SearchResultTabs_tabContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0;
+  gap: 12px;
 }
+
 
 .Tab_tab.tab_end span{
   color: white;
@@ -448,7 +425,7 @@ hr {
 .Tab_tab.Tab_sm span {
   height: 32px;
   line-height: 20px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
 }
 
@@ -486,12 +463,7 @@ hr {
 /* add 베너 쪽 css */
 .AdBanner_container {
   margin-bottom: 24px;
-}
-
-@media screen and (min-width: 1097px) {
-  .AdBanner_container {
-    margin: 40px 0;
-  }
+  margin: 40px 0;
 }
 
 .banner_eventBanner {
@@ -500,20 +472,8 @@ hr {
   border-radius: 8px;
   height: 74px;
   overflow: hidden;
-}
-
-@media screen and (min-width: 1097px) {
-  .banner_eventBanner {
-    display: inline-block;
-    width: calc(50% - 16px);
-  }
-}
-
-@media screen and (min-width: 1097px) {
-  .banner_eventBanner.banner_eventBanner:only-of-type {
-    display: block;
-    width: 100%;
-  }
+  display: block;
+  width: 100%;
 }
 
 .banner_adBadge {
@@ -583,19 +543,13 @@ hr {
 
 .SearchResult_cardContainer {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  gap: 40px 60px;
 }
 
 /* 목록 페이지 쪽 */
-@media screen and (min-width: 1097px) {
-  .SearchResult_cardContainer {
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    gap: 40px 60px;
-  }
-}
 
 .TableLayout_container {
   display: grid;
@@ -606,11 +560,7 @@ hr {
   width: 100%;
 }
 
-@media screen and (min-width: 1097px) {
-  .SearchResult_cardContainer > div {
-    width: calc(33.3333333333% - 40px);
-  }
-}
+
 
 .SearchResult_cardContainer .SearchResult_table {
   width: 100%;

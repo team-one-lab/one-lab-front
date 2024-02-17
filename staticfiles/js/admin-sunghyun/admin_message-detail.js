@@ -1,17 +1,18 @@
 /** 프로필 변경 js 기능 */
 
 /** 버튼태그 클릭하면 드롭다운 메뉴가 나오는 js 기능 */
-function toggleDropdown(dropdownId) {
-    var dropdownOptions = document.getElementById(dropdownId);
-    dropdownOptions.style.display =
-        dropdownOptions.style.display === "block" ? "none" : "block";
-}
+// function toggleDropdown(dropdownId) {
+//     var dropdownOptions = document.getElementById(dropdownId);
+//     dropdownOptions.style.display =
+//         dropdownOptions.style.display === "block" ? "none" : "block";
+//     console.log(dropdownId);
+// }
 
-function selectOption(option, buttonId) {
-    var selectedOption = document.querySelector(`#${buttonId} span`);
-    selectedOption.textContent = option;
-    toggleDropdown(`dropdownOptions${buttonId.charAt(buttonId.length - 1)}`);
-}
+// function selectOption(option, buttonId) {
+//     var selectedOption = document.querySelector(`#${buttonId} span`);
+//     selectedOption.textContent = option;
+//     toggleDropdown(`dropdownOptions${buttonId.charAt(buttonId.length - 1)}`);
+// }
 
 // 버튼 외의 영역을 클릭하면 드롭다운이 사라지도록 이벤트 처리
 document.addEventListener("click", function (event) {

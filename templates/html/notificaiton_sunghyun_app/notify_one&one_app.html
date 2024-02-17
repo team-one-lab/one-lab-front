@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+        <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
+        <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/footer.css">
+        <link
+            rel="stylesheet"
+            as="style"
+            crossorigin
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="/staticfiles/css/notification-sunghyun-app/notify_one&one_app.css"
+        />
+        <title>OneLab 일대일 문의</title>
+    </head>
+
+    <!------------1대1 문의사항 이쪽 부분은 진짜 헷갈리는 부분이 많을 수 있으니 주의 바랍니다.-------->
+    <!---------클래스명 같은 경우에 죄다 미디어쿼리나 챗봇 창 등등 헷갈리는 부분들이 많아서
+    -----------클래스명 전체를 쓴 부분도 있고, 줄인 부분도 있으니 양해부탁드립니다.------------->
+
+    <!------------작업 시작------------------------------------------->
+    <body class> 
+        <div></div> 
+        
+        <link 
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+        /> <!----------------얘내는 여기다가 모듈 연결을 했습니다.-------------------------->
+
+        <!------------------모바일 메뉴라길래 모바일 화면에서만 보이는건줄 알았지만
+        --------------------알고보니 전체 레이아웃 div 태그입니다.(.layout-column)----------------->
+        <div class="layout-column" x-data="Widgets.mobileMenu" >
+
+        <!------------헤더 작업 시작------------------------------------->
+            <header
+                class="header-shadow"
+                x-data="Widgets.header({ isFixed: false, isSticky: true })"
+                :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"
+            >
+
+            <!---------로고부분부터 시작 되는 헤더 부분------------->
+                <nav class="navbar-full">
+            
+                    <!--------로고 부분------------------------>
+                    <a href="#" class="navbar-auto">
+                        <img
+                            class="block-fluid"
+                            id="logo"
+                            src="/templates/html/admin_sunghyun/favicon/favicon/android-icon-192x192.png"
+                            alt="도움말 센터 헬프 센터 홈페이지"
+                        />  <span style="padding: 0 15px; font-size: 16px;">OneLab 도움말 센터</span>
+                    </a>
+			<!---------모바일 화면 헤더 부분 메뉴 버튼 2개 = x 버튼, 메뉴버튼--------->
+                    <button class="navbar-hidden">
+                        <span>
+                            <!--::before-->
+                            <!--::after-->
+                        </span>
+                        <span class="sr-only">
+                            <!-- 탐색 메뉴 토글 -->
+                        </span>
+                    </button>
+
+                    <button class="navbar-hidden1" style="display: none;">
+                        <span> 
+                            <!--::before-->
+                            <!--::after-->
+                        </span>
+                        <span class="sr-only"> 
+                            <!-- 탐색 메뉴 토글 -->
+                        </span>
+                    </button>
+                    <!--------로고 부분 작업 완료----------------->
+                </nav>
+                <!-------------로고 옆부분 레이아웃 작업 완료-------------------->
+            </header>
+            <!------------헤더 작업 완료--------------------------------------->
+
+            <!-----------바디 작업 시작----------------------------------->
+            <main role="main">
+            <!------------첫번째 바디 부분 백그라운드 이미지 있는 바디 작업 시작-------------------->
+                <div class="hero-hidden">
+            <!-------------첫번째 바디 부분 백그라운드 이미지 내 문구, 검색창, 버튼 작업 시작---------------------------->
+                    <div class="relative-8">
+            <!--------------문구 작업 시작-------------------------------------------------->
+                        <div class="my-left">
+                            <!-- <img src="/staticfiles/css/admin-sunghyun/images/background-img.svg" /> -->
+                            <img src="//theme.zdassets.com/theme_assets/13612819/2109b7ffe656efeaf18cdbcf780a47c28a49fe01.svg">
+                        </div>
+            <!--------------문구 작업 완료---------------------------------------------------->
+
+            <!-----------------검색창 작업 시작----------------------------------------------->
+                        <div
+                            class="search search-lg my-4 text-base font-size-lg shadow-lg max-w-sm md:my-5 md:font-size-xl"
+                        >
+                            <h2 class="sr-only">검색</h2>
+                            <form
+                                role="search"
+                                class="form-0"
+                                data-search
+                                data-instant="true"
+                                autocomplete="off"
+                                action="/hc/ko/search"
+                                acceot-charset="UTF-8"
+                                method="get"
+                            >
+                                <input
+                                    name="utf8"
+                                    type="hidden"
+                                    value="✓"
+                                    autocomplete="off"
+                                />
+                                <zd-autocomplete-announcement
+                                    id="b8438bab-f64f-4ae8-80da-b65614319a10"
+                                    aria-live="polite"
+                                    role="listbox"
+                                >
+                                </zd-autocomplete-announcement>
+                                <input
+                                    type="search"
+                                    name="query"
+                                    id="query1"
+                                    placeholder="검색어를 입력해주세요."
+                                    autocomplete="off"
+                                    aria-autocomplete="both"
+                                    aria-expanded="false"
+                                    role="combobox"
+                                    aria-owns="b8438bab-f64f-4ae8-80da-b65614319a10"
+                                    data-gtm-form-interact-field-id="0"
+                                    aria-label="검색어를 입력해주세요"
+                                />
+                            </form>
+                            <svg
+                                class="search-icon fill-current transition"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 12 12"
+                                aria-hidden="true"
+                            >
+                                <use xlink:href="#icon-search"></use>
+                            </svg>
+                        </div>
+
+            <!----------------------검색창 작업 완료------------------------------------>
+
+            <!----------------검색창 밑에 조그만 버튼 4개 작업 시작------------------------->
+                        <div id="popular-keywords">
+                            <div
+                                class="flex flex-first flex-wrap mt-5 mb-4"
+                                x-data="Widgets.popularKeywords"
+                                x-init="parseKeywords('펀딩, 프리오더, 스토어, 서포터클럽')"
+                            >
+                            <div class="flex-center">
+                                <template
+                                    x-for="(keyword,index) in keywords"
+                                    :key="index"
+                                >
+                                    #document-fragment
+                                </template>
+                                <div class="flex align-items-center m-1">
+                                    <a
+                                        class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
+                                        :href="keyword.html_url"
+                                        :title="keyword.title"
+                                        id="b1"
+                                        x-text="keyword.title"
+                                        href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
+                                        title="펀딩"
+                                        >펀딩
+                                    </a>
+                                </div>
+                                <div class="flex align-items-center m-1">
+                                    <a
+                                        class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
+                                        :href="keyword.html_url"
+                                        :title="keyword.title"
+                                        id="b2"
+                                        x-text="keyword.title"
+                                        href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
+                                        title="프리오더"
+                                        >프리오더
+                                    </a>
+                                </div>
+                                <div class="flex align-items-center m-1">
+                                    <a
+                                        class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
+                                        :href="keyword.html_url"
+                                        :title="keyword.title"
+                                        id="b3"
+                                        x-text="keyword.title"
+                                        href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
+                                        title="스토어"
+                                        >스토어
+                                    </a>
+                                </div>
+                                <div class="flex align-items-center m-1">
+                                    <a
+                                        class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
+                                        :href="keyword.html_url"
+                                        :title="keyword.title"
+                                        id="b4"
+                                        x-text="keyword.title"
+                                        href=""
+                                        title="서포터클럽"
+                                        >서포터클럽
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                <!--------------버튼 4개 작업 완료---------------------------------------->
+                    </div>
+                <!----------------첫번째 바디부분  백그라운드 내 문구,검색창,버튼 작업 완료-------------------------->
+                
+                
+                <!----------------첫번째 바디부분 백그라운드 배경 이미지 해상도 설정-------------------------------->
+                    <div
+                        class="absolute z-10 top-0 left-0 h-full w-full bg-hero-divider"
+                    ></div>
+                    <div class="absolute z-0 top-0 left-0 w-full h-full">
+                        <div class="relative w-full h-full overflow-hidden">
+                            <div
+                                class="absolute top-0 left-0 w-full bg-home bg-cover bg-center"
+                                x-data="Widgets.parallaxImage"
+                                style="
+                                    height: 200%;
+                                    transform: translate3d(0px, 0px, 0px);
+                                "
+                            >
+                        
+                    </div>
+                        
+                    </div>
+                    </div>
+                    </div>
+                <!-------------------첫번째 바디부분 백그라운드 배경 이미지 해상도 설정 완료------------------------>
+
+                <!-------------------두번째 바디 작업 시작------------------------------------------ -->
+                    <div class="relative-40" id="page-container">
+                        <div class="content-blocks" id="content-blocks">
+                            <div class="container-center">
+                                
+                                <div class="row">
+
+                                    <!------------챗봇 버튼(클릭시 myModal이라는 id명을 지닌 div 태그 생성(챗봇 채팅 부분 이미지구현)---------------------------------------------->
+                                    <div id="buttonContainer">
+                                    <button class="floating-button" onclick="openModal()"></button> <!---openModal 함수와 연동-->
+                                  </div>
+
+                                    <!------- 숨겨진 모달 : 챗봇 메세지가 나오는 부분 시작------>
+                                    <div id="myModal" class="modal">
+                                      <div class="modal-content">
+                                        <button class="close">&times;</button>
+
+                    <!---------------------------- 챗봇 메세지 html 내용이 여기에 들어갑니다 (꽤 긴 코드이니 유의바람) ---------->
+                                        <link rel="stylesheet" href="/staticfiles/css/notification-sunghyun/notify_one&&one-chat.css">
+                                        <div style="background-color: rgb(255, 255, 255)">
+                                          <div>
+                                              <div role="presentation">
+                                                  <div role="presentation" class="sc-zorsnq-0 eUGVYL">
+                                                      <section class="sc-vrqbdz-0 gSikFX sc-vrqbdz-0 gSikFX">
+                                                          <div class="sc-vrqbdz-2 kTapgX">
+                                                              <figure
+                                                                 
+                                                                  aria-atomic="true"
+                                                                  aria-live="polite"
+                                                                  class="sc-vrqbdz-4 iZrkML sc-gzVnrw bNWAfz"
+                                                              >
+                                                                  <img
+                                                                      src="https://wadiz6256.zendesk.com/embeddable/avatars/1900001007468"
+                                                                      alt="회사 로고"
+                                                                  />
+                                                              </figure>
+                                                              <div class="sc-vrqbdz-3 byEuur">
+                                                                  <h2 class="sc-vrqbdz-5 hQhTcL">
+                                                                      와디즈 고객센터
+                                                                  </h2>
+                                                                  <p class="sc-vrqbdz-6 hXcozW">
+                                                                      궁금하신 사항을 검색해보세요!
+                                                                  </p>
+                                                              </div>
+                                                          </div>
+                                                          <div class="sc-vrqbdz-8 kmeNDk">
+                                                              <div class="sc-2nitf7-10 cDiLKi" onclick="closeModal()">
+                                                                  <button
+                                                                    
+                                                                      type="button"
+                                                                      aria-label="채널 연결 메뉴 옵션"
+                                                                      aria-haspopup="true"
+                                                                      data-toggle="true"
+                                                                      
+                                                                      aria-expanded="false"
+                                                                      id="close-btn"
+                                                                      class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
+                                                                  >
+                                                                      <svg
+                                                                          
+                                                                          theme="[object Object]"
+                                                                          class="sc-bwzfXH hDrfMZ sc-2nitf7-9 iRaNEz"
+                                                                          xmlns="http://www.w3.org/2000/svg"
+                                                                          width="16"
+                                                                          height="16"
+                                                                          focusable="false"
+                                                                          viewBox="0 0 16 16"
+                                                                      >
+                                                                          <g fill="currentColor">
+                                                                              <circle
+                                                                                  cx="2.5"
+                                                                                  cy="8"
+                                                                                  r="1.5"
+                                                                              ></circle>
+                                                                              <circle
+                                                                                  cx="8"
+                                                                                  cy="8"
+                                                                                  r="1.5"
+                                                                              ></circle>
+                                                                              <circle
+                                                                                  cx="13.5"
+                                                                                  cy="8"
+                                                                                  r="1.5"
+                                                                              ></circle>
+                                                                          </g>
+                                                                      </svg></button
+                                                                  ><input
+                                                                     
+                                                                      aria-invalid="false"
+                                                                      aria-autocomplete="list"
+                                                                      aria-labelledby="downshift-0-label"
+                                                                      autocomplete="off"
+                                                                      id="downshift-0-input"
+                                                                      readonly=""
+                                                                      tabindex="-1"
+                                                                      class="StyledInput-sc-hzhvmp-0 etSNgg StyledTextInput-sc-k12n8x-0 dpIHJq"
+                                                                      value=""
+                                                                  />
+                                                              </div>
+                                                              <div
+                                                                 
+                                                                  class="StyledMenuWrapper-sc-tiwdxz-0 hPndRc"
+                                                                  style="
+                                                                      position: absolute;
+                                                                      top: 0px;
+                                                                      left: 0px;
+                                                                      opacity: 0;
+                                                                      pointer-events: none;
+                                                                  "
+                                                              >
+                                                                  <ul
+                                                                      data-garden-id="dropdowns.menu"
+                                                                      data-garden-version="8.49.4"
+                                                                      class="sc-xr7o5-4 sc-2nitf7-0 bWoiQd StyledMenu-sc-1vpttfd-0 dfwXOG"
+                                                                      role="menu"
+                                                                      aria-labelledby="downshift-0-label"
+                                                                      id="downshift-0-menu"
+                                                                  ></ul>
+                                                              </div>
+                                                          </div>
+                                                          <div class="sc-vrqbdz-8 kmeNDk">
+                                                            <button
+                                                                data-garden-id="buttons.icon_button"
+                                                                data-garden-version="8.13.0"
+                                                                type="button"
+                                                                aria-label="닫기"
+                                                                id="close-btn1"
+                                                                onclick="closeModal()"
+                                                                class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
+                                                                
+                                                            >
+                                                                <svg
+                                                                    data-garden-id="buttons.icon"
+                                                                    data-garden-version="8.13.0"
+                                                                    theme="[object Object]"
+                                                                    class="sc-bwzfXH hDrfMZ sc-vrqbdz-7 fbohUV"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="21"
+                                                                    height="13"
+                                                                    viewBox="0 0 21 13"
+                                                                    focusable="false"
+                                                                    role="presentation"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        fill="currentColor"
+                                                                        d="M20.1005 2.7169L10.9931 11.8244C10.4724 12.3451 9.62815 12.3451 9.10745 11.8244L-8.00829e-06 2.7169L1.88561 0.831278L10.0503 8.99593L18.2149 0.831278L20.1005 2.7169Z"
+                                                                    ></path>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                          <div class="sc-vrqbdz-8 kmeNDk">
+                                                              
+                                                          </div>
+                                                      </section>
+                                                      <div
+                                                          role="alert"
+                                                          aria-live="assertive"
+                                                          class="sc-16spsp-0 jGrxQN"
+                                                      ></div>
+                                                      <div class="sc-pd54d8-0 gDmSQI">
+                                                          <div class="sc-vsbu1b-0 elDGjL">
+                                                              <div
+                                                                  role="log"
+                                                                  aria-live="polite"
+                                                                  class="sc-vsbu1b-1 kmIcd"
+                                                              >
+                                                                  <div class="sc-s12goo-0 dqeAJH">
+                                                                      <p class="sc-s12goo-1 gVDlUa">
+                                                                          오후 5:21
+                                                                      </p>
+                                                                  </div>
+                                                                  <div class="sc-19o5u7w-1 bXNGeC">
+                                                                      <p class="sc-gn17d5-0 ddVeKf">
+                                                                          와디즈 고객센터 봇
+                                                                      </p>
+                                                                      <div class="sc-19o5u7w-0 eFkXQN">
+                                                                          <figure
+                                                                              data-garden-id="avatars.avatar"
+                                                                              data-garden-version="8.18.0"
+                                                                              aria-atomic="false"
+                                                                              aria-live="off"
+                                                                              aria-hidden="true"
+                                                                              class="sc-184kaec-0 cOEDyw sc-gzVnrw bNWAfz"
+                                                                          >
+                                                                              <img
+                                                                                  src="https://static.zdassets.com/web_widget/latest/default_avatar.png"
+                                                                                  alt=""
+                                                                                  class="sc-184kaec-1 gepXPG"
+                                                                              />
+                                                                          </figure>
+                                                                          <div
+                                                                              shape="standalone"
+                                                                              class="sc-dnrc9s-0 sc-dnrc9s-2 iZPSvc"
+                                                                              aria-live="polite"
+                                                                          >
+                                                                              <div
+                                                                                  class="sc-1t4lziz-1 jMwAnd"
+                                                                              >
+                                                                                  <span class="Linkify"
+                                                                                      ><span
+                                                                                          class="sc-1t4lziz-3 iKrfcR"
+                                                                                          >와디즈 고객센터
+                                                                                          봇님의 말: </span
+                                                                                      ><span
+                                                                                          class="sc-1t4lziz-0 cWdXBY"
+                                                                                          >안녕하세요. 😊 우리
+                                                                                          일상의 새로운
+                                                                                          가능성을 그려가는
+                                                                                          곳, 라이프디자인
+                                                                                          펀딩플랫폼
+                                                                                          와디즈입니다.
+                                                                                          궁금하신 내용을
+                                                                                          메시지 입력란에 직접
+                                                                                          입력해 주시거나
+                                                                                          문의자 유형을 선택해
+                                                                                          주세요. 👏️
+                                                                                          펀딩/프리오더에
+                                                                                          참여하셨거나 스토어
+                                                                                          상품을 구매하셨다면
+                                                                                          [서포터]를 선택해
+                                                                                          주시고, ✍️
+                                                                                          프로젝트를 오픈하실
+                                                                                          예정이거나, 이미
+                                                                                          진행하고 계신다면
+                                                                                          [메이커]를 선택해
+                                                                                          주세요.</span
+                                                                                      ></span
+                                                                                  >
+                                                                                  <div
+                                                                                      class="sc-1t4lziz-2 ySToq"
+                                                                                  >
+                                                                                      <div
+                                                                                          class="sc-1y64x11-0 hxbZy"
+                                                                                      ></div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div
+                                                                          class="receipt-appear-done receipt-enter-done"
+                                                                      >
+                                                                          <div class="sc-185i3zb-0 cVcuIa">
+                                                                              <div class="sc-p7l048-0 cPlSDe">
+                                                                                  <div
+                                                                                      class="sc-p7l048-2 jduwmO"
+                                                                                  ></div>
+                                                                                  <p
+                                                                                      class="sc-p7l048-1 hTkgti"
+                                                                                  >
+                                                                                      오후 5:21
+                                                                                  </p>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div>
+                                                                      <div class="sc-2ravpp-0 cauRJz">
+                                                                          <div class="sc-as5ded-0 distqQ">
+                                                                              <button
+                                                                                  data-garden-id="buttons.button"
+                                                                                  data-garden-version="8.13.0"
+                                                                                  type="button"
+                                                                                  class="sc-as5ded-1 hoMxzy sc-htpNat kbREso"
+                                                                              >
+                                                                                  🥰 서포터</button
+                                                                              ><button
+                                                                                  data-garden-id="buttons.button"
+                                                                                  data-garden-version="8.13.0"
+                                                                                  type="button"
+                                                                                  class="sc-as5ded-1 hoMxzy sc-htpNat kbREso"
+                                                                              >
+                                                                                  🧐 메이커
+                                                                              </button>
+                                                                              <!-- <button
+                                                                  data-garden-id="buttons.icon_button"
+                                                                  data-garden-version="8.13.0"
+                                                                  type="button"
+                                                                  aria-label="닫기"
+                                                                  class="sc-htpNat sc-k22q4b-0 dHXfJR sc-EHOje jJOPWF"
+                                                                  onclick="closeModal()"
+                                                              > -->
+                                                                  <!-- <svg
+                                                                      data-garden-id="buttons.icon"
+                                                                      data-garden-version="8.13.0"
+                                                                      theme="[object Object]"
+                                                                      class="sc-bwzfXH hDrfMZ sc-vrqbdz-7 fbohUV"
+                                                                      xmlns="http://www.w3.org/2000/svg"
+                                                                      width="21"
+                                                                      height="13"
+                                                                      viewBox="0 0 21 13"
+                                                                      focusable="false"
+                                                                      role="presentation"
+                                                                  >
+                                                                      <path
+                                                                          fill-rule="evenodd"
+                                                                          clip-rule="evenodd"
+                                                                          fill="currentColor"
+                                                                          d="M20.1005 2.7169L10.9931 11.8244C10.4724 12.3451 9.62815 12.3451 9.10745 11.8244L-8.00829e-06 2.7169L1.88561 0.831278L10.0503 8.99593L18.2149 0.831278L20.1005 2.7169Z"
+                                                                      ></path>
+                                                                  </svg>
+                                                              </button> -->
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div style="height: 1px"></div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="sc-6fatmo-0 gXymJE">
+                                                              <button
+                                                                  data-garden-id="buttons.icon_button"
+                                                                  data-garden-version="8.13.0"
+                                                                  type="button"
+                                                                  aria-label="파일 업로드"
+                                                                  class="sc-htpNat sc-k22q4b-0 sc-fcxw62-1 hrKGAE sc-EHOje jJOPWF"
+                                                              >
+                                                                  <svg
+                                                                      xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16"
+                                                                      height="16"
+                                                                      focusable="false"
+                                                                      viewBox="0 0 16 16"
+                                                                      data-garden-id="buttons.icon"
+                                                                      data-garden-version="8.13.0"
+                                                                      theme="[object Object]"
+                                                                      class="sc-bwzfXH hDrfMZ"
+                                                                  >
+                                                                      <path
+                                                                          fill="none"
+                                                                          stroke="currentColor"
+                                                                          stroke-linecap="round"
+                                                                          d="M9.5 4v7.7c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5V3C6.5 1.6 7.6.5 9 .5s2.5 1.1 2.5 2.5v9c0 1.9-1.6 3.5-3.5 3.5S4.5 13.9 4.5 12V4"
+                                                                      ></path>
+                                                                  </svg></button
+                                                              ><input
+                                                                  type="file"
+                                                                  accept=".3g2, .3gp, .7z, .aac, .amr, .avi, .bmp, .csv, .doc, .docx, .eml, .gif, .heic, .heif, .ics, .jfif, .jpeg, .jpg, .key, .log, .m4a, .m4v, .mov, .mp3, .mp4, .mp4a, .mpeg, .mpg, .mpga, .neon, .numbers, .odt, .oga, .ogg, .ogv, .opus, .pages, .pdf, .png, .pps, .ppsx, .ppt, .pptx, .qt, .svg, .tif, .tiff, .txt, .vcf, .wav, .webm, .webp, .wmv, .xls, .xlsx, .xml, .yaml, .yml, .zip"
+                                                                  multiple=""
+                                                                  class="sc-fcxw62-0 kGDiPU"
+                                                              />
+                                                              <div class="sc-1vpqusk-3 jIIPJQ">
+                                                                  <div
+                                                                      data-garden-id="forms.field"
+                                                                      data-garden-version="8.49.4"
+                                                                      class="sc-1vpqusk-4 dCVhlJ StyledField-sc-12gzfsu-0 bJlzcx"
+                                                                  >
+                                                                      <label
+                                                                          data-garden-id="forms.input_label"
+                                                                          data-garden-version="8.49.4"
+                                                                          id="2val-field_1.3.10--label"
+                                                                          for="2val-field_1.3.10--input"
+                                                                          data-garden-container-id="containers.field"
+                                                                          data-garden-container-version="1.3.10"
+                                                                          hidden=""
+                                                                          class="StyledLabel-sc-2utmsz-0 bYrRLL"
+                                                                          >메시지 입력</label
+                                                                      ><textarea
+                                                                          data-garden-id="forms.textarea"
+                                                                          data-garden-version="8.49.4"
+                                                                          aria-invalid="false"
+                                                                          id="2val-field_1.3.10--input"
+                                                                          aria-labelledby="2val-field_1.3.10--label"
+                                                                          aria-describedby=""
+                                                                          rows="1"
+                                                                          placeholder="메시지 입력"
+                                                                          class="StyledTextInput-sc-k12n8x-0 sc-1vpqusk-2 kDwPNr StyledTextarea-sc-wxschl-0 zLLnd"
+                                                                          style="
+                                                                              height: 40px;
+                                                                              overflow: hidden;
+                                                                          "
+                                                                      ></textarea
+                                                                      ><textarea
+                                                                          data-garden-id="forms.textarea"
+                                                                          data-garden-version="8.49.4"
+                                                                          aria-invalid="false"
+                                                                          aria-hidden="true"
+                                                                          readonly=""
+                                                                          class="StyledTextInput-sc-k12n8x-0 sc-1vpqusk-2 kDwPNr StyledTextarea-sc-wxschl-0 ktPxGI"
+                                                                          tabindex="-1"
+                                                                          style="width: 308px"
+                                                                      ></textarea>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div
+                                          id="a11y-status-message"
+                                          role="status"
+                                          aria-live="polite"
+                                          aria-relevant="additions text"
+                                          style="
+                                              border: 0px;
+                                              clip: rect(0px, 0px, 0px, 0px);
+                                              height: 1px;
+                                              margin: -1px;
+                                              overflow: hidden;
+                                              padding: 0px;
+                                              position: absolute;
+                                              width: 1px;
+                                          "
+                                      ></div>
+                                        
+                                        <div id="notifyContent"></div>
+                                      </div>
+                                    </div>
+
+                    <!-----------------------챗봇 메시지 작업 완료------------------------------------------------>
+                                    <!----------------------------챗봇 메세지 부분 끝---------------->
+
+                    
+                            <!---------------두번째 바디 부분 div 태그 큰거 두개 작업 시작----------->
+
+
+                            <!-------------첫번째 div 태그------------------------------------------>
+                                    <div class="mb-4 ydsbackground-1 md:col-6 lg:col-4 xl:col-3" >
+                                        <img class="hidden mt-4 sm:inline-block" id="img2" alt="서포터"
+                                        data-asset="image" data-asset-id="category-25448157450521"
+                                        src="	https://theme.zdassets.com/theme_assets/13612819/fd1d804abe5082c865396600c2bcf98244b275b5.svg"
+                                        style="height: 40px; width: 40px; margin-top: 3rem;
+                                        font-weight: bold;
+                                        font-family: 'Pretendard'">
+                                        <h4 class="my-4 text-right">
+                                            <a class="link-stretched hover:no-underline" id="sup-id" href="#">
+                                                서포터
+                                            </a>
+                                        </h4>
+                                    </div>
+                            <!------------첫번째 div 태그 작업 완료--------------------------------->       
+                            <!-------------두번째 div 태그---------------------------------->        
+                                    <div class="mb-4 ydsbackground-1 md:col-6 lg:col-4 xl:col-3" >
+                                        <img class="hidden mt-4 sm:inline-block" id=img1 alt="메이커"
+                                        data-asset="image" data-asset-id="category-25448157450521"
+                                        src="	https://theme.zdassets.com/theme_assets/13612819/496e0fa045ae026332d2ff661ab89df0ca541a6d.svg
+                                        "
+                                        style="height: 40px; width: 40px; margin-top: 3rem;
+                                        font-weight: bold;
+                                        font-family: 'Pretendard'">
+                                        <h4 class="my-4 text-right">
+                                            <a class="link-stretched hover:no-underline" id="sup-id" href="#">
+                                                메이커
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            <!--------두번째 div 태그 완료------------------------------------------------------->    
+                            </div>
+                        </div>
+
+                        <!---------세번째 바디 작업 시작 (자주묻는질문, 드롭다운 메뉴들 나오는 작업 구현)-->
+                        <div class="promoted-articles ydsgraybackground" id="promoted-articles">
+                            <div class="container py-4">
+                                <h2 class="flex align-items-baseline ydsh2"
+                                x-data="{ src: Theme.assets['promoted-articles-heading'] }">
+                                <template x-if="src">
+                                    #document-fragment
+                                </template>
+                                자주 묻는 질문
+                                </h2>
+
+                                
+                                <div class="list-bordered border border-radius overflow-hidden">
+                                    <!-------------첫번째 드롭다운 메뉴 시작-------------------->
+                                    <div class="bg-white" x-data="{ open: false }">
+                                        <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn1" >
+                                          알림 신청한 프로젝트는 어디서 확인하나요?
+                                          <svg class="fill-current pointer-events-none ml-3" :class="open &amp;&amp; 'rotate-180'" width="14px" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg" >
+                                            <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
+                                          </svg>
+                                        </a>
+                                        <!------- a 태그 클릭시 나오는 드롭다운------------------------->
+                                        <div class="content px-6 py-2 ydscontent collapse" id="article-6" style="font-size: 14px;" >
+                                          마이와디즈의 [찜·알림신청]에서 확인하실 수 있어요.
+                                            찜. 알림 신청 목록 뿐만 아니라 최근에 본 프로젝트 목록까지 확인할 수 있어요.&nbsp;프로젝트 이미지 우측 상단의 하트를 클릭해서 구독 ...
+                                            <p class="my-4 text-right btnpadding-right">
+                                              <a class="button button-outline button-sm" href="/hc/ko/articles/17845227566745-%EC%95%8C%EB%A6%BC-%EC%8B%A0%EC%B2%AD%ED%95%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%8A%94-%EC%96%B4%EB%94%94%EC%84%9C-%ED%99%95%EC%9D%B8%ED%95%98%EB%82%98%EC%9A%94">
+                                                  자세히보기
+                                                </a>
+                                            </p>
+                                          </div>
+                                      </div>
+                                      <!------------------------------------------------------------------>
+
+                                      <!-------------두번째 드롭다운 메뉴 시작-------------------->
+                                      <div class="bg-white" x-data="{ open: false }">
+                                        <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn2" >
+                                          회원 정보 변경은 어떻게 하나요?
+                                          <svg class="fill-current pointer-events-none ml-3" :class="open &amp;&amp; 'rotate-180'" width="14px" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
+                                          </svg>
+                                        </a>
+                                        <!------- a 태그 클릭시 나오는 드롭다운------------------------->
+                                        <div class="content px-6 py-2 ydscontent collapse" id="article-7" style="font-size: 14px;" >
+                                          
+                                            기본 정보 설정에서 닉네임, 이메일, 연락처 등을 언제든 변경할 수 있어요.
+                                            
+                                            마이와디즈의 설정에서 닉네임, 이메일, 휴대폰번호 등 기본 정보를 변경하실 수 있으며, 알림 설정도 변경할...
+                                            <p class="my-4 text-right btnpadding-right">
+                                              <a class="button button-outline button-sm" href="/hc/ko/articles/7052709194265-%ED%9A%8C%EC%9B%90-%EC%A0%95%EB%B3%B4-%EB%B3%80%EA%B2%BD%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%98%EB%82%98%EC%9A%94">
+                                                  자세히보기
+                                                </a>
+                                            </p>
+                                          </div>
+                                      </div>
+                                      <!-------------세번째 드롭다운 메뉴 시작-------------------->
+                                      <div class="bg-white" x-data="{ open: false }">
+                                        <a class="h3 flex align-items-center justify-content-between px-6 py-4 my-0 transition hover:text-primary hover:no-underline is-hidden"  id="cbtn3" data-active-class="text-primary">
+                                          펀딩 참여 내역은 어떻게 확인하나요?
+                                          <svg class="fill-current pointer-events-none ml-3" :class="open &amp;&amp; 'rotate-180'" width="14px" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path d="M20,19.5 C19.4,19.5 18.9,19.3 18.4,18.9 L1.4,4.9 C0.3,4 0.2,2.4 1.1,1.4 C2,0.3 3.6,0.2 4.6,1.1 L20,13.8 L35.5,1.1 C36.6,0.2 38.1,0.4 39,1.4 C39.9,2.5 39.7,4 38.7,4.9 L21.7,18.9 C21.1,19.3 20.5,19.5 20,19.5 Z" fill-rule="nonzero"></path>
+                                          </svg>
+                                        </a>
+                                         <!------- a 태그 클릭시 나오는 드롭다운------------------------->
+                                        <div class="content px-6 py-2 ydscontent collapse" id="article-8" style="font-size: 14px;">
+                                          서포터님이 참여한 프로젝트는 [참여 내역]에서 확인할 수 있어요.
+                                            참여한 펀딩·프리오더의 예약 취소를 원하시는 경우, 참여 내역에서 결제상태를 확인 후 직접 취소할 수 있어요.
+                                            
+                                            👉 참...
+                                            <p class="my-4 text-right btnpadding-right">
+                                              <a class="button button-outline button-sm" href="/hc/ko/articles/7054803825817-%ED%8E%80%EB%94%A9-%EC%B0%B8%EC%97%AC-%EB%82%B4%EC%97%AD%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%99%95%EC%9D%B8%ED%95%98%EB%82%98%EC%9A%94">
+                                                  자세히보기
+                                                </a>
+                                            </p>
+                                          </div>
+                                        </div>                              
+                                    </div>
+                                </div>
+
+                            <!-------------유튜브 동영상 목록 바디 작업 시작----------------------------------------->
+                            <div class="video-library">
+
+                                <div class="container py-4">
+                                    <h2 class="inline-flex align-items-baseline mt-6" x-data="{ src: Theme.assets['promoted-videos-heading'] }">
+                                        <template x-if="src">
+                                            #document-fragment
+                                        </template>
+                                        원랩 TV
+                                    </h2>
+                                    <div class="relative overflow-hidden" data-element="video-library" data-layout="grid"
+                                    data-columns="3" data-template="video-library" data-play-inline="false" data-ids="
+                                    z4V6RoIxytc, uR7NzL_86Gs, S2caXNaKpDg,tlhEgarJRQk, Xix85yjSLr0, plIJCkiw-Ls
+                                  ">
+                                    <ul class="list-unstyled row">
+                                        <li class="mb-6 md:col-4">
+                                            <div class="relative w-full ratio ratio-16-9">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" data-url="z4V6RoIxytc" 
+                                                data-fancybox="" id="video" href="#" style="background-image: url(https://img.youtube.com/vi/z4V6RoIxytc/0.jpg);">
+                                                    <iframe class="relative z-20 invisible" id="z4V6RoIxytc" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 편한 신발 브랜드 제누이오 성공 비결, 명품급 신발을 싸게 팔 수 있는 이유 | 게임체인저 제누이오" width="640" height="360" src="https://www.youtube.com/embed/z4V6RoIxytc?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=1">
+
+                                                    </iframe>
+                                                    <div class="absolute-center z-10 flex p-4 circle button button-primary">
+                                                        <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                                                            <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
+
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="z4V6RoIxytc">
+                                                    04:56
+                                                </span>
+                                            </div>
+                                            <h3 class="h4 my-4" data-title="z4V6RoIxytc">(ENG) 편한 신발 브랜드 제누이오 성공 비결, 명품급 신발을 싸게 팔 수 있는 이유 | 게임체인저 제누이오
+
+                                            </h3>
+                                        </li>
+                                        <li class="mb-6 md:col-4">
+                                            <div class="relative w-full ratio ratio-16-9">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="uR7NzL_86Gs" data-fancybox="" href="https://www.youtube.com/watch?v=uR7NzL_86Gs" style="background-image: url(https://img.youtube.com/vi/uR7NzL_86Gs/0.jpg);">
+                                                    <iframe class="relative z-20 invisible" id="uR7NzL_86Gs" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="상세페이지 기획만 잘해도 펀딩 성공할 수 있다?ㅣGame Changer - 제누이오ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/uR7NzL_86Gs?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=2">
+
+                                                    </iframe>
+                                                    <div class="absolute-center z-10 flex p-4 circle button button-primary">
+                                                        <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                                                            <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
+
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="uR7NzL_86Gs">
+                                                    05:45
+                                                </span>
+                                            </div>
+                                            <h3 class="h4 my-4" data-title="uR7NzL_86Gs">상세페이지 기획만 잘해도 펀딩 성공할 수 있다?ㅣGame Changer - 제누이오ㅣ 와디즈 아카데미
+
+                                            </h3>
+                                        </li>
+                                        <li class="mb-6 md:col-4">
+                                            <div class="relative w-full ratio ratio-16-9">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="S2caXNaKpDg" data-fancybox="" href="https://www.youtube.com/watch?v=S2caXNaKpDg" style="background-image: url(https://img.youtube.com/vi/S2caXNaKpDg/0.jpg);">
+                                                    <iframe class="relative z-20 invisible" id="S2caXNaKpDg" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="전자책 쓰는법 어렵지 않아요. 퇴사후 전자책 부업으로 6억 매출 달성한 방법 공개 ㅣGame Changer - 유성우ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/S2caXNaKpDg?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=3">
+
+                                                    </iframe>
+                                                    <div class="absolute-center z-10 flex p-4 circle button button-primary">
+                                                        <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                                                            <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
+
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="S2caXNaKpDg">
+                                                    05:23
+                                                </span>
+                                            </div>
+                                            <h3 class="h4 my-4" data-title="S2caXNaKpDg">전자책 쓰는법 어렵지 않아요. 퇴사후 전자책 부업으로 6억 매출 달성한 방법 공개 ㅣGame Changer - 유성우ㅣ 와디즈 아카데미
+
+                                            </h3>
+                                        </li>
+                                        <li class="mb-6 md:col-4">
+                                            <div class="relative w-full ratio ratio-16-9">
+                                                <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="tlhEgarJRQk" data-fancybox="" href="https://www.youtube.com/watch?v=tlhEgarJRQk" style="background-image: url(https://img.youtube.com/vi/tlhEgarJRQk/0.jpg);">
+                                                    <iframe class="relative z-20 invisible" id="tlhEgarJRQk" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="온라인 부업 아이템, 돈 버는 전자책 펀딩 방법 알려드립니다 | Game Changer 유성우 작가" width="640" height="360" src="https://www.youtube.com/embed/tlhEgarJRQk?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=4">
+
+                                                    </iframe>
+                                                    <div class="absolute-center z-10 flex p-4 circle button button-primary">
+                                                        <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                                                            <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
+
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="tlhEgarJRQk">05:14
+
+                                                </span>
+                                            </div>
+                                            <h3 class="h4 my-4" data-title="tlhEgarJRQk">온라인 부업 아이템, 돈 버는 전자책 펀딩 방법 알려드립니다 | Game Changer 유성우 작가</h3></li><li class="mb-6 md:col-4">
+                                                <div class="relative w-full ratio ratio-16-9">
+                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="Xix85yjSLr0" data-fancybox="" href="https://www.youtube.com/watch?v=Xix85yjSLr0" style="background-image: url(https://img.youtube.com/vi/Xix85yjSLr0/0.jpg);">
+                                                        <iframe class="relative z-20 invisible" id="Xix85yjSLr0" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="(ENG) 와디즈 펀딩 성공한 스텐팬 사용법 1인자 쿠자의 주방! 노하우 털이 ㅣGame Changer - 쿠자의주방ㅣ 와디즈 아카데미" width="640" height="360" src="https://www.youtube.com/embed/Xix85yjSLr0?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=5">
+
+                                                        </iframe>
+                                                        <div class="absolute-center z-10 flex p-4 circle button button-primary">
+                                                            <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                                                                <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
+
+                                                                </path>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                    <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="Xix85yjSLr0">
+                                                        05:16
+                                                    </span>
+                                                </div>
+                                                <h3 class="h4 my-4" data-title="Xix85yjSLr0">(ENG) 와디즈 펀딩 성공한 스텐팬 사용법 1인자 쿠자의 주방! 노하우 털이 ㅣGame Changer - 쿠자의주방ㅣ 와디즈 아카데미
+
+                                                </h3>
+                                            </li>
+                                            <li class="mb-6 md:col-4">
+                                                <div class="relative w-full ratio ratio-16-9">
+                                                    <a class="relative block w-full ratio ratio-16-9 bg-cover bg-center cursor-pointer" id="video" data-url="plIJCkiw-Ls" data-fancybox="" href="https://www.youtube.com/watch?v=plIJCkiw-Ls" style="background-image: url(https://img.youtube.com/vi/plIJCkiw-Ls/0.jpg);">
+                                                        <iframe class="relative z-20 invisible" id="plIJCkiw-Ls" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="EP. 0 레지나 뷰티 '디마프'의 우당탕탕 펀딩 도전기 | 서포터를 찾습니다 | 와디즈아카데미" width="640" height="360" src="https://www.youtube.com/embed/plIJCkiw-Ls?enablejsapi=1&amp;origin=https%3A%2F%2Fhelpcenter.wadiz.kr&amp;widgetid=6">
+
+                                                        </iframe>
+                                                        <div class="absolute-center z-10 flex p-4 circle button button-primary">
+                                                            <svg class=" w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                                                                <path d="M78.627,47.203L24.873,16.167c-1.082-0.625-2.227-0.625-3.311,0C20.478,16.793,20,17.948,20,19.199V81.27  c0,1.25,0.478,2.406,1.561,3.031c0.542,0.313,1.051,0.469,1.656,0.469c0.604,0,1.161-0.156,1.703-0.469l53.731-31.035  c1.083-0.625,1.738-1.781,1.738-3.031C80.389,48.984,79.71,47.829,78.627,47.203z">
+
+                                                                </path>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                    <span class="absolute bottom-0 right-0 top-auto m-4 badge" data-duration="plIJCkiw-Ls">
+                                                        04:50
+                                                    </span>
+                                                </div>
+                                                <h3 class="h4 my-4" data-title="plIJCkiw-Ls">EP. 0 레지나 뷰티 '디마프'의 우당탕탕 펀딩 도전기 | 서포터를 찾습니다 | 와디즈아카데미
+
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!------------------------------유튜브 동영상 목록 작업 완료------------------------->
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!----------------------푸터 시작 ------------------------------>
+        <!-- 푸터 클론코딩 제작 -->
+     
+      <!-- 푸터 클론코딩 범위 -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+            <symbol id="icon-search">
+                <circle
+                    cx="4.5"
+                    cy="4.5"
+                    r="4"
+                    fill="none"
+                    stroke="currentColor"
+                ></circle>
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    d="M11 11L7.5 7.5"
+                ></path>
+            </symbol>
+            <symbol id="icon-lock">
+                <rect
+                    width="12"
+                    height="9"
+                    x="2"
+                    y="7"
+                    fill="currentColor"
+                    rx="1"
+                    ry="1"
+                ></rect>
+                <path
+                    fill="none"
+                    stroke="currentColor"
+                    d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
+                ></path>
+            </symbol>
+            <symbol id="icon-star">
+                <polygon
+                    points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
+                ></polygon>
+            </symbol>
+            <symbol id="icon-chevron-down">
+                <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
+                ></path>
+            </symbol>
+            <symbol id="icon-agent">
+                <path
+                    fill="currentColor"
+                    d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
+                ></path>
+            </symbol>
+
+            <symbol id="shape-book">
+                <path
+                    d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+                ></path>
+            </symbol>
+        </svg>
+        <div class="navBox">
+            <!-- <img
+                class="iconBtn"
+                src="./leftchevron.png"
+                style="margin-left: -5px"
+            />
+            <span>조성현</span> -->
+            <!-- <img class="iconBtn" id="menuBtn" src="./menuBtn.png" /> -->
+        </div>
+        <!----------슬라이드 메뉴 화면 ------------->
+         
+         <div class="backdrop" style="display: none;"></div>
+        <div class="menuWrap">
+            <nav id="menu">
+                <div class="btn-block" style="padding: 0 20px;">
+                    <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
+                    href="#">문의 등록</a>
+                    <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
+                    href="#">메이커센터</a>
+                </div>
+                <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
+                href="#" style="width: 140px; margin-right: 50px;">원랩 바로가기</a>
+                
+                    
+                
+                
+            </nav>
+        </div>
+    </body>
+     <script src="/staticfiles/js/notify-sunghyun/footer.js"></script>
+        <script src="/staticfiles/js/notify-sunghyun/notify-one&one.js"></script>
+        <script src="/staticfiles/js/notify-sunghyun-app/notify-one&one-app-chat.js"></script>
+        <script src="/staticfiles/js/notify-sunghyun-app/notify-one&one-app.js"></script>
+       
+</html>

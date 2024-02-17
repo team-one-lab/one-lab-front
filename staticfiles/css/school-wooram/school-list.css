@@ -196,38 +196,26 @@ var {
   font-style: normal;
 }
 
-.MainWrapper_content {
+.main-wrapper-content {
   transition: padding-top 0.25s;
   padding-top: 0;
+  padding-bottom: 0;
 }
 
-@media screen and (min-width: 1097px) {
-  .MainWrapper_content {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-html.scroll-top .MainWrapper_content,
+html.scroll-top .main-wrapper-content,
 html.wadiz-app .MainWrapper_content,
 html.wadiz-app.scroll-top .MainWrapper_content {
   padding-top: 0;
 }
 
-@media screen and (min-width: 1097px) {
-  html.scroll-top .MainWrapper_content {
-    padding-top: 0;
-  }
-}
-
-.DesktopSearchResult_container {
+.desktop-search-result-container {
   margin: 0 auto;
   max-width: 1032px;
   padding-bottom: 40px;
 }
 
 /* 검색 결과 */
-.DesktopSearchResult_container .DesktopSearchResult_headContainer {
+.desktop-search-result-container .desktop-search-result-head-container {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -238,7 +226,7 @@ html.wadiz-app.scroll-top .MainWrapper_content {
   justify-items: flex-start;
 }
 
-.DesktopSearchResult_container .DesktopSearchResult_headContainer .DesktopSearchResult_keyword {
+.desktop-search-result-container .desktop-search-result-head-container .desktop-search-result-keyword {
   line-height: 44px;
   font-size: 32px;
   font-weight: 700;
@@ -250,7 +238,7 @@ html.wadiz-app.scroll-top .MainWrapper_content {
   white-space: nowrap;
 }
 
-.DesktopSearchResult_container .DesktopSearchResult_headContainer h2 {
+.desktop-search-result-container .desktop-search-result-head-container h2 {
   line-height: 44px;
   font-size: 32px;
   font-weight: 700;
@@ -259,14 +247,14 @@ html.wadiz-app.scroll-top .MainWrapper_content {
   color: #adb5bd;
 }
 
-.DesktopSearchResult_container .DesktopSearchResult_headContainer .DesktopSearchResult_number {
+.desktop-search-result-container .desktop-search-result-head-container .desktop-search-result-number {
   line-height: 28px;
   font-size: 16px;
   font-weight: 700;
   color: #00c4c4;
 }
 
-.DesktopSearchResult_container .DesktopSearchResult_headContainer .DesktopSearchResult_unit {
+.desktop-search-result-container .desktop-search-result-head-container .desktop-search-result-unit {
   line-height: 20px;
   font-size: 14px;
   font-weight: 400;
@@ -274,13 +262,15 @@ html.wadiz-app.scroll-top .MainWrapper_content {
   color: #495057;
 }
 
-.RelatedKeywords_container {
+.related-keywords-container {
   line-height: 20px;
   font-size: 14px;
   font-weight: 400;
   display: flex;
   align-items: center;
-  padding-left: 16px;
+  margin: 16px 0;
+  padding: 0;
+  width: 100%;
   height: 40px;
   white-space: nowrap;
 }
@@ -290,24 +280,11 @@ hr {
   border: 0;
   background-color: #f2f4f6;
   width: 100%;
-  height: 8px;
+  height: 1px;
 }
 
-@media screen and (min-width: 1097px) {
-  hr {
-    height: 1px;
-  }
-}
 
-@media screen and (min-width: 1097px) {
-  .RelatedKeywords_container {
-    margin: 16px 0;
-    padding: 0;
-    width: 100%;
-  }
-}
-
-.RelatedKeywords_container .RelatedKeywords_title {
+.related-keywords-container .related-keywords-title {
   line-height: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -315,7 +292,7 @@ hr {
   color: #212529;
 }
 
-.Button_button {
+.button-button {
   position: relative;
   transition-property: background-color, border-color, color, opacity;
   transition-duration: 0.15s;
@@ -333,7 +310,7 @@ hr {
   -webkit-appearance: none;
 }
 
-.RelatedKeywords_container .RelatedKeywords_keywords {
+.related-keywords-container .related-keywords {
   display: flex;
   align-items: center;
   padding-right: 16px;
@@ -345,34 +322,34 @@ hr {
   scrollbar-width: none;
 }
 
-.Button_button.Button_sm {
+.button-button.Button_sm {
   padding: 6px 11px;
   height: 32px;
   font-size: 14px;
 }
 
-.Button_button.Button_text.Button_sm {
+.button-button.Button_text.Button_sm {
   border: 0;
   border-color: rgba(0, 0, 0, 0);
   padding: 0;
   height: auto;
 }
 
-.Button_button span {
+.button-button span {
   display: inline-flex;
   align-items: center;
   vertical-align: top;
 }
 
-.Button_button .Button_children {
+.button-button .Button_children {
   vertical-align: top;
 }
 
-.RelatedKeywords_container .RelatedKeywords_keywords span {
+.related-keywords-container .related-keywords span {
   color: #868e96;
 }
 
-.DesktopSearchResult_container .DesktopSearchResult_tabContainer {
+.desktop-search-result-container .DesktopSearchResult_tabContainer {
   position: relative;
   margin: 0 auto 40px;
   width: 1032px;
@@ -380,16 +357,16 @@ hr {
 }
 
 /* 전체 펀딩 오픈에정 css */
-@media screen and (min-width: 1097px) {
-  .SearchResultTabs_tabContainer {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0;
-    gap: 12px;
-  }
+
+.SearchResultTabs_tabContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0;
+  gap: 12px;
 }
+
 
 .Tab_tab.tab_end span{
   color: white;
@@ -448,7 +425,7 @@ hr {
 .Tab_tab.Tab_sm span {
   height: 32px;
   line-height: 20px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
 }
 
@@ -486,12 +463,7 @@ hr {
 /* add 베너 쪽 css */
 .AdBanner_container {
   margin-bottom: 24px;
-}
-
-@media screen and (min-width: 1097px) {
-  .AdBanner_container {
-    margin: 40px 0;
-  }
+  margin: 40px 0;
 }
 
 .banner_eventBanner {
@@ -500,20 +472,8 @@ hr {
   border-radius: 8px;
   height: 74px;
   overflow: hidden;
-}
-
-@media screen and (min-width: 1097px) {
-  .banner_eventBanner {
-    display: inline-block;
-    width: calc(50% - 16px);
-  }
-}
-
-@media screen and (min-width: 1097px) {
-  .banner_eventBanner.banner_eventBanner:only-of-type {
-    display: block;
-    width: 100%;
-  }
+  display: block;
+  width: 100%;
 }
 
 .banner_adBadge {
@@ -583,19 +543,13 @@ hr {
 
 .SearchResult_cardContainer {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  gap: 40px 60px;
 }
 
 /* 목록 페이지 쪽 */
-@media screen and (min-width: 1097px) {
-  .SearchResult_cardContainer {
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    gap: 40px 60px;
-  }
-}
 
 .TableLayout_container {
   display: grid;
@@ -606,11 +560,7 @@ hr {
   width: 100%;
 }
 
-@media screen and (min-width: 1097px) {
-  .SearchResult_cardContainer > div {
-    width: calc(33.3333333333% - 40px);
-  }
-}
+
 
 .SearchResult_cardContainer .SearchResult_table {
   width: 100%;
@@ -817,7 +767,7 @@ video {
 }
 
 /* 찜하기 버튼 css */
-.WishButton_button {
+.Wishbutton-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -837,11 +787,11 @@ video {
   fill: currentColor;
 }
 
-.WishButton_button * {
+.Wishbutton-button * {
   pointer-events: none;
 }
 
-.WishButton_button svg {
+.Wishbutton-button svg {
   margin: 0 auto;
   width: 24px;
   height: 24px;
@@ -849,13 +799,13 @@ video {
   will-change: transform;
 }
 
-.WishButton_button path {
+.Wishbutton-button path {
   stroke: #f2f4f6;
   stroke-width: 2px;
   fill: rgba(33, 37, 41, 0.4);
   transition: fill 0.25s ease-in-out;
 }
 
-.WishButton_button.active path {
+.Wishbutton-button.active path {
   fill: crimson;
 }

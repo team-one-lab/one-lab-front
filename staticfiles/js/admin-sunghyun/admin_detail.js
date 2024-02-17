@@ -18,10 +18,10 @@ let nowZoom = 100; // 기본 비율
 
 // 화면크기 축소
 function zoomOut() {
-    nowZoom = nowZoom - 10;
+    nowZoom = nowZoom - 30;
     // 화면크기 최대 축소율 90%
-    if (nowZoom <= 70) {
-        nowZoom = 70;
+    if (nowZoom <= 100) {
+        nowZoom = 40;
     }
     zooms();
 }

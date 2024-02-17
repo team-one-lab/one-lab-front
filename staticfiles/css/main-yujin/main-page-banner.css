@@ -101,7 +101,7 @@
     display: block;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%);
     width: 100%;
     max-width: 1440px;
@@ -122,13 +122,6 @@
     margin-bottom: 8px;
     word-break: break-all;
     color: #fff;
-}
-
-.VisualSlide_container {
-    height: 40vh;
-    display: block;
-    position: relative;
-    background: #f2f4f6 no-repeat 50%/cover;
 }
 
 .VisualSlide_badge {
@@ -209,25 +202,9 @@
     z-index: 10;
     padding: 30px 0;
 }
-/* 
-.KeyVisualBanner_button {
-    display: inline-block;
-    transition: color .2s;
-    margin: 0 0 0 8px;
-    outline: none;
-    border: 0;
-    border-radius: 0;
-    background: rgba(0,0,0,0);
-    cursor: pointer;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    line-height: 0;
-    color: rgba(255,255,255,.5);
-    font-size: 0;
-} */
 
- .KeyVisualBanner_button {
+
+.KeyVisualBanner_button {
     margin: 0;
     background: rgba(0,0,0,.4);
     width: 40px;

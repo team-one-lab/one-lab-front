@@ -90,9 +90,10 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
     z-index: 20;
     left: 0;
     top: 0;
+    border: solid 0.7px rgb(219, 213, 213);
     position: sticky;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: #ffffff;
     display: flex;
 }
 .flex-center{
@@ -487,6 +488,7 @@ p{
 }
 
 .pt-full{
+    width: 920px;
     padding-top: 41px;
     padding-bottom: 26px;
     border-bottom-width: 1px;

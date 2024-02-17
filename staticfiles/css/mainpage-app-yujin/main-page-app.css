@@ -1,0 +1,247 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+html {
+    font-family: Pretendard Variable,pretendard,-apple-system,blinkmacsystemfont,
+    system-ui,roboto,Helvetica Neue,
+    Segoe UI,Apple SD Gothic Neo,Noto Sans KR,
+    Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,
+    Segoe UI Symbol,sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+main {
+    display: block;
+}
+
+header {
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+ul {
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    vertical-align: baseline;
+}
+
+span {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+a {
+    color: inherit;
+    outline: none;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+button {
+    font-family: inherit;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    margin: 0;
+    vertical-align: baseline;
+    border: 0;
+}
+
+.web-header {
+    z-index: 1201;
+    top: 0;
+    position: sticky;
+    transition: top .25s;
+    width: 100%;
+}
+
+.header-wrapper {
+    position: relative;
+    top: 0;
+    z-index: 9998;
+    background-color: #fff;
+    width: 100%;
+    height: 56px;
+    text-align: center;
+}
+
+.header-container {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1440px;
+    height: 100%;
+}
+
+.mobile-container {
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+    transform: translateY(0);
+    transition: transform .25s;
+    z-index: 100;
+    margin-left: 0;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,.15);
+    background-color: #fff;
+    padding: 0 0 8px;
+    padding-bottom: calc(8px + env(safe-area-inset-bottom));
+    width: 100%;
+    list-style: none;
+}
+
+.mobile-item {
+    position: relative;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+}
+
+.mobile-link {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transition: .2s;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    width: 100%;
+    max-width: 72px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.active .bottom-icon {
+    color: #212529;
+    margin-bottom: 3px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 24px;
+    position: absolute;
+    top: 3px;
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+}
+
+a.active span {
+    color: #212529;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.5;
+    display: block;
+    position: absolute;
+    top: 33px;
+}
+
+.bottom-icon {
+    margin-bottom: 3px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #868e96;
+    font-size: 24px;
+    position: absolute;
+    top: 9px;
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+}
+
+.mobile-text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
+    position: absolute;
+    top: 33px;
+    color: #868e96;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.search-field-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 16px;
+    border: 1px solid #dde2e6;
+    border-radius: 4px;
+    padding: 0 16px;
+    width: 100%;
+    height: 40px;
+}
+
+.search-field-container p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #adb5bd;
+    pointer-events: none;
+}
+
+.search-field-container * {
+    pointer-events: none;
+}
+
+.search-icon {
+    color: #495057;
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+}
+
+.notification-container {
+    display: inline-block;
+}
+
+.notification-button-container {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0);
+}
+
+.notificationn-icon {
+    display: inline;
+    color: #000;
+    font-size: 24px;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}

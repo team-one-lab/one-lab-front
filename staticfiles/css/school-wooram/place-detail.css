@@ -112,62 +112,31 @@ strong {
 }
 
 /* 메인 바디 css */
-.MainWrapper_content {
-  padding-top: 0;
-  transition: padding-top 0.25s;
-}
-
-@media screen and (min-width: 1097px) {
-  .MainWrapper_content {
+.main-wrapper-content {
     padding-top: 0;
     padding-bottom: 0;
-  }
+    transition: padding-top 0.25s;
 }
 
-.MainContainer_root {
+.main-container-root {
   background-color: #fff;
 }
 
-.DetailHeader_container {
-    margin: 0 auto 16px;
-    padding: 0 16px;
+.detail-header-container {
+    margin: 40px auto;
+    padding: 0 80px;
+    max-width: 1440px;
+    display: flex;
 }
 
-@media screen and (min-width: 769px) {
-    .DetailHeader_container {
-        display: flex;
-    }
-}
-
-@media screen and (min-width: 1097px) {
-    .DetailHeader_container {
-        margin: 40px auto;
-        padding: 0 80px;
-        max-width: 1440px;
-    }
-}
 
 /* 왼쪽 맨위 그림 css */
-@media screen and (min-width: 769px) {
-    .DetailHeader_container .DetailHeader_detailImageArea {
-        flex: 0 0 46.55%;
-        margin: 0;
-        max-width: 46.55%;
-    }
-}
-
-
-@media screen and (min-width: 1201px) {
-    .DetailHeader_container .DetailHeader_detailImageArea {
-        flex: 0 0 51.79%;
-        padding-left: 37px;
-        max-width: 51.79%;
-    }
-}
-
-.DetailHeader_detailImageArea {
-    margin: 0 -16px;
+.detail-header-detail-image-area {
+    flex: 0 0 51.79%;
+    padding-left: 37px;
+    max-width: 51.79%;
     text-align: center;
+    margin: 0;
 }
 
 .StoreSlider_container {
@@ -176,7 +145,7 @@ strong {
     max-width: 633px;
 }
 
-.StoreSlider_slickList {
+.store-slider-slick-list {
     list-style: none;
 }
 
@@ -194,16 +163,11 @@ strong {
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    border-radius: 16px;
+    overflow: hidden;
 }
 
-@media screen and (min-width: 769px) {
-    .StoreSlider_container .StoreSlider_slickList [class*=slick-slider] {
-        border-radius: 16px;
-        overflow: hidden;
-    }
-}
-
-.StoreSlider_slickPrev {
+.store-slider-slick-prev {
     left: 0;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABuCAYAAAB7unCOAAAABGdBTUEAALGPC/xhBQAAAjlJREFUeAHt2jFqAlEQxvGY1cbY2CRNQBTEdLmCta2F18lpPIK1lzCk22bBRoiEVIHFuAGbTFLs7rz3vhk/Ic3THd5v/qnEzmKxeLm5otftFVl/qAR7L87CLOxsA/yXdhZUcFhYrMTZAQs7Cyo4LCxW4uyAhZ0FFRwWFitxdsDCzoIKDguLlTg7YGFnQQWHhcVKnB2wsLOggsPCYiXODljYWVDBgSg8Ho8Hq9XqKcuyjrih8kFycIVdLpfPk8nkYT6fPyr7xLik4Au21+t1i6I4bLfbQtxQ+SAZ+Dd2vV6/lmV5UvaJcUnAqbCVPjo4JTY6ODU2KhgBGw2Mgo0CRsIGB6Nhg4IRscHAqNggYGSsOhgdqwq2gFUDW8GqgC1hW4OtYVuBLWIbg61iG4EtYxuBq4csv7LpdDqvAzgej1/7/f59NpvdD4fDwWg0utvtdofTKfjXUXWu+e9na4OrSZbRjcCW0Y3BVtGtwBbRrcHW0CpgS2g1sBW0KtgCWh2Mjg4CRkYHA6Oig4IR0cHBaOgoYCR0NDAKOioYAR0dnBqdBJwSnQz8F/r8e60yz/OP6r1Qr6TgCnX5uqjf72ebzSYP/d1YN9Qm68w9V/08/73VeabpZ6P/TqvpRbWeI1hrk6hzWBi1jNa9WFhrk6hzWBi1jNa9WFhrk6hzWBi1jNa9WFhrk6hzWBi1jNa9WFhrk6hzWBi1jNa9WFhrk6hzWBi1jNa9WFhrk6hzWBi1jNa9WFhrk6hzrq7wNxNqQMRLNUFBAAAAAElFTkSuQmCC);
     position: absolute;
@@ -248,24 +212,17 @@ strong {
     min-height: 1px;
 }
 
-.StoreSlider_slickBackgroundImage {
+.store-slider-slick-background-image {
     display: inline-block;
     background-position: center 0;
     background-size: cover;
-    padding-bottom: 100%;
+    padding-bottom: 75%;
     width: 100%;
     height: 0;
     vertical-align: top;
 }
 
-@media screen and (min-width: 769px) {
-    .StoreSlider_slickBackgroundImage {
-        padding-bottom: 75%;
-    }
-    
-}
-
-.StoreSlider_slickArrowNext {
+.store-slider-slick-arrow-next {
     right: 0;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABuCAYAAAB7unCOAAAABGdBTUEAALGPC/xhBQAAAilJREFUeAHt2rFqAkEQxnHNpdNGkKQ5EAUxpMkrWNtaCD5NXsfCd7C2SyGkE0SwCURIqhi5cAGb2dLZmY/xu0Z2i/V+87dabE4mk9fGDT13N2T9pxIcvTgLs3CwCfAnHSxowmHhZCTBNlg4WNCEw8LJSIJtsHCwoAmHhZORBNtg4WBBEw4LJyMJtsHCwYImHBZORhJsg4WDBU04LJyMJNgGCwcLmnDUCxdF0ZzNZk/9fr+dfBvAhjp4PB6Xg8HgcTqdviCii+FwONYc/G63++r1eq1Op9MejUYPh8Ph83g8/mh+xzVnqYOrqmpsNpsPVLQ6uJ4+MjoLGBmdDYyKzgpGRGcHo6FNwEhoMzAK2hSMgDYHe6NdwJ5oN7AX2hXsgXYHW6MhwJZoGLAVGgpsgYYD50ZDgnOi1S/x6pdFfmDB9XXvfD5/LsuyezqdfpfL5dt2u/2+dpiQ4FzYelhw4JxYOHBuLBTYAgsDtsJCgC2x7mBrrCvYA+sG9sK6gD2x5mBvrCkYAWsGRsGagJGw2cFo2KxgRGw2MCo2CxgZmwVc/zFN+1qmflGt517roMs5q9Vq3+12W+v1eq9xB3U5V+tTHXw+n6vFYvGu9YLa58DdaWkD5XkEy4lEW7NwtKLSw8JyItHWLBytqPSwsJxItDULRysqPSwsJxJtzcLRikoPC8uJRFuzcLSi0sPCciLR1iwcraj0sLCcSLQ1C0crKj0sLCcSbX1zhf8AAKU/JNEM0C8AAAAASUVORK5CYII=);
     position: absolute;
@@ -280,7 +237,7 @@ strong {
     text-indent: -9999px;
 }
 
-.StoreSlider_slickIndex {
+.store-slider-slick-index {
     display: inline-flex;
     position: absolute;
     right: 24px;
@@ -297,31 +254,22 @@ strong {
 }
 
 /* 오른쪽 글씨 쪽 css */
-@media screen and (min-width: 769px) {
-    .DetailHeader_detailInfoArea {
-        flex: 0 0 53.45%;
-        padding: 0 0 0 6.8%;
-        max-width: 53.45%;
-    }
+.detail-header-detail-info-area {
+    flex: 0 0 48.21%;
+    padding: 0 28px 0 10.9%;
+    max-width: 48.21%;
 }
 
-@media screen and (min-width: 1201px) {
-    .DetailHeader_detailInfoArea {
-        flex: 0 0 48.21%;
-        padding: 0 28px 0 10.9%;
-        max-width: 48.21%;
-    }
-}
 
-.DetailInfo_container {
+.detail-info-container {
     position: relative;
 }
 
-.DetailInfoHeader_container {
+.detail-infoHeader-container {
     margin-top: 16px;
 }
 
-.DetailInfoHeader_textBlind {
+.detail-info-header-text-blind {
     position: absolute;
     margin: -1px;
     clip: rect(0 0 0 0);
@@ -330,12 +278,12 @@ strong {
     overflow: hidden;
 }
 
-.CategoryAndHashTagsInfo_searchInfoWrapper {
+.category-and-hash-tags-info-search-info-wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.CategoryAndHashTagsInfo_header {
+.category-and-hash-tags-info-header {
     display: flex;
 }
 
@@ -463,12 +411,7 @@ a.Button_button {
 
 .DetailInfoHeader_titleInfo {
     display: flex;
-}
-
-@media screen and (min-width: 769px) {
-    .DetailInfoHeader_titleInfo {
-        margin-top: 16px;
-    }
+    margin-top: 16px;
 }
 
 .DetailInfoHeader_title {
@@ -479,24 +422,10 @@ a.Button_button {
     overflow-wrap: break-word;
 }
 
-@media screen and (min-width: 769px) {
-    .DetailInfoHeader_title {
-        line-height: 28px;
-        font-size: 18px;
-        font-weight: 500;
-    }
-}
-
 .DetailInfoHeader_participationInfo {
     display: flex;
     align-items: center;
-    margin-top: 8px;
-}
-
-@media screen and (min-width: 769px) {
-    .DetailInfoHeader_participationInfo {
-        margin-top: 6px;
-    }
+    margin-top: 6px;
 }
 
 .DetailInfoHeader_rating {
@@ -615,23 +544,15 @@ a.Button_button {
     
 }
 
-.DetailInfoHeader_container .DetailInfoHeader_buyInfo .DetailInfoHeader_priceWrapper .DetailInfoHeader_priceArea {
-    line-height: 34px;
-    font-size: 24px;
+.detail-infoHeader-container .DetailInfoHeader_buyInfo .DetailInfoHeader_priceWrapper .DetailInfoHeader_priceArea {
+    line-height: 38px;
+    font-size: 28px;
     font-weight: 700;
     display: flex;
     align-items: center;
     gap: 4px;
 }
 
-@media screen and (min-width: 769px) {
-    .DetailInfoHeader_container .DetailInfoHeader_buyInfo .DetailInfoHeader_priceWrapper .DetailInfoHeader_priceArea {
-        line-height: 38px;
-        font-size: 28px;
-        font-weight: 700;
-    }
-    
-}
 
 .LabelBadge_badge {
     margin-left: 4px;
@@ -655,12 +576,7 @@ a.Button_button {
     position: relative;
     margin: 24px 0;
     padding: 16px 0;
-}
-
-@media screen and (min-width: 769px) {
-    .DetailInfoHeader_productInfo {
-        margin-bottom: 0;
-    }
+    margin-bottom: 0;
 }
 
 .DetailInfoHeader_productInfo:after {
@@ -674,16 +590,15 @@ a.Button_button {
 }
 
 
-@media screen and (min-width: 769px) {
-    .DetailInfoHeader_container .DetailInfoHeader_productInfo:after {
-        content: none;
-    }
+
+.detail-infoHeader-container .DetailInfoHeader_productInfo:after {
+    content: none;
 }
 
-.DetailInfoHeader_container .DetailInfoHeader_productInfoDivider:before {
+.detail-infoHeader-container .DetailInfoHeader_productInfoDivider:before {
     position: absolute;
-    right: -16px;
-    left: -16px;
+    right: 0;
+    left: 0;
     background-color: #f2f4f6;
     height: 1px;
     content: "";
@@ -692,13 +607,6 @@ a.Button_button {
 
 .DetailInfoHeader_productInfo:before {
     top: 0;
-}
-
-@media screen and (min-width: 769px) {
-    .DetailInfoHeader_container .DetailInfoHeader_productInfo:before {
-        right: 0;
-        left: 0;
-    }
 }
 
 .DetailInfoHeader_termsBox {
@@ -820,39 +728,25 @@ a.Button_button {
 
 /*팝업 베너 css */
 
-@media screen and (min-width: 769px) {
-    html.scroll-half-screen .PopBanner_container {
-        transform: translateY(-84px);
-    }
-}
-
 .PopBanner_container {
+    transform: translateY(-84px);
     position: fixed;
-    right: 16px;
-    bottom: 83px;
-    transform: translate(0);
+    right: 24px;
+    bottom: 40px;
     transition-property: transform,opacity;
-    transition-duration: .5s;
     transition-timing-function: ease-in-out;
-    opacity: 1;
+    opacity: 0;
     z-index: 3;
     width: 120px;
     height: 94px;
+    transform: translateY(0);
+    pointer-events: auto;
+    top: auto;
+    transition-duration: .3s;
 }
 
 
-@media screen and (min-width: 769px) {
-    .PopBanner_container {
-        transform: translateY(0);
-        opacity: 0;
-        pointer-events: auto;
-        position: fixed;
-        top: auto;
-        right: 24px;
-        bottom: 40px;
-        transition-duration: .3s;
-    }
-}
+
 
 .PopBanner_container .PopBanner_header {
     display: flex;
@@ -874,7 +768,7 @@ a.Button_button {
     height: 32px;
 }
 
-.DetailInfo_container img {
+.detail-info-container img {
     max-width: 420px;
     /* height: 580px; */
 }
@@ -1036,11 +930,10 @@ a.Button_button {
 }
 
 /* 재입고 알림신청 쪽 css */
-@media screen and (min-width: 769px) {
-    .ProductBuyInfo_container {
-        margin-top: auto;
-    }
+.ProductBuyInfo_container {
+    margin-top: auto;
 }
+
 
 .ProductFloatButton_container {
     display: flex;
@@ -1052,15 +945,8 @@ a.Button_button {
 .ProductFloatButton_wishButtonBox {
     display: flex;
     position: relative;
-    width: 48px;
-    height: 48px;
-}
-
-@media screen and (min-width: 769px) {
-    .ProductFloatButton_wishButtonBox {
-        width: 56px;
-        height: 56px;
-    }
+    width: 56px;
+    height: 56px;
 }
 
 .Button_button  {
@@ -1081,16 +967,6 @@ a.Button_button {
     -webkit-appearance: none;
 }
 
-@media screen and (min-width: 769px) {
-    .ProductFloatButton_wishButtonBox .ProductFloatButton_wishButton {
-        margin-right: 12px;
-        border-radius: 3px;
-        min-width: 56px;
-        height: 56px;
-    }
-}
-
-
 
 .ProductFloatButton_wishButtonBox .ProductFloatButton_wishButton {
     display: flex;
@@ -1101,6 +977,9 @@ a.Button_button {
     width: 100%;
     height: 100%;
     font-size: 0;
+    margin-right: 12px;
+    border-radius: 3px;
+    min-width: 56px;
 }
 
 .ProductFloatButton_wishButtonBox .ProductFloatButton_wishButton svg {
@@ -1125,8 +1004,8 @@ a.Button_button {
 }
 
 .Button_primary {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     display: block;
     width: 100%;
@@ -1145,13 +1024,8 @@ a.Button_button {
     display: flex;
     align-items: center;
     margin: 16px 0;
-}
-
-@media screen and (min-width: 769px) {
-    .PrevFundingInfo_prevFundingInfo {
-        margin-top: 24px;
-        padding: 0;
-    }
+    margin-top: 24px;
+    padding: 0;
 }
 
 .PrevFundingInfo_prevFundingInfo .PrevFundingInfo_title {
@@ -1478,45 +1352,20 @@ a.Button_button {
 /* 네비쪽 css */
 .DetailTab_container {
     position: sticky;
-    top: 56px;
+    top: 0;
     z-index: 2;
     margin: 0 auto 24px;
     border-bottom: 1px solid #f2f4f6;
     background-color: #fff;
-    padding: 0 16px;
-}
-
-
-@media screen and (min-width: 1097px) {
-    .DetailTab_container {
-        top: 0;
-    }
-}
-
-@media screen and (min-width: 1201px) {
-    .DetailTab_container {
-        padding: 0 80px;
-        max-width: 1440px;
-    }
+    padding: 0 80px;
+    max-width: 1440px;
 }
 
 .DetailTab_container ul {
     display: flex;
     justify-content: center;
-}
-
-@media screen and (min-width: 769px) {
-    .DetailTab_container ul {
-        padding-left: 37px;
-        max-width: 56.55%;
-    }
-}
-
-@media screen and (min-width: 1201px) {
-    .DetailTab_container ul {
-        padding-left: 37px;
-        max-width: 68.01%;
-    }
+    padding-left: 37px;
+    max-width: 68.01%;
 }
 
 .DetailTab_container ul li {
@@ -1561,46 +1410,17 @@ a.Button_button {
 
 /* 네비 밑 쪽 css */
 .storeTabContentsWrapper {
-    margin: 0 auto;
-}
-
-@media screen and (min-width: 769px) {
-    .storeTabContentsWrapper {
-        display: flex;
-        margin: 0;
-        padding: 0 16px;
-    }
-}
-
-@media screen and (min-width: 1097px) {
-    .storeTabContentsWrapper {
-        display: flex;
-        margin: 0 auto 40px;
-        padding: 0 80px;
-        max-width: 1440px;
-    }
+    display: flex;
+    margin: 0 auto 40px;
+    padding: 0 80px;
+    max-width: 1440px;
 }
 
 .storeTabContents {
-    margin: 0 16px;
-    min-height: 460px;
-}
-
-@media screen and (min-width: 769px) {
-    .storeTabContents {
-        flex: 0 0 56.55%;
-        margin: 0;
-        max-width: 56.55%;
-        min-height: 560px;
-    }
-}
-
-@media screen and (min-width: 1201px) {
-    .storeTabContents {
-        flex: 0 0 66.9%;
-        padding-left: 37px;
-        max-width: 66.9%;
-    }
+    flex: 0 0 66.9%;
+    padding-left: 37px;
+    max-width: 66.9%;
+    margin: 0;
 }
 
 .DeliveryBanner_container {
@@ -1698,14 +1518,9 @@ a.Button_button {
     color: #495057;
 }
 
-@media screen and (min-width: 1097px) {
-    .MessageBox_description {
-        line-height: 20px;
-    }
-}
-
 .MessageBox_content>.MessageBox_description {
     margin-left: -20px;
+    line-height: 20px;
 }
 
 .MessageBox_messageBox .MessageBox_description ul li {
@@ -1842,15 +1657,10 @@ a.Button_button {
     position: relative;
     border-bottom: 1px solid #f2f4f6;
     cursor: pointer;
-    padding: 16px 24px 16px 0;
+    padding: 16px 0;
     color: #212529;
 }
 
-@media screen and (min-width: 769px) {
-    .ProductEtcInfo_titleArea {
-        padding: 16px 0;
-    }
-}
 
 .ProductEtcInfo_button {
     position: absolute;
@@ -1883,17 +1693,11 @@ a.Button_button {
 /* 프로젝트에 문제가 생겼어요 쪽 css */
 .StoreReport_container {
     display: flex;
-    margin-top: 32px;
+    margin-top: 40px;
     border-radius: 8px;
     background: #f9fafb;
     padding: 8px 16px;
     color: #495057;
-}
-
-@media screen and (min-width: 1097px) {
-    .StoreReport_container {
-        margin-top: 40px;
-    }
 }
 
 .StoreReport_title {
@@ -2638,21 +2442,12 @@ a.Button_button {
 }
 
 /* 밑에쪽 오른쪽부분 css */
-@media screen and (min-width: 769px) {
-    .storeTabSideBar {
-        flex: 0 0 43.45%;
-        padding: 0 30px 0 6.8%;
-        max-width: 43.45%;
-    }
+.storeTabSideBar {
+    flex: 0 0 33.1%;
+    padding: 0 0 0 6.1%;
+    max-width: 33.1%;
 }
 
-@media screen and (min-width: 1201px) {
-    .storeTabSideBar {
-        flex: 0 0 33.1%;
-        padding: 0 0 0 6.1%;
-        max-width: 33.1%;
-    }
-}
 
 .DetailContent_sidebar {
     display: flex;
@@ -2663,15 +2458,6 @@ a.Button_button {
 }
 
 /* 재입고 알림 신청 쪽 */
-@media screen and (min-width: 769px) {
-    .iw {
-        margin-right: 12px;
-        border-radius: 3px;
-        min-width: 56px;
-        height: 56px;
-    }
-}
-
 .iw {
     display: flex;
     align-items: center;
@@ -2681,6 +2467,9 @@ a.Button_button {
     width: 100%;
     height: 100%;
     font-size: 0; 
+    margin-right: 12px;
+    border-radius: 3px;
+    min-width: 56px;
 }
 
 .Button_children {
@@ -2704,8 +2493,8 @@ a.Button_button {
 }
 
 .Button_notification {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     display: block;
     width: 100%;
@@ -2763,28 +2552,15 @@ a.Button_button {
 }
 
 .ProductNoticeInfo_notiContainer {
-    margin-top: 24px;
+    margin-top: 0;
     border-radius: 8px;
     background: #f9fafb;
     padding: 24px 16px 0;
 }
 
-@media screen and (min-width: 769px) {
-    .ProductNoticeInfo_notiContainer {
-        margin-top: 0;
-    }
-}
-
 .ProductNoticeInfo_notiItem {
-    display: block;
-    padding-bottom: 24px; 
-}
-
-@media screen and (min-width: 769px) {
-    .ProductNoticeInfo_notiItem {
-        display: flex;
-        padding-bottom: 16px;
-    }
+    display: flex;
+    padding-bottom: 16px;
 }
 
 .ProductNoticeInfo_title {
@@ -2793,14 +2569,9 @@ a.Button_button {
     line-height: 1.5;
     margin-bottom: 8px;
     color: #495057;
-}
-
-@media screen and (min-width: 769px) {
-    .ProductNoticeInfo_title {
-        margin-right: 24px;
-        width: 183px;
-        min-width: 183px;
-    }
+    margin-right: 24px;
+    width: 183px;
+    min-width: 183px;
 }
 
 .ProductNoticeInfo_description {
@@ -2808,6 +2579,7 @@ a.Button_button {
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
+    
 }
 
 #check-btn3 { display: none; }

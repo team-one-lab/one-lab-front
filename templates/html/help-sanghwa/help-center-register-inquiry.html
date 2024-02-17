@@ -8,9 +8,9 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <!-- 파비콘 설정 -->
     <link
-      rel="icon"
-      type="image/x-icon"
-      href="//theme.zdassets.com/theme_assets/13612819/fd8f70da068cebea64411422a92521b4168c7033.ico"
+      rel="shortcut icon"
+      type="image/png"
+      href="/templates/html/help-sanghwa/images/favicon-16x16.png"
     />
 
     <!-- 링크 설정 (나의 CSS 연동) -->
@@ -20,11 +20,16 @@
     />
 
     <!-- 타이틀 (주 제목) 설정 -->
-    <title>문의 등록 - 도움말센터</title>
+    <title>OneLab-문의 등록 메인</title>
 
     <!-- 폰트 적용 하기 -->
     <style>
-      
+      @import "https://assets.ohou.se/fonts/pretendard/v1.3.8/pretendardvariable-dynamic-subset.css";
+      html {
+        font-family: "Pretendard Variable", sans-serif;
+        letter-spacing: -0.3px;
+        -webkit-font-smoothing: antialiased;
+      }
     </style>
   </head>
   <!-- 바디 클론코딩 제작 -->
@@ -43,8 +48,8 @@
             <img
               class="block-fluid"
               id="logo"
-              src="https://theme.zdassets.com/theme_assets/13612819/a2bda3d577fa2698038267539c34a696a70da97c.png"
-              alt="도움말 센터 헬프 센터 홈 페이지"
+              src="/templates/html/help-sanghwa/images/header-logo.png"
+              alt="원랩 메인 로고"
             />
           </a>
           <!-- 탐색 메뉴 토글 -->
@@ -123,12 +128,12 @@
               class="button-header-1"
               href=""
             >
-              문의 등록
+            원랩 문의하기
             </a>
             <!-- 메이커센터 버튼 -->
-            <a class="button-header-2" href="">메이커센터 </a>
+            <a class="button-header-2" href="">대회/공모전 문의하기 </a>
             <!-- 와디즈 바로가기 버튼 -->
-            <a class="button-header-3" href="">와디즈 바로가기 </a>
+            <a class="button-header-3" href="">자료공유 및 장소공유 </a>
           </div>
         </nav>
       </header>
@@ -149,17 +154,17 @@
           <div class="row-center">
             <nav class="col-medium">
               <ol class="breadcrumbs">
-                <li title="도움말센터">
-                  <a href="">도움말 센터</a>
+                <li title="ONELAB">
+                  <a href="">ONELAB</a>
                 </li>
-                <li title="문의등록"> 문의 등록</li>
+                <li title="원랩 문의"> 원랩 문의</li>
               </ol>
             </nav>
           </div>
           <div class="row">
             <div class="lg:col-9">
               <header class="mb-5">
-                <h1> 문의 등록</h1>
+                <h1> 문의 하기</h1>
               </header>
               <div class="form">
                 <div data-element="template" data-template="form-tip"></div>
@@ -180,7 +185,7 @@
                           href=""
                         >
                           <h4 class="yds-inherit">
-                            와디즈 문의하기
+                            원랩 문의하기
                           </h4>
                         </a>
                       </li>
@@ -191,7 +196,7 @@
                           href=""
                         >
                           <h4 class="yds-inherit">
-                            프로젝트 수정/변경요청하기
+                            대회/공모전 문의하기
                           </h4>
                         </a>
                       </li>
@@ -201,7 +206,7 @@
                           href=""
                         >
                           <h4 class="yds-inherit">
-                            와디즈 광고서비스 문의하기
+                            자료공유 문의하기
                           </h4>
                         </a>
                       </li>
@@ -211,7 +216,7 @@
                           href=""
                         >
                           <h4 class="yds-inherit">
-                            와디즈 파이낸스 문의하기
+                            장소공유 문의하기
                           </h4>
                         </a>
                       </li>
@@ -325,7 +330,7 @@
                 </div>
                 <div
                   class="text-gray-2"
-                  onclick="location.href='https://www.wadiz.kr/web/wterms/privacy'"
+                  onclick="location.href=''"
                 >
                   <span class="button-text-3">개인정보처리방침</span>
                   <div class="system-icon-4">
@@ -357,7 +362,7 @@
                 </div>
                 <div
                   class="text-12"
-                  onclick="location.href='https://helpcenter.wadiz.kr/hc/ko/requests/new'"
+                  onclick="location.href=''"
                 >
                   <span class="button-text-13">문의 등록하기</span>
                   <div class="system-icon-14">
@@ -431,7 +436,7 @@
               <div class="box-29">
                 <div
                   class="box-2a"
-                  onclick="location.href='https://play.google.com/store/apps/details?id=com.markmount.wadiz&pli=1'"
+                  onclick="location.href=''"
                 >
                   <div class="artwork-logo-1"></div>
                   <span class="android-app">Android앱</span>
@@ -440,7 +445,7 @@
                 <div class="box-2b">
                   <div
                     class="artwork-logo-2"
-                    onclick="location.href='https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621'"
+                    onclick="location.href=''"
                   ></div>
                   <span class="ios-app">iOS앱</span>
                 </div>
