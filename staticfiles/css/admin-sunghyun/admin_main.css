@@ -15,10 +15,14 @@ html {
     border: 0 solid #e5e7eb;
 }
 li:hover{
-    background-color: #f2f0fc;
+    background-color: #e0eae7;
 }
-
-
+button{
+    cursor: pointer;
+}
+[role=button] button{
+    cursor: pointer;
+}
 html {
     display: block;
 }
@@ -315,6 +319,7 @@ ul{
     align-items: center;
     flex-grow: 1;
     display: flex;
+    cursor: pointer;
 }
 .h-secondary{
     width: 24px;
@@ -327,11 +332,11 @@ ul{
     width: 24px;
     height: 24px;
     margin-right: 10px;
-    color: #7e69fe;
-    fill: #7e69fe;
+    color: #008243;
+    fill: #008243;
 }
 .surface_light{
-    background-color: #f2f0fc;
+    background-color: #e0eae7;
 }
 .block-primary{
     display: block;
@@ -894,3 +899,11 @@ p{
     color: #333334;
     fill: #333334;
 }
+
+
+.wrap{
+    width: 800px;
+    height: 500px;
+    margin: 30px 250px;
+}
+

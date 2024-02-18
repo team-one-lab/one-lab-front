@@ -15,28 +15,35 @@ function selectOption(option, buttonId) {
 
 // 버튼 외의 영역을 클릭하면 드롭다운이 사라지도록 이벤트 처리
 document.addEventListener("click", function (event) {
-    var dropdownOptions1 = document.getElementById("dropdownOptions1");
     var dropdownOptions2 = document.getElementById("dropdownOptions2");
-    var dropdownOptions3 = document.getElementById("dropdownOptions3");
     var surfaceNoneButtons = document.querySelectorAll(".surface-none");
 
     if (
-        !surfaceNoneButtons[0].contains(event.target) &&
-        !dropdownOptions1.contains(event.target)
-    ) {
-        dropdownOptions1.style.display = "none";
-    }
-
-    if (
-        !surfaceNoneButtons[1].contains(event.target) &&
+        !surfaceNoneButtons.contains(event.target) &&
         !dropdownOptions2.contains(event.target)
     ) {
         dropdownOptions2.style.display = "none";
     }
+});
+
+document.addEventListener("click", function (event) {
+    var dropdown = document.getElementById("dropdownOptions2");
+    var button = document.getElementById("two");
+
     if (
-        !surfaceNoneButtons[2].contains(event.target) &&
-        !dropdownOptions3.contains(event.target)
+        event.target !== button &&
+        !button.contains(event.target) &&
+        event.target !== dropdown &&
+        !dropdown.contains(event.target)
     ) {
-        dropdownOptions3.style.display = "none";
+        dropdown.style.display = "none";
     }
 });
+
+function selectAll(selectAll) {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    checkboxes.forEach((checkbox) => {
+        checkbox.checked = selectAll.checked;
+    });
+}

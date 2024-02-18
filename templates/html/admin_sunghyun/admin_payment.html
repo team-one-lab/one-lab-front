@@ -31,7 +31,7 @@ admin_competition = 공모전/대회 관리 페이지
             rel="stylesheet"
             href="/staticfiles/css/admin-sunghyun/admin_payment.css"
         />
-        <script src="/staticfiles/js/admin-sunghyun/admin_main.js"></script>
+        
         <link rel="preload" href="/staticfiles/css/test_admin_font.css" />
         <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
         <meta charset="UTF-8" />
@@ -209,29 +209,12 @@ admin_competition = 공모전/대회 관리 페이지
                                         <header class="pt-flex">
                                             <h1 class="font-primary">결제 내역 관리</h1>
         
-                                            <!--검색창 구현-->
-                                            <div>
-                                                <div class="w-240">
-                                                    <label class="w-between">
-                                                        <input class="outline-full" placeholder="회원 검색"
-                                                        type="search" value>
-                                                        <button aria-label="search button" class="ml-10" type="button">
-                                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                                            class="w-primary">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.83 16.561a7.8 7.8 0 1 1 1.233-1.312l3.465 3.465a.9.9 0 1 1-1.272 1.273L15.83 16.56Zm1.13-5.961a6.16 6.16 0 1 1-12.32 0 6.16 6.16 0 0 1 12.32 0Z">
-                                                            </path>
-                                                        </svg>
-                                                        </button>
-                                                    </label>
-                                                </div>
+                                           
                                                 <!--검색창 구현-->
         
-                                                <!-- <div class="flex-gap">
-                                                    <button aria-label="button"
-                                                    class="relative-content" type="button">베너 수정</button>
-                                                    <button aria-label="button"
-                                                    class="relative-content" type="button">헤더 수정</button>
-                                                </div> -->
+                                                <div class="flex-gap">
+                                                    <!--------결제내역 관리 margin 공백-->
+                                                </div>
                                             </div>
                                         </header>
                                 
@@ -243,7 +226,7 @@ admin_competition = 공모전/대회 관리 페이지
                                                    <div class="flex">
                                                     <p class="font-x1">총 결제금액</p>
                                                     <div class="ml-tertiary" style="height: 20px;">
-                                                        <p class="font-sm">160000</p>
+                                                        <p class="font-sm">0</p>
                                                     </div>
                                                 </div>
                                             </button> 
@@ -268,7 +251,7 @@ admin_competition = 공모전/대회 관리 페이지
                                                 <div class="shrink-0">
                                                     <div class="relative">
                                                         <button aria-label="filter" class="surface-none" type="button" id="one"
-                                                        onclick="toggleDropdown('dropdownOptions1')">
+                                                        >
                                                             <span class="over-nowrap">결제금액 전체</span>  
                                                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                                                             class="shrink-h">
@@ -276,9 +259,9 @@ admin_competition = 공모전/대회 관리 페이지
                                                             </svg> 
                                                         </button>
                                                         <div class="dropdown-content" id="dropdownOptions1">
-                                                            <a href="" onclick="selectOption('결제금액 전체', 'one')">결제금액 전체</a>
-                                                            <a href="" onclick="selectOption('오름차순', 'one')">오름차순</a>
-                                                            <a href="" onclick="selectOption('내림차순', 'one')">내림차순</a>
+                                                            <a href="" >결제금액 전체</a>
+                                                            <a href="" >오름차순</a>
+                                                            <a href="" >내림차순</a>
                                                
                                                         </div>
                                                     </div>
@@ -288,20 +271,26 @@ admin_competition = 공모전/대회 관리 페이지
                                             </div>       
                                             </div>
                                             <!--------------이전에 만들었던 카테고리----------->
-                                            <!-- <div class="mt-24">
-                                                <div class="shrink-name" style="width: 176px;">
-                                                    이름
+                                            <div class="mt-24">
+                                                <div class="shrink-name" style="width: 12cap;">
+                                                    <span class="mr-8">번호</span>
+                                                        <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                        class="wh-60">
+                                                            <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                            <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                                        </svg>
                                                 </div>
-                                                <div class="shrink-name" style="width: 96px;">
-                                                    원랩/멤버십
+                                                <div class="shrink-name" style="width: 136px;">
+                                                    이메일
                                                 </div>
-                                                <div class="shrink-name" style="width: 72px;">
+                                                
+                                                <div class="shrink-name" style="width: 132px;">
                                                     충전 날짜
                                                 </div>
                                                 <button aria-label="table sortable column label"
                                                 type="button" class="color-btn">
-                                                    <div class="shrink-name" style="width: 72px;">
-                                                        <span class="mr-8">충전 수량</span>
+                                                    <div class="shrink-name" style="width: 132px;">
+                                                        <span class="mr-8">충전 금액</span>
                                                         <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
                                                         class="wh-60">
                                                             <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
@@ -311,8 +300,8 @@ admin_competition = 공모전/대회 관리 페이지
                                                 </button>
                                                 <button aria-label="table sortable column label"
                                                 type="button" class="color-btn">
-                                                    <div class="shrink-name" style="width: 72px;">
-                                                        <span class="mr-8">총 결제 금액</span>
+                                                    <div class="shrink-name" style="width: 122px;">
+                                                        <span class="mr-8">잔여포인트</span>
                                                         <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
                                                         class="wh-60">
                                                             <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
@@ -321,118 +310,60 @@ admin_competition = 공모전/대회 관리 페이지
                                                 </div>
                                                 </button>
                                                 <div class="shrink-name" style="width: 72px;">
-                                                    최근 결제일
+                                                    총 결제금액
                                                 </div>
-                                                <div class="shrink-name" style="width: 72px;">
+                                                <!-- <div class="shrink-name" style="width: 72px;">
                                                     잔여쿠폰
+                                                </div> -->
                                                 </div>
-                                                <button aria-label="table sortable column label"
-                                                type="button" class="color-btn">
-                                                    <div class="shrink-name" style="width: 72px;">
-                                                        <span class="mr-8">아이디</span>
-                                                        <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                        class="wh-60">
-                                                            <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                            <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                                        </svg>
+                                                
+                                                <!-----------결제내역 목록------------> 
+                                                <div class="col-center">
+                                                    <li class="user-list">
+                                                        <span class="number">1</span>
+                                                        <span class="email">dosel70@naver.com</span>
+                                                        <span class="date">2024.02.17</span>
+                                                        <span class="name">50,000</span>
+                                                        <span class="type">500p</span>
+                                                        <span class="total">160,000</span>
+                                                    </li>
+                                                    <li class="user-list">
+                                                        <span class="number">2</span>
+                                                        <span class="email">dosel70@naver.com</span>
+                                                        <span class="date">2024.02.17</span>
+                                                        <span class="name">50,000</span>
+                                                        <span class="type">500p</span>
+                                                        <span class="total">160,000</span>
+                                                    </li> 
+                                                    <li class="user-list">
+                                                        <span class="number">3</span>
+                                                        <span class="email">dosel70@naver.com</span>
+                                                        <span class="date">2024.02.17</span>
+                                                        <span class="name">50,000</span>
+                                                        <span class="type">500p</span>
+                                                        <span class="total">160,000</span>
+                                                    </li>
+                                                    <li class="user-list">
+                                                        <span class="number">4</span>
+                                                        <span class="email">dosel70@naver.com</span>
+                                                        <span class="date">2024.02.17</span>
+                                                        <span class="name">50,000</span>
+                                                        <span class="type">500p</span>
+                                                        <span class="total">160,000</span>
+                                                    </li>
+                                                    <li class="user-list">
+                                                        <span class="number">5</span>
+                                                        <span class="email">dosel70@naver.com</span>
+                                                        <span class="date">2024.02.17</span>
+                                                        <span class="name">50,000</span>
+                                                        <span class="type">500p</span>
+                                                        <span class="total">160,000</span>
+                                                    </li>
+                                                
                                                 </div>
-                                                </button> -->
-                                                <!-----------결제내역 테이블 작성------------> 
                                                 
                                             </div> 
-                                            <table>
-                                                <tr>
-                                                  <th scope="col">이메일
-                                                    <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                            class="wh-60">
-                                                                <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                                <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                                    </svg>
-                                                  </td>
-                                                  <th scope="col">이름
-                                                    <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                            class="wh-60">
-                                                                <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                                <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                                    </svg>
-                                                  </td>
-                                                  <th scope="col">충전날짜
-                                                    <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                            class="wh-60">
-                                                                <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                                <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                                    </svg>
-                                                  </td>
-                                                  <th scope="col">총 결제금액
-                                                    <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                            class="wh-60">
-                                                                <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                                <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                                    </svg>
-                                                  </th>
-                                                  <th scope="col">최근 결제일
-                                                    <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                            class="wh-60">
-                                                                <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                                <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                                    </svg>
-                                                  </th>
-                                                  <th scope="col">잔여 포인트 
-                                                    <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                            class="wh-60">
-                                                                <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                                <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                                    </svg>
-                                                  </th>
-                                                </tr>
-                                                <tr>
-                                                  <td>dosel70@gmail.com</td>
-                                                  <td>조성현</td>
-                                                  <td>2024.02.12</td>
-                                                  <td>50,000원</td>
-                                                  <td>2024.02.14</td>
-                                                  <td>5000 P</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>hgd123@gmail.com</td>
-                                                    <td>홍길동</td>
-                                                    <td>2024.02.12</td>
-                                                    <td>10,000원</td>
-                                                    <td>2024.02.18</td>
-                                                    <td>1000 P</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>dosel70@gmail.com</td>
-                                                    <td>조성현</td>
-                                                    <td>2024.02.12</td>
-                                                    <td>50,000원</td>
-                                                    <td>2024.02.14</td>
-                                                    <td>5000 P</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>dosel70@gmail.com</td>
-                                                    <td>이성현</td>
-                                                    <td>2024.02.12</td>
-                                                    <td>50,000원</td>
-                                                    <td>2024.02.14</td>
-                                                    <td>5000 P</td>
-                                                  </tr>
-                                                
-                                              </table>
-                                            <!-- <ul>
-                                                <div class="gap-flex">
-                                                    <svg width="54" height="56" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="wh-65">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.702 17.497a3 3 0 0 1 3.424-2.506l41.26 6.383a3 3 0 0 1 2.506 3.424l-1.053 6.806a3.859 3.859 0 0 0-1.18 7.627l-1.053 6.807a3 3 0 0 1-3.423 2.506l-41.26-6.383a3 3 0 0 1-2.507-3.424l1.053-6.806a3.859 3.859 0 0 0 1.18-7.627l1.053-6.807Z" fill="#A08DFF"></path>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.803 18.464c.263.04.443.287.403.55l-.138.894a.482.482 0 0 1-.954-.147l.138-.894a.482.482 0 0 1 .55-.403Zm-.415 2.681c.263.04.444.287.403.55l-.277 1.788a.482.482 0 1 1-.953-.147l.277-1.788a.482.482 0 0 1 .55-.403Zm-.553 3.575c.263.04.444.287.403.55l-.277 1.788a.482.482 0 1 1-.953-.147l.277-1.788a.482.482 0 0 1 .55-.403Zm-.553 3.575c.263.04.444.287.403.55l-.277 1.788a.482.482 0 0 1-.953-.147l.277-1.788a.482.482 0 0 1 .55-.403Zm-.553 3.575c.263.04.444.287.403.55l-.277 1.788a.482.482 0 0 1-.953-.147l.276-1.788a.482.482 0 0 1 .55-.403Zm-.553 3.575c.263.04.443.287.403.55l-.277 1.788a.482.482 0 0 1-.953-.147l.276-1.788a.482.482 0 0 1 .55-.403Zm-.553 3.575c.263.04.443.287.403.55l-.139.894a.482.482 0 1 1-.953-.147l.138-.894a.482.482 0 0 1 .55-.403Z" fill="#000"></path>
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.848 29.871c1.082.168 2.18-.575 2.365-1.774.185-1.199-.637-2.238-1.719-2.405-1.082-.168-2.18.575-2.365 1.773-.186 1.2.636 2.239 1.718 2.406Zm-.26 1.672a3.806 3.806 0 1 0 1.165-7.523 3.806 3.806 0 0 0-1.164 7.523ZM33.836 39.666c1.082.167 2.18-.575 2.365-1.774.185-1.2-.636-2.238-1.719-2.406-1.082-.167-2.18.575-2.365 1.774-.185 1.199.636 2.238 1.719 2.406Zm-.259 1.671a3.806 3.806 0 1 0 1.164-7.523 3.806 3.806 0 0 0-1.164 7.523ZM36.885 27.694c.285.39.2.937-.19 1.223L23.603 38.5a.875.875 0 1 1-1.033-1.41l13.094-9.586a.875.875 0 0 1 1.222.19Z" fill="#fff"></path>
-                                                    <path d="M4.756 4.544c2.083.05 3.502 1.417 5.227 3.003.303-.864.92-3.58 1.915-3.642 1.616-.102 2.337 2.443 1.813 3.482-.668 1.321-1.147 2.778-1.79 4.117-.131.274-.87 2.127-1.094 1.9-.3-.302-.878-.68-1.248-.936-.932-.643-1.82-1.456-2.67-2.225C5.51 8.977 3.06 7.025 3.485 5.049c.105-.486.874-.514 1.271-.505Z" fill="#92EAFF"></path>
-                                                    <ellipse cx="26.188" cy="53.541" rx="19.126" ry="2.459" fill="#E4E4E4"></ellipse>
-                                                    <path d="M52.481 47.424c-1.736-.793-3.453-.232-5.509.385.096-.833.673-3.319-.122-3.768-1.291-.73-2.904 1.079-2.887 2.146.022 1.355-.165 2.748-.171 4.109-.002.278-.134 2.1.141 2.004.369-.13.997-.21 1.404-.273 1.025-.157 2.082-.472 3.091-.766 1.66-.484 4.46-1.114 4.9-2.913.108-.442-.515-.773-.847-.924Z" fill="#92EAFF"></path>
-                                                    </svg>
-                                                    <p class="font-quaternary">데이터가 없습니다.</p>
-                                                </div>
-                                            </ul>                     -->
+                                                  
                                         </div>                                      
                                     </div>
                                 </div>
@@ -442,5 +373,6 @@ admin_competition = 공모전/대회 관리 페이지
                 </div>
             </div>
         </body>
+        <script src="/staticfiles/js/admin-sunghyun/admin_payment.js"></script>
     </html>
                         
