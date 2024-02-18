@@ -18,25 +18,17 @@
         <!--헤더-->
         <div></div>
         <!--바디-->
-        <div class="ReactModalPortal">
-            <div
-                class="ReactModal__Overlay ReactModal__Overlay--after-open ConfirmModal_overlay waffle__modal__overlay"
-                style="z-index: 9000; background-color: rgba(0, 0, 0, 0.2);"
-            >
-                <div
-                    class="ReactModal__Content ReactModal__Content--after-open ConfirmModal_confirmModal ConfirmModal_sizeSm App_modal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-modal="true"
-                >
-                    <div class="ConfirmModal_header">
-                        <div class="ConfirmModal_closeIconRoot">
-                            <button class="ConfirmModal_closeIconWrapper">
+        <div class="terms-of-service">
+            <div class="confirm-modal-overlay" style="z-index: 9000; background-color: rgba(0, 0, 0, 0.2);">
+                <div class="confirm-modal-overlay-app-modal" tabindex="-1" role="dialog" aria-modal="true">
+                    <div class="confirm-modal-header">
+                        <div class="close-icon">
+                            <button class="close-icon-wrapper">
                                 <svg
                                     viewBox="0 0 40 40"
                                     focusable="false"
                                     role="presentation"
-                                    class="withIcon_icon ConfirmModal_closeIcon"
+                                    class="with-icon confirm-modal-close-icon"
                                     aria-hidden="true"
                                 >
                                     <path
@@ -45,34 +37,33 @@
                                 </svg>
                             </button>
                         </div>
-                        <div title="" class="ConfirmModal_titlePlaceholder ConfirmModal_showCloseButton"></div>
+                        <div title="" class="confirm-modal-title-placeholder"></div>
                     </div>
-                    <div class="ConfirmModal_content">
-                        <div class="App_container">
-                            <article class="TermsConfirmContainer_modalInner">
-                                <div class="TermsConfirmContainer_header">
-                                    <header class="TermsConfirmHeader_container">
-                                        <h1 class="TermsConfirmHeader_title">약관확인</h1>
-                                        <p class="TermsConfirmHeader_description">
+                    <div class="confirm-modal-content">
+                        <div class="app-container">
+                            <article class="modal-inner">
+                                <div class="inner-header">
+                                    <header class="header-container">
+                                        <h1 class="header-title">약관확인</h1>
+                                        <p class="header-description">
                                             약관에 동의하셔야 해당 서비스를 이용할 수 있습니다.
                                         </p>
                                     </header>
-                                    <section class="FullAgreementCheckbox_container">
-                                        <label
-                                            class="Checkbox_checkbox Checkbox_md Checkbox_labeled FullAgreementCheckbox_checkbox"
+                                    <section class="full-agreement-checkbox-container">
+                                        <label class="full-agreement-checkbox-checkbox"
                                             ><input
                                                 name="fullAgreement"
                                                 data-testid="full-agreement-checkbox"
                                                 type="checkbox"
-                                                class="Checkbox_input"
+                                                class="checkbox-input"
                                                 id="all"
                                             />
-                                            <span class="Checkbox_icon" aria-hidden="true">
+                                            <span class="checkbox-icon" aria-hidden="true">
                                                 <svg
                                                     viewBox="0 0 16 2"
                                                     focusable="false"
                                                     role="presentation"
-                                                    class="withIcon_icon Checkbox_removeIcon"
+                                                    class="with-icon checkbox-remove-icon"
                                                     aria-hidden="true"
                                                 >
                                                     <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
@@ -81,16 +72,16 @@
                                                     viewBox="0 0 48 48"
                                                     focusable="false"
                                                     role="presentation"
-                                                    class="withIcon_icon Checkbox_checkIcon"
+                                                    class="with-icon checkbox-checkicon"
                                                     aria-hidden="true"
                                                 >
                                                     <path
                                                         d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"
                                                     ></path></svg></span
-                                            ><span class="Checkbox_content"
+                                            ><span class="checkbox-content"
                                                 ><span
-                                                    ><span class="FullAgreementCheckbox_text">전체 동의 </span
-                                                    ><span class="FullAgreementCheckbox_subtext"
+                                                    ><span class="full-agreement-checkbox-text">전체 동의 </span
+                                                    ><span class="full-agreement-checkbox-subtext"
                                                         >(선택항목 포함)</span
                                                     ></span
                                                 ></span
@@ -99,24 +90,21 @@
                                     </section>
                                 </div>
                                 <div>
-                                    <div
-                                        class="AccordionCheckbox_accordionHeader ServiceAgreementCheckbox_container TermsConfirmBody_service"
-                                    >
+                                    <div class="accordion-checkbox-header">
                                         <div data-testid="service-agreement-checkbox">
-                                            <label
-                                                class="Checkbox_checkbox Checkbox_md Checkbox_labeled AccordionCheckbox_checkbox"
+                                            <label class="accordion-checkbox-checkbox"
                                                 ><input
                                                     name="funding"
                                                     required=""
                                                     type="checkbox"
-                                                    class="Checkbox_input possible parent"
+                                                    class="checkbox-input possible parent"
                                                     id="detail"
-                                                /><span class="Checkbox_icon" aria-hidden="true"
+                                                /><span class="checkbox-icon" aria-hidden="true"
                                                     ><svg
                                                         viewBox="0 0 16 2"
                                                         focusable="false"
                                                         role="presentation"
-                                                        class="withIcon_icon Checkbox_removeIcon"
+                                                        class="with-icon checkbox-remove-icon"
                                                         aria-hidden="true"
                                                     >
                                                         <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
@@ -125,16 +113,16 @@
                                                         viewBox="0 0 48 48"
                                                         focusable="false"
                                                         role="presentation"
-                                                        class="withIcon_icon Checkbox_checkIcon"
+                                                        class="with-icon checkbox-checkicon"
                                                         aria-hidden="true"
                                                     >
                                                         <path
                                                             d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"
                                                         ></path></svg></span
-                                                ><span class="Checkbox_content"
+                                                ><span class="checkbox-content"
                                                     ><span
-                                                        ><div class="AccordionCheckbox_label">
-                                                            <div class="ServiceAgreementCheckbox_required">
+                                                        ><div class="accordion-checkbox-label">
+                                                            <div class="service-agreement-checkbox-required">
                                                                 <strong>회원·서비스 가입</strong><span> (필수)</span>
                                                             </div>
                                                         </div></span
@@ -142,12 +130,12 @@
                                                 ></label
                                             >
                                         </div>
-                                        <button class="AccordionCheckbox_accordionButton" aria-label="내용 보기">
+                                        <button class="accordion-checkbox-button active" aria-label="내용 보기">
                                             <svg
                                                 viewBox="0 0 32 32"
                                                 focusable="false"
                                                 role="presentation"
-                                                class="withIcon_icon"
+                                                class="with-icon"
                                                 aria-hidden="true"
                                                 style="width: 16px; height: 16px;"
                                             >
@@ -157,24 +145,21 @@
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="detail-join">
-                                        <div
-                                            class="AccordionCheckbox_accordionHeader ServiceAgreementCheckbox_terms TermsConfirmBody_terms"
-                                        >
+                                    <div class="detail-join active">
+                                        <div class="accordion-checkbox-accordion-header-service">
                                             <div>
-                                                <label
-                                                    class="Checkbox_checkbox Checkbox_sm Checkbox_labeled AccordionCheckbox_checkbox"
+                                                <label class="accordion-checkbox-checkbox-essential"
                                                     ><input
                                                         required=""
                                                         type="checkbox"
-                                                        class="Checkbox_input possible children"
+                                                        class="checkbox-input possible children"
                                                         id="detail"
-                                                    /><span class="Checkbox_icon" aria-hidden="true"
+                                                    /><span class="checkbox-icon" aria-hidden="true"
                                                         ><svg
                                                             viewBox="0 0 16 2"
                                                             focusable="false"
                                                             role="presentation"
-                                                            class="withIcon_icon Checkbox_removeIcon"
+                                                            class="with-icon checkbox-remove-icon"
                                                             aria-hidden="true"
                                                         >
                                                             <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
@@ -183,19 +168,17 @@
                                                             viewBox="0 0 48 48"
                                                             focusable="false"
                                                             role="presentation"
-                                                            class="withIcon_icon Checkbox_checkIcon"
+                                                            class="with-icon checkbox-checkicon"
                                                             aria-hidden="true"
                                                         >
                                                             <path
                                                                 d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"
                                                             ></path></svg></span
-                                                    ><span class="Checkbox_content"
+                                                    ><span class="checkbox-content"
                                                         ><span
-                                                            ><div
-                                                                class="AccordionCheckbox_label AccordionCheckbox_smallLabel"
-                                                            >
+                                                            ><div class="accordion-checkbox-small-label">
                                                                 회원가입 약관<span
-                                                                    class="TermsAgreementCheckbox_required"
+                                                                    class="terms-agreement-checkbox-required"
                                                                 >
                                                                     (필수)</span
                                                                 >
@@ -205,14 +188,14 @@
                                                 >
                                             </div>
                                             <button
-                                                class="AccordionCheckbox_accordionButton AccordionCheckbox_text"
+                                                class="accordion-checkbox-button accordion-checkbox-button-text active"
                                                 aria-label="내용 보기"
                                             >
                                                 <svg
                                                     viewBox="0 0 32 32"
                                                     focusable="false"
                                                     role="presentation"
-                                                    class="withIcon_icon"
+                                                    class="with-icon"
                                                     aria-hidden="true"
                                                     style="width: 12px; height: 12px;"
                                                 >
@@ -222,8 +205,8 @@
                                                 </svg>
                                             </button>
                                         </div>
-                                        <div class="TermsAgreementCheckbox_children">
-                                            <main class="Terms_terms terms">
+                                        <div class="terms-agreement-checkbox-children active">
+                                            <main class="terms-terms">
                                                 <article>
                                                     <h1>회원가입약관</h1>
                                                     <p>와디즈 회원가입과 관련하여 필요한 사항을 규정합니다.</p>
@@ -285,23 +268,20 @@
                                                 </article>
                                             </main>
                                         </div>
-                                        <div
-                                            class="AccordionCheckbox_accordionHeader ServiceAgreementCheckbox_terms TermsConfirmBody_terms"
-                                        >
+                                        <div class="accordion-checkbox-accordion-header-service">
                                             <div>
-                                                <label
-                                                    class="Checkbox_checkbox Checkbox_sm Checkbox_labeled AccordionCheckbox_checkbox"
+                                                <label class="accordion-checkbox-checkbox-essential"
                                                     ><input
                                                         required=""
                                                         type="checkbox"
-                                                        class="Checkbox_input possible children"
+                                                        class="checkbox-input possible children"
                                                         id="detail"
-                                                    /><span class="Checkbox_icon" aria-hidden="true"
+                                                    /><span class="checkbox-icon" aria-hidden="true"
                                                         ><svg
                                                             viewBox="0 0 16 2"
                                                             focusable="false"
                                                             role="presentation"
-                                                            class="withIcon_icon Checkbox_removeIcon"
+                                                            class="with-icon checkbox-remove-icon"
                                                             aria-hidden="true"
                                                         >
                                                             <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
@@ -310,7 +290,7 @@
                                                             viewBox="0 0 48 48"
                                                             focusable="false"
                                                             role="presentation"
-                                                            class="withIcon_icon Checkbox_checkIcon"
+                                                            class="with-icon checkbox-checkicon"
                                                             aria-hidden="true"
                                                         >
                                                             <path
@@ -318,13 +298,11 @@
                                                             ></path>
                                                         </svg>
                                                     </span>
-                                                    <span class="Checkbox_content"
+                                                    <span class="checkbox-content"
                                                         ><span
-                                                            ><div
-                                                                class="AccordionCheckbox_label AccordionCheckbox_smallLabel"
-                                                            >
-                                                                서포터 이용약관<span
-                                                                    class="TermsAgreementCheckbox_required"
+                                                            ><div class="accordion-checkbox-small-label">
+                                                                원랩 이용약관<span
+                                                                    class="terms-agreement-checkbox-required"
                                                                 >
                                                                     (필수)</span
                                                                 >
@@ -334,14 +312,14 @@
                                                 >
                                             </div>
                                             <button
-                                                class="AccordionCheckbox_accordionButton AccordionCheckbox_text"
+                                                class="accordion-checkbox-button accordion-checkbox-button-text active"
                                                 aria-label="내용 보기"
                                             >
                                                 <svg
                                                     viewBox="0 0 32 32"
                                                     focusable="false"
                                                     role="presentation"
-                                                    class="withIcon_icon"
+                                                    class="with-icon"
                                                     aria-hidden="true"
                                                     style="width: 12px; height: 12px;"
                                                 >
@@ -351,8 +329,8 @@
                                                 </svg>
                                             </button>
                                         </div>
-                                        <div class="TermsAgreementCheckbox_children">
-                                            <main class="Terms_terms terms">
+                                        <div class="terms-agreement-checkbox-children active">
+                                            <main class="terms-terms">
                                                 <article>
                                                     <h1>서포터 이용약관</h1>
                                                     <p>와디즈(주)의 서포터 이용약관을 규정합니다.</p>
@@ -423,23 +401,20 @@
                                                 </article>
                                             </main>
                                         </div>
-                                        <div
-                                            class="AccordionCheckbox_accordionHeader ServiceAgreementCheckbox_terms TermsConfirmBody_terms"
-                                        >
+                                        <div class="accordion-checkbox-accordion-header-service">
                                             <div>
-                                                <label
-                                                    class="Checkbox_checkbox Checkbox_sm Checkbox_labeled AccordionCheckbox_checkbox"
+                                                <label class="accordion-checkbox-checkbox-essential"
                                                     ><input
                                                         required=""
                                                         type="checkbox"
-                                                        class="Checkbox_input possible children"
+                                                        class="checkbox-input possible children"
                                                         id="detail"
-                                                    /><span class="Checkbox_icon" aria-hidden="true"
+                                                    /><span class="checkbox-icon" aria-hidden="true"
                                                         ><svg
                                                             viewBox="0 0 16 2"
                                                             focusable="false"
                                                             role="presentation"
-                                                            class="withIcon_icon Checkbox_removeIcon"
+                                                            class="with-icon checkbox-remove-icon"
                                                             aria-hidden="true"
                                                         >
                                                             <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
@@ -448,19 +423,17 @@
                                                             viewBox="0 0 48 48"
                                                             focusable="false"
                                                             role="presentation"
-                                                            class="withIcon_icon Checkbox_checkIcon"
+                                                            class="with-icon checkbox-checkicon"
                                                             aria-hidden="true"
                                                         >
                                                             <path
                                                                 d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"
                                                             ></path></svg></span
-                                                    ><span class="Checkbox_content"
+                                                    ><span class="checkbox-content"
                                                         ><span
-                                                            ><div
-                                                                class="AccordionCheckbox_label AccordionCheckbox_smallLabel"
-                                                            >
+                                                            ><div class="accordion-checkbox-small-label">
                                                                 개인정보 수집 및 이용 동의<span
-                                                                    class="TermsAgreementCheckbox_required"
+                                                                    class="terms-agreement-checkbox-required"
                                                                 >
                                                                     (필수)</span
                                                                 >
@@ -470,14 +443,14 @@
                                                 >
                                             </div>
                                             <button
-                                                class="AccordionCheckbox_accordionButton AccordionCheckbox_text"
+                                                class="accordion-checkbox-button accordion-checkbox-button-text active"
                                                 aria-label="내용 보기"
                                             >
                                                 <svg
                                                     viewBox="0 0 32 32"
                                                     focusable="false"
                                                     role="presentation"
-                                                    class="withIcon_icon"
+                                                    class="with-icon"
                                                     aria-hidden="true"
                                                     style="width: 12px; height: 12px;"
                                                 >
@@ -487,8 +460,8 @@
                                                 </svg>
                                             </button>
                                         </div>
-                                        <div class="TermsAgreementCheckbox_children">
-                                            <main class="Terms_terms terms">
+                                        <div class="terms-agreement-checkbox-children active">
+                                            <main class="terms-terms">
                                                 <article>
                                                     <p>
                                                         와디즈(주)(이하 “회사")가 제공하는 서비스에 회원가입 신청하시는
@@ -630,23 +603,20 @@
                                             </main>
                                         </div>
                                     </div>
-                                    <div
-                                        class="AccordionCheckbox_accordionHeader ServiceAgreementCheckbox_container TermsConfirmBody_service"
-                                    >
+                                    <div class="accordion-checkbox-header">
                                         <div data-testid="service-agreement-checkbox">
-                                            <label
-                                                class="Checkbox_checkbox Checkbox_md Checkbox_labeled AccordionCheckbox_checkbox"
+                                            <label class="accordion-checkbox-checkbox"
                                                 ><input
                                                     name="funding"
                                                     type="checkbox"
-                                                    class="Checkbox_input"
+                                                    class="checkbox-input"
                                                     id="detail"
-                                                /><span class="Checkbox_icon" aria-hidden="true"
+                                                /><span class="checkbox-icon" aria-hidden="true"
                                                     ><svg
                                                         viewBox="0 0 16 2"
                                                         focusable="false"
                                                         role="presentation"
-                                                        class="withIcon_icon Checkbox_removeIcon"
+                                                        class="with-icon checkbox-remove-icon"
                                                         aria-hidden="true"
                                                     >
                                                         <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
@@ -655,43 +625,40 @@
                                                         viewBox="0 0 48 48"
                                                         focusable="false"
                                                         role="presentation"
-                                                        class="withIcon_icon Checkbox_checkIcon"
+                                                        class="with-icon checkbox-checkicon"
                                                         aria-hidden="true"
                                                     >
                                                         <path
                                                             d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"
                                                         ></path></svg></span
-                                                ><span class="Checkbox_content"
+                                                ><span class="checkbox-content"
                                                     ><span
-                                                        ><div class="AccordionCheckbox_label">
+                                                        ><div class="accordion-checkbox-label">
                                                             회원·서비스 이벤트 혜택 알림(선택)
                                                         </div></span
                                                     ></span
                                                 ></label
-                                            ><em class="HelperMessage_helperMessage Checkbox_message Checkbox_md"
+                                            ><em class="helper-message-checkbox"
                                                 >펀딩·프리오더·스토어 서비스, 이벤트·할인 혜택 등에 대한 정보를 이메일,
                                                 앱 알림(앱 회원가입 시)로 받아볼 수 있습니다. (동의 철회 시까지)</em
                                             >
                                         </div>
                                     </div>
-                                    <div
-                                        class="AccordionCheckbox_accordionHeader ServiceAgreementCheckbox_container TermsConfirmBody_service"
-                                    >
+                                    <div class="accordion-checkbox-header">
                                         <div data-testid="service-agreement-checkbox">
-                                            <label
-                                                class="Checkbox_checkbox Checkbox_md Checkbox_labeled AccordionCheckbox_checkbox"
+                                            <label class="accordion-checkbox-checkbox"
                                                 ><input
                                                     name="funding"
                                                     required=""
                                                     type="checkbox"
-                                                    class="Checkbox_input possible"
+                                                    class="checkbox-input possible"
                                                     id="detail"
-                                                /><span class="Checkbox_icon" aria-hidden="true"
+                                                /><span class="checkbox-icon" aria-hidden="true"
                                                     ><svg
                                                         viewBox="0 0 16 2"
                                                         focusable="false"
                                                         role="presentation"
-                                                        class="withIcon_icon Checkbox_removeIcon"
+                                                        class="with-icon checkbox-remove-icon"
                                                         aria-hidden="true"
                                                     >
                                                         <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
@@ -700,16 +667,16 @@
                                                         viewBox="0 0 48 48"
                                                         focusable="false"
                                                         role="presentation"
-                                                        class="withIcon_icon Checkbox_checkIcon"
+                                                        class="with-icon checkbox-checkicon"
                                                         aria-hidden="true"
                                                     >
                                                         <path
                                                             d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"
                                                         ></path></svg></span
-                                                ><span class="Checkbox_content"
+                                                ><span class="checkbox-content"
                                                     ><span
-                                                        ><div class="AccordionCheckbox_label">
-                                                            <div class="ServiceAgreementCheckbox_required">
+                                                        ><div class="accordion-checkbox-label">
+                                                            <div class="service-agreement-checkbox-required">
                                                                 <strong>만 14세 이상입니다.</strong><span> (필수)</span>
                                                             </div>
                                                         </div></span
@@ -719,11 +686,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="TermsConfirmFooter_container App_footer">
-                                    <div class="FixedToast_toast"></div>
+                                <div class="terms-confirm-footer-container">
+                                    <div class="fixed-toast"></div>
                                     <button
                                         aria-label="confirmation"
-                                        class="Button_button Button_primary Button_contained Button_lg Button_block Button_disabled"
+                                        class="complete-button button-disabled"
                                         type="button"
                                     >
                                         <span><span class="Button_children">회원가입 완료</span></span>
@@ -736,6 +703,6 @@
             </div>
         </div>
     </body>
-    <script src="/staticfiles/js/terms-of-service-yujin/terms-of-service.js"></script>
     <script src="/staticfiles/js/terms-of-service-yujin/terms-of-service-detail.js"></script>
+    <script src="/staticfiles/js/terms-of-service-yujin/terms-of-service.js"></script>
 </html>

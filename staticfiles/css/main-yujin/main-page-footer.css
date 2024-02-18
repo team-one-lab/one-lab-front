@@ -560,48 +560,6 @@ footer {
     justify-content: flex-start;
 }
 
-.icon-google-play:before {
-    display: inline-block;
-    margin-top: -0.2em;
-    vertical-align: middle;
-    text-transform: none;
-    line-height: 1;
-    font-family: wadizicon!important;
-    font-weight: 400;
-    -moz-osx-font-smoothing: grayscale;
-    font-style: normal;
-    font-variant: normal;
-    content: "\e967";
-}
-
-
-.icon-apple:before {
-    display: inline-block;
-    margin-top: -0.2em;
-    vertical-align: middle;
-    text-transform: none;
-    line-height: 1;
-    font-family: wadizicon!important;
-    font-weight: 400;
-    -moz-osx-font-smoothing: grayscale;
-    font-style: normal;
-    font-variant: normal;
-    content: "\e90f";
-}
-
-.web-footer [class*=icon-]:before {
-    color: #545a60;
-    font-size: 24px;
-}
-
-.web-footer a[class*=icon-]:before {
-    transition: color .2s;
-}
-
-.FooterContainer_container .FooterContainer_rightSection .FooterContainer_appStoreSection a:before {
-    margin-right: 4px;
-}
-
 .FooterContainer_container .FooterContainer_rightSection .FooterContainer_appStoreSection a {
     line-height: 20px;
     font-size: 14px;

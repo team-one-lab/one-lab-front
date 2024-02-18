@@ -1,5 +1,5 @@
 // 회원 서비스 가입란 선택 시 나오는 상세보기
-const services = document.querySelector(".AccordionCheckbox_accordionButton");
+const services = document.querySelector(".accordion-checkbox-button");
 const detailJoin = document.querySelector(".detail-join");
 // console.log(services);
 
@@ -9,8 +9,8 @@ services.addEventListener("click", function() {
 )
 
 // 회원가입 약관, 서포터 이용약관, 개인정보 수집 및 이용 동의 선택시 나오는 상세보기
-const terms = document.querySelectorAll(".TermsAgreementCheckbox_children");
-const buttons = document.querySelectorAll(".AccordionCheckbox_text");
+const terms = document.querySelectorAll(".terms-agreement-checkbox-children");
+const buttons = document.querySelectorAll(".accordion-checkbox-button-text");
 
 buttons.forEach((button) => {
     const parent = button.parentElement
@@ -23,7 +23,7 @@ buttons.forEach((button) => {
 
 // 화살표 누를시 방향 전환
 
-const arrows = document.querySelectorAll(".AccordionCheckbox_accordionButton");
+const arrows = document.querySelectorAll(".accordion-checkbox-button");
 
 arrows.forEach((arrow) => {
     arrow.addEventListener("click", function() {
