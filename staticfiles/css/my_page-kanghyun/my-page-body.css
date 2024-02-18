@@ -223,7 +223,7 @@ h4{
     margin: 0 auto;
     border-radius: 8px;
     background-color: #e9ecef;
-    width: 122px;
+    width: 61px;
     height: 28px;
 }
 
@@ -422,6 +422,7 @@ h4{
     font-size: 16px;
     width: 100%;
     border-radius: 999em;
+    margin-top: 16px;
 }
 
 .Button_button span{
@@ -464,7 +465,7 @@ h4{
     padding-top: 16px;
     padding-bottom: 16px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 0;
 }
 
@@ -563,7 +564,7 @@ h4{
 .my-page-project-info-project{
     display: flex;
     flex-direction: column;
-    margin: 0 16px;
+    margin: 0;
     border: solid 1px #dde2e6;
     border-radius: 8px;
     background-color: #fff;
@@ -574,9 +575,13 @@ h4{
     display: flex;
     align-items: center;
     padding: 12px 16px;
-    height: 81px;
+    height: 45px;
 }
 
+.my-page-project-info-projectLink :hover {
+    background-color: #e8f5e9;
+}
+/* cce6f9 */
 .my-page-project-content{
     font-size: 12px;
     font-weight: 500;
@@ -587,6 +592,11 @@ h4{
     align-items: center;
     cursor: pointer;
     gap: 4px;
+}
+
+.my-page-project-content.onclick {
+    background-color: #cce6f9;
+    color: #fff;
 }
 
 .my-page-project-info-projectLink>a{
@@ -631,7 +641,7 @@ h4{
     background-color: #f9fafb;
 }
 
-.my-page-project-info-payment a{
+.my-page-project-info-payment button{
     padding: 12px 16px;
     display: block;
     height: 100%;
@@ -652,12 +662,10 @@ h4{
     align-items: center;
 }
 
-.my-page-project-info-icon{
-    display: inline-block;
+.my-page-project-info-titleinfo>svg {
     margin-right: 8px;
-    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNC43OTg0IDAuNDAwMzkxSDEuMTk4NDRDMC43NTY2MSAwLjQwMDM5MSAwLjM5ODQzOCAwLjc1ODU2MyAwLjM5ODQzOCAxLjIwMDM5VjEwLjgwMDRDMC4zOTg0MzggMTEuMjQyMiAwLjc1NjYxIDExLjYwMDQgMS4xOTg0NCAxMS42MDA0SDE0Ljc5ODRDMTUuMjQwMyAxMS42MDA0IDE1LjU5ODQgMTEuMjQyMiAxNS41OTg0IDEwLjgwMDRWMS4yMDAzOUMxNS41OTg0IDAuNzU4NTYzIDE1LjI0MDMgMC40MDAzOTEgMTQuNzk4NCAwLjQwMDM5MVpNMTQuNzk4NCAxLjIwMDM5VjQuMzAwMzlIMS4xOTg0NFYxLjIwMDM5SDE0Ljc5ODRaTTEuMTk4NDQgMTAuODAwNFY1LjEwMDM5SDE0Ljc5ODRWMTAuODAwNEgxLjE5ODQ0WiIgZmlsbD0iIzQ5NTA1NyIvPgo8L3N2Zz4K) no-repeat center/16px 16px;
-    width: 16px;
-    height: 16px;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .my-page-project-info-title{
@@ -680,7 +688,7 @@ h4{
     display: flex;
     align-items: center;
     height: 18px;
-    color: #00c4c4;
+    color: rgb(0, 196, 196);
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
@@ -909,4 +917,442 @@ h4{
     background-color: #f9fafb;
     padding: 3px 8px;
     color: #212529;
+}
+
+/* 탭 목록 스타일 */
+.my-page-onelab-tab-wrapper {
+    display: none;
+    margin: 0;
+    border: solid 1px #dde2e6;
+    border-radius: 8px;
+    background-color: #fff;
+
+    width: 200px;
+}
+.my-page-fileshare-tab-wrapper {
+    display: none;
+    position: absolute;
+    top: 92px;
+    left: 200px;
+    margin: 0;
+    border: solid 1px #dde2e6;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 200px;
+
+}
+
+.my-page-onelab-tab {
+    
+    padding-bottom: 4px;
+    padding-top: 4px;
+    position: relative;
+}
+
+.my-page-fileshare-tab {
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.select-menu-option {
+    cursor: default;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    height: 45px;
+    text-align: center;
+}
+
+.my-page-onelab-tab :hover {
+    background-color: #cce6f9;
+}
+
+.my-page-fileshare-tab :hover {
+    background-color: #cce6f9;
+}
+
+/* 원랩 클릭했을 때 나타나는 페이지 */
+.my-page-onelab-page-container {
+    margin: 0;
+    border: transparent;
+    background-color: #fff;
+    height: 55%;
+    width: 100%;
+}
+
+/* 페이지 닫는 버튼 */
+.close-button-wrapper {
+    position: absolute;
+    right: 0px;
+    height: 32px;
+}
+
+
+button.close-button {
+    width: 32px;
+    height: 32px;
+    z-index: 999;
+}
+
+div.main-list-filter-container {
+    width: 990px;
+}
+
+div.search-result-more-container {
+    width: 990px;
+}
+
+div.main-container {
+    width: 990px;
+    animation-name: onelab-page-open;
+    animation-duration: 0.3s;
+    display: none;
+}
+
+/* 좋아요 확인 토스트 창 */
+
+div.like-clicked-toast-container {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    animation-name: like-toast;
+    animation-duration: 0.3s;
+}
+
+div.like-canceled-toast-container {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    animation-name: like-toast;
+    animation-duration: 0.3s;
+}
+
+.alertify-o {
+    
+    margin-left: -150px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    width: 300px;
+    box-shadow: 0 3px 3px rgba(103, 218, 164, 0.3);
+    background: #fff;
+    background-clip: padding-box;
+    position: sticky;
+    left: 50%;
+    opacity: 1;
+    z-index: 999999;
+}
+
+
+.alertify-o-inner {
+    text-align: center;
+}
+
+.alertify-o-message {
+    margin-bottom: 30px;
+    line-height: 20px;
+    color: #4a4a4a;
+    font-size: 12px!important;
+}
+
+.alertify-o-message {
+    margin: 35px auto 40px;
+    padding: 2px 15px 0;
+}
+
+.alertify-o-buttons {
+    margin-bottom: 20px;
+}
+/* 대학생 인증하는 모달페이지 스타일 */
+
+.bottom-modal-certification-portal {
+    position: relative;
+    display: none;
+}
+
+.bottom-modal-overlay-after-open {
+    background: rgba(0,0,0,.4);
+}
+
+.bottom-modal-overlay {
+    transition-duration: .15s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .15s ease-in;
+    z-index: 9998;
+    text-align: center;
+}
+
+.banner-container-overlay [class*=bottom-modal-content] {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-height: none;
+}
+.bottom-modal-content-after-open {
+    transform: translateY(0);
+    transition-timing-function: ease-in;
+    transition-delay: 0ms;
+}
+
+.bottom-modal-content {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+    transition: .15s ease-out 50ms;
+    transition-property: transform;
+    outline: none;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -313px;
+    pointer-events: none;
+}
+
+.banner-container-overlay [class*=bottom-modal-container] {
+    border-radius: 16px;
+    min-width: 400px;
+}
+
+.bottom-modal-content-after-open>.bottom-modal-container {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.bottom-modal-container {
+    display: inline-block;
+    position: relative;
+    transition: .15s ease-out;
+    transition-property: transform,opacity;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,.4);
+    width: auto;
+    max-height: none;
+    overflow-x: visible;
+    overflow-y: visible;
+    background-color: #fff;
+    padding-bottom : calc(-16px + env(safe-area-inset-bottom));
+    text-align: left;
+    pointer-events: auto;
+}
+
+.banner-container-modal-container {
+    position: relative;
+    padding: 32px 24px 60px;
+    padding-bottom: 24px;
+
+}
+
+.banner-container-close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.with-icon-icon {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.banner-container-modal-container .banner-container-modal-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    display: block;
+    padding-right: 40px;
+}
+
+.banner-container-brMo {
+    display: inline-block;
+}
+
+.banner-container-modal-description {
+    margin: -12px 0 16px 0px;
+    color: #495057;
+}
+.banner-container-modal-success {
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #008243;
+    position: absolute;
+    top: 162px
+}
+
+.banner-container-modal-fail {
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #820000;
+    position: absolute;
+    top: 162px
+}
+.news-letter-text-field-form .news-letter-text-field-text-field {
+    margin-bottom: 16px;
+}
+
+.text-field-text-field {
+    display: block;
+    position: relative;
+}
+
+.text-field_lg>label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.news-letter-text-field-text-field label {
+    display: none;
+}
+
+.text-field-text-field>label {
+    padding-bottom: 4px;
+}
+.text-field-field {
+    display: flex;
+}
+.text-field-text-feld .text-field-field {
+    position: relative;
+}
+textarea {
+    font-family: Pretendard;
+    resize : none;
+}
+.input-input.input-lg {
+    height: 48px;
+    min-height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: inherit;
+    margin-right: 12px;
+}
+.input-lg::placeholder{
+    color: #949fa8;
+}
+.input-input.input-content {
+    height: 160px;
+    min-height: 48px;
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 1.5;
+    
+}
+.input-content::placeholder{
+    color: #949fa8;
+}
+
+
+.input-input {
+    display: block;
+    transition-property: border-color,background-color,color;
+    transition-duration: .15s;
+    outline: none;
+    border: 1px solid #dde2e6;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 0 16px;
+    width: 100%;
+    color: #212529;
+}
+
+.button-button.button-primary.button-contained {
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+    color: #fff;
+}
+
+
+.button-button.button-xl {
+    padding: 9px 27px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.button-button.button-block {
+    width: 36%;
+}
+
+.button-button{
+    position: relative;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.news-letter-text-field-submit-button span {
+    pointer-events: none;
+}
+
+.button-button span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.button-button .button-children {
+    vertical-align: top;
+}
+
+.bottom-modal-handle {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: 0 36px;
+    width: calc(100% - 72px);
+    height: 24px;
+}
+
+#openmodal {
+    font-family: inherit;
+    background-color: blue;
+    color:white;
+    outline:black;
+    cursor: pointer;
+}
+
+/* 프로필 설정 모달 */
+.bottom-modal-profile-portal {
+    display: none;
+}
+
+/* 화면 애니메이션 */
+@keyframes onelab-page-open {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity : 1;
+    }
+}
+
+@keyframes like-toast {
+    from {bottom: 0px;}
+    to {bottom: 100px;}
 }
