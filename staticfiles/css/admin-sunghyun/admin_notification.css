@@ -1,4 +1,4 @@
-
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 html {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
@@ -16,7 +16,10 @@ html {
 }
 
 li:hover{
-    background-color: #f2f0fc;
+    background-color: #e0eae7;
+}
+.user-list:hover{
+    background-color: #e6e6e7;
 }
 
 html {
@@ -71,19 +74,54 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 }
 
 /*----------*/
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-th, td {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 3px;
-}
-th {
-    background-color: #f2f2f2;
-}
+h2 { font-weight: border; }
+.hr1 { border: 0;
+height: 2px;
+background:  #d3d3d3;}
+    .grey { 
+     color: #727272;}
+     #strong { font-weight: 900;}
+
+            table {
+            width: 100%;
+            border-top: 1px solid #d3d3d3;
+            border-collapse: collapse;
+            }
+            th { background-color: #daefce ; 
+            border-top: 3px solid #daefce;
+            }
+            th, td {
+            border-bottom: 1px solid #d3d3d3;
+            padding: 10px;
+            }
+
+  .greylist {
+  width: 50px;
+  height: 30px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  background: grey;
+  border: solid 2px white;
+  border-radius: 5px;
+  }
+  .gradient {
+  width: 80px;
+  height: 30px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  background: linear-gradient( to bottom, grey, black );
+  border: solid 2px white;
+  border-radius: 5px;
+  }
+
+            .left {text-align: left;}
+            .right {  float: right;}
+            .center { text-align: center;}
+
+a {color:black;
+text-decoration-line : none;}
     .lg\:px-\[32px\] {
         padding-left: 32px;
         padding-right: 32px;
@@ -333,11 +371,11 @@ ul{
     width: 24px;
     height: 24px;
     margin-right: 10px;
-    color: #7e69fe;
-    fill: #7e69fe;
+    color: #008243;
+    fill: #008243;
 }
 .surface_light{
-    background-color: #f2f0fc;
+    background-color: #e0eae7;
 }
 .block-primary{
     display: block;
@@ -631,7 +669,7 @@ p{
     position: relative;
 }
 button:hover {
-    background-color: #ddd;
+    background-color: #e6e6e7;
 }
 .justify-end{
     justify-content: space-between;
@@ -696,6 +734,7 @@ button:hover {
     column-gap: 24px;
     align-items: center;
     display: flex;
+    background-color: #f5f2f2;
     margin-top: 20px;
 }
 .shrink-name{
@@ -706,6 +745,7 @@ button:hover {
     font-weight: 500;
     font-size: 13px;
     line-height: 18px;
+    background-color: #f5f2f2;
     color: #1d1d1e;
     fill: #1d1d1e;
 }
@@ -800,6 +840,25 @@ section{
     color: #5b44ea;
     fill: #5b44ea;
 }
+.auth0:hover{
+    background-color: #00704A;
+}
+.auth0{
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    fill: #fff;
+    margin-left: 603px;
+    background-color: #008244;
+}
 .relative-disabled1{
     padding-left: 15px;
     padding-right: 15px;
@@ -883,13 +942,15 @@ section{
     fill: #333334;
 }
 .min-5{
-    justify-content: center;
-   
+    justify-content: center; 
     display: flex;
     margin-left: 70px;
 }
 input::placeholder{
     text-align: center;
+}
+.dropdown-content{
+    margin-top: 32px;
 }
 .grid-px{
     padding-left: 12px;
@@ -910,8 +971,10 @@ input::placeholder{
     border-bottom-width: 1px;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     min-height: 36px;
     display: flex;
+    background-color: #f5f2f2;
     border-color: #e6e6e7;
     color: #1d1d1e;
     fill: #1d1d1e;
@@ -967,4 +1030,82 @@ input::placeholder{
     fill: #8a8a8b;
 }
 
+.min-1{
+    justify-content: center;
+    min-width: 80px;
+    display: flex;
+    
+}
+.mt-32{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.min-2 {
+    justify-content: center;
+    min-width: 63px;
+    display: flex;
+    margin-right: 145px;
+    
+}
+.min-3{
+    margin-right: 30px;
+}
+.grid-px {
+    padding-left: 12px;
+    /* padding-right: 45px; */
+    column-gap: 90px;
+    grid-auto-flow: column;
+    display: grid;
+}
 
+.user-list{
+    width: 944px; 
+    height: 23px; 
+    border-style: solid; 
+    border-bottom-width: 1px; 
+    justify-content: space-between; 
+    align-items: center; min-height: 60px; 
+    display: flex; 
+    border-color: #e6e6e7;
+}
+.auth1{
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    fill: #fff;
+    background-color: #d0320b;
+}
+.auth1:hover{
+    background-color: #892107;
+}
+.check{
+    margin-left: 10px;
+}
+.check2{
+    width: 100px;
+    height: 20px;
+}
+.email{
+    padding-left: 52px;
+    width: 200px;
+} 
+.name{
+    padding-left: 70px
+}
+.type{
+    padding-left: 10px;
+}
+.date{
+    padding-left: 20px;
+}

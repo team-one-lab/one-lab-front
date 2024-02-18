@@ -29,11 +29,15 @@ admin_competition = 공모전/대회 관리 페이지
     <head>
         <link
             rel="stylesheet"
-            href="/staticfiles/css/admin-sunghyun/admin_message-2.css"
+            href="/staticfiles/css/admin-sunghyun/admin_message.css"
         />
         <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
-        <script src="/staticfiles/js/admin-sunghyun/admin_main.js"></script>
-        <link rel="preload" href="/staticfiles/css/test_admin_font.css" />
+        
+        <link 
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>One Lab 관리자페이지</title>
@@ -58,36 +62,14 @@ admin_competition = 공모전/대회 관리 페이지
                                         d="M21.96 15.796h9.232A15.592 15.592 0 0 0 .059 14.55c-.011.116-.019.234-.027.351v.105c-.013.21-.022.423-.022.637v.154h9.957c0-2.987-2.228-5.412-4.978-5.412a4.755 4.755 0 0 0-3.41 1.473c1.051-1.346 2.63-2.203 4.395-2.203 3.165 0 5.725 2.75 5.725 6.142h7.562v-.154c0-5.7-4.31-10.321-9.629-10.321a9.085 9.085 0 0 0-4.62 1.266 10.976 10.976 0 0 1 16.949 9.21v-.003Z"
                                     ></path>
                                 </svg>
-                                <svg
-                                    viewBox="0 0 115 16"
-                                    xmlns="https://www.w3.org/2000/svg"
-                                    class="lg:block hidden-inverse"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M98.073 1.695a1.695 1.695 0 1 1 1.695 1.695 1.687 1.687 0 0 1-1.695-1.695Zm2.967 2.863v11.23h-2.539V4.556l2.539.002Zm-7.842 11.23h2.544V.102h-2.544v5.725h-.042a4.791 4.791 0 0 0-3.517-1.483c-2.925 0-5.214 2.332-5.214 5.828 0 3.496 2.29 5.827 5.214 5.827a4.79 4.79 0 0 0 3.517-1.483h.042v1.272Zm-3.054-2.162c-1.737 0-3.093-1.4-3.093-3.454 0-2.056 1.355-3.455 3.093-3.455 1.739 0 3.094 1.4 3.094 3.455s-1.356 3.454-3.094 3.454Zm-45.282 2.373c-3.709 0-6.167-1.867-6.336-4.978h2.925c.317 1.906 1.653 2.584 3.327 2.584 1.843 0 2.986-.847 2.986-1.927 0-1.376-1.604-1.75-3.542-2.202l-.462-.108C41.28 8.774 38.78 7.8 38.78 4.81c0-2.204 1.887-4.492 5.531-4.492 3.221 0 5.68 1.908 6.04 4.768h-2.884c-.296-1.292-1.207-2.374-3.094-2.374-1.674 0-2.839.827-2.839 1.93 0 1.49 1.468 1.83 3.482 2.298l.587.138c2.331.551 4.916 1.42 4.916 4.344 0 2.86-2.31 4.576-5.658 4.576Zm11.59-9.155v5.02c0 1.526.933 1.759 1.675 1.759.405.003.805-.091 1.166-.275v2.288c-.46.18-.948.272-1.441.276-2.14 0-3.942-1.06-3.942-4.108v-4.96h-2.328V4.556h2.33V1.32h2.543v3.236h2.843v2.288h-2.845Zm14.814 5.532h-2.739c-.516 1.113-1.329 1.377-2.516 1.377-1.441 0-2.712-.954-2.903-2.755h8.304c0-4.539-2.648-6.654-5.615-6.654-3.052 0-5.446 2.332-5.446 5.828 0 3.496 2.4 5.827 5.636 5.827 2.268 0 4.532-1.048 5.279-3.623Zm-2.67-3.328h-5.51c.277-1.415 1.42-2.437 2.756-2.437 1.335 0 2.479 1.018 2.754 2.437Zm14.135 6.74h-2.5a17.563 17.563 0 0 1-.063-1.442h-.044C79.107 15.597 77.837 16 76.564 16c-2.246 0-3.877-1.334-3.877-3.496 0-1.674 1.08-3.263 4.068-3.391 1.357-.064 3.327-.085 3.327-.085v-.571c0-1.378-1.144-2.035-2.331-2.035-1.188 0-2.097.657-2.24 1.695h-2.634c.125-2.395 2.098-3.772 4.895-3.772 2.819 0 4.854 1.76 4.854 4.408v3.39c0 2.035.02 2.946.105 3.645Zm-5.234-4.832c-1.59.085-2.183.678-2.183 1.505 0 .953.763 1.44 1.844 1.44 1.59 0 2.924-.975 2.924-2.628v-.423s-1.419.043-2.585.106Zm31.193-6.57c-3.242 0-5.742 2.522-5.742 5.807 0 3.289 2.498 5.805 5.741 5.805 3.243 0 5.744-2.521 5.744-5.805 0-3.285-2.501-5.808-5.743-5.808Zm.004 2.373c1.777 0 3.112 1.42 3.112 3.434 0 2.012-1.336 3.432-3.112 3.432s-3.111-1.419-3.111-3.432c0-2.014 1.334-3.434 3.111-3.434Z"
-                                    ></path>
-                                    <path
-                                        d="M21.96 15.796h9.232A15.592 15.592 0 0 0 .059 14.55c-.011.116-.019.234-.027.351v.105c-.013.21-.022.423-.022.637v.154h9.957c0-2.987-2.228-5.412-4.978-5.412a4.755 4.755 0 0 0-3.41 1.473c1.051-1.346 2.63-2.203 4.395-2.203 3.165 0 5.725 2.75 5.725 6.142h7.562v-.154c0-5.7-4.31-10.321-9.629-10.321a9.085 9.085 0 0 0-4.62 1.266 10.976 10.976 0 0 1 16.949 9.21v-.003Z"
-                                    ></path>
-                                </svg>
+                                <img src="/staticfiles/images/header-logo.png" style="width: 89px;">
+                               
                             </a>
                             <div class="font-inverse">|</div>
                             <div class="font-center">
-                                <span>ONELAB 관리자 페이지</span>
+                                <span style="color: #008243;">관리자 페이지</span>
                             </div>
                         </div>
-                        <!-- <div class="flex-end">
-                            <div class="relative">
-                                <button class="relative-active">
-                                    <img alt="관리자 프로필 이미지" sizes="10vw" 
-                                    srcset="/_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=500&q=75 500w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=768&q=75 768w, /_next/image?url=https%3A%2F%2Fsteadio.imgix.net%2Fprofiles%2Fd872d703-d8d1-4c36-aed4-43c0cfb89547%2FprofileImage%2F1b027747-2c89-4e33-bd7c-fd36ba290b83.jpg%3Fauto%3Dformat%252Ccompress%26fm%3Djpg%26h%3D300%26lossless%3Dtrue%26w%3D300&w=1024&q=75 1024w"
-                                    decoding="async" data-nimg="fill" class="rounded-full" loading="lazy" style="position: absolute;
-                                    height: 100%; width: 100%; inset: 0px; color: transparent;">
-                                </button>
-                            </div>
-                    </div> -->
                     <!--헤더마무리-->
                 </nav>
 
@@ -111,7 +93,7 @@ admin_competition = 공모전/대회 관리 페이지
                                 <h2 class="admin-name">관리자</h2>
                                 <a traget="_blank" href="">
                                     <button aria-label="button" class="relative-disabled" type="button">
-                                        <div class="flex-center">관리자 계정관리</div>
+                                        <div class="flex-center">관리자 로그인</div>
                                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" 
                                         class="ml" height="16px" width="16px">
                                         <path d="M11 7a1 1 0 0 0-1-1H4v14h14v-6a1 1 0 1 0-2 0v4H6V8h4a1 1 0 0 0 1-1Z"></path>
@@ -208,8 +190,8 @@ admin_competition = 공모전/대회 관리 페이지
                                     <div>
                                         <div class="w-240">
                                             <label class="w-between">
-                                                <input class="outline-full" placeholder="회원 검색"
-                                                type="search" value>
+                                                <input class="outline-full" placeholder="메세지 조회"
+                                                type="search" style="text-align: left;">
                                                 <button aria-label="search button" class="ml-10" type="button">
                                                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                                                     class="w-primary">
@@ -221,12 +203,7 @@ admin_competition = 공모전/대회 관리 페이지
                                         </div>
                                         <!--검색창 구현-->
 
-                                        <!-- <div class="flex-gap">
-                                            <button aria-label="button"
-                                            class="relative-content" type="button">베너 수정</button>
-                                            <button aria-label="button"
-                                            class="relative-content" type="button">헤더 수정</button>
-                                        </div> -->
+                                       
                                     </div>
                                 </header>
                         
@@ -241,47 +218,28 @@ admin_competition = 공모전/대회 관리 페이지
                                                 <p class="font-sm">0</p>
                                             </div>
                                         </div>
+                                          
+
                                     </button> 
+                                    
+
                                     <div class="absolute-inverse"></div>
                                         </li>
                                         <li class="relative">
                                             <button aria-label="tab button" 
                                             class="block-content1" type="button" onclick="location.href=''">
                                             <div>
-                                                <!-- <div class="flex">
-                                                    <p class="font-xl">회원 탈퇴</p>
-                                                    <div class="ml-8" style="height: 20px;">
-                                                        <p class="font-bold">0</p>
-                                                    </div>
-                                                </div> -->
+                                               
                                             </div>
                                         </button>
+                                        
                                         </li>
+                                        
                                     </ul>
+                                    
                                 </div>
-                                <!---------------------------------------인증 수락 / 거부-------------------------->
-                                <!-- <div class="mt-between">
-                                    <div class="px-40">
-                                        <h3 class="font_primary">
-                                            대학생 학교인증 관리 <br>
-                                            원랩 멤버십 인증
-                                        </h3>
-                                            <div class="flex-12">
-                                                <a class="block-16" href="/templates/html/admin_sunghyun/admin_main-contents.html">
-                                                    <button class="auth">대학생 전환 인증</button>
-                                                </a>
-                                                <a class="block-16" href="/templates/html/admin_sunghyun/admin_payment.html">
-                                                    <button class="auth">원랩 등록 인증</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="relative-16">
-                                            <img alt sizes="100vw" src="/staticfiles/images/img_membership.webp"
-                                            decoding="async" data-nimg="fill" class="rounded-16" loading="lazy" style="position: absolute;
-                                            height: 100%; width: 100%; inset: 0px; color: transparent;">
-                                        </div>
-                                    </div> -->
-
+                               
+                               
                                 <!---------------------------------------인증 수락 / 거부-------------------------------------->
                                 <div class="mt-32">
                                     <div>
@@ -290,24 +248,8 @@ admin_competition = 공모전/대회 관리 페이지
                                         </span>
                                     </div>
                                     <div class="flex-x">
-                                        <div class="shrink-0">
-                                            <div class="relative">
-                                                <button aria-label="filter" class="surface-none" type="button" id="one"
-                                                onclick="toggleDropdown('dropdownOptions1')">
-                                                    <span class="over-nowrap">전체</span>  
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                                    class="shrink-h">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
-                                                    </svg> 
-                                                </button>
-                                                <div class="dropdown-content" id="dropdownOptions1">
-                                                    <a href="#" onclick="selectOption('전체', 'one')">전체</a>
-                                                    <a href="#" onclick="selectOption('대학생 회원', 'one')">대학생 회원</a>
-                                                    <a href="#" onclick="selectOption('고등학생 회원', 'one')">고등학생 회원</a>
-                                                    <a href="#" onclick="selectOption('일반 회원', 'one')">일반 회원</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
+                                        
                                         <div class="shrink-0">
                                             <div class="relative">
                                                 <button aria-label="filter" class="surface-none" type="button" id="two"
@@ -319,128 +261,120 @@ admin_competition = 공모전/대회 관리 페이지
                                                     </svg> 
                                                 </button>
                                                 <div class="dropdown-content" id="dropdownOptions2">
-                                                    <a href="" onclick="selectOption('날짜순', 'two')">날짜순</a>
-                                                    <a href="" onclick="selectOption('내림차순', 'two')">내림차순</a>
-                                                    <a href="" onclick="selectOption('오름차순','two')">오름차순</a>
+                                                    <a href="">날짜순</a>
+                                                    <a href="">최신순</a>
+                                                    <a href="">오래된순</a>
                                                     
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="shrink-0">
-                                            <div class="relative">
-                                                <button aria-label="filter" class="surface-none" type="button" id="three"
-                                                onclick="toggleDropdown('dropdownOptions3')">
-                                                    <span class="over-nowrap">고등학생 회원</span>  
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                                    class="shrink-h">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
-                                                    </svg> 
-                                                </button>
-                                                <div class="dropdown-content" id="dropdownOptions3">
-                                                    <a href="#" onclick="selectOption('고등학생 회원', 'three')">고등학생 회원</a>
-                                                    <a href="#" onclick="selectOption('고등학생(멤버십)','three')">고등학생(멤버십)</a>
-                                                    <a href="#" onclick="selectOption('고등학생(일반)','three')">고등학생(일반)</a>
-                                                </div>
-                                            </div>
-                                        </div> -->
+                                        
                                     </div>    
                                     </div>
+                                <div class="alltable">
                                     <div class="mt-24">
-                                       
-                         
-                        
-                                    <!--회원 테이블-->
-                                    
-                                    <table>
-                                        <tr>
-                                          <th scope="col">ID
-                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="wh-60">
-                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                            </svg>
-                                        </th>
-                                          <th scope="colspan= 2">이름
-                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="wh-60">
-                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                            </svg>
-                                        </th>
-                                          <th colspan="2">제목
-                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="wh-60">
-                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                            </svg>
-                                        </th>
-                                          <th scope="col" >발신일
-                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="wh-60">
-                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                            </svg>
-                                          </th>
-                                          <!-- <th scope="col">대학유형
-                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="wh-60">
-                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                            </svg>
-                                          </th> -->
-                                          <th scope="col">문의 답변하기 
-                                            <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                    class="wh-60">
-                                                        <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
-                                                        <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
-                                            </svg>
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="text"placeholder="ID"></td>
-                                            <td><input type="text"placeholder="이름"></td>
-                                            <td colspan="2"><input type="text"placeholder="제목"></td>
-                                            <td><input type="text"placeholder="상태"></td>
-                                            <td><button class="auth1" onclick="location.href=''">답변하기</button></td>
-                                          </tr>
-                                        <tr>
-                                            <td><input type="text"placeholder="ID"></td>
-                                            <td><input type="text"placeholder="이름"></td>
-                                            <td colspan="2"><input type="text"placeholder="제목"></td>
-                                            <td><input type="text"placeholder="상태"></td>
-                                            <td><button class="auth1">답변하기</button></td>
-                                          </tr>
-                                          <tr>
-                                            <td><input type="text"placeholder="ID"></td>
-                                            <td><input type="text"placeholder="이름"></td>
-                                            <td colspan="2"><input type="text"placeholder="제목"></td>
-                                            <td><input type="text"placeholder="상태"></td>
-                                            <td><button class="auth1">답변하기</button></td>
-                                          </tr>
-                                          <tr>
-                                            <td><input type="text"placeholder="ID"></td>
-                                            <td><input type="text"placeholder="이름"></td>
-                                            <td colspan="2"><input type="text"placeholder="제목"></td>
-                                            <td><input type="text"placeholder="상태"></td>
-                                            
-                                            <td><button class="auth1">답변하기</button></td>
-                                          </tr>
+                                        <div class="shrink-name" style="width: 12cap;">
+                                            <span class="mr-8">번호</span>
+                                                <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                class="wh-60">
+                                                    <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                    <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                                </svg>
+                                        </div>
+                                        <div class="shrink-name" style="width: 130px;">
+                                            이메일
+                                        </div>
                                         
-                                      </table>
-                                      
-                                           
-                                            
-                                            
-                                        
-                                        <!-- <svg width="53" height="56" fill="none" xmlns="https://www.w3.org/2000/svg">
-                                            <path d="M27.516 1.62c-6.654-4.436-21.823.626-21.821 10.475 0 5.567 1.956 10.31 3.889 14.205-1.403-.463-2.853-1.072-3.8-2.095-.466-.502-1.151-1.115-1.802-1.35-.993-.358-2.035.135-2.572.923-1.212 1.776-1.071 2.717-.403 4.643 4.364 5.647 8.167 5.53 11.275 5.435.286-.009.566-.017.84-.021.897 3.13 2.706 6.042 4.099 8.965 1.617 5.694 9.313 4.544 12.913 1.697 2.3-1.819 5.187-2.36 8.117-1.475 2.303.419 3.88-.68 5.236-1.624 1.031-.72 1.934-1.348 2.93-1.149 1.19.238 2.511.191 2.718-1.307.521-3.781-8.391-5.535-11.284-7.062 4.98-2.883 7.416-7.67 6.968-10.861-.31-2.2-2.168-2.967-4.076-1.773-2.206 1.38-2.758 3.32-5.42 4.348 1.822-6.821 3.386-14.515-7.807-21.975Z" fill="#9D8DFF"></path>
-                                            <path d="M15.33 17.017c.03.784-.382 1.385-.92 1.344-.54-.042-1.001-.71-1.032-1.494-.03-.784.382-1.385.921-1.343.54.041 1 .71 1.031 1.493ZM19.599 16.868c.03.784-.382 1.385-.921 1.344-.54-.042-1-.71-1.031-1.494-.03-.784.382-1.385.92-1.343.54.041 1.001.71 1.032 1.493Z" fill="#060606"></path>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.457 29.625a.7.7 0 0 1 .755.64c.036.44.242.87.57 1.304.322.428.721.81 1.107 1.178l.027.026a.7.7 0 1 1-.967 1.012l-.05-.048c-.37-.353-.842-.804-1.235-1.325-.414-.55-.782-1.23-.847-2.033a.7.7 0 0 1 .64-.754ZM35.844 23.41a.7.7 0 0 0-.968.205 25.97 25.97 0 0 1-.389.571c-.235.34-.487.704-.68 1.032-.33.559-.626 1.212-.626 1.941a.7.7 0 1 0 1.4 0c0-.354.145-.745.43-1.228.18-.303.368-.573.573-.868.146-.21.3-.431.465-.684a.7.7 0 0 0-.205-.969Z" fill="#000"></path>
-                                            <path d="M17.917 19.838c-.158-.342-2.435-.62-2.138.915 1.156 3.742 2.834.598 2.138-.915Z" fill="#030303"></path>
-                                            <path d="M51.901 52.983c0 1.223-7.433 2.214-16.602 2.214-9.17 0-16.603-.991-16.603-2.214 0-1.222 7.433-2.213 16.603-2.213 9.17 0 16.602.99 16.602 2.213Z" fill="#E3E3E3"></path>
+                                        <div class="shrink-name" style="width: 122px;">
+                                            이름
+                                        </div>
+                                        <button aria-label="table sortable column label"
+                                        type="button" class="color-btn">
+                                            <div class="shrink-name" style="width: 162px;">
+                                                <span class="mr-8">제목</span>
+                                                <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                class="wh-60">
+                                                    <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                    <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                                </svg>
+                                        </div>
+                                        </button>
+                                        <button aria-label="table sortable column label"
+                                        type="button" class="color-btn">
+                                            <div class="shrink-name" style="width: 112px;">
+                                                <span class="mr-8">문의날짜</span>
+                                                <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                class="wh-60">
+                                                    <path d="m3 0 3 4H0l3-4Z" fill="#B9B9BB"></path>
+                                                    <path d="M3 10 0 6h6l-3 4Z" fill="#333334"></path>
+                                                </svg>
+                                        </div>
+                                        </button>
+                                        <div class="shrink-name" style="width: 132px;">
+                                            답변상태
+                                        </div>
 
-                                        </svg> -->
-                                        <!-- <p class="mt-quaternary">멤버가 없습니다.</p> -->
+                                        <div class="shrink-name" style="width: 72px;">
+                                            문의하기
+                                        </div>
+                                        </div>
+                                        
+                                        <!-----------결제내역 목록------------> 
+                                        <div class="col-center" style="font-size: 12px;">
+                                            <li class="user-list">
+                                                <span class="number">1</span>
+                                                <span class="email">dosel70@naver.com</span>
+                                                <span class="date">홍길동</span>
+                                                <span class="name">대학생으로 전환 원함...</span>
+                                                <span class="type">2024.02.19</span>
+                                                <span class="total before">대기중</span>
+                                                <!---대기중일때 (.total before)-->
+                                                <button class="msg-btn">문의 바로가기</button>
+                                                <!---답변 상태 : 대기중인경우 admin_message_write (답변작성페이지로 이동)-->
+                                                
+                                            </li>
+                                            <li class="user-list">
+                                                <span class="number">2</span>
+                                                <span class="email">dosel70@naver.com</span>
+                                                <span class="date">정약용</span>
+                                                <span class="name">문의합니다.</span>
+                                                <span class="type">2024.02.13</span>
+                                                <span class="total success">완료</span>
+                                                <!--완료 일때 (.total success)-->
+                                                <button class="msg-btn">문의 바로가기</button>
+                                                <!--답변 상태 : 완료인경우 답변 상세보기(답변 수정) 페이지로 이동-->
+                                            </li> 
+                                            <li class="user-list">
+                                                <span class="number">3</span>
+                                                <span class="email">dosel70@naver.com</span>
+                                                <span class="date">이순신</span>
+                                                <span class="name">원랩이 무엇인가요?</span>
+                                                <span class="type">2024.02.13</span>
+                                                <span class="total before">대기중</span>
+                                                <button class="msg-btn">문의 바로가기</button>
+                                            </li>
+                                            <li class="user-list">
+                                                <span class="number">4</span>
+                                                <span class="email">dosel70@naver.com</span>
+                                                <span class="date">조성현</span>
+                                                <span class="name">건의사항</span>
+                                                <span class="type">2024.02.13</span>
+                                                <span class="total success">완료</span>
+                                                <button class="msg-btn">문의 바로가기</button>
+                                            </li>
+                                            <li class="user-list">
+                                                <span class="number">5</span>
+                                                <span class="email">dosel70@naver.com</span>
+                                                <span class="date">한동석</span>
+                                                <span class="name">포인트 충전에 관련해서...</span>
+                                                <span class="type">2024.02.12</span>
+                                                <span class="total success">완료</span>
+                                                <button class="msg-btn">문의 바로가기</button>
+                                            </li>
+                                        </div>
+                                        </div>
+                                        
+                                    </div> 
                                     </div>                 
                                 </div>
                             </div>
@@ -450,4 +384,5 @@ admin_competition = 공모전/대회 관리 페이지
             </div>
         </div>
     </body>
+    <script src="/staticfiles/js/admin-sunghyun/admin_payment.js"></script>
 </html>
