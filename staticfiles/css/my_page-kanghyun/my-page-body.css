@@ -1012,7 +1012,7 @@ div.main-container {
 
 /* 좋아요 확인 토스트 창 */
 
-div.like-clicked-toast-container {
+#like-clicked-toast-container {
     display: none;
     position: fixed;
     bottom: 100px;
@@ -1021,7 +1021,7 @@ div.like-clicked-toast-container {
     animation-duration: 0.3s;
 }
 
-div.like-canceled-toast-container {
+#like-canceled-toast-container {
     display: none;
     position: fixed;
     bottom: 100px;
@@ -1030,7 +1030,7 @@ div.like-canceled-toast-container {
     animation-duration: 0.3s;
 }
 
-.alertify-o {
+.like-o {
     
     margin-left: -150px;
     border: 1px solid #eee;
@@ -1045,26 +1045,54 @@ div.like-canceled-toast-container {
     z-index: 999999;
 }
 
+.dislike-o {
+    
+    margin-left: -150px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    width: 300px;
+    box-shadow: 0 3px 3px rgba(103, 218, 164, 0.3);
+    background: #fff;
+    background-clip: padding-box;
+    position: sticky;
+    left: 50%;
+    opacity: 1;
+    z-index: 999999;
+}
 
-.alertify-o-inner {
+.like-o-inner {
     text-align: center;
 }
 
-.alertify-o-message {
+.dislike-o-inner {
+    text-align: center;
+}
+
+.like-o-message {
     margin-bottom: 30px;
     line-height: 20px;
     color: #4a4a4a;
     font-size: 12px!important;
 }
 
-.alertify-o-message {
+.dislike-o-message {
+    margin-bottom: 30px;
+    line-height: 20px;
+    color: #4a4a4a;
+    font-size: 12px!important;
+}
+
+
+.like-o-message {
     margin: 35px auto 40px;
     padding: 2px 15px 0;
 }
 
-.alertify-o-buttons {
-    margin-bottom: 20px;
+.dislike-o-message {
+    margin: 35px auto 40px;
+    padding: 2px 15px 0;
 }
+
 /* 대학생 인증하는 모달페이지 스타일 */
 
 .bottom-modal-certification-portal {
@@ -1337,8 +1365,279 @@ textarea {
 }
 
 /* 프로필 설정 모달 */
+
 .bottom-modal-profile-portal {
     display: none;
+}
+
+.bottom-modal-profile-portal div .bottom-modal-content 
+{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+    transition: .15s ease-out 50ms;
+    transition-property: transform;
+    outline: none;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -150px;
+    pointer-events: none;
+}
+
+.profileimg {
+    position: relative;
+    display: block;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px;
+    background: #000;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+}
+div.image {
+    display: block;
+    background-image:url(https://static.wadiz.kr/assets/icon/profile-icon-1.png);
+    background-size: 90%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.profileimg input {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: no-repeat center center;
+    background-size: cover;
+    
+}
+
+.setting-profileimg {
+    display: block;
+    text-align: center;
+}
+
+.setting-profileimg button {
+    display: inline-block;
+    padding: 0;
+    margin: 0 5px;
+    font-size: 13px;
+    color: #4a4a4a;
+    line-height: 13px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.banner-container-modal-container h5 {
+    margin-bottom: 5px;
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+
+.input-div2 {
+    width: 100%;
+    padding: 0;
+}
+
+.input-div2 li:first-child {
+    float: left;
+    width: 49%;
+    padding: 0;
+}
+
+.input-text {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0 17px;
+    margin-bottom: 7px;
+    height: 46px;
+    line-height: 45px;
+    font-size: 13px;
+    color: #4a4a4a;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    outline: none;
+    appearance: none;
+    border-radius: 0;
+}
+
+.input-div2 li:last-child {
+    float: right;
+    width: 49%;
+    padding: 0;
+}
+
+.input-div2:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.textarea-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn-bottom {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.btn-div2 {
+    width: 100%;
+    padding: 0;
+}
+
+.btn-div2 li:first-child {
+    float: left;
+    width: 49%;
+    padding: 0;
+}
+
+.wz.button.gray {
+    background-color: #90949c;
+    color: #fff;
+    border-color: #90949c;
+}
+
+.btn-darkgray {
+    display: block;
+    width: 100%;
+    height: 44px;
+    font-size: 13px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    background: #8c8881;
+    border: none;
+    box-sizing: border-box;
+}
+
+.btn-div2 li:last-child {
+    float: right;
+    width: 49%;
+    padding: 0;
+}
+.btn-mint {
+    display: block;
+    width: 100%;
+    height: 46px;
+    font-size: 13px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    background: #23dbab;
+    border: none;
+    box-sizing: border-box;
+}
+.wz.button.primary {
+    background-color: #00c4c4;
+    color: #fff;
+    border-color: #00c4c4;
+}
+
+.btn-div2:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* 확인 모달창 */
+#confirm-modal-container {
+    display:none;
+}
+
+#confirm-modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .6;
+    z-index: 99999;
+    background-color: #000;
+}
+
+.alertify-o {
+    display: block;
+    top: 20%;
+    margin-left: -150px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    width: 300px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.3);
+    background: #fff;
+    background-clip: padding-box;
+    position: fixed;
+    left: 50%;
+    opacity: 1;
+    z-index: 999999;
+}
+
+.alertify-o-inner {
+    text-align: center;
+}
+
+.alertify-o-message {
+    margin-bottom: 30px;
+    line-height: 20px;
+    color: #4a4a4a;
+    font-size: 12px!important;
+}
+
+.alertify-o-message {
+    margin: 35px auto 40px;
+    padding: 2px 15px 0;
+}
+
+.alertify-o-buttons {
+    margin-bottom: 20px;
+}
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+nav {
+    display: block;
+}
+
+.alertify-o-button-ok{
+    outline: none;
+    border: none;
+    background: #50e3c2;
+}
+
+.alertify-o-button {
+    border-radius: 0;
+    padding: 0;
+    width: 110px;
+    height: 42px;
+    text-shadow: none;
+    line-height: 42px;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.5);
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
 }
 
 /* 화면 애니메이션 */

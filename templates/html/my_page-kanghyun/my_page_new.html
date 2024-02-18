@@ -19,6 +19,10 @@
         />
         <link
             rel="stylesheet"
+            href="/staticfiles/css/school-wooram/school-place-list.css"
+        />
+        <link
+            rel="stylesheet"
             href="/staticfiles/css/my_page-kanghyun/my-page-body.css"
         />
 
@@ -427,34 +431,6 @@
                                         >
                                             <span>랩원</span>
                                         </button>
-                                        <!-- 닫기 버튼 -->
-                                        <div class="close-button-wrapper">
-                                            <button class="close-button">
-                                                <svg
-                                                    version="1.0"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="32px"
-                                                    height="32px"
-                                                    viewBox="0 0 128.000000 128.000000"
-                                                    preserveAspectRatio="xMidYMid meet"
-                                                >
-                                                    <g
-                                                        transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
-                                                        fill="#bbbbbb"
-                                                        stroke="none"
-                                                    >
-                                                        <path
-                                                            d="M512 1156 c-231 -57 -402 -275 -402 -516 0 -291 239 -530 530 -530
-                                            292 0 530 238 530 530 0 85 -17 155 -58 239 -105 216 -361 334 -600 277z m70
-                                            -383 l58 -57 60 59 c55 54 62 58 87 49 16 -5 32 -21 37 -37 9 -25 5 -32 -49
-                                            -87 l-59 -60 59 -60 c54 -55 58 -62 49 -87 -5 -16 -21 -32 -37 -37 -25 -9 -32
-                                            -5 -87 49 l-60 59 -60 -59 c-55 -54 -62 -58 -87 -49 -16 5 -32 21 -37 37 -9
-                                            25 -5 32 49 87 l59 60 -57 58 c-62 62 -68 81 -37 112 31 31 50 25 112 -37z"
-                                                        />
-                                                    </g>
-                                                </svg>
-                                            </button>
-                                        </div>
                                     </ul>
                                 </div>
                                 <!-- 랩장 목록 ~ 전체 리스트들 감싸는 div -->
@@ -2407,6 +2383,615 @@
 
                             <!-- 자료 공유 클릭했을 때 나타나는 페이지 -->
 
+                            <!-- 장소 공유 클릭했을 때 나타나는 페이지  -->
+                            <div class="main-container">
+                                <div class="SearchResult_container">
+                                    <!-- ad banner쪽 -->
+                                    <div class="AdBanner_container"></div>
+
+                                    <!-- 목록 페이지 쪽 -->
+                                    <div class="SearchResult_cardContainer">
+                                        <div
+                                            class="TableLayout_container SearchResult_table"
+                                            style="grid-template-columns: repeat(4, calc(25% - 18px)); gap: 24px"
+                                        >
+                                            <div
+                                                class="HomeVerticalCard_container"
+                                            >
+                                                <a
+                                                    class="HomeVerticalCard_content"
+                                                    href="https://www.wadiz.kr/web/store/detail/599"
+                                                >
+                                                    <div
+                                                        class="HomeVerticalCard_thumbnailBox"
+                                                        style="padding-top: 56.25%"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_thumbnailWrap"
+                                                        >
+                                                            <div
+                                                                class="ThumbnailImage_container HomeVerticalCard_thumbnail"
+                                                            >
+                                                                <img
+                                                                    class="ThumbnailImage_img"
+                                                                    src="https://cdn2.wadiz.kr/2021/11/16/9316e0ac-0be7-467e-8bf4-816f5a81803c.jpg/wadiz/resize/300/format/jpg/quality/85/"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 이미지 아래 글씨쪽 -->
+                                                    <div
+                                                        class="HomeVerticalCard_infoBox HomeVerticalCard_isStore"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_info"
+                                                        >
+                                                            <div
+                                                                class="PriceInfoWrapper_container"
+                                                            >
+                                                                <span
+                                                                    >14,600원</span
+                                                                >
+                                                            </div>
+                                                            <strong
+                                                                class="Title_title"
+                                                                >[누적 11,600%]
+                                                                진짜 그릭요거트,
+                                                                그릭오</strong
+                                                            >
+                                                            <p
+                                                                class="HomeVerticalCard_makerNameWrapper"
+                                                            >
+                                                                앤드식스주식회사
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="HomeVerticalCard_badgeGroup"
+                                                        >
+                                                            <div
+                                                                class="StoreRatingWrapper_ratingWrapper"
+                                                            >
+                                                                <div
+                                                                    class="RatingScore_container"
+                                                                >
+                                                                    <div
+                                                                        class="RatingScore_icon"
+                                                                    ></div>
+                                                                    <span
+                                                                        class="RatingScore_score"
+                                                                        >4.5</span
+                                                                    >
+                                                                </div>
+                                                                <em
+                                                                    class="StoreRatingWrapper_count"
+                                                                    >(147)</em
+                                                                >
+                                                            </div>
+                                                            <div
+                                                                class="StoreBadgeGroup_container"
+                                                            ></div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="CardSpinner_container"
+                                                    >
+                                                        <div
+                                                            class="CardSpinner_loader"
+                                                            style="width: 32px; height: 32px"
+                                                        >
+                                                            <svg
+                                                                viewBox="25 25 50 50"
+                                                                aria-label="Loading"
+                                                            >
+                                                                <g
+                                                                    class="Loader_circular"
+                                                                >
+                                                                    <circle
+                                                                        class="Loader_path"
+                                                                    ></circle>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <!-- 찜하기 버튼 쪽 -->
+                                                <button
+                                                    type="button"
+                                                    class="WishButton_button"
+                                                    id="like"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 32 32"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon_icon"
+                                                    >
+                                                        <path
+                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div
+                                                class="HomeVerticalCard_container"
+                                            >
+                                                <a
+                                                    class="HomeVerticalCard_content"
+                                                    href="https://www.wadiz.kr/web/store/detail/599"
+                                                >
+                                                    <div
+                                                        class="HomeVerticalCard_thumbnailBox"
+                                                        style="padding-top: 56.25%"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_thumbnailWrap"
+                                                        >
+                                                            <div
+                                                                class="ThumbnailImage_container HomeVerticalCard_thumbnail"
+                                                            >
+                                                                <img
+                                                                    class="ThumbnailImage_img"
+                                                                    src="https://cdn2.wadiz.kr/2021/11/16/9316e0ac-0be7-467e-8bf4-816f5a81803c.jpg/wadiz/resize/300/format/jpg/quality/85/"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 이미지 아래 글씨쪽 -->
+                                                    <div
+                                                        class="HomeVerticalCard_infoBox HomeVerticalCard_isStore"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_info"
+                                                        >
+                                                            <div
+                                                                class="PriceInfoWrapper_container"
+                                                            >
+                                                                <span
+                                                                    >14,600원</span
+                                                                >
+                                                            </div>
+                                                            <strong
+                                                                class="Title_title"
+                                                                >[누적 11,600%]
+                                                                진짜 그릭요거트,
+                                                                그릭오</strong
+                                                            >
+                                                            <p
+                                                                class="HomeVerticalCard_makerNameWrapper"
+                                                            >
+                                                                앤드식스주식회사
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="HomeVerticalCard_badgeGroup"
+                                                        >
+                                                            <div
+                                                                class="StoreRatingWrapper_ratingWrapper"
+                                                            >
+                                                                <div
+                                                                    class="RatingScore_container"
+                                                                >
+                                                                    <div
+                                                                        class="RatingScore_icon"
+                                                                    ></div>
+                                                                    <span
+                                                                        class="RatingScore_score"
+                                                                        >4.5</span
+                                                                    >
+                                                                </div>
+                                                                <em
+                                                                    class="StoreRatingWrapper_count"
+                                                                    >(147)</em
+                                                                >
+                                                            </div>
+                                                            <div
+                                                                class="StoreBadgeGroup_container"
+                                                            ></div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="CardSpinner_container"
+                                                    >
+                                                        <div
+                                                            class="CardSpinner_loader"
+                                                            style="width: 32px; height: 32px"
+                                                        >
+                                                            <svg
+                                                                viewBox="25 25 50 50"
+                                                                aria-label="Loading"
+                                                            >
+                                                                <g
+                                                                    class="Loader_circular"
+                                                                >
+                                                                    <circle
+                                                                        class="Loader_path"
+                                                                    ></circle>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <!-- 찜하기 버튼 쪽 -->
+                                                <button
+                                                    type="button"
+                                                    class="WishButton_button"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 32 32"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon_icon"
+                                                    >
+                                                        <path
+                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div
+                                                class="HomeVerticalCard_container"
+                                            >
+                                                <a
+                                                    class="HomeVerticalCard_content"
+                                                    href="https://www.wadiz.kr/web/store/detail/599"
+                                                >
+                                                    <div
+                                                        class="HomeVerticalCard_thumbnailBox"
+                                                        style="padding-top: 56.25%"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_thumbnailWrap"
+                                                        >
+                                                            <div
+                                                                class="ThumbnailImage_container HomeVerticalCard_thumbnail"
+                                                            >
+                                                                <img
+                                                                    class="ThumbnailImage_img"
+                                                                    src="https://cdn2.wadiz.kr/2021/11/16/9316e0ac-0be7-467e-8bf4-816f5a81803c.jpg/wadiz/resize/300/format/jpg/quality/85/"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 이미지 아래 글씨쪽 -->
+                                                    <div
+                                                        class="HomeVerticalCard_infoBox HomeVerticalCard_isStore"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_info"
+                                                        >
+                                                            <div
+                                                                class="PriceInfoWrapper_container"
+                                                            >
+                                                                <span
+                                                                    >14,600원</span
+                                                                >
+                                                            </div>
+                                                            <strong
+                                                                class="Title_title"
+                                                                >[누적 11,600%]
+                                                                진짜 그릭요거트,
+                                                                그릭오</strong
+                                                            >
+                                                            <p
+                                                                class="HomeVerticalCard_makerNameWrapper"
+                                                            >
+                                                                앤드식스주식회사
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="HomeVerticalCard_badgeGroup"
+                                                        >
+                                                            <div
+                                                                class="StoreRatingWrapper_ratingWrapper"
+                                                            >
+                                                                <div
+                                                                    class="RatingScore_container"
+                                                                >
+                                                                    <div
+                                                                        class="RatingScore_icon"
+                                                                    ></div>
+                                                                    <span
+                                                                        class="RatingScore_score"
+                                                                        >4.5</span
+                                                                    >
+                                                                </div>
+                                                                <em
+                                                                    class="StoreRatingWrapper_count"
+                                                                    >(147)</em
+                                                                >
+                                                            </div>
+                                                            <div
+                                                                class="StoreBadgeGroup_container"
+                                                            ></div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="CardSpinner_container"
+                                                    >
+                                                        <div
+                                                            class="CardSpinner_loader"
+                                                            style="width: 32px; height: 32px"
+                                                        >
+                                                            <svg
+                                                                viewBox="25 25 50 50"
+                                                                aria-label="Loading"
+                                                            >
+                                                                <g
+                                                                    class="Loader_circular"
+                                                                >
+                                                                    <circle
+                                                                        class="Loader_path"
+                                                                    ></circle>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <!-- 찜하기 버튼 쪽 -->
+                                                <button
+                                                    type="button"
+                                                    class="WishButton_button"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 32 32"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon_icon"
+                                                    >
+                                                        <path
+                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div
+                                                class="HomeVerticalCard_container"
+                                            >
+                                                <a
+                                                    class="HomeVerticalCard_content"
+                                                    href="https://www.wadiz.kr/web/store/detail/599"
+                                                >
+                                                    <div
+                                                        class="HomeVerticalCard_thumbnailBox"
+                                                        style="padding-top: 56.25%"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_thumbnailWrap"
+                                                        >
+                                                            <div
+                                                                class="ThumbnailImage_container HomeVerticalCard_thumbnail"
+                                                            >
+                                                                <img
+                                                                    class="ThumbnailImage_img"
+                                                                    src="https://cdn2.wadiz.kr/2021/11/16/9316e0ac-0be7-467e-8bf4-816f5a81803c.jpg/wadiz/resize/300/format/jpg/quality/85/"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 이미지 아래 글씨쪽 -->
+                                                    <div
+                                                        class="HomeVerticalCard_infoBox HomeVerticalCard_isStore"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_info"
+                                                        >
+                                                            <div
+                                                                class="PriceInfoWrapper_container"
+                                                            >
+                                                                <span
+                                                                    >14,600원</span
+                                                                >
+                                                            </div>
+                                                            <strong
+                                                                class="Title_title"
+                                                                >[누적 11,600%]
+                                                                진짜 그릭요거트,
+                                                                그릭오</strong
+                                                            >
+                                                            <p
+                                                                class="HomeVerticalCard_makerNameWrapper"
+                                                            >
+                                                                앤드식스주식회사
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="HomeVerticalCard_badgeGroup"
+                                                        >
+                                                            <div
+                                                                class="StoreRatingWrapper_ratingWrapper"
+                                                            >
+                                                                <div
+                                                                    class="RatingScore_container"
+                                                                >
+                                                                    <div
+                                                                        class="RatingScore_icon"
+                                                                    ></div>
+                                                                    <span
+                                                                        class="RatingScore_score"
+                                                                        >4.5</span
+                                                                    >
+                                                                </div>
+                                                                <em
+                                                                    class="StoreRatingWrapper_count"
+                                                                    >(147)</em
+                                                                >
+                                                            </div>
+                                                            <div
+                                                                class="StoreBadgeGroup_container"
+                                                            ></div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="CardSpinner_container"
+                                                    >
+                                                        <div
+                                                            class="CardSpinner_loader"
+                                                            style="width: 32px; height: 32px"
+                                                        >
+                                                            <svg
+                                                                viewBox="25 25 50 50"
+                                                                aria-label="Loading"
+                                                            >
+                                                                <g
+                                                                    class="Loader_circular"
+                                                                >
+                                                                    <circle
+                                                                        class="Loader_path"
+                                                                    ></circle>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <!-- 찜하기 버튼 쪽 -->
+                                                <button
+                                                    type="button"
+                                                    class="WishButton_button"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 32 32"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon_icon"
+                                                    >
+                                                        <path
+                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div
+                                                class="HomeVerticalCard_container"
+                                            >
+                                                <a
+                                                    class="HomeVerticalCard_content"
+                                                    href="https://www.wadiz.kr/web/store/detail/599"
+                                                >
+                                                    <div
+                                                        class="HomeVerticalCard_thumbnailBox"
+                                                        style="padding-top: 56.25%"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_thumbnailWrap"
+                                                        >
+                                                            <div
+                                                                class="ThumbnailImage_container HomeVerticalCard_thumbnail"
+                                                            >
+                                                                <img
+                                                                    class="ThumbnailImage_img"
+                                                                    src="https://cdn2.wadiz.kr/2021/11/16/9316e0ac-0be7-467e-8bf4-816f5a81803c.jpg/wadiz/resize/300/format/jpg/quality/85/"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 이미지 아래 글씨쪽 -->
+                                                    <div
+                                                        class="HomeVerticalCard_infoBox HomeVerticalCard_isStore"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_info"
+                                                        >
+                                                            <div
+                                                                class="PriceInfoWrapper_container"
+                                                            >
+                                                                <span
+                                                                    >14,600원</span
+                                                                >
+                                                            </div>
+                                                            <strong
+                                                                class="Title_title"
+                                                                >[누적 11,600%]
+                                                                진짜 그릭요거트,
+                                                                그릭오</strong
+                                                            >
+                                                            <p
+                                                                class="HomeVerticalCard_makerNameWrapper"
+                                                            >
+                                                                앤드식스주식회사
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="HomeVerticalCard_badgeGroup"
+                                                        >
+                                                            <div
+                                                                class="StoreRatingWrapper_ratingWrapper"
+                                                            >
+                                                                <div
+                                                                    class="RatingScore_container"
+                                                                >
+                                                                    <div
+                                                                        class="RatingScore_icon"
+                                                                    ></div>
+                                                                    <span
+                                                                        class="RatingScore_score"
+                                                                        >4.5</span
+                                                                    >
+                                                                </div>
+                                                                <em
+                                                                    class="StoreRatingWrapper_count"
+                                                                    >(147)</em
+                                                                >
+                                                            </div>
+                                                            <div
+                                                                class="StoreBadgeGroup_container"
+                                                            ></div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="CardSpinner_container"
+                                                    >
+                                                        <div
+                                                            class="CardSpinner_loader"
+                                                            style="width: 32px; height: 32px"
+                                                        >
+                                                            <svg
+                                                                viewBox="25 25 50 50"
+                                                                aria-label="Loading"
+                                                            >
+                                                                <g
+                                                                    class="Loader_circular"
+                                                                >
+                                                                    <circle
+                                                                        class="Loader_path"
+                                                                    ></circle>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <!-- 찜하기 버튼 쪽 -->
+                                                <button
+                                                    type="button"
+                                                    class="WishButton_button"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 32 32"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon_icon"
+                                                    >
+                                                        <path
+                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 공모전/대회 클릭했을 때 나타나는 페이지 -->
+
+                            <!-- 커뮤니티 클릭했을 때 나타나는 페이지 -->
                             <!-- 고객센터 -->
                             <div class="my-page-contents-section">
                                 <h4 class="my-page-contents-section-title">
@@ -2532,7 +3117,7 @@
                                                 </span>
                                             </a>
                                         </li>
-                                        <!-- <li class="my-page-menu-menu">
+                                        <li class="my-page-menu-menu">
                                             <a
                                                 href="/web/waccount/wAccountUpdateBasicInfoIntro"
                                                 ><span
@@ -2571,7 +3156,7 @@
                                                     </svg>
                                                 </span>
                                             </a>
-                                        </li> -->
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -3331,7 +3916,9 @@
                 >
                     <div class="bottom-modal-container">
                         <div class="banner-container-modal-container">
+                            <!-- 닫기버튼 -->
                             <button
+                                id="profile-close-button"
                                 type="button"
                                 aria-label="닫기"
                                 class="banner-container-close-button"
@@ -3348,6 +3935,91 @@
                                     ></path>
                                 </svg>
                             </button>
+                            <strong class="banner-container-modal-title"
+                                >프로필
+                                <span class="banner-container-brmo"
+                                    >정보 설정
+                                </span>
+                            </strong>
+                            <div class="profileimg-wrap">
+                                <button
+                                    type="button"
+                                    id="resultProfileImg"
+                                    class="profileimg"
+                                >
+                                    <label for="attach">
+                                        <div class="image"></div>
+                                    </label>
+                                    <input
+                                        type="file"
+                                        id="attach"
+                                        style="display:none"
+                                    />
+                                </button>
+                                <p class="setting-profileimg">
+                                    <button type="button" id="btn_updatePhoto">
+                                        <span>바꾸기</span>
+                                    </button>
+                                    <button type="button" id="btn_deletePhoto">
+                                        삭제
+                                    </button>
+                                </p>
+                            </div>
+                            <h5>학교 / 전공</h5>
+                            <ul class="input-div2">
+                                <li>
+                                    <input
+                                        type="text"
+                                        class="input-text"
+                                        maxlength="20"
+                                        id="school"
+                                        placeholder="학교"
+                                        value=""
+                                    />
+                                </li>
+                                <li>
+                                    <input
+                                        type="text"
+                                        class="input-text"
+                                        maxlength="20"
+                                        id="major"
+                                        placeholder="전공"
+                                        value=""
+                                    />
+                                </li>
+                            </ul>
+                            <h5>간단한 한 마디로 나를 소개해주세요</h5>
+                            <div class="textarea-wrap">
+                                <input
+                                    type="text"
+                                    class="input-text input-text-large"
+                                    maxlength="50"
+                                    placeholder=""
+                                    value=""
+                                />
+                            </div>
+                            <div class="btn-bottom">
+                                <ul class="btn-div2">
+                                    <li>
+                                        <button
+                                            id="close-profile-modal-btn"
+                                            type="button"
+                                            class="wz button gray btn-darkgray"
+                                        >
+                                            취소
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                            id="save-profile-modal-btn"
+                                            type="button"
+                                            class="wz button primary btn-mint"
+                                        >
+                                            저장
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="bottom-modal-handle"></div>
                     </div>
@@ -3356,11 +4028,11 @@
         </div>
     </body>
     <!-- 좋아요 눌렀을 떄 나오는 토스트창 -->
-    <div class="like-clicked-toast-container">
-        <section id="alertify-o" class="alertify-o alertify-o-alert">
-            <article class="alertify-o-inner">
+    <div id="like-clicked-toast-container">
+        <section id="like-o" class="like-o like-o-alert">
+            <article class="like-o-inner">
                 <p
-                    class="alertify-o-message"
+                    class="like-o-message"
                     style="font-size:15px;padding-top:2px;"
                 >
                     좋아요 설정되었습니다.
@@ -3369,11 +4041,11 @@
         </section>
     </div>
     <!-- 좋아요 해제했을 떄 나오는 토스트창 -->
-    <div class="like-canceled-toast-container">
-        <section id="alertify-o" class="alertify-o alertify-o-alert">
-            <article class="alertify-o-inner">
+    <div id="like-canceled-toast-container">
+        <section id="dislike-o" class="dislike-o dislike-o-alert">
+            <article class="dislike-o-inner">
                 <p
-                    class="alertify-o-message"
+                    class="dislike-o-message"
                     style="font-size:15px;padding-top:2px;"
                 >
                     좋아요 해제되었습니다.
@@ -3381,6 +4053,30 @@
             </article>
         </section>
     </div>
+    <!-- 프로필 설정 저장 눌렀을 때 나오는 모달 창 -->
+    <div id="confirm-modal-container">
+        <div id="confirm-modal"></div>
+        <section id="alertify-o" class="alertify-o alertify-o-alert">
+            <article class="alertify-o-inner">
+                <p
+                    class="alertify-o-message"
+                    style="font-size:15px;padding-top:2px;"
+                >
+                    프로필 설정이 성공적으로 변경되었습니다.
+                </p>
+                <nav class="alertify-o-buttons">
+                    <button
+                        class="alertify-o-button alertify-o-button-ok"
+                        id="alertify-o-ok"
+                    >
+                        확인
+                    </button>
+                </nav>
+            </article>
+        </section>
+    </div>
+
     <script src="/staticfiles/js/my_page-kanghyun/my_page.js"></script>
     <script src="/staticfiles/js/note-kanghyun/note_sending.js"></script>
+    <script src="/staticfiles/js/school-wooram/school-place-list.js"></script>
 </html>

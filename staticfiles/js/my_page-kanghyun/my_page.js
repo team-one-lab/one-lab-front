@@ -70,8 +70,8 @@ for (let i = 0;i < buttons.length; i++) {
 // 좋아요 눌렀을 때 좋아요 되었다는 알림글 나타내기
 const likebtns = document.querySelectorAll(".wish-btn");
 const activelikebtns = document.querySelectorAll(".like-icon");
-const liketoast = document.querySelector(".like-clicked-toast-container");
-const cancel_liketoast = document.querySelector(".like-canceled-toast-container");
+const liketoast = document.querySelector("#like-clicked-toast-container");
+const cancel_liketoast = document.querySelector("#like-canceled-toast-container");
 
 
 for (let i=0; i<likebtns.length;i++) {
@@ -97,7 +97,7 @@ for (let i=0; i<likebtns.length;i++) {
 }
 
 
-const onelab_page = document.querySelector(".main-container");
+const onelab_page = document.querySelectorAll(".main-container");
 const tabpages = document.querySelectorAll(".my-page-project-content");
 // for (let i=0; i < tabpages.length; i ++) {
 //     tabpages[i].addEventListener("click", function(e) {
@@ -116,17 +116,93 @@ const tabpages = document.querySelectorAll(".my-page-project-content");
 
 // 원랩 눌렸을 때 열리는 기능
 tabpages[0].addEventListener("click", (e)=> {
-    if (onelab_page.style.display === "none") {
-        onelab_page.style.display="block";
+    if (onelab_page[0].style.display === "none") {
+        onelab_page.forEach((page)=>{
+            page.style.display = "none";
+        })
+        onelab_page[0].style.display="block";
     } else {
-        onelab_page.style.display = "none";
+        onelab_page[0].style.display = "none";
     }
 })
 
-// 탭 창 닫기 기능
-const closebtn = document.querySelector(".close-button");
-closebtn.addEventListener("click", ()=>{
-    onelab_page.style.display="none";
+// 장소 공유 눌렀을 때 열리는 기능
+tabpages[2].addEventListener("click", ()=> {
+    if (onelab_page[1].style.display === "none") {
+        onelab_page.forEach((page)=>{
+            page.style.display = "none";
+        })
+        onelab_page[1].style.display = "block";
+    } else {
+        onelab_page[1].style.display = "none";
+    }
 })
 
 
+// 프로필 설정 창 모달 기능 구현
+const profile_modal = document.querySelector(".bottom-modal-profile-portal");
+console.log(profile_modal);
+// 프로필 설정창 열기
+const open_profile = document.querySelector("button.user-profile-edit-profile");
+open_profile.addEventListener("click", ()=>{
+    profile_modal.style.display="block";
+})
+
+
+// 프로필 설정창 닫기
+const close_profile_modal_btn = document.querySelector("#profile-close-button");
+close_profile_modal_btn.addEventListener("click", ()=>{
+    profile_modal.style.display="none";
+})
+
+// 프로필 이미지 바꾸기
+const input = document.getElementById("attach");
+const thumbnail = document.querySelector("div.image")
+const input2 = document.querySelector("#btn_updatePhoto")
+const cancel = document.getElementById("btn_deletePhoto")
+
+// // console.log(input2)
+
+input.addEventListener("change", (e) => {
+    const [file] = e.target.files;
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.addEventListener("load", (e) => {
+        const path = e.target.result;
+        if (path.includes("image")) {
+            thumbnail.style.backgroundImage = `url(${path})`;
+        } else {
+            thumbnail.style.backgroundImage = `url('https://static.wadiz.kr/assets/icon/profile-icon-1.png')`;
+        }
+    })
+})
+
+input2.addEventListener("click", () => {
+    input.click();
+})
+
+
+cancel.addEventListener("click", (e) => {
+    thumbnail.style.backgroundImage = "url('/staticfiles/images/profile-icon1.png')"
+    input.value = "";
+})
+
+// 취소 눌렀을 때 닫히는 기능
+const close_profile_modal_btn2 = document.querySelector("#close-profile-modal-btn");
+close_profile_modal_btn2.addEventListener("click", ()=>{
+    close_profile_modal_btn.click();
+})
+
+// 저장 눌렀을 때 저장되었다는 모달창 
+const profile_change_confirm_modal = document.querySelector("#confirm-modal-container");
+const save_profile_change_btn = document.querySelector("#save-profile-modal-btn");
+
+save_profile_change_btn.addEventListener("click", ()=> {
+    profile_change_confirm_modal.style.display = "block";
+})
+
+// 확인창의 확인을 눌렀을 때 기능
+const confirmed_btn_modal = document.querySelector("#alertify-o-ok");
+confirmed_btn_modal.addEventListener("click", ()=> {
+    profile_change_confirm_modal.style.display = "none";
+})
