@@ -545,8 +545,8 @@ hr {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 103%;
-  gap: 40px 5px;
+  width: 100%;
+  gap: 40px 60px;
 }
 
 /* 목록 페이지 쪽 */
@@ -808,57 +808,4 @@ video {
 
 .Wishbutton-button.active path {
   fill: crimson;
-}
-
-/* 스쿨 목록 */
-.css-1pulbqw {
-    position: relative;
-    width: 237px;
-    height: 360px;
-    overflow: hidden;
-    border: 0px;
-    border-radius: 10px;
-}
-
-.css-3xk0il {
-  width: 237px;
-  height: 360px;
-  margin-bottom: 16px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  border: 0px;
-  border-radius: 10px;
-  transition: all 0.2s ease-in-out 0s;
-  cursor: pointer;
-  background-image: url(https://static.makercenter.wadiz.kr/board/image/118238fe-17c8-46d8-a30d-192009871c00.jpg);
-}
-
-.css-qn01ot {
-    width: 237px;
-    height: 360px;
-    position: absolute;
-    left: 0px;
-    padding: 45px 22px 0px;
-    box-sizing: border-box;
-    cursor: pointer;
-    border-radius: 0px 0px 10px 10px;
-    bottom: -180px;
-    transition: all 0.2s ease-in-out 0s;
-    transform: translate(0px, 0px);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-}
-
-.css-18m1pdx {
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-.css-ivvewn {
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    font-weight: 500;
-    display: none;
 }
