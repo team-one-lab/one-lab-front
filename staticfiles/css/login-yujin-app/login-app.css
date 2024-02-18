@@ -341,14 +341,14 @@ button:not(:disabled) {
     vertical-align: top;
 }
 
-.kakao-login-button {
+.naver-login-button {
     padding: 9px 23px;
     height: 48px;
     font-size: 16px;
     width: 100%;
     margin-top: 12px;
-    border-color: #fee500;
-    background-color: #fee500;
+    border-color: #00d337;
+    background-color: #00d337;
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
@@ -356,16 +356,16 @@ button:not(:disabled) {
     vertical-align: middle;
     text-decoration: none;
     white-space: nowrap;
-    color: #495057;
+    color: #fff;
 }
 
-.kakao-button-children {
+.naver-button-children {
     vertical-align: top;
     display: inline-flex;
     align-items: center;
 }
 
-.kakao-icon {
+.naver-icon {
     display: inline-block;
     position: absolute;
     left: 16px;
@@ -373,6 +373,7 @@ button:not(:disabled) {
     height: 22px;
     transform: scale(1);
     transition: transform .3s ease-out;
+    fill: currentColor;
 }
 
 .apple-login-button {
@@ -419,13 +420,13 @@ button:not(:disabled) {
 }
 
 
-.naver-button-circular span {
+.kakao-button-circular span {
     vertical-align: text-top;
     display: inline-flex;
     align-items: center;
 }
 
-.naver-button-circular {
+.kakao-button-circular {
     margin-left: 0;
     border-radius: 999em;
     padding: 0;
@@ -434,9 +435,9 @@ button:not(:disabled) {
     text-align: center;
     line-height: 48px;
     font-size: 20px;
-    border-color: #00d337;
-    background-color: #00d337;
-    color: #fff;
+    border-color: #fee500;
+    background-color: #fee500;
+    color: #495057;
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
@@ -445,13 +446,13 @@ button:not(:disabled) {
     white-space: nowrap;
 }
 
-.naver-button-children {
+.kakao-button-children {
     vertical-align: top;
     display: inline-flex;
     align-items: center;
 }
 
-.naver-icon {
+.kakao-icon {
     display: inline-block;
     transform: scale(1);
     transition: transform .3s ease-out;
