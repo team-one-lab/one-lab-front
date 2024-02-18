@@ -543,7 +543,6 @@ button{
     margin-right: 9.5rem;
     margin-bottom: 0;
     flex: 1;
-
 }
 
 
@@ -582,7 +581,7 @@ button{
 }
 
 .form-0 > input:hover{
-    border-color: rgba(199, 203, 199, 1);
+    border-color: 
 }
 
 input:not([type="range"]){
@@ -619,13 +618,13 @@ zd-autocomplete-announcement {
 }
 
 #query:hover {
-    border: 1px solid rgb(201, 195, 195);
+    border: 1px solid #00C4C4;
 }
 
 #query:focus {
-    border-color: black;
+    border-color: #008423;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
+    /* box-shadow: 0 0 0 0.2rem #00704A; */
 }
 
 .form-0 > input {
@@ -705,7 +704,7 @@ input {
 /* .nav-end > div */
 
 
-/* <a class="button-header-1" href=""> 문의 등록 </a> */
+/* <a class="button-header-1" href=""> 원랩 문의 </a> */
 /* class="button-header-1" */
 
 .button-header-1{
@@ -713,18 +712,15 @@ input {
     align-self: center;
 }
 
-
-
 .button-header-1{
     margin-bottom: 0;
     margin-top: 0;
     order: inherit;
 }
 
-
 .button-header-1{
-    color: #008243;
-    border-color: #008243;
+    color: #00C4C4;
+    border-color: #00C4C4;
     width: 100px;
     height: 45px;
     display: flex;
@@ -741,7 +737,7 @@ input {
     vertical-align: middle;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #008243;
+    border: 1px solid #00C4C4;
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
@@ -749,6 +745,7 @@ input {
 
 .button-header-1:hover{
     color: #00704A;
+    border: 1px solid #00704A;
     text-decoration: none;
 }
 
@@ -758,15 +755,13 @@ a {
 }
 
 
-/* <a class="button-header-2" href="">메이커센터 </a> */
+/* <a class="button-header-2" href=""> 학교 문의 </a> */
 /* class="button-header-2" */
 
 .button-header-2{
     margin: 0.5rem;
     align-self: center;
 }
-
-
 
 .button-header-2{
     margin-bottom: 0;
@@ -775,8 +770,8 @@ a {
 }
 
 .button-header-2{
-    color: #008243;
-    border-color: #008243;
+    color: #00C4C4;
+    border-color: #00C4C4;
     width: 110px;
     height: 45px;
     display: flex;
@@ -793,14 +788,15 @@ a {
     vertical-align: middle;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #008243;
+    border: 1px solid #00C4C4;
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
 }
 
 .button-header-2:hover{
-    color: #00704A;;
+    color: #00704A;
+    border: 1px solid #00704A;
     text-decoration: none;
 }
 
@@ -810,22 +806,19 @@ a {
 }
 
 
-/* <a class="button-header-3" href="">와디즈 바로가기 </a> */
+/* <a class="button-header-3" href=""> 커뮤니티 </a> */
 /* class="button-header-3" */
 
-.button-header-3{
+/* .button-header-3{
     margin: 0.5rem;
     align-self: center;
-}
+} */
 
+/* .button-header-3{
+order: inherit;
+} */
 
-
-.button-header-2{
-    order: inherit;
-}
-
-
-.button-header-3{
+/* .button-header-3{
     color: #008243;
     border-color: #008243;
     box-shadow: inset 0px -1px 0px #F0F2F5;
@@ -849,17 +842,17 @@ a {
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
-}
+} */
 
-.button-header-3:hover{
-    color: #00704A;;
+/* .button-header-3:hover{
+    color: #00704A;
     text-decoration: none;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
     touch-action: manipulation;
-}
+} */
 
 
 /* img 돋보기 설정 */
@@ -941,12 +934,12 @@ main{
 /* <nav class="col"></nav> */
 /* 클래스: col */
 
-/* .col {
+.col {
     font-weight: 500;
     font-size: 0.9375rem;
-} */
+}
 
-/* .col{
+.col{
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
@@ -956,75 +949,76 @@ main{
     width: 100%;
     min-height: 1px;
     min-width: 0;
-} */
+}
 
-/* nav{
+nav{
     display: block;
-} */
+}
 
 
 /* <ol class="breadcrumbs"></ol> */
 /* 클래스: breadcrumbs , ol{} 설정*/
 
-/* .breadcrumbs {
+.breadcrumbs {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     list-style: none;
     margin-bottom: 1rem;
-} */
+}
 
-/* ol {
+ol {
     padding: 0 0 0 1.5rem;
     margin: 0 0 1rem;
-} */
+}
 
 
 /* <li title="도움말 센터"></li> */
 /* li{} 설정 */
 
-
-/* .breadcrumbs > li {
+.breadcrumbs > li {
     color: #4A5568;
-} */
+}
+
 
 /* <a class="help-center" href="">도움말 센터</a> */
 /* 클래스: help-center */
 
-/* .help-center {
+.help-center {
     color: #008243;
     text-decoration: none;
     background-color: transparent;
     touch-action: manipulation;
-} */
 
-/* .help-center:hover{
-    color: #000;
+}
+
+.help-center:hover{
+    color: #00704A;
     text-decoration: underline;
     background-color: transparent;
-} */
+}
 
 
 /* <li title="문의 등록">문의 등록</li> */
 /* li{} 설정 */
 
-/* .breadcrumbs > li {
+.breadcrumbs > li {
     color: #4A5568;
-} */
+}
 
-/* .breadcrumbs > * + * {
+.breadcrumbs > * + * {
     padding-left: 0.5rem;
-} */
+}
 
-/* .breadcrumbs li + li::before {
+.breadcrumbs li + li::before {
     color: #4A5568;
-} */
+}
 
-/* .breadcrumbs > * + *::before {
+.breadcrumbs > * + *::before {
     display: inline-block;
     padding-right: 0.5rem;
     content: "/";
-} */
+}
 
 
 /* <div class="row"></div> */
@@ -1472,21 +1466,21 @@ a {
 
 /* <div role="toolbar" aria-label="편집기 도구 모음"> */
 
-#hc-wysiwyg [role=toolbar] {
+/* #hc-wysiwyg [role=toolbar] {
     border: 0;
     border-bottom: 1px solid #ddd;
     height: 35px;
     padding: 5px 10px;
     position: relative;
     user-select: none;
-}
+} */
 
 
 /* <span aria-haspopup="true" aria-expanded="false"> */
 
-#hc-wysiwyg [role=toolbar]>[aria-haspopup=true] {
+/* #hc-wysiwyg [role=toolbar]>[aria-haspopup=true] {
     position: relative;
-}
+} */
 
 
 /* <span
@@ -1496,7 +1490,7 @@ a {
     class="wysiwyg-icon-formats"
 ></span> */
 
-#hc-wysiwyg [class^=wysiwyg-icon-] {
+/* #hc-wysiwyg [class^=wysiwyg-icon-] {
     background: transparent;
     border-radius: 4px;
     border: 1px solid transparent;
@@ -1514,29 +1508,29 @@ a {
     vertical-align: middle;
     min-width: 24px;
     width: auto;
-}
+} */
 
-[class^=wysiwyg-icon-] {
+/* [class^=wysiwyg-icon-] {
     background-position: center !important;
     background-repeat: no-repeat !important;
-}
+} */
 
-.wysiwyg-icon-formats {
+/* .wysiwyg-icon-formats {
     background-image: url('https://static.zdassets.com/hc/assets/text-stroke-2901fc68f0898259656b155b6e0ba92f..svg') !important;
-}
+} */
 
-[role="button"] {
+/* [role="button"] {
     touch-action: manipulation;
-}
+} */
 
 
 /* <span role="menu" aria-hidden="true" tabindex="-1"> */
 
-#hc-wysiwyg [role=menu][aria-hidden=true] {
+/* #hc-wysiwyg [role=menu][aria-hidden=true] {
     display: none;
-}
+} */
 
-#hc-wysiwyg [role=menu] {
+/* #hc-wysiwyg [role=menu] {
     position: absolute;
     background: #fff;
     border: 1px solid #ddd;
@@ -1548,7 +1542,7 @@ a {
     min-width: 150px;
     padding: 5px 0;
     outline: none;
-}
+} */
 
 
 /* <span
@@ -1560,11 +1554,11 @@ a {
     >일반 텍스트
 </span> */
 
-#hc-wysiwyg [role=menu]>[role=button][data-block=p] {
+/* #hc-wysiwyg [role=menu]>[role=button][data-block=p] {
     font: normal normal 12px sans-serif;
-}
+} */
 
-#hc-wysiwyg [role=menu]>[role=button] {
+/* #hc-wysiwyg [role=menu]>[role=button] {
     background: #fff;
     border: 0;
     border-radius: 0;
@@ -1576,7 +1570,7 @@ a {
     padding: 8px 20px;
     text-align: initial;
     white-space: nowrap;
-}
+} */
 
 
 /* <span
@@ -1587,9 +1581,9 @@ a {
             헤더 2
     </span> */
 
-#hc-wysiwyg [role=menu]>[role=button][data-block=h2] {
+/* #hc-wysiwyg [role=menu]>[role=button][data-block=h2] {
     font: bold normal 16px sans-serif;
-}
+} */
 
 
 /* <span
@@ -1600,9 +1594,9 @@ a {
     >헤더 3</span
 > */
 
-#hc-wysiwyg [role=menu]>[role=button][data-block=h3] {
+/* #hc-wysiwyg [role=menu]>[role=button][data-block=h3] {
     font: bold normal 14px sans-serif;
-}
+} */
 
 
 /* <span
@@ -1613,9 +1607,9 @@ a {
     >헤더 4</span
 > */
 
-#hc-wysiwyg [role=menu]>[role=button][data-block=h4] {
+/* #hc-wysiwyg [role=menu]>[role=button][data-block=h4] {
     font: bold normal 13px sans-serif;
-}
+} */
 
 
 /* <span
@@ -1625,9 +1619,9 @@ a {
     class="wysiwyg-icon-bold"
 ></span> */
 
-.wysiwyg-icon-bold {
+/* .wysiwyg-icon-bold {
     background-image: url('https://static.zdassets.com/hc/assets/bold-stroke-c075ecfab5f51c3e3fc9b218f0bb5379..svg') !important;
-}
+} */
 
 
 /* <span
@@ -1637,14 +1631,14 @@ a {
     class="wysiwyg-icon-italic"
 ></span> */
 
-.wysiwyg-icon-italic {
+/* .wysiwyg-icon-italic {
     background-image: url('https://static.zdassets.com/hc/assets/italic-stroke-70c33a4f2eb08e92c4317b86aa029a59..svg') !important;
-}
+} */
 
 
 /* <span role="separator"></span><span role="separator"></span> */
 
-#hc-wysiwyg [role=separator] {
+/* #hc-wysiwyg [role=separator] {
     border: 0;
     background: #ddd;
     width: 1px;
@@ -1652,7 +1646,7 @@ a {
     display: inline-block;
     margin: 0 10px;
     vertical-align: middle;
-}
+} */
 
 
 /* <span
@@ -1662,9 +1656,9 @@ a {
     class="wysiwyg-icon-bullist"
 ></span> */
 
-.wysiwyg-icon-bullist {
+/* .wysiwyg-icon-bullist {
     background-image: url('https://static.zdassets.com/hc/assets/list-bullet-stroke-04b8bc257b35bc8f92daf5a5d7e1955f..svg') !important;
-}
+} */
 
 
 /* <span
@@ -1674,9 +1668,9 @@ a {
     class="wysiwyg-icon-numlist"
 ></span> */
 
-.wysiwyg-icon-numlist {
+/* .wysiwyg-icon-numlist {
     background-image: url('https://static.zdassets.com/hc/assets/list-number-stroke-0f55516854b2cc29ed275ce293d0e1a8..svg') !important;
-}
+} */
 
 
 /* <span role="separator"></span> */
@@ -1690,9 +1684,9 @@ a {
     class="wysiwyg-icon-code-block"
 ></span> */
 
-.wysiwyg-icon-code-block {
+/* .wysiwyg-icon-code-block {
     background-image: url('https://static.zdassets.com/hc/assets/terminal-cli-stroke-1bdbc63926aa2ada431dcc1ce4ae5601..svg') !important;
-}
+} */
 
 
 /* <span
@@ -1702,9 +1696,9 @@ a {
     class="wysiwyg-icon-link"
 ></span> */
 
-.wysiwyg-icon-link {
+/* .wysiwyg-icon-link {
     background-image: url('https://static.zdassets.com/hc/assets/link-stroke-7106f546349740ac359b04ed1bb73b6c..svg') !important;
-}
+} */
 
 
 /* <span
@@ -1714,9 +1708,9 @@ a {
     class="wysiwyg-icon-quote"
 ></span> */
 
-.wysiwyg-icon-quote {
+/* .wysiwyg-icon-quote {
     background-image: url('https://static.zdassets.com/hc/assets/quote-stroke-2a6ea1ba5e86bff41a38c0f8f7d45207..svg') !important;
-}
+} */
 
 
 /* <div role="form" aria-expanded="false"></div> */
