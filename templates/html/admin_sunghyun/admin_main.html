@@ -30,7 +30,11 @@ admin_competition = 공모전/대회 관리 페이지
             href="/staticfiles/css/admin-sunghyun/admin_main.css"
         />
         <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
-        <link rel="preload" href="/staticfiles/css/test_admin_font.css" />
+        <link 
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+        />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>One Lab 관리자페이지</title>
@@ -45,12 +49,22 @@ admin_competition = 공모전/대회 관리 페이지
                 <nav class="sticky lg:px-[32px] lg:h-[58px]">
                     <div>
                         <div class="flex-center">
-                            <a >
-                               <img src="/templates/html/admin_sunghyun/favicon/favicon/android-icon-48x48.png">
+                            <a href="">
+                                <svg
+                                    viewBox="0 0 32 16"
+                                    xmlns="https://www.w3.org/2000/svg"
+                                    class="lg:hidden content-inverse"
+                                >
+                                    <path
+                                        d="M21.96 15.796h9.232A15.592 15.592 0 0 0 .059 14.55c-.011.116-.019.234-.027.351v.105c-.013.21-.022.423-.022.637v.154h9.957c0-2.987-2.228-5.412-4.978-5.412a4.755 4.755 0 0 0-3.41 1.473c1.051-1.346 2.63-2.203 4.395-2.203 3.165 0 5.725 2.75 5.725 6.142h7.562v-.154c0-5.7-4.31-10.321-9.629-10.321a9.085 9.085 0 0 0-4.62 1.266 10.976 10.976 0 0 1 16.949 9.21v-.003Z"
+                                    ></path>
+                                </svg>
+                                <img src="/staticfiles/images/header-logo.png" style="width: 89px;">
+                               
                             </a>
-                            <div class="font-inverse">|</div>
+                            <div class="font-inverse"></div>
                             <div class="font-center">
-                                <span>ONELAB 관리자 페이지</span>
+                                <span style="color: #008243;">관리자 페이지</span>
                             </div>
                         </div>
                            
