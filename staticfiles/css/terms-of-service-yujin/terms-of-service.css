@@ -165,7 +165,7 @@ main {
     display: block;
 }
 
-.ConfirmModal_overlay {
+.confirm-modal-overlay {
     display: inline-flex;
     position: fixed;
     top: 0;
@@ -179,7 +179,9 @@ main {
     overflow: hidden;
 }
 
-.ConfirmModal_confirmModal {
+.confirm-modal-overlay-app-modal {
+    width: 400px;
+    max-width: calc(100% - 48px);
     display: inline-flex;
     flex-direction: column;
     outline: none;
@@ -189,20 +191,14 @@ main {
     padding: 24px;
     max-height: calc(100vh - 160px);
     overflow: hidden;
-    -webkit-overflow-scrolling: touch;
 }
 
-.ConfirmModal_sizeSm {
-    width: 400px;
-    max-width: calc(100% - 48px);
-}
-
-.ConfirmModal_header {
+.confirm-modal-header {
     display: flex;
     flex-direction: column;
 }
 
-.ConfirmModal_closeIconRoot {
+.close-icon {
     display: inline-flex;
     position: relative;
     flex-direction: column;
@@ -212,7 +208,7 @@ main {
     height: 8px;
 }
 
-.ConfirmModal_closeIconWrapper {
+.close-icon-wrapper {
     position: absolute;
     top: 0;
     right: 0;
@@ -223,7 +219,7 @@ main {
     padding: 6px;
 }
 
-.withIcon_icon {
+.with-icon {
     display: block;
     transform: scale(1);
     transition: transform .3s ease-out;
@@ -232,42 +228,42 @@ main {
     fill: currentColor;
 }
 
-.ConfirmModal_closeIcon {
+.confirm-modal-close-icon {
     width: 24px;
     height: 24px;
 }
 
-[class*=ConfirmModal_title] {
+[class*=confirm-modal-title-placeholder] {
     word-break: keep-all;
     overflow-wrap: break-word;
 }
 
-.ConfirmModal_titlePlaceholder {
+.confirm-modal-title-placeholder {
     height: 24px;
 }
 
-[class*=ConfirmModal_content] {
+[class*=confirm-modal-content] {
     height: 100%;
 }
 
-.ConfirmModal_content {
+.confirm-modal-content {
     display: inline-flex;
     flex-direction: column;
     overflow: auto;
     color: #495057;
 }
 
-.App_container {
+.app-container {
     max-width: 400px;
     max-height: calc(100vh - 160px);
     overflow: auto;
 }
 
-.TermsConfirmContainer_modalInner {
+.modal-inner {
     position: relative;
 }
 
-.TermsConfirmContainer_header {
+.inner-header {
     position: sticky;
     top: 0;
     z-index: 10;
@@ -275,32 +271,37 @@ main {
     padding-top: 12px;
 }
 
-.TermsConfirmHeader_container {
+.header-container {
     position: relative;
     margin-top: -15px;
     margin-bottom: 24px;
     color: #212529;
 }
 
-.TermsConfirmHeader_title {
+.header-title {
     font-size: 18px;
     font-weight: 700;
     line-height: 1.5;
     margin-bottom: 8px;
 }
 
-.TermsConfirmHeader_description {
+.header-description {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
 }
 
-.FullAgreementCheckbox_container {
+.full-agreement-checkbox-container {
     border-bottom: solid 1px #f2f4f6;
     padding-bottom: 16px;
 }
 
-.FullAgreementCheckbox_checkbox {
+.full-agreement-checkbox-checkbox {
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
     align-items: center;
     transition: box-shadow .2s,background-color .3s;
     border-radius: 3px;
@@ -308,19 +309,7 @@ main {
     padding-left: 0;
 }
 
-.Checkbox_checkbox {
-    display: block;
-    position: relative;
-}
-
-.Checkbox_labeled {
-    display: inline-flex;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-.Checkbox_input {
+.checkbox-input{
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -330,18 +319,16 @@ main {
     padding: 0;
 }
 
-.Checkbox_input_detail {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    margin: 0;
-    border: none;
-    background-color: rgba(0,0,0,0);
-    padding: 0;
+.accordion-checkbox-checkbox .checkbox-input:checked+.checkbox-icon {
+    border: solid 1px #008243;
+    background-color: #008243;
 }
 
-.Checkbox_checkbox .Checkbox_icon {
-    display: block;
+.checkbox-icon {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
     position: relative;
     transition-property: opacity,border-color,background-color;
     transition-duration: .15s;
@@ -354,17 +341,28 @@ main {
     height: 1em;
 }
 
-.Checkbox_checkbox.Checkbox_labeled .Checkbox_icon {
+.accordion-checkbox-checkbox .checkbox-input:checked+.checkbox-icon svg {
+    fill: #fff;
+}
+
+.accordion-checkbox-checkbox .checkbox-input:checked+.checkbox-icon .checkbox-checkicon {
+    opacity: 1;
+}
+
+.full-agreement-checkbox-checkbox .checkbox-input:checked+.checkbox-icon {
+    border: solid 1px #008243;
+    background-color: #008243;
+    font-size: 20px;
     display: inline-block;
     margin-right: 8px;
     vertical-align: middle;
 }
 
-.Checkbox_checkbox.Checkbox_md .Checkbox_icon {
-    font-size: 20px;
+.checkbox-checkicon {
+    opacity: 0;
 }
 
-.Checkbox_icon svg {
+.checkbox-icon svg {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -375,22 +373,28 @@ main {
     height: 0.7791666667em;
     fill: #fff;
 }
-.Checkbox_checkbox.Checkbox_md .Checkbox_removeIcon {
+
+.checkbox-icon .checkbox-remove-icon {
     width: 10px;
 }
-.Checkbox_removeIcon {
-    opacity: 0;
-}
 
-.Checkbox_checkbox.Checkbox_sm .Checkbox_removeIcon {
+.accordion-checkbox-checkbox-essential .checkbox-remove-icon {
     width: 8px;
 }
 
-.Checkbox_checkIcon {
+.checkbox-input+.checkbox-icon .checkbox-remove-icon {
     opacity: 0;
 }
 
-.Checkbox_content {
+.full-agreement-checkbox-checkbox .checkbox-input:checked+.checkbox-icon svg {
+    fill: #fff;
+}
+
+.full-agreement-checkbox-checkbox .checkbox-input:checked+.checkbox-icon .checkbox-checkicon {
+    opacity: 1;
+}
+
+.checkbox-content {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
@@ -398,91 +402,145 @@ main {
     color: #495057;
 }
 
-.FullAgreementCheckbox_text {
+.full-agreement-checkbox-text {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     color: #212529;
 }
 
-.FullAgreementCheckbox_subtext {
+.full-agreement-checkbox-subtext {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
     color: #868e96;
 }
 
-.AccordionCheckbox_accordionHeader {
+.accordion-checkbox-header {
+    margin-left: 16px;
+    border-bottom: solid 1px #f2f4f6;
+    padding: 16px 0;
     position: relative;
 }
 
-.ServiceAgreementCheckbox_container {
-    padding: 16px 0;
+.accordion-checkbox-checkbox {
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
 }
 
-.TermsConfirmBody_service {
-    margin-left: 16px;
-    border-bottom: solid 1px #f2f4f6;
-    padding-right: 16px;
-}
-
-.AccordionCheckbox_label {
+.accordion-checkbox-label {
     color: #212529;
 }
 
-.ServiceAgreementCheckbox_required span {
+.service-agreement-checkbox-required span {
     color: #008243;
 }
 
-.AccordionCheckbox_accordionButton {
+
+.accordion-checkbox-button {
     position: absolute!important;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
 }
 
-.AccordionCheckbox_accordionButton.active {
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.accordion-checkbox-button.active {
     position: absolute!important;
     top: 35%;
     right: 0;
     transform: rotate(180deg);
 }
 
-button:not(:disabled) {
-    cursor: pointer;
-}
-
-.AccordionCheckbox_accordionButton svg {
+.accordion-checkbox-button svg {
     width: 20px;
     height: 20px;
     fill: #495057;
 }
 
-.ServiceAgreementCheckbox_terms {
-    padding: 16px 0;
+.detail-join {
+    display: none;
 }
 
-.TermsConfirmBody_terms {
+.detail-join.active {
+    display: block;
+}
+
+.accordion-checkbox-accordion-header-service {
     margin-left: 32px;
     border-bottom: solid 1px #f2f4f6;
-    padding-right: 16px;
+    padding: 16px 0;
+    position: relative;
 }
 
-.Checkbox_checkbox.Checkbox_sm .Checkbox_icon {
+.accordion-checkbox-checkbox-essential {
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+}
+
+.accordion-checkbox-checkbox-essential .checkbox-icon {
     font-size: 16px;
 }
 
-.AccordionCheckbox_smallLabel {
+.accordion-checkbox-checkbox-essential .checkbox-input:checked+.checkbox-icon {
+    border: solid 1px #008243;
+    background-color: #008243;
+}
+
+.accordion-checkbox-checkbox-essential .checkbox-input:checked+.checkbox-icon svg {
+    fill: #fff;
+}
+
+.accordion-checkbox-checkbox-essential .checkbox-input:checked+.checkbox-icon .checkbox-checkicon {
+    opacity: 1;
+}
+
+.accordion-checkbox-small-label {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
+    color: #212529;
 }
 
-.TermsAgreementCheckbox_required {
+.terms-agreement-checkbox-required {
     color: #008243;
 }
 
-.TermsAgreementCheckbox_children {
+.accordion-checkbox-button-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: underline;
+    color: #495057;
+    position: absolute!important;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.accordion-checkbox-button-text.active {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: underline;
+    color: #495057;
+    position: absolute!important;
+    top: 35%;
+    right: 0;
+    transform: rotate(180deg);
+    
+}
+
+.terms-agreement-checkbox-children {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
@@ -492,10 +550,17 @@ button:not(:disabled) {
     max-height: 180px;
     overflow-y: scroll;
     color: #495057;
-    display:none;
+    display: none;
 }
 
-.Terms_terms article {
+.terms-agreement-checkbox-children.active {
+    display: block;
+}
+
+.terms-terms article {
+    color: rgba(0,0,0,.54)!important;
+    font-size: 12px!important;
+    font-weight: 400!important;
     overflow-x: hidden;
     overflow-y: auto;
     margin: 0;
@@ -503,32 +568,16 @@ button:not(:disabled) {
     position: relative;
 }
 
-.Terms_terms article {
-    color: rgba(0,0,0,.54)!important;
-    font-size: 12px!important;
-    font-weight: 400!important;
-}
-
-.Terms_terms article h1 {
-    line-height: 1.35;
-    font-size: 32px;
-}
-
-.Terms_terms article h1 {
-    display: none;
-}
-
-.Terms_terms article h1 {
-    color: rgba(0,0,0,.54)!important;
-    font-size: 12px!important;
-}
-
-.Terms_terms article h1 {
+.terms-terms article h1 {
     margin: 1em 0 0!important;
     font-weight: 700!important;
+    color: rgba(0,0,0,.54)!important;
+    font-size: 12px!important;
+    display: none;
+    line-height: 1.35;
 }
 
-.Terms_terms article p {
+.terms-terms article p {
     margin: 0!important;
     padding: 0!important;
     color: rgba(0,0,0,.54)!important;
@@ -538,7 +587,7 @@ button:not(:disabled) {
     word-break: keep-all;
 }
 
-.Terms_terms article h5 {
+.terms-terms article h5 {
     margin: 1em 0 0!important;
     font-weight: 700!important;
     color: rgba(0,0,0,.54)!important;
@@ -546,13 +595,13 @@ button:not(:disabled) {
     line-height: 28px;
 }
 
-.Terms_terms article ul {
+.terms-terms article ul {
     margin: 16px 0;
     padding: 0;
     list-style: none;
 }
 
-.Terms_terms article li {
+.terms-terms article li {
     margin-bottom: 6px;
     line-height: 24px;
     word-break: keep-all;
@@ -561,13 +610,13 @@ button:not(:disabled) {
     list-style: none;
 }
 
-.Terms_terms article ul>li {
+.terms-terms article ul>li {
     position: relative;
     padding-left: 6px;
     margin-bottom: 6px;
 }
 
-.Terms_terms article ul>li:before {
+.terms-terms article ul>li:before {
     display: block;
     position: absolute;
     top: 0;
@@ -575,60 +624,53 @@ button:not(:disabled) {
     content: "\b7";
 }
 
-.Terms_terms article a {
+.terms-terms article a {
     color: rgba(0,0,0,.54)!important;
     font-size: 12px!important;
     font-weight: 400!important;
 }
 
-.Terms_terms article a[target=_blank] {
+.terms-terms article a[target=_blank] {
     pointer-events: auto!important;
 }
 
-.Terms_terms article a[class=previous-terms] {
+.terms-terms article a[class=previous-terms] {
     display: none;
 }
 
-.Terms_terms article ol {
+.terms-terms article ol {
     margin: 16px 0;
     padding: 0;
     list-style: none;
 }
 
-.AccordionCheckbox_text {
-    font-size: 12px;
-    font-weight: 400;
+.terms-terms article h2 {
+    margin: 1em 0 0!important;
+    font-weight: 700!important;
+    color: rgba(0,0,0,.54)!important;
+    font-size: 12px!important;
     line-height: 1.5;
-    text-decoration: underline;
-    color: #495057;
 }
 
-.HelperMessage_helperMessage {
+.helper-message-checkbox {
+    padding-left: 28px;
+    color: #212529;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
     display: block;
     margin-top: 4px;
-    color: #868e96;
     font-style: normal;
 }
 
-.AccordionCheckbox_checkbox+em {
-    color: #212529;
-}
-
-.Checkbox_message.Checkbox_md {
-    padding-left: 28px;
-}
-
-.App_footer {
+.terms-confirm-footer-container {
     position: sticky;
     bottom: 0;
     z-index: 99;
     background-color: #fff;
 }
 
-.FixedToast_toast {
+.fixed-toast {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
@@ -646,109 +688,32 @@ button:not(:disabled) {
     color: rgba(0,0,0,0);
 }
 
-.TermsConfirmContainer_maketingGuide {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    word-break: keep-all;
-    color: #868e96;
-}
-
-.Button_button {
+.complete-button {
+    border-color: #008243;
+    background-color: #008243;
+    color: #fff;
+    padding: 9px 23px;
+    height: 48px;
+    font-size: 16px;
+    width: 100%;
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
     border: 1px solid #cdd3d8;
     border-radius: 4px;
-    background-color: rgba(0,0,0,0);
-    cursor: pointer;
-    padding: 9px 23px;
-    height: 48px;
     vertical-align: middle;
     text-decoration: none;
     white-space: nowrap;
-    color: #495057;
-    font-size: 16px;
 }
 
-.Button_button.Button_disabled {
+.complete-button.button-disabled {
     opacity: .4;
     cursor: default;
     pointer-events: none;
 }
 
-.Button_block {
-    width: 100%;
-}
-
-.Button_lg {
-    padding: 9px 23px;
-    height: 48px;
-    font-size: 16px;
-}
-
-.Button_button {
-    border-color: #008243;
-    background-color: #008243;
-    color: #fff;
-}
-
-.Button_button span {
+.complete-button span {
     display: inline-flex;
     align-items: center;
     vertical-align: top;
 }
-
-.Terms_terms article h2 {
-    margin: 1em 0 0!important;
-    font-weight: 700!important;
-    color: rgba(0,0,0,.54)!important;
-    font-size: 12px!important;
-    line-height: 1.5;
-}
-
-.service-join {
-    display: none;
-}
-
-.Checkbox_checkbox .Checkbox_input:checked+.Checkbox_icon {
-    border: solid 1px #008243;
-    background-color: #008243;
-}
-
-.Checkbox_checkbox:hover .Checkbox_input:checked+.Checkbox_icon {
-    border-color: #00704A;
-    background-color: #00704A;
-}
-
-
-.Checkbox_checkbox .Checkbox_input.Checkbox_icon .Checkbox_removeIcon {
-    opacity: 0;
-}
-
-.Checkbox_input+.Checkbox_icon .Checkbox_removeIcon {
-    opacity: 0;
-}
-
-.Checkbox_checkbox .Checkbox_input:checked+.Checkbox_icon svg {
-    fill: #fff;
-}
-
-.Checkbox_checkbox .Checkbox_input:checked+.Checkbox_icon .Checkbox_checkIcon {
-    opacity: 1;
-}
-
-.detail-join {
-    display:none;
-}
-
-.detail-join.active {
-    display: block;
-}
-
-.TermsAgreementCheckbox_children.active {
-    display: block;
-}
-

@@ -24,9 +24,9 @@ a,button{
 }
 
 img {
-    max-width: 50%;
+    max-width: 25%;
     vertical-align: top;
-    margin-left: 80px;
+    margin-left: 284px;
     border: 0;
     padding: 0;
 }
@@ -468,7 +468,9 @@ a, button{
 .kakao{
     
     position: absolute;
-    left: 16px;
+    left: 13px;
+    right: auto;
+    top: 12px;
     width: 22px;
     height: 22px;
     transform: scale(1);
@@ -544,13 +546,12 @@ a, button{
     text-align: center;
     line-height: 48px;
     font-size: 20px;
-    border-color: #1877f2;
-    background-color: #1877f2;
-    color: #fff;
+    border-color: #fee500;
+    background-color: #fee500;
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
-    border: 1px solid #cdd3d8;
+    border: 1px solid #fee500;
     vertical-align: middle;
     text-decoration: none;
     white-space: nowrap;
@@ -563,6 +564,7 @@ a, button{
 
 .button-child-2:hover {
     color: #343a40;
+    border: 1px solid #cdd3d8;
 }
 .button-child-2-2{
     vertical-align: top;

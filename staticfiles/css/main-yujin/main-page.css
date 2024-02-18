@@ -295,7 +295,7 @@ address {
     display: block;
     position: absolute;
     right: -4px;
-    bottom: 0;
+    bottom: 100px;
     transform: translateY(calc(100% + 2px));
     transition-property: opacity,transform;
     transition-duration: .3s;
@@ -2604,11 +2604,8 @@ footer {
     content: "";
 }
 
-.FooterContainer_rightSection .FooterContainer_appStoreSection a:before {
-    margin-right: 4px;
-}
-
-.icon-google-play:before {
+/* 
+.icon-google-play {
     display: inline-block;
     margin-top: -0.2em;
     vertical-align: middle;
@@ -2619,40 +2616,7 @@ footer {
     font-style: normal;
     font-variant: normal;
     content: "\e967";
-}
-
-
-.web-footer a[class*=icon-]:before {
-    transition: color .2s;
-}
-
-.web-footer [class*=icon-]:before {
-    color: #545a60;
-    font-size: 24px;
-}
-
-.FooterContainer_container .FooterContainer_rightSection .FooterContainer_appStoreSection a:before {
-    margin-right: 4px;
-}
-
-.icon.apple:before, .icon-apple:before {
-    display: inline-block;
-    margin-top: -0.2em;
-    vertical-align: middle;
-    text-transform: none;
-    line-height: 1;
-    font-family: wadizicon!important;
-    font-weight: 400;
-    -moz-osx-font-smoothing: grayscale;
-    font-style: normal;
-    font-variant: normal;
-    content: "\e90f";
-}
-
-.web-footer a:hover[class*=icon-]:before {
-    color: #545454;
-}
-
+} */
 
 .KeyVisualBanner_button {
     margin: 0;
