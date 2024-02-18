@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>계정 찾기</title>
-        <link rel="stylesheet" href="/staticfiles/css/account-find-kiyoung/web/account-find-id.css" />
+        <link rel="stylesheet" href="/staticfiles/css/account-find-kiyoung/web/account-find.css" />
         <link rel="shortcut icon" href="/staticfiles/images/favicon.png" />
         <link
             rel="stylesheet"
@@ -37,23 +37,6 @@
                                         <a href="" class="item"><span>회원가입</span></a>
                                     </li>
                                 </ul>
-                                <div class="previewoverlay-container">
-                                    <svg
-                                        viewBox="0 0 40 40"
-                                        focusable="false"
-                                        role="presentation"
-                                        class="withicon-icon"
-                                        aria-hidden="true"
-                                        style="width: 24px; height: 24px"
-                                    >
-                                        <path fill="none" d="M0 0h40v40H0z"></path>
-                                        <path
-                                            d="M38 6.06H2V31h11.8v3.88h12.4V31H38zm-2.12 22.85H4.12V8.14h31.76z"
-                                        ></path>
-                                    </svg>
-                                    <p class="previewoverlay-title">미리기보기 모드</p>
-                                    <p class="previewoverlay-description">저장한 내용을 미리 볼 수 있어요.</p>
-                                </div>
                             </div>
                         </header>
                     </div>
@@ -81,14 +64,14 @@
                                         name="username"
                                         value=""
                                         placeholder="이메일 계정"
-                                        onkeydown="hitEnterky(event);"
                                     />
                                 </div>
-                                <em class="helper error" id="email-error" style="display: none"
-                                    >이메일 형식이 올바르지 않습니다.</em
+                                <em class="helper error" id="email-error">이메일 형식이 올바르지 않습니다.</em>
+                                <em class="helper correct" id="email-joined"
+                                    >해당 이메일로 비밀번호 재설정 링크를 보내드렸습니다.</em
                                 >
-                                <em class="helper correct" id="email-correct"
-                                    >이메일로 비밀번호 재설정 링크를 보내드렸습니다</em
+                                <em class="helper correct" id="email-notjoined"
+                                    >해당 이메일로 등록 되어있는 계정이 없습니다.</em
                                 >
                             </div>
                             <button id="btn-check" class="ol primary block button" type="button" onlick="checkEmail()">
@@ -96,7 +79,7 @@
                             </button>
                         </form>
                     </div>
-                    <div class="ol container id-result">
+                    <!-- <div class="ol container id-result">
                         <div class="isjoin-email wrap">
                             <p id="inputedemail" class="ol text headline2">이메일</p>
                             <p id="joinedemail" class="ol text body1">
@@ -114,10 +97,10 @@
                                 <a href="" id="btn-recheck" class="ol block button">다시 확인</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-        <script src="/staticfiles/js/account-find-kiyoung/web/account-find-id.js"></script>
+        <script src="/staticfiles/js/account-find-kiyoung/web/account-find.js"></script>
     </body>
 </html>

@@ -388,24 +388,6 @@ ul {
     font-weight: 400;
 }
 
-.previewoverlay-container {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.5;
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid #ff9d9d;
-    border-bottom: 1px solid #ff9d9d;
-    background-color: #fff1f1;
-    color: #f66;
-}
-
 .withicon-icon {
     display: block;
     transform: scale(1);
@@ -422,17 +404,6 @@ ul {
     width: 1em;
     height: 1em;
     fill: currentColor;
-}
-
-.previewoverlay-container .previewoverlay-title {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-left: 8px;
-    font-weight: 700;
-}
-
-.previewoverlay-container .previewoverlay-description {
-    margin-left: 16px;
 }
 
 h1.ol.text,
@@ -692,7 +663,7 @@ label.ol.text.body1 {
     font-size: 1.4117647059em;
 }
 
-.ol.form .field .helper {
+.helper {
     display: block;
     margin-top: 4px;
     line-height: 18px;
@@ -708,6 +679,16 @@ label.ol.text.body1 {
 .ol.form .field .helper.error,
 .ol.form .field.error .helper.ol.input {
     color: #f25555;
+}
+
+#email-joined {
+    color: #008243;
+    display: none;
+}
+
+#email-notjoined {
+    color: #f25555;
+    display: none;
 }
 
 .ol.button {
