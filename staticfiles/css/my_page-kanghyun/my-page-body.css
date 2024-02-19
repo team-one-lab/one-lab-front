@@ -1462,6 +1462,10 @@ svg.wish-icon>path {
     border-radius: 10px;
     color: #fff;
 }
+
+.search-result-inner-inner span:hover {
+    background-color: #00592e
+}
 .swiper-slide.swiper-slide-active.show {
     display: block;
 }
@@ -1576,6 +1580,225 @@ a.article::after {
 h3.title:hover {
     text-decoration: underline;
 }
+
+/* 원랩 관리하기 눌렀을 때 나타나는 관리창 */
+.mt-32{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.relative1{
+    margin-right: 720px;
+}
+.relative {
+    position: relative;
+}
+
+.surface-none{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-width: 1px;
+    border-radius: 16px;
+    align-items: center;
+    max-width: 164px;
+    height: 32px;
+    display: flex;
+    background-color: #fff;
+    border-color: rgba(0,0,0,.1);
+}
+.over-nowrap{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333334;
+    fill: #333334;
+}
+.shrink-h{
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+.dropdown-content a:hover {
+    background-color: #fffdfd;
+}
+.button-wrapper{
+    display: flex;
+    position: relative;
+    right: 210px;
+}
+.auth1{
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    justify-content: center;
+    height: 30px;
+    width: 120px;
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    fill: #fff;
+    background-color: #d0320b;
+}
+
+.auth1:hover{
+    background-color: #892107;
+}
+.auth2{
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    justify-content: center;
+    height: 30px;
+    width: 120px;
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    fill: #fff;
+    background-color: #ce884b;
+    margin-right: 10px;
+}
+
+.auth2:hover{
+    background-color: #ac5100;
+}
+.auth3{
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    justify-content: center;
+    height: 30px;
+    width: 120px;
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    fill: #fff;
+    background-color: #5dc3c3;
+    margin-right: 10px;
+}
+
+.auth3:hover{
+    background-color: #009898;
+}
+
+.content_primary{
+    --tw-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    font-weight: 500;
+    font-size: 13px;
+    padding: 9px;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 36px;
+    display: flex;
+    border-color: #e6e6e7;
+    background-color: #f5f2f2;
+    color: #1d1d1e;
+    fill: #1d1d1e;
+    padding-top: 5px;
+    margin-top: 25px;
+}
+
+.min-1{
+    justify-content: center;
+    min-width: 80px;
+    display: flex;
+    cursor: pointer;   
+}
+.check{
+    margin-left: 10px;
+}
+.min-2 {
+    justify-content: center;
+    min-width: 63px;
+    display: flex;
+    margin-right: 50px;   
+}
+.grid-px {
+    padding-left: 12px;
+    padding-right: 45px;
+    column-gap: 132px;
+    grid-auto-flow: column;
+    display: grid;
+    margin-right: 42px ;
+}
+.col-center {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    display: block;
+    /* margin-top: 88px; */
+}
+.user-list{
+    width: 944px; 
+    height: 23px; 
+    border-style: solid; 
+    border-bottom-width: 1px; 
+    justify-content: space-between; 
+    align-items: center; min-height: 60px; 
+    display: flex; 
+    border-color: #e6e6e7;
+}
+.check2{
+    width: 100px;
+    height: 20px;
+    accent-color: #008243;
+}
+
+.email{ /* 이메일  */
+    padding-left: 35px;
+    width: 200px;
+} 
+
+.name{ /* 이름  */
+    padding-left: 70px
+}
+.date{ /* 가입 날짜  */
+    padding-left: 53px;
+}
+.type{ /* 회원 유형  */
+    padding-left: 72px;
+    margin-right: 48px;
+}
+
+
 /* 좋아요 확인 토스트 창 */
 
 .WishButton_button {

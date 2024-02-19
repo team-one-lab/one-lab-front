@@ -199,6 +199,21 @@ tabpages[4].addEventListener("click", ()=> {
         onelab_page[4].style.display = "none";
     }
 })
+// 관리하기 눌렀을 때 열리는 기능
+const manage_onelab_btn = document.querySelectorAll(".manage-onelab-btn");
+manage_onelab_btn.forEach((btn)=>{
+    btn.addEventListener("click", ()=>{
+        if (onelab_page[5].style.display === "none") {
+            onelab_page.forEach((page)=>{
+                page.style.display = "none";
+            })
+            onelab_page[5].style.display = "block";
+        } else {
+            onelab_page[5].style.display = "none";
+        }
+    })
+})
+
 
 // 프로필 설정 창 모달 기능 구현
 const profile_modal = document.querySelector(".bottom-modal-profile-portal");

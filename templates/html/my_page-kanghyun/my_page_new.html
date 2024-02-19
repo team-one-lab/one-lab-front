@@ -2730,6 +2730,161 @@
                                     </ul>
                                 </div>
                             </div>
+                            <!-- 원랩 관리하기 눌렀을 때 나타나는 페이지 -->
+                            <div class="main-container">
+                                <div class="mt-32">
+                                    <div class="relative1">
+                                        <div class="relative">
+                                            <button
+                                                aria-label="filter"
+                                                class="surface-none "
+                                                type="button"
+                                                id="two"
+                                                onclick="toggleDropdown('dropdownOptions2')"
+                                            >
+                                                <span class="over-nowrap"
+                                                    >회원 구분</span
+                                                >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    class="shrink-h"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"
+                                                    ></path>
+                                                </svg>
+                                            </button>
+                                            <div
+                                                class="dropdown-content"
+                                                id="dropdownOptions2"
+                                                style="display: none;"
+                                            >
+                                                <a
+                                                    onclick="selectOption('전체 조회', 'two')"
+                                                    class="all"
+                                                    >전체 조회</a
+                                                >
+                                                <a
+                                                    onclick="selectOption('일반 회원', 'two')"
+                                                    class="nomal"
+                                                    >일반회원</a
+                                                >
+                                                <a
+                                                    onclick="selectOption('대학생 회원', 'two')"
+                                                    class="u-student"
+                                                    >대학생 회원</a
+                                                >
+                                                <a
+                                                    onclick="selectOption('고등학생 회원', 'two')"
+                                                    class="universe"
+                                                    >학교 회원</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- </div> -->
+                                    <div class="button-wrapper">
+                                        <button class="auth3">
+                                            랩원 등록하기
+                                        </button>
+                                        <button class="auth2">
+                                            랩원 내보내기
+                                        </button>
+                                        <button class="auth1">
+                                            원랩 해체하기
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="content_primary">
+                                    <label class="min-1"
+                                        >전체선택
+                                        <input
+                                            type="checkbox"
+                                            name="animal"
+                                            class="check"
+                                            value="selectall"
+                                            onclick="selectAll(this)"
+                                            style="display: none;"
+                                        />
+                                    </label>
+                                    <div class="min-2">이메일</div>
+                                    <div class="grid-px">
+                                        <div>이름</div>
+                                        <div>승인 여부</div>
+                                        <div>회원 유형</div>
+                                    </div>
+                                </div>
+                                <div class="col-center">
+                                    <li class="user-list">
+                                        <input
+                                            class="check2"
+                                            name="num2"
+                                            type="checkbox"
+                                        />
+                                        <span class="email"
+                                            >dosel70@gmail.com</span
+                                        >
+                                        <span class="name">홍길동</span>
+                                        <span class="date"> 승인</span>
+                                        <span class="type">대학회원</span>
+                                    </li>
+                                    <li class="user-list">
+                                        <input
+                                            class="check2"
+                                            name="num2"
+                                            type="checkbox"
+                                        />
+                                        <span class="email"
+                                            >qwer123@gmail.com</span
+                                        >
+                                        <span class="name">조성현</span>
+                                        <span class="date">대기중</span>
+                                        <span class="type">일반회원</span>
+                                    </li>
+                                    <li class="user-list">
+                                        <input
+                                            class="check2"
+                                            name="num2"
+                                            type="checkbox"
+                                        />
+                                        <span class="email"
+                                            >qjsaadi123@gmail.com</span
+                                        >
+                                        <span class="name">홍길동</span>
+                                        <span class="date">대기중</span>
+                                        <span class="type">일반회원</span>
+                                    </li>
+                                    <li class="user-list">
+                                        <input
+                                            class="check2"
+                                            name="num2"
+                                            type="checkbox"
+                                        />
+                                        <span class="email"
+                                            >zio920@gmail.com</span
+                                        >
+                                        <span class="name">홍길동</span>
+                                        <span class="date"> 승인</span>
+                                        <span class="type">학교회원</span>
+                                    </li>
+                                    <li class="user-list">
+                                        <input
+                                            class="check2"
+                                            name="num2"
+                                            type="checkbox"
+                                        />
+                                        <span class="email"
+                                            >q0ds123@gmail.com</span
+                                        >
+                                        <span class="name">홍길동</span>
+                                        <span class="date"> 승인</span>
+                                        <span class="type">대학회원</span>
+                                    </li>
+                                </div>
+                            </div>
                             <!-- 고객센터 -->
                             <div class="my-page-contents-section">
                                 <h4 class="my-page-contents-section-title">
@@ -2855,7 +3010,7 @@
                                                 </span>
                                             </a>
                                         </li>
-                                        <li class="my-page-menu-menu">
+                                        <!-- <li class="my-page-menu-menu">
                                             <a
                                                 href="/web/waccount/wAccountUpdateBasicInfoIntro"
                                                 ><span
@@ -2894,7 +3049,7 @@
                                                     </svg>
                                                 </span>
                                             </a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
