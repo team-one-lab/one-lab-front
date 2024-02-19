@@ -37,19 +37,21 @@
                         <div class="sidebar-menu-list-margin"></div>
                         <ul>
                             <li>
-                                <a href="" class="sidebar-menu-item-nav-link active">
-                                    자료 요청/공유 글작성
-                                </a>
+                                <a href="" class="sidebar-menu-item-nav-link">
+                                    마이 포인트</a>
+                                <a href="" class="sidebar-menu-item-nav-link result">100</a>
                             </li>
                             <li>
                                 <a href="" class="sidebar-menu-item-nav-link">
-                                    커뮤니티 글 작성
+                                    마이 포스트 수
                                 </a>
+                                <a href="" class="sidebar-menu-item-nav-link result">10</a>
                             </li>
                             <li>
                                 <a href="" class="sidebar-menu-item-nav-link">
-                                    원랩 글 작성
+                                    마이 원랩 수
                                 </a>
+                                <a href="" class="sidebar-menu-item-nav-link result">5</a>
                             </li>
                         </ul>
                     </nav>
@@ -112,24 +114,172 @@
                                     <div>익명이</div>
                                 </div>
                                 <div class="project-navbar-btn-group">
-                                    <div class="preview-btn-container">
-                                        <button type="button" class="preview-btn">
-                                            <span>
-                                                <span class="preview-btn-text">미리 보기</span>
-                                            </span>
-                                        </button>
-                                    </div>
                                     <button type="button" class="pre-save-btn">
                                         <span>
-                                            <span class="pre-save-btn-text">임시 저장</span>
+                                            <span class="pre-save-btn-text">저장 하기</span>
                                         </span>
                                     </button>
-                                    <!-- 안내 아이콘 -> 쪽지 아이콘, 클릭 시 쪽지함 이동 -->
                                     <div class="announce-button-container">
-                                        <!-- 쪽지 아이콘 -->
-                                        <!-- <img src="https://static.wadiz.kr/studio/funding/static/media/announcement.56f4b8e3.svg" alt="" class="announce-button-icon"> -->
-                                        <!-- 쪽지함 경로 -->
-                                        <a href=""></a>
+                                        <img src="https://static.wadiz.kr/studio/funding/static/media/announcement.56f4b8e3.svg" alt="" class="announce-button-icon">
+                                        <span class="badge-container"></span>
+                                        <div class="announce-pop-over-container">
+                                            <div class="announce-list-container">
+                                                <strong class="announce-list-title">안내</strong>
+                                                <ul class="announce-list">
+                                                    <li class="announce-list-item">
+                                                        <div class="announce-list-item-badge-area">
+                                                            <span class="important-badge-container">
+                                                                <span class="important-text-badge">중요</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="announce-list-item-content">
+                                                            <div class="announce-list-item-info">
+                                                                <div class="annouce-list-item-header">
+                                                                서비스
+                                                                </div>
+                                                                <div class="annonce-list-item-register-date">1월 24일</div>
+                                                            </div>
+                                                            <div class="announce-list-item-title important">
+                                                                프로젝트 카테고리 확장 및 기능 개편
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="announce-list-item">
+                                                        <div class="announce-list-item-badge-area">
+                                                            <span class="important-badge-container">
+                                                                <span class="important-text-badge">중요</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="announce-list-item-content">
+                                                            <div class="announce-list-item-info">
+                                                                <div class="annouce-list-item-header">
+                                                                서비스
+                                                                </div>
+                                                                <div class="annonce-list-item-register-date">1월 24일</div>
+                                                            </div>
+                                                            <div class="announce-list-item-title important">
+                                                                펀딩.프리오더 요금제 서비스 개편
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="announce-list-item">
+                                                        <div class="announce-list-item-badge-area">
+                                                        </div>
+                                                        <div class="announce-list-item-content">
+                                                            <div class="announce-list-item-info">
+                                                                <div class="annouce-list-item-header">
+                                                                정책
+                                                                </div>
+                                                                <div class="annonce-list-item-register-date">1월 3일</div>
+                                                            </div>
+                                                            <div class="announce-list-item-title">
+                                                                결제일 및 환불 정책 개편 안내
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <li class="announce-list-item">
+                                                        <div class="announce-list-item-badge-area">
+                                                        </div>
+                                                        <div class="announce-list-item-content">
+                                                            <div class="announce-list-item-info">
+                                                                <div class="annouce-list-item-header">
+                                                                서비스
+                                                                </div>
+                                                                <div class="annonce-list-item-register-date">1월 3일</div>
+                                                            </div>
+                                                            <div class="announce-list-item-title">
+                                                                서포터 안심번호 서비스 도입
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="announce-list-item">
+                                                        <div class="announce-list-item-badge-area">
+                                                        </div>
+                                                        <div class="announce-list-item-content">
+                                                            <div class="announce-list-item-info">
+                                                                <div class="annouce-list-item-header">
+                                                                서비스
+                                                                </div>
+                                                                <div class="annonce-list-item-register-date">1월 3일</div>
+                                                            </div>
+                                                            <div class="announce-list-item-title">
+                                                                '오늘 데이터 한번에 보기' 오픈
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="announce-list-item">
+                                                        <div class="announce-list-item-badge-area">
+                                                        </div>
+                                                        <div class="announce-list-item-content">
+                                                            <div class="announce-list-item-info">
+                                                                <div class="annouce-list-item-header">
+                                                                배송
+                                                                </div>
+                                                                <div class="annonce-list-item-register-date">1월 3일</div>
+                                                            </div>
+                                                            <div class="announce-list-item-title">
+                                                                추석 연휴 배송정보 사전 제공 안내
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="announce-list-item">
+                                                        <div class="announce-list-item-badge-area">
+                                                        </div>
+                                                        <div class="announce-list-item-content">
+                                                            <div class="announce-list-item-info">
+                                                                <div class="annouce-list-item-header">
+                                                                정책
+                                                                </div>
+                                                                <div class="annonce-list-item-register-date">1월 3일</div>
+                                                            </div>
+                                                            <div class="announce-list-item-title">
+                                                                펀딩/프리오더 요금제 개편 안내
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="announce-list-item">
+                                                        <div class="announce-list-item-badge-area">
+                                                        </div>
+                                                        <div class="announce-list-item-content">
+                                                            <div class="announce-list-item-info">
+                                                                <div class="annouce-list-item-header">
+                                                                서비스
+                                                                </div>
+                                                                <div class="annonce-list-item-register-date">1월 3일</div>
+                                                            </div>
+                                                            <div class="announce-list-item-title">
+                                                                새소식 알림 서비스 오류 해결 안내
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="announce-list-item">
+                                                        <div class="announce-list-item-badge-area">
+                                                        </div>
+                                                        <div class="announce-list-item-content">
+                                                            <div class="announce-list-item-info">
+                                                                <div class="annouce-list-item-header">
+                                                                정책
+                                                                </div>
+                                                                <div class="annonce-list-item-register-date">1월 3일</div>
+                                                            </div>
+                                                            <div class="announce-list-item-title">
+                                                                프리오더 서비스 정책 변경 안내
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="announce-detail-drawer-container">
+                                                    <div class="announce-detail-drawer-btn-group">
+                                                        <button class="announce-detail-drawer-back-btn" type="button">
+                                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="announce-drawer-icon" aria-hidden="true" style="width: 24px; height: 24px;">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.076 2.576l.848.848L8.35 12l8.575 8.576-.848.848L6.65 12l9.425-9.424z"></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <button class="exit-button" type="button">
                                         <span>
@@ -155,32 +305,18 @@
                                         </div> -->
                                         <div class="section-content">
                                             <div class="category-field main">
-                                                <label for="">대표 카테고리
+                                                <label for="">학과 선택
                                                     <span class="category-field-required">*</span>
                                                 </label>
-                                                <p>카테고리를 상세하게 선택할 수록 자료를 더 잘 찾을 수 있어요. 혹시, 중분류 카테고리에 원하는 항목이 없다면 해당 없음을 선택해 주세요.</p>
+                                                <p>공유하고자 하는 자료에 해당하는 학과를 선택해주세요.</p>
                                                 <input type="hidden" name="categories[0]">
                                                 <button class="category-select-btn btn" type="button">
-                                                    <span class="category-select-text">이공계 > 수학과</span>
+                                                    <span class="category-select-text">경영/경제 > 1학년</span>
                                                     <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="down-select-icon-svg" aria-hidden="true">
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
                                                     </svg>
                                                 </button>
                                             </div>
-                                            <!-- <div class="category-field sub">
-                                                <label for="secondary-category">
-                                                    보조 카테고리
-                                                    <span class="category-field-select">(선택)</span>
-                                                </label>
-                                                <p>추가로 입력하는 카테고리는 더 많은 곳에 프로젝트를 노출하기 위해 사용돼요.</p>
-                                                <input type="hidden" name="categories[1]">
-                                                <button class="category-select-btn btn">
-                                                    <span class="category-select-btn-text">카테고리 선택</span>
-                                                    <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="down-select-icon-svg" aria-hidden="true">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
-                                                    </svg>
-                                                </button>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </section>
@@ -195,7 +331,7 @@
                                         </div>
                                         <div class="section-content">
                                             <div class="radios-box">
-                                                <label for="" class="radio">
+                                                <!-- <label for="" class="radio">
                                                     <input type="radio" id="" value="">
                                                     <span class="radio-icon"></span>
                                                     <span class="radio-label">
@@ -204,7 +340,7 @@
                                                             원하는 자료가 없어요.
                                                         </span>
                                                     </span>
-                                                </label>
+                                                </label> -->
                                                 <label for="" class="radio">
                                                     <input type="radio" name="" id="">
                                                     <span class="radio-icon"></span>
@@ -225,9 +361,9 @@
 
                                 <!-- 자료 유형 선택 섹션 -->
                                 <section class="section-container project-intro" style="width: 630px;">
-                                    <strong class="section-sub-title">요청/공유 자료 소개</strong>
+                                    <strong class="section-sub-title">공유 자료 소개</strong>
                                     <div class="section-description">
-                                        <p>요청 혹은 공유하고자 하는 자료의 정보를 작성해 주세요.
+                                        <p>공유하고자 하는 자료의 정보를 작성해 주세요.
                                             <br>
                                             기존에 올렸던 자료를 수정한다면, 어떤 점이 달라졌는지 작성해 주세요.
                                         </p>
@@ -237,7 +373,7 @@
                                             <div class="text-area-field">
                                                 <label for=""></label>
                                                 <div class="input-text-field">
-                                                    <textarea placeholder="·OOO한 자료를 요청/공유 하고자 합니다.
+                                                    <textarea placeholder="·OOO한 자료를 공유 하고자 합니다.
                                                     ·제가 ---한 부분에서 많은 도움을 받은 자료라 공유하게 되었습니다. 
                                                     ·이전 해의 자료들과는 ---한 부분에서 차이가 있습니다." 
                                                         maxlength="500" rows="4" class="input-text introduction-text"></textarea>
@@ -316,7 +452,7 @@
                                             <p class="reward-items-field">요청하는 자료의 예시 또는 공유하고자 하는 자료를 첨부해주세요.</p>
                                             <button class="reward-item-add-btn-box" type="button">
                                                 <div>
-                                                    <input type="file" accept="image/*, .pdf" name="" id="" style="display: none">
+                                                    <input type="file" accept="" name="" id="" style="display: none">
                                                     <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="reward-item-add-btn-icon" aria-hidden="true" style="width: 40px; height: 40px;">
                                                         <path d="M16 1.6C8.047 1.6 1.6 8.047 1.6 16S8.047 30.4 16 30.4 30.4 23.953 30.4 16 23.953 1.6 16 1.6zm8 15.2h-7.2V24h-1.6v-7.2H8v-1.6h7.2V8h1.6v7.2H24z"></path>
                                                     </svg>
@@ -328,7 +464,7 @@
                                     </div>
                                 </section>
 
-                                <!-- 요청 -> 구매하길 원하는 포인트 / 공유 -> 판매하길 원하는 포인트 -->
+                                <!-- 판매하길 원하는 포인트 -->
                                 <section class="section-container">
                                     <div style="max-width: 630px;">
                                         <div class="section-header price">
@@ -382,9 +518,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/economics-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">경영/경제</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -397,7 +533,7 @@
                                             <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
                                                 <div class="sub-category-node-content">
                                                     <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
+                                                    <span class="sub-category-node-label">1학년</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -405,7 +541,7 @@
                                             <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
                                                 <div class="sub-category-node-content">
                                                     <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
+                                                    <span class="sub-category-node-label">2학년</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -413,7 +549,7 @@
                                             <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
                                                 <div class="sub-category-node-content">
                                                     <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
+                                                    <span class="sub-category-node-label">3학년</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -421,63 +557,7 @@
                                             <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
                                                 <div class="sub-category-node-content">
                                                     <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="sub-category-node-container">
-                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
-                                                <div class="sub-category-node-content">
-                                                    <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="sub-category-node-container">
-                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
-                                                <div class="sub-category-node-content">
-                                                    <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="sub-category-node-container">
-                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
-                                                <div class="sub-category-node-content">
-                                                    <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="sub-category-node-container">
-                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
-                                                <div class="sub-category-node-content">
-                                                    <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="sub-category-node-container">
-                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
-                                                <div class="sub-category-node-content">
-                                                    <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="sub-category-node-container">
-                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
-                                                <div class="sub-category-node-content">
-                                                    <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="sub-category-node-container">
-                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
-                                                <div class="sub-category-node-content">
-                                                    <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
+                                                    <span class="sub-category-node-label">4학년</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -489,9 +569,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/computer-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">컴퓨터공학</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -504,7 +584,7 @@
                                             <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
                                                 <div class="sub-category-node-content">
                                                     <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
+                                                    <span class="sub-category-node-label">1학년</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -512,7 +592,23 @@
                                             <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
                                                 <div class="sub-category-node-content">
                                                     <div class="sub-category-node-image-wrap"></div>
-                                                    <span class="sub-category-node-label">생활가전</span>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -524,9 +620,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/mechanical-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">전기/전자</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -536,7 +632,40 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
                                 
                                 <!-- 네번째 대카 -->
@@ -544,9 +673,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/architectural-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">건축/토목</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -556,7 +685,40 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <!-- 다섯번째 대카 -->
@@ -564,9 +726,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/industry-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">재료/산업</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -576,7 +738,40 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <!-- 여섯번째 대카 -->
@@ -584,9 +779,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/social-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">사회/과학</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -596,7 +791,40 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <!--일곱번째 대카 -->
@@ -604,9 +832,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/nursing-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">간호/보건</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -616,7 +844,40 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
 
 
@@ -625,9 +886,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/medical-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">의예/의학</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -637,7 +898,40 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <!-- 아홉번째 대카 -->
@@ -645,9 +939,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/math-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">수학/물리</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -657,7 +951,40 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <!-- 열번째 대카 -->
@@ -665,9 +992,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/language-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">언어/문학</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -677,7 +1004,40 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <!-- 열한번째 대카 -->
@@ -685,9 +1045,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/humanities-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">인문학</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -697,7 +1057,40 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <!-- 다섯번째 대카 -->
@@ -705,9 +1098,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/art-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">미술/예술</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -717,7 +1110,40 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <!-- 여섯번째 대카 -->
@@ -725,9 +1151,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/life-science-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">생활과학</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -737,7 +1163,40 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <!--일곱번째 대카 -->
@@ -745,9 +1204,9 @@
                                     <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
                                         <div class="category-node-content">
                                             <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                                <img class="category-node-icon" src="/templates/html/share-app-soyoung/images/music-na.png" alt="">
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
+                                            <span class="category-node-label">음악/영화</span>
                                         </div>
                                         <div class="category-node-expand-btn">
                                             <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
@@ -757,132 +1216,41 @@
                                     </div>
 
                                     <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
-                                </li>
-
-
-                                <!-- 여덟번째 대카 -->
-                                <li class="category-node-container">
-                                    <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
-                                        <div class="category-node-content">
-                                            <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                    <ul class="category-node-items">
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">1학년</span>
+                                                </div>
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
-                                        </div>
-                                        <div class="category-node-expand-btn">
-                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-
-                                    <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
-                                </li>
-
-                                <!-- 아홉번째 대카 -->
-                                <li class="category-node-container">
-                                    <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
-                                        <div class="category-node-content">
-                                            <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">2학년</span>
+                                                </div>
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
-                                        </div>
-                                        <div class="category-node-expand-btn">
-                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-
-                                    <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
-                                </li>
-
-                                <!-- 열번째 대카 -->
-                                <li class="category-node-container">
-                                    <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
-                                        <div class="category-node-content">
-                                            <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">3학년</span>
+                                                </div>
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
-                                        </div>
-                                        <div class="category-node-expand-btn">
-                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-
-                                    <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
-                                </li>
-
-                                <!-- 열한번째 대카 -->
-                                <li class="category-node-container">
-                                    <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
-                                        <div class="category-node-content">
-                                            <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
+                                        </li>
+                                        <li class="sub-category-node-container">
+                                            <div class="sub-category-node-sub-item" data-value="B0010" style="height: 44px; padding: 0px 24px;">
+                                                <div class="sub-category-node-content">
+                                                    <div class="sub-category-node-image-wrap"></div>
+                                                    <span class="sub-category-node-label">4학년</span>
+                                                </div>
                                             </div>
-                                            <span class="category-node-label">테크.가전</span>
-                                        </div>
-                                        <div class="category-node-expand-btn">
-                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-
-                                    <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
+                                        </li>
+                                    </ul>
                                 </li>
-
-                                <!-- 열한번째 대카 -->
-                                <li class="category-node-container">
-                                    <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
-                                        <div class="category-node-content">
-                                            <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
-                                            </div>
-                                            <span class="category-node-label">테크.가전</span>
-                                        </div>
-                                        <div class="category-node-expand-btn">
-                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-
-                                    <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
-                                </li>
-
-                                <!-- 열한번째 대카 -->
-                                <li class="category-node-container">
-                                    <div class="category-node-item" style="height: 48px; padding: 0px 24px;">
-                                        <div class="category-node-content">
-                                            <div class="category-node-image-wrap">
-                                                <img class="category-node-icon" src="https://cdn3.wadiz.kr/category/2024:01:08:febb8d07-433e-41c6-90c7-49ce1eeae071.png" alt="활성화">
-                                            </div>
-                                            <span class="category-node-label">테크.가전</span>
-                                        </div>
-                                        <div class="category-node-expand-btn">
-                                            <svg viewBox="0 0 24 24" fill="none" focusable="false" role="presentation" class="modal-down-icon-svg" aria-hidden="true" style="width: 16px; height: 16px;">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.576 7.924l.848-.848L12 15.652l8.576-8.576.848.848L12 17.35 2.576 7.924z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-
-                                    <!-- 소카 리스트 -->
-                                    <ul class="category-node-items"><li></li></ul>
-                                </li>
-
-
-                                
                             </ul>
                         </div>
                     </div>

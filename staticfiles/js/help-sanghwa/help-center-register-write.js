@@ -1,5 +1,6 @@
 // nesty-panel 요소들 가져오기
-const select = document.getElementsByClassName('nesty-panel');
+const select = document.querySelector(".request-select");
+const options = document.querySelector();
 
 // 출력 해보기
 console.log(select);
@@ -15,3 +16,4 @@ options.forEach(function(item) {
         select.classList.toggleButton('options')
     })
 })
+
