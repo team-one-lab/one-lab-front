@@ -1491,13 +1491,12 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
 .Checkbox_icon:after {
     object-fit: cover;
     border: solid 1px #00b2b2;
-    background-color: #00c4c4;
+    background-color: #008244;
     color: white;
-    content: "v";
+    content: "V";
     /* position: absolute; */
     display: none;
     transform: translate(0px, 30px);
-    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1507,6 +1506,8 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
     width: 17px;
     height: 17px;
     fill: #fff;
+    font-size: 14px;
+    padding: 3px;
     
 }
 

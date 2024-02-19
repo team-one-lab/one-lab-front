@@ -78,18 +78,22 @@ body li, body ol, body ul {
 /* 헤더 css */
 .SpaceHeader_header {
     display: block;
-    position: relative;
-    position: fixed;
+    /* position: relative;
+    position: fixed; */
+    position: sticky;
     top: 0;
     left: 0;
     transition-property: background-color,box-shadow;
-    z-index: 5;
+    z-index: 1;
     box-shadow: 0 1px hsla(0,0%,100%,.16);
     width: 100%;
     transition-duration: .25s;
+    background: url("http://127.0.0.1:3002/staticfiles/images/main_logo.jpg");
 }
 
 .SpaceHeader_wrapper {
+    /* position: sticky; */
+    top: 0px;
     margin-right: auto;
     margin-left: auto;
     display: -ms-flexbox;
