@@ -578,3 +578,22 @@ footer.inner-utils .FooterContainer_container {
 .active {
     display:block;
 }
+
+img#google {
+    margin-right: 5px;
+    border: 0;
+    padding: 0;
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+img#apple {
+    margin-left: 37px;
+    margin-right: 5px;
+    border: 0;
+    padding: 0;
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
