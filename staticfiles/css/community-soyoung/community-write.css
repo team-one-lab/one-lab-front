@@ -960,7 +960,6 @@ label.img-file-btn-label:hover button.img-file-btn {
 }
 
 div.story-field-container {
-    margin-top: 40px;
     width: 100%;
 }
 
@@ -1116,7 +1115,7 @@ ul.upload-pool {
 /* 태그 */
 
 section.section-container.project-type {
-    margin-bottom: 16px;
+    margin-bottom: 55px;
 }
 
 
