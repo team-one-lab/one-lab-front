@@ -21,7 +21,7 @@
     />
 
     <!-- 타이틀 (주 제목) 설정 -->
-    <title>OneLab-문의 리뷰</title>
+    <title>OneLab-문의 목록</title>
 
     <!-- 폰트 적용 하기 -->
     <style>
@@ -39,13 +39,13 @@
     <div class="layout-column" x-data="Widgets.mobileMenu">
       <!-- 헤더 클론코딩 제작 -->
       <header
-        class="header_unstuck"
+        class="header-unstuck"
         x-data="Widgets.header({ isFixed: false, isSticky: true })"
         :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"
       >
-        <nav class="navbar_full">
+        <nav class="navbar-full">
           <a href="" class="navbar-auto">
-            <!-- 와디즈 도움말센터 이미지 -->
+            <!-- 원랩 메인 로고 -->
             <img
               class="block-fluid"
               id="logo"
@@ -127,12 +127,12 @@
               data-element="template"
               data-template="category-dropdown"
             ></div>
-            <!-- 문의 등록 버튼 -->
-            <a class="button-header-1" href="">원랩 문의하기</a>
-            <!-- 메이커센터 버튼 -->
-            <a class="button-header-2" href="">대회/공모전 문의하기</a>
-            <!-- 와디즈 바로가기 버튼 -->
-            <a class="button-header-3" href="">자료공유 및 장소공유</a>
+            <!-- 원랩 문의 버튼 -->
+            <a class="button-header-1" href=""> 원랩 문의 </a>
+            <!-- 학교 문의 버튼 -->
+            <a class="button-header-2" href=""> 학교 문의 </a>
+            <!-- 커뮤니티 버튼 -->
+            <!-- <a class="button-header-3" href=""> 커뮤니티 </a> -->
           </div>
         </nav>
       </header>
@@ -149,28 +149,29 @@
           <div class="row-lg">
             <div class="col">
               <div class="row">
+                <!-- <div></div>반복 -->
                 <div class="col-4" id="section-anchor-25448181617305">
-                  <!-- "회원정보" 글 범위 -->
+                  <!-- "원랩" 글 범위 -->
                   <h2>
-                    <a class="text-inherit" href=""> 좋아요 한 게시글 </a>
+                    <a class="text-inherit" href=""> 원랩 </a>
                   </h2>
                   <div id="article">
                     <ul
                       class="row-unstyled"
                     >
+                      <!-- <li></li>반복 -->
                       <li class="col-12">
                         <div class="relative-bottom">
                           <div
                             class="flex"
                             x-data="{ src: Theme.assets['article'] }"
                           ></div>
-                          <!-- "회원정보" 밑의 하나의 블럭 -->
                           <div
                             class="media-lg"
                             style="margin-left: 3.5rem; margin-right: -0.5rem;"
                           >
                             <a class="link-underline" href="">
-                              알림 신청한 프로젝트는 어디서 확인하나요?
+                              "원랩" 이 무엇인가요?
                             </a>
                             <!-- 중요한 블럭 별 표시 -->
                             <svg
@@ -183,7 +184,7 @@
                               <use xlink:href="#icon-star"></use>
                             </svg>
                             <p class="my-normal">
-                              마이와디즈의 [찜º알림신청]에서 확인하실 수 있어요. 찜. 알림 신청 목록 뿐만 아니라 최근에 본 프...
+                              "원랩" 이란 각종 대학의 논문 및 레포트와 같은 학습 자료 및 정보들을 공유하...
                             </p>
                           </div>
                         </div>
@@ -200,7 +201,7 @@
                             style="margin-left: 3.5rem; margin-right: -0.5rem;"
                           >
                             <a class="link-underline" href="">
-                              회원 정보 변경은 어떻게 하나요?
+                              "원랩" 은 왜 필요한가요?
                             </a>
                             <!-- 중요한 블럭 별 표시 -->
                             <svg
@@ -213,11 +214,12 @@
                               <use xlink:href="#icon-star"></use>
                             </svg>
                             <p class="my-normal">
-                              기본 정보 설정에서 닉네임, 이메일, 연락처 등을 언제든 변경할 수 있어요. 마이와디즈의 설정에서...
+                              저희 원랩 사이트에서는 여러분들이 단체로 모여서 자료공유를 할 수 있게끔...
                             </p>
                           </div>
                         </div>
                       </li>
+                      <!-- <li></li>반복 -->
                       <li class="col-12">
                         <div class="relative-bottom">
                           <div
@@ -229,7 +231,7 @@
                             style="margin-left: 3.5rem; margin-right: -0.5rem;"
                           >
                             <a class="link-underline" href="">
-                              새소식 알림 설정은 어떻게 하나요?
+                              원랩 신청을 하면 어떻게 되나요?
                             </a>
                             <!-- 중요한 블럭 별 표시 -->
                             <!-- <svg
@@ -242,103 +244,16 @@
                               <use xlink:href="#icon-star"></use>
                             </svg> -->
                             <p class="my-normal">
-                              마이와디즈에서 언제든지 설정을 변경하실 수 있어요. 프로젝트 별로 새소식 알림을 각각 설정 가능해요....
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              카카오 알림톡 거부는 어떻게 하나요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <!-- <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg> -->
-                            <p class="my-normal">
-                              수신한 카카오 알림톡 화면에서 직접 설정 가능해요. 알림톡으로 발송되는 알림은 다양한 내용으로 발송돼...
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              와디즈 회원 가입은 어떻게 하나요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <!-- <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg> -->
-                            <p class="my-normal">
-                              와디즈 앱 또는 PC를 통해 누구나 간편하게 가입할 수 있어요. 페이스북, 카카오, 애플, 네이버, ...
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              이벤트 혜택알림을 어떻게 설정하나요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <!-- <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg> -->
-                            <p class="my-normal">
-                              와디즈의 이벤트 혜택 알림 설정은 [MY 정보설정]에서 직접 선택할 수 있어요. 👉 이벤트 혜택 알림...
+                              저희 사이트에서 원랩 신청을 하시게 되면 같은 자료공유의 목적을 가진 사람...
                             </p>
                           </div>
                         </div>
                       </li>
                     </ul>
-                    <!-- "회원정보" 관련 목록 더보기 ->  -->
+                    <!-- "원랩" 관련 목록 더보기 기능  -->
                     <p class="mt-lg">
                       <a class="hover:no-underline" href="">
-                        문서 11개 모두 보기
+                        문서 N개 모두 보기
                         <svg
                           class="svg-icon"
                           xmlns="http://www.w3.org/2000/svg"
@@ -359,27 +274,27 @@
                 </div>
                 <!-- <div></div>반복 -->
                 <div class="col-4" id="section-anchor-25448181617305">
-                  <!-- "결제" 글 범위 -->
+                  <!-- "장소 공유" 글 범위 -->
                   <h2>
-                    <a class="text-inherit" href=""> 회원 정보 변경 </a>
+                    <a class="text-inherit" href=""> 장소 공유 </a>
                   </h2>
                   <div id="article">
                     <ul
                       class="row-unstyled"
                     >
+                      <!-- <li></li>반복 -->
                       <li class="col-12">
                         <div class="relative-bottom">
                           <div
                             class="flex"
                             x-data="{ src: Theme.assets['article'] }"
                           ></div>
-                          <!-- "결제" 밑의 하나의 블럭 -->
                           <div
                             class="media-lg"
                             style="margin-left: 3.5rem; margin-right: -0.5rem;"
                           >
                             <a class="link-underline" href="">
-                              펀딩 참여 내역은 어떻게 확인하나요?
+                              장소 공유를 하려면 어떻게 해야 되나요?
                             </a>
                             <!-- 중요한 블럭 별 표시 -->
                             <svg
@@ -392,7 +307,7 @@
                               <use xlink:href="#icon-star"></use>
                             </svg>
                             <p class="my-normal">
-                              서포터님이 참여한 프로젝트는 [참여 내역]에서 확인할 수 있어요. 참여한 펀딩&프리오더의 예약 취소를...
+                              "원랩" 이 생성이 된다면, 일단 원랩 내에서 자료 공유의 목적이 같은 사람들끼리...
                             </p>
                           </div>
                         </div>
@@ -409,36 +324,7 @@
                             style="margin-left: 3.5rem; margin-right: -0.5rem;"
                           >
                             <a class="link-underline" href="">
-                              "지금결제"는 어떻게 할 수 있나요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg>
-                            <p class="my-normal">
-                              네이버페이, 카카오페이, 애플페이 뿐만 아니라 신용카드나 직불(체크)카드를 선택하여 결제할 수 있어요...
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              지금 결제했는데 영수증 출력하는게 안보여요. 어디서 출력하나요?
+                              공유할 장소의 위치도 알려주나요?
                             </a>
                             <!-- 중요한 블럭 별 표시 -->
                             <!-- <svg
@@ -451,154 +337,7 @@
                               <use xlink:href="#icon-star"></use>
                             </svg> -->
                             <p class="my-normal">
-                              지금 결제로 결제하셨다면 영수증 출력은 프로젝트가 종료된 다음날부터 출력할 수 있어요. [참여 내역...
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              "지금결제"가 무엇인가요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <!-- <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg> -->
-                            <p class="my-normal">
-                              펀딩이나 프리오더에 참여할 때 즉시 결제할 수 있는 서비스예요. 프로젝트 종료 후 결제가 가능한 ...
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              상품을 직접 구매할 수 있나요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <!-- <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg> -->
-                            <p class="my-normal">
-                              일부 상품은 공간 와디즈에서 구매하실 수 있어요. 공간와디즈는 진행 중인 프로젝트 혹은 성공적으로 종...
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              현금영수증 발급 가능한가요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <!-- <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg> -->
-                            <p class="my-normal">
-                              펀딩 참여 또는 스토어 주문 시 현금 결제는 불가하므로 현금 영수증 발급은 어려워요. 와디즈에서는 신...
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                    <!-- "결제" 관련 목록 더보기 ->  -->
-                    <p class="mt-lg">
-                      <a class="hover:no-underline" href="">
-                        문서 28개 모두 보기
-                        <svg
-                          class="svg-icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                          ></path>
-                        </svg>
-                      </a>
-                    </p>
-                  </div>
-                  <!-- "결제" 글 범위 -->
-                  <h2>
-                    <a class="text-inherit" href=""> 필요한 자료 요청 </a>
-                  </h2>
-                  <div id="article">
-                    <ul
-                      class="row-unstyled"
-                    >
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <!-- "결제" 밑의 하나의 블럭 -->
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              펀딩 참여 내역은 어떻게 확인하나요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg>
-                            <p class="my-normal">
-                              서포터님이 참여한 프로젝트는 [참여 내역]에서 확인할 수 있어요. 참여한 펀딩&프리오더의 예약 취소를...
+                               저희 사이트에서는 위치 기반 서비스를 통하여 원랩 멤버분들의 최적화된 위치를...
                             </p>
                           </div>
                         </div>
@@ -615,36 +354,7 @@
                             style="margin-left: 3.5rem; margin-right: -0.5rem;"
                           >
                             <a class="link-underline" href="">
-                              "지금결제"는 어떻게 할 수 있나요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg>
-                            <p class="my-normal">
-                              네이버페이, 카카오페이, 애플페이 뿐만 아니라 신용카드나 직불(체크)카드를 선택하여 결제할 수 있어요...
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              지금 결제했는데 영수증 출력하는게 안보여요. 어디서 출력하나요?
+                              장소 공유 기능의 목적이 궁금합니다!!
                             </a>
                             <!-- 중요한 블럭 별 표시 -->
                             <!-- <svg
@@ -657,103 +367,16 @@
                               <use xlink:href="#icon-star"></use>
                             </svg> -->
                             <p class="my-normal">
-                              지금 결제로 결제하셨다면 영수증 출력은 프로젝트가 종료된 다음날부터 출력할 수 있어요. [참여 내역...
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              "지금결제"가 무엇인가요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <!-- <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg> -->
-                            <p class="my-normal">
-                              펀딩이나 프리오더에 참여할 때 즉시 결제할 수 있는 서비스예요. 프로젝트 종료 후 결제가 가능한 ...
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              상품을 직접 구매할 수 있나요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <!-- <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg> -->
-                            <p class="my-normal">
-                              일부 상품은 공간 와디즈에서 구매하실 수 있어요. 공간와디즈는 진행 중인 프로젝트 혹은 성공적으로 종...
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="col-12">
-                        <div class="relative-bottom">
-                          <div
-                            class="flex"
-                            x-data="{ src: Theme.assets['article'] }"
-                          ></div>
-                          <div
-                            class="media-lg"
-                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
-                          >
-                            <a class="link-underline" href="">
-                              현금영수증 발급 가능한가요?
-                            </a>
-                            <!-- 중요한 블럭 별 표시 -->
-                            <!-- <svg
-                              class="svg-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 426 405"
-                              aria-hidden="true"
-                            >
-                              <title>승격된 문서</title>
-                              <use xlink:href="#icon-star"></use>
-                            </svg> -->
-                            <p class="my-normal">
-                              펀딩 참여 또는 스토어 주문 시 현금 결제는 불가하므로 현금 영수증 발급은 어려워요. 와디즈에서는 신...
+                              저희의 장소 공유의 기능의 목적은 원랩 내에서 여러분들이 모일 수 있는 위치를 ...
                             </p>
                           </div>
                         </div>
                       </li>
                     </ul>
-                    <!-- "결제" 관련 목록 더보기 ->  -->
+                    <!-- "장소 공유" 관련 목록 더보기 기능 -->
                     <p class="mt-lg">
                       <a class="hover:no-underline" href="">
-                        문서 28개 모두 보기
+                        문서 N개 모두 보기
                         <svg
                           class="svg-icon"
                           xmlns="http://www.w3.org/2000/svg"
@@ -772,41 +395,546 @@
                     </p>
                   </div>
                 </div>
+                <!-- <div></div>반복 -->
+                <div class="col-4" id="section-anchor-25448181617305">
+                  <!-- "자료 공유" 글 범위 -->
+                  <h2>
+                    <a class="text-inherit" href=""> 자료 공유 </a>
+                  </h2>
+                  <div id="article">
+                    <ul
+                      class="row-unstyled"
+                    >
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              자료 공유를 하려면 어떻게 해야 되나요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg>
+                            <p class="my-normal">
+                              자료 공유를 하기 위해서는 두 가지 방법이 있습니다. 첫 번째 개인끼리의 공유가...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              공유할 자료의 종류도 분류해주시나요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <!-- <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg> -->
+                            <p class="my-normal">
+                               자료의 종류라기 보다는 각 학교별 전공별로 원하시는 자료를 공유하실 수 있게끔...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              자료 공유 기능에서 어떠한 자료도 아무거나 올릴 수 있나요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <!-- <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg> -->
+                            <p class="my-normal">
+                              타인에게 위화감이나 악의적인 정보가 담긴 자료가 아니라면 제한없이 올리실 수...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- "자료 공유" 관련 목록 더보기 기능 -->
+                    <p class="mt-lg">
+                      <a class="hover:no-underline" href="">
+                        문서 N개 모두 보기
+                        <svg
+                          class="svg-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                          ></path>
+                        </svg>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <!-- <div></div>반복 -->
+                <div class="col-4" id="section-anchor-25448181617305">
+                  <!-- "커뮤니티" 글 범위 -->
+                  <h2>
+                    <a class="text-inherit" href=""> 커뮤니티 </a>
+                  </h2>
+                  <div id="article">
+                    <ul
+                      class="row-unstyled"
+                    >
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              커뮤니티에서 자유롭게 소통이 가능한가요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg>
+                            <p class="my-normal">
+                              커뮤니티에서 여러분들이 자유롭게 말씀하시고 싶은 것을 올려주시면 저희 관리자들이...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              자격증을 올리고 싶은데 어떻게 하나요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <!-- <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg> -->
+                            <p class="my-normal">
+                              본인의 스펙을 올리기 위하여 자격증을 올리는 것은 매우 중요한 요소라 생각됩니다. 자격증을...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              원랩을 개설하고 나서 랩원들끼리의 불화가 생기면 어떻게 할까요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <!-- <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg> -->
+                            <p class="my-normal">
+                              팀원들끼리의 불화가 생긴다면 매우 안타까운 상황이 벌어집니다. 실질적인 갈등을 저희가...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- "커뮤니티" 관련 목록 더보기 기능 -->
+                    <p class="mt-lg">
+                      <a class="hover:no-underline" href="">
+                        문서 N개 모두 보기
+                        <svg
+                          class="svg-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                          ></path>
+                        </svg>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <!-- <div></div>반복 -->
+                <div class="col-4" id="section-anchor-25448181617305">
+                  <!-- "대회 / 공모전" 글 범위 -->
+                  <h2>
+                    <a class="text-inherit" href=""> 대회 / 공모전 </a>
+                  </h2>
+                  <div id="article">
+                    <ul
+                      class="row-unstyled"
+                    >
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              대회 및 공모전 을/를 참여하고 싶은데 어떻게 하면 되나요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg>
+                            <p class="my-normal">
+                              대회 / 공모전 에 참여할 의향이 있으시다면 대회 / 공모전 버튼을 클릭하시면 자동으로 관련 사이트...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              대회 / 공모전 에 참가하기 위해서 준비해야 할 것이 있나요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <!-- <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg> -->
+                            <p class="my-normal">
+                              모든 대회 / 공모전에 대한 정보들을 저희가 설명을 드릴 수는 없기에 직접 관련 홈페이지를 방문하셔서...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              꼭 대회 / 공모전 을 둘 중 하나를 선택을 해야 하나요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <!-- <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg> -->
+                            <p class="my-normal">
+                              대회 / 공모전 은 참여의지가 있으신 본인께서 원하시는 대로 참여하시면 되시고, 따로 저희가 제한을 두고...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- "대회 / 공모전" 관련 목록 더보기 기능 -->
+                    <p class="mt-lg">
+                      <a class="hover:no-underline" href="">
+                        문서 N개 모두 보기
+                        <svg
+                          class="svg-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                          ></path>
+                        </svg>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <!-- <div></div>반복 -->
+                <div class="col-4" id="section-anchor-25448181617305">
+                  <!-- "학교" 글 범위 -->
+                  <h2>
+                    <a class="text-inherit" href=""> 학교 </a>
+                  </h2>
+                  <div id="article">
+                    <ul
+                      class="row-unstyled"
+                    >
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              대학생 인증 관련하여 여쭤봅니다. 저희가 가입을 하게되면 인증절차가 어떻게 되나요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg>
+                            <p class="my-normal">
+                              대학생 여러분들은 학교 이메일로 가입하게 되시는데, 학교인증은 학교 측에서 해줌으로써 해당 학교 소속으로...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              소속된 학교나 학과가 다른데도 공유가 가능한가요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <!-- <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg> -->
+                            <p class="my-normal">
+                              말 그대로 저희 사이트에서는 대학과 전공에 관계없이 자료를 공유할 수 있기 때문에 자료 공유 측면에서는 따로...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- <li></li>반복 -->
+                      <li class="col-12">
+                        <div class="relative-bottom">
+                          <div
+                            class="flex"
+                            x-data="{ src: Theme.assets['article'] }"
+                          ></div>
+                          <div
+                            class="media-lg"
+                            style="margin-left: 3.5rem; margin-right: -0.5rem;"
+                          >
+                            <a class="link-underline" href="">
+                              저는 예비고3 입니다. 자료 공유를 하고 싶은데요?
+                            </a>
+                            <!-- 중요한 블럭 별 표시 -->
+                            <!-- <svg
+                              class="svg-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 426 405"
+                              aria-hidden="true"
+                            >
+                              <title>승격된 문서</title>
+                              <use xlink:href="#icon-star"></use>
+                            </svg> -->
+                            <p class="my-normal">
+                              저희 사이트에서는 애초에 고등학생 회원분들도 관련 대학 전공 의 자료들을 공유가 가능하기 때문에 그런 걱정은...
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- "학교" 관련 목록 더보기 기능 -->
+                    <p class="mt-lg">
+                      <a class="hover:no-underline" href="">
+                        문서 N개 모두 보기
+                        <svg
+                          class="svg-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                          ></path>
+                        </svg>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <!-- (문의 목록 - 원랩, 장소 공유, 자료 공유, 커뮤니티, 공모전 / 대회, 학교) 범위 -->
               </div>
             </div>
-            <!-- 우측부분 네비게이션 (서포터, 메이커) -->
+            <!-- 우측부분 네비게이션 (문의 목록 - 원랩, 장소 공유, 자료 공유, 커뮤니티, 공모전 / 대회, 학교) -->
             <aside class="lg-4">
               <div data-element="navigation" data-template="section-list"></div>
                 <div class="bg-4">
                   <div>
                     <h3 class="mt">
-                      <a class="text" href=""> 원랩 문의하기 </a>
+                      <a class="text" href="">문의 목록</a>
                     </h3>
                     <ul class="list-unstyled">
-                      <li>
-                        <a class="block-bottom" href=""> 문의1 </a>
-                      </li>
                       <!-- <li></li>반복 -->
                       <li>
-                        <a class="block-bottom" href=""> 문의2 </a>
+                        <a class="block-bottom" href="">원랩</a>
+                      </li>
+                      <li>
+                        <a class="block-bottom" href="">장소 공유</a>
+                      </li>
+                      <li>
+                        <a class="block-bottom" href="">자료 공유</a>
+                      </li>
+                      <li>
+                        <a class="block-bottom" href="">커뮤니티</a>
+                      </li>
+                      <li>
+                        <a class="block-bottom" href="">공모전 / 대회</a>
+                      </li>
+                      <li>
+                        <a class="block-bottom" href="">학교</a>
                       </li>
                     </ul>
                   </div>
-                  <!-- <div></div>반복 -->
-                  <div>
+                  <!-- 반복 태그 <div></div> -->
+                  <!-- <div>
                     <h3 class="mt">
-                      <a class="text" href=""> 공유하기 </a>
+                      <a class="text" href=""> 메이커 </a>
                     </h3>
                     <ul class="list-unstyled">
+                      $$$$$ 반복 태그 <li></li> $$$$$
                       <li>
-                        <a class="block-bottom" href=""> 자료공유 </a>
+                        <a class="block-bottom" href=""> 메이커-1 </a>
                       </li>
-                      <!-- <li></li>반복 -->
                       <li>
-                        <a class="block-bottom" href=""> 장소공유 </a>
+                        <a class="block-bottom" href=""> 메이커-2 </a>
                       </li>
                     </ul>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </aside>
@@ -819,75 +947,78 @@
       </main>
       <!-- 바디 클론코딩 범위 -->
 
+      <!-- 각종 symbol 들 -->
+      <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="svg-shape" viewBox="0 0 1200 120">
+        <use xlink:href="#shape-book"></use>
+      </svg>
+      <div class="container-7"> </div>
+      <!-- svg 에서 symbol 가져오기 -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+        <!-- symbol-1 검색 돋보기-->
+        <symbol id="icon-search">
+          <circle
+            cx="4.5"
+            cy="4.5"
+            r="4"
+            fill="none"
+            stroke="currentColor"
+          ></circle>
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            d="M11 11L7.5 7.5"
+          ></path>
+        </symbol>
+        <!-- symbol-2 자물쇠 아이콘-->
+        <symbol id="icon-lock">
+          <rect
+            width="12"
+            height="9"
+            x="2"
+            y="7"
+            fill="currentColor"
+            rx="1"
+            ry="1"
+          ></rect>
+          <path
+            fill="none"
+            stroke="currentColor"
+            d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
+          ></path>
+        </symbol>
+        <!-- symbol-3 별 아이콘 -->
+        <symbol id="icon-star">
+          <polygon
+            points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
+          ></polygon>
+        </symbol>
+        <!-- symbol-4 -->
+        <symbol id="icon-chevron-down">
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
+          ></path>
+        </symbol>
+        <!-- symbol-5 -->
+        <symbol id="icon-agent">
+          <path
+            fill="currentColor"
+            d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
+          ></path>
+        </symbol>
+        <!-- symbol-6 -->
+        <symbol id="shape-book">
+          <path
+          d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+          ></path>
+        </symbol>
+      </svg>
+      <!-- 각종 symbol 들 -->
+
       <!-- 푸터 클론코딩 제작 -->
       <footer class="footer-6" id="footer">
-        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="svg-shape" viewBox="0 0 1200 120">
-          <use xlink:href="#shape-book"></use>
-        </svg>
-        <div class="container-7"> </div>
-        <!-- svg 에서 symbol 가져오기 -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-          <!-- symbol-1 검색 돋보기-->
-          <symbol id="icon-search">
-            <circle
-              cx="4.5"
-              cy="4.5"
-              r="4"
-              fill="none"
-              stroke="currentColor"
-            ></circle>
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              d="M11 11L7.5 7.5"
-            ></path>
-          </symbol>
-          <!-- symbol-2 자물쇠 아이콘-->
-          <symbol id="icon-lock">
-            <rect
-              width="12"
-              height="9"
-              x="2"
-              y="7"
-              fill="currentColor"
-              rx="1"
-              ry="1"
-            ></rect>
-            <path
-              fill="none"
-              stroke="currentColor"
-              d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
-            ></path>
-          </symbol>
-          <!-- symbol-3 별 아이콘 -->
-          <symbol id="icon-star">
-            <polygon
-              points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
-            ></polygon>
-          </symbol>
-          <!-- symbol-4 -->
-          <symbol id="icon-chevron-down">
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
-            ></path>
-          </symbol>
-          <!-- symbol-5 -->
-          <symbol id="icon-agent">
-            <path
-              fill="currentColor"
-              d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
-            ></path>
-          </symbol>
-          <!-- symbol-6 -->
-          <symbol id="shape-book">
-            <path
-            d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
-            ></path>
-          </symbol>
-        </svg>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- 메인 푸터 부분 범위 -->
@@ -926,7 +1057,7 @@
                   <div class="system-icon-c">
                     <div class="fill-d"></div>
                   </div>
-                  <span class="wadiz-help-center">와디즈 도움말센터</span>
+                  <span class="wadiz-help-center">원랩 도움말센터</span>
                 </div>
                 <div class="text-button">
                   <span class="button-text-f">채팅 상담하기</span>
@@ -955,43 +1086,43 @@
               <div class="box-1a">
                 <div class="box-1b">
                   <div class="box-1c">
-                    <span class="wadiz">와디즈(주)</span>
+                    <span class="wadiz">원랩(OneLab)</span>
                     <div class="divider-1d">
                       <div class="middle-divider"></div>
                     </div>
                     <span class="representative-director">대표이사</span>
-                    <span class="main-name">신혜성</span>
+                    <span class="main-name">한동석</span>
                     <div class="divider-1e">
                       <div class="middle-1f"></div>
                     </div>
-                    <span class="business-number">사업자등록번호 258-87-01370</span>
+                    <span class="business-number">사업자등록번호 000-00-00000</span>
                     <div class="divider-20">
                       <div class="middle-21"></div>
                     </div>
-                    <span class="sales-number">통신판매업신고번호 2021-성남분당C-1153</span>
+                    <span class="sales-number">통신판매업신고번호 2024-서울강남A-0000</span>
                     <div class="divider-22">
                       <div class="middle-23"></div>
                     </div>
-                    <span class="span-address">경기 성남시 분당구 판교로 242 PDC A동 402호</span>
+                    <span class="span-address">서울특별시 강남구 역삼동 코리아IT 아카데미 (별관) 13층</span>
                   </div>
                   <div class="box-24">
                     <span class="span-email-consultation">이메일 상담</span>
                     <div class="divider-25">
                       <div class="middle-26"></div>
                     </div>
-                    <span class="span-email">info@wadiz.kr</span>
+                    <span class="span-email">info@OneLab.com</span>
                     <div class="divider-27">
                       <div class="middle-28"></div>
                     </div>
-                    <span class="wired-counseling">유선 상담 1661-9056</span>
-                    <span class="wadiz-co-ltd">ⓒ wadiz Co., Ltd.</span>
+                    <span class="wired-counseling">유선 상담 1234-5678</span>
+                    <span class="wadiz-co-ltd">ⓒ OneLab Co., Ltd.</span>
                   </div>
                 </div>
                 <span class="wadiz-disclaimer">
-                  일부 상품의 경우 와디즈는 통신판매중개자이며 통신판매 당사자가 아닙니다.
+                  일부 자료의 경우 원랩은 자료공유중개자이며 자료판매 당사자가 아닙니다.
                   <br>
-                  해당되는 상품의 경우 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용
-                  을 확인하시기 바랍니다.
+                  해당되는 자료의 경우 자료, 자료정보, 자료거래에 관한 의무와 책임은 원랩원들에게 있으므로,
+                  각 자료 공유에 관련된 사항은 각 해당 페이지 에서 구체적인 내용을 확인하시기 바랍니다.
                   </span>
               </div>
               <!-- 안드로이드 앱 스토어 가는 버튼 -->
