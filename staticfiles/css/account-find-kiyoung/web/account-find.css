@@ -551,9 +551,16 @@ label.ol.text.body1 {
     font-weight: 400;
 }
 
-.account-find .ol.container.id-check .ol.text.body1 {
+.account-find .ol.container.id-check .ol.text.body1,
+.account-find .ol.container.id-check .ol.text.body2,
+.account-find .ol.container.id-check .ol.text.body3 {
     margin-bottom: 40px;
     color: #0000008a;
+}
+
+.account-find .ol.container.id-check .ol.text.body2,
+.account-find .ol.container.id-check .ol.text.body3 {
+    display: none;
 }
 
 .ol.form .field {
@@ -786,10 +793,6 @@ label.ol.text.headline2 {
     color: #000000d6;
 }
 
-.account-find .ol.container.id-result .ol.text.body1 {
-    color: #0000008a;
-}
-
 .account-find .ol.container.id-result .inner-container {
     margin-top: 24px;
 }
@@ -798,4 +801,9 @@ label.ol.text.headline2 {
     margin-bottom: 16px;
     text-align: center;
     line-height: 46px;
+}
+
+#btn-resend {
+    background-color: #90949c;
+    display: none;
 }
