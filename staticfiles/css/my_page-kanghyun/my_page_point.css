@@ -140,6 +140,9 @@ button {
     padding: 0;
     vertical-align: baseline;
 }
+button:not(:disabled) {
+    cursor: pointer;
+}
 
 span {
     margin: 0;
@@ -254,13 +257,101 @@ h2.mypage-top-title {
     font-weight: 500;
 }
 
-.point-list {
-    
-    margin: 0 auto;
-    padding: 24px 24px 64px;
-    background: #fff;
+.usable-point:after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #212529;
+    width: 960px;
+    height: .1px;
+    content: "";
+}
+.point-tab-container {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    white-space: nowrap;
 }
 
+.point-tab-container:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.point-keywords {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    height: 40px;
+    overflow-x: auto;
+    gap: 16px;
+    white-space: nowrap;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.point-keywords-tab {
+    border: 0;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    height: auto;
+    font-size: 20px;
+    position: relative;
+    transition-property: background-color, border-color, color, opacity;
+    transition-duration: 0.15s;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.002);
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #495057;
+    margin-right: 10px;
+}
+
+.point-keywords-tab.active {
+    border-bottom: 2px solid #008243;
+    gap: 40px;
+    font-weight: 600;
+}
+
+.point-keywords-tab span {
+    color: #000;
+}
+
+
+
+.point-list {
+    display: none;
+    margin: 0 auto;
+    padding: 0px 24px 64px;
+    background: #fff;
+    animation-name: point-list-open;
+    animation-duration: 0.3s;
+}
+
+@keyframes point-list-open {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity : 1;
+    }
+}
+
+
+.show {
+    display: block;
+}
 #emptyProjectText {
     width: 960px;
     margin: 0 auto;
@@ -376,4 +467,8 @@ i.wadizicon{
     font-size: 13px;
     line-height: 18px;
     color: #90949C;
+}
+
+.no-point-list {
+    display: none;
 }

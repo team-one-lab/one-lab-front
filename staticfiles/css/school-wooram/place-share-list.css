@@ -133,8 +133,7 @@ a {
   text-decoration: none;
 }
 
-a,
-button {
+a, button {
   color: inherit;
 }
 
@@ -146,16 +145,11 @@ button:not(:disabled) {
   cursor: pointer;
 }
 
-body,
-button,
-input,
-select,
-textarea {
+body,button,input,select,textarea {
   font-family: inherit;
 }
 
-body,
-table th {
+body,table th {
   font-weight: 400;
 }
 
@@ -187,11 +181,7 @@ strong {
   font-weight: 700;
 }
 
-address,
-cite,
-dfn,
-em,
-var {
+address,cite,dfn,em,var {
   font-weight: inherit;
   font-style: normal;
 }
@@ -373,8 +363,8 @@ hr {
 }
 
 .Tab_tab.Tab_rectangle.Tab_sm.tab_end {
-  margin-left: 764px;
-  padding: 0 60px;
+  margin-left: 314px;
+  padding: 0 47px;
   background-color: #008243;
 }
 
@@ -425,7 +415,7 @@ hr {
 .Tab_tab.Tab_sm span {
   height: 32px;
   line-height: 20px;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 400;
 }
 
@@ -541,12 +531,13 @@ hr {
   font-weight: 700;
 }
 
-.SearchResult_cardContainer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 103%;
-  gap: 40px 5px;
+.search-result-card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* 목록 페이지 쪽 */
@@ -556,13 +547,169 @@ hr {
   width: 100%;
 }
 
-.SearchResult_cardContainer > div {
-  width: 100%;
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+.css-dlxsy {
+    max-width: 1420px;
+    width: 100%;
+    position: relative;
+    margin: 0px auto 20px;
+}
+
+.css-uhtu {
+    position: relative;
+    margin: 0px auto;
+    max-width: 1280px;
+    min-width: 1090px;
+}
+
+.css-main {
+    position: relative;
+    height: 311px;
+    overflow: hidden;
+}
+
+.css-margin {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    color: rgb(73, 80, 87);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.css-picture {
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    border: 0px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+    background-image: url(https://static.makercenter.wadiz.kr/board/image/3bdc122e-9e48-403b-89a7-8744405fc741.jpg);
+    max-width: 305px;
+    height: 160px;
 }
 
 
+.css-ivory {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+}
 
-.SearchResult_cardContainer .SearchResult_table {
+.css-quwc {
+    margin-left: 8px;
+    margin-right: 8px;
+    display: none;
+}
+
+.mapping {
+  display: inline-block;
+  height: 18px;
+  padding: 0px 4px;
+  margin-right: -4px;
+  border: 0px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.css-import {
+    display: inline-block;
+    height: 18px;
+    padding: 0px 4px;
+    margin-right: 4px;
+    border: 0px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 196, 196);
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.css-just {
+    display: inline-block;
+    height: 18px;
+    padding: 0px 4px;
+    border: 0px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(85, 124, 242);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.css-write {
+    color: rgb(33, 37, 41);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 23px;
+    width: 300px;
+}
+
+.css-detail {
+    color: rgb(144, 148, 156);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+    width: 300px;
+    height: auto;
+    max-height: 35px;
+}
+
+.css-date {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    line-height: 16px;
+    color: rgb(33, 37, 41);
+}
+
+.swiper-container {
+    touch-action: pan-y;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform,-webkit-transform;
+    width: 302px;
+    margin : 24px;
+}
+
+.search-result-card-container .SearchResult_table {
   width: 100%;
 }
 
@@ -849,6 +996,22 @@ video {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
 
+.list-active {
+    width: 237px;
+    height: 360px;
+    position: absolute;
+    left: 0px;
+    padding: 30px 22px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 0px 0px 10px 10px;
+    bottom: -180px;
+    transition: all 0.2s ease-in-out 0s;
+    transform: translate(0px, -180px);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+}
+
+
 .css-18m1pdx {
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -861,4 +1024,65 @@ video {
     font-size: 15px;
     font-weight: 500;
     display: none;
+}
+
+/* 찜하기 버튼 css */
+.wish-button-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    outline: none;
+    cursor: pointer;
+    width: 73px;
+    height: 138px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  .withIcon_icon {
+    display: block;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+  }
+  
+  wish-button-button * {
+    pointer-events: none;
+  }
+  
+  .wish-button-button svg {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+    will-change: transform;
+  }
+  
+  .wish-button-button path {
+    stroke: #f2f4f6;
+    stroke-width: 2px;
+    fill: rgba(33, 37, 41, 0.4);
+    transition: fill 0.25s ease-in-out;
+  }
+  
+  .wish-button-button.active path {
+    fill: crimson;
+  }
+
+  /* 이미지 쪽 css */
+
+  .css-main:hover .css-picture {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2); /* IE 9 */
+    -o-transform: scale(1.2);
+
+    transition: transform 0.3s;
+  }
+
+.mappins {
+  margin-right: 113px; 
+  margin-bottom: 18px
 }

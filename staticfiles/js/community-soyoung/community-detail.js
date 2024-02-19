@@ -55,22 +55,23 @@ likeBtn.addEventListener("click", function(e) {
 const textareas = document.querySelectorAll(".comment-textarea");
 textareas.forEach((textarea) => {
     textarea.addEventListener('click', function(e) {
-        const parentContainer = textarea.closest(".comment-write-form");
+        const parentContainer = textarea.closest(".comment-user-wrapper-main");
         const okButton = parentContainer.querySelector("button.comment-ok-btn");
         okButton.classList.add('active');
-        e.target.classList.add('active')
+        // e.target.classList.add('active')
     });
 });
 
 textareas.forEach((textarea) => {
     textarea.addEventListener('input', function(e) {
-        const parentContainer = textarea.closest(".comment-write-form");
+        const parentContainer = textarea.closest(".comment-user-wrapper-main");
         const countSpan = parentContainer.querySelector(".comment-form-count");
         const okButton = parentContainer.querySelector("button.comment-ok-btn");
         const textLength = textarea.value.length;
         countSpan.textContent = textLength + "/2,000";
-        e.target.classList.add('active');
+        // e.target.classList.add('active');
         if(textLength > 0) {
+            console.log(okButton)
             okButton.classList.add('submit')
         } else {
             okButton.classList.remove('submit')

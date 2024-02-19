@@ -9,13 +9,13 @@ radio.forEach((like) => {
     });
 });
 
-const nPay = document.querySelector("#n_pay");
-const menubars = document.querySelector(".menubars");
-nPay.addEventListener("change", (e) => {
-    if (e.target.checked) {
-        menubars.style.display = "block";
-    }
-});
+// const nPay = document.querySelector("#n_pay");
+// const menubars = document.querySelector(".menubars");
+// nPay.addEventListener("change", (e) => {
+//     if (e.target.checked) {
+//         menubars.style.display = "block";
+//     }
+// });
 
 const all = document.querySelector("#all_check");
 const terms = document.querySelectorAll("input.check_on");

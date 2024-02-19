@@ -23,24 +23,62 @@
         <div class="web-header">
           <div class="web-header-large">
             <header class="header-wrapper web-header-simple">
-              <div class="header-container">
-                <h1 class="wadiz-logo">
-                  <a href="/">
-                    <img
-                      src="../../../../staticfiles/images/header-logo.png"
-                      width="100px"
-                      height="30px"
-                      alt=""
-                  /></a>
-                </h1>
-                <ul class="gnb-large">
-                  <li class="login">
-                    <a href="#" class="item"><span>로그인</span></a>
-                  </li>
-                  <li class="signup">
-                    <a href="#" class="item"><span>회원가입</span></a>
-                  </li>
-                </ul>
+              <div class="header-container" style="display: flex;">
+                <button class="header-back-btn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    focusable="false"
+                    role="presentation"
+                    class="back-btn-icon"
+                    aria-hidden="true"
+                    style="width: 24px; height: 24px;"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16.076 2.576l.848.848L8.35 12l8.575 8.576-.848.848L6.65 12l9.425-9.424z"
+                    ></path>
+                  </svg>
+                </button>
+                <a class="home-link-anker" href="#">
+                  <svg
+                    viewBox="0 0 40 40"
+                    focusable="false"
+                    role="presentation"
+                    class="home-link-anker-icon"
+                    aria-hidden="true"
+                    style="width: 24px; height: 24px;"
+                  >
+                    <path
+                      d="M13.38 36.13h2.4v-13.9h8.44v13.9h2.4V19.84H13.38v16.29z"
+                    ></path>
+                    <path
+                      d="M20 3.41L3.8 14.49v21.64h2.4V15.75L20 6.32l13.8 9.43v20.38h2.4V14.49L20 3.41z"
+                    ></path>
+                    <path fill="none" d="M0 0h40v40H0z"></path>
+                  </svg>
+                </a>
+                <div class="preview-overlay-container">
+                  <svg
+                    viewBox="0 0 40 40"
+                    focusable="false"
+                    role="presentation"
+                    class="withIcon-icon"
+                    aria-hidden="true"
+                    style="width: 24px; height: 24px;"
+                  >
+                    <path fill="none" d="M0 0h40v40H0z"></path>
+                    <path
+                      d="M29.12 2.23H10.88a1 1 0 0 0-1 1v33.88a1 1 0 0 0 1 1h18.24a1 1 0 0 0 1-1V3.28a1 1 0 0 0-1-1.05zm-7.3 30.61A1.82 1.82 0 1 1 20 31a1.83 1.83 0 0 1 1.82 1.84zm6.26 3.23H11.92V4.32h16.16z"
+                    ></path>
+                    <path d="M18.18 6.89h3.65v2.08h-3.65z"></path>
+                  </svg>
+                  <p class="preview-overlay-title">미리보기 모드</p>
+                  <p class="preview-overlay-description">
+                    저장한 내용을 미리 볼 수 있어요.
+                  </p>
+                </div>
               </div>
             </header>
           </div>
@@ -163,7 +201,7 @@
                     <div class="outer-radio-box">
                       <div class="inner-radio-box"></div>
                     </div>
-                    <span class="radio-span">학생</span>
+                    <span class="radio-span">고등학생</span>
                     <input
                       type="radio"
                       name="student"
@@ -185,7 +223,7 @@
                       <div class="easy-join-email-input-box">
                         <input
                           name="email"
-                          placeholder="이메일 계정"
+                          placeholder="ex) abc123@gmail.com"
                           type="email"
                           class="email-input"
                         />
@@ -268,20 +306,6 @@
                   </p>
                   <p class="validate-msg name-validate">
                     이름을 입력해 주세요
-                  </p>
-                </div>
-                <div class="easy-join-department-input-box">
-                  <label>학과명</label>
-                  <div class="department-input-box">
-                    <input
-                      name="nickName"
-                      placeholder="이름 입력"
-                      type="text"
-                      class="department-input"
-                    />
-                  </div>
-                  <p class="validate-msg department-validate">
-                    학과명을 입력해 주세요
                   </p>
                 </div>
                 <div class="easy-join-password-input-box">
