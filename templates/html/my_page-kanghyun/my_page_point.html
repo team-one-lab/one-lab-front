@@ -27,21 +27,76 @@
                         <h2 class="mypage-top-title short">포인트</h2>
                         <div class="mypage-project short ">
                             <p class="point-guide">
-                                포인트 적립, 사용, 소멸 내역입니다.
+                                포인트 충전, 적립, 사용 내역입니다.
                             </p>
                             <div class="usable-point">
-                                <p>현재 사용가능 포인트 <em>100 p</em></p>
+                                <p>현재 사용가능 포인트 <em>100 </em></p>
                             </div>
-
-                            <div class="point-list">
-                                <!-- 포인트가 있는 경우 -->
+                            <div class="point-tab-container">
+                                <p class="point-keywords">
+                                    <button class="point-keywords-tab active">
+                                        <span>
+                                            <span
+                                                class="point-keywords-children"
+                                                >충전</span
+                                            >
+                                        </span>
+                                    </button>
+                                    <button class="point-keywords-tab">
+                                        <span>
+                                            <span
+                                                class="point-keywords-children"
+                                                >적립</span
+                                            >
+                                        </span>
+                                    </button>
+                                    <button class="point-keywords-tab">
+                                        <span>
+                                            <span
+                                                class="point-keywords-children"
+                                                >사용</span
+                                            >
+                                        </span>
+                                    </button>
+                                </p>
+                            </div>
+                            <!-- 포인트 충전 내역 -->
+                            <div class="point-list show">
                                 <ul>
                                     <li>
                                         <div class="point-card">
                                             <dl>
                                                 <dt>
                                                     <p class="title">
-                                                        지지서명 공유 포인트
+                                                        결제 충전된 포인트
+                                                    </p>
+                                                    <p class="sub-title">
+                                                        유효기간 2024.04.14 23시
+                                                        59분 까지
+                                                    </p>
+                                                </dt>
+                                                <dd>
+                                                    <p class="point plus">
+                                                        100 p 충전
+                                                    </p>
+                                                    <p class="date">
+                                                        충전일 2024.02.14
+                                                    </p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 포인트 적립 내역 -->
+                            <div class="point-list">
+                                <ul>
+                                    <li>
+                                        <div class="point-card">
+                                            <dl>
+                                                <dt>
+                                                    <p class="title">
+                                                        자료 공유 적립 포인트
                                                     </p>
                                                     <p class="sub-title">
                                                         유효기간 2024.04.14 23시
@@ -60,8 +115,37 @@
                                         </div>
                                     </li>
                                 </ul>
-
-                                <!-- 포인트가 없는 경우 -->
+                            </div>
+                            <!-- 포인트 사용 내역 -->
+                            <div class="point-list">
+                                <ul>
+                                    <li>
+                                        <div class="point-card">
+                                            <dl>
+                                                <dt>
+                                                    <p class="title">
+                                                        자료 구매한 포인트
+                                                    </p>
+                                                    <p class="sub-title">
+                                                        유효기간 2024.04.14 23시
+                                                        59분 까지
+                                                    </p>
+                                                </dt>
+                                                <dd>
+                                                    <p class="point plus">
+                                                        100 p 사용
+                                                    </p>
+                                                    <p class="date">
+                                                        사용일 2024.02.14
+                                                    </p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 포인트가 없는 경우 -->
+                            <div class="no-point-list point-list">
                                 <p id="emptyProjectText" style="display:block">
                                     포인트 거래 내역이 없습니다.
                                 </p>
@@ -92,4 +176,5 @@
             </div>
         </div>
     </body>
+    <script src="/staticfiles/js/my_page-kanghyun/my_page_point.js"></script>
 </html>

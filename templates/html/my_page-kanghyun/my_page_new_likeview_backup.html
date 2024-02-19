@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-top scroll-apex">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/templates/html/one-lab-soyoung/favicon/favicon-16x16.png"
+        />
+        <link
+            rel="stylesheet"
+            href="/staticfiles/css/my_page-kanghyun/my_page_modal.css"
+        />
+        <link
+            rel="stylesheet"
+            href="/staticfiles/css/my_page-kanghyun/my-page-body.css"
+        />
+        <title>my-page-body</title>
+    </head>
+    <body class>
+        <!-- 마이페이지 -->
+        <div id="page-container">
+            <main id="main-app">
+                <!-- web-header -->
+                <div class="web-header"></div>
+                <!-- web-body -->
+                <div class="web-body">
+                    <section class="my-page-main-layout">
+                        <!-- 회원정보 컨테이너 -->
+                        <div>
+                            <div class="user-container">
+                                <a
+                                    id="user-container-high-student-info"
+                                    aria-selected="false"
+                                    class="user-container-button"
+                                    href=""
+                                    >고등학생</a
+                                >
+                                <a
+                                    id="user-container-university-student-info"
+                                    aria-selected="false"
+                                    class="user-container-button"
+                                    href=""
+                                    >대학생</a
+                                >
+                                <a
+                                    id="user-container-university-info"
+                                    aria-selected="false"
+                                    class="user-container-button"
+                                    href=""
+                                    >학교</a
+                                >
+                                <a
+                                    id="user-container-default-info"
+                                    aria-selected="false"
+                                    class="user-container-button"
+                                    href=""
+                                    >회원님</a
+                                >
+                            </div>
+                            <!-- 유저프로필 -->
+                            <div class="user-profile">
+                                <div class="user-profile-info">
+                                    <div class="user-profile-profileimage">
+                                        <button
+                                            type="button"
+                                            class="user-profile-detail-profile"
+                                            aria-label="프로필 상세 보기"
+                                            data-event="profile"
+                                            style="
+                                                background-image: url('https://static.wadiz.kr/assets/icon/profile-icon-1.png');
+                                            "
+                                        ></button>
+                                        <button
+                                            type="button"
+                                            class="user-profile-edit-profile"
+                                            data-event="profile_edit"
+                                            aria-label="프로필 편집하기"
+                                        >
+                                            <svg
+                                                viewBox="0 0 32 32"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="withIcon-icon"
+                                                aria-hidden="true"
+                                            >
+                                                <path
+                                                    d="M24 1.6L1.6 24v6.4H8L30.4 8zM7.36 28.8H3.2v-4.16L19.76 8.08l4.16 4.16zm17.68-17.68l-4.16-4.16L24 3.84 28.16 8z"
+                                                ></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="user-profile-profile">
+                                        <button
+                                            type="button"
+                                            class="user-profile-username"
+                                            data-event="profile"
+                                        >
+                                            <span class="user-profile-textbox">
+                                                <span class="user-profile-name">
+                                                    도강현
+                                                </span>
+                                                <span>님</span>
+                                            </span>
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                focusable="false"
+                                                role="presentation"
+                                                class="withIcon-icon withIcon-inline user-profile-icon"
+                                                aria-hidden="true"
+                                                style="
+                                                    width: 16px;
+                                                    height: 16px;
+                                                "
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                ></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- 포인트/결제하기 & 로그아웃 버튼 -->
+                                <div class="user-profile-setting">
+                                    <!-- 포인트/결제하기 -->
+                                    <div class="my-page-accumulate">
+                                        <div class="my-page-accumulate-value">
+                                            <!-- 포인트 -->
+                                            <a
+                                                class="my-page-accumulate-container"
+                                                href=""
+                                                ><dl
+                                                    class="my-page-accumulate-info"
+                                                >
+                                                    <dt
+                                                        class="my-page-accumulate-title"
+                                                    >
+                                                        <svg
+                                                            viewBox="0 0 40 40"
+                                                            focusable="false"
+                                                            role="presentation"
+                                                            class="withIcon-icon"
+                                                            aria-hidden="true"
+                                                        >
+                                                            <g
+                                                                data-name="레이어 2"
+                                                            >
+                                                                <path
+                                                                    d="M21.19 12.5h-5.91v15.16h2.16v-4.59h3.75a7 7 0 0 0 4.63-1.41 4.75 4.75 0 0 0 1.69-3.87 4.77 4.77 0 0 0-1.69-3.88 7 7 0 0 0-4.63-1.41zm3.07 7.81a4.84 4.84 0 0 1-3.14.88h-3.68v-6.8h3.68a4.9 4.9 0 0 1 3.14.87 3.06 3.06 0 0 1 1.09 2.53 3 3 0 0 1-1.09 2.52z"
+                                                                ></path>
+                                                                <path
+                                                                    d="M20 1.67A18.33 18.33 0 1 0 38.33 20 18.35 18.35 0 0 0 20 1.67zm0 34.66A16.33 16.33 0 1 1 36.33 20 16.35 16.35 0 0 1 20 36.33z"
+                                                                ></path>
+                                                                <path
+                                                                    fill="none"
+                                                                    d="M0 0h40v40H0z"
+                                                                ></path>
+                                                            </g>
+                                                        </svg>
+                                                        <span
+                                                            class="my-page-accumulate-name"
+                                                            >포인트</span
+                                                        >
+                                                    </dt>
+                                                    <dd
+                                                        class="my-page-accumulate-value"
+                                                    >
+                                                        0
+                                                    </dd>
+                                                </dl>
+                                            </a>
+                                            <!-- 분할선 -->
+                                            <hr
+                                                class="my-page-accumulate-divider"
+                                            />
+                                            <!-- 결제하기 -->
+                                            <a
+                                                class="my-page-accumulate-container"
+                                                href=""
+                                                ><dl
+                                                    class="my-page-accumulate-info"
+                                                >
+                                                    <dt
+                                                        class="my-page-accumulate-title"
+                                                    >
+                                                        <svg
+                                                            width="16"
+                                                            height="12"
+                                                            viewBox="0 0 16 12"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            class="withIcon-icon"
+                                                        >
+                                                            <path
+                                                                fill-rule="evenodd"
+                                                                clip-rule="evenodd"
+                                                                d="M14.7984 0.400391H1.19844C0.75661 0.400391 0.398438 0.758563 0.398438 1.20039V10.8004C0.398438 11.2422 0.75661 11.6004 1.19844 11.6004H14.7984C15.2403 11.6004 15.5984 11.2422 15.5984 10.8004V1.20039C15.5984 0.758563 15.2403 0.400391 14.7984 0.400391ZM14.7984 1.20039V4.30039H1.19844V1.20039H14.7984ZM1.19844 10.8004V5.10039H14.7984V10.8004H1.19844Z"
+                                                            />
+                                                        </svg>
+                                                        <span
+                                                            class="my-page-accumulate-name"
+                                                            >결제하기</span
+                                                        >
+                                                    </dt>
+                                                </dl>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- 로그아웃 버튼 -->
+                                    <button
+                                        class="user-profile-logout-button"
+                                        type="button"
+                                    >
+                                        <span>
+                                            <span class="Button_children"
+                                                >로그아웃</span
+                                            >
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 마이페이지 본문 -->
+                        <div class="my-page-contents">
+                            <!-- 포인트, 쿠폰, 게시글보기, 포인트충전내역, 좋아요보기 -->
+                            <div class="my-page-contents-section">
+                                <div class="my-page-container">
+                                    <div class="my-page-container-title">
+                                        <div
+                                            class="my-page-project-info-container"
+                                        >
+                                            <div
+                                                class="my-page-project-info-project"
+                                            >
+                                                <!-- 학생 인증 -->
+                                                <div
+                                                    class="my-page-project-info-payment"
+                                                >
+                                                    <button>
+                                                        <div
+                                                            class="my-page-project-info-content"
+                                                        >
+                                                            <div
+                                                                class="my-page-project-info-titleinfo"
+                                                            >
+                                                                <svg
+                                                                    class="withIcon-icon"
+                                                                    version="1.0"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 1280.000000 1280.000000"
+                                                                >
+                                                                    <g
+                                                                        transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                                                                        fill="#000000"
+                                                                        stroke="none"
+                                                                    >
+                                                                        <path
+                                                                            d="M6145 12794 c-216 -13 -391 -28 -530 -45 -995 -122 -1927 -467 -2760
+                                                                            -1022 -907 -604 -1648 -1433 -2146 -2402 -395 -769 -615 -1549 -690 -2450 -17
+                                                                            -193 -17 -757 0 -950 75 -901 295 -1681 690 -2450 610 -1188 1578 -2156 2766
+                                                                            -2766 769 -395 1549 -615 2450 -690 193 -17 757 -17 950 0 901 75 1681 295
+                                                                            2450 690 1187 610 2156 1579 2766 2766 395 769 615 1549 690 2450 17 193 17
+                                                                            757 0 950 -75 901 -295 1681 -690 2450 -610 1188 -1578 2156 -2766 2766 -753
+                                                                            387 -1531 610 -2390 684 -164 15 -666 27 -790 19z m739 -779 c1098 -94 2121
+                                                                            -499 3001 -1188 401 -314 804 -738 1106 -1162 598 -840 944 -1793 1030 -2840
+                                                                            16 -193 16 -657 0 -850 -114 -1385 -693 -2628 -1672 -3591 -960 -942 -2172
+                                                                            -1494 -3524 -1605 -193 -16 -657 -16 -850 0 -1352 111 -2561 661 -3523 1605
+                                                                            -979 960 -1561 2210 -1673 3591 -15 193 -15 657 0 850 112 1384 693 2629 1678
+                                                                            3596 872 856 1985 1403 3183 1563 416 55 832 66 1244 31z"
+                                                                        />
+                                                                        <path
+                                                                            d="M6243 9900 c-599 -30 -1099 -153 -1593 -391 -700 -338 -1201 -845
+                                                                            -1574 -1594 -243 -489 -383 -999 -427 -1559 -24 -300 -3 -755 46 -1042 86
+                                                                            -495 280 -996 532 -1378 437 -659 1157 -1110 2098 -1315 431 -94 797 -126
+                                                                            1335 -118 357 5 535 20 811 67 658 113 1232 361 1674 725 117 97 315 297 403
+                                                                            408 88 111 201 285 266 408 31 58 56 109 56 112 0 4 -179 7 -397 6 l-398 0
+                                                                            -70 -85 c-383 -467 -995 -774 -1767 -888 -417 -62 -1044 -62 -1461 -1 -613 91
+                                                                            -1144 302 -1522 606 -399 321 -703 812 -845 1364 -161 627 -103 1399 156 2085
+                                                                            234 616 591 1076 1089 1402 403 264 849 411 1430 469 155 16 596 16 750 0 657
+                                                                            -66 1150 -278 1532 -659 368 -366 574 -801 624 -1317 16 -168 7 -447 -21 -610
+                                                                            -110 -651 -497 -1248 -1004 -1553 -115 -69 -247 -110 -311 -96 -102 22 -136
+                                                                            109 -110 287 17 124 12 97 205 1037 39 190 75 365 80 390 5 25 41 200 80 390
+                                                                            39 190 75 365 80 390 5 25 41 200 80 390 39 190 74 360 77 378 l6 32 -495 0
+                                                                            -495 0 -43 -197 c-23 -109 -45 -204 -49 -210 -4 -8 -27 15 -61 63 -145 203
+                                                                            -363 345 -622 407 -82 19 -121 22 -318 21 -196 0 -239 -3 -330 -22 -323 -70
+                                                                            -595 -215 -838 -447 -401 -382 -700 -952 -806 -1535 -43 -233 -59 -589 -36
+                                                                            -795 44 -390 180 -700 415 -944 200 -208 438 -340 716 -397 104 -21 385 -30
+                                                                            490 -15 292 42 546 164 773 372 31 28 58 50 59 48 1 -2 11 -29 21 -59 41 -122
+                                                                            140 -241 245 -295 98 -49 190 -67 378 -72 821 -25 1517 364 2027 1134 400 604
+                                                                            557 1283 470 2023 -59 502 -248 997 -532 1394 -481 671 -1299 1095 -2267 1175
+                                                                            -186 15 -434 20 -612 11z m62 -2275 c248 -52 448 -262 519 -546 37 -149 47
+                                                                            -377 25 -577 -26 -242 -111 -572 -215 -830 -99 -247 -188 -388 -343 -543 -155
+                                                                            -155 -303 -233 -497 -260 -215 -30 -398 34 -549 193 -151 158 -225 403 -225
+                                                                            747 0 444 161 1041 363 1346 236 357 592 539 922 470z"
+                                                                        />
+                                                                    </g>
+                                                                </svg>
+                                                                <strong
+                                                                    class="my-page-project-info-title"
+                                                                    >대학생
+                                                                    인증</strong
+                                                                >
+                                                                <p
+                                                                    class="my-page-project-info-description"
+                                                                >
+                                                                    대학생
+                                                                    인증하고,
+                                                                    원랩이
+                                                                    되어보세요!
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div
+                                                    class="my-page-project-info-projectLink"
+                                                >
+                                                    <a
+                                                        class="my-page-project-content"
+                                                        href="/web/mywadiz/participation"
+                                                        ><span
+                                                            >작성한 게시글
+                                                            보기</span
+                                                        ><span
+                                                            ><b>0</b></span
+                                                        ></a
+                                                    >
+                                                    <hr
+                                                        class="my-page-project-content-divider"
+                                                    />
+                                                    <a
+                                                        class="my-page-project-content"
+                                                        href="/web/mywadiz/store/order"
+                                                        ><span
+                                                            >결제 상세
+                                                            내역</span
+                                                        ><span
+                                                            ><b>0</b></span
+                                                        ></a
+                                                    >
+                                                    <hr
+                                                        class="my-page-project-content-divider"
+                                                    />
+                                                    <a
+                                                        class="my-page-project-content"
+                                                        href="/web/mywadiz/store/order"
+                                                        ><span
+                                                            >결제 상세
+                                                            내역</span
+                                                        ><span
+                                                            ><b>0</b></span
+                                                        ></a
+                                                    >
+                                                    <hr
+                                                        class="my-page-project-content-divider"
+                                                    />
+                                                    <a
+                                                        class="my-page-project-content"
+                                                        href="/web/mywadiz/store/order"
+                                                        ><span
+                                                            >결제 상세
+                                                            내역</span
+                                                        ><span
+                                                            ><b>0</b></span
+                                                        ></a
+                                                    >
+                                                    <hr
+                                                        class="my-page-project-content-divider"
+                                                    />
+                                                    <div
+                                                        class="my-page-project-content my-page-project-show-like"
+                                                        data-ga-category="마이와디즈"
+                                                        data-ga-action="클릭"
+                                                        data-ga-label="찜•알림신청"
+                                                    >
+                                                        <span>좋아요 보기</span
+                                                        ><span
+                                                            class="my-page-project-info-highlight"
+                                                            ><b>0</b></span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 고객센터 -->
+                            <div class="my-page-contents-section">
+                                <h4 class="my-page-contents-section-title">
+                                    고객센터
+                                </h4>
+                                <div>
+                                    <ul>
+                                        <li class="my-page-menu-menu">
+                                            <button data-event="inquire">
+                                                <span
+                                                    class="my-page-menu-icon"
+                                                    aria-hidden="true"
+                                                    ><svg
+                                                        viewBox="0 0 40 40"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon-icon"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            fill="none"
+                                                            d="M0 0h40v40H0z"
+                                                        ></path>
+                                                        <path
+                                                            d="M10.62 38.33V29H2.87V1.67h34.26v27.79H18.92zM5 27h7.7v6.11l5.3-5.73h17V3.75H5z"
+                                                        ></path>
+                                                        <path
+                                                            d="M12.84 13.28a1.87 1.87 0 1 0 0 3.74 1.87 1.87 0 1 0 0-3.74zm7.16 0a1.87 1.87 0 1 0 0 3.74 1.87 1.87 0 1 0 0-3.74zm7.16 0a1.87 1.87 0 1 0 0 3.74 1.87 1.87 0 1 0 0-3.74z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="my-page-menu-text"
+                                                    >1:1 채팅 상담</span
+                                                >
+                                                <span
+                                                    class="my-page-menu-arrowicon"
+                                                    aria-hidden="true"
+                                                    ><svg
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon-icon"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            clip-rule="evenodd"
+                                                            d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="my-page-menu-menu">
+                                            <a
+                                                href="https://helpcenter.wadiz.kr/hc/ko"
+                                                ><span
+                                                    class="my-page-menu-icon"
+                                                    aria-hidden="true"
+                                                    ><i
+                                                        class="main-page-service-center-guideicon"
+                                                    ></i></span
+                                                ><span class="my-page-menu-text"
+                                                    >도움말 센터</span
+                                                ><span
+                                                    class="my-page-menu-arrowicon"
+                                                    aria-hidden="true"
+                                                    ><svg
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon-icon"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            clip-rule="evenodd"
+                                                            d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 공지사항 -->
+                            <div class="my-page-contents-section">
+                                <h4 class="my-page-contents-section-title">
+                                    공지사항
+                                </h4>
+                                <div>
+                                    <ul>
+                                        <li class="my-page-menu-menu">
+                                            <a href="/web/wboard/newsBoardList"
+                                                ><span
+                                                    class="my-page-menu-icon"
+                                                    aria-hidden="true"
+                                                    ><i
+                                                        class="my-page-menu-noticeicon"
+                                                    ></i></span
+                                                ><span class="my-page-menu-text"
+                                                    >공지사항</span
+                                                ><span
+                                                    class="my-page-menu-arrowicon"
+                                                    aria-hidden="true"
+                                                    ><svg
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon-icon"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            clip-rule="evenodd"
+                                                            d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!-- <li class="my-page-menu-menu">
+                                            <a
+                                                href="/web/waccount/wAccountUpdateBasicInfoIntro"
+                                                ><span
+                                                    class="my-page-menu-icon"
+                                                    aria-hidden="true"
+                                                    ><svg
+                                                        viewBox="0 0 32 32"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon-icon"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            d="M17.84 3.2l.4 2.56.16.88.88.32a9.55 9.55 0 0 1 2.893 1.691l.707.549.88-.32 2.4-.88L28 11.2l-2 1.68-.72.56.16.88a9.022 9.022 0 0 1-.009 3.336l-.151.824.72.56 2 1.76-1.84 3.2-3.28-1.2-.72.56a9.485 9.485 0 0 1-2.814 1.658l-.946.342-.16.88-.4 2.56h-3.68l-.4-2.56-.16-.88-.88-.32a9.55 9.55 0 0 1-2.893-1.691L9.12 22.8l-.88.32-2.4.88L4 20.8l2-1.68.72-.56-.16-.88a9.022 9.022 0 0 1 .009-3.336l.151-.824-.72-.56-2-1.76L5.84 8l3.28 1.2.72-.56a9.485 9.485 0 0 1 2.814-1.658l.946-.342.16-.88.4-2.56h3.68zM16 21.6a5.6 5.6 0 1 0 0-11.2 5.6 5.6 0 0 0 0 11.2zm2.56-20h-5.136a.8.8 0 0 0-.783.635L12.08 5.44a11.21 11.21 0 0 0-3.292 2.011L5.76 6.24h-.267a.798.798 0 0 0-.691.397L2.24 10.961a.798.798 0 0 0 .238 1.038l2.562 2.082a10.647 10.647 0 0 0 .01 3.906l-2.57 2.014a.8.8 0 0 0-.158 1.044L4.8 25.362a.8.8 0 0 0 .693.4h.347l2.96-1.2c.956.798 2.07 1.448 3.282 1.895l.638 3.225c.077.368.399.64.784.64h5.072a.8.8 0 0 0 .783-.635l.561-3.205a11.212 11.212 0 0 0 3.296-1.934l3.024 1.134h.347a.798.798 0 0 0 .691-.397l2.562-4.404a.8.8 0 0 0-.159-1.039l-2.561-2.081a10.647 10.647 0 0 0-.01-3.906l2.41-1.854a.8.8 0 0 0 .158-1.044L27.2 6.64a.8.8 0 0 0-.693-.4h-.347l-2.96 1.2a11.163 11.163 0 0 0-3.282-1.895L19.28 2.32a.801.801 0 0 0-.784-.64h-.017zM16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="my-page-menu-text"
+                                                    >설정</span
+                                                ><span
+                                                    class="my-page-menu-arrowicon"
+                                                    aria-hidden="true"
+                                                    ><svg
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        focusable="false"
+                                                        role="presentation"
+                                                        class="withIcon-icon"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            clip-rule="evenodd"
+                                                            d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 광고 배너 -->
+                            <div class="my-page-adbanner-container">
+                                <div class="my-page-adbanner-wrapper">
+                                    <a href="" class="my-page-advertisement">
+                                        <p class="my-page-advertisement-title">
+                                            탄력도 관리하세요. 피부가 쏙 먹는
+                                            바디오일
+                                        </p>
+                                        <div
+                                            class="my-page-advertisement-thumbnailwrap"
+                                        >
+                                            <div
+                                                aria-hidden="true"
+                                                class="card-thumbnail"
+                                                style='background-image: url("https://cdn1.wadiz.kr/images/20240214/1707886044224.png/wadiz/optimize");'
+                                            ></div>
+                                            <div
+                                                class="my-page-advertisement-ad"
+                                            >
+                                                AD
+                                            </div>
+                                            <div
+                                                class="my-page-advertisement-badge"
+                                            >
+                                                바로가기
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    aria-hidden="true"
+                                                    style="width: 12px; height: 12px;"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="my-page-adbanner-wrapper">
+                                    <a href="" class="my-page-advertisement">
+                                        <p class="my-page-advertisement-title">
+                                            탄력도 관리하세요. 피부가 쏙 먹는
+                                            바디오일
+                                        </p>
+                                        <div
+                                            class="my-page-advertisement-thumbnailwrap"
+                                        >
+                                            <div
+                                                aria-hidden="true"
+                                                class="card-thumbnail"
+                                                style='background-image: url("https://cdn1.wadiz.kr/images/20240214/1707886044224.png/wadiz/optimize");'
+                                            ></div>
+                                            <div
+                                                class="my-page-advertisement-ad"
+                                            >
+                                                AD
+                                            </div>
+                                            <div
+                                                class="my-page-advertisement-badge"
+                                            >
+                                                바로가기
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    focusable="false"
+                                                    role="presentation"
+                                                    class="withIcon_icon"
+                                                    aria-hidden="true"
+                                                    style="width: 12px; height: 12px;"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="web-footer"></div>
+            </main>
+        </div>
+        <!-- 좋아요 보기 모달페이지 -->
+        <div id="modal" class="ReactModalPortal">
+            <!-- 모달창 외부 흐리게 -->
+            <div
+                class="ReactModal__Overlay ReactModal__Overlay--after-open ConfirmModal_overlay waffle__modal__overlay"
+                style="background-color: rgba(0,0,0,0.2);"
+            >
+                <!-- 메인 모달창 -->
+                <div
+                    class="ReactModal__Content ReactModal__Content--after-open ConfirmModal_confirmModal ConfirmModal_sizeX1 RecentView_confirmModal"
+                    tabindex="-1"
+                    ,
+                    role="dialog"
+                    aria-modal="true"
+                >
+                    <!-- 모달창 헤더 -->
+                    <div class="ConfirmModal_header">
+                        <div class="ConfirmModal_closeIconRoot">
+                            <button
+                                id="closeModal"
+                                class="ConfirmModal_closeIconWrapper"
+                            >
+                                <svg
+                                    viewBox="0 0 40 40"
+                                    focusable="false"
+                                    role="presentation"
+                                    class="withIcon_icon ConfirmModal_closeIcon"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M33.4 8L32 6.6l-12 12-12-12L6.6 8l12 12-12 12L8 33.4l12-12 12 12 1.4-1.4-12-12 12-12z"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div
+                            title="좋아요 보기"
+                            class="ConfirmModal_title ConfirmModal_showCloseButton"
+                        >
+                            좋아요 보기
+                        </div>
+                    </div>
+                    <div class="ConfirmModal_content ConfirmModal_hasTitle">
+                        <div class="RecentView_contents">
+                            <div class="Tabs_tabsWrapper">
+                                <ul class="Tabs_tabs Tabs_distribute">
+                                    <li data-index="0">
+                                        <button
+                                            href="#tab2"
+                                            type="button"
+                                            class="Tab_tab undefined Tab_first Tab_md Tab_active"
+                                            data-value="1"
+                                        >
+                                            <span>나의 좋아요</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 모달창 태그 -->
+                            <div id="tab2" class="RecentView_content">
+                                <div class="WishView_container">
+                                    <div class="CategoryFilter_container">
+                                        <div
+                                            class="CategoryFilter_categoryfilterList CategoryFilter_hideScrollbar"
+                                        >
+                                            <div
+                                                class="CategoryFilter_filterItem"
+                                            >
+                                                <button
+                                                    id="select_all_btn"
+                                                    type="button"
+                                                    class="Tab_tab Tab_first Tab_active Tab_rectangle Tab_md"
+                                                >
+                                                    <span>전체</span>
+                                                </button>
+                                            </div>
+                                            <div
+                                                class="CategoryFilter_filterItem"
+                                            >
+                                                <button
+                                                    id="community_btn"
+                                                    type="button"
+                                                    class="Tab_tab Tab_first Tab_rectangle Tab_md"
+                                                >
+                                                    <span>커뮤니티</span>
+                                                </button>
+                                            </div>
+                                            <div
+                                                class="CategoryFilter_filterItem"
+                                            >
+                                                <button
+                                                    id="competition_btn"
+                                                    type="button"
+                                                    class="Tab_tab Tab_first Tab_rectangle Tab_md"
+                                                >
+                                                    <span>공모전/대회</span>
+                                                </button>
+                                            </div>
+                                            <div
+                                                class="CategoryFilter_filterItem"
+                                            >
+                                                <button
+                                                    id="share_btn"
+                                                    type="button"
+                                                    class="Tab_tab Tab_first Tab_rectangle Tab_md"
+                                                >
+                                                    <span>자료공유</span>
+                                                </button>
+                                            </div>
+                                            <div
+                                                class="CategoryFilter_filterItem"
+                                            >
+                                                <button
+                                                    id="onelab_btn"
+                                                    type="button"
+                                                    class="Tab_tab Tab_first Tab_rectangle Tab_md"
+                                                >
+                                                    <span>원랩</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-page-accumulate-divider" />
+                                    <!-- 좋아요 한 글이 있을 때의 창 -->
+                                    <div id="total-page">
+                                        <div
+                                            id="page"
+                                            class="Wishview_list_wrap"
+                                        >
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            id="page"
+                                            class="Wishview_list_wrap"
+                                        >
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            id="page"
+                                            class="Wishview_list_wrap"
+                                        >
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            id="page"
+                                            class="Wishview_list_wrap"
+                                        >
+                                            <div class="Wishview_list">
+                                                <div
+                                                    class="TableLayout_container"
+                                                >
+                                                    <div
+                                                        class="WishCard_container"
+                                                    >
+                                                        <div
+                                                            class="HomeVerticalCard_container"
+                                                        >
+                                                            <a
+                                                                class="HomeVerticalCard_content_content"
+                                                                href="/web/wcomingsoon/rwd/252320"
+                                                            >
+                                                                <div
+                                                                    class="HomeVerticalCard_infoBox"
+                                                                >
+                                                                    <div
+                                                                        class="HomeVerticalCard_info"
+                                                                    >
+                                                                        <strong
+                                                                            class="Title_title HomeVerticalCard_title"
+                                                                            >[1.8억]메이커&amp;
+                                                                            글로벌
+                                                                            베스트
+                                                                            제조사의
+                                                                            각질20층
+                                                                            침투
+                                                                            모공에센스</strong
+                                                                        >
+                                                                        <p
+                                                                            class="HomeVerticalCard_makerNameWrapper"
+                                                                        ></p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 좋아요 한 글이 없을 때의 창 -->
+                                    <div
+                                        id="EmptyContainer"
+                                        class="EmptyContainer_container"
+                                    >
+                                        <div class="EmptyContainer_content">
+                                            <strong class="EmptyContainer_title"
+                                                >좋아요 한 글이
+                                                없습니다!</strong
+                                            >
+                                            <p
+                                                class="EmptyContainer_description"
+                                            >
+                                                아래 태그에서 원하는 커뮤니티를
+                                                찾아 좋아요를 눌러보세요!
+                                            </p>
+                                            <ul
+                                                class="EmptyContainer_searchList"
+                                            >
+                                                <li
+                                                    class="EmptyContainer_searchItem"
+                                                >
+                                                    <a
+                                                        href="/web/wcampaign/search?keyword=가방"
+                                                        ><span
+                                                            class="EmptyContainer_hash"
+                                                            ># </span
+                                                        ><span>가방</span></a
+                                                    >
+                                                </li>
+                                                <li
+                                                    class="EmptyContainer_searchItem"
+                                                >
+                                                    <a
+                                                        href="/web/wcampaign/search?keyword=안경 "
+                                                        ><span
+                                                            class="EmptyContainer_hash"
+                                                            ># </span
+                                                        ><span>안경 </span></a
+                                                    >
+                                                </li>
+                                                <li
+                                                    class="EmptyContainer_searchItem"
+                                                >
+                                                    <a
+                                                        href="/web/wcampaign/search?keyword=닭가슴살"
+                                                        ><span
+                                                            class="EmptyContainer_hash"
+                                                            ># </span
+                                                        ><span
+                                                            >닭가슴살</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li
+                                                    class="EmptyContainer_searchItem"
+                                                >
+                                                    <a
+                                                        href="/web/wcampaign/search?keyword=기타"
+                                                        ><span
+                                                            class="EmptyContainer_hash"
+                                                            ># </span
+                                                        ><span>기타</span></a
+                                                    >
+                                                </li>
+                                                <li
+                                                    class="EmptyContainer_searchItem"
+                                                >
+                                                    <a
+                                                        href="/web/wcampaign/search?keyword=문구"
+                                                        ><span
+                                                            class="EmptyContainer_hash"
+                                                            ># </span
+                                                        ><span>문구</span></a
+                                                    >
+                                                </li>
+                                                <li
+                                                    class="EmptyContainer_searchItem"
+                                                >
+                                                    <a
+                                                        href="/web/wcampaign/search?keyword=컨설"
+                                                        ><span
+                                                            class="EmptyContainer_hash"
+                                                            ># </span
+                                                        ><span>컨설</span></a
+                                                    >
+                                                </li>
+                                                <li
+                                                    class="EmptyContainer_searchItem"
+                                                >
+                                                    <a
+                                                        href="/web/wcampaign/search?keyword=게임"
+                                                        ><span
+                                                            class="EmptyContainer_hash"
+                                                            ># </span
+                                                        ><span>게임</span></a
+                                                    >
+                                                </li>
+                                                <li
+                                                    class="EmptyContainer_searchItem"
+                                                >
+                                                    <a
+                                                        href="/web/wcampaign/search?keyword=슈가"
+                                                        ><span
+                                                            class="EmptyContainer_hash"
+                                                            ># </span
+                                                        ><span>슈가</span></a
+                                                    >
+                                                </li>
+                                                <li
+                                                    class="EmptyContainer_searchItem"
+                                                >
+                                                    <a
+                                                        href="/web/wcampaign/search?keyword=캠핑"
+                                                        ><span
+                                                            class="EmptyContainer_hash"
+                                                            ># </span
+                                                        ><span>캠핑</span></a
+                                                    >
+                                                </li>
+                                                <li
+                                                    class="EmptyContainer_searchItem"
+                                                >
+                                                    <a
+                                                        href="/web/wcampaign/search?keyword=백팩"
+                                                        ><span
+                                                            class="EmptyContainer_hash"
+                                                            ># </span
+                                                        ><span>백팩</span></a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/staticfiles/js/my_page-kanghyun/my_page.js"></script>
+</html>

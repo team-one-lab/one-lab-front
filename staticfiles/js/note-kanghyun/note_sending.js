@@ -1,10 +1,11 @@
-const closebtn = document.querySelector(".banner-container-close-button");
-const modal = document.querySelector(".bottom-modal-portal");
-const openbtn = document.getElementById("openmodal");
+const close_btn = document.querySelector(".banner-container-close-button");
+const modal = document.querySelector(".bottom-modal-certification-portal");
+const openbtn = document.querySelector(".my-page-project-info-payment button");
 const sendbtn = document.getElementById("send-button");
-console.log(sendbtn);
+const success_message = document.querySelector(".banner-container-modal-success");
+const email_box = document.querySelector("input.input-input");
 
-closebtn.addEventListener("click", (e)=> {
+close_btn.addEventListener("click", (e)=> {
     modal.style.display= 'none';
 
 })
@@ -14,5 +15,8 @@ openbtn.addEventListener("click", (e)=> {
 })
 
 sendbtn.addEventListener("click", () => {
-    closebtn.click();
+    
+        success_message.style.display = 'block';
+    
 })
+    

@@ -9,16 +9,16 @@ const all = document.querySelector("input#all");
 const details = document.querySelectorAll("input#detail");
 
 // 회원가입 완료 버튼
-const submitButton = document.querySelector(".Button_button");
+const submitButton = document.querySelector(".complete-button");
 
 // 전체 동의 체크박스를 선택
 all.addEventListener("click", (e) => {
     // 회원가입 완료 버튼 열림
     if(all.checked) {
-        submitButton.classList.remove('Button_disabled')
+        submitButton.classList.remove('button-disabled')
     }else {
         //회원가입 완료 버튼 닫힘
-        submitButton.classList.add('Button_disabled')
+        submitButton.classList.add('button-disabled')
     }
     // 전체 동의 체크박스를 선택할 시 아래의 모든 버튼 체크/체크해제
     details.forEach((detail) => {
@@ -31,7 +31,7 @@ details.forEach((detail) => {
     detail.addEventListener("click", () => {
         all.checked = details.filter((detail) => detail.checked).length === 6;
         if(all.checked){
-            submitButton.classList.remove('Button_disabled')
+            submitButton.classList.remove('button-disabled')
         }
     });
 });
@@ -42,21 +42,21 @@ details.forEach((detail) => {
 // 필수항목 체크 후 버튼 표시
 
 // 필수항목 체크박스
-const detailPossibles = document.querySelectorAll(".Checkbox_input.possible")
+const detailPossibles = document.querySelectorAll(".checkbox-input.possible")
 
 
 detailPossibles.forEach((possible) => {
     possible.addEventListener('click', function(e) {
         //필수 항목에 체크
-        const checkedPossible = document.querySelectorAll(".Checkbox_input.possible:checked")
+        const checkedPossible = document.querySelectorAll(".checkbox-input.possible:checked")
         console.log(checkedPossible)
         // 필수항목 체크박스 5개가 선택 되면 회원가입 완료 버튼 열림
         if(checkedPossible.length >= 5) {
-            submitButton.classList.remove('Button_disabled')
+            submitButton.classList.remove('button-disabled')
 
         }else {
             //회원가입 완료 버튼 닫힘
-            submitButton.classList.add('Button_disabled')
+            submitButton.classList.add('button-disabled')
         }
     })
 })
@@ -79,7 +79,7 @@ parent.addEventListener('change', function(e){
             console.log(detailChecked)
             if(detailChecked.length == 6) {
                 all.checked = true;
-                submitButton.classList.remove('Button_disabled')
+                submitButton.classList.remove('button-disabled')
             }
         })
     }else {
@@ -103,7 +103,7 @@ children.forEach((child) => {
             console.log(detailChecked)
             if(detailChecked.length == 6) {
                 all.checked = true;
-                submitButton.classList.remove('Button_disabled')
+                submitButton.classList.remove('button-disabled')
             }
             //하나라도 체크가 안될경우 체크 해제
         }else {

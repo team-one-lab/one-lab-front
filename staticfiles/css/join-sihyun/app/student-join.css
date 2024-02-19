@@ -502,6 +502,7 @@ button:not(:disabled) {
 .easy-join-box {
   position: relative;
   margin: 49px auto;
+  margin-top: 20px;
   margin-bottom: 0;
   padding: 0 16px 40px 16px;
   width: 100%;
@@ -570,7 +571,7 @@ button:not(:disabled) {
   pointer-events: none;
 }
 .email-input:hover {
-  border-color: #00704A;
+  border-color: #00704a;
 }
 .email-input:focus {
   border-color: #008243;
@@ -673,7 +674,7 @@ button:not(:disabled) {
   pointer-events: none;
 }
 .certification-number-input:hover {
-  border-color: #00704A;
+  border-color: #00704a;
 }
 .certification-number-input:focus {
   border-color: #008243;
@@ -1717,8 +1718,8 @@ button:not(:disabled) {
 }
 
 .Checkbox_checkbox:hover .Checkbox_input:checked + .Checkbox_icon {
-  border-color: #00704A;
-  background-color: #00704A;
+  border-color: #00704a;
+  background-color: #00704a;
 }
 
 .Checkbox_checkbox .Checkbox_input.Checkbox_icon .Checkbox_removeIcon {
@@ -1778,4 +1779,56 @@ button:not(:disabled) {
 .active {
   font-weight: 700;
   border-bottom: 2px solid #008243;
+}
+.esay-join-radio-bar {
+  display: flex;
+  padding: 20px 0px;
+  gap: 20px;
+}
+
+.radio-box {
+  display: flex;
+  align-items: center;
+}
+/* Input 요소에 대한 스타일 */
+.outer-radio-box {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid #999999;
+  background-color: #f8f8f8;
+}
+.outer-radio-choice {
+  background-color: #f3f4f6;
+  border: 2px solid #008243;
+  box-shadow: 0 0 0 2px #b5dbc8;
+}
+.inner-radio-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  z-index: 10;
+}
+.inner-radio-choice {
+  background-color: #008243;
+}
+/* Input 요소에 포커스가 됐을 때의 스타일 */
+.radio-input:focus {
+  box-shadow: 0 0 0 2px #008243;
+}
+
+/* Label 요소에 대한 스타일 */
+.radio-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
 }

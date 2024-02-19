@@ -363,8 +363,16 @@ strong {
     fill:crimson
 }
 
+.Button_button.iw.like_btn.active span span div path {
+    fill: crimson;
+}
+
 .likes_btns.active path {
     fill: crimson;
+}
+
+.withIcon_icon.icon_svg path {
+    fill: #868e96;
 }
 
 .ProjectSearchTags_category>* {
@@ -1013,7 +1021,7 @@ a.Button_button {
 }
 
 .ProductSelectMenuItem_blured{
-    opacity: .45;
+    opacity: 1;
 }
 
 .Badge_visible {
@@ -2817,3 +2825,228 @@ button.like-btn.active path{
     display: none; 
 }
 
+/* 작성자 정보 */
+div.writer-info-container {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #dde2e6;
+    border-radius: 8px;
+    color: #212529;
+}
+
+div.writer-info-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 16px;
+}
+
+div.writer-info-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+div.writer-info-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+a.writer-info-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+div.avatar {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    vertical-align: middle;
+}
+
+span.avatar-has-image {
+    display: block;
+    position: absolute;
+    opacity: 1;
+    border-radius: 100%;
+    background: no-repeat 50%/cover;
+    width: 100%;
+    height: 100%;
+}
+
+div.writer-info-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+span.writer-info-name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+div.writer-info-body {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.writer-info-wrapper {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 12px;
+}
+
+div.writer-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+span.writer-info-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+span.writer-info-icon.university {
+    background: url('/templates/html/share-soyoung/images/green-university.png') no-repeat 50%/contain;
+}
+
+span.writer-info-icon.one-lab {
+    background: url('/templates/html/share-soyoung/images/community-green.png') no-repeat 50%/contain;
+}
+
+div.HomeVerticalCard_makerNameWrapper {
+    display: flex;
+}
+
+div.home-vertical-card-badge-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+div.reward-badge-group-container {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+span.label-badge {
+    border: solid 1px #f2f4f6;
+    background-color: #f2f4f6;
+    color: #495057;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 7px 10px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 3px;
+}
+
+span.label-badge.pdf {
+    border: solid 1px #ff5353;
+    background-color: #ff5353;
+    color: #fff;
+}
+
+span.label-badge.docx {
+    border: solid 1px rgb(38, 167, 247);
+    background-color: rgb(38, 167, 247);
+    color: #fff;
+}
+
+span.label-badge.xls {
+    border: solid 1px rgb(0, 124, 46);
+    background-color: rgb(0, 124, 46);
+    color: #fff;
+}
+
+div.floating-buttons-container {
+    transform: translateY(0);
+    display: flex;
+    position: fixed;
+    right: 16px;
+    bottom: 20px;
+    flex-direction: column;
+    z-index: 1200;
+    gap: 12px;
+}
+
+button.float-top-btn {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(0);
+    display: block;
+    transition-property: opacity,transform;
+    transition-duration: .25s;
+}
+
+button.float-top-btn.active {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    transform: translateY(0);
+    pointer-events: auto;
+    opacity: 1;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    background: rgba(0,0,0,.3019607843);
+    padding: 0 0 env(safe-area-inset-bottom);
+    color: #fff;
+}
+
+svg.go-up-arrow-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+/* 수정,삭제 버튼 */
+button.update-btn, button.delete-btn {
+    cursor: pointer;
+    color: #008243;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+button.update-btn::after {
+    margin-left: 6px;
+    content: "|";
+}

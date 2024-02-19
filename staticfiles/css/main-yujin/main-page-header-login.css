@@ -40,6 +40,7 @@ img#letter {
     margin: 0px;
     border: 0;
     padding: 0;
+    filter: invert(0.5)
 }
 
 main {
