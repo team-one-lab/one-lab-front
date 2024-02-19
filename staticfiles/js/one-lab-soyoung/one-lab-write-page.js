@@ -1,8 +1,8 @@
-$(document).ready(function() {
-    $('.announce-button-icon').on("click", function(e) {
-        var container = $('.announce-list-container');
-        container.toggleClass('active');
-    });
+// 알림 버튼 클릭시 목록 나오기
+const announceBtn = document.querySelector('.announce-button-icon')
+announceBtn.addEventListener("click", function(e) {
+    const container = document.querySelector('.announce-list-container')
+    container.classList.toggle('active');
 });
 
 

@@ -1,167 +1,42 @@
-$(document).ready(function() {
-    $('.announce-button-icon').on("click", function(e) {
-        var container = $('.announce-list-container');
-        container.toggleClass('active');
-    });
+// 알림 버튼 클릭시 목록 나오기
+const announceBtn = document.querySelector('.announce-button-icon')
+announceBtn.addEventListener("click", function(e) {
+    const container = document.querySelector('.announce-list-container')
+    container.classList.toggle('active');
 });
 
 
-// $(".sidebar-menu-item-nav-link").on("click", function(e) {
-//     // e.preventDefault();
-//     if($('.sidebar-reward-sublist-container').css('display') == 'block'){
-//         $('.sidebar-reward-sublist-container').css("display", "none");
-//     }else {
-//         $(".sidebar-reward-sublist-container").css("display", "block");
-//     }
-// })
+// 학과 선택 모달창 리스트 선택
+const categoryLists = document.querySelectorAll('li.category-node-container')
+categoryLists.forEach((categoryList) => {
+    categoryList.addEventListener('click', function(e) {
+        const categoryNodeItems = categoryList.children[1];
+        const expandBtn = categoryList.querySelector('.category-node-expand-btn')
+        categoryNodeItems.classList.toggle('active')
+        expandBtn.classList.toggle('rotate')
 
-// $(document).ready(function(){
-//     $("a.sidebar-menu-item-nav-link").on("click", function(e){
-//         // e.preventDefault();
-//         var svgIcon = $(this).find("svg.sidebar-menu-open-icon.active");
-        
-//         if (svgIcon.length > 0) {
-//             var currentRotation = getRotationDegrees(svgIcon);
-//             console.log(currentRotation)
-//             if (currentRotation === 90) {
-//                 svgIcon.css('transform', 'rotate(-90deg)');
-                
-//             } else {
-//                 svgIcon.css('transform', 'rotate(90deg)');
-//             }
-//         }
-//     });
-// });
-
-// // 회전각을 구하는 함수
-// function getRotationDegrees(element) {
-//     var transform = element.css('transform');
-//     if (transform === 'none') return 0;
-
-//     var values = transform.split('(')[1].split(')')[0].split(',');
-//     var a = values[0];
-//     var b = values[1];
-//     var angle = Math.atan2(b, a);
-//     var degrees = angle * (180 / Math.PI);
-
-//     return (degrees < 0) ? degrees + 360 : degrees;
-// }
-
-
-
-// $("a.sidebar-sublist-nav-link").on("click", function(e) {
-//     // e.preventDefault();
-//     var notActive = $("a.sidebar-sublist-nav-link").not(".sublist-active");
-//     var active = $("a.sidebar-sublist-nav-link.sublist-active");
-
-//     if (active.length === 0) {
-//         // 현재 active 클래스가 없으면 클래스를 추가
-//         notActive.addClass("sublist-active");
-//     } else {
-//         // 현재 active 클래스가 있으면 모든 요소에서 클래스를 제거한 후 현재 요소에 추가
-//         $("a.sidebar-sublist-nav-link").removeClass("sublist-active");
-//         $(this).addClass("sublist-active");
-//     }
-// });
-
-
-$(document).ready(function(){
-    $("li.category-node-container").on("click", function(e) {
-        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-        var clickedElement = $(this);
-        var categoryNodeItems = clickedElement.find('ul.category-node-items');
-        var expandBtn = clickedElement.find(".category-node-expand-btn");
-
-        // 다른 모든 li의 category-node-items를 숨김
-        $("li.category-node-container").not(clickedElement).find('ul.category-node-items').slideUp(150);
-        
-        // 다른 모든 li의 rotate 클래스 제거
-        $("li.category-node-container").not(clickedElement).find(".category-node-expand-btn").removeClass('rotate');
-
-        // 현재 클릭된 li에 대해 작업 수행
-
-        // category-node-expand-btn에 rotate 클래스를 토글
-        expandBtn.toggleClass('rotate');
-
-        // 선택된 li에 대한 스타일링
-        clickedElement.toggleClass('selected');
-
-        // ul.category-node-items의 토글 효과 적용
-        categoryNodeItems.slideToggle(150);
-    });
-});
-
-
-$(document).ready(function(){
-    $("li.category-node-container").on("click", function(e) {
-        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-        var clickedElement = $(this);
-        var nodeLabel = clickedElement.find('span.category-node-label');
-
-        // 다른 모든 li의 category-node-items를 숨김
-        $("li.category-node-container").not(clickedElement).find('span.category-node-label').removeClass('active');
-
-        nodeLabel.toggleClass('active')
-    });
-});
-
-$(document).ready(function(){
-    $("li.category-node-container").on("mouseover", function(e) {
-        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-        var clickedElement = $(this);
-        var nodeLabel = clickedElement.find('span.category-node-label');
-
-        nodeLabel.css('font-weight', '700')
-    });
-});
-
-
-$(document).ready(function(){
-    $("li.category-node-container").on("mouseout", function(e) {
-        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-        var clickedElement = $(this);
-        var nodeLabel = clickedElement.find('span.category-node-label');
-
-        nodeLabel.css('font-weight', '400')
-    });
-});
-
-$(document).ready(function(){
-    $("li.sub-category-node-container").on("mouseover", function(e) {
-        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-        var clickedElement = $(this);
-        var nodeLabel = clickedElement.find('span.sub-category-node-label');
-
-        nodeLabel.css('font-weight', '700')
-    });
-});
-
-
-$(document).ready(function(){
-    $("li.sub-category-node-container").on("mouseout", function(e) {
-        // 현재 클릭된 li.category-node-container에 대해 작업을 수행
-        var clickedElement = $(this);
-        var nodeLabel = clickedElement.find('span.sub-category-node-label');
-
-        nodeLabel.css('font-weight', '400')
-    });
-});
-
-
-// 모달창 나타나고 없어지기
-$("button.modal-close-icon-wrapper").on("click", function(e) {
-    $(".modal").css('display', 'none')
-})
-
-$("button.category-select-btn").on("click", function(e) {
-    e.preventDefault();
-    $(".modal").css('display', 'block')
+        categoryList.classList.toggle('selected')
+    })
 })
 
 
-$("li.sub-category-node-container").on("click", function(e) {
-    $(".modal").css('display', 'none')
-});
+// 학과 선택 모달창 나타나고 없어지기
+const modalCloseIcon = document.querySelector('button.modal-close-icon-wrapper');
+const modal = document.querySelector('div.modal')
+const categoryBtn = document.querySelector('button.category-select-btn')
+const subLists = document.querySelector('li.sub-category-node-container')
+
+modalCloseIcon.addEventListener('click', function(e) {
+    modal.style.display = "none"
+})
+
+categoryBtn.addEventListener('click', function(e) {
+    modal.style.display = 'block'
+})
+
+subLists.addEventListener('click', function(e) {
+    modal.style.display = "none"
+})
 
 
 
@@ -186,15 +61,20 @@ $("label.radio").on("click", function(e) {
 })
 
 // 자료 유형 선택
-$("button.maker-type-select-btn").on("click", function(e) {
-    $("button.maker-type-select-btn").not($(this)).removeClass('active');
-    $(this).toggleClass('active')
+const fileTypeBtns = document.querySelectorAll('button.maker-type-select-btn')
+fileTypeBtns.forEach((btn) => {
+    btn.addEventListener('click', function(e) {
+        fileTypeBtns.forEach((btn) => {
+            btn.classList.remove('active')
+        })
+        btn.classList.add('active')
+    })
 })
 
-$(".input-text").on("focus", function(e) {
-    $(this).css('border-color', '#008243')
+// textarea 포커스 시, 테두리 색 변경
+document.querySelector('.input-text').addEventListener('focus', function(e) {
+    e.target.style.border = '1px solid #008243'
 })
-
 
 
 // textarea 글 작성시 글자수 계산
@@ -205,8 +85,6 @@ introductionText.addEventListener('input', function() {
     const remainingChars = 500 - this.value.length;
     introductionCount.textContent = remainingChars + '자 남음';
 });
-
-
 
 
 document.addEventListener("DOMContentLoaded", function() {

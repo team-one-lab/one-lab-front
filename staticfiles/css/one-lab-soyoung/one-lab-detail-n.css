@@ -87,7 +87,7 @@ p.banner-title {
     flex-grow: 1;
 }
 
-div.lab-member-box-container {
+div.lab-member-box-container, div.lab-member-more-container, div.lab-member-back-container {
     margin: 13px;
     max-width: 800px;
     line-height: 28px;
@@ -96,10 +96,10 @@ div.lab-member-box-container {
     font-weight: 400;
 }
 
-div.lab-member-box {
+div.lab-member-box, div.lab-member-more-box, div.lab-member-back-box {
     /* width: 22.6%; */
     width: 300px;
-    height: 310px;
+    height: 330px;
     margin: 1.2%;
     padding: 32px;
     background-color: #F2F4F6;
@@ -108,8 +108,36 @@ div.lab-member-box {
     margin: 0 auto;
 }
 
+div.lab-member-more-box, div.lab-member-back-box {
+    background-color: #fff;
+}
+
 dd.lab-member-university-icon {
     margin-bottom: 20px;
+}
+
+i.plus-icon {
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    background-image: url('/templates/html/one-lab-soyoung/images/plus-gray.png');
+    display: flex;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+i.back-icon {
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    background-image: url('/templates/html/one-lab-soyoung/images/previous.png');
+    display: flex;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
 }
 
 i.university-icon {
@@ -130,6 +158,12 @@ dd.member-name {
     font-size: 20px;
     color: #212529;
     letter-spacing: -0.3px;
+}
+
+dd.member-name img {
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
 }
 
 strong {
@@ -180,16 +214,16 @@ a.go-other-lab::after {
 
 div.lab-detail-info-container {
     margin: 0 auto;
-    max-width: 600px;
+    /* max-width: 100%; */
     line-height: 28px;
     color: rgba(0,0,0,.54);
     font-size: 17px;
     font-weight: 400;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 div.lab-image-area{
-    width: 600px;
+    width: 100%;
     margin-bottom: 50px;
 }
 
@@ -204,7 +238,7 @@ div.lab-image {
 }
 
 div.lab-discription-text-area {
-    width: 605px;
+    width: 100%;
     padding-right: 15px;
     box-sizing: border-box;
     margin-bottom: 50px;
@@ -320,3 +354,132 @@ div.lab-member-box-column {
     margin: -1.2%;
 }
 
+div.member-list {
+    width: 117px;
+    height: 150px;
+}
+
+dd.lab-member-university-icon.member {
+    margin-bottom: 10px;
+}
+
+i.university-icon.member {
+    width: 40px;
+    height: 40px;
+}
+
+dd.member-name.member {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+ul.other-lab-list {
+    display: flex;
+}
+
+li.lab {
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+div.lab-img-area {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    border: 3px solid #a5a5a5;
+}
+
+img.lab-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.apply-button-container {
+    position: fixed;
+    background-color: rgb(61, 64, 67);
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    box-shadow: rgba(10, 22, 70, 0.06) 0px 0px 5px, rgba(10, 22, 70, 0.1) 0px -4px 6px;
+}
+
+div.apply-button-wrapper {
+    position: relative;
+    max-width: 1280px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+div.apply-msg {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: white;
+    margin-right: 50px;
+}
+
+div.apply-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: white;
+    padding: 10px 28px;
+    background-color: #008243;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* 좋아요 */
+button.wish-btn {
+    position: absolute;
+    top: 16px;
+    right: 475px;
+    z-index: 9;
+    outline: none;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: none;
+}
+
+button.like-btn.active svg path {
+    fill: crimson;
+}
+
+button.wish-btn>svg {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+    will-change: transform;
+}
+
+svg.wish-icon {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+}
+
+svg.wish-icon path.dislike-icon {
+    stroke: #f2f4f6;
+    stroke-width: 2px;
+    fill: rgba(33,37,41,.4);
+    transition: fill .25s ease-in-out;
+    pointer-events: none;
+}
+
+svg.wish-icon path.like-icon {
+    display: none;
+    fill: #f25555;
+    stroke: #f2f4f6;
+    stroke-width: 2px;
+    transition: fill .25s ease-in-out;
+}
