@@ -32,23 +32,26 @@
                             </span>
                         </button>
                     </div>
+                    <!-- 각 사이트 바 클릭시 마이페이지 내 해당되는 탭으로 이동 -->
                     <nav class="sidebar-menu-list-container">
                         <div class="sidebar-menu-list-margin"></div>
                         <ul>
                             <li>
                                 <a href="" class="sidebar-menu-item-nav-link">
-                                    마이 포인트
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="sidebar-menu-item-nav-link active">
-                                    내가 쓴 글
-                                </a>
+                                    마이 포인트</a>
+                                <a href="" class="sidebar-menu-item-nav-link result">100</a>
                             </li>
                             <li>
                                 <a href="" class="sidebar-menu-item-nav-link">
-                                    원랩 글 작성
+                                    마이 포스트 수
                                 </a>
+                                <a href="" class="sidebar-menu-item-nav-link result">10</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-menu-item-nav-link">
+                                    마이 원랩 수
+                                </a>
+                                <a href="" class="sidebar-menu-item-nav-link result">5</a>
                             </li>
                         </ul>
                     </nav>
@@ -108,20 +111,14 @@
                                     <div>익명이</div>
                                 </div>
                                 <div class="project-navbar-btn-group">
-                                    <div class="preview-btn-container">
-                                        <button type="button" class="preview-btn">
-                                            <span>
-                                                <span class="preview-btn-text">미리 보기</span>
-                                            </span>
-                                        </button>
-                                    </div>
                                     <button type="button" class="pre-save-btn">
                                         <span>
-                                            <span class="pre-save-btn-text">임시 저장</span>
+                                            <span class="pre-save-btn-text">저장 하기</span>
                                         </span>
                                     </button>
+                                    <!-- 알림 아이콘 -->
                                     <div class="announce-button-container">
-                                        <!-- <img src="https://static.wadiz.kr/studio/funding/static/media/announcement.56f4b8e3.svg" alt="" class="announce-button-icon"> -->
+                                        <img src="https://static.wadiz.kr/studio/funding/static/media/announcement.56f4b8e3.svg" alt="" class="announce-button-icon">
                                         <span class="badge-container"></span>
                                         <div class="announce-pop-over-container">
                                             <div class="announce-list-container">
@@ -306,6 +303,58 @@
                                         <em class="helper-msg">30자 남음</em>
                                     </div>
                                 </section>
+
+                                <!-- 게시글 유형 선택 섹션 -->
+                                <section class="section-container project-type">
+                                    <div style="max-width: 630px;">
+                                        <div class="section-header">
+                                            <h3 class="section-title">게시글 유형
+                                                <span class="blind-text-hidden">필수</span>
+                                            </h3>
+                                        </div>
+                                        <div class="section-content">
+                                            <div class="radios-box">
+                                                <label for="" class="radio">
+                                                    <input type="radio" id="" value="">
+                                                    <span class="radio-icon"></span>
+                                                    <span class="radio-label">
+                                                        <span class="radios-label-content">
+                                                            <strong class="radios-category">자료 요청</strong>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                                <label for="" class="radio">
+                                                    <input type="radio" name="" id="">
+                                                    <span class="radio-icon"></span>
+                                                    <span class="radio-label">
+                                                        <span class="radios-label-content">
+                                                            <strong class="radios category">질문</strong>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                                <label for="" class="radio">
+                                                    <input type="radio" name="" id="">
+                                                    <span class="radio-icon etc"></span>
+                                                    <span class="radio-label">
+                                                        <span class="radios-label-content">
+                                                            <strong class="radios category">기타</strong>
+                                                        </span>
+                                                        <div class="section-content etc" style="margin-top: 20px;">
+                                                            <div class="introduction-box" style="width: 500px;">
+                                                                <div class="text-area-field">
+                                                                    <label for=""></label>
+                                                                    <div class="input-text-field" style="width: 100%;">
+                                                                        <input type="text" name="" id="" style="height: 36px; width: 100%;" placeholder="게시글에 해당되는 유형을 작성해주세요. ex) 잡담">
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
                                 
                                 <section class="section-container" style="max-width: 630px;">
                                     <div class="section-header profile">
@@ -321,7 +370,7 @@
                                             <div class="textarea-field">
                                                 <div class="textarea-box">
                                                     <div class="textarea-input">
-                                                        <textarea placeholder="내용 입력" maxlength="2000" name="" rows="10"></textarea>
+                                                        <textarea placeholder="내용 입력" maxlength="2000" name="" rows="10" style="resize: none;" ></textarea>
                                                     </div>
                                                     <em class="form-field-helper">2000자 남음</em>
                                                 </div>

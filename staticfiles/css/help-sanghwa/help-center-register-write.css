@@ -256,10 +256,10 @@ body{
 /* ##### 헤더 부분 설정 ##### */
 
 
-/* <header class="header_unstuck" x-data="Widgets.header({ isFixed: false, isSticky: true })" :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"></header> */
-/* class="header_unstuck" */
+/* <header class="header-unstuck" x-data="Widgets.header({ isFixed: false, isSticky: true })" :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"></header> */
+/* class="header-unstuck" */
 
-.header_unstuck{
+.header-unstuck{
     transition: 0.3s;
     border-bottom: 1px solid #e2e8f0;
     visibility: visible;
@@ -273,7 +273,7 @@ body{
 }
 
 
-.header_unstuck{
+.header-unstuck{
     transition: 0.3s;
     border-bottom: 1px solid #e2e8f0;
     visibility: visible;
@@ -288,10 +288,10 @@ body{
 }
 
 
-/* <nav class="navbar_full"></nav> */
-/* class="navbar_full" */
+/* <nav class="navbar-full"></nav> */
+/* class="navbar-full" */
 
-.navbar_full{
+.navbar-full{
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -303,12 +303,12 @@ body{
 }
 
 
-.navbar_full{
+.navbar-full{
     max-width: 1140px;
 }
 
 
-.navbar_full{
+.navbar-full{
     margin-right: auto;
     margin-left: auto;
     width: 100%;
@@ -540,10 +540,9 @@ button{
 .search-0{
     max-width: 20rem;
     margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-right: 9.5rem;
     margin-bottom: 0;
     flex: 1;
-
 }
 
 
@@ -582,7 +581,7 @@ button{
 }
 
 .form-0 > input:hover{
-    border-color: rgba(199, 203, 199, 1);
+    border-color: #008243;
 }
 
 input:not([type="range"]){
@@ -619,13 +618,13 @@ zd-autocomplete-announcement {
 }
 
 #query:hover {
-    border: 1px solid rgb(201, 195, 195);
+    border: 1px solid #008243;
 }
 
 #query:focus {
-    border-color: black;
+    border-color: #00704a;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
+    /* box-shadow: 0 0 0 0.2rem #00704A; */
 }
 
 .form-0 > input {
@@ -705,7 +704,7 @@ input {
 /* .nav-end > div */
 
 
-/* <a class="button-header-1" href=""> 문의 등록 </a> */
+/* <a class="button-header-1" href=""> 원랩 문의 </a> */
 /* class="button-header-1" */
 
 .button-header-1{
@@ -713,14 +712,11 @@ input {
     align-self: center;
 }
 
-
-
 .button-header-1{
     margin-bottom: 0;
     margin-top: 0;
     order: inherit;
 }
-
 
 .button-header-1{
     color: #008243;
@@ -748,7 +744,9 @@ input {
 }
 
 .button-header-1:hover{
-    color: #008243;
+    color: white;
+    background-color: rgb(0, 130, 67);
+    border: 1px solid rgb(0, 130, 67);
     text-decoration: none;
 }
 
@@ -758,15 +756,13 @@ a {
 }
 
 
-/* <a class="button-header-2" href="">메이커센터 </a> */
+/* <a class="button-header-2" href=""> 학교 문의 </a> */
 /* class="button-header-2" */
 
 .button-header-2{
     margin: 0.5rem;
     align-self: center;
 }
-
-
 
 .button-header-2{
     margin-bottom: 0;
@@ -800,7 +796,9 @@ a {
 }
 
 .button-header-2:hover{
-    color: #00C4C4;
+    color: white;
+    background-color: rgb(0, 130, 67);
+    border: 1px solid rgb(0, 130, 67);
     text-decoration: none;
 }
 
@@ -810,22 +808,19 @@ a {
 }
 
 
-/* <a class="button-header-3" href="">와디즈 바로가기 </a> */
+/* <a class="button-header-3" href=""> 커뮤니티 </a> */
 /* class="button-header-3" */
 
-.button-header-3{
+/* .button-header-3{
     margin: 0.5rem;
     align-self: center;
-}
+} */
 
+/* .button-header-3{
+order: inherit;
+} */
 
-
-.button-header-2{
-    order: inherit;
-}
-
-
-.button-header-3{
+/* .button-header-3{
     color: #008243;
     border-color: #008243;
     box-shadow: inset 0px -1px 0px #F0F2F5;
@@ -849,17 +844,17 @@ a {
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
-}
+} */
 
-.button-header-3:hover{
-    color: #008243;
+/* .button-header-3:hover{
+    color: #00704A;
     text-decoration: none;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
     touch-action: manipulation;
-}
+} */
 
 
 /* img 돋보기 설정 */
@@ -983,10 +978,10 @@ ol {
 /* <li title="도움말 센터"></li> */
 /* li{} 설정 */
 
-
 .breadcrumbs > li {
     color: #4A5568;
 }
+
 
 /* <a class="help-center" href="">도움말 센터</a> */
 /* 클래스: help-center */
@@ -1000,7 +995,7 @@ ol {
 }
 
 .help-center:hover{
-    color: #000;
+    color: #00704A;
     text-decoration: underline;
     background-color: transparent;
 }
@@ -1009,21 +1004,17 @@ ol {
 /* <li title="문의 등록">문의 등록</li> */
 /* li{} 설정 */
 
-
 .breadcrumbs > li {
     color: #4A5568;
 }
-
 
 .breadcrumbs > * + * {
     padding-left: 0.5rem;
 }
 
-
 .breadcrumbs li + li::before {
     color: #4A5568;
 }
-
 
 .breadcrumbs > * + *::before {
     display: inline-block;
@@ -1141,6 +1132,7 @@ label {
 }
 
 
+
 /*  <a
         class="nesty-input"
         tabindex="0"
@@ -1175,7 +1167,7 @@ label {
 .form-field1 .nesty-input:focus {
     outline: 0;
     border-color: rgba(5, 5, 6, 1);
-    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
+    box-shadow: 0 0 0 0.2rem rgb(0, 130, 67);
 }
 
 .nesty-input {
@@ -1236,12 +1228,12 @@ a {
 }
 
 .form-field1 .request-select:hover {
-    border-color: rgba(199, 203, 199, 1);
+    border-color: rgb(0, 130, 67);
 }
 
 .form-field1 .request-select:focus {
     outline: 0;
-    border-color: rgba(5, 5, 6, 1);
+    border-color: rgb(0, 130, 67);
     box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
 }
 
@@ -1290,7 +1282,46 @@ a {
 .form-field > label::after {
     margin-left: 2px;
     content: "*";
-    color: #00704A;
+    color: rgb(0, 130, 67);
+}
+
+.form-field > .request-select1 {
+    padding-right: 2em;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" width="10" height="6"%3E%3Cpath fill="%232D3748" d="M0 0h10L5 6 0 0z"/%3E%3C/svg%3E') no-repeat #fff;
+    background-position: right 0.75em center;
+    appearance: none;
+}
+
+.request-select1 {
+    text-transform: none;
+    line-height: inherit;
+    touch-action: manipulation;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+
+/* <select class="request-select1" name="request[ticket-form-id]" aria-label="문의 접수하실 내용을 선택해주세요:&#41;" autofocus="autofocus"> */
+/* class="request-select1" */
+
+.form-field .request-select1 {
+    padding: 0.5em 0.75em;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    border-radius: 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-field .request-select1:hover {
+    border-color: rgb(0, 130, 67);
+}
+
+.form-field .request-select1:focus {
+    outline: 0;
+    border-color: rgb(0, 130, 67);
+    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
 }
 
 
@@ -1313,7 +1344,7 @@ a {
 
 .form-field > input:focus {
     outline: 0;
-    border-color: rgba(5, 5, 6, 1);
+    border-color: rgb(0, 130, 67);
     box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
 }
 
@@ -1323,7 +1354,7 @@ a {
 .form-field > label::after {
     margin-left: 2px;
     content: "*";
-    color: #00704A;
+    color: rgb(0, 130, 67);
 }
 
 
@@ -1355,27 +1386,26 @@ a {
 }
 
 .form-field > input:hover {
-    border-color: rgba(199, 203, 199, 1);
+    border-color: rgb(0, 130, 67);
 }
 
-.form-field > input:focus {
-    outline: 0;
-    border-color: rgba(5, 5, 6, 1);
-    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
-}
+
 
 /* <a class="nesty-input" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="_jrhyeuiv7" aria-required="true" aria-labelledby="request_custom_fields_6760067845017_label" style="max-width: 100%;">-</a> */
-.form-field .nesty-input:hover {
-    border-color: rgba(199, 203, 199, 1);
+.nesty-input:hover {
+    border-color: rgb(0, 130, 67);
 }
 
 .form-field1 .nesty-input:hover {
-    border-color: rgba(199, 203, 199, 1);
+    border-color: rgb(0, 130, 67);
 }
+
+
 
 .nesty-input.nesty-input:hover {
     color: inherit;
     text-decoration: none;
+    border-color: rgb(0, 130, 67);
 }
 
 .nesty-input1.nesty-input:hover {
@@ -1385,13 +1415,13 @@ a {
 
 .form-field .nesty-input:focus {
     outline: 0;
-    border-color: rgba(5, 5, 6, 1);
-    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
+    border-color: rgb(0, 130, 67);
+    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25)
 }
 
 .form-field1 .nesty-input:focus {
     outline: 0;
-    border-color: rgba(5, 5, 6, 1);
+    border-color: rgb(0, 130, 67);
     box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
 }
 
@@ -1401,6 +1431,13 @@ a {
     border-color: #e2e8f0;
     background-color: #E2E8F0;
     cursor: not-allowed;
+}
+
+.form-field > .text-area:focus-visible {
+    outline-color: rgb(0, 130, 67);
+    border: none;
+    /* border-color: rgb(0, 130, 67); */
+    /* box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25); */
 }
 
 
@@ -1426,8 +1463,8 @@ a {
     class="text-area"
     name="request[description]"
     aria-required="true"
-    aria-describedby="request_description_hint"
-    aria-labelledby="request_description_label"
+    aria-describedby="request-description-hint"
+    aria-labelledby="request-description-label"
     data-helper="wysiwyg"
     style="visibility: hidden; display: none"
     aria-hidden="true"
@@ -1447,6 +1484,12 @@ a {
     min-height: 8em;
 }
 
+.form-field > .text-area:hover {
+    border-color: #008243;
+}
+
+
+
 .text-area {
     overflow: auto;
     resize: vertical;
@@ -1455,6 +1498,12 @@ a {
     font-family: inherit;
     font-size: 100%;
     margin: 0;
+    width: 100%;
+    height: 213px;
+}
+
+.text-area:focus {
+    border-color: #00704A;
 }
 
 /* <div
@@ -1477,21 +1526,21 @@ a {
 
 /* <div role="toolbar" aria-label="편집기 도구 모음"> */
 
-#hc-wysiwyg [role=toolbar] {
+/* #hc-wysiwyg [role=toolbar] {
     border: 0;
     border-bottom: 1px solid #ddd;
     height: 35px;
     padding: 5px 10px;
     position: relative;
     user-select: none;
-}
+} */
 
 
 /* <span aria-haspopup="true" aria-expanded="false"> */
 
-#hc-wysiwyg [role=toolbar]>[aria-haspopup=true] {
+/* #hc-wysiwyg [role=toolbar]>[aria-haspopup=true] {
     position: relative;
-}
+} */
 
 
 /* <span
@@ -1501,7 +1550,7 @@ a {
     class="wysiwyg-icon-formats"
 ></span> */
 
-#hc-wysiwyg [class^=wysiwyg-icon-] {
+/* #hc-wysiwyg [class^=wysiwyg-icon-] {
     background: transparent;
     border-radius: 4px;
     border: 1px solid transparent;
@@ -1519,29 +1568,29 @@ a {
     vertical-align: middle;
     min-width: 24px;
     width: auto;
-}
+} */
 
-[class^=wysiwyg-icon-] {
+/* [class^=wysiwyg-icon-] {
     background-position: center !important;
     background-repeat: no-repeat !important;
-}
+} */
 
-.wysiwyg-icon-formats {
+/* .wysiwyg-icon-formats {
     background-image: url('https://static.zdassets.com/hc/assets/text-stroke-2901fc68f0898259656b155b6e0ba92f..svg') !important;
-}
+} */
 
-[role="button"] {
+/* [role="button"] {
     touch-action: manipulation;
-}
+} */
 
 
 /* <span role="menu" aria-hidden="true" tabindex="-1"> */
 
-#hc-wysiwyg [role=menu][aria-hidden=true] {
+/* #hc-wysiwyg [role=menu][aria-hidden=true] {
     display: none;
-}
+} */
 
-#hc-wysiwyg [role=menu] {
+/* #hc-wysiwyg [role=menu] {
     position: absolute;
     background: #fff;
     border: 1px solid #ddd;
@@ -1553,7 +1602,7 @@ a {
     min-width: 150px;
     padding: 5px 0;
     outline: none;
-}
+} */
 
 
 /* <span
@@ -1565,11 +1614,11 @@ a {
     >일반 텍스트
 </span> */
 
-#hc-wysiwyg [role=menu]>[role=button][data-block=p] {
+/* #hc-wysiwyg [role=menu]>[role=button][data-block=p] {
     font: normal normal 12px sans-serif;
-}
+} */
 
-#hc-wysiwyg [role=menu]>[role=button] {
+/* #hc-wysiwyg [role=menu]>[role=button] {
     background: #fff;
     border: 0;
     border-radius: 0;
@@ -1581,7 +1630,7 @@ a {
     padding: 8px 20px;
     text-align: initial;
     white-space: nowrap;
-}
+} */
 
 
 /* <span
@@ -1592,9 +1641,9 @@ a {
             헤더 2
     </span> */
 
-#hc-wysiwyg [role=menu]>[role=button][data-block=h2] {
+/* #hc-wysiwyg [role=menu]>[role=button][data-block=h2] {
     font: bold normal 16px sans-serif;
-}
+} */
 
 
 /* <span
@@ -1605,9 +1654,9 @@ a {
     >헤더 3</span
 > */
 
-#hc-wysiwyg [role=menu]>[role=button][data-block=h3] {
+/* #hc-wysiwyg [role=menu]>[role=button][data-block=h3] {
     font: bold normal 14px sans-serif;
-}
+} */
 
 
 /* <span
@@ -1618,9 +1667,9 @@ a {
     >헤더 4</span
 > */
 
-#hc-wysiwyg [role=menu]>[role=button][data-block=h4] {
+/* #hc-wysiwyg [role=menu]>[role=button][data-block=h4] {
     font: bold normal 13px sans-serif;
-}
+} */
 
 
 /* <span
@@ -1630,9 +1679,9 @@ a {
     class="wysiwyg-icon-bold"
 ></span> */
 
-.wysiwyg-icon-bold {
+/* .wysiwyg-icon-bold {
     background-image: url('https://static.zdassets.com/hc/assets/bold-stroke-c075ecfab5f51c3e3fc9b218f0bb5379..svg') !important;
-}
+} */
 
 
 /* <span
@@ -1642,14 +1691,14 @@ a {
     class="wysiwyg-icon-italic"
 ></span> */
 
-.wysiwyg-icon-italic {
+/* .wysiwyg-icon-italic {
     background-image: url('https://static.zdassets.com/hc/assets/italic-stroke-70c33a4f2eb08e92c4317b86aa029a59..svg') !important;
-}
+} */
 
 
 /* <span role="separator"></span><span role="separator"></span> */
 
-#hc-wysiwyg [role=separator] {
+/* #hc-wysiwyg [role=separator] {
     border: 0;
     background: #ddd;
     width: 1px;
@@ -1657,7 +1706,7 @@ a {
     display: inline-block;
     margin: 0 10px;
     vertical-align: middle;
-}
+} */
 
 
 /* <span
@@ -1667,9 +1716,9 @@ a {
     class="wysiwyg-icon-bullist"
 ></span> */
 
-.wysiwyg-icon-bullist {
+/* .wysiwyg-icon-bullist {
     background-image: url('https://static.zdassets.com/hc/assets/list-bullet-stroke-04b8bc257b35bc8f92daf5a5d7e1955f..svg') !important;
-}
+} */
 
 
 /* <span
@@ -1679,9 +1728,9 @@ a {
     class="wysiwyg-icon-numlist"
 ></span> */
 
-.wysiwyg-icon-numlist {
+/* .wysiwyg-icon-numlist {
     background-image: url('https://static.zdassets.com/hc/assets/list-number-stroke-0f55516854b2cc29ed275ce293d0e1a8..svg') !important;
-}
+} */
 
 
 /* <span role="separator"></span> */
@@ -1695,9 +1744,9 @@ a {
     class="wysiwyg-icon-code-block"
 ></span> */
 
-.wysiwyg-icon-code-block {
+/* .wysiwyg-icon-code-block {
     background-image: url('https://static.zdassets.com/hc/assets/terminal-cli-stroke-1bdbc63926aa2ada431dcc1ce4ae5601..svg') !important;
-}
+} */
 
 
 /* <span
@@ -1707,9 +1756,9 @@ a {
     class="wysiwyg-icon-link"
 ></span> */
 
-.wysiwyg-icon-link {
+/* .wysiwyg-icon-link {
     background-image: url('https://static.zdassets.com/hc/assets/link-stroke-7106f546349740ac359b04ed1bb73b6c..svg') !important;
-}
+} */
 
 
 /* <span
@@ -1719,9 +1768,9 @@ a {
     class="wysiwyg-icon-quote"
 ></span> */
 
-.wysiwyg-icon-quote {
+/* .wysiwyg-icon-quote {
     background-image: url('https://static.zdassets.com/hc/assets/quote-stroke-2a6ea1ba5e86bff41a38c0f8f7d45207..svg') !important;
-}
+} */
 
 
 /* <div role="form" aria-expanded="false"></div> */
@@ -1842,9 +1891,10 @@ a {
 }
 
 
+
 /* <input type="file" multiple="true" id="request-attachments" data-fileupload="true" data-dropzone="upload-dropzone" data-error="upload-error" data-create-url="" data-name="request[attachments][]" data-pool="request-attachments-pool" data-delete-confirm-msg="" aria-describedby="upload-error" /> */
 
-.upload-dropzone input[type=file] {
+/* .upload-dropzone input[type=file] {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -1852,43 +1902,46 @@ a {
     cursor: pointer;
     height: 100%;
     width: 100%;
-}
+} */
+
 
 
 /* <span> <a>파일 추가</a> 또는 파일을 여기로 드래그 </span> */
 
-.upload-dropzone span {
+/* .upload-dropzone span {
     display: inline-block;
     line-height: 24px;
     padding: 10px;
-}
+} */
 
-.upload-dropzone span {
+/* .upload-dropzone span {
     color: inherit;
-}
+} */
+
 
 
 /* <a>파일 추가</a> */
 
-a {
+/* a {
     color: #008243;
     background-color: transparent;
-}
+} */
 
-.upload-dropzone a {
+/* .upload-dropzone a {
     text-decoration: none;
     font-size: 13px;
-}
+} */
+
 
 
 /* <div id="upload-error" class="notification" style="display: none;"></div> */
 /* 클래스: notification */
 
-#upload-error {
+/* #upload-error {
     margin-top: 10px;
-}
+} */
 
-.notification {
+/* .notification {
     border: 1px solid #e35b66;
     color: #cc3340;
     border-radius: 4px;
@@ -1902,26 +1955,28 @@ a {
     font-size: 13px;
     transition: height .2s;
     width: 100%;
-}
+} */
 
-.notification {
+/* .notification {
     background-color: #fff0f1;
-}
+} */
+
 
 
 /* <ul id="request-attachments-pool" class="upload-pool" data-template="upload-template"></ul> */
 /* 클래스: "upload-pool" */
 
-.upload-pool {
+/* .upload-pool {
     margin: 0;
     overflow: hidden;
     padding: 0;
-}
+} */
+
 
 
 /* <input class="main-footer-input" type="submit" name="commit" value="제출"> */
 
-.main-footer-input[type="submit"] {
+/* .main-footer-input[type="submit"] {
     display: inline-block;
     font-weight: 600;
     line-height: 1.5;
@@ -1940,25 +1995,26 @@ a {
     margin-bottom: 1.5rem;
     padding: 0.5em 1.5em;
     font-size: 1.125rem;
-}
+} */
 
-.main-footer-input[type="submit"]:hover {
+/* .main-footer-input[type="submit"]:hover {
     text-decoration: none;
-}
+} */
 
-.main-footer-input[type="submit"]:hover {
+/* .main-footer-input[type="submit"]:hover {
     color: #fff;
     border-color: #000;
     background-color: #000;
-}
+} */
 
-.main-footer-input[type="submit"]:focus {
+/* .main-footer-input[type="submit"]:focus {
     outline: 0;
-}
+} */
 
-[type="submit"] {
+/* [type="submit"] {
     -webkit-appearance: button;
-}
+} */
+
 
 
 /* <a class="last-a" href=""> */

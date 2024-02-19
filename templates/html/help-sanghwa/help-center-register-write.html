@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=chrome" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 글꼴 형식 정보 -->
     <link
       rel="stylesheet"
       as="style"
@@ -39,19 +38,19 @@
       }
     </style>
   </head>
-  <!-- 바디 클론코딩 제작 -->
+  <!-- 바디 클론코딩 시작 -->
   <body>
     <div></div>
     <div class="layout-column" x-data="Widgets.mobileMenu">
-      <!-- 헤더 클론코딩 제작 -->
+      <!-- 헤더 클론코딩 시작 -->
       <header
-        class="header_unstuck"
+        class="header-unstuck"
         x-data="Widgets.header({ isFixed: false, isSticky: true })"
         :class="{ 'text-header bg-header': isStuck, 'shadow': isStuck, 'border-bottom': !isFixed }"
       >
-        <nav class="navbar_full">
+        <nav class="navbar-full">
           <a href="" class="navbar-auto">
-            <!-- 와디즈 도움말센터 이미지 -->
+            <!-- 원랩 메인 로고 -->
             <img
               class="block-fluid"
               id="logo"
@@ -82,7 +81,6 @@
             x-transition:leave-start="opacity-100"
             x-transition:leave-end="opacity-0"
           ></div>
-          <!-- 헤더 영역마다 범위를 분할 -->
           <div
             class="nav-end"
             x-show="isOpen"
@@ -103,7 +101,6 @@
                   aria-live="polite"
                   role="listbox"
                 ></zd-autocomplete-announcement>
-                <!-- 실질적인 검색 input 박스 -->
                 <input
                   type="search"
                   name="query"
@@ -116,7 +113,7 @@
                   aria-owns="4ac0343a-4f94-48c1-b9e8-500d17f86e96"
                 />
               </form>
-              <!-- svg 돋보기 이미지 -->
+              <!-- svg 돋보기 이미지 (검색돋보기) -->
               <svg
                 class="search-transition"
                 xmlns="http://www.w3.org/2000/svg"
@@ -130,17 +127,17 @@
               data-element="template"
               data-template="category-dropdown"
             ></div>
-            <!-- 문의 등록 버튼 -->
-            <a class="button-header-1" href=""> 원랩 문의하기 </a>
-            <!-- 메이커센터 버튼 -->
-            <a class="button-header-2" href="">대회/공모전 문의하기 </a>
-            <!-- 와디즈 바로가기 버튼 -->
-            <a class="button-header-3" href="">자료공유 및 장소공유 </a>
+            <!-- 원랩 문의 버튼 -->
+            <a class="button-header-1" href=""> 원랩 문의 </a>
+            <!-- 학교 문의 버튼 -->
+            <a class="button-header-2" href=""> 학교 문의 </a>
+            <!-- 커뮤니티 버튼 -->
+            <!-- <a class="button-header-3" href=""> 커뮤니티 </a> -->
           </div>
         </nav>
       </header>
       <!-- 헤더 클론코딩 범위 -->
-      <!-- 메인 클론코딩 제작 -->
+      <!-- 메인 클론코딩 시작 -->
       <main role="main">
         <link
           rel="stylesheet"
@@ -152,16 +149,18 @@
           id="page-container"
           style="padding-top: 6rem; padding-bottom: 1rem"
         >
-          <div class="row-center">
+          <!-- 원랩 문의 등록 / 문의 등록 (제거 대상) -->
+          <!-- <div class="row-center">
             <nav class="col">
               <ol class="breadcrumbs">
                 <li title="도움말 센터">
-                  <a class="help-center" href="">원랩 문의 등록</a>
+                  <a class="help-center" href="">도움말 센터</a>
                 </li>
                 <li title="문의 등록">문의 등록</li>
               </ol>
             </nav>
-          </div>
+          </div> -->
+          <!-- 원랩 문의 등록 / 문의 등록 (제거 대상) -->
           <div class="row">
             <div class="lg:col-9">
               <header class="mb-5">
@@ -189,7 +188,7 @@
                     <label for="request-issue-type-select"
                       >문의 접수하실 내용을 선택해주세요:&#41;
                     </label>
-                    <a
+                    <!-- <a
                       class="nesty-input"
                       tabindex="0"
                       aria-haspopup="true"
@@ -198,29 +197,25 @@
                       aria-label="문의 접수하실 내용을 선택해주세요:&#41;"
                       style="max-width: 100%"
                     >
-                      원랩 문의하기
-                    </a>
+                      문의 사항 선택
+                    </a> -->
                     <select
                       class="request-select"
                       name="request[ticket-form-id]"
                       aria-label="문의 접수하실 내용을 선택해주세요:&#41;"
                       autofocus="autofocus"
-                      style="display: none"
                     >
-                      <!-- 와디즈 도움말센터 문의등록 메인 페이지 이동 -->
+                      <!-- 종류별 문의 등록 선택 -->
                       <option data-url="" value="-">-</option>
-                      <!-- 와디즈 도움말센터 문의등록 메인 페이지에서 와디즈 문의하기로 페이지 이동 -->
-                      <option data-url="" selected="selected" value="1">
-                        원랩 문의하기
-                      </option>
-                      <!-- 와디즈 도움말센터 문의등록 메인 페이지에서 프로젝트 수정/변경 요청하기 페이지 이동 -->
-                      <option data-url="" value="2">
-                        대회/공모전 문의하기
-                      </option>
-                      <!-- 와디즈 도움말센터 문의등록 메인 페이지에서 와디즈 광고서비스 문의하기 페이지 이동 -->
-                      <option data-url="" value="3">자료공유 문의하기</option>
-                      <!-- 와디즈 도움말센터 문의등록 메인 페이지에서 와디즈 파이낸스 문의하기 페이지 이동 -->
-                      <option data-url="" value="4">장소공유 문의하기</option>
+                      <!-- 원랩 문의 -->
+                      <option data-url="" value="1">원랩 문의</option>
+                      <!-- 장소 공유 문의 -->
+                      <option data-url="" value="2">장소 공유 문의</option>
+                      <!-- 자료 공유 문의 -->
+                      <option data-url="" value="3">자료 공유 문의</option>
+                      <!-- 커뮤니티 문의 -->
+                      <option data-url="" value="4">대회 / 공모전 문의</option>
+                      <!-- 대회 / 공모전 문의 -->
                     </select>
                   </div>
                   <div class="form-field">
@@ -228,6 +223,7 @@
                       이메일 주소
                     </label>
                     <input
+                      class="email-address"
                       type="text"
                       name="request[anonymous-requester-email]"
                       aria-required="true"
@@ -237,17 +233,33 @@
                     <label for="request-custom-fields-6760067845017">
                       문의자 유형
                     </label>
-                    <input
+                    <select
+                      class="request-select1"
+                      name="request[ticket-form-id]"
+                      aria-label="문의 접수하실 내용을 선택해주세요:&#41;"
+                      autofocus="autofocus"
+                    >
+                      <!-- 종류별 문의자 유형 선택 -->
+                      <option data-url="" value="-">-</option>
+                      <!-- 대학생 회원 -->
+                      <option data-url="" value="1">대학생 회원</option>
+                      <!-- 고등학생 회원 -->
+                      <option data-url="" value="2">고등학생 회원</option>
+                      <!-- 일반 회원 -->
+                      <option data-url="" value="3">일반 회원</option>
+                    </select>
+                    <!-- <input
+                      class="user-register"
                       type="hidden"
                       name="request[custom_fields][6760067845017]"
                       autocomplete="off"
-                      data-tagger='[{"label":"-","value":""},{"label":"프로젝트를 개설한 메이커","value":"펀딩메이커"},{"label":"프로젝트에 참여한 서포터","value":"펀딩서포터"},{"label":"기타 제3자 (권리침해 등 이해관계자)","value":"기타__제_3자_"}]'
+                      data-tagger='[{"label":"-","value":""},{"label":"대학생 회원의 유형","value":"대학생"},{"label":"고등학생 회원의 유형","value":"고등학생"},{"label":"기타 제3자 회원의 유형","value":"일반회원"}]'
                       aria-required="true"
                       aria-labelledby="request_custom_fields_6760067845017_label"
                       value=""
                       data-gtm-form-interact-field-id="0"
-                    />
-                    <a
+                    /> -->
+                    <!-- <a
                       class="nesty-input"
                       tabindex="0"
                       aria-haspopup="true"
@@ -257,11 +269,11 @@
                       aria-labelledby="request_custom_fields_6760067845017_label"
                       style="max-width: 100%"
                       >-</a
-                    >
+                    > -->
                   </div>
                   <div class="form-field" hidden="">
                     <label for="request_custom_fields_6477991452185"
-                      >와디즈 이메일 계정</label
+                      >원랩 이메일 계정</label
                     >
                     <input
                       type="text"
@@ -272,7 +284,7 @@
                       disabled=""
                     />
                     <p id="request_custom_fields_6477991452185_hint">
-                      와디즈 로그인 시 사용하시는 이메일 주소 (와디즈계정)을
+                      원랩 로그인 시 사용하시는 이메일 주소 (원랩계정)을
                       알려주세요.
                     </p>
                   </div>
@@ -442,7 +454,7 @@
                       data-gtm-form-interact-field-id="2"
                       disabled=""
                     />
-                    <a
+                    <!-- <a
                       class="nesty-input"
                       tabindex="0"
                       aria-haspopup="true"
@@ -452,7 +464,7 @@
                       aria-labelledby="request_custom_fields_27986418138009_label"
                       style="max-width: 100%"
                       >-</a
-                    >
+                    > -->
                   </div>
                   <div class="form-field" hidden="">
                     <label for="request_custom_fields_27986499834393"
@@ -483,7 +495,7 @@
                     />
                   </div>
                   <div class="form-field">
-                    <label for="request_description"
+                    <label for="request-description"
                       >문의사항을 알려주세요.</label
                     >
                     <textarea
@@ -493,15 +505,14 @@
                       aria-describedby="request_description_hint"
                       aria-labelledby="request_description_label"
                       data-helper="wysiwyg"
-                      style="visibility: hidden; display: none"
                       aria-hidden="true"
                     ></textarea>
-                    <div
+                    <!-- <div
                       role="application"
                       id="hc-wysiwyg"
                       data-test-id="zd-wysiwyg-editor"
-                    >
-                      <div role="toolbar" aria-label="편집기 도구 모음">
+                    > -->
+                    <!-- <div role="toolbar" aria-label="편집기 도구 모음">
                         <span aria-haspopup="true" aria-expanded="false">
                           <span
                             role="button"
@@ -584,9 +595,9 @@
                           tabindex="0"
                           class="wysiwyg-icon-quote"
                         ></span>
-                      </div>
-                      <div role="form" aria-expanded="false"></div>
-                      <div role="group">
+                      </div> -->
+                    <!-- <div role="form" aria-expanded="false"></div> -->
+                    <!-- <div role="group">
                         <iframe
                           id="request_description_ifr"
                           frameborder="0"
@@ -594,8 +605,8 @@
                           class="tox-edit-area-iframe"
                           title="null"
                         ></iframe>
-                      </div>
-                      <div role="alert" aria-hidden="true"></div>
+                      </div> -->
+                    <!-- <div role="alert" aria-hidden="true"></div>
                       <div>
                         <input
                           name="content_type"
@@ -603,7 +614,7 @@
                           value="text/html"
                         />
                       </div>
-                    </div>
+                    </div> -->
                     <input
                       type="hidden"
                       name="request[description_mimetype]"
@@ -682,7 +693,7 @@
                       style="max-width: 100%"
                       >-</a
                     >
-                    <p id="request_custom_fields_20409345989657_hint">
+                    <p id="request-custom-fields-20409345989657-hint">
                       정보를 입력해주시면 답변 알림 및 신속하고 정확한 상담이
                       가능합니다. 아래의 개인정보 수집 및 이용 정책을
                       확인하셨다면 체크 박스에 체크해주세요. ① 수집항목: (필수)
@@ -693,7 +704,7 @@
                       제한될 수 있습니다.
                     </p>
                   </div>
-                  <div class="form-field1">
+                  <!-- <div class="form-field1">
                     <label for="request-attachments"
                       >첨부 파일
                       <span class="optional">&#40;선택 사항&#41;</span>
@@ -729,15 +740,15 @@
                       class="upload-pool"
                       data-template="upload-template"
                     ></ul>
-                  </div>
-                  <footer>
+                  </div> -->
+                  <!-- <footer>
                     <input
                       class="main-footer-input"
                       type="submit"
                       name="commit"
                       value="제출"
                     />
-                  </footer>
+                  </footer> -->
                 </form>
               </div>
             </div>
@@ -756,80 +767,84 @@
         ></button>
       </main>
       <!-- 메인 클론코딩 범위 -->
+
+      <!-- 각종 symbol 들 -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        class="svg-shape"
+        viewBox="0 0 1200 120"
+      >
+        <use xlink:href="#shape-book"></use>
+      </svg>
+      <div class="container-7"></div>
+      <!-- svg 에서 symbol 가져오기 -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+        <!-- symbol-1 검색 돋보기-->
+        <symbol id="icon-search">
+          <circle
+            cx="4.5"
+            cy="4.5"
+            r="4"
+            fill="none"
+            stroke="currentColor"
+          ></circle>
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            d="M11 11L7.5 7.5"
+          ></path>
+        </symbol>
+        <!-- symbol-2 자물쇠 아이콘-->
+        <symbol id="icon-lock">
+          <rect
+            width="12"
+            height="9"
+            x="2"
+            y="7"
+            fill="currentColor"
+            rx="1"
+            ry="1"
+          ></rect>
+          <path
+            fill="none"
+            stroke="currentColor"
+            d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
+          ></path>
+        </symbol>
+        <!-- symbol-3 별 아이콘 -->
+        <symbol id="icon-star">
+          <polygon
+            points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
+          ></polygon>
+        </symbol>
+        <!-- symbol-4 -->
+        <symbol id="icon-chevron-down">
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
+          ></path>
+        </symbol>
+        <!-- symbol-5 -->
+        <symbol id="icon-agent">
+          <path
+            fill="currentColor"
+            d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
+          ></path>
+        </symbol>
+        <!-- symbol-6 -->
+        <symbol id="shape-book">
+          <path
+            d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+          ></path>
+        </symbol>
+      </svg>
+      <!-- 각종 symbol 들 -->
+
       <!-- 푸터 클론코딩 제작 -->
       <footer class="footer-6" id="footer">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          class="svg-shape"
-          viewBox="0 0 1200 120"
-        >
-          <!-- <use xlink:href="#shape-book"></use> -->
-        </svg>
-        <div class="container-7"></div>
-        <!-- svg 에서 symbol 가져오기 -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-          <!-- symbol-1 검색 돋보기-->
-          <symbol id="icon-search">
-            <circle
-              cx="4.5"
-              cy="4.5"
-              r="4"
-              fill="none"
-              stroke="currentColor"
-            ></circle>
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              d="M11 11L7.5 7.5"
-            ></path>
-          </symbol>
-          <!-- symbol-2 자물쇠 아이콘-->
-          <symbol id="icon-lock">
-            <rect
-              width="12"
-              height="9"
-              x="2"
-              y="7"
-              fill="currentColor"
-              rx="1"
-              ry="1"
-            ></rect>
-            <path
-              fill="none"
-              stroke="currentColor"
-              d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"
-            ></path>
-          </symbol>
-          <!-- symbol-3 별 아이콘 -->
-          <symbol id="icon-star">
-            <polygon
-              points="213 325 81 405 116 255 0 154 153 141 213 0 273 141 426 154 310 255 345 405"
-            ></polygon>
-          </symbol>
-          <!-- symbol-4 -->
-          <symbol id="icon-chevron-down">
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"
-            ></path>
-          </symbol>
-          <!-- symbol-5 -->
-          <symbol id="icon-agent">
-            <path
-              fill="currentColor"
-              d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"
-            ></path>
-          </symbol>
-          <!-- symbol-6 -->
-          <symbol id="shape-book">
-            <path
-              d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
-            ></path>
-          </symbol>
-        </svg>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- 메인 푸터 부분 범위 -->
@@ -847,7 +862,7 @@
                     <div class="fill"></div>
                   </div>
                 </div>
-                <div class="text-gray-2" onclick="location.href=''">
+                <div class="text-gray-2">
                   <span class="button-text-3">개인정보처리방침</span>
                   <div class="system-icon-4">
                     <div class="fill-5"></div>
@@ -868,7 +883,7 @@
                   <div class="system-icon-c">
                     <div class="fill-d"></div>
                   </div>
-                  <span class="wadiz-help-center">와디즈 도움말센터</span>
+                  <span class="wadiz-help-center">원랩 도움말센터</span>
                 </div>
                 <div class="text-button">
                   <span class="button-text-f">채팅 상담하기</span>
@@ -898,29 +913,30 @@
               <div class="box-1a">
                 <div class="box-1b">
                   <div class="box-1c">
-                    <span class="wadiz">와디즈(주)</span>
+                    <span class="wadiz">원랩(OneLab)</span>
                     <div class="divider-1d">
                       <div class="middle-divider"></div>
                     </div>
                     <span class="representative-director">대표이사</span>
-                    <span class="main-name">신혜성</span>
+                    <span class="main-name">한동석</span>
                     <div class="divider-1e">
                       <div class="middle-1f"></div>
                     </div>
                     <span class="business-number"
-                      >사업자등록번호 258-87-01370</span
+                      >사업자등록번호 000-00-00000</span
                     >
                     <div class="divider-20">
                       <div class="middle-21"></div>
                     </div>
                     <span class="sales-number"
-                      >통신판매업신고번호 2021-성남분당C-1153</span
+                      >통신판매업신고번호 2024-서울강남A-0000</span
                     >
                     <div class="divider-22">
                       <div class="middle-23"></div>
                     </div>
                     <span class="span-address"
-                      >경기 성남시 분당구 판교로 242 PDC A동 402호</span
+                      >서울특별시 강남구 역삼동 코리아IT 아카데미 (별관)
+                      13층</span
                     >
                   </div>
                   <div class="box-24">
@@ -928,21 +944,21 @@
                     <div class="divider-25">
                       <div class="middle-26"></div>
                     </div>
-                    <span class="span-email">info@wadiz.kr</span>
+                    <span class="span-email">info@OneLab.com</span>
                     <div class="divider-27">
                       <div class="middle-28"></div>
                     </div>
-                    <span class="wired-counseling">유선 상담 1661-9056</span>
-                    <span class="wadiz-co-ltd">ⓒ wadiz Co., Ltd.</span>
+                    <span class="wired-counseling">유선 상담 1234-5678</span>
+                    <span class="wadiz-co-ltd">ⓒ OneLab Co., Ltd.</span>
                   </div>
                 </div>
                 <span class="wadiz-disclaimer">
-                  일부 상품의 경우 와디즈는 통신판매중개자이며 통신판매 당사자가
+                  일부 자료의 경우 원랩은 자료공유중개자이며 자료판매 당사자가
                   아닙니다.
                   <br />
-                  해당되는 상품의 경우 상품, 상품정보, 거래에 관한 의무와 책임은
-                  판매자에게 있으므로, 각 상품 페이지에서 구체적인 내용 을
-                  확인하시기 바랍니다.
+                  해당되는 자료의 경우 자료, 자료정보, 자료거래에 관한 의무와
+                  책임은 원랩원들에게 있으므로, 각 자료 공유에 관련된 사항은 각
+                  해당 페이지 에서 구체적인 내용을 확인하시기 바랍니다.
                 </span>
               </div>
               <!-- 안드로이드 앱 스토어 가는 버튼 -->
@@ -963,21 +979,6 @@
       </footer>
       <!-- 푸터 클론코딩 범위 -->
     </div>
-    <div
-      class="nesty-panel"
-      id="_mn1kxwrhu"
-      style="display: none; top: 325.695px; left: 319px; width: 785px"
-    ></div>
-    <div class="nesty-panel" id="_scbhhql3t" style="display: none"></div>
-    <div class="nesty-panel" id="_u67ihprlf" style="display: none"></div>
-    <div class="nesty-panel" id="_a85gembpw" style="display: none"></div>
-    <div class="nesty-panel" id="_ne6ihf2z0" style="display: none"></div>
-    <div class="nesty-panel" id="_rcto6hke5" style="display: none"></div>
-    <div></div>
-    <div style="visibility: visible">
-      <div></div>
-      <div></div>
-    </div>
-    <script src="/staticfiles/js/help-sanghwa/help-center-register-write.js"></script>
   </body>
+  <!-- 바디 클론코딩 범위 -->
 </html>

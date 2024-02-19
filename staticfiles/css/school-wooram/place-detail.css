@@ -2366,7 +2366,7 @@ a.Button_button {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    margin-top: 80px;
+    margin-top: -146px;
     overflow: hidden;
     position: relative;
 }

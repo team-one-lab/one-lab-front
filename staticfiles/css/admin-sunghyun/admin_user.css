@@ -140,13 +140,14 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
     justify-content: center;
     min-width: 80px;
     display: flex;
+    cursor: pointer;
     
 }
 .min-2 {
     justify-content: center;
     min-width: 63px;
     display: flex;
-    margin-right: 94px;
+    margin-right: 50px;
     
 }
 .min-3{
@@ -154,8 +155,8 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
 }
 .grid-px {
     padding-left: 12px;
-    /* padding-right: 45px; */
-    column-gap: 128px;
+    padding-right: 45px;
+    column-gap: 142px;
     grid-auto-flow: column;
     display: grid;
 }
@@ -679,8 +680,8 @@ p{
     justify-content: space-between;
     align-items: center;
     display: flex;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .font-content{
     font-weight: 600;
@@ -725,7 +726,7 @@ p{
     border-color: rgba(0,0,0,.1);
 }
 .relative1{
-    margin-left: 600px;
+    margin-right: 720px;
 }
 .over-nowrap{
     white-space: nowrap;
@@ -746,6 +747,10 @@ li:hover{
 }
 button:hover {
     background-color: #eeebeb;
+}
+.user-count-list{
+    margin-top: 27px;
+    margin-left: 10px;
 }
 .dropdown-content {
     display: none;
@@ -903,17 +908,20 @@ th {
 .check2{
     width: 100px;
     height: 20px;
+    accent-color: #008243;
+
 }
-.email{
+.email{ /* 이메일  */
     padding-left: 35px;
     width: 200px;
 } 
-.name{
+.name{ /* 이름  */
     padding-left: 70px
 }
-.type{
-    padding-left: 10px;
+.date{ /* 가입 날짜  */
+    padding-left: 53px;
 }
-.date{
-    padding-left: 20px;
+.type{ /* 회원 유형  */
+    padding-left: 72px;
+    margin-right: 48px;
 }

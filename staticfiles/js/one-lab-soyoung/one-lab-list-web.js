@@ -1,18 +1,19 @@
-const buttons = document.querySelectorAll(
-    "div.main-list-filter-container ul.filter-list-wrapper button.major-btn"
-);
-
+const buttons = document.querySelectorAll('button.major-btn span');
 buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
-        const activeBtn = document.querySelector("div.main-list-filter-container ul.filter-list-wrapper button.major-btn.active-btn")
+        const activeBtn = document.querySelector("button.active-btn")
         if(activeBtn){
             activeBtn.classList.toggle("active-btn");
         }
-        e.target.classList.toggle("active-btn");
+        button.parentElement.classList.toggle("active-btn");
     });
 });
 
 
-$(".wish-btn").on("click",function(e){
-    $(e.target).find('.like-icon').toggle();
-});
+// 좋아요
+const likeBtns = document.querySelectorAll('.like-btn')
+likeBtns.forEach((likeBtn) => {
+    likeBtn.addEventListener('click', function(e) {
+        likeBtn.classList.toggle('active')
+    })
+})
