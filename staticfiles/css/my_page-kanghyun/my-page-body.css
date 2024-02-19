@@ -596,6 +596,7 @@ h4{
     align-items: center;
     cursor: pointer;
     gap: 4px;
+    border-radius: 12px;
 }
 
 .my-page-project-content.onclick {
@@ -1399,7 +1400,222 @@ svg.wish-icon>path {
     transition: fill .25s ease-in-out;
 }
 
+.SearchResult_cardContainer {
+    margin-top: 20px;
+}
+
+/* 장소 공유 스크롤 배너 */
+.search-result-scroll-banner-container {
+    position: fixed;
+    z-index: 990;
+    width: 195px;
+    right: 204px;
+}
+
+.search-result-scroll-banner {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    border: 0px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-result-banner-inner {
+    width: 98%;
+    height: 98%;
+    margin-bottom: 16px;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #c8e6c9;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 5px gray;
+    z-index: 999;
+}
+
+.search-result-inner-inner {
+    width: 70%;
+    height: 18%;
+    box-shadow: 5px 5px 5px gray;
+    background-color: #ffffffea;
+    border-radius: 10px;
+    margin: 15px auto 10px;
+    border: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-result-inner-inner span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    background-color: #008243;
+    border-radius: 10px;
+    color: #fff;
+}
+.swiper-slide.swiper-slide-active.show {
+    display: block;
+}
+.swiper-slide {
+    display: none;
+}
+/* 커뮤니티 목록 창 */
+div.board-list-main {
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right) - 32px);
+    max-width: 800px;
+    padding-top: 17px;
+    min-width: 632px!important;
+}
+
+a.article {
+    padding: 20px 0 0;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+em.status.closed {
+    color: #696f75;
+}
+
+em.status {
+    color: #008243;
+    padding-bottom: 4px;
+    line-height: 18px;
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+em.status::before, em.notice::before {
+    display: inline-block;
+    margin-top: -1px;
+    margin-right: 4px;
+    background-color: #babdc0;
+    width: 2px;
+    height: 2px;
+    vertical-align: middle;
+    content: "";
+}
+
+em.notice {
+    color: #4462ee;
+    padding-bottom: 4px;
+    line-height: 18px;
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 500;
+}
+em.category {
+    color: #008243;
+    padding-bottom: 4px;
+    line-height: 18px;
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+div.info {
+    padding-bottom: 20px;
+    line-height: 18px;
+    font-size: 13px;
+}
+
+div.thumb {
+    margin-top: -24px;
+    margin-bottom: 20px;
+    padding-bottom: 108px;
+    width: 144px;
+    float: right;
+    background-color: #eaeaea;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+h3.title {
+    margin-right: 200px;
+    padding-bottom: 12px;
+    line-height: 28px;
+    font-size: 20px;
+    color: #212529;
+}
+
+
+span.author {
+    font-size: 13px;
+    margin-right: 8px;
+    color: #696f75;
+}
+
+span.created-at {
+    font-size: 13px;
+    margin-right: 8px;
+    color: #696f75;
+}
+
+
+a.article::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+h3.title:hover {
+    text-decoration: underline;
+}
 /* 좋아요 확인 토스트 창 */
+
+.WishButton_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    outline: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+.withIcon_icon {
+    display: block;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+  }
+
+.WishButton_button svg {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+    will-change: transform;
+}
+
+.WishButton_button path {
+    stroke: #f2f4f6;
+    stroke-width: 2px;
+    fill: rgba(33, 37, 41, 0.4);
+    transition: fill 0.25s ease-in-out;
+  }
+
+.WishButton_button .active path {
+    fill: crimson;
+}
 
 #like-clicked-toast-container {
     display: none;

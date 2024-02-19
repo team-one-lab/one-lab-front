@@ -97,27 +97,27 @@ for (let i=0; i<likebtns.length;i++) {
         }
     } )
 }
-const likebtns2 = document.querySelectorAll("button.WishButton_button");
+
+
+const likebtns2 = document.querySelectorAll(".WishButton_button");
 // console.log(likebtns2);
 for (let i=0; i<likebtns2.length;i++) {
     likebtns2[i].addEventListener('click', function(e) {
         e.preventDefault();
         // 좋아요 키고 끄는 기능
-        if (likebtns2[i].classList.contains("active")) {
+        if (!likebtns2[i].classList.contains("active")) {
             likebtns2[i].classList.remove("active");
-            cancel_liketoast.style.display = "block";
-            setTimeout(()=>{
-                cancel_liketoast.style.display = "none";
-            },1500)
-        } else {
-            likebtns2[i].classList.add("active");
-            // 토스트 창 나타나고 사라지기
             liketoast.style.display = "block";
             setTimeout(()=>{
                 liketoast.style.display = "none";
             }, 1500)
-        }
-    } )
+        } else {
+            likebtns2[i].classList.add("active");
+            cancel_liketoast.style.display="block";
+            setTimeout(()=>{
+                cancel_liketoast.style.display="none";
+            }, 1500)}
+        })
 }
 
 
@@ -176,7 +176,29 @@ tabpages[2].addEventListener("click", ()=> {
         onelab_page[2].style.display = "none";
     }
 })
+// 공모전/대회 눌렀을 때 열리는 기능
+tabpages[3].addEventListener("click", ()=> {
+    if (onelab_page[3].style.display === "none") {
+        onelab_page.forEach((page)=>{
+            page.style.display = "none";
+        })
+        onelab_page[3].style.display = "block";
+    } else {
+        onelab_page[3].style.display = "none";
+    }
+})
 
+// 커뮤니티 눌렀을 때 열리는 기능
+tabpages[4].addEventListener("click", ()=> {
+    if (onelab_page[4].style.display === "none") {
+        onelab_page.forEach((page)=>{
+            page.style.display = "none";
+        })
+        onelab_page[4].style.display = "block";
+    } else {
+        onelab_page[4].style.display = "none";
+    }
+})
 
 // 프로필 설정 창 모달 기능 구현
 const profile_modal = document.querySelector(".bottom-modal-profile-portal");
@@ -244,4 +266,39 @@ save_profile_change_btn.addEventListener("click", ()=> {
 const confirmed_btn_modal = document.querySelector("#alertify-o-ok");
 confirmed_btn_modal.addEventListener("click", ()=> {
     profile_change_confirm_modal.style.display = "none";
+})
+
+
+// 공모전 대회 목록의 더보기 눌럿을 때의 기능
+const more_view_btn = document.querySelector("#more-view-btn");
+// console.log(more_view_btn);
+const page_exhibition = document.querySelectorAll(".swiper-slide");
+// console.log(page_exhibition[0].classList.contains("show"));
+
+more_view_btn.addEventListener("click", ()=>{
+    if (!page_exhibition[8].classList.contains("show") && !page_exhibition[5].classList.contains("show")) {
+        for (let j =3;j<6;j++) {
+            page_exhibition[j].classList.add("show");
+        }
+    } else if (!page_exhibition[8].classList.contains("show")) {
+        for (let t = 6;t<9;t++) {
+            page_exhibition[t].classList.add("show");
+        }
+    }
+
+})
+
+// 더보기 닫기 눌렀을 때의 기능
+const close_more_view_btn = document.querySelector("#close-view-btn");
+
+close_more_view_btn.addEventListener("click", ()=>{
+    if (page_exhibition[8].classList.contains("show") && page_exhibition[5].classList.contains("show")) {
+        for (let i =6; i<9;i ++) {
+            page_exhibition[i].classList.remove("show");
+        }
+    } else if (page_exhibition[5].classList.contains("show")) {
+        for (let j=3; j< 6; j ++) {
+            page_exhibition[j].classList.remove("show");
+        }
+    }
 })
