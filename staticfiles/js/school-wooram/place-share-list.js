@@ -1,4 +1,4 @@
-const likes = document.querySelectorAll("button.WishButton_button");
+const likes = document.querySelectorAll("button.wish-button-button");
 
 likes.forEach((like) => {
     const color = document.getElementsByClassName("is");
@@ -6,6 +6,5 @@ likes.forEach((like) => {
         console.log(e.target.classList);
         e.target.classList.toggle("active");
         e.ariaPressed = "true";
-        
     });
 });
