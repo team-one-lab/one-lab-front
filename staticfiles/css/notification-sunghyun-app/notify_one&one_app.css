@@ -42,7 +42,7 @@ body {
     box-sizing: border-box;
 }
 a {
-    color: rgb(89 189 181);
+    color: #008244;
     text-decoration: none;
     background-color: transparent;
 }
@@ -390,13 +390,12 @@ input[type="search"] {
     }
 
 .button-yds2 {
-    color: #00C4C4;
-    border-color: #00C4C4;
-    background-color: #FFFFFF; box-shadow: inset 0px -1px 0px #F0F2F5;
-    width: 100px;
+    color: #008244;
+    border-color: #008244;
+    /* background-color: #FFFFFF; box-shadow: inset 0px -1px 0px #F0F2F5; */
+    width: 120px;
     height: 45px;
     display: flex;
-    
     justify-content: center;
     align-items: center;
     font-family: 'Pretendard';
@@ -423,16 +422,16 @@ input[type="search"] {
     vertical-align: middle;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #00C4C4;
+    /* border: 1px solid #00C4C4; */
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
 }
 .button-yds1 {
-    color: #00C4C4;
-    border-color: #00C4C4;
+    color: #008244;
+    border-color: #008244;
     background-color: #FFFFFF; 
-    box-shadow: inset 0px -1px 0px #F0F2F5;
+    /* box-shadow: inset 0px -1px 0px #F0F2F5; */
     width: 110px;
     height: 45px;
     display: flex;
@@ -448,10 +447,10 @@ input[type="search"] {
     text-align: center;
 }
 .button-yds3 {
-    color: #00C4C4;
+    color: #008244;
     padding: 5.25px 17.5px;
-    border-color: #00C4C4;
-    box-shadow: inset 0px -1px 0px #F0F2F5;
+    border-color: #008244;
+    /* box-shadow: inset 0px -1px 0px #F0F2F5; */
     width: 140px;
     height: 45px;
     display: flex;
@@ -466,7 +465,7 @@ input[type="search"] {
     text-align: center;
 }
 
-    .hero-hidden{
+.hero-hidden{
         position: relative;
         overflow: hidden;
         position: relative;
@@ -480,7 +479,7 @@ input[type="search"] {
         font-style: Medium;
         height: 286.31px;
         
-    }
+}
 
 
 
@@ -773,9 +772,9 @@ template {
     height: 28.7px;
 }
 .badge:hover{
-    background-color: #00C4C4;
-    color: #212121;
-    fill: #212121;
+    background-color: #00704A;
+    color: #fff;
+    fill: #fff;
 }
 
     .w-full {
@@ -954,7 +953,7 @@ template {
 } */
 
 .ydsbackground-1:hover {
-    background-color: #00C4C4;
+    background-color: #00704A;
     color: #212121;
     fill: #212121;
 }
@@ -1359,7 +1358,7 @@ li {
         background-color: #d5d2d2;
         /* padding-left:1rem;
         padding-right: 20rem; */
-        box-shadow: 5px 0 40px rgba(0, 0, 0, 0.4);
+        /* box-shadow: 5px 0 40px rgba(0, 0, 0, 0.4); */
         /* top: 0;
         right: 0;
         left: 0; */
@@ -1367,9 +1366,15 @@ li {
         flex: 1;
         flex-direction: column;
         flex-wrap: nowrap;
-        padding: 90px 60px 100px;
+        /* padding: 90px 60px 100px; */
         background-color: rgba(255, 255, 255, 1);
 
+    }
+    .btn-block{
+        /* height: 80px;
+        text-align: center; */
+        border-bottom: 0.3px solid #d8dcda;
+        padding: 0 90px;
     }
     .backdrop{
         position: fixed;

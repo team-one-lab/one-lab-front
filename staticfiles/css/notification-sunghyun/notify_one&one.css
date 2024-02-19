@@ -40,7 +40,7 @@ body {
     box-sizing: border-box;
 }
 a {
-    color: rgb(89 189 181);
+    color: #008244;
     text-decoration: none;
     background-color: transparent;
 }
@@ -608,7 +608,10 @@ template {
     color: #fcfcfc;
     fill: #ffffff;
 }
-
+#img1{
+    fill: #008244;
+    color: #008244;
+}
     .w-full {
         width: 100%;
     }
@@ -745,20 +748,20 @@ template {
     justify-content: center;
 }
 
-    .ydsbackground-1 {
-        display: flex;
-        flex-direction: column;
-        border-radius: 1rem;
-        background: var(--mint-m-100, #E7F9F9);
-        flex: 1 0 9.1%;
-        max-width: 15.72%; 
-        width: 299px;
-        height: 101.59px;
-        justify-content: center;
-        align-items: center;
-        margin: 2vw;
-        box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 15%);
-    }
+.ydsbackground-1 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background: var(--mint-m-100, #E8F5E9);
+    flex: 1 0 9.1%;
+    max-width: 15.72%;
+    width: 299px;
+    height: 114.59px;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+    box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 15%);
+}
 
 
 
@@ -784,7 +787,7 @@ template {
 } */
 
 .ydsbackground-1:hover {
-    background-color: #00C4C4;
+    background-color: #C8E6C9;
     color: #212121;
     fill: #212121;
 }
@@ -794,9 +797,9 @@ template {
 }
 
 
-    .ydsgraybackground {
-        background-color: rgba(249, 250, 251, 1);
-    }
+.ydsgraybackground {
+    background-color: rgba(249, 250, 251, 1);
+}
 
 
     .pb-4, .py-4 {

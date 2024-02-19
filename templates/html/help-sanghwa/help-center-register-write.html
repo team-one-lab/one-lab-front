@@ -188,7 +188,7 @@
                     <label for="request-issue-type-select"
                       >문의 접수하실 내용을 선택해주세요:&#41;
                     </label>
-                    <a
+                    <!-- <a
                       class="nesty-input"
                       tabindex="0"
                       aria-haspopup="true"
@@ -198,32 +198,24 @@
                       style="max-width: 100%"
                     >
                       문의 사항 선택
-                    </a>
+                    </a> -->
                     <select
                       class="request-select"
                       name="request[ticket-form-id]"
                       aria-label="문의 접수하실 내용을 선택해주세요:&#41;"
                       autofocus="autofocus"
-                      style="display: none"
                     >
                       <!-- 종류별 문의 등록 선택 -->
                       <option data-url="" value="-">-</option>
                       <!-- 원랩 문의 -->
-                      <option data-url="" selected="selected" value="1">
-                        원랩 관련 문의
-                      </option>
+                      <option data-url="" value="1">원랩 문의</option>
                       <!-- 장소 공유 문의 -->
-                      <option data-url="" value="2">장소공유 관련 문의</option>
+                      <option data-url="" value="2">장소 공유 문의</option>
                       <!-- 자료 공유 문의 -->
-                      <option data-url="" value="3">자료공유 관련 문의</option>
+                      <option data-url="" value="3">자료 공유 문의</option>
                       <!-- 커뮤니티 문의 -->
-                      <option data-url="" value="4">커뮤니티 관련 문의</option>
+                      <option data-url="" value="4">대회 / 공모전 문의</option>
                       <!-- 대회 / 공모전 문의 -->
-                      <option data-url="" value="5">
-                        대회 / 공모전 관련 문의
-                      </option>
-                      <!-- 학교 관련하여 문의 -->
-                      <option data-url="" value="6">학교 관련 문의</option>
                     </select>
                   </div>
                   <div class="form-field">
@@ -231,6 +223,7 @@
                       이메일 주소
                     </label>
                     <input
+                      class="email-address"
                       type="text"
                       name="request[anonymous-requester-email]"
                       aria-required="true"
@@ -240,7 +233,23 @@
                     <label for="request-custom-fields-6760067845017">
                       문의자 유형
                     </label>
-                    <input
+                    <select
+                      class="request-select1"
+                      name="request[ticket-form-id]"
+                      aria-label="문의 접수하실 내용을 선택해주세요:&#41;"
+                      autofocus="autofocus"
+                    >
+                      <!-- 종류별 문의자 유형 선택 -->
+                      <option data-url="" value="-">-</option>
+                      <!-- 대학생 회원 -->
+                      <option data-url="" value="1">대학생 회원</option>
+                      <!-- 고등학생 회원 -->
+                      <option data-url="" value="2">고등학생 회원</option>
+                      <!-- 일반 회원 -->
+                      <option data-url="" value="3">일반 회원</option>
+                    </select>
+                    <!-- <input
+                      class="user-register"
                       type="hidden"
                       name="request[custom_fields][6760067845017]"
                       autocomplete="off"
@@ -249,8 +258,8 @@
                       aria-labelledby="request_custom_fields_6760067845017_label"
                       value=""
                       data-gtm-form-interact-field-id="0"
-                    />
-                    <a
+                    /> -->
+                    <!-- <a
                       class="nesty-input"
                       tabindex="0"
                       aria-haspopup="true"
@@ -260,7 +269,7 @@
                       aria-labelledby="request_custom_fields_6760067845017_label"
                       style="max-width: 100%"
                       >-</a
-                    >
+                    > -->
                   </div>
                   <div class="form-field" hidden="">
                     <label for="request_custom_fields_6477991452185"
@@ -445,7 +454,7 @@
                       data-gtm-form-interact-field-id="2"
                       disabled=""
                     />
-                    <a
+                    <!-- <a
                       class="nesty-input"
                       tabindex="0"
                       aria-haspopup="true"
@@ -455,7 +464,7 @@
                       aria-labelledby="request_custom_fields_27986418138009_label"
                       style="max-width: 100%"
                       >-</a
-                    >
+                    > -->
                   </div>
                   <div class="form-field" hidden="">
                     <label for="request_custom_fields_27986499834393"
@@ -486,7 +495,7 @@
                     />
                   </div>
                   <div class="form-field">
-                    <label for="request_description"
+                    <label for="request-description"
                       >문의사항을 알려주세요.</label
                     >
                     <textarea
@@ -496,15 +505,14 @@
                       aria-describedby="request_description_hint"
                       aria-labelledby="request_description_label"
                       data-helper="wysiwyg"
-                      style="visibility: hidden; display: none"
                       aria-hidden="true"
                     ></textarea>
-                    <div
+                    <!-- <div
                       role="application"
                       id="hc-wysiwyg"
                       data-test-id="zd-wysiwyg-editor"
-                    >
-                      <!-- <div role="toolbar" aria-label="편집기 도구 모음">
+                    > -->
+                    <!-- <div role="toolbar" aria-label="편집기 도구 모음">
                         <span aria-haspopup="true" aria-expanded="false">
                           <span
                             role="button"
@@ -588,8 +596,8 @@
                           class="wysiwyg-icon-quote"
                         ></span>
                       </div> -->
-                      <div role="form" aria-expanded="false"></div>
-                      <div role="group">
+                    <!-- <div role="form" aria-expanded="false"></div> -->
+                    <!-- <div role="group">
                         <iframe
                           id="request_description_ifr"
                           frameborder="0"
@@ -597,8 +605,8 @@
                           class="tox-edit-area-iframe"
                           title="null"
                         ></iframe>
-                      </div>
-                      <div role="alert" aria-hidden="true"></div>
+                      </div> -->
+                    <!-- <div role="alert" aria-hidden="true"></div>
                       <div>
                         <input
                           name="content_type"
@@ -606,7 +614,7 @@
                           value="text/html"
                         />
                       </div>
-                    </div>
+                    </div> -->
                     <input
                       type="hidden"
                       name="request[description_mimetype]"
@@ -685,7 +693,7 @@
                       style="max-width: 100%"
                       >-</a
                     >
-                    <p id="request_custom_fields_20409345989657_hint">
+                    <p id="request-custom-fields-20409345989657-hint">
                       정보를 입력해주시면 답변 알림 및 신속하고 정확한 상담이
                       가능합니다. 아래의 개인정보 수집 및 이용 정책을
                       확인하셨다면 체크 박스에 체크해주세요. ① 수집항목: (필수)
@@ -696,7 +704,7 @@
                       제한될 수 있습니다.
                     </p>
                   </div>
-                  <div class="form-field1">
+                  <!-- <div class="form-field1">
                     <label for="request-attachments"
                       >첨부 파일
                       <span class="optional">&#40;선택 사항&#41;</span>
@@ -732,15 +740,15 @@
                       class="upload-pool"
                       data-template="upload-template"
                     ></ul>
-                  </div>
-                  <footer>
+                  </div> -->
+                  <!-- <footer>
                     <input
                       class="main-footer-input"
                       type="submit"
                       name="commit"
                       value="제출"
                     />
-                  </footer>
+                  </footer> -->
                 </form>
               </div>
             </div>
@@ -854,7 +862,7 @@
                     <div class="fill"></div>
                   </div>
                 </div>
-                <div class="text-gray-2" onclick="location.href=">
+                <div class="text-gray-2">
                   <span class="button-text-3">개인정보처리방침</span>
                   <div class="system-icon-4">
                     <div class="fill-5"></div>

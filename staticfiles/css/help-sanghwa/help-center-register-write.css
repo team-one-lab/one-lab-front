@@ -581,7 +581,7 @@ button{
 }
 
 .form-0 > input:hover{
-    border-color: 
+    border-color: #008243;
 }
 
 input:not([type="range"]){
@@ -618,11 +618,11 @@ zd-autocomplete-announcement {
 }
 
 #query:hover {
-    border: 1px solid #00C4C4;
+    border: 1px solid #008243;
 }
 
 #query:focus {
-    border-color: #008423;
+    border-color: #00704a;
     outline: 0;
     /* box-shadow: 0 0 0 0.2rem #00704A; */
 }
@@ -719,8 +719,8 @@ input {
 }
 
 .button-header-1{
-    color: #00C4C4;
-    border-color: #00C4C4;
+    color: #008243;
+    border-color: #008243;
     width: 100px;
     height: 45px;
     display: flex;
@@ -737,15 +737,16 @@ input {
     vertical-align: middle;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #00C4C4;
+    border: 1px solid #008243;
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
 }
 
 .button-header-1:hover{
-    color: #00704A;
-    border: 1px solid #00704A;
+    color: white;
+    background-color: rgb(0, 130, 67);
+    border: 1px solid rgb(0, 130, 67);
     text-decoration: none;
 }
 
@@ -770,8 +771,8 @@ a {
 }
 
 .button-header-2{
-    color: #00C4C4;
-    border-color: #00C4C4;
+    color: #008243;
+    border-color: #008243;
     width: 110px;
     height: 45px;
     display: flex;
@@ -788,15 +789,16 @@ a {
     vertical-align: middle;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #00C4C4;
+    border: 1px solid #008243;
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
 }
 
 .button-header-2:hover{
-    color: #00704A;
-    border: 1px solid #00704A;
+    color: white;
+    background-color: rgb(0, 130, 67);
+    border: 1px solid rgb(0, 130, 67);
     text-decoration: none;
 }
 
@@ -1130,6 +1132,7 @@ label {
 }
 
 
+
 /*  <a
         class="nesty-input"
         tabindex="0"
@@ -1164,7 +1167,7 @@ label {
 .form-field1 .nesty-input:focus {
     outline: 0;
     border-color: rgba(5, 5, 6, 1);
-    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
+    box-shadow: 0 0 0 0.2rem rgb(0, 130, 67);
 }
 
 .nesty-input {
@@ -1225,12 +1228,12 @@ a {
 }
 
 .form-field1 .request-select:hover {
-    border-color: rgba(199, 203, 199, 1);
+    border-color: rgb(0, 130, 67);
 }
 
 .form-field1 .request-select:focus {
     outline: 0;
-    border-color: rgba(5, 5, 6, 1);
+    border-color: rgb(0, 130, 67);
     box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
 }
 
@@ -1279,7 +1282,46 @@ a {
 .form-field > label::after {
     margin-left: 2px;
     content: "*";
-    color: #00704A;
+    color: rgb(0, 130, 67);
+}
+
+.form-field > .request-select1 {
+    padding-right: 2em;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" width="10" height="6"%3E%3Cpath fill="%232D3748" d="M0 0h10L5 6 0 0z"/%3E%3C/svg%3E') no-repeat #fff;
+    background-position: right 0.75em center;
+    appearance: none;
+}
+
+.request-select1 {
+    text-transform: none;
+    line-height: inherit;
+    touch-action: manipulation;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+
+/* <select class="request-select1" name="request[ticket-form-id]" aria-label="문의 접수하실 내용을 선택해주세요:&#41;" autofocus="autofocus"> */
+/* class="request-select1" */
+
+.form-field .request-select1 {
+    padding: 0.5em 0.75em;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    border-radius: 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-field .request-select1:hover {
+    border-color: rgb(0, 130, 67);
+}
+
+.form-field .request-select1:focus {
+    outline: 0;
+    border-color: rgb(0, 130, 67);
+    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
 }
 
 
@@ -1302,7 +1344,7 @@ a {
 
 .form-field > input:focus {
     outline: 0;
-    border-color: rgba(5, 5, 6, 1);
+    border-color: rgb(0, 130, 67);
     box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
 }
 
@@ -1312,7 +1354,7 @@ a {
 .form-field > label::after {
     margin-left: 2px;
     content: "*";
-    color: #00704A;
+    color: rgb(0, 130, 67);
 }
 
 
@@ -1344,27 +1386,26 @@ a {
 }
 
 .form-field > input:hover {
-    border-color: rgba(199, 203, 199, 1);
+    border-color: rgb(0, 130, 67);
 }
 
-.form-field > input:focus {
-    outline: 0;
-    border-color: rgba(5, 5, 6, 1);
-    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
-}
+
 
 /* <a class="nesty-input" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-controls="_jrhyeuiv7" aria-required="true" aria-labelledby="request_custom_fields_6760067845017_label" style="max-width: 100%;">-</a> */
-.form-field .nesty-input:hover {
-    border-color: rgba(199, 203, 199, 1);
+.nesty-input:hover {
+    border-color: rgb(0, 130, 67);
 }
 
 .form-field1 .nesty-input:hover {
-    border-color: rgba(199, 203, 199, 1);
+    border-color: rgb(0, 130, 67);
 }
+
+
 
 .nesty-input.nesty-input:hover {
     color: inherit;
     text-decoration: none;
+    border-color: rgb(0, 130, 67);
 }
 
 .nesty-input1.nesty-input:hover {
@@ -1374,13 +1415,13 @@ a {
 
 .form-field .nesty-input:focus {
     outline: 0;
-    border-color: rgba(5, 5, 6, 1);
-    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
+    border-color: rgb(0, 130, 67);
+    box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25)
 }
 
 .form-field1 .nesty-input:focus {
     outline: 0;
-    border-color: rgba(5, 5, 6, 1);
+    border-color: rgb(0, 130, 67);
     box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25);
 }
 
@@ -1390,6 +1431,13 @@ a {
     border-color: #e2e8f0;
     background-color: #E2E8F0;
     cursor: not-allowed;
+}
+
+.form-field > .text-area:focus-visible {
+    outline-color: rgb(0, 130, 67);
+    border: none;
+    /* border-color: rgb(0, 130, 67); */
+    /* box-shadow: 0 0 0 0.2rem rgba(157, 229, 236, 0.25); */
 }
 
 
@@ -1415,8 +1463,8 @@ a {
     class="text-area"
     name="request[description]"
     aria-required="true"
-    aria-describedby="request_description_hint"
-    aria-labelledby="request_description_label"
+    aria-describedby="request-description-hint"
+    aria-labelledby="request-description-label"
     data-helper="wysiwyg"
     style="visibility: hidden; display: none"
     aria-hidden="true"
@@ -1436,6 +1484,12 @@ a {
     min-height: 8em;
 }
 
+.form-field > .text-area:hover {
+    border-color: #008243;
+}
+
+
+
 .text-area {
     overflow: auto;
     resize: vertical;
@@ -1444,6 +1498,12 @@ a {
     font-family: inherit;
     font-size: 100%;
     margin: 0;
+    width: 100%;
+    height: 213px;
+}
+
+.text-area:focus {
+    border-color: #00704A;
 }
 
 /* <div
@@ -1831,9 +1891,10 @@ a {
 }
 
 
+
 /* <input type="file" multiple="true" id="request-attachments" data-fileupload="true" data-dropzone="upload-dropzone" data-error="upload-error" data-create-url="" data-name="request[attachments][]" data-pool="request-attachments-pool" data-delete-confirm-msg="" aria-describedby="upload-error" /> */
 
-.upload-dropzone input[type=file] {
+/* .upload-dropzone input[type=file] {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -1841,43 +1902,46 @@ a {
     cursor: pointer;
     height: 100%;
     width: 100%;
-}
+} */
+
 
 
 /* <span> <a>파일 추가</a> 또는 파일을 여기로 드래그 </span> */
 
-.upload-dropzone span {
+/* .upload-dropzone span {
     display: inline-block;
     line-height: 24px;
     padding: 10px;
-}
+} */
 
-.upload-dropzone span {
+/* .upload-dropzone span {
     color: inherit;
-}
+} */
+
 
 
 /* <a>파일 추가</a> */
 
-a {
+/* a {
     color: #008243;
     background-color: transparent;
-}
+} */
 
-.upload-dropzone a {
+/* .upload-dropzone a {
     text-decoration: none;
     font-size: 13px;
-}
+} */
+
 
 
 /* <div id="upload-error" class="notification" style="display: none;"></div> */
 /* 클래스: notification */
 
-#upload-error {
+/* #upload-error {
     margin-top: 10px;
-}
+} */
 
-.notification {
+/* .notification {
     border: 1px solid #e35b66;
     color: #cc3340;
     border-radius: 4px;
@@ -1891,26 +1955,28 @@ a {
     font-size: 13px;
     transition: height .2s;
     width: 100%;
-}
+} */
 
-.notification {
+/* .notification {
     background-color: #fff0f1;
-}
+} */
+
 
 
 /* <ul id="request-attachments-pool" class="upload-pool" data-template="upload-template"></ul> */
 /* 클래스: "upload-pool" */
 
-.upload-pool {
+/* .upload-pool {
     margin: 0;
     overflow: hidden;
     padding: 0;
-}
+} */
+
 
 
 /* <input class="main-footer-input" type="submit" name="commit" value="제출"> */
 
-.main-footer-input[type="submit"] {
+/* .main-footer-input[type="submit"] {
     display: inline-block;
     font-weight: 600;
     line-height: 1.5;
@@ -1929,25 +1995,26 @@ a {
     margin-bottom: 1.5rem;
     padding: 0.5em 1.5em;
     font-size: 1.125rem;
-}
+} */
 
-.main-footer-input[type="submit"]:hover {
+/* .main-footer-input[type="submit"]:hover {
     text-decoration: none;
-}
+} */
 
-.main-footer-input[type="submit"]:hover {
+/* .main-footer-input[type="submit"]:hover {
     color: #fff;
     border-color: #000;
     background-color: #000;
-}
+} */
 
-.main-footer-input[type="submit"]:focus {
+/* .main-footer-input[type="submit"]:focus {
     outline: 0;
-}
+} */
 
-[type="submit"] {
+/* [type="submit"] {
     -webkit-appearance: button;
-}
+} */
+
 
 
 /* <a class="last-a" href=""> */

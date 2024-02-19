@@ -598,11 +598,11 @@ zd-autocomplete-announcement {
 }
 
 #query:hover {
-    border: 1px solid #00C4C4;
+    border: 1px solid #008243;
 }
 
 #query:focus {
-    border-color: #008423;
+    border-color: #00704a;
     outline: 0;
     /* box-shadow: 0 0 0 0.2rem #00704A; */
 }
@@ -695,8 +695,8 @@ input {
 }
 
 .button-header-1{
-    color: #00C4C4;
-    border-color: #00C4C4;
+    color: #008423;
+    border-color: #008423;
     width: 100px;
     height: 45px;
     display: flex;
@@ -713,15 +713,16 @@ input {
     vertical-align: middle;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #00C4C4;
+    border: 1px solid #008423;
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
 }
 
 .button-header-1:hover{
-    color: #00704A;
-    border: 1px solid #00704A;
+    color: white;
+    background-color: rgb(0, 130, 67);
+    border: 1px solid rgb(0, 130, 67);
     text-decoration: none;
 }
 
@@ -746,8 +747,8 @@ a {
 }
 
 .button-header-2{
-    color: #00C4C4;
-    border-color: #00C4C4;
+    color: #008423;
+    border-color: #008423;
     width: 110px;
     height: 45px;
     display: flex;
@@ -764,15 +765,16 @@ a {
     vertical-align: middle;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #00C4C4;
+    border: 1px solid #008423;
     cursor: pointer;
     border-radius: 8px;
     transition: 0.15s ease-in-out;
 }
 
 .button-header-2:hover{
-    color: #00704A;
-    border: 1px solid #00704A;
+    color: white;
+    background-color: rgb(0, 130, 67);
+    border: 1px solid rgb(0, 130, 67);
     text-decoration: none;
 }
 
@@ -1156,15 +1158,15 @@ ul {
 .card-primary {
     height: 100%;
     padding: 1.5rem;
-    border-color: #00C4C4;
-    color: #00C4C4;
+    border-color: #008423;
+    color: #008423;
     position: relative;
     display: flex;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
     background-clip: border-box;
-    border: 1px solid #00C4C4;
+    border: 1px solid #008423;
     border-radius: 10px;
     text-decoration: none;
 }
@@ -1175,9 +1177,10 @@ a {
 }
 
 .card-primary:hover{
-    background-color: #fff;
-    color: #00704A;
-    border: 1px solid #00704A;
+    color: white;
+    background-color: rgb(0, 130, 67);
+    border: 1px solid rgb(0, 130, 67);
+    text-decoration: none;
 }
 
 
@@ -1205,7 +1208,7 @@ h4 {
 /* a 태그에 css 속성 적용 */
 
 a {
-    color: #00C4C4;
+    color: #008243;
     text-decoration: none;
     background-color: transparent;
     touch-action: manipulation;
