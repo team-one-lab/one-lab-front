@@ -51,7 +51,7 @@
 const buttons = document.querySelectorAll(
     "div.main-list-filter-container ul.filter-list-wrapper button.major-btn"
 );
-const labpages = document.querySelectorAll(".search-result-container");
+const labpages = document.querySelectorAll(".section-body");
 
 for (let i = 0;i < buttons.length; i++) {
     buttons[i].addEventListener('click', function(e) {

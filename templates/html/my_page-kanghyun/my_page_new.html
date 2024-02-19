@@ -13,10 +13,7 @@
             rel="stylesheet"
             href="/staticfiles/css/my_page-kanghyun/my_page_modal.css"
         />
-        <link
-            rel="stylesheet"
-            href="/staticfiles/css/one-lab-soyoung/one-lab-list-web.css"
-        />
+
         <link
             rel="stylesheet"
             href="/staticfiles/css/school-wooram/school-place-list.css"
@@ -435,1948 +432,313 @@
                                 </div>
                                 <!-- 랩장 목록 ~ 전체 리스트들 감싸는 div -->
                                 <div
-                                    class="search-result-container"
-                                    style="display:block"
+                                    class="section-body"
+                                    style="display: block;"
                                 >
-                                    <!-- 광고 배너 -->
-
-                                    <div class="search-result-card-container">
-                                        <div
-                                            class="table-layout-container"
-                                            style="grid-template-columns: repeat(4, calc(25% - 18px));
-                                        gap: 24px;"
-                                        >
-                                            <!-- 리스트 1개 시작 -->
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
+                                    <!-- 박스를 감싸고 있는 컨테이너 -->
+                                    <div class="onelab-service-boxs col-4">
+                                        <div class="onelab-service-boxs-inner">
+                                            <dl class="onelab-service-detail">
+                                                <dd class="box-icon">
+                                                    <i
+                                                        class="icon-maker-service"
+                                                    ></i>
+                                                </dd>
+                                                <dd class="box-title">
+                                                    <strong
+                                                        >강남 IT
+                                                        아카데미</strong
                                                     >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
+                                                </dd>
+                                                <dd class="box-text">
+                                                    우리 브랜드의 팬을 모으고
+                                                    빠르게 새소식을 알릴 수
+                                                    있어요.
+                                                </dd>
+                                                <dd class="box-last">
+                                                    <a
+                                                        href=""
+                                                        class="btn-more-view"
+                                                        >자세히 보기</a
                                                     >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
+                                                    <button
+                                                        class="manage-onelab-btn"
                                                     >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
+                                                        <span
+                                                            class="manage-onelab-icon"
+                                                            aria-hidden="true"
+                                                            ><svg
+                                                                viewBox="0 0 32 32"
+                                                                focusable="false"
+                                                                role="presentation"
+                                                                class="withIcon-icon"
+                                                                aria-hidden="true"
                                                             >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <!-- 리스트 1개 끝 -->
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
+                                                                <path
+                                                                    d="M17.84 3.2l.4 2.56.16.88.88.32a9.55 9.55 0 0 1 2.893 1.691l.707.549.88-.32 2.4-.88L28 11.2l-2 1.68-.72.56.16.88a9.022 9.022 0 0 1-.009 3.336l-.151.824.72.56 2 1.76-1.84 3.2-3.28-1.2-.72.56a9.485 9.485 0 0 1-2.814 1.658l-.946.342-.16.88-.4 2.56h-3.68l-.4-2.56-.16-.88-.88-.32a9.55 9.55 0 0 1-2.893-1.691L9.12 22.8l-.88.32-2.4.88L4 20.8l2-1.68.72-.56-.16-.88a9.022 9.022 0 0 1 .009-3.336l.151-.824-.72-.56-2-1.76L5.84 8l3.28 1.2.72-.56a9.485 9.485 0 0 1 2.814-1.658l.946-.342.16-.88.4-2.56h3.68zM16 21.6a5.6 5.6 0 1 0 0-11.2 5.6 5.6 0 0 0 0 11.2zm2.56-20h-5.136a.8.8 0 0 0-.783.635L12.08 5.44a11.21 11.21 0 0 0-3.292 2.011L5.76 6.24h-.267a.798.798 0 0 0-.691.397L2.24 10.961a.798.798 0 0 0 .238 1.038l2.562 2.082a10.647 10.647 0 0 0 .01 3.906l-2.57 2.014a.8.8 0 0 0-.158 1.044L4.8 25.362a.8.8 0 0 0 .693.4h.347l2.96-1.2c.956.798 2.07 1.448 3.282 1.895l.638 3.225c.077.368.399.64.784.64h5.072a.8.8 0 0 0 .783-.635l.561-3.205a11.212 11.212 0 0 0 3.296-1.934l3.024 1.134h.347a.798.798 0 0 0 .691-.397l2.562-4.404a.8.8 0 0 0-.159-1.039l-2.561-2.081a10.647 10.647 0 0 0-.01-3.906l2.41-1.854a.8.8 0 0 0 .158-1.044L27.2 6.64a.8.8 0 0 0-.693-.4h-.347l-2.96 1.2a11.163 11.163 0 0 0-3.282-1.895L19.28 2.32a.801.801 0 0 0-.784-.64h-.017zM16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
+                                                                ></path>
+                                                            </svg>
+                                                        </span>
+                                                        관리하기
+                                                    </button>
+                                                </dd>
+                                            </dl>
                                         </div>
-                                    </div>
-
-                                    <!-- 더보기 버튼 -->
-                                    <div class="search-result-more-container">
-                                        <button class="get-more-result-btn">
-                                            <span>
-                                                <span
-                                                    class="more-result-btn-text"
-                                                    >더보기 48/624</span
-                                                >
-                                            </span>
-                                        </button>
+                                        <div class="onelab-service-boxs-inner">
+                                            <dl class="onelab-service-detail">
+                                                <dd class="box-icon">
+                                                    <i
+                                                        class="icon-maker-service"
+                                                    ></i>
+                                                </dd>
+                                                <dd class="box-title">
+                                                    <strong
+                                                        >강남 IT
+                                                        아카데미</strong
+                                                    >
+                                                </dd>
+                                                <dd class="box-text">
+                                                    우리 브랜드의 팬을 모으고
+                                                    빠르게 새소식을 알릴 수
+                                                    있어요.
+                                                </dd>
+                                                <dd class="box-last">
+                                                    <a
+                                                        href=""
+                                                        class="btn-more-view"
+                                                        >자세히 보기</a
+                                                    >
+                                                    <button
+                                                        class="manage-onelab-btn"
+                                                    >
+                                                        <span
+                                                            class="manage-onelab-icon"
+                                                            aria-hidden="true"
+                                                            ><svg
+                                                                viewBox="0 0 32 32"
+                                                                focusable="false"
+                                                                role="presentation"
+                                                                class="withIcon-icon"
+                                                                aria-hidden="true"
+                                                            >
+                                                                <path
+                                                                    d="M17.84 3.2l.4 2.56.16.88.88.32a9.55 9.55 0 0 1 2.893 1.691l.707.549.88-.32 2.4-.88L28 11.2l-2 1.68-.72.56.16.88a9.022 9.022 0 0 1-.009 3.336l-.151.824.72.56 2 1.76-1.84 3.2-3.28-1.2-.72.56a9.485 9.485 0 0 1-2.814 1.658l-.946.342-.16.88-.4 2.56h-3.68l-.4-2.56-.16-.88-.88-.32a9.55 9.55 0 0 1-2.893-1.691L9.12 22.8l-.88.32-2.4.88L4 20.8l2-1.68.72-.56-.16-.88a9.022 9.022 0 0 1 .009-3.336l.151-.824-.72-.56-2-1.76L5.84 8l3.28 1.2.72-.56a9.485 9.485 0 0 1 2.814-1.658l.946-.342.16-.88.4-2.56h3.68zM16 21.6a5.6 5.6 0 1 0 0-11.2 5.6 5.6 0 0 0 0 11.2zm2.56-20h-5.136a.8.8 0 0 0-.783.635L12.08 5.44a11.21 11.21 0 0 0-3.292 2.011L5.76 6.24h-.267a.798.798 0 0 0-.691.397L2.24 10.961a.798.798 0 0 0 .238 1.038l2.562 2.082a10.647 10.647 0 0 0 .01 3.906l-2.57 2.014a.8.8 0 0 0-.158 1.044L4.8 25.362a.8.8 0 0 0 .693.4h.347l2.96-1.2c.956.798 2.07 1.448 3.282 1.895l.638 3.225c.077.368.399.64.784.64h5.072a.8.8 0 0 0 .783-.635l.561-3.205a11.212 11.212 0 0 0 3.296-1.934l3.024 1.134h.347a.798.798 0 0 0 .691-.397l2.562-4.404a.8.8 0 0 0-.159-1.039l-2.561-2.081a10.647 10.647 0 0 0-.01-3.906l2.41-1.854a.8.8 0 0 0 .158-1.044L27.2 6.64a.8.8 0 0 0-.693-.4h-.347l-2.96 1.2a11.163 11.163 0 0 0-3.282-1.895L19.28 2.32a.801.801 0 0 0-.784-.64h-.017zM16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
+                                                                ></path>
+                                                            </svg>
+                                                        </span>
+                                                        관리하기
+                                                    </button>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="onelab-service-boxs-inner">
+                                            <dl class="onelab-service-detail">
+                                                <dd class="box-icon">
+                                                    <i
+                                                        class="icon-maker-service"
+                                                    ></i>
+                                                </dd>
+                                                <dd class="box-title">
+                                                    <strong
+                                                        >강남 IT
+                                                        아카데미</strong
+                                                    >
+                                                </dd>
+                                                <dd class="box-text">
+                                                    우리 브랜드의 팬을 모으고
+                                                    빠르게 새소식을 알릴 수
+                                                    있어요.
+                                                </dd>
+                                                <dd class="box-last">
+                                                    <a
+                                                        href=""
+                                                        class="btn-more-view"
+                                                        >자세히 보기</a
+                                                    >
+                                                    <button
+                                                        class="manage-onelab-btn"
+                                                    >
+                                                        <span
+                                                            class="manage-onelab-icon"
+                                                            aria-hidden="true"
+                                                            ><svg
+                                                                viewBox="0 0 32 32"
+                                                                focusable="false"
+                                                                role="presentation"
+                                                                class="withIcon-icon"
+                                                                aria-hidden="true"
+                                                            >
+                                                                <path
+                                                                    d="M17.84 3.2l.4 2.56.16.88.88.32a9.55 9.55 0 0 1 2.893 1.691l.707.549.88-.32 2.4-.88L28 11.2l-2 1.68-.72.56.16.88a9.022 9.022 0 0 1-.009 3.336l-.151.824.72.56 2 1.76-1.84 3.2-3.28-1.2-.72.56a9.485 9.485 0 0 1-2.814 1.658l-.946.342-.16.88-.4 2.56h-3.68l-.4-2.56-.16-.88-.88-.32a9.55 9.55 0 0 1-2.893-1.691L9.12 22.8l-.88.32-2.4.88L4 20.8l2-1.68.72-.56-.16-.88a9.022 9.022 0 0 1 .009-3.336l.151-.824-.72-.56-2-1.76L5.84 8l3.28 1.2.72-.56a9.485 9.485 0 0 1 2.814-1.658l.946-.342.16-.88.4-2.56h3.68zM16 21.6a5.6 5.6 0 1 0 0-11.2 5.6 5.6 0 0 0 0 11.2zm2.56-20h-5.136a.8.8 0 0 0-.783.635L12.08 5.44a11.21 11.21 0 0 0-3.292 2.011L5.76 6.24h-.267a.798.798 0 0 0-.691.397L2.24 10.961a.798.798 0 0 0 .238 1.038l2.562 2.082a10.647 10.647 0 0 0 .01 3.906l-2.57 2.014a.8.8 0 0 0-.158 1.044L4.8 25.362a.8.8 0 0 0 .693.4h.347l2.96-1.2c.956.798 2.07 1.448 3.282 1.895l.638 3.225c.077.368.399.64.784.64h5.072a.8.8 0 0 0 .783-.635l.561-3.205a11.212 11.212 0 0 0 3.296-1.934l3.024 1.134h.347a.798.798 0 0 0 .691-.397l2.562-4.404a.8.8 0 0 0-.159-1.039l-2.561-2.081a10.647 10.647 0 0 0-.01-3.906l2.41-1.854a.8.8 0 0 0 .158-1.044L27.2 6.64a.8.8 0 0 0-.693-.4h-.347l-2.96 1.2a11.163 11.163 0 0 0-3.282-1.895L19.28 2.32a.801.801 0 0 0-.784-.64h-.017zM16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
+                                                                ></path>
+                                                            </svg>
+                                                        </span>
+                                                        관리하기
+                                                    </button>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="onelab-service-boxs-inner">
+                                            <dl class="onelab-service-detail">
+                                                <dd class="box-icon">
+                                                    <i
+                                                        class="icon-maker-service"
+                                                    ></i>
+                                                </dd>
+                                                <dd class="box-title">
+                                                    <strong
+                                                        >강남 IT
+                                                        아카데미</strong
+                                                    >
+                                                </dd>
+                                                <dd class="box-text">
+                                                    우리 브랜드의 팬을 모으고
+                                                    빠르게 새소식을 알릴 수
+                                                    있어요.
+                                                </dd>
+                                                <dd class="box-last">
+                                                    <a
+                                                        href=""
+                                                        class="btn-more-view"
+                                                        >자세히 보기</a
+                                                    >
+                                                    <button
+                                                        class="manage-onelab-btn"
+                                                    >
+                                                        <span
+                                                            class="manage-onelab-icon"
+                                                            aria-hidden="true"
+                                                            ><svg
+                                                                viewBox="0 0 32 32"
+                                                                focusable="false"
+                                                                role="presentation"
+                                                                class="withIcon-icon"
+                                                                aria-hidden="true"
+                                                            >
+                                                                <path
+                                                                    d="M17.84 3.2l.4 2.56.16.88.88.32a9.55 9.55 0 0 1 2.893 1.691l.707.549.88-.32 2.4-.88L28 11.2l-2 1.68-.72.56.16.88a9.022 9.022 0 0 1-.009 3.336l-.151.824.72.56 2 1.76-1.84 3.2-3.28-1.2-.72.56a9.485 9.485 0 0 1-2.814 1.658l-.946.342-.16.88-.4 2.56h-3.68l-.4-2.56-.16-.88-.88-.32a9.55 9.55 0 0 1-2.893-1.691L9.12 22.8l-.88.32-2.4.88L4 20.8l2-1.68.72-.56-.16-.88a9.022 9.022 0 0 1 .009-3.336l.151-.824-.72-.56-2-1.76L5.84 8l3.28 1.2.72-.56a9.485 9.485 0 0 1 2.814-1.658l.946-.342.16-.88.4-2.56h3.68zM16 21.6a5.6 5.6 0 1 0 0-11.2 5.6 5.6 0 0 0 0 11.2zm2.56-20h-5.136a.8.8 0 0 0-.783.635L12.08 5.44a11.21 11.21 0 0 0-3.292 2.011L5.76 6.24h-.267a.798.798 0 0 0-.691.397L2.24 10.961a.798.798 0 0 0 .238 1.038l2.562 2.082a10.647 10.647 0 0 0 .01 3.906l-2.57 2.014a.8.8 0 0 0-.158 1.044L4.8 25.362a.8.8 0 0 0 .693.4h.347l2.96-1.2c.956.798 2.07 1.448 3.282 1.895l.638 3.225c.077.368.399.64.784.64h5.072a.8.8 0 0 0 .783-.635l.561-3.205a11.212 11.212 0 0 0 3.296-1.934l3.024 1.134h.347a.798.798 0 0 0 .691-.397l2.562-4.404a.8.8 0 0 0-.159-1.039l-2.561-2.081a10.647 10.647 0 0 0-.01-3.906l2.41-1.854a.8.8 0 0 0 .158-1.044L27.2 6.64a.8.8 0 0 0-.693-.4h-.347l-2.96 1.2a11.163 11.163 0 0 0-3.282-1.895L19.28 2.32a.801.801 0 0 0-.784-.64h-.017zM16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
+                                                                ></path>
+                                                            </svg>
+                                                        </span>
+                                                        관리하기
+                                                    </button>
+                                                </dd>
+                                            </dl>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- 랩원 목록 ~ 전체 리스트들 감싸는 div -->
-                                <div
-                                    class="search-result-container"
-                                    style="display:none"
-                                >
-                                    <!-- 광고 배너 -->
-
-                                    <div class="search-result-card-container">
-                                        <div
-                                            class="table-layout-container"
-                                            style="grid-template-columns: repeat(4, calc(25% - 18px));
-                                        gap: 24px;"
-                                        >
-                                            <!-- 리스트 1개 시작 -->
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
+                                <div class="section-body">
+                                    <!-- 박스를 감싸고 있는 컨테이너 -->
+                                    <div class="onelab-service-boxs col-4">
+                                        <div class="onelab-service-boxs-inner">
+                                            <dl class="onelab-service-detail">
+                                                <dd class="box-icon">
+                                                    <i
+                                                        class="icon-maker-service"
+                                                    ></i>
+                                                </dd>
+                                                <dd class="box-title">
+                                                    <strong
+                                                        >강남 IT
+                                                        아카데미</strong
                                                     >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
+                                                </dd>
+                                                <dd class="box-text">
+                                                    우리 브랜드의 팬을 모으고
+                                                    빠르게 새소식을 알릴 수
+                                                    있어요.
+                                                </dd>
+                                                <dd class="box-last">
+                                                    <a
+                                                        href=""
+                                                        class="btn-more-view"
+                                                        >자세히 보기</a
                                                     >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [랩원
-                                                                모집합니다!,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <!-- 리스트 1개 끝 -->
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="one-lab-list-card">
-                                                <a
-                                                    class="list-card-content"
-                                                    href="https://www.wadiz.kr/web/wcomingsoon/rwd/267580"
-                                                >
-                                                    <div
-                                                        class="list-card-thumbnailBox"
-                                                        style="padding-top: 56.25%;"
-                                                    >
-                                                        <div
-                                                            class="list-card-thumbnailWrap"
-                                                        >
-                                                            <div
-                                                                class="thumbnail-image-container"
-                                                            >
-                                                                <img
-                                                                    class="thumbnail-image"
-                                                                    alt="[포렌/만족도4.8] 와디즈 1등, 퐁-신한 오가닉 광목 이불&amp;패드"
-                                                                    src="https://cdn3.wadiz.kr/studio/images/2024/01/14/e7e16549-d75c-4dd6-a6ca-414f95553084.png/wadiz/resize/600/format/jpg/quality/85/"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-info-box-ing"
-                                                    >
-                                                        <div
-                                                            class="list-card-info"
-                                                        >
-                                                            <div
-                                                                class="price-info-wrapper"
-                                                            >
-                                                                <span
-                                                                    >109,000원</span
-                                                                >
-                                                            </div>
-                                                            <strong
-                                                                class="info-title"
-                                                            >
-                                                                [포렌/만족도4.8]
-                                                                와디즈 1등,
-                                                                퐁-신한 오가닉
-                                                                광목
-                                                                이불&amp;패드
-                                                            </strong>
-                                                            <p
-                                                                class="info-maker-name"
-                                                            >
-                                                                주식회사
-                                                                디깅미인터내셔널
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="list-card-badge-group"
-                                                    >
-                                                        <div
-                                                            class="store-rating-wrapper"
-                                                        >
-                                                            <div
-                                                                class="rating-score-container"
-                                                            >
-                                                                <div
-                                                                    class="rating-score-icon"
-                                                                ></div>
-                                                                <span
-                                                                    class="rating-score"
-                                                                    >4.9</span
-                                                                >
-                                                            </div>
-                                                            <em
-                                                                class="store-rating-count"
-                                                            >
-                                                                (42)
-                                                            </em>
-                                                        </div>
-                                                        <div
-                                                            class="store-badge-group-container"
-                                                        >
-                                                            <div
-                                                                class="stroe-badges"
-                                                            >
-                                                                <span
-                                                                    class="wadiz-label-badge"
-                                                                    >wadiz-only</span
-                                                                >
-                                                                <span
-                                                                    class="label-badge"
-                                                                    >무료배송</span
-                                                                >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <button
-                                                    type="button"
-                                                    class="wish-btn"
-                                                >
-                                                    <!-- svg 이미지 가져오기 (좋아요 버튼) -->
-                                                    <svg
-                                                        viewBox="0 0 32 32"
-                                                        focusable="false"
-                                                        role="presentation"
-                                                        class="wish-icon"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            class="like-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                        <path
-                                                            class="dislike-icon"
-                                                            d="M22.16 4h-.007a8.142 8.142 0 0 0-6.145 2.79A8.198 8.198 0 0 0 9.76 3.998a7.36 7.36 0 0 0-7.359 7.446c0 5.116 4.64 9.276 11.6 15.596l2 1.76 2-1.76c6.96-6.32 11.6-10.48 11.6-15.6v-.08A7.36 7.36 0 0 0 22.241 4h-.085z"
-                                                        ></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
+                                                </dd>
+                                            </dl>
                                         </div>
-                                    </div>
-
-                                    <!-- 더보기 버튼 -->
-                                    <div class="search-result-more-container">
-                                        <button class="get-more-result-btn">
-                                            <span>
-                                                <span
-                                                    class="more-result-btn-text"
-                                                    >더보기 48/624</span
-                                                >
-                                            </span>
-                                        </button>
+                                        <div class="onelab-service-boxs-inner">
+                                            <dl class="onelab-service-detail">
+                                                <dd class="box-icon">
+                                                    <i
+                                                        class="icon-maker-service"
+                                                    ></i>
+                                                </dd>
+                                                <dd class="box-title">
+                                                    <strong
+                                                        >강남 IT
+                                                        아카데미</strong
+                                                    >
+                                                </dd>
+                                                <dd class="box-text">
+                                                    우리 브랜드의 팬을 모으고
+                                                    빠르게 새소식을 알릴 수
+                                                    있어요.
+                                                </dd>
+                                                <dd class="box-last">
+                                                    <a
+                                                        href=""
+                                                        class="btn-more-view"
+                                                        >자세히 보기</a
+                                                    >
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="onelab-service-boxs-inner">
+                                            <dl class="onelab-service-detail">
+                                                <dd class="box-icon">
+                                                    <i
+                                                        class="icon-maker-service"
+                                                    ></i>
+                                                </dd>
+                                                <dd class="box-title">
+                                                    <strong
+                                                        >강남 IT
+                                                        아카데미</strong
+                                                    >
+                                                </dd>
+                                                <dd class="box-text">
+                                                    우리 브랜드의 팬을 모으고
+                                                    빠르게 새소식을 알릴 수
+                                                    있어요.
+                                                </dd>
+                                                <dd class="box-last">
+                                                    <a
+                                                        href=""
+                                                        class="btn-more-view"
+                                                        >자세히 보기</a
+                                                    >
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="onelab-service-boxs-inner">
+                                            <dl class="onelab-service-detail">
+                                                <dd class="box-icon">
+                                                    <i
+                                                        class="icon-maker-service"
+                                                    ></i>
+                                                </dd>
+                                                <dd class="box-title">
+                                                    <strong
+                                                        >강남 IT
+                                                        아카데미</strong
+                                                    >
+                                                </dd>
+                                                <dd class="box-text">
+                                                    우리 브랜드의 팬을 모으고
+                                                    빠르게 새소식을 알릴 수
+                                                    있어요.
+                                                </dd>
+                                                <dd class="box-last">
+                                                    <a
+                                                        href=""
+                                                        class="btn-more-view"
+                                                        >자세히 보기</a
+                                                    >
+                                                </dd>
+                                            </dl>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
