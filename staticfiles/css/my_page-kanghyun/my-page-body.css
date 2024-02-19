@@ -1153,6 +1153,19 @@ button.major-btn span {
 
 .manage-onelab-btn {
     line-height: 22px;
+    margin-left: 96px;
+    border-radius: 8px;
+}
+.manage-onelab-btn:hover {
+    background-color: #dbe4ee;
+}
+.exit-onelab-btn {
+    line-height: 22px;
+    margin-left: 118px;
+    border-radius: 8px;
+}
+.exit-onelab-btn:hover {
+    background-color: #dbe4ee;
 }
 
 .manage-onelab-icon {
