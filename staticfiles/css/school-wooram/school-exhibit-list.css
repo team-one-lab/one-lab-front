@@ -133,8 +133,7 @@ a {
   text-decoration: none;
 }
 
-a,
-button {
+a, button {
   color: inherit;
 }
 
@@ -146,16 +145,11 @@ button:not(:disabled) {
   cursor: pointer;
 }
 
-body,
-button,
-input,
-select,
-textarea {
+body,button,input,select,textarea {
   font-family: inherit;
 }
 
-body,
-table th {
+body,table th {
   font-weight: 400;
 }
 
@@ -187,11 +181,7 @@ strong {
   font-weight: 700;
 }
 
-address,
-cite,
-dfn,
-em,
-var {
+address,cite,dfn,em,var {
   font-weight: inherit;
   font-style: normal;
 }
@@ -373,8 +363,8 @@ hr {
 }
 
 .Tab_tab.Tab_rectangle.Tab_sm.tab_end {
-  margin-left: 764px;
-  padding: 0 60px;
+  margin-left: 714px;
+  padding: 0 47px;
   background-color: #008243;
 }
 
@@ -425,7 +415,7 @@ hr {
 .Tab_tab.Tab_sm span {
   height: 32px;
   line-height: 20px;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 400;
 }
 
@@ -848,6 +838,22 @@ video {
     transform: translate(0px, 0px);
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
+
+.list-active {
+    width: 237px;
+    height: 360px;
+    position: absolute;
+    left: 0px;
+    padding: 30px 22px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 0px 0px 10px 10px;
+    bottom: -180px;
+    transition: all 0.2s ease-in-out 0s;
+    transform: translate(0px, -180px);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+}
+
 
 .css-18m1pdx {
     color: rgb(255, 255, 255);
