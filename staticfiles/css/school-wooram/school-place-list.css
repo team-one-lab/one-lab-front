@@ -373,7 +373,7 @@ hr {
 }
 
 .Tab_tab.Tab_rectangle.Tab_sm.tab_end {
-  margin-left: 764px;
+  margin-left: 756px;
   padding: 0 60px;
   background-color: #008243;
 }
@@ -425,7 +425,7 @@ hr {
 .Tab_tab.Tab_sm span {
   height: 32px;
   line-height: 20px;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 400;
 }
 
@@ -657,7 +657,7 @@ video {
   font-weight: 700;
   display: flex;
   gap: 4px;
-  color: #00c4c4;
+  color: #008243;
   align-items: center;
 }
 
