@@ -1029,7 +1029,9 @@ input::placeholder{
     color: #8a8a8b;
     fill: #8a8a8b;
 }
-
+.shrink-0{
+    flex-shrink: 0;
+}
 .min-1{
     justify-content: center;
     min-width: 80px;
@@ -1091,21 +1093,24 @@ input::placeholder{
 }
 .check{
     margin-left: 10px;
+    
 }
 .check2{
     width: 100px;
     height: 20px;
+    accent-color: #008244;
 }
 .email{
-    padding-left: 52px;
+    padding-left: 55px;
     width: 200px;
 } 
 .name{
-    padding-left: 70px
+    padding-left: 80px
 }
 .type{
-    padding-left: 10px;
+    margin-right: 29px;
+    padding-left: 9px;
 }
 .date{
-    padding-left: 20px;
+    padding-left: 0px;
 }

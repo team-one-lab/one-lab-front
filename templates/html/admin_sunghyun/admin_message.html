@@ -252,18 +252,38 @@ admin_competition = 공모전/대회 관리 페이지
                                         
                                         <div class="shrink-0">
                                             <div class="relative">
-                                                <button aria-label="filter" class="surface-none" type="button" id="two"
-                                                onclick="toggleDropdown('dropdownOptions2')">
+                                                <button aria-label="filter" class="surface-none" type="button" id="one"
+                                                onclick="toggleDropdown('dropdownOptions1')">
                                                     <span class="over-nowrap">날짜순</span>  
                                                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                                                     class="shrink-h">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
                                                     </svg> 
                                                 </button>
+                                                <div class="dropdown-content" id="dropdownOptions1">
+                                                    <a onclick="selectOption('날짜순','one')">날짜순</a>
+                                                    <a onclick="selectOption('최신순','one')">최신순</a>
+                                                    <a onclick="selectOption('오래된순','one')">오래된순</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="shrink-0">
+                                            <div class="relative">
+                                                <button aria-label="filter" class="surface-none" type="button" id="two"
+                                                onclick="toggleDropdown('dropdownOptions2')">
+                                                    <span class="over-nowrap1">문의유형</span>  
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                                    class="shrink-h">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
+                                                    </svg> 
+                                                </button>
                                                 <div class="dropdown-content" id="dropdownOptions2">
-                                                    <a href="">날짜순</a>
-                                                    <a href="">최신순</a>
-                                                    <a href="">오래된순</a>
+                                                    <a onclick="selectOption('원랩문의','two')">원랩문의</a>
+                                                    <a onclick="selectOption('자료공유 문의','two')">자료공유 문의</a>
+                                                    <a onclick="selectOption('장소공유 문의','two')">장소공유 문의</a>
+                                                    <a onclick="selectOption('대회공모전 문의','two')">대회공모전 문의</a>
+                                                    
                                                     
                                                 </div>
                                             </div>
@@ -301,7 +321,7 @@ admin_competition = 공모전/대회 관리 페이지
                                         </button>
                                         <button aria-label="table sortable column label"
                                         type="button" class="color-btn">
-                                            <div class="shrink-name" style="width: 112px;">
+                                            <div class="shrink-name" style="width: 102px;">
                                                 <span class="mr-8">문의날짜</span>
                                                 <svg viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"
                                                 class="wh-60">
@@ -310,7 +330,7 @@ admin_competition = 공모전/대회 관리 페이지
                                                 </svg>
                                         </div>
                                         </button>
-                                        <div class="shrink-name" style="width: 132px;">
+                                        <div class="shrink-name" style="width: 72px;">
                                             답변상태
                                         </div>
 
@@ -318,14 +338,14 @@ admin_competition = 공모전/대회 관리 페이지
                                         </div>
                                         
                                         <!-----------결제내역 목록------------> 
-                                        <div class="col-center" style="font-size: 12px;">
+                                        <div class="col-center" style="font-size: 15px;">
                                             <li class="user-list">
                                                 <span class="number">1</span>
                                                 <span class="email">dosel70@naver.com</span>
                                                 <span class="date">홍길동</span>
                                                 <span class="name">대학생으로 전환 원함...</span>
                                                 <span class="type">2024.02.19</span>
-                                                <span class="total before" href="">대기중</span>
+                                                <a href="" class="total before" href="">대기중</a>
                                                 <!---대기중일때 (.total before)-->
                                                
                                                 <!---답변 상태 : 대기중인경우 admin_message_write (답변작성페이지로 이동)-->
@@ -337,7 +357,7 @@ admin_competition = 공모전/대회 관리 페이지
                                                 <span class="date">정약용</span>
                                                 <span class="name">문의합니다.</span>
                                                 <span class="type">2024.02.13</span>
-                                                <span class="total success" href="">완료</span>
+                                                <a href="" class="total success" href="">완료</a>
                                                 <!--완료 일때 (.total success)-->
                                                 
                                                 <!--답변 상태 : 완료인경우 답변 상세보기(답변 수정) 페이지로 이동-->
@@ -348,7 +368,7 @@ admin_competition = 공모전/대회 관리 페이지
                                                 <span class="date">이순신</span>
                                                 <span class="name">원랩이 무엇인가요?</span>
                                                 <span class="type">2024.02.13</span>
-                                                <span class="total before">대기중</span>
+                                                <a href="" class="total before">대기중</a>
                                                 
                                             </li>
                                             <li class="user-list">
@@ -357,7 +377,7 @@ admin_competition = 공모전/대회 관리 페이지
                                                 <span class="date">조성현</span>
                                                 <span class="name">건의사항</span>
                                                 <span class="type">2024.02.13</span>
-                                                <span class="total success">완료</span>
+                                                <a href="" class="total success">완료</a>
                                                
                                             </li>
                                             <li class="user-list">
@@ -366,7 +386,7 @@ admin_competition = 공모전/대회 관리 페이지
                                                 <span class="date">한동석</span>
                                                 <span class="name">포인트 충전에 관련해서...</span>
                                                 <span class="type">2024.02.12</span>
-                                                <span class="total success">완료</span>
+                                                <a href="" class="total success">완료</a>
                                                
                                             </li>
                                         </div>
@@ -382,5 +402,6 @@ admin_competition = 공모전/대회 관리 페이지
             </div>
         </div>
     </body>
-    <script src="/staticfiles/js/admin-sunghyun/admin_payment.js"></script>
+    <script src="/staticfiles/js/admin-sunghyun/admin_main.js"></script>
+   
 </html>

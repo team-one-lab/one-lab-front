@@ -256,12 +256,13 @@ admin_competition = 공모전/대회 관리 페이지
                                     </div>
 
                                 <!---------------------------------------인증 수락 / 거부 화면 끝-------------------------------------->
-                                <div class="mt-32">
-                                    <div>
+                                    <div class="user-count-list">
                                         <span class="font-content">회원 목록</span>
                                         <span class="ml-4">0
                                         </span>
                                     </div>
+                                <div class="mt-32">
+                                   
                                  
                                     <div class="relative1">
                                               
@@ -288,13 +289,14 @@ admin_competition = 공모전/대회 관리 페이지
                                 </div>
                                 
                                 <div class="content_primary">
-                                    <div class="min-1">전체선택
+                                    <label class="min-1">전체선택
                                         <input type='checkbox'
                                         name='animal' 
                                         class="check"
                                         value='selectall'
-                                        onclick='selectAll(this)'>
-                                    </div>
+                                        onclick='selectAll(this)'
+                                        style="display: none;">
+                                    </label>
                                     <div class="min-2">이메일</div>
                                 <div class="grid-px">
                                     <div>이름</div>
@@ -349,5 +351,6 @@ admin_competition = 공모전/대회 관리 페이지
                 </div>
         </div>
     </body>
+    <script src="/staticfiles/js/admin-sunghyun/admin_main.js"></script>
     
 </html>

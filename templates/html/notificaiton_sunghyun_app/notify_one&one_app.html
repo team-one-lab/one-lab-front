@@ -52,9 +52,9 @@
                         <img
                             class="block-fluid"
                             id="logo"
-                            src="/templates/html/admin_sunghyun/favicon/favicon/android-icon-192x192.png"
+                            src="/staticfiles/css/admin-sunghyun/images/header-logo.png"
                             alt="도움말 센터 헬프 센터 홈페이지"
-                        />  <span style="padding: 0 15px; font-size: 16px;">OneLab 도움말 센터</span>
+                        />  <span style="padding: 0 15px; font-size: 16px; color: #008244;">1대1 문의센터</span>
                     </a>
 			<!---------모바일 화면 헤더 부분 메뉴 버튼 2개 = x 버튼, 메뉴버튼--------->
                     <button class="navbar-hidden">
@@ -153,7 +153,7 @@
                             <div
                                 class="flex flex-first flex-wrap mt-5 mb-4"
                                 x-data="Widgets.popularKeywords"
-                                x-init="parseKeywords('펀딩, 프리오더, 스토어, 서포터클럽')"
+                                x-init="parseKeywords('커뮤니티, 공모전,대회, 자료공유, 장소공유')"
                             >
                             <div class="flex-center">
                                 <template
@@ -162,52 +162,64 @@
                                 >
                                     #document-fragment
                                 </template>
-                                <div class="flex align-items-center m-1">
+                                <!-- <div class="flex align-items-center m-1">
                                     <a
                                         class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
-                                        :href="keyword.html_url"
+                                        :href=""
                                         :title="keyword.title"
                                         id="b1"
                                         x-text="keyword.title"
-                                        href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
-                                        title="펀딩"
-                                        >펀딩
+                                        href=""
+                                        title="커뮤니티"
+                                        >커뮤니티
                                     </a>
-                                </div>
+                                </div> -->
                                 <div class="flex align-items-center m-1">
                                     <a
                                         class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
-                                        :href="keyword.html_url"
+                                        :href=""
                                         :title="keyword.title"
                                         id="b2"
                                         x-text="keyword.title"
-                                        href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
-                                        title="프리오더"
-                                        >프리오더
+                                        href=""
+                                        title="공모전&대회"
+                                        >공모전&대회
                                     </a>
                                 </div>
                                 <div class="flex align-items-center m-1">
                                     <a
                                         class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
-                                        :href="keyword.html_url"
+                                        :href=""
                                         :title="keyword.title"
                                         id="b3"
                                         x-text="keyword.title"
-                                        href="https://helpcenter.wadiz.kr/hc/ko/search?query=펀딩"
+                                        href=""
                                         title="스토어"
-                                        >스토어
+                                        >자료공유
                                     </a>
                                 </div>
                                 <div class="flex align-items-center m-1">
                                     <a
                                         class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
-                                        :href="keyword.html_url"
+                                        :href=""
                                         :title="keyword.title"
                                         id="b4"
                                         x-text="keyword.title"
                                         href=""
                                         title="서포터클럽"
-                                        >서포터클럽
+                                        >장소공유
+                                    </a>
+                                </div>
+                                <div class="flex align-items-center m-1">
+                                    <a
+                                        class="inline-block text-inherit badge bg-translucent blur text-inherit border-radius px-3 py-2"
+                                        style="margin-left: 261px;"
+                                        :title="keyword.title"
+                                        id="b4"
+                                        x-text="keyword.title"
+                                        href=""
+                                        title="커뮤니티"
+                                        >커뮤니티
                                     </a>
                                 </div>
                             </div>
@@ -999,30 +1011,20 @@
         <!----------슬라이드 메뉴 화면 ------------->
          
          <div class="backdrop" style="display: none;"></div>
-         <!-- <div class="border-line" style="border-bottom: 1px solid #939191;">
-            <div class="btn-block" style="padding: 0 20px; border-bottom: 1px solid #f1efef;">
-                <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                href="#">문의 등록</a>
-            </div>
-        </div>
-        <div class="menuWrap">
-            
-                <nav id="menu">
-                    
-                        <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                        href="#">메이커센터</a>
-                    </div>
-                    <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                    href="#" style="width: 140px; margin-right: 50px;">원랩 바로가기</a>
-                </nav> -->
-                <div class="border-line" style="width: 100px; border-bottom: 1px solid black;">
+    
+                <div class="border-line">
                     <div class="menuWrap">
-                        <div class="btn-block" style="padding: 0 20px; border-bottom: 1px solid #f1efef;">
-                            <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                            href="#">문의 등록</a>
-                            <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
-                            href="#">메이커센터</a>
+                        <div class="btn-block1">
+                            <div class="btn-block">
+                                <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
+                                href="#" style="width: 100px;">문의 등록</a>
+                                
+                            </div>
                         </div>
+                        
+                        <div class="btn-block" style="padding: 0 80px;">
+                        <a class="button button-yds2 button-sm m-2 align-self-center header-link flex-last lg:order-inherit lg:my-0"
+                            href="#">원랩 바로가기</a>
                     </div>
                 </div>    
             

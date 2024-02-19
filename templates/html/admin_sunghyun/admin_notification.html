@@ -232,7 +232,26 @@ admin_competition = 공모전/대회 관리 페이지
                                                 <span class="ml-4">5
                                                 </span>
                                             </div>
-                                         
+                                            <div class="shrink-0">
+                                                <div class="relative">
+                                                    <button aria-label="filter" class="surface-none" type="button" id="two"
+                                                    onclick="toggleDropdown('dropdownOptions2')">
+                                                        <span class="over-nowrap1">문의유형</span>  
+                                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                                        class="shrink-h">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
+                                                        </svg> 
+                                                    </button>
+                                                    <div class="dropdown-content" id="dropdownOptions2">
+                                                        <a onclick="selectOption('원랩문의','two')">원랩문의</a>
+                                                        <a onclick="selectOption('자료공유 문의','two')">자료공유 문의</a>
+                                                        <a onclick="selectOption('장소공유 문의','two')">장소공유 문의</a>
+                                                        <a onclick="selectOption('대회공모전 문의','two')">대회공모전 문의</a>
+                                                        
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="relative1">
                                             <div>
                                                 <div class="relative">
@@ -250,13 +269,15 @@ admin_competition = 공모전/대회 관리 페이지
                                         </div>
                                         
                                         <div class="content_primary">
-                                            <div class="min-1">전체선택
+                                            <label class="min-1">전체선택
                                                 <input type='checkbox'
                                                 name='animal' 
                                                 class="check"
                                                 value='selectall'
+                                                style="display: none;
+                                                "
                                                 onclick='selectAll(this)'>
-                                            </div>
+                                            </label>
                                             <div class="min-3">번호</div>
                                             <div class="min-2">제목</div>
                                         <div class="grid-px">
