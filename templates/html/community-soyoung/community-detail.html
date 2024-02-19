@@ -48,7 +48,11 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <p class="community-write-date">2024.01.30 12:19</p>
+                                        <p class="community-write-date">2024.01.30 12:19
+                                            <!-- 수정,삭제 버튼(글작성자만 볼수있음) -->
+                                            <button type="button" class="update-btn">수정하기</button>
+                                            <button type="button" class="delete-btn">삭제하기</button>
+                                        </p>
                                     </div>
 
                                     <!-- 글 바디 쪽 -->
@@ -103,25 +107,7 @@
                                     <!-- 댓글 목록 전 유의사항 -->
                                     <div>
                                         <div class="comment-container">
-                                            <div class="comment-notice">
-                                                <div class="comment-warning-msg">
-                                                    <div class="comment-msg-header">
-                                                        <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="warning-svg" aria-hidden="true">
-                                                            <path d="M0 0v40h40V0zm20 39a19 19 0 1 1 19-19 19.06 19.06 0 0 1-19 19z" fill="none"></path>
-                                                            <path d="M20 1a19 19 0 1 0 19 19A19.06 19.06 0 0 0 20 1zm-1 9.21h2v13h-2zm1 19.39a1.8 1.8 0 1 1 1.8-1.8 1.81 1.81 0 0 1-1.8 1.8z"></path>
-                                                        </svg>
-                                                        댓글 작성 유의사항
-                                                    </div>
-                                                    <div class="comment-info">
-                                                        <div class="comment-info-text">
-                                                            최근 제3자에 대한 허위사실 유포, 비방 목적의 댓글로 인해 당사자간 법적분쟁이 발생한 사례가 증가하고 있습니다. 해당 프로젝트와 무관한 댓글 혹은 악의적 댓글 작성자는 명예훼손, 모욕 등으로 법적 책임을 부담하게 될 수 있으니, 유의하여 주시기 바랍니다.
-                                                        </div>
-                                                        <div class="comment-info-text">
-                                                            개인정보(실명, 휴대폰번호, 주소 등)가 노출되지 않도록 유의하세요.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            
                                             <!-- 댓글 목록 -->
                                             <div class="comment-user-wrapper-container-write">
                                                 <div class="comment-user-wrapper-avatar">
@@ -144,15 +130,31 @@
                                                             </div>
                                                             <div class="comment-form-bottom">
                                                                 <span class="comment-form-count">0/2,000</span>
-                                                                <button type="submit" class="comment-ok-btn">
+                                                                <!-- <button type="submit" class="comment-ok-btn">
                                                                     <span>
                                                                         <span class="comment-ok-text">등록</span>
                                                                     </span>
-                                                                </button>
+                                                                </button> -->
                                                             </div>
                                                         </form>
                                                     </div>
+                                                    <div style="display: flex;">
+                                                    <div class="comment-notice">
+                                                        <div class="comment-warning-msg">
+                                                            <div class="comment-info">
+                                                                <div class="comment-info-text">
+                                                                   해당 게시글의 내용과 무관한 댓글 혹은 악의적 댓글 작성자는 법적 책임을 부담하게 될 수 있으니, 유의하여 주시기 바랍니다.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="comment-ok-btn">
+                                                        <span>
+                                                            <span class="comment-ok-text">등록</span>
+                                                        </span>
+                                                    </button>
                                                 </div>
+                                            </div>
                                                 <!-- 로그인o 끝 -->
 
                                                 <!-- 로그인 안되어있을 경우 댓글 창 시작-->

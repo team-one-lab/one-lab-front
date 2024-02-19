@@ -200,15 +200,10 @@ div.sidebar-menu-list-margin {
     height: 8px;
 }
 
-/* a.sidebar-menu-item-nav-link {
-    color: rgba(0,0,0,.54);
-    display: block;
-    position: relative;
-    cursor: pointer;
-    padding: 16px 24px;
-    font-size: 13px;
-    font-weight: 700;
-} */
+nav.sidebar-menu-list-container ul li {
+    display: flex;
+    justify-content: space-between;
+}
 
 a.sidebar-menu-item-nav-link {
     display: block;
@@ -220,7 +215,11 @@ a.sidebar-menu-item-nav-link {
     font-weight: 700;
 }
 
-a.sidebar-menu-item-nav-link.active {
+a.sidebar-menu-item-nav-link.result {
+    color: #008243;
+}
+
+/* a.sidebar-menu-item-nav-link.active {
     color: #00704A;
     display: block;
     position: relative;
@@ -228,7 +227,7 @@ a.sidebar-menu-item-nav-link.active {
     padding: 16px 24px;
     font-size: 13px;
     font-weight: 700;
-}
+} */
 
 svg.sidebar-menu-open-icon {
     position: absolute;
@@ -648,6 +647,10 @@ strong.announce-list-title {
 }
 
 ul.announce-list {
+    height: calc(100% - 50px);
+}
+
+ul.announce-list {
     position: relative;
     overflow-y: auto;
     overscroll-behavior: contain;
@@ -661,6 +664,10 @@ li.announce-list-item {
     max-width: 400px;
     grid-gap: 8px;
     gap: 8px;
+}
+
+li.announce-list-item {
+    padding: 16px 24px;
 }
 
 div.announce-list-item-badge-area {
@@ -837,6 +844,10 @@ div.section-description {
 
 div.section-content {
     position: relative;
+}
+
+div.section-content.etc {
+    display: none;
 }
 
 div.text-field {
@@ -1101,6 +1112,275 @@ ul.upload-pool {
     overflow: hidden;
     padding: 0;
 }
+
+/* 태그 */
+
+section.section-container.project-type {
+    margin-bottom: 16px;
+}
+
+
+span.blind-text-hidden::after {
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 4px;
+    color: #f66;
+    content: "*";
+}
+
+div.section-guide {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    gap: 8px;
+    justify-content: flex-end;
+    max-width: 50%;
+}
+
+a.link {
+    line-height: 20px;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    font-weight: 500;
+    transition: color .3s;
+    border-bottom: 1px solid #008243;
+    cursor: pointer;
+    color: #008243;
+}
+
+svg.show-guide-icon {
+    margin-left: 4px;
+    display: inline;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+}
+
+div.radios-box {
+    margin-top: 12px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+label.radio {
+    display: flex;
+    width: fit-content;
+    position: relative;
+    margin: 16px 0;
+}
+
+label.radio>input {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+span.radio-icon {
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-right: 8px;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+    font-weight: 400;
+    position: relative;
+    transition-property: opacity,border-color,background-color;
+    transition-duration: .15s;
+    opacity: 1;
+    z-index: 1;
+    border: 1px solid #cdd3d8;
+    border-radius: 999em;
+    background-color: #fff;
+    width: 1em;
+    height: 1em;
+}
+
+span.radio-icon::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition-property: background-color;
+    transition-duration: .15s;
+    border-radius: 999em;
+    background-color: #fff;
+    width: 0.5em;
+    height: 0.5em;
+    content: "";
+}
+
+span.radio-icon.active::before {
+    background-color: #008243;
+}
+
+span.radio-label {
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    vertical-align: -1px;
+    color: #495057;
+}
+
+span.radios-label-content {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #495057;
+    grid-gap: 8px;
+    gap: 8px;
+}
+
+strong.radios-category {
+    font-weight: 700;
+}
+
+span.label-badge-container {
+    display: inline-flex;
+    position: relative;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+span.get-money-label-badge {
+    border: 1px solid #e7f9f9;
+    background-color: #e7f9f9;
+    color: #008243;
+    height: auto;
+    min-height: 22px;
+    border-radius: 5px;
+    padding: 2px 6px;
+    line-height: 1.5;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+span.radios-more-info {
+    display: none;
+    margin-top: 8px;
+}
+
+a.radios-link {
+    text-decoration: underline;
+    color: #008243;
+}
+
+section.section-container.project-intro {
+    display: none;
+    margin: 0;
+}
+
+strong.section-sub-title {
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+}
+
+div.section-description {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    color: #868e96;
+}
+
+div.introduction-box {
+    position: relative;
+    margin-top: -16px;
+}
+
+div.text-area-field {
+    display: block;
+    position: relative;
+}
+
+div.text-area-field>label {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    padding-bottom: 4px;
+}
+
+div.input-text-field {
+    position: relative;
+}
+
+textarea.input-text {
+    min-height: 200px;
+    max-height: 200px;
+    padding: 10px 16px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: pre-line;
+    display: block;
+    transition-property: border-color,background-color,color;
+    transition-duration: .15s;
+    outline: none;
+    border: 1px solid #dde2e6;
+    border-radius: 4px;
+    background: #fff;
+    resize: none;
+    width: 100%;
+    height: auto;
+    color: #212529;
+}
+
+textarea.input-text:hover {
+    border-color: black
+}
+
+textarea::placeholder {
+    color: #adb5bd;
+}
+
+textarea.input-text-hidden {
+    min-height: 200px;
+    max-height: 200px;
+    padding: 10px 16px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    border-color: #f2f4f6;
+    background-color: #f9fafb;
+    cursor: default;
+    display: block;
+    transition-property: border-color,background-color,color;
+    transition-duration: .15s;
+    outline: none;
+    border: 1px solid #dde2e6;
+    border-radius: 4px;
+    background: #fff;
+    resize: none;
+    width: 100%;
+    color: #212529;
+}
+
+span.introduction-count {
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    margin-top: 2px;
+    text-align: right;
+    color: #868e96;
+}
+
 
 /* div.textarea-input> .active {
     border: 1px solid #00c4c4 !important;

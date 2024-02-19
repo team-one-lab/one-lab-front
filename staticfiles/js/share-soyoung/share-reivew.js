@@ -23,6 +23,8 @@ const scroll = () => {
 }
 goTopButton.addEventListener('click', scroll)
 
+
+
 const tabs = document.querySelectorAll('.detail-tab')
 tabs.forEach((tab) => {
     tab.addEventListener('click', function(e) {
@@ -32,4 +34,38 @@ tabs.forEach((tab) => {
             tab.classList.add("DetailTab_isActive")
         }
     })
+})
+
+
+const likes = document.querySelectorAll(".like_btn");
+const likeBtn = document.querySelectorAll("button.likes_btns");
+likes.forEach((like) => {
+    like.addEventListener("click", (e) => {
+        console.log(e.target.classList);
+        e.target.classList.toggle("active");
+        e.ariaPressed = "true";
+        
+    });
+});
+
+likeBtn.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        console.log(e.target.classList);
+        e.target.classList.toggle("active");
+        e.ariaPressed = "true";
+        
+    });
+});
+
+const likeBtns = document.querySelectorAll(".WishButton_button.like-btn")
+likeBtns.forEach((likeBtn) => {
+    likeBtn.addEventListener('click', function(e) {
+        likeBtn.classList.toggle('active');
+    })
+})
+
+
+const likeBtnDown = document.querySelector('.sticky-btn')
+likeBtnDown.addEventListener('click', function(e) {
+    likeBtnDown.classList.toggle('active')
 })
