@@ -203,6 +203,11 @@ div.sidebar-menu-list-margin {
     height: 8px;
 }
 
+nav.sidebar-menu-list-container ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
 a.sidebar-menu-item-nav-link {
     display: block;
     position: relative;
@@ -213,14 +218,8 @@ a.sidebar-menu-item-nav-link {
     font-weight: 700;
 }
 
-a.sidebar-menu-item-nav-link.active {
+a.sidebar-menu-item-nav-link.result {
     color: #008243;
-    display: block;
-    position: relative;
-    cursor: pointer;
-    padding: 16px 24px;
-    font-size: 13px;
-    font-weight: 700;
 }
 
 svg.sidebar-menu-open-icon {
@@ -1324,4 +1323,22 @@ h2.page-title {
     line-height: 48px;
     font-size: 36px;
     font-weight: 700;
+}
+
+span.text-field-fixed-text {
+    padding-right: 16px;
+    padding-left: 14px;
+    width: auto;
+    text-align: right;
+    right: 0;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    fill: #adb5bd;
+    pointer-events: none;
+    box-sizing: content-box;
+    top: 52.5%;
+    transform: translateY(-50%);
+    height: auto;
 }

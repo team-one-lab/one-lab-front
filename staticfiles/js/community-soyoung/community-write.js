@@ -188,4 +188,17 @@ document.addEventListener('click', function(event) {
 
 
 
-
+const typeBtns = document.querySelectorAll('label.radio')
+const activeBtns = document.querySelectorAll('span.radio-icon')
+typeBtns.forEach((typeBtn) => {
+    typeBtn.addEventListener('click', function(e){
+        activeBtns.forEach((activeBtn) => {
+            activeBtn.classList.remove('active')
+        }) 
+        const radioIcon = typeBtn.children[1];
+        radioIcon.classList.add('active')
+        if(typeBtn.classList[1]) {
+            document.querySelector('.section-content.etc').style.display = 'block'
+        }
+    })
+})

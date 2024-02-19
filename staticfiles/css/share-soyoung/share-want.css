@@ -220,15 +220,10 @@ div.sidebar-menu-list-margin {
     height: 8px;
 }
 
-/* a.sidebar-menu-item-nav-link {
-    color: rgba(0,0,0,.54);
-    display: block;
-    position: relative;
-    cursor: pointer;
-    padding: 16px 24px;
-    font-size: 13px;
-    font-weight: 700;
-} */
+nav.sidebar-menu-list-container ul li {
+    display: flex;
+    justify-content: space-between;
+}
 
 a.sidebar-menu-item-nav-link {
     display: block;
@@ -240,14 +235,8 @@ a.sidebar-menu-item-nav-link {
     font-weight: 700;
 }
 
-a.sidebar-menu-item-nav-link.active {
-    color: #00704A;
-    display: block;
-    position: relative;
-    cursor: pointer;
-    padding: 16px 24px;
-    font-size: 13px;
-    font-weight: 700;
+a.sidebar-menu-item-nav-link.result {
+    color: #008243;
 }
 
 svg.sidebar-menu-open-icon {

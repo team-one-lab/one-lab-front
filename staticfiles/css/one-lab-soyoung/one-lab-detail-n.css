@@ -1,0 +1,322 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+html {
+    font-family: Pretendard Variable,pretendard
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: inherit;
+    color: inherit;
+    font-size: 15px;
+}
+
+body, table th {
+    font-weight: 400;
+}
+
+body, button, input, select, textarea {
+    font-family: inherit;
+}
+
+body, button, html, input, textarea {
+    font-family: Pretendard;
+}
+
+article, aside, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.main-wrapper-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: padding-top .25s;
+}
+
+div.main-wrapper-container {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+div.banner-img {
+    height: 440px;
+    position: relative;
+    background: no-repeat 50% 50%/cover;
+}
+
+div.banner-text {
+    margin: -56px auto 0;
+    background: #fff;
+    padding: 56px 0;
+    max-width: 1032px;
+    text-align: center;
+    position: relative;
+}
+
+div.banner-title-box {
+    position: relative;
+}
+
+div.banner-title-wrapper {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
+    align-items: center;
+}
+
+p.banner-title {
+    line-height: 36px;
+    color: rgba(0,0,0,.84);
+    font-size: 28px;
+    font-weight: 700;
+    flex-grow: 1;
+}
+
+div.lab-member-box-container {
+    margin: 13px;
+    max-width: 800px;
+    line-height: 28px;
+    color: rgba(0,0,0,.54);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+div.lab-member-box {
+    /* width: 22.6%; */
+    width: 300px;
+    height: 310px;
+    margin: 1.2%;
+    padding: 32px;
+    background-color: #F2F4F6;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+dd.lab-member-university-icon {
+    margin-bottom: 20px;
+}
+
+i.university-icon {
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    background-image: url('https://makercenter.wadiz.kr/menu/static/images/icon_maker_service_02.svg');
+    display: flex;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+dd.member-name {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #212529;
+    letter-spacing: -0.3px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+dd.member-info {
+    max-height: 72px;
+    min-height: 96px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #495057;
+    letter-spacing: -0.3px;
+    line-height: 1.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: keep-all;
+    text-align: left;
+}
+
+dd.member-labs {
+    margin-top: 20px;
+}
+
+a.go-other-lab {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #212529;
+    letter-spacing: -0.3px; 
+}
+
+a.go-other-lab::after {
+    content: '';
+    display: flex;
+    align-items: center;
+    width: 5px;
+    height: 10px;
+    margin-left: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://makercenter.wadiz.kr/menu/static/images/icon_next_s.svg');
+}
+
+div.lab-detail-info-container {
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 28px;
+    color: rgba(0,0,0,.54);
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+div.lab-image-area{
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+div.lab-image {
+    width: 100%;
+    height: 0;
+    padding-top: 62.6%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+div.lab-discription-text-area {
+    width: 605px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+strong.lab-sub-title {
+    position: relative;
+    color: #008243;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.3px;
+    line-height: 100%;
+}
+
+strong.lab-sub-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 8px;
+    background-color: #E7F9F9;
+    z-index: -1;
+}
+
+h2.lab-custom-title {
+    margin-top: 46px;
+    margin-bottom: 24px;
+    display: block;
+    font-weight: 700;
+    font-size: 48px;
+    color: #212529;
+    letter-spacing: -0.6px;
+    line-height: 1.291;
+}
+
+p.lab-custom-desc {
+    font-weight: 400;
+    font-size: 16px;
+    color: #495057;
+    letter-spacing: -0.3px;
+    line-height: 1.75;
+    word-break: keep-all;
+}
+
+div.count-person-area {
+    color: rgb(0, 178, 178);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    outline: 0px;
+    margin: 0px 5px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-transform: none;
+    font-family: NotoSansKR;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    max-width: 360px;
+    position: relative;
+    min-height: 48px;
+    flex-shrink: 0;
+    padding: 12px 24px;
+    overflow: hidden;
+    white-space: normal;
+    text-align: center;
+    background-color: rgb(73, 80, 87);
+    border: 1px solid rgb(73, 80, 87);
+    border-radius: 40px;
+    margin-bottom: 50px;
+}
+
+p.count-person {
+    margin: 0px;
+    font-family: NotoSansKR;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+div.count-person-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+div.lab-member-info-container {
+    margin: 0 auto;
+}
+
+strong.lab-member-info-sub-title {
+    text-align: center;
+    display: block;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #212529;
+    letter-spacing: -0.3px;
+    line-height: 100%;
+}
+
+div.lab-member-box-column {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: -1.2%;
+}
+
