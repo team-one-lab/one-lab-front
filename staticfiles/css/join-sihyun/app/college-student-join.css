@@ -1832,3 +1832,44 @@ button:not(:disabled) {
   gap: 5px;
   cursor: pointer;
 }
+
+.easy-join-department-input-box {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  display: block;
+  position: relative;
+}
+.easy-join-department-input-box > label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+  padding-bottom: 4px;
+}
+.easy-join-department-input-box label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.department-input-box {
+  position: relative;
+}
+.department-input {
+  height: 40px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+  transition-property: border-color, background-color, color;
+  transition-duration: 0.15s;
+  outline: none;
+  border: 1px solid #dde2e6;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 0 16px;
+  width: 100%;
+  vertical-align: middle;
+  color: #212529;
+  -webkit-appearance: none;
+}
