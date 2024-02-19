@@ -195,27 +195,6 @@ $(".input-text").on("focus", function(e) {
     $(this).css('border-color', '#008243')
 })
 
-// $(document).ready(function() {
-//     // 파일 업로드 버튼이 클릭되었을 때의 이벤트 처리
-//     $(".reward-item-add-btn-box").on("click", function() {
-//         // 파일 선택을 위한 input 요소 생성
-//         var fileInput = $('<input type="file">');
-
-//         // 파일이 선택되었을 때의 이벤트 처리
-//         fileInput.on("change", function() {
-//             // 선택된 파일 객체
-//             var selectedFile = this.files[0];
-
-//             // 여기에 파일 업로드 로직을 추가하면 됩니다.
-//             console.log("선택된 파일:", selectedFile);
-            
-//             // 여기에 선택된 파일을 업로드하는 코드를 추가하면 됩니다.
-//         });
-
-//         // 파일 선택 창을 열기
-//         fileInput.click();
-//     });
-// });
 
 
 // textarea 글 작성시 글자수 계산
@@ -228,57 +207,6 @@ introductionText.addEventListener('input', function() {
 });
 
 
-// // 파일 입력시 미리보기 및 x버튼생성
-// document.addEventListener("DOMContentLoaded", function() {
-//     const sectionContent = document.querySelector('.check-document .section-content');
-//     const fileInput = document.querySelector('.reward-item-add-btn-box input[type="file"]');
-
-//     document.querySelector('.reward-item-add-btn-box').addEventListener('click', function() {
-//         fileInput.click(); // hidden input 요소를 클릭하여 파일 업로드 창을 엽니다.
-//     });
-
-//     fileInput.addEventListener('change', function(event) {
-//         const fileList = event.target.files;
-//         if (fileList.length > 0) {
-//             const file = fileList[0];
-//             if (isImageFile(file)) {
-//                 displayPreviewImage(file);
-//             } else {
-//                 alert('이미지 파일을 업로드해주세요.');
-//                 fileInput.value = ''; // 파일 입력 필드 초기화
-//             }
-//         }
-//     });
-
-//     function isImageFile(file) {
-//         return file.type.startsWith('image/');
-//     }
-
-//     function displayPreviewImage(file) {
-//         const reader = new FileReader();
-
-//         reader.onload = function(event) {
-//             const imageUrl = event.target.result;
-//             const imageElement = document.createElement('img');
-//             imageElement.src = imageUrl;
-//             imageElement.style.width = "100px"
-//             imageElement.style.position = "relative"
-//             sectionContent.appendChild(imageElement);
-
-//             const closeButton = document.createElement('button');
-//             closeButton.textContent = 'x';
-//             closeButton.classList.add('close-btn');
-//             closeButton.addEventListener('click', function() {
-//                 imageElement.remove();
-//                 closeButton.remove();
-//                 fileInput.value = ''; // 파일 입력 필드 초기화
-//             });
-//             sectionContent.appendChild(closeButton);
-//         };
-
-//         reader.readAsDataURL(file);
-//     }
-// });
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -293,11 +221,24 @@ document.addEventListener("DOMContentLoaded", function() {
         const fileList = event.target.files;
         if (fileList.length > 0) {
             const file = fileList[0];
+    
+            // // 파일 객체로부터 MIME 유형 가져오기
+            // const mimeType = file.type;
+    
+            // // FileReader가 지원하는 MIME 유형 확인
+            // if (mimeType.startsWith('image/') || mimeType.startsWith('video/') || mimeType.startsWith('audio/') || mimeType === 'text/plain') {
+            //     // FileReader가 지원하는 유형이면 처리
+            // } else {
+            //     // FileReader가 지원하지 않는 유형일 경우 처리
+            //     console.error('이 파일 형식은 FileReader에서 지원되지 않습니다.');
+            // }
+    
             displayPreviewImage(file);
         }
     });
 
     function isImageFile(file) {
+        console.log(file.type.startsWith('image/'))
         return file.type.startsWith('image/');
     }
 
@@ -305,30 +246,39 @@ document.addEventListener("DOMContentLoaded", function() {
         const reader = new FileReader();
 
         reader.onload = function(event) {
-            const imageUrl = event.target.result;
+            const fileUrl = event.target.result;
             const imageElement = document.createElement('img');
-            let fileNameDiv = document.createElement('div'); // let으로 변경
+            let fileNameDiv = document.createElement('div');
+            console.log(fileUrl)
 
-            if(isImageFile(file)){ // 수정: event 대신 file를 사용
-                imageElement.src = imageUrl;
+            // 이미지일 경우
+            if(isImageFile(file)){ 
+                imageElement.src = fileUrl;
                 imageElement.style.width = "100px";
                 imageElement.style.position = "relative";
                 sectionContent.appendChild(imageElement);
-            } else {
-                fileNameDiv.textContent = file.name; // 수정: 파일 이름을 텍스트 콘텐츠로 설정
+                // pdf일 경우
+            } else if(fileUrl.includes('pdf')) {
+                console.log('pdf')
+                fileNameDiv.textContent = file.name;
+                console.log(file.name);
+                sectionContent.appendChild(fileNameDiv);
+                // 엑셀일 경우
+            }else if(fileUrl.includes('sheet')) {
+                console.log('xls')
+                fileNameDiv.textContent = file.name;
                 console.log(file.name);
                 sectionContent.appendChild(fileNameDiv);
             }
             
-
             const closeButton = document.createElement('button');
             closeButton.textContent = 'x';
             closeButton.classList.add('close-btn');
             closeButton.addEventListener('click', function() {
                 imageElement.remove();
-                fileNameDiv.remove(); // 수정: 파일 이름 div도 제거
+                fileNameDiv.remove();
                 closeButton.remove();
-                fileInput.value = ''; // 파일 입력 필드 초기화
+                fileInput.value = '';
             });
             sectionContent.appendChild(closeButton);
         };
@@ -336,5 +286,7 @@ document.addEventListener("DOMContentLoaded", function() {
         reader.readAsDataURL(file);
     }
 });
+
+
 
 

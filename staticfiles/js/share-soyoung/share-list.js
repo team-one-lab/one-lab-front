@@ -51,9 +51,13 @@ tabButtons.forEach((tabButton) => {
     })
 })
 
-$(".wish-btn").on("click",function(e){
-    $(e.target).find('.like-icon').toggle();
-});
+// 좋아요
+const likeBtns = document.querySelectorAll('.like-btn')
+likeBtns.forEach((likeBtn) => {
+    likeBtn.addEventListener('click', function(e) {
+        likeBtn.classList.toggle('active')
+    })
+})
 
 const sortTabs = document.querySelector("ul.order-select-desktop-sort-container")
 sortTabs.addEventListener("click", function(e) {
@@ -94,7 +98,8 @@ arrowBtn.addEventListener("click", function(e) {
     
 })
 
-const leftArrowBtn = document.querySelector(".tabs-mobile-nav.left")   
-leftArrowBtn.addEventListener("click", function(e) {
-    leftArrowBtn.classList.remove('left')
-})
+// const leftArrowBtn = document.querySelector(".tabs-mobile-nav.left")   
+// leftArrowBtn.addEventListener("click", function(e) {
+//     leftArrowBtn.classList.remove('left')
+// })
+
