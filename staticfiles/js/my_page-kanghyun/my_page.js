@@ -289,7 +289,7 @@ confirmed_btn_modal.addEventListener("click", ()=> {
 
 
 // 더보기 했을 때 애니메이션 살리는 기능
-const show_page = document.getElementById("exhibit-list");
+const show_page = document.querySelector("#show-list");
 
 const main_view = document.querySelector("#exhibit-list");
 
