@@ -284,36 +284,95 @@ confirmed_btn_modal.addEventListener("click", ()=> {
 })
 
 
-// 공모전 대회 목록의 더보기 눌럿을 때의 기능
+
+
+
+
+// 더보기 했을 때 애니메이션 살리는 기능
+const show_page = document.getElementById("exhibit-list");
+
+const main_view = document.querySelector("#exhibit-list");
+
+main_view.addEventListener("mouseover",()=>{
+    
+    const lists = document.querySelectorAll(".swiper-slide");
+    const display_animation = document.querySelectorAll(".css-qn01ot");
+    for(let i=0;i<lists.length;i++) {
+        lists[i].addEventListener("mouseover", ()=>{
+            display_animation[i].classList.add("list-active");
+        })
+        lists[i].addEventListener("mouseout", ()=>{
+            display_animation[i].classList.remove("list-active");
+        })
+    }
+})
+// 공모전 더보기 눌렀을 때 기능
+// main_view.addEventListener("mouseover",()=>{
+//     const more_view_containers = document.querySelectorAll(".search-result-scroll-banner-container");
+//     const more_view_btns = document.querySelectorAll("#more-view-btn");
+//     console.log(more_view_btns.children);
+// })
+
+
 const more_view_btn = document.querySelector("#more-view-btn");
-// console.log(more_view_btn);
-const page_exhibition = document.querySelectorAll(".swiper-slide");
-// console.log(page_exhibition[0].classList.contains("show"));
+more_view_btn.addEventListener("click", () => {
+    const more_view_containers = document.querySelectorAll(".search-result-scroll-banner-container");
+    
+    for (let j = 0; j < 3; j ++) {
+        const newDiv = document.createElement("div");
+        newDiv.className = "swiper-slide swiper-slide-active show";
+        newDiv.style.width = "236.8px";
+        newDiv.style.marginRight = "24px";
 
-more_view_btn.addEventListener("click", ()=>{
-    if (!page_exhibition[8].classList.contains("show") && !page_exhibition[5].classList.contains("show")) {
-        for (let j =3;j<6;j++) {
-            page_exhibition[j].classList.add("show");
-        }
-    } else if (!page_exhibition[8].classList.contains("show")) {
-        for (let t = 6;t<9;t++) {
-            page_exhibition[t].classList.add("show");
-        }
+        newDiv.innerHTML = `
+            <div class="css-1pulbqw">
+                <div class="css-3xk0il"></div>
+                <div class="css-qn01ot">
+                    <div class="css-18m1pdx">
+                        [2023 연말 결산] 와디즈가 조명한 스무 갈래의 열린 길
+                    </div>
+                    <div class="css-ivvewn" style="display: none;">
+                        성공 메이커 이야기 연말 결산
+                    </div>
+                </div>
+            </div>
+        `;
+        show_page.appendChild(newDiv);
     }
+    const newDiv2 = document.createElement("div");
+    newDiv2.className = "search-result-scroll-banner-container";
+    newDiv2.id = "search-scroll-banner";
+    
+    newDiv2.innerHTML = `
+        <div class="search-result-scroll-banner">
+            <div class="search-result-banner-inner">
+                <div id="more-view-btn" class="search-result-inner-inner">
+                    <span>더보기</span>
+                </div>
+                <div class="search-result-inner-inner">
+                    <span>목록으로 이동</span>
+                </div>
+            </div>
+        </div>
+    `;
+    show_page.appendChild(newDiv2);
+    more_view_containers[0].remove();
+    const new_more_view_btn = newDiv2.querySelector("#more-view-btn");
+    new_more_view_btn.addEventListener("click", ()=>{
+        more_view_btn.click();
+    })
+});
 
-})
 
-// 더보기 닫기 눌렀을 때의 기능
-const close_more_view_btn = document.querySelector("#close-view-btn");
 
-close_more_view_btn.addEventListener("click", ()=>{
-    if (page_exhibition[8].classList.contains("show") && page_exhibition[5].classList.contains("show")) {
-        for (let i =6; i<9;i ++) {
-            page_exhibition[i].classList.remove("show");
-        }
-    } else if (page_exhibition[5].classList.contains("show")) {
-        for (let j=3; j< 6; j ++) {
-            page_exhibition[j].classList.remove("show");
-        }
-    }
-})
+// 좋아요기능
+const likes = document.querySelectorAll("button.WishButton_button");
+
+likes.forEach((like) => {
+    const color = document.getElementsByClassName("is");
+    like.addEventListener("click", (e) => {
+        console.log(e.target.classList);
+        e.target.classList.toggle("active");
+        e.ariaPressed = "true";
+    });
+});
