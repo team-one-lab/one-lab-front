@@ -605,12 +605,7 @@ p{
     line-height: 16px;
     text-align: left;
 }
-.mt-32{
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    margin-top: 32px;
-}
+
 .font-content{
     font-weight: 600;
     font-size: 14px;
@@ -672,19 +667,20 @@ p{
 }
 
 .mt-24{
-    padding-left: 8px;
-    padding-right: 8px;
     padding-top: 9px;
     padding-bottom: 9px;
     border-top-width: 1px;
     border-bottom-width: 1px;
-    column-gap: 46px;
+    column-gap: 40px;
     align-items: center;
     display: flex;
     background-color: #f5f2f2;
     margin-top: 20px;
 }
 .shrink-name{
+    width: 100px;
+    margin-right: -3px;
+    /* margin-left: 0px; */
     justify-content: flex-start;
     align-items: center;
     flex-shrink: 0;
@@ -873,7 +869,7 @@ input::placeholder{
     align-items: center;
     display: flex;
     margin-top: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 44px;
 }
 .min-2 {
     justify-content: center;
@@ -892,17 +888,22 @@ input::placeholder{
     grid-auto-flow: column;
     display: grid;
 }
-
+.alltable{
+    width: 0px;
+}
 .user-list{
-    width: 944px; 
-    height: 23px; 
-    border-style: solid; 
-    border-bottom-width: 1px; 
-    column-gap: 92px;
-    /* justify-content: space-between;  */
-    align-items: center; min-height: 60px; 
-    display: flex; 
-    border-color: #e6e6e7;
+        /* padding-right: 26px; */
+        margin-right: 200px;
+        width: 1120px;
+        height: 23px;
+        border-style: solid;
+        border-bottom-width: 1px;
+        column-gap: 83px;
+        /* justify-content: space-between; */
+        align-items: center;
+        min-height: 60px;
+        display: flex;
+        border-color: #e6e6e7;
 }
 
 
@@ -915,22 +916,31 @@ input::placeholder{
 }
 .number{
     min-width: 15px;
-    padding-left: 16px;
+    padding-left: 35px;
 }
 .email{
     min-width: 20px;
 } 
 .name{
-    width: 140px;
+    width: 170px;
+    margin-left: 30px;
 }
 .type{
     min-width: 30px;
 }
 .date{
-    min-width: 30px;
+    min-width: 35px;
+    margin-left: 20px;
+}
+.qna{
+    width: 94px;
+}
+.info{
+    width: 63px;
 }
 .total{
-    width: 50px;
+    width: 60px;
+    margin-right: 52px;
 }
 .success{
     color: #008244;

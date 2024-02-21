@@ -271,13 +271,14 @@ admin_competition = 공모전/대회 관리 페이지
                                 </div>
                                 <div class="all-table">
                                 <div class="content_primary">
-                                    <div class="min-0">전체선택
+                                    <label class="min-0">전체선택
                                         <input type='checkbox'
                                         name='animal' 
                                         class="check"
                                         value='selectall'
+                                        style="display: none;"
                                         onclick='selectAll(this)'>
-                                    </div>
+                                    </label>
                                     <div class="min-1">번호</div>
                                     <div class="min-2">이메일</div>
                                 <div class="grid-px">
@@ -289,7 +290,7 @@ admin_competition = 공모전/대회 관리 페이지
                             </div>
                          
                         <!--------대학생 회원------------------------------------->
-                        <div class="col-center" style="font-size: 12px;">
+                        <div class="col-center" style="font-size: 14px;">
                             <li class="user-list">
                                 <input class="check2" name="num2" type="checkbox">
                                 <span class="number">1</span>
