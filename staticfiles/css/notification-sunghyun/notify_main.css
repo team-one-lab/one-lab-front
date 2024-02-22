@@ -549,8 +549,8 @@ button{
 
 
 .ui-tabs ul {
-    margin: 0 592px;
-    /* padding: 0 16px; */
+    margin: 0 334px;
+    padding: 0 4px;
     height: 68px;
     overflow-x: auto;
     overflow-y: hidden;
