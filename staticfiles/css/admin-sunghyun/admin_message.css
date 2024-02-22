@@ -670,8 +670,8 @@ p{
     padding-top: 9px;
     padding-bottom: 9px;
     border-top-width: 1px;
-    border-bottom-width: 1px;
-    column-gap: 40px;
+    border-bottom-width: -2px;
+    column-gap: 9px;
     align-items: center;
     display: flex;
     background-color: #f5f2f2;
@@ -889,21 +889,21 @@ input::placeholder{
     display: grid;
 }
 .alltable{
-    width: 0px;
+    width: 913px;
 }
 .user-list{
-        /* padding-right: 26px; */
-        margin-right: 200px;
-        width: 1120px;
-        height: 23px;
-        border-style: solid;
-        border-bottom-width: 1px;
-        column-gap: 83px;
-        /* justify-content: space-between; */
-        align-items: center;
-        min-height: 60px;
-        display: flex;
-        border-color: #e6e6e7;
+    padding-right: 1px;
+    margin-right: 11px;
+    width: 917px;
+    height: 23px;
+    border-style: solid;
+    border-bottom-width: 1px;
+    column-gap: 24px;
+    /* justify-content: space-between; */
+    align-items: center;
+    min-height: 60px;
+    display: flex;
+    border-color: #e6e6e7;
 }
 
 
@@ -922,8 +922,8 @@ input::placeholder{
     min-width: 20px;
 } 
 .name{
-    width: 170px;
-    margin-left: 30px;
+    width: 152px;
+    margin-left: 60px;
 }
 .type{
     min-width: 30px;
