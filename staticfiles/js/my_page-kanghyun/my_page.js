@@ -51,7 +51,7 @@
 const buttons = document.querySelectorAll(
     "div.main-list-filter-container ul.filter-list-wrapper button.major-btn"
 );
-const labpages = document.querySelectorAll(".search-result-container");
+const labpages = document.querySelectorAll(".section-body");
 
 for (let i = 0;i < buttons.length; i++) {
     buttons[i].addEventListener('click', function(e) {
@@ -69,7 +69,8 @@ for (let i = 0;i < buttons.length; i++) {
 // 카테고리 목록 내, 좋아요 기능
 // 좋아요 눌렀을 때 좋아요 되었다는 알림글 나타내기
 const likebtns = document.querySelectorAll(".wish-btn");
-const activelikebtns = document.querySelectorAll(".like-icon");
+const activelikebtns = document.querySelectorAll(".like-btn");
+
 const liketoast = document.querySelector("#like-clicked-toast-container");
 const cancel_liketoast = document.querySelector("#like-canceled-toast-container");
 
@@ -78,15 +79,16 @@ for (let i=0; i<likebtns.length;i++) {
     likebtns[i].addEventListener('click', function(e) {
         e.preventDefault();
         let activelikebtn = activelikebtns[i];
+        console.log(activelikebtn);
         // 좋아요 키고 끄는 기능
-        if (activelikebtn.style.display === "block") {
-            activelikebtn.style.display = "none";
+        if (activelikebtn.classList.contains("active")) {
+            activelikebtn.classList.remove("active");
             cancel_liketoast.style.display = "block";
             setTimeout(()=>{
                 cancel_liketoast.style.display = "none";
             },1500)
         } else {
-            activelikebtn.style.display = "block";
+            activelikebtn.classList.add("active");
             // 토스트 창 나타나고 사라지기
             liketoast.style.display = "block";
             setTimeout(()=>{
@@ -95,6 +97,31 @@ for (let i=0; i<likebtns.length;i++) {
         }
     } )
 }
+
+
+const likebtns2 = document.querySelectorAll(".WishButton_button");
+// console.log(likebtns2);
+for (let i=0; i<likebtns2.length;i++) {
+    likebtns2[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        // 좋아요 키고 끄는 기능
+        if (!likebtns2[i].classList.contains("active")) {
+            likebtns2[i].classList.remove("active");
+            liketoast.style.display = "block";
+            setTimeout(()=>{
+                liketoast.style.display = "none";
+            }, 1500)
+        } else {
+            likebtns2[i].classList.add("active");
+            cancel_liketoast.style.display="block";
+            setTimeout(()=>{
+                cancel_liketoast.style.display="none";
+            }, 1500)}
+        })
+}
+
+
+
 
 
 const onelab_page = document.querySelectorAll(".main-container");
@@ -126,8 +153,8 @@ tabpages[0].addEventListener("click", (e)=> {
     }
 })
 
-// 장소 공유 눌렀을 때 열리는 기능
-tabpages[2].addEventListener("click", ()=> {
+// 자료 공유 눌렀을 때 열리는 기능
+tabpages[1].addEventListener("click", ()=> {
     if (onelab_page[1].style.display === "none") {
         onelab_page.forEach((page)=>{
             page.style.display = "none";
@@ -136,6 +163,55 @@ tabpages[2].addEventListener("click", ()=> {
     } else {
         onelab_page[1].style.display = "none";
     }
+})
+
+// 장소 공유 눌렀을 때 열리는 기능
+tabpages[2].addEventListener("click", ()=> {
+    if (onelab_page[2].style.display === "none") {
+        onelab_page.forEach((page)=>{
+            page.style.display = "none";
+        })
+        onelab_page[2].style.display = "block";
+    } else {
+        onelab_page[2].style.display = "none";
+    }
+})
+// 공모전/대회 눌렀을 때 열리는 기능
+tabpages[3].addEventListener("click", ()=> {
+    if (onelab_page[3].style.display === "none") {
+        onelab_page.forEach((page)=>{
+            page.style.display = "none";
+        })
+        onelab_page[3].style.display = "block";
+    } else {
+        onelab_page[3].style.display = "none";
+    }
+})
+
+// 커뮤니티 눌렀을 때 열리는 기능
+tabpages[4].addEventListener("click", ()=> {
+    if (onelab_page[4].style.display === "none") {
+        onelab_page.forEach((page)=>{
+            page.style.display = "none";
+        })
+        onelab_page[4].style.display = "block";
+    } else {
+        onelab_page[4].style.display = "none";
+    }
+})
+// 관리하기 눌렀을 때 열리는 기능
+const manage_onelab_btn = document.querySelectorAll(".manage-onelab-btn");
+manage_onelab_btn.forEach((btn)=>{
+    btn.addEventListener("click", ()=>{
+        if (onelab_page[5].style.display === "none") {
+            onelab_page.forEach((page)=>{
+                page.style.display = "none";
+            })
+            onelab_page[5].style.display = "block";
+        } else {
+            onelab_page[5].style.display = "none";
+        }
+    })
 })
 
 
@@ -205,4 +281,39 @@ save_profile_change_btn.addEventListener("click", ()=> {
 const confirmed_btn_modal = document.querySelector("#alertify-o-ok");
 confirmed_btn_modal.addEventListener("click", ()=> {
     profile_change_confirm_modal.style.display = "none";
+})
+
+
+// 공모전 대회 목록의 더보기 눌럿을 때의 기능
+const more_view_btn = document.querySelector("#more-view-btn");
+// console.log(more_view_btn);
+const page_exhibition = document.querySelectorAll(".swiper-slide");
+// console.log(page_exhibition[0].classList.contains("show"));
+
+more_view_btn.addEventListener("click", ()=>{
+    if (!page_exhibition[8].classList.contains("show") && !page_exhibition[5].classList.contains("show")) {
+        for (let j =3;j<6;j++) {
+            page_exhibition[j].classList.add("show");
+        }
+    } else if (!page_exhibition[8].classList.contains("show")) {
+        for (let t = 6;t<9;t++) {
+            page_exhibition[t].classList.add("show");
+        }
+    }
+
+})
+
+// 더보기 닫기 눌렀을 때의 기능
+const close_more_view_btn = document.querySelector("#close-view-btn");
+
+close_more_view_btn.addEventListener("click", ()=>{
+    if (page_exhibition[8].classList.contains("show") && page_exhibition[5].classList.contains("show")) {
+        for (let i =6; i<9;i ++) {
+            page_exhibition[i].classList.remove("show");
+        }
+    } else if (page_exhibition[5].classList.contains("show")) {
+        for (let j=3; j< 6; j ++) {
+            page_exhibition[j].classList.remove("show");
+        }
+    }
 })
