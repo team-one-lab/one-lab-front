@@ -1,14 +1,14 @@
-const goTopButton = document.querySelector('.float-top-btn')
+const goTopButton = document.querySelector(".float-top-btn");
 
 // 마우스 휠을 위 방향으로 돌릴 때, 상향 버튼 나타나기
-window.addEventListener('wheel', (e) => { 
+window.addEventListener("wheel", (e) => {
     // e.deltaY가 양수면 down wheel, 음수면 up wheel
     // e.deltaX가 양수면, 오른쪽 음수면 왼쪽
     // console.log(e.deltaY, e.deltaX);
-    if(e.deltaY < 0) {
-        goTopButton.classList.add('active')
-    }else {
-        goTopButton.classList.remove('active')
+    if (e.deltaY < 0) {
+        goTopButton.classList.add("active");
+    } else {
+        goTopButton.classList.remove("active");
     }
 });
 
@@ -20,57 +20,53 @@ const scroll = () => {
             scroll();
         }, 5);
     }
-}
-goTopButton.addEventListener('click', scroll)
+};
+goTopButton.addEventListener("click", scroll);
 
-const replyButtons = document.querySelectorAll(".comment-of-comment-btn")
-const replyList = document.querySelector(".comment-reply-list-container")
+const replyButtons = document.querySelectorAll(".comment-of-comment-btn");
+const replyList = document.querySelector(".comment-reply-list-container");
 
 replyButtons.forEach((button) => {
-    button.addEventListener("click", function(e) {
-        button.classList.toggle('active')
-        replyList.classList.toggle('active')
-    })
-})
+    button.addEventListener("click", function (e) {
+        button.classList.toggle("active");
+        replyList.classList.toggle("active");
+    });
+});
 
-const noLoginWriteBtns = document.querySelectorAll("div.comment-disable-write-form")
-const closeButton = document.querySelector("button.close-btn")
+const noLoginWriteBtns = document.querySelectorAll("div.comment-disable-write-form");
+const closeButton = document.querySelector("button.close-btn");
 
 noLoginWriteBtns.forEach((button) => {
-    button.addEventListener('click', function(e) {
-        console.log('ss')
-        document.querySelector(".login-modal").classList.add('active')
-    })
-})
+    button.addEventListener("click", function (e) {
+        document.querySelector(".login-modal").classList.add("active");
+    });
+});
 
-closeButton.addEventListener('click', function(e) {
-    document.querySelector(".login-modal").classList.remove('active')
-})
+closeButton.addEventListener("click", function (e) {
+    document.querySelector(".login-modal").classList.remove("active");
+});
 
-const likeBtn = document.querySelector(".community-like-icon")
-likeBtn.addEventListener("click", function(e) {
-    likeBtn.classList.toggle('active')
-})
+const likeBtn = document.querySelector(".community-like-icon");
+likeBtn.addEventListener("click", function (e) {
+    likeBtn.classList.toggle("active");
+});
 
 const textareas = document.querySelectorAll(".comment-textarea");
 textareas.forEach((textarea) => {
-    textarea.addEventListener('click', function(e) {
+    textarea.addEventListener("click", function (e) {
         const parentContainer = textarea.closest(".comment-write-form");
         const okButton = parentContainer.querySelector(".comment-ok-btn");
-        okButton.classList.add('active');
-        e.target.classList.add('active')
+        okButton.classList.add("active");
+        e.target.classList.add("active");
     });
 });
 
 textareas.forEach((textarea) => {
-    textarea.addEventListener('input', function(e) {
+    textarea.addEventListener("input", function (e) {
         const parentContainer = textarea.closest(".comment-write-form");
         const countSpan = parentContainer.querySelector(".comment-form-count");
         const textLength = textarea.value.length;
         countSpan.textContent = textLength + "/2,000";
-        e.target.classList.add('active');
+        e.target.classList.add("active");
     });
 });
-
-
-

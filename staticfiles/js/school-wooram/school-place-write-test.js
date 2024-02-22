@@ -1,4 +1,4 @@
-const input = document.getElementById("base-image");
+const input = document.getElementById("attach");
 const thumbnail = document.querySelector("div.image");
 const cancel = document.querySelector("div.cancel");
 

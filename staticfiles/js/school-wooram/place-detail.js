@@ -26,9 +26,6 @@ const smallPic = document.querySelectorAll(".lazy-load-img");
 
 smallPic.forEach((list) => {
     list.addEventListener("click", (e) => {
-        console.log(list);
-        console.log(bigPic);
-        console.log(e.target.getAttribute("src"));
         bigPic.setAttribute("src", e.target.getAttribute("src"));
     });
 });
