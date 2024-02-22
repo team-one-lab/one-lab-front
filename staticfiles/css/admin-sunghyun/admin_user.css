@@ -147,42 +147,14 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
     justify-content: center;
     min-width: 63px;
     display: flex;
-    margin-right: 50px;
+    margin-right: 77px;
     
 }
 .min-3{
     margin-right: 30px;
 }
-.grid-px {
-    padding-left: 12px;
-    padding-right: 45px;
-    column-gap: 142px;
-    grid-auto-flow: column;
-    display: grid;
-}
-.col-center0 {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    display: none;
-    /* margin-top: 88px; */
-}
-.col-center {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    display: block;
-    /* margin-top: 88px; */
-}
-.col-center1 {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: none;
-    /* margin-top: 88px; */
-}
+
+
 .content-inverse{
     width: 31px;
     color: #fff;
@@ -808,6 +780,29 @@ button:hover {
     display: flex;
 }
 
+.col-center0 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    display: none;
+    /* margin-top: 88px; */
+}
+.col-center {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    display: block;
+    /* margin-top: 88px; */
+}
+.col-center1 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    /* margin-top: 88px; */
+}
 .mt-24{
     display: none;
     /* padding-left: 8px;
@@ -858,20 +853,14 @@ button:hover {
     fill: #8a8a8b;
 } */
 
+.grid-px {
+    padding-left: 12px;
+    padding-right: 45px;
+    column-gap: 124px;
+    grid-auto-flow: column;
+    display: grid;
+}
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    
-}
-th, td {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 3px;
-}
-th {
-    background-color: #f2f2f2;
-}
 
 .auth1{
     padding-left: 16px;
@@ -911,8 +900,11 @@ th {
     accent-color: #008243;
 
 }
+.id-user{
+    margin-right: 124px;
+}
 .email{ /* 이메일  */
-    padding-left: 35px;
+    padding-left: 62px;
     width: 200px;
 } 
 .name{ /* 이름  */
@@ -924,4 +916,7 @@ th {
 .type{ /* 회원 유형  */
     padding-left: 72px;
     margin-right: 48px;
+}
+.number{
+    padding-right: 20px;
 }

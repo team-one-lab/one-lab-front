@@ -37,7 +37,7 @@ admin_competition = 공모전/대회 관리 페이지
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
         <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
-        <script src="/staticfiles/js/admin-sunghyun/admin_user.js"></script>
+        
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>원랩(OneLab) 관리자페이지</title>
@@ -232,7 +232,7 @@ admin_competition = 공모전/대회 관리 페이지
                                             </span>
                                         </div>
                                         <div class="mt-32">
-                                            <button aria-label="filter" class="surface-none" type="button" id="two"
+                                            <!-- <button aria-label="filter" class="surface-none" type="button" id="two"
                                                     onclick="toggleDropdown('dropdownOptions2')">
                                                         <span class="over-nowrap1" style="width: 90px;">문의유형</span>  
                                                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 20px;"
@@ -247,7 +247,27 @@ admin_competition = 공모전/대회 관리 페이지
                                                         <a onclick="selectOption('대회공모전 문의','two')">대회공모전 문의</a>
                                                         
                                                         
-                                                    </div>
+                                                    </div> --> <div class="relative1">
+                                              
+                                        <div class="relative-0">
+                                            <button aria-label="filter" class="surface-none " type="button" id="two" onclick="toggleDropdown('dropdownOptions2')">
+                                                <span class="over-nowrap">공지 유형</span>
+                                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-h">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-content" id="dropdownOptions2">
+                                                <a  onclick="selectOption('전체공지', 'two')" class="all">전체공지</a>
+                                                <a  onclick="selectOption('원랩문의', 'two')" class="nomal">원랩문의</a>
+                                                <a  onclick="selectOption('장소공유', 'two')" class="u-student">장소공유</a>
+                                                <a  onclick="selectOption('학교문의', 'two')" class="universe">학교문의</a>
+                                                <a  onclick="selectOption('커뮤니티', 'two')" class="universe">커뮤니티</a>
+                                            </div>
+                                        </div> 
+                                        
+                                        
+                                    </div>
                                             <div class="shrink-0">
                                                 <div class="relative">
                                                     
@@ -270,8 +290,22 @@ admin_competition = 공모전/대회 관리 페이지
                                             <!-- </div> -->
                                             
                                         </div>
+                                    
                                         
                                         <div class="content_primary">
+                                            <!-- <label class="min-1">전체선택
+                                                <input type='checkbox'
+                                                name='animal' 
+                                                class="check"
+                                                value='selectall'
+                                                style="display: none;
+                                                "
+                                                onclick='selectAll(this)'>
+                                            </label> -->
+                                            <!-- <div class="min-2">번호</div>
+                                            <div class="min-2">제목</div>
+                                            <div class="min-1">공지유형</div> -->
+                                        <div class="grid-px">
                                             <label class="min-1">전체선택
                                                 <input type='checkbox'
                                                 name='animal' 
@@ -281,48 +315,66 @@ admin_competition = 공모전/대회 관리 페이지
                                                 "
                                                 onclick='selectAll(this)'>
                                             </label>
-                                            <div class="min-3">번호</div>
-                                            <div class="min-2">제목</div>
-                                        <div class="grid-px">
+                                        
+                                            <div class="min-2">번호</div>
+                                        <div class="colunm">
+                                            <div class="min-3">제목</div>
+                                            <div class="min-4">공지유형</div>
+                                        </div>
+                                            
+                                        <div class="grid-px1">
                                             <div>작성자</div>
+                                            
                                             <div>작성 날짜</div>
                                             <div>조회수</div>
+                                        </div>
+                                            
                                         </div>
                                     </div>
                                  
                                 <!--------공지사항 목록------------------------------------->
                                 <div class="col-center">
                                     <li class="user-list">
-                                        <input class="check2" name="num2" type="checkbox">1
+                                        <input class="check2" name="num2" type="checkbox">
+                                        <span class="number">1</span>
                                         <span class="email">공지사항1</span>
+                                        <span class="info">원랩문의</span>
                                         <span class="name">홍길동</span>
                                         <span class="date">2024.02.17</span>
                                         <span class="type">13</span>
                                     </li>
                                     <li class="user-list">
-                                        <input class="check2" name="num2" type="checkbox">2
+                                        <input class="check2" name="num2" type="checkbox">
+                                        <span class="number">2</span>
                                         <span class="email">공지사항2</span>
+                                        <span class="info">커뮤니티</span>
                                         <span class="name">조성현</span>
                                         <span class="date">2024.02.15</span>
                                         <span class="type">12</span>
                                     </li> 
                                     <li class="user-list">
-                                        <input class="check2" name="num2" type="checkbox">3
+                                        <input class="check2" name="num2" type="checkbox">
+                                        <span class="number">3</span>
                                         <span class="email">공지사항3</span>
+                                        <span class="info">장소공유</span>
                                         <span class="name">홍길동</span>
                                         <span class="date">2024.02.17</span>
                                         <span class="type">14</span>
                                     </li>
                                     <li class="user-list">
-                                        <input class="check2" name="num2" type="checkbox">4
+                                        <input class="check2" name="num2" type="checkbox">
+                                        <span class="number">4</span>
                                         <span class="email">공지사항4</span>
+                                        <span class="info">자료공유</span>
                                         <span class="name">홍길동</span>
                                         <span class="date">2024.02.17</span>
                                         <span class="type">28</span>
                                     </li>
                                     <li class="user-list">
-                                        <input class="check2" name="num2" type="checkbox">5
+                                        <input class="check2" name="num2" type="checkbox">
+                                        <span class="number">5</span>
                                         <span class="email" style="margin-left: 4px;">공지사항5</span>
+                                        <span class="info">학교문의</span>
                                         <span class="name">김철수</span>
                                         <span class="date">2024.02.17</span>
                                         <span class="type">25</span>
@@ -330,6 +382,7 @@ admin_competition = 공모전/대회 관리 페이지
                                 
                                 </div>
     </body>
+    <script src="/staticfiles/js/admin-sunghyun/admin_user.js"></script>
     <script>
          function remove_tr(This) {//행 삭제
     //*4)closet:현재 엘리멘트에서 가장 가까운 조상을 반환

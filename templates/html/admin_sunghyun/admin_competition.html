@@ -37,7 +37,7 @@ admin_competition = 공모전/대회 관리 페이지
             href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
         />
         <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
-        <script src="/staticfiles/js/admin-sunghyun/admin_competition.js"></script>
+       
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>원랩(OneLab) 관리자페이지</title>
@@ -230,98 +230,159 @@ admin_competition = 공모전/대회 관리 페이지
                                             </ul>
                                         </div>
                                         <!------------------------------------------------------------------------->
+                                        <div>
+                                            <span class="font-content">공모전 목록</span>
+                                            <span class="ml-4">5
+                                            </span>
+                                        </div>
                                         <div class="mt-32">
-                                            <div>
-                                                <span class="font-content">공모전/대회</span>
-                                                <span class="ml-4">0
-                                                </span>
-                                                
+                                            <!-- <button aria-label="filter" class="surface-none" type="button" id="two"
+                                                    onclick="toggleDropdown('dropdownOptions2')">
+                                                        <span class="over-nowrap1" style="width: 90px;">문의유형</span>  
+                                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 20px;"
+                                                        class="shrink-h">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z"></path>
+                                                        </svg> 
+                                                    </button>
+                                                    <div class="dropdown-content" id="dropdownOptions2" style="margin-top: 10px;">
+                                                        <a onclick="selectOption('원랩문의','two')">원랩문의</a>
+                                                        <a onclick="selectOption('자료공유 문의','two')">자료공유 문의</a>
+                                                        <a onclick="selectOption('장소공유 문의','two')">장소공유 문의</a>
+                                                        <a onclick="selectOption('대회공모전 문의','two')">대회공모전 문의</a>
+                                                        
+                                                        
+                                                    </div> --> <div class="relative1">
+                                              
+                                        <div class="relative-0">
+                                            <button aria-label="filter" class="surface-none " type="button" id="two" onclick="toggleDropdown('dropdownOptions2')">
+                                                <span class="over-nowrap">서울특별시</span>
+                                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-h">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27 8.42a1.076 1.076 0 0 1 1.587-.13L12 14.832l7.143-6.544a1.076 1.076 0 0 1 1.586.13 1.26 1.26 0 0 1-.122 1.696L12 18l-8.607-7.885A1.26 1.26 0 0 1 3.27 8.42Z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <div class="dropdown-content" id="dropdownOptions2">
+                                                <a  onclick="selectOption('지역전체', 'two')" class="all">지역전체</a>
+                                                <a  onclick="selectOption('원랩문의', 'two')" class="nomal">원랩문의</a>
+                                                <a  onclick="selectOption('장소공유', 'two')" class="u-student">장소공유</a>
+                                                <a  onclick="selectOption('학교문의', 'two')" class="universe">학교문의</a>
+                                                <a  onclick="selectOption('커뮤니티', 'two')" class="universe">커뮤니티</a>
+                                            </div>
+                                        </div> 
+                                        
+                                        
+                                        
+                                    </div>
+                                            <div class="shrink-0">
+                                                <div class="relative">
+                                                    
+                                                </div>
                                             </div>
                                             <div class="relative1">
-                                                <button class="auth0" style="margin-right: 20px;">등록</button>
-                                                <button class="auth1">삭제</button>
+                                            <div>
+                                                <div class="relative">
+                                                    <button class="auth0">글 작성</button>
+                                                    <!---admin_notification-write.html로 이동-->
+                                                    
+                                                </div> 
+                                            </div> 
+                                            
+                                                
+                                            
+                                                
                                             </div>
-                                            <div class="justify-end">
-                                                <!-- <button aria-label="button" class="relative-category" type="button" onclick="addList()">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="content-6">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.133 3.333a.867.867 0 0 1 1.734 0v3.8h3.8a.867.867 0 0 1 0 1.734h-3.8v3.8a.867.867 0 0 1-1.734 0v-3.8h-3.8a.867.867 0 0 1 0-1.734h3.8v-3.8Z"></path>
-                                                    </svg>
-                                                    공모전 추가
-                                                </button> -->
-                                            </div>
+                                            <button class="auth1">삭제</button>
+                                            <!-- </div> -->
+                                            
                                         </div>
+                                    
+                                        
                                         <div class="content_primary">
-                                            <div class="grid-px">
-                                                <div class="min-1" style="width: 62px;">전체
-                                                    <input type='checkbox'
-                                                    name='animal' 
-                                                    class="check"
-                                                    value='selectall'
-                                                    onclick='selectAll(this)'>
-                                                </div>
-                                                <div>
-                                                    번호
-                                                </div>
-                                            </div>
-                                            <div class="min-5" style="margin-right: 35px;">제목</div>
+                                            <!-- <label class="min-1">전체선택
+                                                <input type='checkbox'
+                                                name='animal' 
+                                                class="check"
+                                                value='selectall'
+                                                style="display: none;
+                                                "
+                                                onclick='selectAll(this)'>
+                                            </label> -->
+                                            <!-- <div class="min-2">번호</div>
+                                            <div class="min-2">제목</div>
+                                            <div class="min-1">공지유형</div> -->
                                         <div class="grid-px">
-                                            <div>지역</div>
-                                            <div style="
-                                            padding-left: 18px;
-                                            margin-left: 0px;
-                                        ">작성자</div>
-                                            <div style="
-                                            margin-left: -8px;
-                                        ">작성날짜</div>
+                                            <label class="min-1">전체선택
+                                                <input type='checkbox'
+                                                name='animal' 
+                                                class="check"
+                                                value='selectall'
+                                                style="display: none;
+                                                "
+                                                onclick='selectAll(this)'>
+                                            </label>
+                                        
+                                            <div class="min-2">번호</div>
+                                        <div class="colunm">
+                                            <div class="min-3">제목</div>
+                                            <div class="min-4">지역</div>
                                         </div>
-                                </div>
-                               <!----------------목록 시작(참고설명 : 버튼의 하이퍼링크에는 admin_competition-write.html과 연결되야합니다.--------------------------------------->
-                                <!-----------결제내역 목록------------> 
+                                            
+                                        <div class="grid-px1">
+                                            <div>작성자</div>
+                                            
+                                            <div>작성 날짜</div>
+                                            <div>조회수</div>
+                                        </div>
+                                            
+                                        </div>
+                                    </div>
+                                 
+                                <!--------공지사항 목록------------------------------------->
                                 <div class="col-center">
                                     <li class="user-list">
                                         <input class="check2" name="num2" type="checkbox">
                                         <span class="number">1</span>
-                                        <span class="email">공모전 제목1</span>
-                                        <span class="date">서울특별시 강남구</span>
-                                        <span class="name">관리자</span>
-                                        <span class="type">2024.02.16</span>
-                                       
+                                        <span class="email">공모전1</span>
+                                        <span class="info">서울특별시</span>
+                                        <span class="name">홍길동</span>
+                                        <span class="date">2024.02.17</span>
+                                        <span class="type">13</span>
                                     </li>
                                     <li class="user-list">
                                         <input class="check2" name="num2" type="checkbox">
                                         <span class="number">2</span>
-                                        <span class="email">공모전 제목2</span>
-                                        <span class="date">서울특별시 용산구</span>
-                                        <span class="name">관리자</span>
-                                        <span class="type">2024.02.18</span>
-                                        
+                                        <span class="email">공모전2</span>
+                                        <span class="info">대구광역시</span>
+                                        <span class="name">조성현</span>
+                                        <span class="date">2024.02.15</span>
+                                        <span class="type">12</span>
                                     </li> 
                                     <li class="user-list">
                                         <input class="check2" name="num2" type="checkbox">
                                         <span class="number">3</span>
-                                        <span class="email">공모전 제목3</span>
-                                        <span class="date">서울특별시 강남구</span>
-                                        <span class="name">관리자</span>
-                                        <span class="type">2024.02.18</span>
-                                        
+                                        <span class="email">공모전3</span>
+                                        <span class="info">서울특별시</span>
+                                        <span class="name">홍길동</span>
+                                        <span class="date">2024.02.17</span>
+                                        <span class="type">14</span>
                                     </li>
                                     <li class="user-list">
                                         <input class="check2" name="num2" type="checkbox">
                                         <span class="number">4</span>
-                                        <span class="email">공모전 제목4</span>
-                                        <span class="date">서울특별시 강남구</span>
-                                        <span class="name">관리자</span>
-                                        <span class="type">2024.02.18</span>
-                                        
+                                        <span class="email">공모전4</span>
+                                        <span class="info">부산광역시</span>
+                                        <span class="name">홍길동</span>
+                                        <span class="date">2024.02.17</span>
+                                        <span class="type">28</span>
                                     </li>
                                     <li class="user-list">
                                         <input class="check2" name="num2" type="checkbox">
                                         <span class="number">5</span>
-                                        <span class="email">공모전 제목5</span>
-                                        <span class="date">서울특별시 강남구</span>
-                                        <span class="name">관리자</span>
-                                        <span class="type">2024.02.18</span>
-                                       
+                                        <span class="email" style="margin-left: 4px;">공모전5</span>
+                                        <span class="info">광주광역시</span>
+                                        <span class="name">김철수</span>
+                                        <span class="date">2024.02.17</span>
+                                        <span class="type">25</span>
                                     </li>
                                 
                                 </div>
@@ -330,4 +391,6 @@ admin_competition = 공모전/대회 관리 페이지
                 </div>
             </div>
     </body>
+    <script src="/staticfiles/js/admin-sunghyun/admin_competition.js"></script>
+    <script src="/staticfiles/js/admin-sunghyun/admin_user.js"></script>
 </html>
