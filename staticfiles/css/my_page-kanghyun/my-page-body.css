@@ -549,7 +549,7 @@ h4{
     line-height: 1.5;
     text-align: right;
     word-break: break-all;
-    color: #00c4c4;
+    color: #008243;
 }
 
 .my-page-accumulate-divider{
@@ -636,7 +636,7 @@ h4{
 }
 
 .my-page-project-info-highlight{
-    color: #00c4c4;
+    color: #008243;
     font-weight: 700;
 }
 
@@ -1402,14 +1402,18 @@ svg.wish-icon>path {
 
 .SearchResult_cardContainer {
     margin-top: 20px;
+    width: 100%;
 }
 
 /* 장소 공유 스크롤 배너 */
+/* .SearchResult_cardContainer > div {
+    width: 200px;
+} */
+#search-scroll-banner {
+    width: 192px;
+}
 .search-result-scroll-banner-container {
-    position: fixed;
-    z-index: 990;
-    width: 195px;
-    right: 204px;
+    width: 198px;
 }
 
 .search-result-scroll-banner {
@@ -1424,26 +1428,25 @@ svg.wish-icon>path {
 }
 
 .search-result-banner-inner {
-    width: 98%;
-    height: 98%;
+    width: 100%;
+    height: 100%;
     margin-bottom: 16px;
-    border: 0px;
+    
     border-radius: 10px;
     cursor: pointer;
-    background-color: #c8e6c9;
+    background-color: #fff;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 5px 5px 5px gray;
-    z-index: 999;
+    
+    border: 1px solid #eaeaea;
 }
 
 .search-result-inner-inner {
     width: 70%;
     height: 18%;
-    box-shadow: 5px 5px 5px gray;
     background-color: #ffffffea;
     border-radius: 10px;
     margin: 15px auto 10px;
@@ -2132,8 +2135,8 @@ textarea {
 }
 
 .button-button.button-primary.button-contained {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
 }
 
@@ -2374,9 +2377,9 @@ div.image {
     box-sizing: border-box;
 }
 .wz.button.primary {
-    background-color: #00c4c4;
+    background-color: #008243;
     color: #fff;
-    border-color: #00c4c4;
+    border-color: #008243;
 }
 
 .btn-div2:after {
