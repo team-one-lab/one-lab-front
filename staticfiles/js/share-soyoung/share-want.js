@@ -40,27 +40,22 @@ subLists.addEventListener('click', function(e) {
 
 
 
-// 프로젝트 유형 선택 시 색과 안내 멘트 속성
-$("label.radio").on("click", function(e) {
-    var clickedBtn = $(this);
-    var activeBtn = clickedBtn.find('span.radio-icon');
-    var moreInfo = clickedBtn.find('span.radios-more-info')
+//  자료 유형 선택 시 색과 안내 멘트 속성
+const shareRadio = document.querySelector('.radio')
+const activeRadio = document.querySelector('span.radio-icon')
+const moereInfo = document.querySelector('.section-container.project-intro')
 
-    // activeBtn.toggleClass('active')
-    // moreInfo.css('display', 'block')
-
-    $("label.radio").not(clickedBtn).find('span.radio-icon').removeClass('active');
-    $("label.radio").not(clickedBtn).find('span.radios-more-info').css('display', 'none');
-
-    $("section.section-container.project-intro").css('display', 'block')
-    if(activeBtn.hasClass('active')){
+shareRadio.addEventListener('click', function(e) {
+    activeRadio.classList.toggle('active')
+    if(activeRadio.classList[1]){
+        moereInfo.style.display = 'block'
     }else {
-        activeBtn.toggleClass('active')
-        moreInfo.css('display', 'block')
+        moereInfo.style.display = 'none'
     }
+    
 })
 
-// 자료 유형 선택
+// 자료 정보 선택
 const fileTypeBtns = document.querySelectorAll('button.maker-type-select-btn')
 fileTypeBtns.forEach((btn) => {
     btn.addEventListener('click', function(e) {
@@ -99,17 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const fileList = event.target.files;
         if (fileList.length > 0) {
             const file = fileList[0];
-    
-            // // 파일 객체로부터 MIME 유형 가져오기
-            // const mimeType = file.type;
-    
-            // // FileReader가 지원하는 MIME 유형 확인
-            // if (mimeType.startsWith('image/') || mimeType.startsWith('video/') || mimeType.startsWith('audio/') || mimeType === 'text/plain') {
-            //     // FileReader가 지원하는 유형이면 처리
-            // } else {
-            //     // FileReader가 지원하지 않는 유형일 경우 처리
-            //     console.error('이 파일 형식은 FileReader에서 지원되지 않습니다.');
-            // }
     
             displayPreviewImage(file);
         }

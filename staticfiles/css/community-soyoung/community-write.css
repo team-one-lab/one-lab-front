@@ -1380,6 +1380,13 @@ span.introduction-count {
     color: #868e96;
 }
 
+button {
+    cursor: pointer;
+}
+
+input[type=file] {
+    cursor: pointer;
+}
 
 /* div.textarea-input> .active {
     border: 1px solid #00c4c4 !important;

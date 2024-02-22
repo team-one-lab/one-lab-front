@@ -3056,3 +3056,8 @@ button.update-btn::after {
     margin-left: 6px;
     content: "|";
 }
+
+div.store-badges.small span {
+    padding: 4px 7px;
+    font-size: 9px;
+}

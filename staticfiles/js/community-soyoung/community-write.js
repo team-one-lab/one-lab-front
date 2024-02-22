@@ -7,6 +7,7 @@ announceBtn.addEventListener("click", function(e) {
 
 
 // 파일 입력 필드에 변화가 있을 때 실행될 함수
+const errorMessage = document.querySelector('div.upload-error')
 document.getElementById("file-input").addEventListener('change', function(event) {
     var fileList = document.getElementById('file-list');
     var files = event.target.files;
@@ -41,16 +42,20 @@ document.getElementById("file-input").addEventListener('change', function(event)
                 };
             })(file);
             reader.readAsDataURL(file);
+            errorMessage.style.display = 'none'; 
         } else {
-            $("div.upload-error").css('display', 'block'); // 이미지 파일이 아닌 경우 에러 메시지 표시
+            errorMessage.style.display = 'block';  // 이미지 파일이 아닌 경우 에러 메시지 표시
         }
     }
 });
 
 // 업로드 취소 버튼에 클릭 이벤트 추가
-$(document).on('click', 'button.cancel-upload', function(event) {
-    $(this).closest('li.upload-item').remove(); // 해당 파일 제거
-});
+const cancelBtns = document.querySelectorAll('button.cancel-upload')
+cancelBtns.forEach((cancelBtn) => {
+    cancelBtn.addEventListener('click', function(e) {
+        cancelBtn.parentElement.remove;
+    })
+})
 
 
 // 제목 글자수 계산

@@ -436,11 +436,22 @@ div.apply-button {
     cursor: pointer;
 }
 
+/* 지원 후, 비활성화 버튼 */
+div.apply-button.readonly{
+    display: none;
+    opacity: 0.5;
+}
+
+/* 지원 후, 수락되었을 때 소통url 나오는 버튼 */
+div.apply-button.participate {
+    display: none;
+}
+
 /* 좋아요 */
 button.wish-btn {
     position: absolute;
-    top: 16px;
-    right: 475px;
+    top: 390px;
+    right: 315px;
     z-index: 9;
     outline: none;
     width: 44px;
@@ -455,8 +466,8 @@ button.like-btn.active svg path {
 
 button.wish-btn>svg {
     margin: 0 auto;
-    width: 24px;
-    height: 24px;
+    width: 45px;
+    height: 45px;
     pointer-events: none;
     will-change: transform;
 }
@@ -482,4 +493,189 @@ svg.wish-icon path.like-icon {
     stroke: #f2f4f6;
     stroke-width: 2px;
     transition: fill .25s ease-in-out;
+}
+
+/* 모달창 */
+div.onelab-modal-url {
+    position: static;
+    display: none;
+}
+
+div.onelab-modal-apply {
+    position: static;
+    display: none;
+}
+
+div.onelab-modal-apply-ok {
+    position: static;
+    display: none;
+}
+
+div.onelab-modal-container {
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition-property: opacity;
+    z-index: 20000;
+    background: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition-duration: 80ms;
+}
+
+div.onelab-modal-container-inner {
+    transform: none;
+    position: relative;
+    transition-property: opacity;
+    transition-timing-function: ease-out;
+    outline: none;
+    min-height: 100%;
+    transition-duration: 80ms;
+}
+
+div.onelab-modal-box {
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+
+div.onelab-modal-box-inner {
+    display: inline-block;
+    margin: 5%;
+    box-shadow: 0 2px 6px rgba(0,0,0,.4);
+    background: #fff;
+    width: 400px;
+    position: relative;
+    padding-top: 56px;
+    height: 100%;
+    text-align: left;
+}
+
+div.onelab-modal-wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 16px 32px 32px;
+    max-width: 400px;
+}
+
+p.onelab-modal-title {
+    line-height: 28px;
+    color: #44484b;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 24px;
+    word-break: keep-all;
+}
+
+div.onelab-modal-buttons {
+    margin-top: 31px;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 18px;
+}
+
+div.onelab-modal-buttons {
+    display: grid;
+}
+
+button.onelab-modal-btn {
+    position: relative;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0);
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+button.onelab-modal-btn.go-member-btn {
+    white-space: nowrap;
+    padding: 9px 23px;
+    height: 48px;
+    font-size: 16px;
+    color: #008243;
+    position: relative;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border: 1px solid #008243;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0);
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+button.go-member-btn span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+span.go-member-text, span.go-to-login-text {
+    vertical-align: top;
+}
+
+button.onelab-modal-btn.go-to-login-btn {
+    border-color: #008243;
+    background-color: #008243;
+    color: #fff;
+    white-space: nowrap;
+    padding: 9px 23px;
+    height: 48px;
+    font-size: 16px;
+}
+
+button.close-btn {
+    padding: 0;
+    height: auto;
+    width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: 16px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    transition: color .2s;
+    z-index: 50001;
+    margin: 0!important;
+    border: 0!important;
+    border-radius: 50%;
+    background: rgba(255,255,255,.7);
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #495057;
+}
+
+span.close-icon {
+    vertical-align: top;
+}
+
+svg.close-svg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+}
+
+button.onelab-modal-btn.go-member-btn:hover {
+    background-color: #d5f1f1;
+}
+
+button.onelab-modal-btn.go-to-login-btn:hover {
+    background-color: #0aa7a7;
+}
+
+div.onelab-modal.active {
+    display: block;
 }

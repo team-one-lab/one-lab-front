@@ -6,71 +6,6 @@ announceBtn.addEventListener("click", function(e) {
 });
 
 
-
-$(".input-member-email").on("input", function() {
-    var inputValue = $(this).val().trim();
-    var insertButton = $(".insert-btn");
-
-    if (inputValue !== "") {
-      insertButton.css({
-        "background-color": "#363a3e",
-        "border-color": "#363a3e",
-        "color": "#fff",
-        "cursor": "pointer",
-        "pointer-events": "auto",
-        "opacity": "0.9"
-      });
-      insertButton.on("mouseover", function() {
-        $(this).css("opacity", "1");
-      });
-    } else {
-      insertButton.css({
-        "background-color": "#495057",
-        "border-color": "#495057",
-        "color": "#fff",
-        "cursor": "default",
-        "pointer-events": "none",
-        "opacity": "0.4"
-      });
-    }
-    insertButton.on("mouseout", function() {
-          $(this).css("opacity", "0.9");
-      });
-  });
-
-
-
-$(".insert-btn").on("click", function() {
-    var inputValue = $('.input-member-email').val();
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    
-    if (emailPattern.test(inputValue)) {
-        $(".helper-message-email").css({"display": "none"})
-        $('.input-member-email').css({"border": "1px solid #dde2e6"})
-        
-    }else {
-        $(".helper-message-email").css({"display": "block"})
-        $('.input-member-email').css({"border" : "1px solid #e54545"})
-    }
-});
-
-
-$("input[type=text]").on("input", function(e) {
-    var inputValue = $(this).val().trim();
-    var closestSection = $(e.target).closest('.open-link-fields');
-    var childElementA = closestSection.find('a.go-link-btn');
-    var childElementB = closestSection.find('button.go-link-btn');
-
-    if (inputValue !== "") {
-        console.log(childElementA)
-        childElementA.css({"display":"inline-flex"})
-        childElementB.css({"display":"none"})
-    }else {
-        childElementA.css({"display":"none"})
-        childElementB.css({"display":"inline-flex"})
-    }
-});
-
 // 제목 작성시 남은 글자수 계산
 const inputField = document.getElementById('title-input');
 const helperMsg = document.querySelector('.helper-msg');
@@ -160,8 +95,68 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// 배너(이미지 파일 업로드시 미리보기, x버튼 누르면 사라지고 원상복구)
+document.addEventListener("DOMContentLoaded", function() {
+    const fileDOM = document.querySelector('.file.banner');
+    const prevImgField = document.querySelector('.prev-img-field.banner');
+    const closeButton = document.querySelector('.close-btn.banner');
+    const buttonWrapper = document.querySelector('.img-form-field-btn-wrapper.banner');
+  
+    fileDOM.addEventListener('change', () => {
+        const reader = new FileReader();
+        
+        buttonWrapper.style.display = 'none'; // 등록하기 버튼 숨기기
+        prevImgField.style.display = 'block'; // 미리보기 이미지 필드 보이기
+        closeButton.style.display = 'inline-block'; // x 버튼 보이기
+  
+        reader.onload = ({ target }) => {
+            const previewImg = prevImgField.querySelector('.preview-img.banner');
+            previewImg.src = target.result; // 선택한 이미지 파일의 데이터 URL을 미리보기 이미지의 src에 할당
+        };
+  
+        reader.readAsDataURL(fileDOM.files[0]); // 이미지 파일을 읽어들임
+    });
+  
+    closeButton.addEventListener('click', () => {
+        buttonWrapper.style.display = 'block'; // 등록하기 버튼 보이기
+        prevImgField.style.display = 'none'; // 미리보기 이미지 필드 숨기기
+        closeButton.style.display = 'none'; // x 버튼 숨기기
+        fileDOM.value = ''; // 파일 입력 필드 초기화
+    });
+  });
 
 
+// 상세 내용 글자 수 계산
+const textarea = document.querySelector('.textarea-input textarea');
+const formFieldHelper = document.querySelector('.form-field-helper');
+
+textarea.addEventListener('input', function() {
+    // textarea에 입력된 글자 수 계산
+    const length = textarea.value.length;
+    
+    // 최대 글자 수는 2000
+    const maxLength = 2000;
+    
+    // 남은 글자 수를 계산합니다.
+    const remaining = maxLength - length;
+    
+    formFieldHelper.textContent = remaining + '자 남음';
+});
+
+
+textarea.addEventListener('focus', function() {
+    // textarea가 focus를 받았을 때 border 색을 변경
+    textarea.style.borderColor = '#008243';
+});
+
+// 문서 전체에 click 이벤트를 추가합니다.
+document.addEventListener('click', function(event) {
+    // 클릭된 엘리먼트가 textarea가 아닌 경우에만 실행
+    if (!event.target.closest('.textarea-input')) {
+        // textarea 외부를 클릭했을 때 textarea의 border 색을 변경
+        textarea.style.borderColor = '#dde2e6';
+    }
+});
 
 
 
