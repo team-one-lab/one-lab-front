@@ -648,7 +648,7 @@ button.go-member-btn span {
     vertical-align: top;
 }
 
-span.go-member-text, span.go-to-login-text {
+span.go-member-text, span.cancel-text {
     vertical-align: top;
 }
 
@@ -827,3 +827,5 @@ button.update-btn::after {
     margin-left: 6px;
     content: "|";
 }
+
+

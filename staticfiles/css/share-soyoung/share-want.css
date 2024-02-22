@@ -1718,7 +1718,8 @@ div.category-node-expand-btn {
     transform: rotate(180deg);
 }
 
-ul.category-node-items {
+ul.category-node-items.active {
+    height: 176px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1773,7 +1774,12 @@ svg.modal-down-icon-svg {
 }
 
 ul.category-node-items {
-    display: none;
+    /* display: none; */
+    height: 0;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    transition: height .15s ease-in;
 }
 
 div.category-node-item:hover {
@@ -1782,6 +1788,7 @@ div.category-node-item:hover {
 
 input[type=file] {
     display: none;
+    cursor: pointer;
 }
 
 .close-btn {
@@ -1790,5 +1797,9 @@ input[type=file] {
     border: none;
     font-size: 16px;
     color: #000;
+    cursor: pointer;
+}
+
+button {
     cursor: pointer;
 }
