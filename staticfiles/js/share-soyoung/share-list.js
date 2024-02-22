@@ -98,8 +98,4 @@ arrowBtn.addEventListener("click", function(e) {
     
 })
 
-// const leftArrowBtn = document.querySelector(".tabs-mobile-nav.left")   
-// leftArrowBtn.addEventListener("click", function(e) {
-//     leftArrowBtn.classList.remove('left')
-// })
 

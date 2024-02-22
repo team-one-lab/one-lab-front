@@ -627,7 +627,7 @@ button.like-button path {
 
 /*  */
 span.tab-label-text.active::after {
-    width: 57px;
+    width: 52px;
     font-size: 12px;
     font-weight: 700;
     line-height: 1.5;

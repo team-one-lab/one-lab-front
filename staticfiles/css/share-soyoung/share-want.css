@@ -1788,6 +1788,7 @@ div.category-node-item:hover {
 
 input[type=file] {
     display: none;
+    cursor: pointer;
 }
 
 .close-btn {
@@ -1796,5 +1797,9 @@ input[type=file] {
     border: none;
     font-size: 16px;
     color: #000;
+    cursor: pointer;
+}
+
+button {
     cursor: pointer;
 }

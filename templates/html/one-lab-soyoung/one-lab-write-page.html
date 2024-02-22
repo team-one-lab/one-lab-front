@@ -309,8 +309,8 @@
                                 </section>
                                 <section class="section-container" style="max-width: 630px;">
                                     <div class="section-header profile">
-                                        <h3 class="section-title member">첨부파일
-                                            <!-- <span class="blind-text-hidden">필수</span> -->
+                                        <h3 class="section-title">첨부파일
+                                            <span class="blind-text-hidden">필수</span>
                                         </h3>
                                     </div>
                                     <div class="section-content">
@@ -327,12 +327,67 @@
                                                         </div>
                                                     </label>
                                                     <em class="helper error"></em>
-                                                    <em class="helper img-form-field-helper">3MB 이하의 JPG, JPEG, PNG 파일</em>
-                                                    <em class="helper img-form-field-helper">해상도 300x300 픽셀 이상</em>
+                                                    <em class="helper img-form-field-helper">해상도 1500x700 픽셀 이상</em>
+                                                    <em class="helper img-form-field-helper">상세보기에 설명글과 함께 들어가는 이미지 입니다.</em>
                                                 </div>
                                                 <div class="prev-img-field" style="width: 100px; display: none; position: relative;">
                                                     <img class="preview-img" src="" alt="이미지 미리보기">
                                                     <button class="close-btn" type="button">&times;</button> <!-- x 버튼 추가 -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="section-container" style="max-width: 630px;">
+                                    <div class="section-header profile">
+                                        <h3 class="section-title member">배너 이미지
+                                            <!-- <span class="blind-text-hidden">필수</span> -->
+                                        </h3>
+                                    </div>
+                                    <div class="section-content">
+                                        <div class="make-profile-img-container">
+                                            <div class="img-form-field">
+                                                <div class="img-form-field-btn-wrapper banner">
+                                                    <label for="" class="img-file-btn-label">
+                                                        <button class="img-file-btn" type="button">
+                                                            <i class="icon-camera"></i>
+                                                            등록하기
+                                                        </button>
+                                                        <div class="img-file-btn-input">
+                                                            <input class="file banner" accept="image/jpg,image/jpeg,image/png" name="uploadFile" placeholder="" type="file" value="">
+                                                        </div>
+                                                    </label>
+                                                    <em class="helper error"></em>
+                                                    <em class="helper img-form-field-helper">해상도 2400x750 픽셀 이상</em>
+                                                    <em class="helper img-form-field-helper">등록하지 않을 시, 원랩 기본 이미지로 설정됩니다.</em>
+                                                </div>
+                                                <div class="prev-img-field banner" style="width: 100px; display: none; position: relative;">
+                                                    <img class="preview-img banner" src="" alt="이미지 미리보기">
+                                                    <button class="close-btn banner" type="button">&times;</button> <!-- x 버튼 추가 -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="section-container" style="max-width: 630px;">
+                                    <div class="section-header profile">
+                                        <h3 class="section-title">원랩 소개글
+                                            <span class="blind-text-hidden">필수</span>
+                                        </h3>
+                                    </div>
+                                    <div class="section-description">
+                                        <p>원랩을 소개해 주세요.</p>
+                                    </div>
+                                    <div class="section-content">
+                                        <div class="story-field-container">
+                                            <div class="textarea-field">
+                                                <div class="textarea-box">
+                                                    <div class="textarea-input">
+                                                        <textarea placeholder="소개글 작성" maxlength="2000" name="" rows="10" style="resize: none;" ></textarea>
+                                                    </div>
+                                                    <em class="form-field-helper">2000자 남음</em>
                                                 </div>
                                             </div>
                                         </div>
@@ -385,7 +440,7 @@
                                         </div>
                                     </div>
                                 </section>
-                                <section class="section-container" style="max-width: 630px;">
+                                <section class="section-container" style="max-width: 640px;">
                                     <div class="section-header profile">
                                         <h3 class="section-title">원랩 소통 URL</h3>
                                         <span class="blind-text-hidden">필수</span>
@@ -398,26 +453,6 @@
                                                     <input type="text" name="" id="" class="maker-input input-url" placeholder="홈페이지 URL 입력" value="">
                                                 </div>
                                             </div>
-                                        <button class="go-link-btn" type="button" style="min-width: 48px; height: 48px;">
-                                            <span>
-                                                <span class="go-link-btn-img">
-                                                    <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="go-link-btn-icon" aria-hidden="true" style="width: 20px; height: 20px;">
-                                                        <path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
-                                                        <path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </button>
-                                        <a href="" class="go-link-btn" style="min-width: 48px; height: 48px; display: none;">
-                                            <span>
-                                                <span class="go-link-btn-img">
-                                                    <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="go-link-btn-icon" aria-hidden="true" style="width: 20px; height: 20px;">
-                                                        <path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
-                                                        <path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </a>
                                     </div>
                                 </div>
                                 </section>
@@ -433,8 +468,8 @@
                                         </div>
                                     </div>
                                 </section>
-                                
-                                <section class="section-container" style="max-width: 630px;">
+
+                                <!-- <section class="section-container" style="max-width: 630px;">
                                     <div class="section-header profile">
                                         <h3 class="section-title member">SNS</h3>
                                     </div>
@@ -500,7 +535,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </section>
+                                </section> -->
                                 
                             </form>
                         </div>

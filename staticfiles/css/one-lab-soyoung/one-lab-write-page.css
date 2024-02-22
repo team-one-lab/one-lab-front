@@ -580,6 +580,7 @@ button.pre-save-btn {
     height: 40px;
     font-size: 14px; 
     border-radius: 999em;
+    cursor: pointer;
 }
 
 button.pre-save-btn:hover {
@@ -1233,6 +1234,7 @@ button.save-btn {
     vertical-align: middle;
     text-decoration: none;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 button.save-btn:hover {
@@ -1341,4 +1343,88 @@ span.text-field-fixed-text {
     top: 52.5%;
     transform: translateY(-50%);
     height: auto;
+}
+
+/* 내용 */
+div.story-field-container {
+    width: 100%;
+}
+
+div.textarea-field {
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin: 24px 0;
+}
+
+div.textarea-input {
+    display: block;
+    position: relative;
+    font-size: 17px;
+}
+
+div.textarea-input textarea {
+    margin-top: 8px;
+    line-height: 1.6em;
+    font-size: 15px;
+    font-weight: 400;
+    resize: vertical;
+    transition-property: border-color,height,padding-right,color;
+    transition-duration: .2s,0s;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.15);
+    background: #fff;
+    padding: 12px 0.94118em;
+    width: 100%;
+    vertical-align: middle;
+    color: rgba(0,0,0,.84);
+    box-sizing: border-box;
+}
+
+div.textarea-input::after {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: "wadizicon"!important;
+    font-weight: 400;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition-property: transform,opacity,-webkit-transform;
+    transition-duration: .2s;
+    opacity: 0;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    pointer-events: none;
+    color: #008243;
+    font-size: 1.41176em;
+}
+
+em.form-field-helper {
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+    margin-top: 4px;
+    font-style: normal;
+    color: #868e96;
+}
+
+div.textarea-input>textarea:hover {
+    border: 1px solid black;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type=file] {
+    cursor: pointer;
 }
