@@ -6,15 +6,12 @@ input.addEventListener("change", (e) => {
     const [file] = e.target.files;
     const reader = new FileReader();
 
-    console.log(file + "들어옴");
-    console.log(reader);
     reader.readAsDataURL(file);
     reader.addEventListener("load", (e) => {
         const path = e.target.result;
         cancel.style.display = "block";
 
         if (path.includes("image")) {
-            console.log(path);
             thumbnail.style.backgroundImage = `url(${path})`;
         } else {
             thumbnail.style.backgroundImage = `url('../../../staticfiles/images/like.png')`;

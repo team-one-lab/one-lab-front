@@ -4,7 +4,7 @@ html {
     system-ui,roboto,Helvetica Neue,
     Segoe UI,Apple SD Gothic Neo,Noto Sans KR,
     Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,
-    Segoe UI Symbol,sans-serif;
+    Segoe UI Symbol,sans-serif, 가비아 흘돋;
 }
 
 a, address, article, aside, audio, b, body, button, canvas, caption, dd, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, img, input, label, legend, li, nav, ol, p, pre, section, small, span, strong, summary, table, tbody, td, th, thead, time, tr, ul, video {
@@ -135,7 +135,7 @@ body li, body ol, body ul {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-around;
-    margin: 0 16px;
+    margin: 0 -122px;
 }
 
 .SpaceHeader_nav ul>li[aria-hidden] {
@@ -537,6 +537,7 @@ a.SpaceHeader_link, a:active.SpaceHeader_link, a:visited.SpaceHeader_link {
     line-height: 48px;
     letter-spacing: -1px;
     font-size: 32px;
+    font-family: GabiaHeuldot;
 }
 
 .SpaceStoreBox_description {

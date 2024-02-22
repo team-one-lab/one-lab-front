@@ -1293,9 +1293,11 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
     padding: 0;
 }
 
-.Checkbox_icon {
+.checkbox-icon {
     font-size: 20px;
-    display: block;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
     position: relative;
     transition-property: opacity,border-color,background-color;
     transition-duration: .15s;
@@ -1306,7 +1308,10 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
     background-color: #fff;
     width: 1em;
     height: 1em;
+    cursor: pointer;
 }
+
+
 
 .Checkbox_removeIcon {
     opacity: 0;
@@ -1321,8 +1326,8 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
     fill: #fff;
 }
 
-.Checkbox_icon .c_icon {
-    opacity: 0;
+.checkbox-icon .c_icon {
+    opacity: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1333,6 +1338,8 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
     height: 0.7791666667em;
     fill: #fff;
 }
+
+
 
 .PaymentTerms_title {
     margin-left: 8px;
@@ -1461,22 +1468,20 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
 }
 
 /* check 박스 css */
-.check_on.active:checked+.check_on, .Checkbox_checkbox .check_on:indeterminate+.Checkbox_icon {
+.check_on.active:checked+.check_on, .Checkbox_checkbox .check_on:indeterminate+.checkbox-icon {
     border: solid 1px #00b2b2;
     background-color: #00c4c4;
 }
 
-.active ~ span.Checkbox_icon {
-    
-    content: "g";
+.active ~ span.checkbox-icon {
+   
 }
 
-.Checkbox_checkbox:hover input ~ .Checkbox_icon {
-    background-color: #ccc;
-    cursor: pointer;
-}
 
-.Checkbox_checkbox.Checkbox_icon:after {
+
+
+
+.Checkbox_checkbox.checkbox-icon:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -1488,12 +1493,13 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
     transform: rotate(45deg);
 }
 
-.Checkbox_icon:after {
+.checkbox-icon:after {
     object-fit: cover;
-    border: solid 1px #00b2b2;
+    border: solid 1px #008244;
     background-color: #008244;
     color: white;
-    content: "V";
+    /* content: "V"; */
+    /* background-image: url(/staticfiles/images/cancel.png); */
     /* position: absolute; */
     display: none;
     transform: translate(0px, 30px);
@@ -1511,9 +1517,18 @@ label.SupporterClubPromotion_radio>.Radio_iconed:before {
     
 }
 
-.Checkbox_checkbox input:checked ~ .Checkbox_icon:after {
+.Checkbox_checkbox input:checked ~ .checkbox-icon:after {
     display: block;
     /* height: 18px; */
+}
+
+.Checkbox_input:checked+.checkbox-icon {
+    border: solid 1px #008243;
+    background-color: #008243;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 .select {
