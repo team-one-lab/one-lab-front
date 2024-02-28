@@ -73,9 +73,9 @@ img {
 }
 
 img#one-lab {
-    max-width: 50%;
+    max-width: 70%;
     vertical-align: top;
-    margin-left: 130px;
+    margin-left: 52px;
     border: 0;
     padding: 0;
 }
@@ -202,6 +202,14 @@ h4 {
     vertical-align: baseline;
 }
 
+hr {
+    margin: 0;
+    border: 0;
+    background-color: #f2f4f6;
+    width: 100%;
+    height: 8px;
+}
+
 .header-wrapper {
     position: relative;
     border-bottom: 1px solid #f2f4f6;
@@ -290,6 +298,7 @@ h4 {
 }
 
 .desktop-search-app-container {
+    margin-left: 50px;
     min-width: 360px;
     display: inline-block;
     position: relative;
@@ -436,36 +445,178 @@ button:not(:disabled) {
     transition: padding-top .25s;
 }
 
-.categorybar-main-categories-wrapper {
-    position: relative;
-    color: #212529;
-    max-width: 1440px;
+.notification-app-container {
     margin: 0 auto;
-    padding: 0 80px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
+    width: 800px;
+    padding: 32px 16px 0;
+    max-width: 680px;
+    color: #212529;
 }
 
-.categorybar-main-categories {
-    line-height: 28px;
+.notification-app-title-line {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.notification-app-main-header {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.notification-app-total {
     font-size: 16px;
     font-weight: 400;
-    display: flex;
-    height: 52px;
-    gap: 40px;
-    align-items: center;
-    overflow-x: auto;
-    scrollbar-width: none;
+    line-height: 1.5;
+    padding-left: 8px;
+    color: #008243;
 }
 
-.categorybar-main-category {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    height: 100%;
+.notification-app-setting-area {
+    display: table;
     cursor: pointer;
 }
+
+.notification-app-setting-icon-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.withicon-icon {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.notification-app-desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.notification-app-divider {
+    margin-bottom: -32px;
+    margin-left: 0;
+    width: 650px;
+}
+
+.divider-line {
+    margin: 32px 0;
+    background-color: #f2f4f6;
+    opacity: 1;
+    height: 2px;
+    border: 0;
+}
+
+.notification-date {
+    padding-top: 32px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-bottom: 16px;
+    color: #212529;
+}
+
+.notification-list-detail {
+    padding-top: 16px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding-bottom: 16px;
+    width: 100%;
+    text-align: left;
+}
+
+.notification-list-detail:hover {
+    background-color: #f8f9fc;
+    padding-top: 16px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding-bottom: 16px;
+    width: 100%;
+    text-align: left;
+}
+
+.notification-icon-area {
+    display: inline-flex;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.notification-type-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.notification-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 8px;
+}
+
+.notification-info-Line {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+}
+
+.notification-type {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    flex-grow: 2;
+    color: #495057;
+}
+
+.badge-container {
+    display: inline-flex;
+    position: relative;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+.badge-content {
+    border: solid 1px #f2f4f6;
+    background-color: #f2f4f6;
+    border-radius: 5px;
+    padding: 2px 6px;
+    height: 22px;
+    line-height: 1.5;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.notification-date-time {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 1px 0;
+    color: #adb5bd;
+}
+
+.notification-result {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
+    margin: 8px 0 0;
+    word-break: break-all;
+    color: #212529;
+}
+
 
 .notification-button-container {
     display: inline-block;

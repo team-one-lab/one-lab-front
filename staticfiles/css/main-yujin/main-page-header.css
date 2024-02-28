@@ -7,13 +7,18 @@ html {
     Segoe UI Symbol,sans-serif;
 }
 
-:root {
-    --scrollbar-width: 0;
+:before {
+    box-sizing: border-box;
+}
+
+:after {
+    box-sizing: border-box;
 }
 
 * {
     box-sizing: border-box;
 }
+
 
 div {
     margin: 0;
@@ -22,9 +27,10 @@ div {
     vertical-align: baseline;
 }
 
-main {
-    display: block;
-
+.web-header {
+    position: static;
+    transition: top .25s;
+    width: 100%;
 }
 
 header {
@@ -39,19 +45,58 @@ h1 {
     padding: 0;
     vertical-align: baseline;
 }
-body {
-    line-height: inherit;
+
+a {
     color: inherit;
-    font-size: 15px;
-    font-weight: 400;
-    font-family: inherit;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
 
-button {
-    font-family: inherit;
-    background-color: transparent;
-    color: inherit;
-    outline: none;
+span {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+img {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+img#one-lab {
+    max-width: 50%;
+    vertical-align: top;
+    margin-left: 130px;
+    border: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    vertical-align: baseline;
+}
+
+form {
     margin: 0;
     border: 0;
     padding: 0;
@@ -66,45 +111,95 @@ input {
     padding: 0;
     vertical-align: baseline;
 }
-form {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
 
-li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border: 0;
-}
-
-ul {
-    margin: 0;
-    border: 0;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
+button {
+    font-family: inherit;
+    background-color: transparent;
     outline: none;
-    margin: 0;
     border: 0;
-    vertical-align: baseline;
+    vertical-align: 0;
+    color: inherit;
+    margin: 0;
+    padding: 0;
 }
 
-span {
+h2 {
     margin: 0;
     border: 0;
     padding: 0;
     vertical-align: baseline;
 }
 
-.web-header {
-    position: static;
-    transition: top .25s;
-    width: 100%;
+strong {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article {
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+ol {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+em {
+    font-style: normal;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+dl {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+dt {
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+dd {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+section {
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+h4 {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
 
 .header-wrapper {
@@ -120,6 +215,7 @@ span {
 }
 
 .header-container {
+    padding: 0 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,15 +224,9 @@ span {
     height: 100%;
 }
 
-.header-container {
-    padding: 0 80px;
-}
-
 .wadiz-logo {
     position: static;
     display: inline-block;
-    top: 0;
-    left: 16px;
     margin: 0;
     line-height: 22px;
     font-size: 32px;
@@ -155,11 +245,7 @@ span {
     height: 1px;
 }
 
-.wadiz-logo>a svg {
-    max-width: none;
-}
-
-.GNBDesktop_container {
+.desktop-container {
     display: inline-block;
     position: static;
     right: 0;
@@ -175,14 +261,14 @@ span {
     vertical-align: top;
 }
 
-.GNBDesktop_item {
+.desktop-item {
     display: inline-block;
     vertical-align: middle;
     text-decoration: none;
     color: #212529;
 }
 
-.GNBDesktop_link {
+.desktop-link {
     line-height: 30px;
     font-size: 20px;
     font-weight: 700;
@@ -203,7 +289,7 @@ span {
     vertical-align: top;
 }
 
-.DesktopSearchApp_container {
+.desktop-search-app-container {
     min-width: 360px;
     display: inline-block;
     position: relative;
@@ -211,8 +297,8 @@ span {
     height: 56px;
 }
 
-.SearchController_container {
-    border: 1px solid #00c4c4;
+.search-controller-container {
+    border: 1px solid #008243;
     font-size: 14px;
     font-weight: 400;
     display: flex;
@@ -229,19 +315,19 @@ span {
     color: #212529;
 }
 
-.SearchTag_emptyTag {
+.search-tag-empty-tag {
     position: relative;
     width: 16px;
 }
 
-.SearchController_keyword {
+.search-controller-keyword {
     display: flex;
     position: relative;
     flex: 1 1 0%;
     margin-right: 40px;
 }
 
-.SearchController_keyword input {
+.search-controller-keyword input {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -251,16 +337,27 @@ span {
     background: none;
     padding-right: 32px;
     width: 100%;
-    -ms-appearance: none;
     appearance: none;
     font-size: 14px;
+}
+
+.pagination-listitem button {
+    cursor: pointer;
+    width: inherit;
+    height: inherit;
+    color: rgba(0,0,0,.54);
+}
+
+.pagination-active button {
+    color: #008243;
+    font-weight: 700;
 }
 
 button:not(:disabled) {
     cursor: pointer;
 }
 
-.SearchController_searchIcon {
+.search-controller-search-icon {
     position: absolute;
     top: 52%;
     right: 16px;
@@ -270,120 +367,24 @@ button:not(:disabled) {
     pointer-events: visible;
 }
 
-.SearchController_searchIcon svg {
+.search-controller-search-icon svg {
     display: block;
 }
 
-.withIcon_icon {
-    display: block;
-    transform: scale(1);
-    transition: transform .3s ease-out;
-    width: 1em;
-    height: 1em;
-    fill: currentColor;
-}
-
-.GNBDesktop_icon {
-    display: inline-block;
-    position: relative;
-    transform: rotate(90deg);
-    animation: GNBDesktop_slide-up__x9vwA .15s forwards;
-    margin-left: 4px;
-    color: #212529;
-    font-size: 18px;
-}
-
-.MoreMenuDesktop_container {
-    position: absolute;
-    right: 0;
-    left: 0;
-    transition-property: max-height;
-    transition-duration: .15s;
-    transition-timing-function: ease-in-out;
-    visibility: hidden;
-    z-index: 9000;
-    background: #fff;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-}
-
-.MoreMenuDesktop_innerContainer {
-    display: flex;
-    margin: 0 auto;
-    padding: 48px 0 64px 140px;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.MoreMenuDesktop_bannerContainer {
-    padding-right: 24px;
-}
-
-.MoreMenuBanner_container {
-    display: flex;
-    position: relative;
-    align-items: center;
-    margin-bottom: 8px;
-    border-radius: 10px;
-    background-color: #e9ecef;
-    cursor: pointer;
-    padding: 9px 16px;
-    width: 200px;
-    word-break: keep-all;
-    overflow-wrap: break-word;
-}
-
-.MoreMenuBanner_inner {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    min-width: 82px;
-}
-
-.DesktopSearchApp_conditionContainer {
-    position: absolute;
-    top: 56px;
-    left: 0;
-    border-radius: 16px;
-    box-shadow: 0 0 5px rgba(10,22,70,.06), 0 16px 16px -1px rgba(10,22,70,.1);
-    background-color: #fff;
-    height: fit-content;
-    max-height: 90vh;
-    overflow: hidden;
-    width: 511px;
-}
-
-.DesktopSearchApp_footer {
-    position: relative;
-    padding: 13px 16px 11px;
-    text-align: right;
-}
-
-.DesktopSearchApp_footer button {
-    line-height: 20px;
-    font-size: 14px;
-    font-weight: 400;
-    cursor: pointer;
-    padding: 8px;
-    color: #adb5bd;
-    font-weight: 500;
-}
-
-.HeaderDesktop_user {
+.header-desktop-user {
     display: inline-block;
     position: relative;
     vertical-align: top;
 }
 
-.User_container {
+.user-container {
     display: inline-block;
     position: relative;
     vertical-align: top;
     white-space: nowrap;
 }
 
-.User_btnSign {
+.user-btn-sign {
     display: inline-block;
     cursor: pointer;
     padding: 0 8px;
@@ -393,93 +394,38 @@ button:not(:disabled) {
     font-size: 15px;
 }
 
-.web-header-funding-open {
+.charge-point {
+    margin-left: 12px;
     display: inline-block;
     vertical-align: top;
 }
 
-.funding-open {
-    margin-left: 12px;
-}
-
-.Button_button {
+.charge-point-button {
+    margin-top: 8px;
+    border-radius: 4px;
+    vertical-align: top;
+    border-color: #008243;
+    background-color: #008243;
+    color: #fff;
+    padding: 9px 15px;
+    height: 40px;
+    font-size: 14px;
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
     border: 1px solid #cdd3d8;
-    border-radius: 4px;
-    background-color: rgba(0,0,0,0);
-    cursor: pointer;
-    padding: 9px 23px;
-    height: 48px;
-    vertical-align: middle;
     text-decoration: none;
     white-space: nowrap;
-    color: #495057;
-    font-size: 16px;
 }
 
-.Button_md {
-    padding: 9px 15px;
-    height: 40px;
-    font-size: 14px;
-}
-
-.Button_contained {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
-    color: #fff;
-}
-
-.funding-open-button {
-    margin-top: 8px;
-    border-radius: 4px;
-    vertical-align: top;
-}
-
-.Button_button span {
+.charge-point-button span {
     display: inline-flex;
     align-items: center;
     vertical-align: top;
 }
 
-.Button_children {
+.button-children {
     vertical-align: top;
-}
-
-.PreviewOverlay_container {
-    line-height: 20px;
-    font-size: 14px;
-    font-weight: 400;
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    border-top: 1px solid #ff9d9d;
-    border-bottom: 1px solid #ff9d9d;
-    background-color: #fff1f1;
-    color: #f66;
-}
-
-.PreviewOverlay_title {
-    line-height: 28px;
-    font-size: 16px;
-    margin-left: 8px;
-    font-weight: 700;
-}
-
-.PreviewOverlay_description {
-    margin-left: 16px;
-}
-
-.header-wrapper {
-    position: relative;
-    border-bottom: 1px solid #f2f4f6;
-    padding: 0;
-    height: 56px;
-    text-align: left;
 }
