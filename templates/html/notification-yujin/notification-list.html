@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="/staticfiles/css/main-yujin/main-page-header-all.css" />
+        <link rel="stylesheet" href="/staticfiles/css/notification-yujin/notification-list.css" />
         <link
             rel="stylesheet"
             as="style"
             crossorigin
             href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
         />
+        <title>Document</title>
     </head>
     <body>
         <!--헤더-->
@@ -123,22 +123,46 @@
                 </header>
             </div>
         </div>
-        <!--헤더 상세 컨텐츠-->
-        <div class="main-wrapper-content"></div>
-        <div>
-            <div class="categorybar-container">
-                <div class="categorybar-main-categories-wrapper">
-                    <ul class="categorybar-main-categories">
-                        <li class="categorybar-main-category">장소공유목록</li>
-                        <li class="categorybar-main-category">원랩목록</li>
-                        <li class="categorybar-main-category">질의응답</li>
-                        <li class="categorybar-main-category">자료공유</li>
-                        <li class="categorybar-main-category">공모전·대회</li>
-                        <li class="categorybar-main-category">회사소개</li>
-                    </ul>
-                </div>
+        <!--알림 페이지 바디-->
+        <div class="main-wrapper-content">
+            <div class="notification-app-container">
+                <main>
+                    <div class="notification-app-header">
+                        <div class="notification-app-title-line">
+                            <div>
+                                <span class="notification-app-main-header">알림</span
+                                ><span class="notification-app-total"><strong>1</strong></span>
+                            </div>
+                        </div>
+                        <div class="notification-app-desc">
+                            <p>원랩과 관련한 소식을 알려드려요.</p>
+                        </div>
+                    </div>
+                    <div class="notification-app-divider">
+                        <hr class="divider-line" />
+                    </div>
+                    <div>
+                        <div class="notification-date">02월 21일</div>
+                        <a href="" class="notification-list-detail"
+                            ><div>
+                                <div class="notification-icon-area">
+                                    <img src="https://cdn3.wadiz.kr/inbox/SYSTEM.png" class="notification-type-icon" />
+                                </div>
+                            </div>
+                            <div class="notification-info">
+                                <div class="notification-info-Line">
+                                    <div class="notification-type">
+                                        <span class="badge-container"><span class="badge-content">원랩알림</span></span>
+                                    </div>
+                                    <div class="notification-date-time">5일 전</div>
+                                </div>
+                                <p class="notification-result">원랩이 수락되었습니다!</p>
+                            </div></a
+                        >
+                    </div>
+                </main>
             </div>
         </div>
+        <!--푸터-->
     </body>
-    <script src="/staticfiles/js/main-yujin/main-page-header-list.js"></script>
 </html>

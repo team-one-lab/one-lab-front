@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // 이벤트 전파 방지
         event.stopPropagation();
 
-        // MoreMenu 클래스를 토글 ("MoreMenu는 가상 요소")
+        // MoreMenu 클래스를 토글
         if (layOut.classList.contains("MoreMenu")) {
             layOut.classList.remove("MoreMenu");
         } else {
