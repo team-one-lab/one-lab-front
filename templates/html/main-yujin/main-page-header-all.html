@@ -21,37 +21,39 @@
                         <h1 class="wadiz-logo">
                             <a href="">
                                 <span class="label">원랩</span>
-                                <img src="/staticfiles/images/header-logo.png" alt="" />
+                                <img id="one-lab" src="/staticfiles/images/header-logo_RE.png" alt="" />
                             </a>
                         </h1>
-                        <ul class="GNBDesktop_container">
-                            <!--오픈예정-->
-                            <li class="GNBDesktop_item">
-                                <a class="GNBDesktop_link" href="/web/wreward/comingsoon"><span>원랩</span></a>
+                        <!--메뉴 탭-->
+                        <ul class="desktop-container">
+                            <!--원랩-->
+                            <li class="desktop-item">
+                                <a class="desktop-link" href=""><span>원랩</span></a>
                             </li>
-                            <!--펀딩-->
-                            <li class="GNBDesktop_item">
-                                <a class="GNBDesktop_link" href="/web/wreward/main"><span>공지</span></a>
+                            <!--공지-->
+                            <li class="desktop-item">
+                                <a class="desktop-link" href=""><span>공지</span></a>
                             </li>
-                            <!--프리오더-->
-                            <li class="GNBDesktop_item">
-                                <a class="GNBDesktop_link" href="/web/preorder/main"><span>장소공유</span></a>
+                            <!--장소공유-->
+                            <li class="desktop-item">
+                                <a class="desktop-link" href=""><span>장소공유</span></a>
                             </li>
-                            <!--스토어-->
-                            <li class="GNBDesktop_item">
-                                <a class="GNBDesktop_link" href="/web/store/main"><span>커뮤니티</span></a>
+                            <!--커뮤니티-->
+                            <li class="desktop-item">
+                                <a class="desktop-link" href=""><span>커뮤니티</span></a>
                             </li>
-                            <li class="GNBDesktop_item">
-                                <a class="GNBDesktop_link" href="/web/store/main"><span>학교</span></a>
+                            <!--학교-->
+                            <li class="desktop-item">
+                                <a class="desktop-link" href=""><span>학교</span></a>
                             </li>
                         </ul>
                         <div class="web-header-utils">
                             <!--검색창-->
-                            <div class="DesktopSearchApp_container">
+                            <div class="desktop-search-app-container">
                                 <form>
-                                    <div class="SearchController_container" tabindex="-1">
-                                        <div class="SearchTag_emptyTag"></div>
-                                        <div class="SearchController_keyword">
+                                    <div class="search-controller-container" tabindex="-1">
+                                        <div class="search-tag-empty-tag"></div>
+                                        <div class="search-controller-keyword">
                                             <input
                                                 type="search"
                                                 placeholder="새로운 일상이 필요하신가요?"
@@ -59,12 +61,12 @@
                                                 value=""
                                             />
                                         </div>
-                                        <button type="submit" class="SearchController_searchIcon" aria-label="검색">
+                                        <button type="submit" class="search-controller-search-icon" aria-label="검색">
                                             <svg
                                                 viewBox="0 0 40 40"
                                                 focusable="false"
                                                 role="presentation"
-                                                class="withIcon_icon"
+                                                class="withicon-icon"
                                                 aria-hidden="true"
                                                 style="width: 24px; height: 24px;"
                                             >
@@ -77,52 +79,36 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="HeaderDesktop_user">
-                                <div class="User_container">
-                                    <button type="button" class="User_btnSign">로그인</button
-                                    ><button data-event="iam.signup" class="User_btnSign">회원가입</button>
+                            <!--로그인 회원가입-->
+                            <div class="header-desktop-user">
+                                <div class="user-container">
+                                    <button type="button" class="user-btn-sign">로그인</button
+                                    ><button data-event="iam.signup" class="user-btn-sign">회원가입</button>
                                 </div>
                             </div>
-                            <div class="web-header-funding-open funding-open">
-                                <button
-                                    aria-label="프로젝트 만들기"
-                                    class="Button_button Button_primary Button_contained Button_md funding-open-button"
-                                    type="button"
-                                >
-                                    <span><span class="Button_children">포인트 충전</span></span>
+                            <!--포인트 충전-->
+                            <div class="charge-point">
+                                <button aria-label="포인트 충전" class="charge-point-button" type="button">
+                                    <span><span class="button-children">포인트 충전</span></span>
                                 </button>
                             </div>
-                        </div>
-                        <div class="PreviewOverlay_container">
-                            <svg
-                                viewBox="0 0 40 40"
-                                focusable="false"
-                                role="presentation"
-                                class="withIcon_icon"
-                                aria-hidden="true"
-                                style="width: 24px; height: 24px;"
-                            >
-                                <path fill="none" d="M0 0h40v40H0z"></path>
-                                <path d="M38 6.06H2V31h11.8v3.88h12.4V31H38zm-2.12 22.85H4.12V8.14h31.76z"></path>
-                            </svg>
-                            <p class="PreviewOverlay_title">미리보기 모드</p>
-                            <p class="PreviewOverlay_description">저장한 내용을 미리 볼 수 있어요.</p>
                         </div>
                     </div>
                 </header>
             </div>
         </div>
-        <div class="MainWrapper_content"></div>
+        <!--헤더 상세 컨텐츠-->
+        <div class="main-wrapper-content"></div>
         <div>
-            <div class="GNBCategoryBar_container">
-                <div class="GNBCategoryBar_mainCategoriesWrapper">
-                    <ul class="GNBCategoryBar_mainCategories">
-                        <li class="GNBCategoryBar_mainCategory active">장소공유목록</li>
-                        <li class="GNBCategoryBar_mainCategory">원랩목록</li>
-                        <li class="GNBCategoryBar_mainCategory">질의응답</li>
-                        <li class="GNBCategoryBar_mainCategory">자료공유</li>
-                        <li class="GNBCategoryBar_mainCategory">공모전·대회</li>
-                        <li class="GNBCategoryBar_mainCategory">회사소개</li>
+            <div class="categorybar-container">
+                <div class="categorybar-main-categories-wrapper">
+                    <ul class="categorybar-main-categories">
+                        <li class="categorybar-main-category">장소공유목록</li>
+                        <li class="categorybar-main-category">원랩목록</li>
+                        <li class="categorybar-main-category">질의응답</li>
+                        <li class="categorybar-main-category">자료공유</li>
+                        <li class="categorybar-main-category">공모전·대회</li>
+                        <li class="categorybar-main-category">회사소개</li>
                     </ul>
                 </div>
             </div>

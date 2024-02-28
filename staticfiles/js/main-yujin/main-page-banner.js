@@ -5,30 +5,26 @@
         const firstBanner = document.createElement("div");
         const btns = document.querySelectorAll("button.btns");
         const banner = document.querySelector("div.slick-track");
-        const arrows = document.querySelectorAll("div.KeyVisualBanner_arrows");
-        const buttons = document.querySelectorAll("div.KeyVisualBanner_navigation");
+        const arrows = document.querySelectorAll("div.keyvisualbanner-arrows");
+        const buttons = document.querySelectorAll("div.keyvisualbanner-navigation");
         console.log(1+1);
         let count = 0;
         let num = 0;
         let temp = buttons[0];
 
-        firstBanner.innerHTML = `<div
-        class="slick-slide"
-        aria-hidden="true"
-        style="outline: none; width: 2000px;"
-    >
+        firstBanner.innerHTML = `<div class="slick-slide" aria-hidden="true" style="outline: none; width: 2000px;">
         <div>
             <div>
-                <a href="" class="VisualSlide_container">
+                <a href="" class="visualslide-container">
                     <img
                         src="/staticfiles/js/main-yujin/images/banner03.jpg"
                         alt=""
                         class="main-banner-img"
                     />
-                    <div class="VisualSlide_wrap">
-                        <div class="VisualSlide_text">
-                            <p class="VisualSlide_title">
-                            아이폰 스냅 하나로 월매출 <br />1000 검증 노하우
+                    <div class="visualslide-wrap">
+                        <div class="visualslide-text">
+                            <p class="visualslide-title">
+                                아이폰 스냅 하나로 월매출 <br />1000 검증 노하우
                             </p>
                         </div>
                     </div>
@@ -38,22 +34,18 @@
     </div>`;
         
 
-        lastBanner.innerHTML = `<div
-        class="slick-slide slick-cloned"
-        aria-hidden="true"
-        style="width: 2000px;"
-    >
+        lastBanner.innerHTML = `<div class="slick-slide slick-cloned" aria-hidden="true" style="width: 2000px;">
         <div>
             <div>
-                <a href="" class="VisualSlide_container">
+                <a href="" class="visualslide-container">
                     <img
                         src="/staticfiles/js/main-yujin/images/banner01.jpg"
                         alt=""
                         class="main-banner-img"
                     />
-                    <div class="VisualSlide_wrap">
-                        <div class="VisualSlide_text">
-                            <p class="VisualSlide_title">
+                    <div class="visualslide-wrap">
+                        <div class="visualslide-text">
+                            <p class="visualslide-title">
                                 고든램지 픽! 천상의 체리청<br />이탈리아 119년 레시피
                             </p>
                         </div>
