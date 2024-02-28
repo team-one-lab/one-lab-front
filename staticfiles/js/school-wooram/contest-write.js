@@ -6,8 +6,6 @@ input.addEventListener("change", (e) => {
     const [file] = e.target.files;
     const reader = new FileReader();
 
-    console.log(file + "들어옴");
-    console.log(reader);
     reader.readAsDataURL(file);
     reader.addEventListener("load", (e) => {
         const path = e.target.result;

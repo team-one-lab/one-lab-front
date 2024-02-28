@@ -2,7 +2,7 @@ const radio = document.querySelectorAll("input[type=radio]");
 
 radio.forEach((like) => {
     like.addEventListener("click", (e) => {
-        console.log(e.target.classList);
+        // console.log(e.target.classList);
         e.target.classList.toggle("active");
         e.ariaPressed = "true";
         // alert("들어옴");
@@ -19,6 +19,7 @@ radio.forEach((like) => {
 
 const all = document.querySelector("#all_check");
 const terms = document.querySelectorAll("input.check_on");
+const span = document.querySelector(".checkbox-icon");
 
 NodeList.prototype.filter = Array.prototype.filter;
 all.addEventListener("click", (e) => {
@@ -61,19 +62,19 @@ dropdowns.forEach((list) => {
     });
 });
 
-const kPay = document.querySelector("#payment_kakao");
-kPay.addEventListener("change", (e) => {
-    if (e.target.checked) {
-        menubars.style.display = "none";
-    }
-});
+// const kPay = document.querySelector("#payment_kakao");
+// kPay.addEventListener("change", (e) => {
+//     if (e.target.checked) {
+//         menubars.style.display = "none";
+//     }
+// });
 
-const normalPay = document.querySelector("#payment_credit");
-normalPay.addEventListener("change", (e) => {
-    if (e.target.checked) {
-        menubars.style.display = "none";
-    }
-});
+// const normalPay = document.querySelector("#payment_credit");
+// normalPay.addEventListener("change", (e) => {
+//     if (e.target.checked) {
+//         menubars.style.display = "none";
+//     }
+// });
 
 // window.onload = function () {
 //     const inputDetail = document.getElementById("input_detail");

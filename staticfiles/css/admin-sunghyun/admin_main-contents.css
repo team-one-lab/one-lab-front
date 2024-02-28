@@ -1040,7 +1040,9 @@ p{
     background-color: #fff;
     border-color: rgba(0,0,0,.1);
 }
-
+.surface-none:hover{
+    background-color: #fff;
+}
 .over-nowrap{
     white-space: nowrap;
     text-overflow: ellipsis;

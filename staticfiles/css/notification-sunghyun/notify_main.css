@@ -527,7 +527,7 @@ button{
 }
 
 .title {
-    text-align: center;
+    
     line-height: 52px;
     font-size: 48px;
     word-break: keep-all;
@@ -549,8 +549,8 @@ button{
 
 
 .ui-tabs ul {
-    margin: 0 350px;
-    /* padding: 0 16px; */
+    margin: 0 334px;
+    padding: 0 4px;
     height: 68px;
     overflow-x: auto;
     overflow-y: hidden;

@@ -960,7 +960,6 @@ label.img-file-btn-label:hover button.img-file-btn {
 }
 
 div.story-field-container {
-    margin-top: 40px;
     width: 100%;
 }
 
@@ -1116,7 +1115,7 @@ ul.upload-pool {
 /* 태그 */
 
 section.section-container.project-type {
-    margin-bottom: 16px;
+    margin-bottom: 55px;
 }
 
 
@@ -1381,6 +1380,13 @@ span.introduction-count {
     color: #868e96;
 }
 
+button {
+    cursor: pointer;
+}
+
+input[type=file] {
+    cursor: pointer;
+}
 
 /* div.textarea-input> .active {
     border: 1px solid #00c4c4 !important;

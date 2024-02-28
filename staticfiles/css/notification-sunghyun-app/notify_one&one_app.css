@@ -918,9 +918,8 @@ template {
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
-    background: var(--mint-m-100, #E7F9F9);
-    flex: 1 0 9.1%;
-        
+    background: var(--mint-m-100, #E8F5E9);
+    flex: 1 0 9.1%; 
     width: 299px;
     height: 101.59px;
     justify-content: center;
@@ -953,7 +952,7 @@ template {
 } */
 
 .ydsbackground-1:hover {
-    background-color: #00704A;
+    background-color: #C8E6C9;
     color: #212121;
     fill: #212121;
 }
