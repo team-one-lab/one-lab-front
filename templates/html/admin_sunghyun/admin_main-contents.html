@@ -31,9 +31,9 @@ admin_competition = 공모전/대회 관리 페이지
             rel="stylesheet"
             href="/staticfiles/css/admin-sunghyun/admin_main-contents.css"
         />
-        <script src="/staticfiles/js/admin-sunghyun/admin_main.js"></script>
+        
         <link rel="preload" href="/staticfiles/css/test_admin_font.css" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/staticfiles/images/admin-images/favicon/favicon-32x32.png">
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>One Lab 관리자페이지</title>
@@ -82,7 +82,7 @@ admin_competition = 공모전/대회 관리 페이지
                                     <button aria-label="profile image" class="relative-center"
                                     type="button" style="width: 68px; height: 68px; outline: none;">
                                     <img alt="관리자 프로필" sizes="(max-width: 240px) 100vw, 240px" 
-                                            srcset="" src="/templates/html/admin_sunghyun/favicon/favicon/android-icon-72x72.png"
+                                            srcset="" src="/staticfiles/images/admin-images/favicon/android-icon-72x72.png"
                                             decoding="async" data-nimg="fill" class="rounded-full" loading="lazy" style="position: absolute;
                                             height: 100%; width: 100%; inset: 0px; object-fit: cover; object-position: center center; color: transparent;">
                                     <div class="absolute-full"></div>
@@ -276,7 +276,8 @@ admin_competition = 공모전/대회 관리 페이지
                                         name='animal' 
                                         class="check"
                                         value='selectall'
-                                        style="display: none;"
+                                        style="display: none;
+                                        background-color: #008243;"
                                         onclick='selectAll(this)'
                                         style="cursor: pointer;">
                                     </label>
@@ -357,5 +358,6 @@ admin_competition = 공모전/대회 관리 페이지
         </div>
         </div>
     </body>
+    <script src="/staticfiles/js/admin-sunghyun/admin_main.js"></script>
     <script src="/staticfiles/js/admin-sunghyun/admin_user.js"></script>
 </html>
