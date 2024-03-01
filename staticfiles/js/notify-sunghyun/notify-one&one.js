@@ -12,26 +12,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const layOut3 = document.querySelector("#article-8");
 
     // 버튼 클릭 이벤트 핸들러 - 첫 번째 버튼
-    btn1.addEventListener("click", function (event) {
-        event.stopPropagation();
+    btn1.addEventListener("click", (e) => {
+        e.stopPropagation();
         toggleMenu(layOut1);
     });
 
     // 버튼 클릭 이벤트 핸들러 - 두 번째 버튼
-    btn2.addEventListener("click", function (event) {
-        event.stopPropagation();
+    btn2.addEventListener("click", (e) => {
+        e.stopPropagation();
         toggleMenu(layOut2);
     });
 
     // 버튼 클릭 이벤트 핸들러 - 세 번째 버튼
-    btn3.addEventListener("click", function (event) {
-        event.stopPropagation();
+    btn3.addEventListener("click", (e) => {
+        e.stopPropagation();
         toggleMenu(layOut3);
     });
 
     // 문서의 다른 영역을 클릭할 때 숨김 이벤트 핸들러
-    document.addEventListener("click", function (event) {
-        hideMenusExcept([layOut1, layOut2, layOut3], [btn1, btn2, btn3], event);
+    document.addEventListener("click", (e) => {
+        hideMenusExcept([layOut1, layOut2, layOut3], [btn1, btn2, btn3], e);
     });
 
     // 특정 메뉴를 토글하는 함수

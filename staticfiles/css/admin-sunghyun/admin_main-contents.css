@@ -142,7 +142,7 @@ blockquote, dd, dl, h1, h2, h3, h4, h5, h6, hr, p ,pre {
     min-width: 80px;
     display: flex;
     margin-right: -70px;
-    
+    cursor: pointer;
 }
 .min-1{
     justify-content: center;
@@ -1361,6 +1361,7 @@ input::placeholder{
     width: 20px;
     height: 20px;
     margin-left: 32px;
+    accent-color: #008243;
 }
 .number{
     width: 25px;

@@ -30,13 +30,13 @@ admin_competition = 공모전/대회 관리 페이지
             rel="stylesheet"
             href="/staticfiles/css/admin-sunghyun/admin_user.css"
         />
-        <script src="/staticfiles/js/admin-sunghyun/admin_user.js"></script>
+       
         <link 
             rel="stylesheet"
             type="text/css"
             href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
         />
-        <link rel="icon" type="image/png" sizes="16x16" href="/templates/html/admin_sunghyun/favicon/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/staticfiles/images/admin-images/favicon/favicon-32x32.png">
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>One Lab 관리자페이지</title>
@@ -85,7 +85,7 @@ admin_competition = 공모전/대회 관리 페이지
                                     <button aria-label="profile image" class="relative-center"
                                     type="button" style="width: 68px; height: 68px; outline: none;">
                                     <img alt="관리자 프로필" sizes="(max-width: 240px) 100vw, 240px" 
-                                    srcset="" src="/templates/html/admin_sunghyun/favicon/favicon/android-icon-72x72.png"
+                                    srcset="" src="/staticfiles/images/admin-images/favicon/android-icon-72x72.png"
                                             decoding="async" data-nimg="fill" class="rounded-full" loading="lazy" style="position: absolute;
                                             height: 100%; width: 100%; inset: 0px; object-fit: cover; object-position: center center; color: transparent;">
                                     <div class="absolute-full"></div>
@@ -93,15 +93,16 @@ admin_competition = 공모전/대회 관리 페이지
                                 </div>
                                 <h2 class="admin-name">관리자</h2>
                                 <a traget="_blank" href="">
-                                    <button aria-label="button" class="relative-disabled" type="button">
+                                    <!-- <button aria-label="button" class="relative-disabled" type="button">
                                         <div class="flex-center">관리자 계정관리</div>
                                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" 
                                         class="ml" height="16px" width="16px">
                                         <path d="M11 7a1 1 0 0 0-1-1H4v14h14v-6a1 1 0 1 0-2 0v4H6V8h4a1 1 0 0 0 1-1Z"></path>
                                         <path d="M19.01 3.829H20v6.656a1 1 0 1 1-2 0V7.244l-5.293 5.293a1 1 0 0 1-1.414-1.415l5.293-5.292h-3.243a1 1 0 1 1 0-2H19.01Z"></path>
                                         </svg>
-                                    </div>
-                                </button>
+                                    </button> -->
+                                </div>
+                               
                             </a>
                         </div>
                     <ul class="px-py">
@@ -249,7 +250,7 @@ admin_competition = 공모전/대회 관리 페이지
                                             </div>
                                         </div>
                                         <div class="relative-16">
-                                            <img alt sizes="100vw" src="/templates/html/admin_sunghyun/favicon/favicon/android-icon-192x192.png"
+                                            <img alt sizes="100vw" src="/staticfiles/images/admin-images/favicon/android-icon-192x192.png"
                                             decoding="async" data-nimg="fill" class="rounded-16" loading="lazy" style="position: absolute;
                                             height: 100%; width: 100%; inset: 0px; color: transparent;">
                                         </div>
@@ -358,6 +359,7 @@ admin_competition = 공모전/대회 관리 페이지
                 </div>
         </div>
     </body>
+    <script src="/staticfiles/js/admin-sunghyun/admin_user.js"></script>
     <script src="/staticfiles/js/admin-sunghyun/admin_main.js"></script>
     
 </html>
