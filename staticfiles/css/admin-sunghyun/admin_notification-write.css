@@ -448,7 +448,7 @@ img {
 /* 텍스트 쪽 css */
 textarea {
     overflow: auto;
-    resize: vertical;
+    /* resize: vertical; */
 }
 
 .form-field > textarea {
@@ -461,7 +461,7 @@ textarea {
     border-radius: 4px;
     overflow: hidden;
     position: relative;
-    resize: vertical;
+    /* resize: vertical; */
     height: 250px;
     min-height: 100px; 
 }

@@ -51,17 +51,18 @@
                                     for=""
                                     >문의사항 내용입니다.</label
                                 >
-                                <textarea
+                                <input
                                     name=""
                                     id="request_description"
                                     cols="30"
                                     rows="10"
+                                    readonly
                                     style="
                                         visibility: hidden;
                                         display: none;
                                     "
-                                ></textarea>
-                                <div
+                                ></input>
+                                <div style="word-break:break-all"
                                     role="application"
                                     class="hc-wysiwyg"
                                 >
@@ -101,14 +102,15 @@
                                         role="form"
                                         aria-expanded="false"
                                     ></div>
-                                    <div role="group">
+                                    <div role="group" >
                                         <!-- <iframe id="request_description_ifr" class="tox-edit-area__iframe" src="" frameborder="0"></iframe> -->
-                                        <textarea
+                                        <!-- <input
                                             name=""
                                             class="tox-edit-area__iframe"
                                             cols="30"
                                             rows="10"
-                                        ></textarea>
+                                        ></input> -->
+                                        
                                     </div>
                                     <div
                                         role="alert"
@@ -157,6 +159,7 @@
                                         <div
                                             role="application"
                                             class="hc-wysiwyg"
+                                            
                                         >
                                             <div role="toolbar">
                                                 <span aria-haspopup="true">
@@ -196,12 +199,13 @@
                                             ></div>
                                             <div role="group">
                                                 <!-- <iframe id="request_description_ifr" class="tox-edit-area__iframe" src="" frameborder="0"></iframe> -->
-                                                <textarea
-                                                    name=""
+                                                <input
+                                                    type="text"
                                                     class="tox-edit-area__iframe"
+                                                    style="width: 100%; height: 100%;"
                                                     cols="30"
                                                     rows="10"
-                                                ></textarea>
+                                                ></input>
                                             </div>
                                             <div
                                                 role="alert"
@@ -311,7 +315,7 @@
                                         type="submit"
                                         name="commit"
                                         value="제출"
-                                        style="margin-left: 588px;
+                                        style="margin-left: 577px;
                                         background-color: #008244;"
                                     />
                                     </footer>
