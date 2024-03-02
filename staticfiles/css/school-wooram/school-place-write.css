@@ -148,7 +148,7 @@ div.sidebar-layout-contents {
 }
 
 div.sidebar-reword-info-container {
-    background-image: linear-gradient(118deg,#75d184,#65bfce);
+    background-image: linear-gradient(118deg,#75d184,#00704A);
     display: block;
     position: relative;
     cursor: pointer;
@@ -644,18 +644,19 @@ span.preview-btn-text {
 }
 
 button.pre-save-btn {
-    border-color: #00c4c4;
-    background-color: #00c4c4;
+    border-color: #008243;
+    background-color: #008243;
     color: #fff;
     padding: 9px 15px;
     height: 40px;
     font-size: 14px; 
     border-radius: 999em;
+    cursor: pointer;
 }
 
 button.pre-save-btn:hover {
-    border-color: #00b2b2;
-    background-color: #00b2b2;
+    border-color: #00704A;
+    background-color: #00704A;
     color: #fff;
 }
 
@@ -1299,7 +1300,6 @@ input.maker-input.input-url.sns::placeholder {
 }
 
 button.save-btn {
-    width: 420px;
     max-width: 100%;
     border-color: #008243;
     background-color: #008243;
@@ -1315,11 +1315,12 @@ button.save-btn {
     vertical-align: middle;
     text-decoration: none;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 button.save-btn:hover {
-    border-color: #00b2b2;
-    background-color: #00b2b2;
+    border-color:  #00704A;
+    background-color: #00704A;
     color: #fff;
 }
 
@@ -1848,4 +1849,33 @@ input:focus{
 
 .datebar {
     display: none;
+}
+
+a.sidebar-menu-item-nav-link {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 16px 24px;
+    color: #212529;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+a.sidebar-menu-item-nav-link.result {
+    color: #008243;
+}
+
+nav.sidebar-menu-list-container ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.maker-info-container-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 628px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
