@@ -18,7 +18,7 @@ likeBtn.forEach((btn) => {
     });
 });
 
-const likeBtns = document.querySelectorAll(".WishButton_button.like-btn")
+const likeBtns = document.querySelectorAll(".like-btn")
 likeBtns.forEach((likeBtn) => {
     likeBtn.addEventListener('click', function(e) {
         likeBtn.classList.toggle('active');
