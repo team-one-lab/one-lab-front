@@ -33,13 +33,16 @@
                             <div class="sidebar-menu-list-margin"></div>
                             <ul>
                                 <li>
-                                    <a href="/templates/html/share-soyoung/share-want.html" class="sidebar-menu-item-nav-link"> 자료 요청/공유 글작성 </a>
+                                    <a href="/templates/html/share-soyoung/share-want.html" class="sidebar-menu-item-nav-link"> 마이포인트 </a>
+                                    <a href="" class="sidebar-menu-item-nav-link result">100</a>
                                 </li>
                                 <li>
-                                    <a href="/templates/html/community-soyoung/community-write.html" class="sidebar-menu-item-nav-link"> 커뮤니티 글 작성 </a>
+                                    <a href="/templates/html/community-soyoung/community-write.html" class="sidebar-menu-item-nav-link"> 마이 포스트 수 </a>
+                                    <a href="" class="sidebar-menu-item-nav-link result">100</a>
                                 </li>
                                 <li>
-                                    <a href="/templates/html/one-lab-soyoung/one-lab-write-page.html" class="sidebar-menu-item-nav-link active"> 원랩 글 작성 </a>
+                                    <a href="/templates/html/one-lab-soyoung/one-lab-write-page.html" class="sidebar-menu-item-nav-link"> 마이 원랩 수 </a>
+                                    <a href="" class="sidebar-menu-item-nav-link result">100</a>
                                 </li>
                             </ul>
                         </nav>
@@ -52,7 +55,15 @@
                                 <li class="page-position-item">프로젝트 관리</li>
                                 <li class="page-position-item">원랩 장소등록/글쓰기 두번째</li>
                             </ol>
-                            <h2 class="page-title">원랩 장소등록/글쓰기</h2>
+                            <div class="maker-info-container-btn-wrapper">
+                                <h2 class="page-title">원랩 장소등록/글쓰기</h2>
+                                <button class="save-btn">
+                                    <span>
+                                        <span class="save-btn-text">저장하기</span>
+                                    </span>
+                                </button>
+                            </div>
+
                             <div class="page-guide">
                                 <button class="banner-link-button-container" type="button">
                                     <div class="banner-link-button-icon">
@@ -91,21 +102,14 @@
                                         <div>익명이</div>
                                     </div>
                                     <div class="project-navbar-btn-group">
-                                        <div class="preview-btn-container">
-                                            <button type="button" class="preview-btn">
-                                                <span>
-                                                    <span class="preview-btn-text">미리 보기</span>
-                                                </span>
-                                            </button>
-                                        </div>
                                         <button type="button" class="pre-save-btn">
                                             <span>
-                                                <span class="pre-save-btn-text">임시 저장</span>
+                                                <span class="pre-save-btn-text">저장 하기</span>
                                             </span>
                                         </button>
                                         <div class="announce-button-container">
                                             <!-- 이미지 태그에 쪽지 아이콘 -->
-                                            <img src="" alt="" class="announce-button-icon" />
+                                            <img src="https://static.wadiz.kr/studio/funding/static/media/announcement.56f4b8e3.svg" alt="" class="announce-button-icon" />
                                             <!-- a태그 클릭시 쪽지함으로 이동 -->
                                             <a href=""></a>
                                         </div>
@@ -169,6 +173,23 @@
                                             </div>
                                         </div>
                                     </section>
+                                    <section class="section-container" style="max-width: 630px">
+                                        <div class="section-header">
+                                            <h3 class="section-title">
+                                                포인트
+                                                <span class="blind-text-hidden">필수</span>
+                                            </h3>
+                                        </div>
+                                        <div class="section-description">
+                                            <p>포인트를 입력해주세요.</p>
+                                        </div>
+                                        <div class="section-content">
+                                            <div class="text-field">
+                                                <input type="text" name="" id="title-input" class="maker-input input-maker-name" placeholder="포인트 입력" />
+                                            </div>
+                                            <em class="helper-msg">30자 남음</em>
+                                        </div>
+                                    </section>
 
                                     <!-- 장소등록 -->
                                     <section class="section-container" style="max-width: 630px">
@@ -213,10 +234,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="section-guide-message">
-                                            <h4>이것만은 알아 주었으면 좋겠어요!</h4>
-                                            <p>서포터님들이 꼭 알아 주었으면 하는 리워드/프로젝트의 매력 포인트가 있다면 적어 주세요.</p>
                                         </div>
                                     </section>
 
@@ -274,14 +291,6 @@
                                             </div>
                                         </div>
                                     </section>
-
-                                    <div class="maker-info-container-btn-wrapper">
-                                        <button class="save-btn">
-                                            <span>
-                                                <span class="save-btn-text">저장하기</span>
-                                            </span>
-                                        </button>
-                                    </div>
                                 </form>
                             </div>
                         </section>

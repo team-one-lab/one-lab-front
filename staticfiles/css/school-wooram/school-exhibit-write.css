@@ -877,6 +877,11 @@ section.section-container {
 
 .msg-title {
     margin-bottom: 8px;
+    color: #008243;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 .message-box-icon {
@@ -1639,4 +1644,29 @@ h2.page-title {
     line-height: 1.5;
     margin-top: 8px;
     margin-bottom: 32px;
+}
+
+a.sidebar-menu-item-nav-link {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 16px 24px;
+    color: #212529;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+a.sidebar-menu-item-nav-link.result {
+    color: #008243;
+}
+
+nav.sidebar-menu-list-container ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.maker-info-container-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 628px;
 }
